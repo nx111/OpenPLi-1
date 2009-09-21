@@ -222,7 +222,7 @@ float fontRenderClass::getLineHeight(const gFont& font)
 		return 0;
 	}
 	int linegap=current_face->size->metrics.height-(current_face->size->metrics.ascender+current_face->size->metrics.descender);
-	float height=(current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap/2.0)*1.5/64;  //150%
+	float height=(current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap/2.0)/64;  
 	delete fnt;
 	return height;
 }
@@ -413,7 +413,7 @@ void eTextPara::newLine(int flags)
 	cursor.setX(left);
 	previous=0;
 	int linegap=current_face->size->metrics.height-(current_face->size->metrics.ascender+current_face->size->metrics.descender);
-	int lineheight=((current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap*1/2)*1.5/64); //150%
+	int lineheight=((current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap*1/2)/64); 
 	cursor+=ePoint(0, lineheight);
 	if (maximum.height()<(cursor.y()+lineheight))
 		maximum.setHeight(cursor.y());

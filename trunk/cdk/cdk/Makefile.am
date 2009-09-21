@@ -2257,7 +2257,9 @@ dreamboximage_root: core .enigma .etherwake .linuxkernel .dreamfiles .libcrypto 
 	flash-enigma flash-plugin_tuxtxt flash-plugin_satfind flash-plugin_dbswitch \
 	flash-ftpd flash-dvb-tools flash-etherwake flash-dreamfiles \
 	flash-sambaclient flash-plugin_plimgr flash-plugin_setupnetwork \
-	flash-plugin_movieplayer
+	flash-plugin_movieplayer \
+	flash-plugin_weather flash-plugin_ngrabstartstop flash-plugin_mosaic \
+	flash-plugin_rss flash-plugin_tuxcom
 else
 if CHINESE_YES
 dreamboximage_root: core .enigma .etherwake .linuxkernel .dreamfiles .libcrypto \
@@ -2265,6 +2267,8 @@ dreamboximage_root: core .enigma .etherwake .linuxkernel .dreamfiles .libcrypto 
 	flash-ftpd flash-dvb-tools flash-etherwake flash-dreamfiles \
 	flash-sambaclient flash-plugin_plimgr flash-plugin_setupnetwork \
 	flash-plugin_movieplayer \
+	flash-plugin_weather flash-plugin_ngrabstartstop flash-plugin_mosaic \
+	flash-plugin_rss flash-plugin_tuxcom \
 	flash-scramble
 else
 dreamboximage_root: core .enigma .etherwake .linuxkernel .dreamfiles .libcrypto \
@@ -2272,6 +2276,8 @@ dreamboximage_root: core .enigma .etherwake .linuxkernel .dreamfiles .libcrypto 
 	flash-ftpd flash-dvb-tools flash-etherwake flash-dreamfiles \
 	flash-sambaclient flash-plugin_plimgr flash-plugin_setupnetwork \
 	flash-plugin_movieplayer \
+	flash-plugin_weather flash-plugin_ngrabstartstop flash-plugin_mosaic \
+	flash-plugin_rss flash-plugin_tuxcom \
 	flash-plugin_pacman flash-plugin_tetris flash-plugin_snake \
 	flash-scramble
 endif

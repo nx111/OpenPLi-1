@@ -229,7 +229,7 @@ void eEventDisplay::init_eEventDisplay(const ePtrList<EITEvent>* e)
 	long_description->setFlags(RS_WRAP);
 
 	// try to recalc long description label... ( no broken text lines.. )
-	int lineheight=(int)fontRenderClass::getInstance()->getLineHeight( long_description->getFont() );
+	int lineheight=(int)fontRenderClass::getInstance()->getLineHeight( long_description->getFont() )*1.5;
 	int lines = (int)(descr->getSize().height() / lineheight);
 	pageHeight = (int)(lines * lineheight);
 	descr->resize( eSize( descr->getSize().width(), pageHeight/*+(int)(lineheight/6)*/));

@@ -75,7 +75,7 @@ int eListBoxEntryEPG::getEntryHeight()
 		dateXSize = tmp->getBoundBox().width()+5;
 		tmp->destroy();
 	}
-	return calcFontHeight(DescrFont)+4;
+	return calcFontHeight(DescrFont)*3/2;
 }
 
 void eListBoxEntryEPG::build()

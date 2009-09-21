@@ -20,14 +20,14 @@ BOXTYPE=$1
 	rm -f $flashprefix/root/lib/tuxbox/plugins/jukebox.so
 	rm -f $flashprefix/root/lib/tuxbox/plugins/jukebox.cfg
 	# removed the installed satfind We do not have the space but was installed so libfx2.so is available in the build	
-	rm -f $flashprefix/root/lib/tuxbox/plugins/satfind.so
-	rm -f $flashprefix/root/lib/tuxbox/plugins/satfind.cfg
-	rm -f $flashprefix/root/lib/tuxbox/plugins/dbswitch.so
-	rm -f $flashprefix/root/lib/tuxbox/plugins/dbswitch.cfg
-	rm -f $flashprefix/root/lib/tuxbox/plugins/extepg.so
-	rm -f $flashprefix/root/lib/tuxbox/plugins/extepg.cfg
-	rm -f $flashprefix/root/lib/tuxbox/plugins/pacman.so
-	rm -f $flashprefix/root/lib/tuxbox/plugins/pacman.cfg
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/satfind.so
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/satfind.cfg
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/dbswitch.so
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/dbswitch.cfg
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/extepg.so
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/extepg.cfg
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/pacman.so
+#	rm -f $flashprefix/root/lib/tuxbox/plugins/pacman.cfg
 	rm -f $flashprefix/root/lib/tuxbox/plugins/snake.so
 	rm -f $flashprefix/root/lib/tuxbox/plugins/snake.cfg
 	rm -f $flashprefix/root/lib/tuxbox/plugins/tetris.so

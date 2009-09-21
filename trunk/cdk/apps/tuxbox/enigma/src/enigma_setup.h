@@ -9,6 +9,7 @@ class eZapSetup: public ProgressSetupWindow
 	private:
 		void updateProgressBar();
 		int getFsFullPerc(const char* filesystem);
+		int getFsFree(const char* filesystem);
 		void entrySelected(eListBoxEntryMenu* item);
 		void init_eZapSetup();
 		

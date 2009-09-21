@@ -145,16 +145,17 @@ void eZapSetup::entrySelected(eListBoxEntryMenu* item)
 
 void eZapSetup::updateProgressBar(void)
 {
-	int blocksPercentUsed = 0;
+	int fsFree = 0;
 	char progressText[100];
 
 	if (!eSystemInfo::getInstance()->isOpenEmbedded())
 	{
-		blocksPercentUsed = getFsFullPerc("/var");
-		sprintf(progressText, _("/var used %d%%"), blocksPercentUsed);
+		fsFree = getFsFree("/var");
+		sprintf(progressText, _("/var free %dKB"), fsFree);
 		setProgressLabel((eString)progressText, 0);
-		setProgressBar(blocksPercentUsed, 0);
+		setProgressBar(fsFree, 0);
 	}
+
 }
 
 int eZapSetup::getFsFullPerc(const char* filesystem)
@@ -177,4 +178,19 @@ int eZapSetup::getFsFullPerc(const char* filesystem)
 		}
 	}
 	return blocksPercentUsed;
+}
+
+int eZapSetup::getFsFree(const char* filesystem)
+{
+	long fsFree = 0;
+	struct statfs s;
+	
+	if(statfs(filesystem, &s) == 0)
+	{
+		if((s.f_blocks > 0))
+		{
+			fsFree=s.f_bfree*s.f_bsize/1024;
+		}
+	}
+	return fsFree;
 }
