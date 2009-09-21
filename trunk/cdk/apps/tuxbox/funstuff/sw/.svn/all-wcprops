@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/sw
+END
+sw1.txt.gz
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/sw/sw1.txt.gz
+END
+player.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/sw/player.c
+END
+play.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/sw/play.sh
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/pluginx
+END
+pluginx.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/pluginx/pluginx.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/pluginx/Makefile.am
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcal/daemon
+END
+tuxcald.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcal/daemon/tuxcald.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcal/daemon/Makefile.am
+END
+tuxcald.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcal/daemon/tuxcald.h
+END

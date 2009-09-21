@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/configure.ac
+END
+tuxbox-zapit.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/tuxbox-zapit.pc.in
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/README
+END

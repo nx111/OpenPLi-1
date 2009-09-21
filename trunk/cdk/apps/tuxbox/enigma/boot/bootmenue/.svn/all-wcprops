@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue
+END
+my_rc.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_rc.h
+END
+my_fb.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_fb.h
+END
+bootmenue.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/bootmenue.h
+END
+png.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/png.cpp
+END
+my_timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_timer.cpp
+END
+my_lcd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_lcd.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/Makefile.am
+END
+my_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_rc.cpp
+END
+my_timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_timer.h
+END
+my_fb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_fb.cpp
+END
+my_lcd.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/my_lcd.h
+END
+bootmenue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/bootmenue.cpp
+END

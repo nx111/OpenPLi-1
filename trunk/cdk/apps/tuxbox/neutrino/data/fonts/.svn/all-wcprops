@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/data/fonts
+END
+micron.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/data/fonts/micron.ttf
+END
+micron_bold.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/data/fonts/micron_bold.ttf
+END
+micron_italic.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/data/fonts/micron_italic.ttf
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/data/fonts/Makefile.am
+END

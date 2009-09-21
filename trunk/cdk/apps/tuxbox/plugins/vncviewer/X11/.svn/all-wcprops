@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11
+END
+Xosdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/Xosdefs.h
+END
+Xlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/Xlib.h
+END
+keysymdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/keysymdef.h
+END
+keysym.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/keysym.h
+END
+X.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/X.h
+END
+Xfuncproto.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/Xfuncproto.h
+END
+Xatom.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/Xatom.h
+END
+Xmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/vncviewer/X11/Xmd.h
+END

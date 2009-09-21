@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/ucodex
+END
+ucodex.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/ucodex/ucodex.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/ucodex/Makefile.am
+END
+ucodex.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/ucodex/ucodex.h
+END

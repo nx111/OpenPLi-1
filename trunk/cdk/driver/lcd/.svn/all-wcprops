@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd
+END
+font_8x8.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/font_8x8.h
+END
+lcd-console.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/lcd-console.c
+END
+font_acorn_8x8.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/font_acorn_8x8.h
+END
+font_pearl_8x8.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/font_pearl_8x8.h
+END
+lcd-font.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/lcd-font.c
+END
+lcd-console.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/lcd-console.h
+END
+lcd-ks0713.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/lcd-ks0713.c
+END
+lcd-font.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/lcd-font.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/Makefile
+END
+readme
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/lcd/readme
+END

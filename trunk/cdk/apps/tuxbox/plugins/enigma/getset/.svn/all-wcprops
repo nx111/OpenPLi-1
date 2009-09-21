@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/getset
+END
+getset.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/getset/getset.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/getset/Makefile.am
+END
+enigma_getset.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/getset/enigma_getset.cfg
+END
+getset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/getset/getset.cpp
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/satfind
+END
+icons.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/satfind/icons.h
+END
+satfind.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/satfind/satfind.cfg
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/satfind/Makefile.am
+END
+satfind.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/satfind/satfind.c
+END
+font.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/satfind/font.h
+END

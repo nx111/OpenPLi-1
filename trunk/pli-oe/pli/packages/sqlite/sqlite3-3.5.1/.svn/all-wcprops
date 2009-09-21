@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/sqlite/sqlite3-3.5.1
+END
+libtool.patch
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/sqlite/sqlite3-3.5.1/libtool.patch
+END
+ldflags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/sqlite/sqlite3-3.5.1/ldflags.patch
+END
+cross-compile.patch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/sqlite/sqlite3-3.5.1/cross-compile.patch
+END

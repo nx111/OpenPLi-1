@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/10/trunk/cdk/apps/tuxbox/plugins/enigma
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/Makefile.am
+END

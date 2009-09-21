@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net
+END
+tftp.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/tftp.h
+END
+bootp.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/bootp.c
+END
+rarp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/rarp.c
+END
+net.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/net.c
+END
+bootp.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/bootp.h
+END
+rarp.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/rarp.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/Makefile
+END
+tftp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/net/tftp.c
+END

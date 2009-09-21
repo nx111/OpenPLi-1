@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/socket
+END
+serversocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/socket/serversocket.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/socket/Makefile.am
+END
+socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/socket/socket.cpp
+END

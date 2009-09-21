@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/libflashimage
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/libflashimage/Makefile.am
+END

@@ -1,0 +1,71 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-09-12T19:26:46.927506Z
+11
+daf2000
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+acinclude.m4
+file
+
+
+
+
+2009-09-15T02:54:17.740544Z
+d7462c73a9f918ff48b6519fbe6b6646
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12359
+
+tuxbox
+dir
+
+dvb
+dir
+
+misc
+dir
+

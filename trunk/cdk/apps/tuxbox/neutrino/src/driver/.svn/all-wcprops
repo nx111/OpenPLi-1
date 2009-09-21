@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver
+END
+vcrcontrol.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/vcrcontrol.h
+END
+fontrenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/fontrenderer.h
+END
+framebuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/framebuffer.cpp
+END
+rcinput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/rcinput.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/Makefile.am
+END
+framebuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/framebuffer.h
+END
+rcinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/rcinput.h
+END
+vcrcontrol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/vcrcontrol.cpp
+END
+fontrenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/driver/fontrenderer.cpp
+END

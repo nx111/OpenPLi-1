@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors
+END
+descriptor_misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/descriptor_misc.h
+END
+dvb_descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/dvb_descriptor.c
+END
+tva_rnt_descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/tva_rnt_descriptor.c
+END
+dvb_descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/dvb_descriptor.h
+END
+descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/descriptor.c
+END
+mhp_ait_descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/mhp_ait_descriptor.c
+END
+tva_rnt_descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/tva_rnt_descriptor.h
+END
+descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/descriptor.h
+END
+mhp_ait_descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/mhp_ait_descriptor.h
+END
+dsmcc_carousel_descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/dsmcc_carousel_descriptor.c
+END
+mpeg_descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/mpeg_descriptor.c
+END
+dsmcc_int_unt_descriptor.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/dsmcc_int_unt_descriptor.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/Makefile.am
+END
+dsmcc_carousel_descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/dsmcc_carousel_descriptor.h
+END
+descriptor_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/descriptor_misc.c
+END
+mpeg_descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/mpeg_descriptor.h
+END
+dsmcc_int_unt_descriptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/descriptors/dsmcc_int_unt_descriptor.h
+END

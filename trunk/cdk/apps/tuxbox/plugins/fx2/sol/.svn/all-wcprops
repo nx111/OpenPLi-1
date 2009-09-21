@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol
+END
+pics.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/pics.h
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/VERSION
+END
+solboard.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/solboard.c
+END
+colors.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/colors.h
+END
+somain.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/somain.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/Makefile.am
+END
+sol.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/sol.cfg
+END
+solboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/sol/solboard.h
+END

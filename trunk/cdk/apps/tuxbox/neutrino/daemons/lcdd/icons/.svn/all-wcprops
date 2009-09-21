@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons
+END
+neutrino_setup.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/neutrino_setup.bmp
+END
+neutrino_lcd.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/neutrino_lcd.bmp
+END
+neutrino_power.raw
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/neutrino_power.raw
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/Makefile.am
+END
+neutrino_setup.raw
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/neutrino_setup.raw
+END
+neutrino_power.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/neutrino_power.bmp
+END
+neutrino_lcd.raw
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/lcdd/icons/neutrino_lcd.raw
+END

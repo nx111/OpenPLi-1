@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/tuxbox-plugins-enigma
+END
+fix_install_weather_pics.diff
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/tuxbox-plugins-enigma/fix_install_weather_pics.diff
+END
+disable_nonworking.diff
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/tuxbox-plugins-enigma/disable_nonworking.diff
+END
+disable_libtuxbox.diff
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/tuxbox-plugins-enigma/disable_libtuxbox.diff
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox
+END
+info_dbox2.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox/info_dbox2.h
+END
+hardware_dbox2.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox/hardware_dbox2.h
+END
+info.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox/info.h
+END
+hardware_dreambox.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox/hardware_dreambox.h
+END
+kernel.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox/kernel.h
+END
+hardware_pci.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/tuxbox/hardware_pci.h
+END

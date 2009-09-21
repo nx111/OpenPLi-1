@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit
+END
+nit.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/nit.h
+END
+sdt.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/sdt.h
+END
+ci.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/ci.h
+END
+transponder.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/transponder.h
+END
+cam.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/cam.h
+END
+pmt.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/pmt.h
+END
+settings.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/settings.h
+END
+descriptors.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/descriptors.h
+END
+audio.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/audio.h
+END
+dvbstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/dvbstring.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/types.h
+END
+bat.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/bat.h
+END
+video.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/video.h
+END
+bouquets.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/bouquets.h
+END
+channel.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/channel.h
+END
+basicserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/basicserver.h
+END
+frontend.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/frontend.h
+END
+xmlinterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/xmlinterface.h
+END
+getservices.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/getservices.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/Makefile.am
+END
+pat.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/pat.h
+END
+scan.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/scan.h
+END
+zapit.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/zapit.h
+END
+dmx.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/include/zapit/dmx.h
+END

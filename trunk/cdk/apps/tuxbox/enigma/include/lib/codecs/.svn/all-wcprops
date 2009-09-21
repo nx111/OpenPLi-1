@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs
+END
+codecogg.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/codecogg.h
+END
+pic.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/pic.h
+END
+codec.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/codec.h
+END
+codecmp3.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/codecmp3.h
+END
+codecmpg.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/codecmpg.h
+END
+picjpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/picjpeg.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/Makefile.am
+END
+codecflac.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/codecs/codecflac.h
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base
+END
+buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/buffer.h
+END
+estring.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/estring.h
+END
+eerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/eerror.h
+END
+epoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/epoint.h
+END
+ebase.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/ebase.h
+END
+esize.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/esize.h
+END
+i18n.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/i18n.h
+END
+console.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/console.h
+END
+erect.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/erect.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/Makefile.am
+END
+message.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/message.h
+END
+eptrlist.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/eptrlist.h
+END
+thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/base/thread.h
+END

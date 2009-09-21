@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu
+END
+teletext.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/teletext.c
+END
+wss.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/wss.h
+END
+teletext.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/teletext.h
+END
+ebu_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/ebu_misc.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/Makefile.am
+END
+vps.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/vps.c
+END
+ebu_misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/ebu_misc.h
+END
+wss.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/wss.c
+END
+vps.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/ebu/vps.h
+END

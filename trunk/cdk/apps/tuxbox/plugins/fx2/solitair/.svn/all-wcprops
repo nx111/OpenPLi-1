@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair
+END
+pnm_file.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/pnm_file.h
+END
+Block.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Block.h
+END
+backbuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/backbuffer.h
+END
+Wastepile.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Wastepile.h
+END
+pnm_res.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/pnm_res.cpp
+END
+solitair.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/solitair.cfg
+END
+Foundation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Foundation.cpp
+END
+colors.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/colors.h
+END
+Card.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Card.cpp
+END
+Buffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Buffer.cpp
+END
+Hand.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Hand.cpp
+END
+Foundation.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Foundation.h
+END
+Tableau.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Tableau.cpp
+END
+Card.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Card.h
+END
+Buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Buffer.h
+END
+Hand.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Hand.h
+END
+Slot.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Slot.cpp
+END
+Tableau.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Tableau.h
+END
+rle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/rle.cpp
+END
+Slot.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Slot.h
+END
+somain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/somain.cpp
+END
+Table.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Table.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Makefile.am
+END
+pnm_file.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/pnm_file.cpp
+END
+Block.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Block.cpp
+END
+backbuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/backbuffer.cpp
+END
+Table.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Table.h
+END
+Wastepile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/solitair/Wastepile.cpp
+END

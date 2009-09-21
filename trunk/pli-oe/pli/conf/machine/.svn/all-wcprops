@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/conf/machine
+END
+dm600pvr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/conf/machine/dm600pvr.conf
+END
+dm500plus.conf
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/conf/machine/dm500plus.conf
+END
+dm7020.conf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/conf/machine/dm7020.conf
+END

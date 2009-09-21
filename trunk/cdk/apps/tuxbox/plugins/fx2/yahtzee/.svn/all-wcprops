@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee
+END
+yahtzee.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/yahtzee.h
+END
+pics.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/pics.h
+END
+Imakefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/Imakefile
+END
+colors.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/colors.h
+END
+somain.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/somain.c
+END
+yahtzee.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/yahtzee.cfg
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/Makefile.am
+END
+text.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/text.h
+END
+yahtzee.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/yahtzee/yahtzee.c
+END

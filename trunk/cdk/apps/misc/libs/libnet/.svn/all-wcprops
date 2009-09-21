@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libnet
+END
+libnet.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libnet/libnet.h
+END
+tuxbox-net.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libnet/tuxbox-net.pc.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libnet/Makefile.am
+END
+libnet.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libnet/libnet.c
+END

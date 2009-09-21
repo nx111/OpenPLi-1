@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240
+END
+start1.S
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/start1.S
+END
+interrupts.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/interrupts.c
+END
+cpu.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/cpu.c
+END
+traps.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/traps.c
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/config.mk
+END
+cpu_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/cpu_init.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/Makefile
+END
+start.S
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/start.S
+END

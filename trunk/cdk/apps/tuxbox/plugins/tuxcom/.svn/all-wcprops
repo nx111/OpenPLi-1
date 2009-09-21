@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom
+END
+mp3
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/mp3
+END
+tuxcom.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/tuxcom.c
+END
+readme_eng.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/readme_eng.txt
+END
+tuxcom.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/tuxcom.h
+END
+readme_deu.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/readme_deu.txt
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/Makefile.am
+END
+tuxcom.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/tuxcom/tuxcom.cfg
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/lib
+END
+basicclient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/lib/basicclient.cpp
+END
+zapitclient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/lib/zapitclient.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/lib/Makefile.am
+END

@@ -1,0 +1,635 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/openpli/!svn/ver/12/trunk/cdk/cdk/Patches
+END
+tremor.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/tremor.diff
+END
+busybox-1.13.0.diff
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox-1.13.0.diff
+END
+libfreetype.diff
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libfreetype.diff
+END
+libpcap.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libpcap.diff
+END
+ltrace.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/ltrace.diff
+END
+linux-cifs145.diff
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/linux-cifs145.diff
+END
+kaffe.diff
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/kaffe.diff
+END
+util-linux_2_12r.diff
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/util-linux_2_12r.diff
+END
+gcc-core.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/gcc-core.diff
+END
+sqlite3.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/sqlite3.diff
+END
+kaffeh.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/kaffeh.diff
+END
+jpeg.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/jpeg.diff
+END
+procps3.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/procps3.diff
+END
+busybox_500maxvar.config
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox_500maxvar.config
+END
+libcurl.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libcurl.diff
+END
+busybox12.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox12.diff
+END
+lsof.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/lsof.diff
+END
+kernel_config.dm7000
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/kernel_config.dm7000
+END
+mrouted_3.9-beta3-3.diff
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/mrouted_3.9-beta3-3.diff
+END
+procps.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/procps.diff
+END
+mksquashfs_lzma.diff
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/mksquashfs_lzma.diff
+END
+bild.dm7000
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/12/trunk/cdk/cdk/Patches/bild.dm7000
+END
+libsigc.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libsigc.diff
+END
+busybox_500.config
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox_500.config
+END
+lzma_zlib-stream.diff
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/lzma_zlib-stream.diff
+END
+tcpdump.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/tcpdump.diff
+END
+busybox113.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox113.config
+END
+kernel_config.dm56x0
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/kernel_config.dm56x0
+END
+usbserial.patch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/usbserial.patch
+END
+pump.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/pump.diff
+END
+sdl.diff
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/sdl.diff
+END
+readline.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/readline.diff
+END
+glibc-ibmppc4xx_fp_perflib.diff
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/glibc-ibmppc4xx_fp_perflib.diff
+END
+samba_ppc.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/samba_ppc.diff
+END
+bild.dm56x0
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/12/trunk/cdk/cdk/Patches/bild.dm56x0
+END
+netkit-telnet.diff
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/netkit-telnet.diff
+END
+lirc.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/lirc.diff
+END
+xmlparse.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/xmlparse.diff
+END
+nano.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/nano.diff
+END
+busybox.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox.diff
+END
+glibc-makefile-printf.diff
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/glibc-makefile-printf.diff
+END
+libffi.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libffi.diff
+END
+libungif.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libungif.diff
+END
+sqlite.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/sqlite.diff
+END
+autofs.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/autofs.diff
+END
+head.ko.old driver dm500
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/head.ko.old%20driver%20dm500
+END
+gdb-6.3-5.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/gdb-6.3-5.diff
+END
+busybox17.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox17.diff
+END
+libcrypto.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libcrypto.diff
+END
+samba3_ppc.diff
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/samba3_ppc.diff
+END
+dsniff.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/dsniff.diff
+END
+libpng.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libpng.diff
+END
+tinylogin.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/tinylogin.diff
+END
+busybox-pli.diff
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox-pli.diff
+END
+linux-libc-headers.diff
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/linux-libc-headers.diff
+END
+djmount.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/djmount.diff
+END
+sqlite1.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/sqlite1.diff
+END
+reiserfsprogs_add_credits.diff
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/reiserfsprogs_add_credits.diff
+END
+linux-enable-autofs.diff
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/linux-enable-autofs.diff
+END
+zh.ttf.old
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/zh.ttf.old
+END
+scummvm.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/scummvm.diff
+END
+bild.dm500
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/12/trunk/cdk/cdk/Patches/bild.dm500
+END
+busybox.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox.config
+END
+glibc_ppc4xx_ibmstropt.diff
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/glibc_ppc4xx_ibmstropt.diff
+END
+gdb.diff
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/gdb.diff
+END
+libdb2.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libdb2.diff
+END
+e2fsprogs_gcc4_build_fix.diff
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/e2fsprogs_gcc4_build_fix.diff
+END
+busybox17.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox17.config
+END
+sdldoom.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/sdldoom.diff
+END
+wget-useragent.diff
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/wget-useragent.diff
+END
+libid3tag.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libid3tag.diff
+END
+dropbear-options.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/dropbear-options.h
+END
+gcc-g++.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/gcc-g++.diff
+END
+zh.ttf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/zh.ttf
+END
+thttpd.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/thttpd.diff
+END
+util-linux.diff
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/util-linux.diff
+END
+libnet.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libnet.diff
+END
+kernel_config.dm500-maxvar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/kernel_config.dm500-maxvar
+END
+etherwake.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/etherwake.diff
+END
+kernel_config.dm500
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/kernel_config.dm500
+END
+portmap.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/portmap.diff
+END
+busybox-flash.config
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox-flash.config
+END
+sqlite2.diff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/sqlite2.diff
+END
+nfs-utils.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/nfs-utils.diff
+END
+portmap-5.diff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/portmap-5.diff
+END
+uclibc-0.9.11.diff
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/uclibc-0.9.11.diff
+END
+ushare.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/ushare.diff
+END
+libmad.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/libmad.diff
+END
+binutils.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/binutils.diff
+END
+busybox12.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/busybox12.config
+END
+xrc.diff
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/xrc.diff
+END
+ftpd.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/ftpd.diff
+END
+ssh.diff
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/ssh.diff
+END
+maxvar.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/maxvar.diff
+END
+console-tools.diff
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/console-tools.diff
+END
+gcc-ibmppc4xx_fp_perflib.diff
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/gcc-ibmppc4xx_fp_perflib.diff
+END
+watchdog.diff
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/watchdog.diff
+END
+zlib.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/zlib.diff
+END
+default_lc.esml.diff
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/default_lc.esml.diff
+END
+mklibs.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/mklibs.py
+END
+polipo.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/polipo.diff
+END
+gnuboy.diff
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/gnuboy.diff
+END
+amule.diff
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/amule.diff
+END
+fbset.diff
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/fbset.diff
+END
+flac.diff
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/Patches/flac.diff
+END

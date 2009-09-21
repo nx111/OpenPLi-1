@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/error.h
+END
+serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/serial.c
+END
+gdbcont.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/gdbcont.c
+END
+remote.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/remote.h
+END
+astest.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/astest.c
+END
+serial.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/serial.h
+END
+gdbsend.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/gdbsend.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/error.c
+END
+remote.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/remote.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/gdb/Makefile
+END

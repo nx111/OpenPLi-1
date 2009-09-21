@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel
+END
+dsmcc_grpinfind.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_grpinfind.h
+END
+unts.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/unts.h
+END
+mhp_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/mhp_misc.c
+END
+llc_snap.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/llc_snap.h
+END
+biop_dsm.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_dsm.h
+END
+dsmcc_unm_dii.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm_dii.h
+END
+dsmcc_ddb.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_ddb.c
+END
+biop_modinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_modinfo.c
+END
+mhp_misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/mhp_misc.h
+END
+dsmcc_unm_dsi.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm_dsi.c
+END
+dsmcc_ddb.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_ddb.h
+END
+biop_modinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_modinfo.h
+END
+dsmcc_unm_dsi.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm_dsi.h
+END
+datagram.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/datagram.c
+END
+datagram.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/datagram.h
+END
+biop_tag_tap.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_tag_tap.c
+END
+dsmcc.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc.c
+END
+biop.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop.c
+END
+dsmcc_unm_dlcancel.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm_dlcancel.c
+END
+biop_message.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_message.c
+END
+biop_tag_tap.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_tag_tap.h
+END
+dsmcc.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc.h
+END
+biop.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop.h
+END
+mpe_fec.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/mpe_fec.c
+END
+iop_ior.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/iop_ior.c
+END
+dsmcc_unm_dlcancel.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm_dlcancel.h
+END
+biop_message.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_message.h
+END
+mpe_fec.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/mpe_fec.h
+END
+dsmcc_misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_misc.c
+END
+iop_ior.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/iop_ior.h
+END
+dsmcc_unm.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm.c
+END
+dsmcc_misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_misc.h
+END
+dsmcc_unm.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm.h
+END
+ait.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/ait.c
+END
+ints.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/ints.c
+END
+biop_servgatinf.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_servgatinf.c
+END
+ait.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/ait.h
+END
+ints.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/ints.h
+END
+biop_servgatinf.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_servgatinf.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/Makefile.am
+END
+dsmcc_grpinfind.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_grpinfind.c
+END
+unts.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/unts.c
+END
+llc_snap.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/llc_snap.c
+END
+biop_dsm.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/biop_dsm.c
+END
+dsmcc_unm_dii.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/datacarousel/dsmcc_unm_dii.c
+END

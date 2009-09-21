@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db
+END
+webstream2db.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/webstream2db.cfg
+END
+webstream2db.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/webstream2db.xml
+END
+webstream2db.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/webstream2db.cpp
+END
+Linux_installation_notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/Linux_installation_notes.txt
+END
+Windows_installation_notes.doc
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/Windows_installation_notes.doc
+END
+webstream2db.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/webstream2db.h
+END
+startvlc.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/startvlc.php
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/webstream2db/Makefile.am
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/lancontrol
+END
+lancontrol.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/lancontrol/lancontrol.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/lancontrol/Makefile.am
+END
+lancontrol.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/lancontrol/lancontrol.cfg
+END
+lancontrol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/lancontrol/lancontrol.cpp
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm
+END
+sounds.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/sounds.h
+END
+pics.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/pics.h
+END
+Imakefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/Imakefile
+END
+colors.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/colors.h
+END
+somain.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/somain.c
+END
+sprite.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/sprite.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/Makefile.am
+END
+lemmings.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/lemmings.cfg
+END
+sound.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/sound.c
+END
+double.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/double.c
+END
+lemm.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/lemm.c
+END
+pic.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/pic.c
+END
+sprite.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/fx2/lemm/sprite.h
+END

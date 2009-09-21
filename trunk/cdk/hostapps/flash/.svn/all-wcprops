@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/flash
+END
+flashsign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/flash/flashsign.cpp
+END
+flashmanage.pl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/flash/flashmanage.pl
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/flash/Makefile.am
+END
+flashcheck.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/flash/flashcheck.cpp
+END
+flashsign.1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/flash/flashsign.1
+END

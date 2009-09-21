@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/openpli/!svn/ver/14/trunk/cdk/cdk
+END
+prepare_neutrino
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/prepare_neutrino
+END
+customize-flash-past
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/14/trunk/cdk/cdk/customize-flash-past
+END
+rules-archive.pl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-archive.pl
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/ChangeLog
+END
+rules-install-flash
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-install-flash
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/README
+END
+rules-install
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-install
+END
+prepare
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/prepare
+END
+customize-flash-pre
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/customize-flash-pre
+END
+rules-make-cygwin
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-make-cygwin
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/configure.ac
+END
+rules.pl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules.pl
+END
+rules-make
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-make
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/acinclude.m4
+END
+FAQ
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/FAQ
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/14/trunk/cdk/cdk/Makefile.am
+END
+rules-archive
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-archive
+END
+init_env
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/init_env
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/NEWS
+END

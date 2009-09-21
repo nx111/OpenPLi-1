@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/freetype/freetype-2.2.1
+END
+configure.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/freetype/freetype-2.2.1/configure.patch
+END
+no-hardcode.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/freetype/freetype-2.2.1/no-hardcode.patch
+END

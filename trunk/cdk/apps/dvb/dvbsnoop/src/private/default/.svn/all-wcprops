@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/default
+END
+descriptor_private_default.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/default/descriptor_private_default.h
+END
+section_private_default.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/default/section_private_default.c
+END
+section_private_default.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/default/section_private_default.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/default/Makefile.am
+END
+descriptor_private_default.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/default/descriptor_private_default.c
+END

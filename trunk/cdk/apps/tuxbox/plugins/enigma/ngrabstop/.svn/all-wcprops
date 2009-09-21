@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/ngrabstop
+END
+ngrabstop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/ngrabstop/ngrabstop.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/ngrabstop/Makefile.am
+END
+ngrabstop.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/ngrabstop/ngrabstop.cfg
+END

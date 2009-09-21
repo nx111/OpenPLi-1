@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx
+END
+miiphy.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/miiphy.c
+END
+speed.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/speed.c
+END
+resetvec.S
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/resetvec.S
+END
+speed.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/speed.h
+END
+fpgadata.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/fpgadata.c
+END
+cpu_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/cpu_init.c
+END
+405gp_enet.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/405gp_enet.c
+END
+start.S
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/start.S
+END
+serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/serial.c
+END
+interrupts.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/interrupts.c
+END
+cpu.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/cpu.c
+END
+traps.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/traps.c
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/config.mk
+END
+405gp_pci.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/405gp_pci.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/ppc4xx/Makefile
+END

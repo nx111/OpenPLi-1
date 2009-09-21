@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx
+END
+ppcboot.lds
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx/ppcboot.lds
+END
+tqm8xx.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx/tqm8xx.c
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx/config.mk
+END
+ppcboot.lds.debug
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx/ppcboot.lds.debug
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx/Makefile
+END
+flash.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tqm8xx/flash.c
+END

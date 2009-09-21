@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit
+END
+bouqueteditor_bouquets.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/bouqueteditor_bouquets.cpp
+END
+bouqueteditor_chanselect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/bouqueteditor_chanselect.cpp
+END
+bouqueteditor_channels.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/bouqueteditor_channels.cpp
+END
+bouqueteditor_bouquets.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/bouqueteditor_bouquets.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/Makefile.am
+END
+bouqueteditor_chanselect.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/bouqueteditor_chanselect.h
+END
+bouqueteditor_channels.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/src/gui/bedit/bouqueteditor_channels.h
+END

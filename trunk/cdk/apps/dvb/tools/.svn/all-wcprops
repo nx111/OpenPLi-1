@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/tools/README
+END

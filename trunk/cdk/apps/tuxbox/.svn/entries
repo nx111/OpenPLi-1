@@ -1,0 +1,55 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-09-12T19:26:46.927506Z
+11
+daf2000
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+enigma
+dir
+
+funstuff
+dir
+
+libtuxbox
+dir
+
+tools
+dir
+
+plugins
+dir
+
+lcd
+dir
+
+neutrino
+dir
+
+lcars
+dir
+
+libs
+dir
+

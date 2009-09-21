@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c
+END
+Makefile_pc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/Makefile_pc
+END
+i2c1.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/i2c1.c
+END
+i2c2.S
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/i2c2.S
+END
+i2c.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/i2c.h
+END
+i2c_export.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/i2c_export.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2c/README
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/eicta.org
+END
+dvb_descriptor_eicta.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/eicta.org/dvb_descriptor_eicta.c
+END
+eicta_org.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/eicta.org/eicta_org.h
+END
+dvb_descriptor_eicta.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/eicta.org/dvb_descriptor_eicta.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/eicta.org/Makefile.am
+END
+eicta_org.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/eicta.org/eicta_org.c
+END

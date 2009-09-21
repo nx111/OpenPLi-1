@@ -1,0 +1,539 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates
+END
+eit.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/eit.tmp
+END
+HTMLServiceEPG.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLServiceEPG.tmp
+END
+root.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/root.tmp
+END
+wapepg.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/wapepg.tmp
+END
+wapTimerList.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/wapTimerList.tmp
+END
+XMLBoxInfo.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLBoxInfo.tmp
+END
+configSettings.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/configSettings.tmp
+END
+sat.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/sat.tmp
+END
+wap.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/wap.tmp
+END
+index2.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/index2.tmp
+END
+remoteControlDbox2.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/remoteControlDbox2.tmp
+END
+movieplayer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/movieplayer.xml
+END
+XMLTimerList.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLTimerList.tmp
+END
+webxtvMSIE.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/webxtvMSIE.tmp
+END
+helpDMMSites.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/helpDMMSites.tmp
+END
+editImageSettingsWindow.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/editImageSettingsWindow.tmp
+END
+flashMgrWriteMenu.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/flashMgrWriteMenu.tmp
+END
+flashMgr.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/flashMgr.tmp
+END
+streaminfo_cable.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/streaminfo_cable.xsl
+END
+rotor.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/rotor.tmp
+END
+editStreamingServerSettings.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/editStreamingServerSettings.tmp
+END
+XMLTimerListBody.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLTimerListBody.tmp
+END
+editStreamingServerVLCSettings.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/editStreamingServerVLCSettings.tmp
+END
+XMLEPGEntry.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLEPGEntry.tmp
+END
+XMLCurrentServiceData.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLCurrentServiceData.tmp
+END
+XMLTimerEntry.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLTimerEntry.tmp
+END
+flashMgrReadMenu.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/flashMgrReadMenu.tmp
+END
+mepg.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/mepg.tmp
+END
+index_big.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/index_big.tmp
+END
+flashMgrProgress.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/flashMgrProgress.tmp
+END
+editTimerEvent.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/editTimerEvent.tmp
+END
+wapEPGDetails.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/wapEPGDetails.tmp
+END
+XMLData.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLData.tmp
+END
+bootMgrSettings.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/bootMgrSettings.tmp
+END
+addTimerEvent.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/addTimerEvent.tmp
+END
+deleteTimerComplete.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/deleteTimerComplete.tmp
+END
+remoteControl.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/remoteControl.tmp
+END
+movies.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/movies.tmp
+END
+serviceepg.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/serviceepg.xsl
+END
+chttpdSettings.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/chttpdSettings.tmp
+END
+bootMgr.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/bootMgr.tmp
+END
+instimg.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/instimg.tmp
+END
+mountPoint.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/mountPoint.tmp
+END
+queryEditTimer.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/queryEditTimer.tmp
+END
+XMLServiceEPG.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLServiceEPG.tmp
+END
+pdaResponse.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/pdaResponse.tmp
+END
+addImageWindow.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/addImageWindow.tmp
+END
+streaminfo_satellite.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/streaminfo_satellite.xsl
+END
+subChannelSelection.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/subChannelSelection.tmp
+END
+HTMLBoxInfo.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLBoxInfo.tmp
+END
+zap.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/zap.tmp
+END
+streaminfo_terrestrial.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/streaminfo_terrestrial.xsl
+END
+sendMessage.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/sendMessage.tmp
+END
+teletext.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/teletext.tmp
+END
+mountPoints.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/mountPoints.tmp
+END
+index_small.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/index_small.tmp
+END
+webxtvFirefox.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/webxtvFirefox.tmp
+END
+index.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/index.tmp
+END
+rotorSat.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/rotorSat.tmp
+END
+HTMLTimerListBody.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLTimerListBody.tmp
+END
+pdaRemoteControlDbox2.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/pdaRemoteControlDbox2.tmp
+END
+mepg_small.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/mepg_small.tmp
+END
+streamingServer.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/streamingServer.tmp
+END
+pdaRemoteControl.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/pdaRemoteControl.tmp
+END
+image.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/image.tmp
+END
+flashMgrProgressData.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/flashMgrProgressData.tmp
+END
+HTMLEPGEntry.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLEPGEntry.tmp
+END
+movieSources.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/movieSources.tmp
+END
+HTMLImageInfo.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLImageInfo.tmp
+END
+mtd.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/mtd.tmp
+END
+helpForums.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/helpForums.tmp
+END
+HTMLTimerEntry.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLTimerEntry.tmp
+END
+XMLStreaminfo.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XMLStreaminfo.tmp
+END
+queryDeleteTimer.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/queryDeleteTimer.tmp
+END
+XSLMPSettings.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/XSLMPSettings.xsl
+END
+streaminfo_unknown.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/streaminfo_unknown.xsl
+END
+HTMLData.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/HTMLData.tmp
+END
+editStreamingServerVideoSettings.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/editStreamingServerVideoSettings.tmp
+END
+helpOtherSites.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/helpOtherSites.tmp
+END
+wapzap.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/wapzap.tmp
+END
+mountPointWindow.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/mountPointWindow.tmp
+END
+audioSelection.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/audioSelection.tmp
+END
+leftnavi.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/leftnavi.tmp
+END
+eit_small.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/eit_small.tmp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/Makefile.am
+END
+bootMenus.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/bootMenus.tmp
+END
+msgWindow.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/msgWindow.tmp
+END
+dvrcontrols.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/dvrcontrols.tmp
+END
+satFinder.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/templates/satFinder.tmp
+END

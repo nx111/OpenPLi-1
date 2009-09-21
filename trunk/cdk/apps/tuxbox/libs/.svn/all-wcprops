@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/README
+END

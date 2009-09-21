@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia
+END
+avia_gt_oss.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_oss.c
+END
+avia_gt_accel.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_accel.c
+END
+avia_gt_ir.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_ir.c
+END
+avia_gt_gv.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_gv.c
+END
+avia_av_event.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_av_event.c
+END
+avia_gt_pcm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_pcm.c
+END
+avia_gt_pig.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_pig.c
+END
+avia_gt_vbi.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_vbi.c
+END
+avia_av_osd.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_av_osd.c
+END
+avia_av_core.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_av_core.c
+END
+avia_gt_napi.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_napi.c
+END
+avia_gt_dmx.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_dmx.c
+END
+avia_gt_core.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_core.c
+END
+avia_gt_lirc.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_lirc.c
+END
+avia_gt_enx.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_enx.c
+END
+avia_gt_dvr.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_dvr.c
+END
+avia_gt_fb_core.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_fb_core.c
+END
+avia_av_proc.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_av_proc.c
+END
+avia_gt_gtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_gtx.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/Makefile
+END
+avia_gt_capture.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avia/avia_gt_capture.c
+END

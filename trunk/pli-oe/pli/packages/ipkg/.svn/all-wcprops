@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg
+END
+ipkgorphan_0.0.1.bb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkgorphan_0.0.1.bb
+END
+ipkg.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg.inc
+END
+ipkg_0.99.163.bb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg_0.99.163.bb
+END
+ipkg-native.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-native.inc
+END
+ipkg-native_0.99.163.bb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-native_0.99.163.bb
+END
+ipkg-collateral.bb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-collateral.bb
+END

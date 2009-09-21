@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/etc
+END
+profile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/etc/profile
+END
+services
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/etc/services
+END
+inetd.conf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/etc/inetd.conf
+END

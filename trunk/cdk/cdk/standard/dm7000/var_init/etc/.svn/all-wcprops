@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7000/var_init/etc
+END
+hosts
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7000/var_init/etc/hosts
+END
+exports
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7000/var_init/etc/exports
+END
+smb.conf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7000/var_init/etc/smb.conf
+END
+software.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7000/var_init/etc/software.xml
+END
+hostname
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7000/var_init/etc/hostname
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot
+END
+mkimg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mkimg
+END
+MAKEALL
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/MAKEALL
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/CHANGELOG
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/COPYING
+END
+LIESMICH.WICHTIG
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/LIESMICH.WICHTIG
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/config.mk
+END
+CREDITS
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/CREDITS
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/README
+END

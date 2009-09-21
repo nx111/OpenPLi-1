@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/dsldisconnect
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/dsldisconnect/Makefile.am
+END
+dsldisconnect.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/dsldisconnect/dsldisconnect.cfg
+END
+dsldisconnect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/dsldisconnect/dsldisconnect.cpp
+END

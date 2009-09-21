@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins
+END
+sexy4.skin
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy4.skin
+END
+california-small.skin
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/california-small.skin
+END
+technics.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/technics.png
+END
+circuit.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/circuit.png
+END
+waiting.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/waiting.png
+END
+elisha.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/elisha.png
+END
+california.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/california.png
+END
+blank.skin
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/blank.skin
+END
+Mercedez_sw.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/Mercedez_sw.png
+END
+sexy1.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy1.png
+END
+sexy2.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy2.png
+END
+sexy3.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy3.png
+END
+sexy4.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy4.png
+END
+california-small.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/california-small.png
+END
+technics.skin
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/technics.skin
+END
+circuit.skin
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/circuit.skin
+END
+waiting.skin
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/waiting.skin
+END
+elisha.skin
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/elisha.skin
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/Makefile.am
+END
+california.skin
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/california.skin
+END
+blank.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/blank.png
+END
+Mercedez_sw.skin
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/Mercedez_sw.skin
+END
+sexy1.skin
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy1.skin
+END
+sexy2.skin
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy2.skin
+END
+sexy3.skin
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/boot/bootmenue/skins/sexy3.skin
+END

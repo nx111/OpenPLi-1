@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/logo
+END
+tuxbox.raw
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/logo/tuxbox.raw
+END
+logo_v4.mpg
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/logo/logo_v4.mpg
+END
+logo_v5.mpg
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/logo/logo_v5.mpg
+END
+readme
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/logo/readme
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin
+END
+cardserver
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/cardserver
+END
+cardspider
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/cardspider
+END
+dreamdvd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/dreamdvd
+END
+start_plimgr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/start_plimgr
+END
+cs2gbox.ppc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/cs2gbox.ppc
+END
+movevar.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/movevar.sh
+END
+dropbearmulti
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/dropbearmulti
+END
+start_enigma
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/start_enigma
+END
+evocamd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/evocamd
+END
+newcamd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/cdkboxes/bin/newcamd
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/classes
+END
+lastsvnrev.bbclass
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/classes/lastsvnrev.bbclass
+END
+hidesrc.bbclass
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/classes/hidesrc.bbclass
+END
+svnrev.bbclass
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/classes/svnrev.bbclass
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino
+END
+crypt_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/crypt_on.png
+END
+format_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/format_off.png
+END
+dolby_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/dolby_off.png
+END
+format_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/format_on.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/Makefile.am
+END
+combo_arrow.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/combo_arrow.png
+END
+crypt_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/neutrino/crypt_off.png
+END

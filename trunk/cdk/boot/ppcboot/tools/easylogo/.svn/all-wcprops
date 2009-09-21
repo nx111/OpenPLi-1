@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/easylogo
+END
+runme.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/easylogo/runme.sh
+END
+easylogo.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/easylogo/easylogo.c
+END
+linux_logo.tga
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/easylogo/linux_logo.tga
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/tools/easylogo/Makefile
+END

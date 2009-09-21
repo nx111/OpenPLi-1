@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision
+END
+TuxVision.ico
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TuxVision.ico
+END
+Options.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/Options.h
+END
+WinHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/WinHelper.h
+END
+Wsasimpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/Wsasimpl.h
+END
+TuxVision.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TuxVision.cpp
+END
+Registry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/Registry.cpp
+END
+mimetypes.ini
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/mimetypes.ini
+END
+TuxVision.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TuxVision.dsp
+END
+AX_HELPER.H
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/AX_HELPER.H
+END
+tux.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/tux.bmp
+END
+TuxVision.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TuxVision.h
+END
+TCPServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TCPServer.cpp
+END
+Registry.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/Registry.h
+END
+logger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/logger.cpp
+END
+wsasimpl.zip
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/wsasimpl.zip
+END
+guids.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/guids.h
+END
+TCPServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TCPServer.h
+END
+DShow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/DShow.cpp
+END
+logger.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/logger.h
+END
+DEBUG.C
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/DEBUG.C
+END
+splash.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/splash.bmp
+END
+DShow.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/DShow.h
+END
+TuxVision.rc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/TuxVision.rc
+END
+Options.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/Options.cpp
+END
+DEBUG.H
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/DEBUG.H
+END
+AXHelper.lib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/AXHelper.lib
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/resource.h
+END
+WinHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/tuxvision/WinHelper.cpp
+END

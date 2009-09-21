@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7020/bin
+END
+mount_usb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7020/bin/mount_usb.sh
+END
+lcdimage.ppc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7020/bin/lcdimage.ppc
+END
+ppanelrecovery.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7020/bin/ppanelrecovery.sh
+END
+backup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm7020/bin/backup.sh
+END

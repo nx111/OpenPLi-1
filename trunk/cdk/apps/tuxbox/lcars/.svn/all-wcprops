@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcars/README
+END

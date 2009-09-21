@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu
+END
+lcdmenu.conf.example
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/lcdmenu.conf.example
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/main.cpp
+END
+rcinput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/rcinput.cpp
+END
+lcdmenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/lcdmenu.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/Makefile.am
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/main.h
+END
+rcinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/rcinput.h
+END
+lcdmenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/lcd/lcdmenu/lcdmenu.h
+END

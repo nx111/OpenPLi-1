@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common
+END
+lists.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/lists.c
+END
+s_record.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/s_record.c
+END
+cmd_mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_mem.c
+END
+console.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/console.c
+END
+cmd_bootm.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_bootm.c
+END
+kgdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/kgdb.c
+END
+cmd_net.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_net.c
+END
+cmd_nvedit.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_nvedit.c
+END
+idxfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/idxfs.c
+END
+command.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/command.c
+END
+cmd_pcmcia.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_pcmcia.c
+END
+cmd_flash.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_flash.c
+END
+devices.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/devices.c
+END
+cmd_ide.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_ide.c
+END
+environment.S
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/environment.S
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/main.c
+END
+cmd_console.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_console.c
+END
+cmd_cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_cache.c
+END
+cmd_boot.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/cmd_boot.c
+END
+dlmalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/dlmalloc.c
+END
+board.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/board.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/Makefile
+END
+dlmalloc.src
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/common/dlmalloc.src
+END

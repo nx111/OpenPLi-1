@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd
+END
+SIevents.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIevents.cpp
+END
+SIutils.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIutils.hpp
+END
+SIevents.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIevents.hpp
+END
+bat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/bat.cpp
+END
+epg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/epg.cpp
+END
+dmxapi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/dmxapi.cpp
+END
+SIsections.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIsections.cpp
+END
+SIservices.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIservices.hpp
+END
+debug.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/debug.cpp
+END
+dmxapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/dmxapi.h
+END
+dmx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/dmx.cpp
+END
+SIsections.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIsections.hpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/Makefile.am
+END
+epgMini.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/epgMini.cpp
+END
+nit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/nit.cpp
+END
+sdt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/sdt.cpp
+END
+debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/debug.h
+END
+sectionsd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/sectionsd.cpp
+END
+SIutils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/SIutils.cpp
+END
+dmx.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/sectionsd/dmx.h
+END

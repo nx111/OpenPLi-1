@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src
+END
+transponder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/transponder.cpp
+END
+xmlinterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/xmlinterface.cpp
+END
+dvbstring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/dvbstring.cpp
+END
+getservices.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/getservices.cpp
+END
+scan.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/scan.cpp
+END
+bouquets.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/bouquets.cpp
+END
+pzapit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/pzapit.cpp
+END
+zapit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapit.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/Makefile.am
+END
+basicserver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/basicserver.cpp
+END
+channel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/channel.cpp
+END

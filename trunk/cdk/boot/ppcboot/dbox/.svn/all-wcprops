@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox
+END
+enx.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/enx.h
+END
+lcd-logo.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/lcd-logo.h
+END
+fb-avia.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/fb-avia.c
+END
+ppcboot.lds
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/ppcboot.lds
+END
+lcd-font.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/lcd-font.c
+END
+fb-avia.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/fb-avia.h
+END
+lcd-font.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/lcd-font.h
+END
+lcd-ks0713.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/lcd-ks0713.c
+END
+font_6x11.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/font_6x11.h
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/config.mk
+END
+mpgstill.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/mpgstill.c
+END
+ppcboot.lds.debug
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/ppcboot.lds.debug
+END
+dbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/dbox.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/Makefile
+END
+flash.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/flash.c
+END
+lcd-ks0713.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/dbox/lcd-ks0713.h
+END

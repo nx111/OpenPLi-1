@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux
+END
+linux-dm800.bb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm800.bb
+END
+linux-dm8000.bb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm8000.bb
+END
+linux-dm500plus.bb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm500plus.bb
+END
+linux-dm7020.bb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm7020.bb
+END
+linux-dm600pvr.bb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm600pvr.bb
+END
+linux-dm7025.bb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm7025.bb
+END

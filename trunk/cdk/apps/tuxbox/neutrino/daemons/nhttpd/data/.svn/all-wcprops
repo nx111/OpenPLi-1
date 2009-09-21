@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data
+END
+dbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/dbox.html
+END
+controlpanel.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/controlpanel.html
+END
+controlpanel.include1
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/controlpanel.include1
+END
+settings.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/settings.html
+END
+controlpanel.include2
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/controlpanel.include2
+END
+controlpanel.include3
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/controlpanel.include3
+END
+channels.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/channels.js
+END
+global.css
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/global.css
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/Makefile.am
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/index.html
+END
+epg.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/epg.html
+END
+shutdown.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/data/shutdown.html
+END

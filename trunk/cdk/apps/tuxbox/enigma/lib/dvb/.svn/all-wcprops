@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb
+END
+epgcache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/epgcache.cpp
+END
+settings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/settings.cpp
+END
+servicefile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/servicefile.cpp
+END
+servicejpg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/servicejpg.cpp
+END
+serviceexternal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/serviceexternal.cpp
+END
+eaudio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/eaudio.cpp
+END
+timestampts.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/timestampts.cpp
+END
+record.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/record.cpp
+END
+servicemp3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/servicemp3.cpp
+END
+dvbscan.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvbscan.cpp
+END
+servicestructure.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/servicestructure.cpp
+END
+serviceplaylist.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/serviceplaylist.cpp
+END
+servicecache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/servicecache.cpp
+END
+dvbci.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvbci.cpp
+END
+epgstore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/epgstore.cpp
+END
+subtitle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/subtitle.cpp
+END
+dvbservice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvbservice.cpp
+END
+cahandler.README
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/cahandler.README
+END
+service.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/service.cpp
+END
+dvbwidgets.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvbwidgets.cpp
+END
+pvrparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/pvrparse.cpp
+END
+decoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/decoder.cpp
+END
+esection.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/esection.cpp
+END
+eventdata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/eventdata.cpp
+END
+dvb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvb.cpp
+END
+si.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/si.cpp
+END
+frontend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/frontend.cpp
+END
+edvb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/edvb.cpp
+END
+cahandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/cahandler.cpp
+END
+subtitling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/subtitling.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/Makefile.am
+END
+servicedvb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/servicedvb.cpp
+END

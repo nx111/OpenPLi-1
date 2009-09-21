@@ -1,0 +1,150 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/fx2
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+bouquet
+dir
+
+Imakefile
+file
+
+
+
+
+2009-09-15T02:53:47.973042Z
+785f543f306fe1c9070e9b587be2e51a
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+140
+
+solitair
+dir
+
+satfind
+dir
+
+lemm
+dir
+
+master
+dir
+
+outdoor
+dir
+
+sokoban
+dir
+
+tank
+dir
+
+sol
+dir
+
+snake
+dir
+
+c64emu
+dir
+
+lcdcirc
+dir
+
+pac
+dir
+
+lib
+dir
+
+yahtzee
+dir
+
+Makefile.am
+file
+
+
+
+
+2009-09-15T02:53:47.973042Z
+fdc3c07e7fbdc3c9c7458c6072bf629c
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+162
+
+tetris
+dir
+
+mines
+dir
+
+vierg
+dir
+

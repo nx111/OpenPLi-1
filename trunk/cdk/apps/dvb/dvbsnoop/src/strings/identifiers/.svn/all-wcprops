@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers
+END
+dataBroadcastID.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/dataBroadcastID.h
+END
+originalNetworkID.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/originalNetworkID.h
+END
+privateDataSpecifierID.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/privateDataSpecifierID.h
+END
+mhpOrganisationID.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/mhpOrganisationID.h
+END
+bouquetID.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/bouquetID.h
+END
+platformID.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/platformID.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/Makefile.am
+END
+mhpProtocolID.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/mhpProtocolID.h
+END
+cpSystemID.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/cpSystemID.h
+END
+mhpAITDescriptors.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/mhpAITDescriptors.h
+END
+caSystemID.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/caSystemID.h
+END
+networkID.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/networkID.h
+END
+mhpApplicationTypeID.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/mhpApplicationTypeID.h
+END
+rootOfTrustID.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/strings/identifiers/rootOfTrustID.h
+END

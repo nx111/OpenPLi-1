@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage
+END
+flashimagefs.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/flashimagefs.hpp
+END
+cramfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/cramfs.h
+END
+flashimage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/flashimage.cpp
+END
+flashimagecramfs.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/flashimagecramfs.hpp
+END
+flashimage.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/flashimage.hpp
+END
+noexcept.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/noexcept.cpp
+END
+flashimage.ipp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/flashimage.ipp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/Makefile.am
+END
+noexcept.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/noexcept.hpp
+END
+flashimagecramfs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libflashimage/flashimagecramfs.cpp
+END

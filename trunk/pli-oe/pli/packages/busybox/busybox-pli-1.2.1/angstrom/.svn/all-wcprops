@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-pli-1.2.1/angstrom
+END
+defconfig
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-pli-1.2.1/angstrom/defconfig
+END

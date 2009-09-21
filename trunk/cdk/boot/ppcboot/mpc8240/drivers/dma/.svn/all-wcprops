@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma
+END
+Makefile_pc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/Makefile_pc
+END
+dma1.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/dma1.c
+END
+dma2.S
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/dma2.S
+END
+dma.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/dma.h
+END
+dma_export.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/dma_export.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/dma/README
+END

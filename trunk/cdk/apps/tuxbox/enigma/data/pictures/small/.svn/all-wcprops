@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small
+END
+rec_symbol-fs8.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/rec_symbol-fs8.png
+END
+crypt_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/crypt_on.png
+END
+blue-button.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/blue-button.png
+END
+logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/logo.png
+END
+dolby_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/dolby_off.png
+END
+dolby_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/dolby_on.png
+END
+green-button.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/green-button.png
+END
+combo_arrow.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/combo_arrow.png
+END
+folder.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/folder.png
+END
+line-h.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/line-h.png
+END
+format_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/format_off.png
+END
+red-button.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/red-button.png
+END
+format_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/format_on.png
+END
+yellow-button.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/yellow-button.png
+END
+no-button.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/no-button.png
+END
+checked.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/checked.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/Makefile.am
+END
+lcdmenu.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/lcdmenu.png
+END
+corner.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/corner.png
+END
+dvr-fs8.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/dvr-fs8.png
+END
+unchecked.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/unchecked.png
+END
+line-v.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/line-v.png
+END
+crypt_off.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/small/crypt_off.png
+END

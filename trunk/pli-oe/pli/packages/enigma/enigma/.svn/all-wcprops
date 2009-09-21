@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/enigma/enigma
+END
+rotor_fix.diff
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/enigma/enigma/rotor_fix.diff
+END
+enigma.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/enigma/enigma/enigma.sh
+END
+enigma_leave_standby.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/enigma/enigma/enigma_leave_standby.sh
+END
+enigma_enter_standby.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/enigma/enigma/enigma_enter_standby.sh
+END
+disable_boot.diff
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/enigma/enigma/disable_boot.diff
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/README
+END

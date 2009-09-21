@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree
+END
+xmlparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmlparse.h
+END
+xmltimpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmltimpl.c
+END
+hashtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/hashtab.c
+END
+xmltimpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmltimpl.h
+END
+iasctab.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/iasctab.h
+END
+nametab.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/nametab.h
+END
+xmltok.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmltok.c
+END
+hashtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/hashtab.h
+END
+xmltree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmltree.cpp
+END
+xmlrole.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmlrole.c
+END
+utf8tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/utf8tab.h
+END
+xmltok.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmltok.h
+END
+xmldef.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmldef.h
+END
+asciitab.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/asciitab.h
+END
+xmltree.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmltree.h
+END
+xmlrole.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmlrole.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/Makefile.am
+END
+xmlparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/xmlparse.cpp
+END
+tuxbox-xmltree.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/tuxbox-xmltree.pc.in
+END
+lat1tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libxmltree/lat1tab.h
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8
+END
+gradient.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8/gradient.png
+END
+back-top.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8/back-top.png
+END
+back-bottom.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8/back-bottom.png
+END
+back-main.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8/back-main.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8/Makefile.am
+END
+back-dvr.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/mediapli_8/back-dvr.png
+END

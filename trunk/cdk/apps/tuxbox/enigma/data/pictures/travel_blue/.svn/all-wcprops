@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue
+END
+window_arrow_combo.png
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_arrow_combo.png
+END
+osd_info.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_info.png
+END
+osd_dvr.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_dvr.png
+END
+osd_clock.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_clock.png
+END
+window_top_corner.png
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_top_corner.png
+END
+osd_stereo_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_stereo_on.png
+END
+osd_crypt_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_crypt_on.png
+END
+osd_audio_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_audio_on.png
+END
+window_bottom_corner.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_bottom_corner.png
+END
+window_top_left.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_top_left.png
+END
+main_logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/main_logo.png
+END
+icon_back.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/icon_back.png
+END
+window_arrow_down.png
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_arrow_down.png
+END
+osd_dolby_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_dolby_on.png
+END
+window_side.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_side.png
+END
+osd_volume.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_volume.png
+END
+osd_edge_main.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_edge_main.png
+END
+window_arrow_right.png
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_arrow_right.png
+END
+osd_mute.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_mute.png
+END
+osd_169_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_169_on.png
+END
+osd_text_on.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/osd_text_on.png
+END
+window_arrow_up.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_arrow_up.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/Makefile.am
+END
+window_top_right.png
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_top_right.png
+END
+window_top.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_top.png
+END
+window_arrow_left.png
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_arrow_left.png
+END
+window_bottom.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue/window_bottom.png
+END

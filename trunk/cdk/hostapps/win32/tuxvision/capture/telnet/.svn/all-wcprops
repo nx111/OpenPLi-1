@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet
+END
+ProtocolRx.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/ProtocolRx.h
+END
+SocketRx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/SocketRx.cpp
+END
+SocketDx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/SocketDx.cpp
+END
+SocketTx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/SocketTx.cpp
+END
+SocketRx.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/SocketRx.h
+END
+SocketDx.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/SocketDx.h
+END
+SocketTx.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/SocketTx.h
+END
+ProtocolRx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/ProtocolRx.cpp
+END
+Telnet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/win32/tuxvision/capture/telnet/Telnet.cpp
+END

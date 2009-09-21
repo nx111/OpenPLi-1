@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libcramfs
+END
+libcramfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libcramfs/libcramfs.c
+END
+libcramfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libcramfs/libcramfs.h
+END
+tuxbox-cramfs.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libcramfs/tuxbox-cramfs.pc.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libcramfs/Makefile.am
+END
+cramfs_fs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/misc/libs/libcramfs/cramfs_fs.h
+END

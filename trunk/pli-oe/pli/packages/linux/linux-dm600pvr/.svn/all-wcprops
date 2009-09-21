@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm600pvr
+END
+2.6.12.cifs-to1.45.tar.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm600pvr/2.6.12.cifs-to1.45.tar.bz2
+END
+linux-cifs145.diff
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm600pvr/linux-cifs145.diff
+END
+kernel-module-tun.diff
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/linux/linux-dm600pvr/kernel-module-tun.diff
+END

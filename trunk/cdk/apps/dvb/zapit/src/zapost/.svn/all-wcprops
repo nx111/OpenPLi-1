@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapost
+END
+frontend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapost/frontend.cpp
+END
+audio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapost/audio.cpp
+END
+video.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapost/video.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapost/Makefile.am
+END
+dmx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapost/dmx.cpp
+END

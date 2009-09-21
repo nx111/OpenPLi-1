@@ -1,0 +1,83 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/cdkboxes/var_init
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+run
+dir
+
+bin
+dir
+
+tuxbox
+dir
+
+etc
+dir
+
+keys
+dir
+
+spool
+dir
+
+scce
+dir
+
+mnt
+file
+
+
+
+
+2009-09-15T02:52:00.709044Z
+5a9813d08f5b212b4b76653a322764ec
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+svn:special
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+

@@ -1,0 +1,120 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-09-10T18:37:07.951476Z
+9
+daf2000
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+htdocs
+dir
+
+sysconfig
+dir
+
+skins
+dir
+
+fonts
+dir
+
+lirc
+dir
+
+Makefile.am
+file
+
+
+
+
+2009-09-15T02:53:13.816543Z
+504ea412ac8fd1053cc5b53f53427fcf
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+329
+
+resources
+dir
+
+encoding.conf
+file
+
+
+
+
+2009-09-15T02:53:13.816543Z
+bcc144e8381128a978ae55085f16fae7
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1592
+
+pictures
+dir
+
+templates
+dir
+

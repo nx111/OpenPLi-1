@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost
+END
+dvbdev.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvbdev.h
+END
+dvb.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb.h
+END
+dvb_filter.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_filter.c
+END
+dvb_net.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_net.c
+END
+dvb_demux.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_demux.h
+END
+dvb_filter.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_filter.h
+END
+dvb_net.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_net.h
+END
+dmxdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dmxdev.c
+END
+dvb_frontend.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_frontend.c
+END
+dvbdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvbdev.c
+END
+dvb.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/Makefile
+END
+dmxdev.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dmxdev.h
+END
+dvb_demux.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/ost/dvb_demux.c
+END

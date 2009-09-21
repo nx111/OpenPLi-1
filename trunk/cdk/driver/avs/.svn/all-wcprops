@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs
+END
+stv6412.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/stv6412.h
+END
+avs_core.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/avs_core.c
+END
+cxa2126.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/cxa2126.c
+END
+cxa2092.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/cxa2092.c
+END
+stv6412.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/stv6412.c
+END
+cxa2126.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/cxa2126.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/Makefile
+END
+cxa2092.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/avs/cxa2092.h
+END

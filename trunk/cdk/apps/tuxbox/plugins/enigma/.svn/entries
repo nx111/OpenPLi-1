@@ -1,0 +1,143 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-09-11T19:07:13.851751Z
+10
+pieterg
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+webstream2db
+dir
+
+dbepg
+dir
+
+mv
+dir
+
+dreamdata
+dir
+
+inadyn
+dir
+
+demo
+dir
+
+ipkgpl
+dir
+
+scummvm
+dir
+
+plimgr
+dir
+
+bitrate
+dir
+
+getset
+dir
+
+remotetimer
+dir
+
+dslconnect
+dir
+
+dsldisconnect
+dir
+
+movieplayer
+dir
+
+ngrabstop
+dir
+
+weather
+dir
+
+setup
+dir
+
+script
+dir
+
+dreamflash
+dir
+
+dbswitch
+dir
+
+ngrabstart
+dir
+
+rss
+dir
+
+Makefile.am
+file
+
+
+
+
+2009-09-15T02:54:01.389043Z
+9c706a983236b5f8da2ea5a21af3cfc2
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+235
+
+dreamnetcast
+dir
+
+setupnetwork
+dir
+
+lancontrol
+dir
+
+imdb
+dir
+

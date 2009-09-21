@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom
+END
+tuxcom.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/tuxcom.c
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/AUTHORS
+END
+tuxcom.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/tuxcom.h
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/acinclude.m4
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/openpli/!svn/ver/2/trunk/external/tuxcom/README
+END

@@ -1,0 +1,56 @@
+#!/bin/bash
+
+echo Removing and Copying own PLi files
+scriptdir=${0%/*}
+flashprefix=$scriptdir/../root/cdkflash
+BOXTYPE=$1
+
+#
+# the * is crucial!
+#
+# in here we can put the wifi drivers and etc/init.d/init1 and other nice stuff...
+#
+	rm -f $flashprefix/root/bin/newcamd
+	rm -f $flashprefix/root/bin/cardserver
+	rm -f $flashprefix/root/bin/cardspider
+	rm -f $flashprefix/root/bin/cs2gbox.ppc
+	rm -f $flashprefix/root/bin/evocamd
+	rm -f $flashprefix/root/bin/dreamdvd
+	rm -f $flashprefix/root/bin/dropbearmulti
+	rm -f $flashprefix/root/lib/tuxbox/plugins/jukebox.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/jukebox.cfg
+	# removed the installed satfind We do not have the space but was installed so libfx2.so is available in the build	
+	rm -f $flashprefix/root/lib/tuxbox/plugins/satfind.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/satfind.cfg
+	rm -f $flashprefix/root/lib/tuxbox/plugins/dbswitch.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/dbswitch.cfg
+	rm -f $flashprefix/root/lib/tuxbox/plugins/extepg.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/extepg.cfg
+	rm -f $flashprefix/root/lib/tuxbox/plugins/pacman.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/pacman.cfg
+	rm -f $flashprefix/root/lib/tuxbox/plugins/snake.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/snake.cfg
+	rm -f $flashprefix/root/lib/tuxbox/plugins/tetris.so
+	rm -f $flashprefix/root/lib/tuxbox/plugins/tetris.cfg
+
+	ln -sf /lib/libcrypto.so.0 $flashprefix/root/lib/libcrypto.so.0.9.7 
+	
+	if [ $BOXTYPE == dm7000 ] ; then
+		# remove CCcam from the build, was only added to prevent too much stripping of libs
+		rm $flashprefix/root/bin/CCcam
+
+		# we want smbd and nmbnd in the image during stripping
+		# but due to the size we remove it here
+		rm -f $flashprefix/root/bin/nmbd
+		rm -f $flashprefix/root/bin/smbd
+
+		# remove the installed serial usb kernel drivers
+		# we put them on the download server to save space as most of the people won't use it anyway
+		rm -rf $flashprefix/root/lib/modules/2.6.9/kernel/drivers/usb/serial
+	fi
+
+# do not install the mvicons in the image so delete them now
+	rm -rf $flashprefix/root/share/tuxbox/enigma/pictures/mvicons
+
+
+

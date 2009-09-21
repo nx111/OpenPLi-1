@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2o
+END
+Makefile_pc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2o/Makefile_pc
+END
+i2o.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2o/i2o.h
+END
+i2o1.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2o/i2o1.c
+END
+i2o2.S
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2o/i2o2.S
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/boot/ppcboot/mpc8240/drivers/i2o/Makefile
+END

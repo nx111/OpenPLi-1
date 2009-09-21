@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01
+END
+dhcpretrytime.patch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/dhcpretrytime.patch
+END
+uclibc_posix.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/uclibc_posix.patch
+END
+thumb-bsdlabel.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/thumb-bsdlabel.patch
+END
+zeroconf.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/zeroconf.patch
+END
+defconfig
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/defconfig
+END
+mount-all-type.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/mount-all-type.patch
+END
+hdparm_M.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/hdparm_M.patch
+END
+udhcpscript.patch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/udhcpscript.patch
+END
+readlink.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/readlink.patch
+END
+nfsroot.patch
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/nfsroot.patch
+END
+dhcp-hostname.patch
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/dhcp-hostname.patch
+END
+udhcppidfile-breakage.patch
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/udhcppidfile-breakage.patch
+END
+nptl_task.patch
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/nptl_task.patch
+END
+udhcppidfile.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/udhcppidfile.patch
+END
+ifupdown-spurious-environ.patch
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/ifupdown-spurious-environ.patch
+END
+add-getkey-applet.patch
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/add-getkey-applet.patch
+END
+mount.patch
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/mount.patch
+END
+fbset.patch
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/fbset.patch
+END
+iproute-flush-cache.patch
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/iproute-flush-cache.patch
+END
+below.patch
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/below.patch
+END
+stop_daemon_unionfs.patch
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/stop_daemon_unionfs.patch
+END
+wget-useragent.diff
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/wget-useragent.diff
+END
+rmmod.patch
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/rmmod.patch
+END
+keymap_endianess.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/busybox/busybox-1.01/keymap_endianess.patch
+END

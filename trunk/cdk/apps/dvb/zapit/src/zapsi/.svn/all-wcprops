@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi
+END
+pmt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/pmt.cpp
+END
+descriptors.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/descriptors.cpp
+END
+pat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/pat.cpp
+END
+bat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/bat.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/Makefile.am
+END
+nit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/nit.cpp
+END
+sdt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/zapit/src/zapsi/sdt.cpp
+END

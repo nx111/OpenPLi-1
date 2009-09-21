@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de
+END
+premiere_de.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/premiere_de.c
+END
+section_premiere_cit.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/section_premiere_cit.h
+END
+dvb_descriptor_premiere.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/dvb_descriptor_premiere.c
+END
+section_premiere_cpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/section_premiere_cpt.c
+END
+premiere_de.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/premiere_de.h
+END
+dvb_descriptor_premiere.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/dvb_descriptor_premiere.h
+END
+section_premiere_cpt.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/section_premiere_cpt.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/Makefile.am
+END
+section_premiere_cit.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/dvb/dvbsnoop/src/private/premiere.de/section_premiere_cit.c
+END

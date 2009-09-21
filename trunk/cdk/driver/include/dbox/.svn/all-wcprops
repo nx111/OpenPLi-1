@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox
+END
+avia_av_proc.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_av_proc.h
+END
+lirc.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/lirc.h
+END
+enx.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/enx.h
+END
+info.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/info.h
+END
+saa7126_core.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/saa7126_core.h
+END
+avia_gt_capture.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_capture.h
+END
+cam.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/cam.h
+END
+avs_core.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avs_core.h
+END
+avia_gt_accel.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_accel.h
+END
+gtx.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/gtx.h
+END
+avia_gt_ir.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_ir.h
+END
+fp.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/fp.h
+END
+avia_gt_gv.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_gv.h
+END
+avia_av.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_av.h
+END
+avia_av_event.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_av_event.h
+END
+avia_gt_pig.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_pig.h
+END
+avia_gt_pcm.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_pcm.h
+END
+avia_gt_vbi.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_vbi.h
+END
+avia_gt.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt.h
+END
+dvb_frontend.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/dvb_frontend.h
+END
+avia_av_osd.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_av_osd.h
+END
+avia_gt_napi.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_napi.h
+END
+event.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/event.h
+END
+avia_gt_dmx.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/avia_gt_dmx.h
+END
+fb.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/fb.h
+END
+lcd-ks0713.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/include/dbox/lcd-ks0713.h
+END

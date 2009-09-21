@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm56x0/bin
+END
+CCcam
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm56x0/bin/CCcam
+END
+ppanelrecovery.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm56x0/bin/ppanelrecovery.sh
+END
+restoreflash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm56x0/bin/restoreflash.sh
+END
+backupflash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm56x0/bin/backupflash.sh
+END
+backup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm56x0/bin/backup.sh
+END

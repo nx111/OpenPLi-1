@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd
+END
+webdbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/webdbox.h
+END
+nhttpd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/nhttpd.cpp
+END
+webserver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/webserver.cpp
+END
+webapi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/webapi.cpp
+END
+webserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/webserver.h
+END
+controlapi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/controlapi.cpp
+END
+webapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/webapi.h
+END
+helper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/helper.cpp
+END
+controlapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/controlapi.h
+END
+helper.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/helper.h
+END
+bouqueteditapi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/bouqueteditapi.cpp
+END
+debug.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/debug.cpp
+END
+request.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/request.cpp
+END
+api_doku.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/api_doku.txt
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/Makefile.am
+END
+bouqueteditapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/bouqueteditapi.h
+END
+webdbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/webdbox.cpp
+END
+debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/debug.h
+END
+request.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/daemons/nhttpd/request.h
+END

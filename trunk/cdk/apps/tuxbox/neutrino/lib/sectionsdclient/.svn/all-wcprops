@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/lib/sectionsdclient
+END
+sectionsdclient.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/lib/sectionsdclient/sectionsdclient.h
+END
+sectionsdMsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/lib/sectionsdclient/sectionsdMsg.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/lib/sectionsdclient/Makefile.am
+END
+sectionsdclient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/neutrino/lib/sectionsdclient/sectionsdclient.cpp
+END

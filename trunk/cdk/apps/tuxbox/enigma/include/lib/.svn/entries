@@ -1,0 +1,92 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/include/lib
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-09-06T20:04:40.428599Z
+7
+daf2000
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+codecs
+dir
+
+gdi
+dir
+
+gui
+dir
+
+system
+dir
+
+socket
+dir
+
+Makefile.am
+file
+
+
+
+
+2009-09-15T02:52:15.952542Z
+b9d12d7c83c5c079e7c901ba18f819de
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+55
+
+base
+dir
+
+driver
+dir
+
+dvb
+dir
+
+movieplayer
+dir
+
+picviewer
+dir
+

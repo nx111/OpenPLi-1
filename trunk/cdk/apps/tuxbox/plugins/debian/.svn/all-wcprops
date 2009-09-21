@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian
+END
+tuxbox-plugins-fx2-master.files
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-master.files
+END
+tuxbox-plugins-fx2-mines.files
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-mines.files
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/control
+END
+tuxbox-plugins-fx2-tank.files
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-tank.files
+END
+tuxbox-plugins-dev.files
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-dev.files
+END
+tuxbox-plugins-fx2-snake.files
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-snake.files
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/changelog
+END
+tuxbox-plugins-fx2-pac.files
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-pac.files
+END
+tuxbox-plugins-tuxtxt.files
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-tuxtxt.files
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/copyright
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/rules
+END
+tuxbox-plugins-fx2-lib.files
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-lib.files
+END
+tuxbox-plugins-fx2-yahtzee.files
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-yahtzee.files
+END
+tuxbox-plugins-fx2-tetris.files
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/debian/tuxbox-plugins-fx2-tetris.files
+END

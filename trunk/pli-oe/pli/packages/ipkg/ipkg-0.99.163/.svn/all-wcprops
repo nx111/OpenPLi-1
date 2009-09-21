@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-0.99.163
+END
+patch-ipkg-localfilename
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-0.99.163/patch-ipkg-localfilename
+END
+disable_intercepts.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-0.99.163/disable_intercepts.patch
+END
+user_question_size.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/ipkg/ipkg-0.99.163/user_question_size.patch
+END

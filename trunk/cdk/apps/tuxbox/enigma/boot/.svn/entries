@@ -1,0 +1,71 @@
+9
+
+dir
+14
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/boot
+https://openpli.svn.sourceforge.net/svnroot/openpli
+
+
+
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+showlogo
+dir
+
+chttpd
+dir
+
+Makefile.am
+file
+
+
+
+
+2009-09-15T02:52:49.776544Z
+5be18328fc2e1d5bb8a20ec7c3825a09
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+60
+
+bootmenue
+dir
+

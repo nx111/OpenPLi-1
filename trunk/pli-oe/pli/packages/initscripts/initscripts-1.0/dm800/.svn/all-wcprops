@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/initscripts/initscripts-1.0/dm800
+END
+bootup
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/initscripts/initscripts-1.0/dm800/bootup
+END
+halt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/initscripts/initscripts-1.0/dm800/halt
+END

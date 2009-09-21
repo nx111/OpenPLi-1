@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files
+END
+nolibtuxbox.diff
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files/nolibtuxbox.diff
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files/acinclude.m4
+END
+fastclear.diff
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files/fastclear.diff
+END
+resize_framebuffer.diff
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files/resize_framebuffer.diff
+END
+32bpp.diff
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files/32bpp.diff
+END
+allow_different_demux.diff
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/tuxbox/files/allow_different_demux.diff
+END

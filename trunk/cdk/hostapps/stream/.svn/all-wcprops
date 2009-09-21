@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/stream
+END
+streamvideo.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/stream/streamvideo.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/2/trunk/cdk/hostapps/stream/Makefile.am
+END

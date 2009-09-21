@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/5/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer
+END
+utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer/utils.cpp
+END
+mpconfig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer/mpconfig.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer/Makefile.am
+END
+movieplayer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/5/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer/movieplayer.cpp
+END

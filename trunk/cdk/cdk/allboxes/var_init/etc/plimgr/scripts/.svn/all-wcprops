@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts
+END
+ecminfo
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts/ecminfo
+END
+emusrv
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts/emusrv
+END
+camd3
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts/camd3
+END
+radegast
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts/radegast
+END
+newcamd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts/newcamd
+END

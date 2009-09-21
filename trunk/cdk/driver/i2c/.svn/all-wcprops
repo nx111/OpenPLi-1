@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/i2c
+END
+i2c-8xx.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/i2c/i2c-8xx.c
+END
+i2c-8xx.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/i2c/i2c-8xx.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/openpli/!svn/ver/2/trunk/cdk/driver/i2c/Makefile
+END

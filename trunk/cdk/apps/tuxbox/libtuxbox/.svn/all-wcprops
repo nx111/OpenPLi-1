@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/libtuxbox
+END
+tuxbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/libtuxbox/tuxbox.h
+END
+tuxbox.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/tuxbox.pc.in
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/libtuxbox/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/ChangeLog
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/Makefile.am
+END
+tuxbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/libtuxbox/tuxbox.c
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/autogen.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libtuxbox/README
+END

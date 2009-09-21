@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/base-files/base-files/licenses
+END
+GPL-2
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/base-files/base-files/licenses/GPL-2
+END
+Artistic
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/base-files/base-files/licenses/Artistic
+END
+BSD
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/base-files/base-files/licenses/BSD
+END
+LGPL-2.1
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/base-files/base-files/licenses/LGPL-2.1
+END
+LGPL-2
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/pli-oe/pli/packages/base-files/base-files/licenses/LGPL-2
+END
