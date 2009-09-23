@@ -405,7 +405,18 @@ void eTextPara::calc_bbox()
 	if ( glyphs.size() )
 		bboxValid=1;
 }
+void eTextPara::setLineHeight(int lineheight)
+{
+	lineHeight=lineheight;
+}
 
+int eTextPara::getLineHeight()
+{
+	int linegap=current_face->size->metrics.height-(current_face->size->metrics.ascender+current_face->size->metrics.descender);
+	if(!lineHeight)
+		lineHeight=((current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap/2)/64); 
+	return lineHeight;
+}
 void eTextPara::newLine(int flags)
 {
 	if (maximum.width()<cursor.x())
@@ -413,9 +424,10 @@ void eTextPara::newLine(int flags)
 	cursor.setX(left);
 	previous=0;
 	int linegap=current_face->size->metrics.height-(current_face->size->metrics.ascender+current_face->size->metrics.descender);
-	int lineheight=((current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap*1/2)/64); 
-	cursor+=ePoint(0, lineheight);
-	if (maximum.height()<(cursor.y()+lineheight))
+	if(!lineHeight)
+		lineHeight=((current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap/2)/64); 
+	cursor+=ePoint(0, lineHeight);
+	if (maximum.height()<(cursor.y()+lineHeight))
 		maximum.setHeight(cursor.y());
 	previous=0;
 }
@@ -517,6 +529,8 @@ void eTextPara::setFont(Font *fnt, Font *replacement)
 #endif
 	previous=0;
 	use_kerning=FT_HAS_KERNING(current_face);
+	int linegap=current_face->size->metrics.height-(current_face->size->metrics.ascender+current_face->size->metrics.descender);
+	lineHeight=((current_face->size->metrics.ascender+current_face->size->metrics.descender+linegap*1/2)/64); 
 }
 
 void

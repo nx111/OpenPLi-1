@@ -6312,7 +6312,7 @@ void eZapMain::runVTXT()
 			w.show();
 			w.exec();
 			w.hide();
-		}
+		}  
 	}
 }
 
@@ -6527,14 +6527,15 @@ int eZapMain::syncSystemTime()
 	timeCorrectting=1;
 
 	int ret=system(cmdstr);
-	if (ret==127 || ret==-1){
+	if (ret==127 || ret==-1 || time(0)<96656000UL){    //now is before 2000-1-1,is false
 		timeCorrectting=0;
 		return 0;
 	}
+	
 
 	time_t t1=time(0);
-	dvb.time_difference+=t1-t0;
 
+	dvb.time_difference+=t1-t0;
 
 	for (ePtrList<eMainloop>::iterator it(eMainloop::existing_loops)
 		;it != eMainloop::existing_loops.end(); ++it)

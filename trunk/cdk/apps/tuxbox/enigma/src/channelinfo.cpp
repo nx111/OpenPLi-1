@@ -36,6 +36,7 @@ void eChannelInfo::init_eChannelInfo()
 	perc=-1;
 
 	cdescr.setFont( fn );
+	cdescr.setLineHeight(cdescr.getLineHeight()*3/2);
 	cdescr.setForegroundColor( foregroundColor );
 	cdescr.setBackgroundColor( backgroundColor );
 	cdescr.setFlags(RS_WRAP);

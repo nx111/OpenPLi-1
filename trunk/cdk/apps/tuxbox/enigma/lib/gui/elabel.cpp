@@ -9,7 +9,7 @@
 
 eLabel::eLabel(eWidget *parent, int flags, int takefocus, const char *deco ):
 	eDecoWidget(parent, takefocus, deco), blitFlags(0), flags(flags),
-	para(0), align( eTextPara::dirLeft ), shortcutPixmap(0)
+	para(0), align( eTextPara::dirLeft ),lineHeight(0), shortcutPixmap(0)
 {
 }
 
@@ -38,6 +38,8 @@ void eLabel::validate( const eSize* s )
 			para=new eTextPara( eRect(text_position.x(), text_position.y(), size.width() - text_position.x(), size.height() - text_position.y()));
 
 		para->setFont(font);
+		if(lineHeight)
+			para->setLineHeight(lineHeight);
 		para->renderString(text, flags);
 		para->realign(align);
 	}
@@ -77,6 +79,19 @@ void eLabel::setAlign(int align)
 {
 	this->align = align;
 	invalidate();
+}
+
+void eLabel::setLineHeight(int lineheight)
+{
+	if(lineheight)
+		lineHeight=lineheight;
+}
+
+int  eLabel::getLineHeight()
+{
+	if(!lineHeight && para)
+		lineHeight=para->getLineHeight();
+	return lineHeight;
 }
 
 void eLabel::redrawWidget(gPainter *target, const eRect &rc)

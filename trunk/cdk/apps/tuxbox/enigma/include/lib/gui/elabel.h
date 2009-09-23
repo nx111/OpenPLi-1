@@ -16,6 +16,7 @@ protected:
 	eTextPara *para;
 	gColor transparentBackgroundColor;
 	int align;
+	int lineHeight;
 	void validate( const eSize* s=0 );
 	int eventHandler(const eWidgetEvent &event);
 	void redrawWidget(gPainter *target, const eRect &area);
@@ -32,6 +33,8 @@ public:
 	void setFlags(int flags);
 	void removeFlags(int flags);
 	void setAlign(int align);
+	void setLineHeight(int lineheight);
+	int  getLineHeight();
 	void setShortcutPixmap(const eString &shortcut);
 	int setProperty(const eString &prop, const eString &value);
 	void setPixmapPosition( const ePoint &p );

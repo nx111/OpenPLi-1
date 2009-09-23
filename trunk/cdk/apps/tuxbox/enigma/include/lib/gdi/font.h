@@ -96,6 +96,7 @@ class eTextPara
 	FT_Face current_face, replacement_face;
 	int use_kerning;
 	int previous;
+	int lineHeight;
 	static eString replacement_facename;
 
 	eRect area;
@@ -114,7 +115,7 @@ class eTextPara
 	void clear();
 public:
 	eTextPara(eRect area, ePoint start=ePoint(-1, -1))
-		: current_font(0), replacement_font(0), current_face(0), replacement_face(0),
+		: current_font(0), replacement_font(0), current_face(0), replacement_face(0),lineHeight(0),
 			area(area), cursor(start), maximum(0, 0), left(start.x()), refcnt(0), bboxValid(0)
 	{
 	}
@@ -126,6 +127,8 @@ public:
 	eTextPara *grab();
 
 	void setFont(const gFont &font);
+	void setLineHeight(int lineheight);
+	int  getLineHeight();
 	int renderString(const eString &string, int flags=0);
 
 	void blit(gPixmapDC &dc, const ePoint &offset, const gRGB &background, const gRGB &foreground);

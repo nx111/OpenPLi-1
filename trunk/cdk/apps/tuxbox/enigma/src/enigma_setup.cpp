@@ -146,14 +146,15 @@ void eZapSetup::entrySelected(eListBoxEntryMenu* item)
 void eZapSetup::updateProgressBar(void)
 {
 	int fsFree = 0;
+	int fsUsedPerc=0;
 	char progressText[100];
-
 	if (!eSystemInfo::getInstance()->isOpenEmbedded())
 	{
 		fsFree = getFsFree("/var");
+		fsUsedPerc=getFsFullPerc("/var");
 		sprintf(progressText, _("/var free %dKB"), fsFree);
 		setProgressLabel((eString)progressText, 0);
-		setProgressBar(fsFree, 0);
+		setProgressBar(fsUsedPerc, 0);
 	}
 
 }

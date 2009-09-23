@@ -1063,7 +1063,7 @@ public:
 			const eventData* evt( epgData->channelEpg( ref ) );
 			if (evt)
 			{
-				EITEvent event(evt->get(),tsidonid, evt->type);
+				EITEvent event(evt->get(),tsidonid, evt->type,evt->source);
 				LocalEventData led;
 				led.getLocalData(&event, &short_description);
 				tm t = *localtime(&event.start_time);

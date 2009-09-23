@@ -2816,7 +2816,7 @@ $(flashprefix)/.part_plugin_rss: $(flashprefix)/.flash .plugins flash-enigma
 	$(INSTALL) -d $(flashprefix)/root/var_init/tuxbox/config
 	$(INSTALL) $(targetprefix)/lib/tuxbox/plugins/rss.so $(flashprefix)/root/lib/tuxbox/plugins/
 	$(INSTALL) $(targetprefix)/lib/tuxbox/plugins/rss.cfg $(flashprefix)/root/lib/tuxbox/plugins/
-	$(INSTALL) -m644 $(targetprefix)/var/tuxbox/config/feeds.xml $(flashprefix)/root/var_init/tuxbox/config/
+#	$(INSTALL) -m644 $(targetprefix)/var/tuxbox/config/feeds.xml $(flashprefix)/root/var_init/tuxbox/config/
 	@touch $@
 
 flash-plugin_script: $(flashprefix)/.part_plugin_script
