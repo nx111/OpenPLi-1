@@ -265,6 +265,7 @@ private:
 	void abortNonAvail();
 	void flushEPG(const uniqueEPGKey & s=uniqueEPGKey());
 	void startEPG();
+	void save();
 
 	void changedService(const uniqueEPGKey &, int);
 	void abortEPG();

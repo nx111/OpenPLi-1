@@ -842,6 +842,9 @@ void ShortEventDescriptor::init_ShortEventDescriptor(descr_gen_t *descr)
 	event_name=convertDVBUTF8((unsigned char*)data+ptr, len, encode, tsidonid);
 	// filter newlines in ARD ShortEventDescriptor event_name
 	event_name.strReplace("\xc2\x8a",": ");
+
+//	eDebug("ShortEvent: s=%s event_name=%s",data+ptr,event_name.c_str());
+
 	ptr+=len;
 
 	len=data[ptr++];
@@ -852,6 +855,7 @@ void ShortEventDescriptor::init_ShortEventDescriptor(descr_gen_t *descr)
 	{
 		text.erase(0, start);
 	}
+//	eDebug("ShortEvent: s=%s text=%s",data+ptr,text.c_str());
 
 }
 
@@ -1002,6 +1006,7 @@ void ExtendedEventDescriptor::init_ExtendedEventDescriptor(descr_gen_t *descr)
 	int text_length=data[ptr++];
 	text=convertDVBUTF8((unsigned char*) data+ptr, text_length, table, tsidonid);
 	ptr+=text_length;
+//	eDebug("ExtendEventDescriptor text=%s",text.c_str());
 }
 
 #ifdef SUPPORT_XML
@@ -2113,11 +2118,15 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 #endif
 	__u8 encode=0;
 	switch(source){
-		case srPLI_EPGDAT:encode=0x15;break;	//UTF8,  enigma_pli_v5 epg.dat
-		case srGEMINI_EPGDAT:encode=0x15;break;	//UTF8,	 enigma_epg_v7 epg.dat
-		case srPLI_SQLITE:encode=0x15;break;	//UTF8,  pli sqlite data
+		case srPLI_EPGDAT:encode=UTF8_ENCODING;break;	//UTF8,  enigma_pli_v5 epg.dat
+		case srGEMINI_EPGDAT:encode=UTF8_ENCODING;break;	//UTF8,	 enigma_epg_v7 epg.dat
+		case srPLI_SQLITE:encode=UTF8_ENCODING;break;	//UTF8,  pli sqlite data
 		default:encode=0;break;
 	}
+	if((source==srPLI_EPGDAT || source==srGEMINI_EPGDAT)&&MemStoreEncode)  //if epg.dat is not utf8
+		encode=MemStoreEncode;
+	if(MemStoreEncode==AUTO_ENCODING)encode=0;
+	
 	while (ptr<len)
 	{
 		descr_gen_t *d=(descr_gen_t*) (((__u8*)(event+1))+ptr);
@@ -2128,7 +2137,6 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 		{
 			sdescr = (ShortEventDescriptor*)descr;
 #ifdef ENABLE_DISH_EPG
-			//eDebug("EITEvent: short event, name: %s, description: %s\n", sdescr->event_name.c_str(), sdescr->text.c_str());
 			if (ndescr)
 			{
 				/* we already have a dish event name descriptor, use it's name */
@@ -2147,7 +2155,7 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 			if ( s2 && !strncmp( sdescr->text.c_str(), edescr->text.c_str(), s2 < s1 ? s2 : s1 ) )
 				sdescr->text.clear();
 			sdescr = NULL;
-			//eDebug("EITEvent: extended event, text: %s\n", edescr->text.c_str());
+			eDebug("EITEvent: extended event, text: %s\n", edescr->text.c_str());
 		}
 #ifdef ENABLE_DISH_EPG
 		else if (descr->Tag() == DESCR_DISH_EVENT_NAME)

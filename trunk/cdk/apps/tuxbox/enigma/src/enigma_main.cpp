@@ -6527,7 +6527,7 @@ int eZapMain::syncSystemTime()
 	timeCorrectting=1;
 
 	int ret=system(cmdstr);
-	if (ret==127 || ret==-1 || time(0)<96656000UL){    //now is before 2000-1-1,is false
+	if (ret==127 || ret==-1 || time(0)<96656000L){    //now is before 2000-1-1,is false
 		timeCorrectting=0;
 		return 0;
 	}

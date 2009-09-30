@@ -235,9 +235,9 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	eString command = opt["command"];
 	eString result;
 	if (eSystemInfo::getInstance()->canShutdown())
-		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,timeupdate)";
+		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,saveepg,timeupdate)";
 	else
-		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,timeupdate)";
+		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,saveepg,timeupdate)";
 	if (command == "shutdown")
 	{
 		if (eSystemInfo::getInstance()->canShutdown())
@@ -293,6 +293,12 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	{
 		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::reloadStore));
 		result = "EPGCache restarted...";
+	}
+	else
+	if (command == "saveepg")
+	{
+		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::save));
+		result = "EPGCache saveed...";
 	}
 	else 
 	if (command == "timeupdate")

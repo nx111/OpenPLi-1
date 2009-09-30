@@ -111,11 +111,6 @@ std::map<eString, int> eString::CountryCodeDefaultMapping;
 std::map<int, int> eString::TransponderDefaultMapping;
 std::set<int> eString::TransponderUseTwoCharMapping;
 
-#define VIDEOTEXSUPPL_ENCODING		0x11
-#define GB2312_ENCODING			0x13
-#define BIG5_ENCODING			0x14
-#define UTF8_ENCODING			0x15
-
 int parseEncoding(char *encoding)
 {
 	if (strcasecmp(encoding, "VideoTexSuppl") == 0)
@@ -138,32 +133,7 @@ int eString::readEncodingFile()
 	FILE *f = fopen(CONFIGDIR "/enigma/encoding.conf", "rt");
 	if (f)
 	{
-/*		CountryCodeDefaultMapping.clear();
-		TransponderDefaultMapping.clear();
-		TransponderUseTwoCharMapping.clear();
-		char *line = (char*) malloc(256);
-		size_t bufsize=256;
-		char countrycode[256];
-		while( getline(&line, &bufsize, f) != -1 )
-		{
-			if ( line[0] == '#' )
-				continue;
-			int tsid, onid, encoding;
-			if ( sscanf( line, "%s ISO8859-%d", countrycode, &encoding ) == 2 )
-				CountryCodeDefaultMapping[countrycode]=encoding;
-			else if ( (sscanf( line, "0x%x 0x%x ISO8859-%d", &tsid, &onid, &encoding ) == 3 )
-					||(sscanf( line, "%d %d ISO8859-%d", &tsid, &onid, &encoding ) == 3 ) )
-				TransponderDefaultMapping[(tsid<<16)|onid]=encoding;
-			else if ( (sscanf( line, "0x%x 0x%x", &tsid, &onid ) == 2 )
-					||(sscanf( line, "%d %d", &tsid, &onid ) == 2 ) )
-				TransponderUseTwoCharMapping.insert((tsid<<16)|onid);
-			else
-				eDebug("couldn't parse %s", line);
-		}
-		fclose(f);
-		free(line);
-		return 0;
-*/
+
 		CountryCodeDefaultMapping.clear();
 		TransponderDefaultMapping.clear();
 		TransponderUseTwoCharMapping.clear();
@@ -628,7 +598,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 
 
 //	eDebug("ConvertDVBUTF8-1:<data=%s><table=0x%x><tsidonid=%d>\n",data,table,tsidonid);
-	if (!encode)
+	if (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING)
 	 switch(data[0])
 	 {
 		case 0:
@@ -675,14 +645,16 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			encode=UTF8_ENCODING;
 			++i;
 			break;
+		case 0x16:
+			encode=UNICODE_ENCODING;
 		case 0xD ... 0xF:
-		case 0x16 ... 0x1F:
+		case 0x17 ... 0x1F:
 			eDebug("reserved %d", data[0]);
 			++i;
 			break;
 	}
 
-	if ( tsidonid && !encode )
+	if ( tsidonid && (!encode || encode==AUTO_ENCODING))
 	{
 		std::map<int, int>::iterator it =
 			eString::TransponderDefaultMapping.find(tsidonid);
@@ -703,10 +675,18 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			unsigned long code=0;
 
 	
-			if ( (i+1) < len && tsidonid &&
+			if ( encode==VIDEOTEXSUPPL_ENCODING && (i+1) < len && tsidonid &&
 				eString::TransponderUseTwoCharMapping.find(tsidonid) != eString::TransponderUseTwoCharMapping.end() &&
 			(code=doVideoTexSuppl(data[i], data[i+1])) )
-				i+=1;
+				i++;
+
+			if (encode==UNICODE_ENCODING){
+				unsigned long code1=data[i];
+				unsigned long code2=data[i+1];
+				code=(code2<<8)|code1;
+				i++;
+			}
+
 			if (!code)
 				code=recode(data[i], encode);
 			if (!code){

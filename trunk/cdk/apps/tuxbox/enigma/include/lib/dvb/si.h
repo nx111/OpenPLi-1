@@ -549,7 +549,7 @@ public:
 #define srGEMINI_EPGDAT 2
 #define srPLI_SQLITE 3
 #define srOTHER 9
-
+extern int MemStoreEncode;
 class EITEvent
 {
 	void init_EITEvent(const eit_event_struct *event, int tsidonid);

@@ -36,7 +36,8 @@ void eChannelInfo::init_eChannelInfo()
 	perc=-1;
 
 	cdescr.setFont( fn );
-	cdescr.setLineHeight(cdescr.getLineHeight()*3/2);
+	int lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )*12/10;
+	cdescr.setLineHeight(lineheight);
 	cdescr.setForegroundColor( foregroundColor );
 	cdescr.setBackgroundColor( backgroundColor );
 	cdescr.setFlags(RS_WRAP);

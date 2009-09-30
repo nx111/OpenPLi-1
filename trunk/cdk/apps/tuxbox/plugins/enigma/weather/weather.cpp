@@ -117,9 +117,10 @@ void weatherMain::dispData()
 		lb2->setProperty("align", "center");
 		lb2->setProperty("wrap", "on");
 		lb2->setText(desc);
-
-//		icon = "/var/tuxbox/config/weather/icons/" + icon;
-		icon = "/share/tuxbox/weather/" + icon;
+		if(!access(("/var/tuxbox/config/weather/icons/" + icon).c_str(),0))
+			icon = "/var/tuxbox/config/weather/icons/" + icon;
+		else
+			icon = "/share/tuxbox/weather/" + icon;
 		gPixmap *img = loadPNG(icon.c_str());
 
 

@@ -1,5 +1,5 @@
 #include "setup_epg.h"
-
+#include <sys/stat.h>
 #include <plugin.h>
 #include <lib/dvb/epgcache.h>
 
@@ -33,6 +33,21 @@ MultiEPGSetupFactory MultiEPGSetup_factory;
 EpgSetup::EpgSetup() : 
 	ePLiWindow(_(MENUNAMEEPG), 440)
 {
+
+	struct stat st;
+	bool libexist=false;
+	char libname[]="/lib/libsqlite3.so.0";
+	if(-1 != stat(libname,&st)){
+	  if(st.st_mode & S_IFLNK){
+		char lbuf[256];
+		readlink(libname,lbuf,255);
+		if(!strcmp(basename(libname),basename(lbuf)))
+			libexist=true;
+		}
+	  else
+		libexist=true;
+	}
+
 	int epgMaxHours = 4 * 24;
 	eConfig::getInstance()->getKey("/extras/epghours", epgMaxHours);
 
@@ -54,19 +69,25 @@ EpgSetup::EpgSetup() :
 	networkMountMgr = eNetworkMountMgr::getInstance();
 
 	oldStore = eEPGStore::MEM_STORE;
-	storeLocations[eEPGStore::SQLITE_STORE] = eEPGSqlStore::getDefaultStorageDir();
+	if(libexist)
+		storeLocations[eEPGStore::SQLITE_STORE] = eEPGSqlStore::getDefaultStorageDir();
 	storeLocations[eEPGStore::MEM_STORE] = eEPGMemStore::getDefaultStorageDir();
 	
 	eConfig::getInstance()->getKey("/enigma/epgStore", oldStore);
-	eConfig::getInstance()->getKey("/enigma/epgSQLiteDir", storeLocations[eEPGStore::SQLITE_STORE]);
+	if(libexist)
+		eConfig::getInstance()->getKey("/enigma/epgSQLiteDir", storeLocations[eEPGStore::SQLITE_STORE]);
 	eConfig::getInstance()->getKey("/enigma/epgMemStoreDir", storeLocations[eEPGStore::MEM_STORE]);
 	
-	oldStoreLocations[eEPGStore::SQLITE_STORE] = storeLocations[eEPGStore::SQLITE_STORE];
+	if(libexist)
+		oldStoreLocations[eEPGStore::SQLITE_STORE] = storeLocations[eEPGStore::SQLITE_STORE];
 	oldStoreLocations[eEPGStore::MEM_STORE] = storeLocations[eEPGStore::MEM_STORE];
 	
 	// Create combobox for EPG type
 	lblStores = new eLabel( this );
-	comStores = new eComboBox( this, 2, lblStores );
+	if(libexist)
+		comStores = new eComboBox( this, 2, lblStores );
+	else
+		comStores = new eComboBox( this, 1, lblStores );
 	
 	lblStores->move(ePoint( 10, yPos() ));
 	lblStores->resize(eSize( 170, widgetHeight()));
@@ -79,7 +100,8 @@ EpgSetup::EpgSetup() :
 	comStores->clear();
 	
 	new eListBoxEntryText(*comStores, _("Enigma EPG"), (void *) eEPGStore::MEM_STORE );
-	new eListBoxEntryText(*comStores, _("SQLite database"), (void *) eEPGStore::SQLITE_STORE );
+	if(libexist)
+		new eListBoxEntryText(*comStores, _("SQLite database"), (void *) eEPGStore::SQLITE_STORE );
 
 	comStores->setCurrent((void*) oldStore);
 	comStores->loadDeco();

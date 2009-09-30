@@ -666,20 +666,31 @@ void LocalEventData::getLocalData(EITEvent *event, eString *name, eString *desc)
 	if ( desc )
 	{
 		*desc = ShortEventText;
-		if (ShortEventText && ExtendedEventText)
+		
+//		eDebug("LocalEventData::getLocalData ShortEventText=%s",ShortEventText.c_str());
+//		eDebug("LocalEventData::getLocalData ExtendedEventText=%s",ExtendedEventText.c_str());
+		int showAllEventText=0;
+		eConfig::getInstance()->getKey("/ezap/osd/showAllEventText",showAllEventText);
+		if (ExtendedEventText )
 		{
-			/*
-			 * Bit of a hack, some providers put the event description partly in the short descriptor,
-			 * and the remainder in extended event descriptors.
-			 * We cannot really recognise this, but we'll use the length of the short description
-			 * to guess whether we should concatenate both descriptions (without any spaces),
-			 * or put a few linefeeds in between.
-			 */
-			if (ShortEventText.size() < 180)
+			if(showAllEventText)
 			{
-				*desc += "\n\n";
+				/*
+				 * Bit of a hack, some providers put the event description partly in the short descriptor,
+				 * and the remainder in extended event descriptors.
+				 * We cannot really recognise this, but we'll use the length of the short description
+				 * to guess whether we should concatenate both descriptions (without any spaces),
+				 * or put a few linefeeds in between.
+				 */
+				if (ShortEventText.size() < 180)
+				{
+					*desc += "\n\n";
+				}
+				*desc += ExtendedEventText;
 			}
+			else
+				*desc=ExtendedEventText;
 		}
-		*desc += ExtendedEventText;
+		
 	}
 }

@@ -89,8 +89,8 @@ void eLabel::setLineHeight(int lineheight)
 
 int  eLabel::getLineHeight()
 {
-	if(!lineHeight && para)
-		lineHeight=para->getLineHeight();
+	if(!lineHeight)
+		lineHeight=(int)fontRenderClass::getInstance()->getLineHeight(getFont() )*3/2;
 	return lineHeight;
 }
 

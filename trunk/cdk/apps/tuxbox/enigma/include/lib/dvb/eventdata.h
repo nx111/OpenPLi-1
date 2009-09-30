@@ -101,13 +101,17 @@ class eventData
  	friend class eEPGMemStore;
 private:
 	__u8* EITdata;
+	__u8 ByteSize;
+	static descriptorMap descriptors;
+	static __u8 data[4108];
 public:
 	__u8 type;
 	__u8 source;	//data source type: 1:(ENIGMA_PLI_V5)epg.dat; 2:(ENIGMA_EPG_V7)epg.dat; 
 				//3:PLI sqlite dat;   9:Transponder's data;  0:default 
+	bool saved;   //EITdata copyed for ENIGMA_PLI_V5
 	static int CacheSize;
-	static void load(FILE *);
-	static void save(FILE *);
+	static void load(FILE *f,int source=0);
+	static void save(FILE *f);
 	eventData(const eit_event_struct* e, int size, int type,int source=srDEFAULT);
 	~eventData();
 	const eit_event_struct* get() const;

@@ -3,9 +3,10 @@
 #define HILO(x) (x##_hi << 8 | x##_lo)
 
 int eventData::CacheSize=0;
+__u8 eventData::data[4108];
 
 eventData::eventData(const eit_event_struct* e, int size, int type,int source)
-	:EITdata(NULL), type(type&0xFF)
+	:EITdata(NULL),ByteSize(size&0xFF), type(type&0xFF),saved(0)
 {
 	this->source=source;
 	if (!e)
@@ -14,6 +15,7 @@ eventData::eventData(const eit_event_struct* e, int size, int type,int source)
 	if (!size)
 	{
 		size = HILO(e->descriptors_loop_length) + EIT_LOOP_SIZE;
+		ByteSize=size&0xFF;
 	}
 	EITdata = new __u8[size];
 	CacheSize+=size;
@@ -22,7 +24,34 @@ eventData::eventData(const eit_event_struct* e, int size, int type,int source)
 
 const eit_event_struct* eventData::get() const
 {
-	return (const eit_event_struct*)EITdata;
+	if ((source!=srGEMINI_EPGDAT)||saved)
+		return (const eit_event_struct*)EITdata;
+
+	int pos = 12;
+	int tmp = ByteSize-10;
+	memcpy(data, EITdata, 10);
+	int descriptors_length=0;
+	__u32 *p = (__u32*)(EITdata+10);
+	while(tmp>3)
+	{
+		descriptorMap::iterator it =
+			descriptors.find(*p++);
+		if ( it != descriptors.end() )
+		{
+			int b = it->second.second[1]+2;
+			memcpy(data+pos, it->second.second, b );
+			pos += b;
+			descriptors_length += b;
+//			eDebug("eventData::get,id=0x%08x dataid=0x%08x data=%s",it->first,it->second.first,it->second.second);
+		}
+		tmp-=4;
+	}
+	ASSERT(pos <= 4108);
+	((eit_event_struct *)data)->descriptors_loop_length_hi = (descriptors_length >> 8) & 0x0F;
+	((eit_event_struct *)data)->descriptors_loop_length_lo = descriptors_length & 0xFF;
+//	eDebug("eventData::get, len=%03x\n--------------------------------",descriptors_length);
+	return (eit_event_struct*)data;
+	
 }
 
 int eventData::getSize()
@@ -33,11 +62,66 @@ int eventData::getSize()
 
 eventData::~eventData()
 {
+	if ( ByteSize && source==srGEMINI_EPGDAT)
+	{
+		CacheSize -= ByteSize;
+		__u32 *d = (__u32*)(EITdata+10);
+		ByteSize -= 10;
+		while(ByteSize>3)
+		{
+			descriptorMap::iterator it =
+				descriptors.find(*d++);
+			if ( it != descriptors.end() )
+			{
+				descriptorPair &p = it->second;
+				if (!--p.first) // no more used descriptor
+				{
+					CacheSize -= it->second.second[1];
+					delete [] it->second.second;  	// free descriptor memory
+					descriptors.erase(it);	// remove entry from descriptor map
+				}
+			}
+			ByteSize -= 4;
+		}
+	}
 	delete [] EITdata;
 }
-
-void eventData::load(FILE *f)
+void eventData::free_descriptors()
 {
+	for(descriptorMap::iterator it =descriptors.begin();it !=descriptors.end();)
+	{
+		CacheSize -= it->second.second[1];
+		delete [] it->second.second;  
+		descriptors.erase(it++);
+	}
+}
+void eventData::load(FILE *f,int source)
+{
+	if (source!=srGEMINI_EPGDAT)
+		return;
+
+	int size=0;
+	int id=0;
+	__u8 header[2];
+	descriptorPair p;
+	fread(&size, sizeof(int), 1, f);
+	while(size)
+	{
+		fread(&id, sizeof(__u32), 1, f);
+		fread(&p.first, sizeof(int), 1, f);
+
+		fread(header, 2, 1, f);
+		int bytes = header[1]+2;
+		p.second = new __u8[bytes];
+		p.second[0] = header[0];
+		p.second[1] = header[1];
+		fread(p.second+2, bytes-2, 1, f);
+		descriptors[id]=p;
+		--size;
+		CacheSize+=bytes;
+	//	eDebug("descriptor: id=0x%08x size=%02d data=%s",id,bytes,p.second);
+	}
+	
 }
 
 void eventData::save(FILE *f)

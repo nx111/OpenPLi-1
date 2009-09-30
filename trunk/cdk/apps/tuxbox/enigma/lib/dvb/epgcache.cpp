@@ -1021,6 +1021,11 @@ void eEPGCache::reloadStore()	// Can be used to switch between stores
 		startEPG();
 }
 
+void eEPGCache::save()
+{
+	if(!epgStore)return;
+	epgStore->save();
+}
 
 void eEPGCache::forceEpgScan()
 {
@@ -1331,10 +1336,10 @@ void eEPGCache::gotMessage( const Message &msg )
 			contentReader.start(msg.pid);
 			break;
 #endif
-/*		case Message::save:
+		case Message::save:
 			save();
 			break;
-		case Message::load:
+/*		case Message::load:
 			flushEPG();
 			load();
 			break;	*/
