@@ -1276,7 +1276,8 @@ eString PPanel::getPPanelName(const eString &xmlFile)
 	int len;                                                            
 	bool error = false;                                                 
 
-	XMLTreeParser* dir = new XMLTreeParser("ISO-8859-1");
+	XMLTreeParser* dir = new XMLTreeParser("UTF-8");
+//	XMLTreeParser* dir = new XMLTreeParser("ISO-8859-1");
 	FILE* fh = fopen(xmlFile.c_str(), "r");                
 
 	if(fh && dir)

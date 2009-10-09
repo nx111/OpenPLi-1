@@ -220,7 +220,7 @@ void weatherMain::parse(eString file)
 	weatherItems.clear();
 
 	if(in) 
-	{	parser = new XMLTreeParser("ISO-8859-1");
+	{	parser = new XMLTreeParser("UTF-8");
 		char buf[2048];
 
 		int done;
@@ -302,10 +302,17 @@ int weatherMain::getTemp(eString description, eString key)
 }
 
 void weatherMain::getDescription(eString description, eString *out)
-{	for(unsigned int i = 0; i < description.length(); i++)
+{
+	for(unsigned int i = 0; i < description.length()-4; i++)
+	{	if(description.mid(i, 4) == "<br>")
+		{	*out = description.mid(0, i);
+			return;
+		}
+	}
+	for(unsigned int i = 0; i < description.length(); i++)
 	{	if(description.mid(i, 1) == ",")
 		{	*out = description.mid(0, i);
-			break;
+			return;
 		}
 	}
 }
@@ -443,7 +450,7 @@ ConfigParser::ConfigParser()
 		in = fopen(CONFIGDIR"/weather.xml", "rt");
 	
 	if(in)
-	{	parser = new XMLTreeParser("ISO-8859-1");
+	{	parser = new XMLTreeParser("UTF-8");
 		char buf[2048];
 
 		int done;

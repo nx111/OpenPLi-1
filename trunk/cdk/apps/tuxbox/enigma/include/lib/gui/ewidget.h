@@ -26,7 +26,6 @@ public:
 
 		changedText, changedFont, changedForegroundColor, changedBackgroundColor,
 		changedSize, changedPosition, changedPixmap, childChangedHelpText,
-		changedScreen,
 
 		evtAction, evtShortcut, wantClose
 	} type;
@@ -70,7 +69,6 @@ class eWidget: public Object
 		stateVisible=2
 	};
 	void init_eWidget();
-	
 public:
 	/**
 	 * \brief Exits a (model) widget.

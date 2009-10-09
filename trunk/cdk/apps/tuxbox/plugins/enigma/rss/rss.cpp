@@ -395,7 +395,7 @@ int ConfigParser::parse(eString file)
  		char encoding[256];
 
 		int done;
-		sprintf(encoding,"ISO-8859-1");
+		sprintf(encoding,"UTF-8");
 		unsigned int len=fread(buf, 1, sizeof(buf), in);
 		char * pointer=strstr(buf, "encoding=");
 		if (pointer!=NULL) pointer=strstr(pointer, "\"");

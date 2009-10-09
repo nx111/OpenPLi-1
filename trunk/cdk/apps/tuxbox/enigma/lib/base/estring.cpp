@@ -598,7 +598,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 
 
 //	eDebug("ConvertDVBUTF8-1:<data=%s><table=0x%x><tsidonid=%d>\n",data,table,tsidonid);
-	if (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING)
+	if (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING ||encode==GB2312_ENCODING || encode==BIG5_ENCODING )
 	 switch(data[0])
 	 {
 		case 0:
@@ -634,12 +634,12 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 		case 0x13:
 			++i;
 			encode=GB2312_ENCODING;
-			eDebug("unsup. GB-2312-1980 enc.");
+//			eDebug("unsup. GB-2312-1980 enc.");
 			break;
 		case 0x14:
 			++i;
 			encode=BIG5_ENCODING;
-			eDebug("unsup. Big5 subset of ISO/IEC 10646-1 enc.");
+//			eDebug("unsup. Big5 subset of ISO/IEC 10646-1 enc.");
 			break;
 		case 0x15:
 			encode=UTF8_ENCODING;

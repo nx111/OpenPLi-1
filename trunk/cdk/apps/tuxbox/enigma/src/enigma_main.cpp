@@ -2782,9 +2782,7 @@ void eZapMain::setNext(EITEvent *event)
 
 void eZapMain::setEIT(EIT *eit)
 {
-	int transepg=0;
-	eConfig::getInstance()->getKey("/elitedvb/extra/transepg",transepg);
-	if (eit && transepg&&(setEPGNowNext() < 0))
+	if (eit && (setEPGNowNext() < 0))
 	{
 		int p = 0;
 		eServiceReferenceDVB &ref=(eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
@@ -7643,6 +7641,16 @@ void eZapMain::handleServiceEvent(const eServiceEvent &event)
 	}
 	case eServiceEvent::evtAspectChanged:
 	{
+		int vhsize=getVidSize().height();
+		int pal_offset=eSkin::getActive()->queryValue("PAL_OFFSET", 0);
+		int ntsc_offset=eSkin::getActive()->queryValue("NTSC_OFFSET", 0);
+		if(vhsize==576)vhsize+=pal_offset;
+		if(vhsize==480)vhsize+=ntsc_offset;
+		if(vhsize)
+			parent->resize(eSize(720,vhsize));
+		resetPositionSize();
+		parent->invalidate(eRect(), 1);
+
 		int aspect = eServiceInterface::getInstance()->getService()->getAspectRatio();
 		set16_9Logo(aspect);
         	VidFormat->setText(getVidFormat());
@@ -7658,8 +7666,6 @@ void eZapMain::handleServiceEvent(const eServiceEvent &event)
 
 		eServiceReference &ref = eServiceInterface::getInstance()->service;
 		startService(ref, err);
-
-//		eZapMain::getInstance()->resetPositionSize();	//PAL and NTSC switched or Resolution changed
 
 		rdstext_decoder.clear_service();
 
@@ -8151,6 +8157,7 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 		}
 	}
 #endif // DISABLE_FILE
+
 	int showosd = 1;
 	eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
 	if (showosd)

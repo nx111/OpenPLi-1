@@ -27,7 +27,7 @@ const eit_event_struct* eventData::get() const
 	if ((source!=srGEMINI_EPGDAT)||saved)
 		return (const eit_event_struct*)EITdata;
 
-	int pos = 12;
+	int pos = EIT_LOOP_SIZE;
 	int tmp = ByteSize-10;
 	memcpy(data, EITdata, 10);
 	int descriptors_length=0;
@@ -42,14 +42,12 @@ const eit_event_struct* eventData::get() const
 			memcpy(data+pos, it->second.second, b );
 			pos += b;
 			descriptors_length += b;
-//			eDebug("eventData::get,id=0x%08x dataid=0x%08x data=%s",it->first,it->second.first,it->second.second);
 		}
 		tmp-=4;
 	}
 	ASSERT(pos <= 4108);
 	((eit_event_struct *)data)->descriptors_loop_length_hi = (descriptors_length >> 8) & 0x0F;
 	((eit_event_struct *)data)->descriptors_loop_length_lo = descriptors_length & 0xFF;
-//	eDebug("eventData::get, len=%03x\n--------------------------------",descriptors_length);
 	return (eit_event_struct*)data;
 	
 }
@@ -119,7 +117,6 @@ void eventData::load(FILE *f,int source)
 		descriptors[id]=p;
 		--size;
 		CacheSize+=bytes;
-	//	eDebug("descriptor: id=0x%08x size=%02d data=%s",id,bytes,p.second);
 	}
 	
 }

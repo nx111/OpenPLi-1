@@ -1068,16 +1068,12 @@ void eEPGCache::startEPG()
 		eDebug("[EPGC] start caching events(%d)", time(0)+eDVB::getInstance()->time_difference);
 		state=0;
 		haveData=0;
-		int transepg=0;
-		eConfig::getInstance()->getKey("/extras/transepg", transepg);
-		if (transepg){
-			scheduleReader.start();
-			isRunning |= 1 << SCHEDULE;
-			nownextReader.start();
-			isRunning |= 1 << NOWNEXT;
-			scheduleOtherReader.start();
-			isRunning |= 1 << SCHEDULE_OTHER;
-		}
+		scheduleReader.start();
+		isRunning |= 1 << SCHEDULE;
+		nownextReader.start();
+		isRunning |= 1 << NOWNEXT;
+		scheduleOtherReader.start();
+		isRunning |= 1 << SCHEDULE_OTHER;
 #ifdef ENABLE_MHW_EPG
 		int mhwepg = 1;
 		eConfig::getInstance()->getKey("/extras/mhwepg", mhwepg);

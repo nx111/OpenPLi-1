@@ -50,7 +50,6 @@ private:
 	eCheckbox *chkMhwEPG;
 	eCheckbox *chkDishEPG;
 	eCheckbox *chkLimitEPG;
-	eCheckbox *chkTransEPG;
 	int oldStore;
 	eString storeLocations[eEPGStore::NR_OF_STORES];
 	eString oldStoreLocations[eEPGStore::NR_OF_STORES];

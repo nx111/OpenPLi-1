@@ -321,7 +321,28 @@ eString getVidFormat()
 }
 
 
+eSize getVidSize()
+{
+	FILE *bitstream=0;
 	
+	if (Decoder::current.vpid!=-1)
+		bitstream=fopen("/proc/bus/bitstream", "rt");
+	if (bitstream)
+	{
+		char buffer[100];
+		int xres=0, yres=0;
+		while (fgets(buffer, 100, bitstream))
+		{
+			if (!strncmp(buffer, "H_SIZE:  ", 9))
+				xres=atoi(buffer+9);
+			if (!strncmp(buffer, "V_SIZE:  ", 9))
+				yres=atoi(buffer+9);
+		}
+		fclose(bitstream);
+		return eSize(xres,yres);
+	}
+	return eSize();
+}	
 void siPID::init_siPID(decoderParameters parms, const eService *cservice, eWidget *parent)
 {
 	eDVBServiceController *sapi=eDVB::getInstance()->getServiceAPI();

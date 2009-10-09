@@ -42,7 +42,6 @@ void eWidget::init_eWidget()
 
 	if (parent)
 		parent->childlist.push_back(this);
-
 	addActionMap(&i_cursorActions->map);
 }
 eWidget::~eWidget()
@@ -291,8 +290,6 @@ void eWidget::resetPositionSize()
 	if(scPosition)setProperty("cposition",scPosition);
 	if(sSize)setProperty("size",sSize);
 	if(scSize)setProperty("csize",scSize);
-	invalidate();
-	
 }
 void eWidget::invalidate(eRect area, int force)
 {
@@ -571,9 +568,6 @@ int eWidget::eventHandler(const eWidgetEvent &evt)
 	case eWidgetEvent::changedPosition:
 	case eWidgetEvent::changedPixmap:
 		invalidate();
-		break;
-	case eWidgetEvent::changedScreen:
-		resetPositionSize();
 		break;
 	case eWidgetEvent::evtShortcut:
 			setFocus(this);

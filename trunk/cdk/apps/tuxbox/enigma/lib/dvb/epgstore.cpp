@@ -497,7 +497,7 @@ int eEPGMemStore::readEncode()
 			{
 				if ( line[0] == '#' )
 					continue;
-				char sec[64]="";
+				char sec[256]="";
 				count = sscanf(line, "%s", sec);
 				if ((sec[0] == '#')||!count)
 					continue;
@@ -613,7 +613,7 @@ void eEPGMemStore::load()
 						}
 						eventData::load(f,srPLI_EPGDAT);
 						
-						eDebug("[EPGM] %d events read from %s", cnt, (dbDir + "/epg.dat").c_str());
+						eDebug("[EPGM] %d events read from ENIGMA_PLI_V5 %s", cnt, (dbDir + "/epg.dat").c_str());
 					}
 					else if ( !strncmp( text1, "ENIGMA_EPG_V7", 13) )
 					{
@@ -659,20 +659,22 @@ void eEPGMemStore::load()
 							{
 								const eit_event_struct* eit=evIt->second->get();
 								eventData::CacheSize-=HILO(((eit_event_struct *)evIt->second->EITdata)->descriptors_loop_length);
-								int len=HILO(eit->descriptors_loop_length)+12;
+								int len=HILO(eit->descriptors_loop_length)+EIT_LOOP_SIZE;
 								delete [](evIt->second->EITdata);
+								evIt->second->EITdata=0;
 								evIt->second->EITdata=new __u8[len];
+								evIt->second->saved=true;
+								if(!evIt->second->EITdata)continue;	//new failed
 								eventData::CacheSize+=len;
 								memcpy(evIt->second->EITdata,(__u8*)eit,len);
-								evIt->second->saved=true;
 
-						//		eDebug("ENIGMA_EPG_V7 len=0x%x EITdata=%s",len,((__u8*)eit)+12);
+//								eDebug("ENIGMA_EPG_V7 len=0x%x EITdata=%s",len,((__u8*)eit)+12);
 							}
 
 						//free eventData::descriptors 
 						eventData::free_descriptors();
 
-						eDebug("[EPGM] %d events read from %s", cnt, (dbDir + "/epg.dat").c_str());
+						eDebug("[EPGM] %d events read from ENIGMA_EPG_V7 %s", cnt, (dbDir + "/epg.dat").c_str());
 					}
 					else
 					{

@@ -60,8 +60,6 @@ EpgSetup::EpgSetup() :
 	int enableDishEPG(0);
 	eConfig::getInstance()->getKey("/extras/disheepg", enableDishEPG);
 #endif
-	int enableTransEPG(0);
-	eConfig::getInstance()->getKey("/extras/transepg",enableTransEPG);
 	int enableEPGLimit(1);
 	eConfig::getInstance()->getKey("/enigma/epgStoreLimit", enableEPGLimit);
 
@@ -176,13 +174,6 @@ EpgSetup::EpgSetup() :
 	chkDishEPG->setHelpText(_("DISH/BEV network EEPG, up to 9 days EPG"));
 	chkDishEPG->loadDeco();
 #endif
-	nextYPos(35);
-	chkTransEPG = new eCheckbox(this, enableTransEPG, 1);
-	chkTransEPG->setText(_("Enable Transponder EPG"));
-	chkTransEPG->move(ePoint(10, yPos()));
-	chkTransEPG->resize(eSize(420, widgetHeight()));
-	chkTransEPG->setHelpText(_("Transponder EPG"));
-	chkTransEPG->loadDeco();
 
 	nextYPos(35);
 	chkLimitEPG = new eCheckbox(this, enableEPGLimit, 1);
@@ -302,7 +293,6 @@ void EpgSetup::okPressed()
 #ifdef ENABLE_DISH_EPG
 	eConfig::getInstance()->setKey("/extras/disheepg", chkDishEPG->isChecked() ? 1 : 0);
 #endif
-	eConfig::getInstance()->setKey("/extras/transepg", chkTransEPG->isChecked() ? 1 : 0);
 
 	eConfig::getInstance()->setKey("/enigma/epgStoreLimit", chkLimitEPG->isChecked() ? 1 : 0);
 
