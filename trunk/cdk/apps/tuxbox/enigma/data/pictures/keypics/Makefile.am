@@ -6,7 +6,7 @@ install_DATA = \
 	button_dream.png button_green.png button_help.png button_info.png button_lame.png \
 	button_radio.png button_red.png button_text.png button_tv.png button_video.png \
 	button_yellow.png button_arrow_left.png button_arrow_right.png button_-.png button_+.png \
-	button_?.png button_home.png button_dbox.png button_mute.png button_menu.png button_exit.png \
+	button_home.png button_dbox.png button_mute.png button_menu.png button_exit.png \
 	button_bouq.png button_ok.png \
 	button_shift_red.png button_shift_green.png button_shift_yellow.png button_shift_blue.png
 

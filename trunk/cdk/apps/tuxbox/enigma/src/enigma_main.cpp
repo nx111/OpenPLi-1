@@ -2386,7 +2386,7 @@ void eZapMain::init_main()
 #endif
 	loadPlaylist(true);
 	loadUserBouquets( false );
-
+	
 	eServiceSelector *sel = eZap::getInstance()->getServiceSelector();
 	CONNECT(sel->addServiceToPlaylist, eZapMain::doPlaylistAdd);
 	CONNECT(sel->addServiceToUserBouquet, eZapMain::addServiceToUserBouquet);
@@ -2457,6 +2457,7 @@ void eZapMain::init_main()
 			playService( modeLast[mode].current() ,0 );  // then play the last service
 	}
 	message_notifier.send(eZapMain::messageCheckVCR);
+
 	epgReadyTimer.start(1000*10);
 }
 
@@ -7642,6 +7643,7 @@ void eZapMain::handleServiceEvent(const eServiceEvent &event)
 	case eServiceEvent::evtAspectChanged:
 	{
 		int vhsize=getVidSize().height();
+
 		int pal_offset=eSkin::getActive()->queryValue("PAL_OFFSET", 0);
 		int ntsc_offset=eSkin::getActive()->queryValue("NTSC_OFFSET", 0);
 		if(vhsize==576)vhsize+=pal_offset;

@@ -23,8 +23,9 @@ const int ZAP_DELAY = 2000;	        // 2 sek
 
 
 eEPGCache *eEPGCache::instance;
-pthread_mutex_t eEPGCache::cache_lock=
-	PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP;
+std::map<eString, uniqueEPGKey>	eEPGCache::ServiceMapping;
+
+pthread_mutex_t eEPGCache::cache_lock=PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP;
 
 
 extern unsigned int crc32_table[256];
@@ -755,7 +756,7 @@ bool eEPGCache::finishEPG(int source)
 				It++;
 		}
 		Unlock();
-		if ( epgStore && epgStore->hasEPGData( current_service ) )
+		if ( epgStore && epgStore->hasEPGData(current_service ) )
 			/*emit*/ EPGAvail(1);
 
 		/*emit*/ EPGUpdated();
@@ -916,13 +917,14 @@ eEPGCache::~eEPGCache()
 	delete epgStore;
 }
 
+
 EITEvent *eEPGCache::lookupEvent(const eServiceReferenceDVB &service, int event_id)
 {
 	if (isLoading)
 		return 0;
 
 	if ( epgStore )
-		return epgStore->lookupEvent( service, event_id );
+		return epgStore->lookupEvent(getServiceReference(service), event_id );
 	else
 		return 0;
 }
@@ -933,7 +935,7 @@ EITEvent *eEPGCache::lookupEvent(const eServiceReferenceDVB &service, time_t t )
 		return 0;
 
 	if ( epgStore )
-		return epgStore->lookupEvent( service, t );
+		return epgStore->lookupEvent( getServiceReference(service), t );
 	else
 		return 0;
 }
@@ -1036,6 +1038,8 @@ void eEPGCache::forceEpgScan()
 
 void eEPGCache::startEPG()
 {
+	readServiceMappingFile();
+
 	if (paused)  // called from the updateTimer during pause...
 	{
 		paused++;
@@ -1295,6 +1299,53 @@ void eEPGCache::abortEPG()
 		temp.clear();
 		Unlock();
 	}
+}
+
+eServiceReferenceDVB eEPGCache::getServiceReference(const eServiceReferenceDVB &service)
+{
+	eTransponderList *tplist=eTransponderList::getInstance();
+	eServiceDVB* servicedvb=tplist->searchService(service);
+	if(!servicedvb)
+		return service;
+	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(servicedvb->service_name);
+	if(mIt==ServiceMapping.end())
+		return service;
+	return eServiceReferenceDVB(service.getDVBNamespace(),mIt->second.tsid,mIt->second.onid,mIt->second.sid,service.getServiceType());
+}
+
+int eEPGCache::readServiceMappingFile()
+{
+	FILE *f = fopen(CONFIGDIR "/enigma/tvmap.dat", "rt");
+	if(!f)return -1;
+	ServiceMapping.clear();
+
+	char *line = (char*) malloc(256);
+	size_t bufsize=256;
+	int count, i;
+	int sid,tsid, onid;
+	while( getline(&line, &bufsize, f) != -1 )
+	{
+		if ( line[0] == '#' )
+			continue;
+
+		char sec[4][250];
+		count = sscanf(line, "%s=%s:%s:%s", sec[0], sec[1], sec[2],sec[3]);
+		for (i = 0; i < count; i++)
+		{
+			if (sec[i][0] == '#')
+			{
+				count = i;
+				break;
+			}
+		}
+		if(count<4)continue;
+		if((sscanf(sec[1], "0x%x", &sid) == 1 && sscanf(sec[2], "0x%x", &onid) == 1 && sscanf(sec[3], "0x%x", &tsid) == 1) || (sscanf(sec[1], "%d", &sid) == 1 && sscanf(sec[2], "%d", &onid) == 1 && sscanf(sec[3], "%d", &tsid) == 1))
+		{
+			ServiceMapping[sec[0]]=uniqueEPGKey(sid,onid,tsid);
+		}
+	}
+	free(line);
+	fclose(f);
 }
 
 void eEPGCache::gotMessage( const Message &msg )

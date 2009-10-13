@@ -2155,7 +2155,7 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 			if ( s2 && !strncmp( sdescr->text.c_str(), edescr->text.c_str(), s2 < s1 ? s2 : s1 ) )
 				sdescr->text.clear();
 			sdescr = NULL;
-			eDebug("EITEvent: extended event, text: %s\n", edescr->text.c_str());
+			//eDebug("EITEvent: extended event, text: %s\n", edescr->text.c_str());
 		}
 #ifdef ENABLE_DISH_EPG
 		else if (descr->Tag() == DESCR_DISH_EVENT_NAME)

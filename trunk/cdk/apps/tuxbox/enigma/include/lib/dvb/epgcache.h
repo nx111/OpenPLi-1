@@ -12,6 +12,7 @@
 #include <lib/base/ebase.h>
 #include <lib/base/thread.h>
 #include <lib/base/message.h>
+#include <lib/dvb/dvb.h>
 
 #define HILO(x) (x##_hi << 8 | x##_lo)
 
@@ -157,6 +158,10 @@ public:
 				SCHEDULE_MHW,
 				BEV_EEPG,
 				};
+	static std::map<eString, uniqueEPGKey>	eEPGCache::ServiceMapping;
+	static int readServiceMappingFile();
+	eServiceReferenceDVB getServiceReference(const eServiceReferenceDVB &service);
+
 #ifdef ENABLE_MHW_EPG
 	friend class eScheduleMhw;
 #endif
@@ -299,7 +304,7 @@ public:
 	timeMapPtr getTimeMapPtr(const eServiceReferenceDVB &service, time_t from=0, time_t to=0, int limit=0)
 	{
 		if ( epgStore )
-			return epgStore->getTimeMapPtr( service, from, to, limit );
+			return epgStore->getTimeMapPtr( getServiceReference(service), from, to, limit );
 		else
 			return timeMapPtr();
 	}
@@ -307,7 +312,7 @@ public:
 	eventDataPtr getEventDataPtr( const eServiceReferenceDVB& ref, time_t t )
 	{
 		if ( epgStore )
-			return epgStore->getEventDataPtr( ref, t );
+			return epgStore->getEventDataPtr(  getServiceReference(ref), t );
 		else
 			return eventDataPtr();
 	}
@@ -333,7 +338,7 @@ public:
 
 inline const std::list<NVODReferenceEntry>* eEPGCache::getNVODRefList(const eServiceReferenceDVB &service)
 {
-	nvodMap::iterator It = NVOD.find( service );
+	nvodMap::iterator It = NVOD.find(  getServiceReference(service) );
 	if ( It != NVOD.end() && It->second.size() )
 		return &(It->second);
 	else

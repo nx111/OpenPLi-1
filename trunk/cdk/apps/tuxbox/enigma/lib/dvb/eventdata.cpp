@@ -24,7 +24,7 @@ eventData::eventData(const eit_event_struct* e, int size, int type,int source)
 
 const eit_event_struct* eventData::get() const
 {
-	if ((source!=srGEMINI_EPGDAT)||saved)
+	if (source!=srGEMINI_EPGDAT)
 		return (const eit_event_struct*)EITdata;
 
 	int pos = EIT_LOOP_SIZE;
@@ -106,7 +106,10 @@ void eventData::load(FILE *f,int source)
 	while(size)
 	{
 		fread(&id, sizeof(__u32), 1, f);
-		fread(&p.first, sizeof(int), 1, f);
+		fread(&p.first, sizeof(__u16), 1, f);
+
+		__u16 reserverd;
+		fread(&reserverd,sizeof(__u16),1,f);
 
 		fread(header, 2, 1, f);
 		int bytes = header[1]+2;

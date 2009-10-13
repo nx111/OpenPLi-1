@@ -341,7 +341,7 @@ eSize getVidSize()
 		fclose(bitstream);
 		return eSize(xres,yres);
 	}
-	return eSize();
+	return eSize(720,576);
 }	
 void siPID::init_siPID(decoderParameters parms, const eService *cservice, eWidget *parent)
 {
