@@ -1,15 +1,15 @@
 9
 
 dir
-14
+23
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-09-10T18:37:07.951476Z
-9
-daf2000
+2009-10-05T19:09:19.345015Z
+21
+pieterg
 
 
 svn:special svn:externals svn:needs-lock
@@ -25,40 +25,6 @@ svn:special svn:externals svn:needs-lock
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-button_gray.png
-file
-
-
-
-
-2009-09-15T02:53:13.196541Z
-7b33cb4fbdcf6fe061cd4575f24152e9
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-124
 
 stereo_on.png
 file
@@ -94,14 +60,14 @@ has-props
 
 118
 
-separator-fs8.png
+button_gray.png
 file
 
 
 
 
 2009-09-15T02:53:13.196541Z
-05f8f54574f4464b3c1e89b88e2c7b50
+7b33cb4fbdcf6fe061cd4575f24152e9
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -126,7 +92,7 @@ has-props
 
 
 
-166
+124
 
 arrow_up.png
 file
@@ -162,6 +128,40 @@ has-props
 
 122
 
+separator-fs8.png
+file
+
+
+
+
+2009-09-15T02:53:13.196541Z
+05f8f54574f4464b3c1e89b88e2c7b50
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+166
+
 padlock_small-fs8.png
 file
 
@@ -195,40 +195,6 @@ has-props
 
 
 174
-
-button_red.png
-file
-
-
-
-
-2009-09-15T02:53:13.196541Z
-32eb3137f8bea15a6550765d6ff4378a
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-124
 
 dolby_on.png
 file
@@ -264,6 +230,40 @@ has-props
 
 122
 
+button_red.png
+file
+
+
+
+
+2009-09-15T02:53:13.196541Z
+32eb3137f8bea15a6550765d6ff4378a
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+124
+
 video.png
 file
 
@@ -297,40 +297,6 @@ has-props
 
 
 279
-
-checked_lcd.png
-file
-
-
-
-
-2009-09-15T02:53:13.200542Z
-aa91f8b0b471558bfcd9005afc3ff8b5
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-176
 
 volumeslider-fs8.png
 file
@@ -366,17 +332,14 @@ has-props
 
 265
 
-blueqt
-dir
-
-padlock-fs8.png
+checked_lcd.png
 file
 
 
 
 
 2009-09-15T02:53:13.200542Z
-2ce2944b00127cd43749456230b303b1
+aa91f8b0b471558bfcd9005afc3ff8b5
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -401,7 +364,10 @@ has-props
 
 
 
-164
+176
+
+blueqt
+dir
 
 check-fs8.png
 file
@@ -436,6 +402,40 @@ has-props
 
 
 147
+
+padlock-fs8.png
+file
+
+
+
+
+2009-09-15T02:53:13.200542Z
+2ce2944b00127cd43749456230b303b1
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+164
 
 button_blue.png
 file
@@ -953,40 +953,6 @@ has-props
 
 137
 
-marker-fs8.png
-file
-
-
-
-
-2009-09-15T02:53:13.208541Z
-7f6a898286a303f5308ff14bf5205087
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-291
-
 icon-info-fs8.png
 file
 
@@ -1021,10 +987,41 @@ has-props
 
 827
 
-travel_blue
-dir
+marker-fs8.png
+file
+
+
+
+
+2009-09-15T02:53:13.208541Z
+7f6a898286a303f5308ff14bf5205087
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+291
 
-small
+travel_blue
 dir
 
 crypt_on_small.png
@@ -1061,6 +1058,9 @@ has-props
 
 99
 
+small
+dir
+
 lcd_standby.png
 file
 
@@ -1094,9 +1094,6 @@ has-props
 
 
 1299
-
-chk_v2
-dir
 
 icon-warning-fs8.png
 file
@@ -1132,39 +1129,8 @@ has-props
 
 764
 
-icon-question-fs8.png
-file
-
-
-
-
-2009-09-15T02:53:13.212542Z
-d5d863c2143036ecffc80e5b3bde2b8b
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-905
+chk_v2
+dir
 
 lcd-clock.png
 file
@@ -1200,20 +1166,17 @@ has-props
 
 169
 
-mediapli
-dir
-
-radio.mvi
+icon-question-fs8.png
 file
 
 
 
 
-2009-09-15T02:57:06.537043Z
-1ce8acf9a87d05beb48c9c41a03937da
-2009-09-10T18:37:07.951476Z
-9
-daf2000
+2009-09-15T02:53:13.212542Z
+d5d863c2143036ecffc80e5b3bde2b8b
+2009-08-14T21:33:06.552841Z
+2
+plindeman
 has-props
 
 
@@ -1235,7 +1198,44 @@ has-props
 
 
 
-49877
+905
+
+mediapli
+dir
+
+radio.mvi
+file
+
+
+
+
+2009-10-13T07:29:02.571897Z
+c678a1be810815c6dde478b55a1fcd60
+2009-10-05T19:09:19.345015Z
+21
+pieterg
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+59876
 
 mute-fs8.png
 file
@@ -1444,40 +1444,6 @@ has-props
 
 120
 
-event_failed-fs8.png
-file
-
-
-
-
-2009-09-15T02:53:13.216543Z
-d1fb09bfbd77a5a1157da753002649f9
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-230
-
 newfound-fs8.png
 file
 
@@ -1512,8 +1478,39 @@ has-props
 
 124
 
-shortcut
-dir
+event_failed-fs8.png
+file
+
+
+
+
+2009-09-15T02:53:13.216543Z
+d1fb09bfbd77a5a1157da753002649f9
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+230
 
 rass_logo.png
 file
@@ -1549,10 +1546,13 @@ has-props
 
 1266
 
-darkpli_8
+shortcut
 dir
 
 chk_stone
+dir
+
+darkpli_8
 dir
 
 scan.mvi
@@ -1592,9 +1592,6 @@ has-props
 pingu
 dir
 
-chk_silver
-dir
-
 button_yellow.png
 file
 
@@ -1628,6 +1625,9 @@ has-props
 
 
 124
+
+chk_silver
+dir
 
 dreamlogo-fs8.png
 file

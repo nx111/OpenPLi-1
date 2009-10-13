@@ -112,6 +112,7 @@ public:
 	static int CacheSize;
 	static void load(FILE *f,int source=0);
 	static void save(FILE *f);
+
 	eventData(const eit_event_struct* e, int size, int type,int source=srDEFAULT);
 	~eventData();
 	const eit_event_struct* get() const;

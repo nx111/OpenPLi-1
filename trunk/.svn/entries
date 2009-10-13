@@ -1,14 +1,14 @@
 9
 
 dir
-14
+23
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-09-13T12:34:56.427896Z
-14
+2009-10-09T13:26:21.867108Z
+23
 daf2000
 
 
@@ -30,8 +30,5 @@ cdk
 dir
 
 external
-dir
-
-pli-oe
 dir
 

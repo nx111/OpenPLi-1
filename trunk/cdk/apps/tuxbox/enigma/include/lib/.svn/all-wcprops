@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/include/lib
+V 69
+/svnroot/openpli/!svn/ver/20/trunk/cdk/apps/tuxbox/enigma/include/lib
 END
 Makefile.am
 K 25

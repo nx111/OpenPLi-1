@@ -84,15 +84,7 @@ eventData::~eventData()
 	}
 	delete [] EITdata;
 }
-void eventData::free_descriptors()
-{
-	for(descriptorMap::iterator it =descriptors.begin();it !=descriptors.end();)
-	{
-		CacheSize -= it->second.second[1];
-		delete [] it->second.second;  
-		descriptors.erase(it++);
-	}
-}
+
 void eventData::load(FILE *f,int source)
 {
 	if (source!=srGEMINI_EPGDAT)

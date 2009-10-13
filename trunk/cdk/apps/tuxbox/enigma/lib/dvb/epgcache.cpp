@@ -301,6 +301,7 @@ void eEPGCache::init_eEPGCache()
 	CONNECT(abortTimer.timeout, eEPGCache::abortNonAvail);
 	CONNECT(organiseTimer.timeout, eEPGCache::organiseEvent);
 	instance=this;
+	readServiceMappingFile();
 	epgStore = eEPGStore::createEPGStore();
 	setOrganiseTimer();
 	epgHours = 4 * 24;
@@ -1016,6 +1017,8 @@ void eEPGCache::reloadStore()	// Can be used to switch between stores
 	epgStore = 0;
 	delete tempStore;
 	serviceLastUpdated.clear();
+	readServiceMappingFile();
+
 	epgStore = eEPGStore::createEPGStore();
 	
 	restartEPG();
@@ -1038,7 +1041,6 @@ void eEPGCache::forceEpgScan()
 
 void eEPGCache::startEPG()
 {
-	readServiceMappingFile();
 
 	if (paused)  // called from the updateTimer during pause...
 	{
@@ -1315,10 +1317,12 @@ eServiceReferenceDVB eEPGCache::getServiceReference(const eServiceReferenceDVB &
 
 int eEPGCache::readServiceMappingFile()
 {
-	FILE *f = fopen(CONFIGDIR "/enigma/tvmap.dat", "rt");
+
+	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "r");
 	if(!f)return -1;
 	ServiceMapping.clear();
-
+	
+	
 	char *line = (char*) malloc(256);
 	size_t bufsize=256;
 	int count, i;
@@ -1329,7 +1333,26 @@ int eEPGCache::readServiceMappingFile()
 			continue;
 
 		char sec[4][250];
-		count = sscanf(line, "%s=%s:%s:%s", sec[0], sec[1], sec[2],sec[3]);
+		const char splitch[]=":=";
+		char *p=strtok(line,splitch);
+		count=0;
+		while(p){
+			char *s=sec[count];
+			char *search;
+		        for(search=p; *search==' '  || *search=='\t' ||  *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f'; search++);
+		        do {
+		                *s++ = *search++;
+		        } while (*search != '\0');
+
+		        search = s;
+
+		        for(search--; *search==' '  || *search=='\t' || *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f'; search--);
+		        search++;
+		        *search='\0' ;
+
+			count++;
+			p=strtok(NULL,splitch);
+			}
 		for (i = 0; i < count; i++)
 		{
 			if (sec[i][0] == '#')
@@ -1339,13 +1362,14 @@ int eEPGCache::readServiceMappingFile()
 			}
 		}
 		if(count<4)continue;
-		if((sscanf(sec[1], "0x%x", &sid) == 1 && sscanf(sec[2], "0x%x", &onid) == 1 && sscanf(sec[3], "0x%x", &tsid) == 1) || (sscanf(sec[1], "%d", &sid) == 1 && sscanf(sec[2], "%d", &onid) == 1 && sscanf(sec[3], "%d", &tsid) == 1))
+		if((sscanf(sec[0], "0x%x", &sid) == 1 && sscanf(sec[1], "0x%x", &onid) == 1 && sscanf(sec[2], "0x%x", &tsid) == 1) || (sscanf(sec[0], "%d", &sid) == 1 && sscanf(sec[1], "%d", &onid) == 1 && sscanf(sec[2], "%d", &tsid) == 1))
 		{
-			ServiceMapping[sec[0]]=uniqueEPGKey(sid,onid,tsid);
+			ServiceMapping[sec[3]]=uniqueEPGKey(sid,onid,tsid);
 		}
 	}
 	free(line);
 	fclose(f);
+	return 0;
 }
 
 void eEPGCache::gotMessage( const Message &msg )
