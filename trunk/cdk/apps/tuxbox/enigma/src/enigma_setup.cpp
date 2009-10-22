@@ -152,7 +152,7 @@ void eZapSetup::updateProgressBar(void)
 	{
 		fsFree = getFsFree("/var");
 		fsUsedPerc=getFsFullPerc("/var");
-		sprintf(progressText, _("/var free %dKB"), fsFree);
+		sprintf(progressText, _("/var free %dK"), fsFree);
 		setProgressLabel((eString)progressText, 0);
 		setProgressBar(fsUsedPerc, 0);
 	}

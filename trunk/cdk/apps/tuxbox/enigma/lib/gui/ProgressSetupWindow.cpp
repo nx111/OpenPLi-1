@@ -46,8 +46,8 @@ void ProgressSetupWindow::setNrOfBars(int bars)
       progressLabel[i]->show();
    
       progressBar[i] = new eProgress(this);
-      progressBar[i]->move(ePoint(150, clientrect.height()-80-30*i));
-      progressBar[i]->resize(eSize(clientrect.width()-160, 20));
+      progressBar[i]->move(ePoint(180, clientrect.height()-80-30*i));
+      progressBar[i]->resize(eSize(clientrect.width()-190, 20));
       progressBar[i]->show();
    }
 }

@@ -290,6 +290,17 @@ void eWidget::resetPositionSize()
 	if(scPosition)setProperty("cposition",scPosition);
 	if(sSize)setProperty("size",sSize);
 	if(scSize)setProperty("csize",scSize);
+
+	if (!childlist.empty())
+	{
+		ePtrList<eWidget>::iterator It(childlist);
+		while(It != childlist.end())
+		{
+			It->resetPositionSize();
+			++It;
+		}
+	}
+
 }
 void eWidget::invalidate(eRect area, int force)
 {

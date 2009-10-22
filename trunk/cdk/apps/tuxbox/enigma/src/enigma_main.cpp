@@ -2355,7 +2355,6 @@ void eZapMain::init_main()
 
 	actual_eventDisplay=0;
 
-	eDebug("eDVB::time_diffrent=%d",eDVB::getInstance()->time_difference);
 	int useSystemTime=0,autoSetTime=0;
 	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", useSystemTime );
 	eConfig::getInstance()->getKey("/elitedvb/extra/autoSetTime", autoSetTime );
@@ -2459,6 +2458,7 @@ void eZapMain::init_main()
 	message_notifier.send(eZapMain::messageCheckVCR);
 
 	epgReadyTimer.start(1000*10);
+	
 }
 
 #ifndef DISABLE_CI
@@ -3514,7 +3514,6 @@ void eZapMain::toggleTimerMode(int newstate)
 
 void eZapMain::standbyPress(int n)
 {
-	eDebug("in standbyPress");
 	standby_nomenu = n;
 	int fastshutdown = 0;
 	eConfig::getInstance()->getKey("/extras/fastshutdown", fastshutdown);
@@ -3544,11 +3543,9 @@ void eZapMain::standbyRelease()
 
 	timeval now;
 	gettimeofday(&now,0);
-	eDebug("standbyRelease-1");
 	bool b = standbyTime < now;
 	if (b)
 	{
-		eDebug("standbyRelease-2");
 		hide();
 #ifndef DISABLE_LCD
 		eSleepTimerContextMenu m(lcdmain.lcdMenu->Title, lcdmain.lcdMenu->Element);
@@ -7602,6 +7599,26 @@ void showMP3Pic()
 		showRadioPic();
 }
 
+void eZapMain::resetPositionAndSize()
+{
+	unsigned int tvsystem = 0;
+	eConfig::getInstance()->getKey("/elitedvb/video/tvsystem", tvsystem );
+	if(tvsystem >2){	//not pal only nor ntsc only
+		int vhsize=getVidSize().height();
+		if(!vhsize)vhsize=576;
+
+		eWidget * desktop_fb=eZap::getInstance()->getDesktop(eZap::desktopFB);
+		int pal_offset=eSkin::getActive()->queryValue("PAL_OFFSET", 0);
+		int ntsc_offset=eSkin::getActive()->queryValue("NTSC_OFFSET", 0);
+		if(vhsize==576)vhsize+=pal_offset;
+		if(vhsize==480)vhsize+=ntsc_offset;
+		if(vhsize)
+			desktop_fb->resize(eSize(720,vhsize));
+		desktop_fb->resetPositionSize();
+		desktop_fb->invalidate(eRect(), 1);
+	}
+
+}
 void eZapMain::handleServiceEvent(const eServiceEvent &event)
 {
 	if ( Decoder::locked == 2 )  // timer zap in background
@@ -7642,16 +7659,8 @@ void eZapMain::handleServiceEvent(const eServiceEvent &event)
 	}
 	case eServiceEvent::evtAspectChanged:
 	{
-		int vhsize=getVidSize().height();
 
-		int pal_offset=eSkin::getActive()->queryValue("PAL_OFFSET", 0);
-		int ntsc_offset=eSkin::getActive()->queryValue("NTSC_OFFSET", 0);
-		if(vhsize==576)vhsize+=pal_offset;
-		if(vhsize==480)vhsize+=ntsc_offset;
-		if(vhsize)
-			parent->resize(eSize(720,vhsize));
-		resetPositionSize();
-		parent->invalidate(eRect(), 1);
+		resetPositionAndSize();
 
 		int aspect = eServiceInterface::getInstance()->getService()->getAspectRatio();
 		set16_9Logo(aspect);
@@ -8518,6 +8527,7 @@ void eZapMain::gotMessage(const int &c)
 				eZapStandby::getInstance()->wakeUp(0);
 			else if ( enigmaVCR::getInstance() )
 				enigmaVCR::getInstance()->switchBack();
+			resetPositionAndSize();
 			return;
 		case eZapMain::messageCheckVCR:
 			eStreamWatchdog::getInstance()->reloadSettings();

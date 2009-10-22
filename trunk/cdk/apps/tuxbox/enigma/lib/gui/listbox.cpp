@@ -84,13 +84,14 @@ void eListBoxBase::recalcMaxEntries()
 	MaxEntries /= item_height;
 /*	eDebug("height = %d, MaxEntries = %d, item height = %d",
 		tmp, MaxEntries, item_height);*/
-	// das ist echt mal komischer code hier.. aber funktioniert :)
-	// damit werden listboxen automatisch auf die höhe resized,
-	// die benötigt wird damit alle entrys genau sichtbar sind..
-	// und kein Rand bleibt..
+	
+	// The code here is really funny times .. but works:)
+	// Make list boxes are automatically resized to the height,
+	// Needed so that all entrys are just visible ..
+	// And no edge remains ..
 	if ( tmp - ( MaxEntries*item_height ) > 0 )
 	{
-		if ( !removed_height_pixel )
+/*		if ( !removed_height_pixel )
 		{
 			removed_height_pixel = height() - ((MaxEntries*item_height) + decoheight);
 			resize( eSize( size.width(), height()-removed_height_pixel ) );
@@ -110,6 +111,10 @@ void eListBoxBase::recalcMaxEntries()
 				removed_height_pixel += tmp;
 			}
 		}
+*/
+
+		removed_height_pixel = height() - ((MaxEntries*item_height) + decoheight);
+		resize( eSize( size.width(), height()-removed_height_pixel ) );
 	}
 /*	else
 		eDebug("is ok .. do nothing");*/

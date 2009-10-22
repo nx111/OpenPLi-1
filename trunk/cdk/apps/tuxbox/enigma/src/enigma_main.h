@@ -560,6 +560,7 @@ private:
 	void SoftcamNameChanged(const char *newname);
 	void usedCaidChanged(int newcaid);
 	void SoftcamInfoChanged(const char *newSoftcamInfo);
+	void resetPositionAndSize();
 
 #ifndef DISABLE_FILE
 	int skipcounter;

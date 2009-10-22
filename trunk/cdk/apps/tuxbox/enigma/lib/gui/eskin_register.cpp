@@ -5,6 +5,8 @@
 #include <lib/system/init.h>
 #include <lib/system/init_num.h>
 #include <lib/system/econfig.h>
+#include <fnmatch.h>
+#include <dirent.h>
 
 class eSkinInit
 {
@@ -22,6 +24,7 @@ public:
 				eFatal("skin load failed (" TUXBOXDATADIR "/enigma/skins/default.esml)");
 
 		eString defaultSkin = TUXBOXDATADIR "/enigma/skins/darkpli_8.esml";
+		eString skinDir = TUXBOXDATADIR "/enigma/skins";
 /*
 		eString defaultSkin =
 			eSystemInfo::getInstance()->getHwType()
@@ -31,6 +34,21 @@ public:
 			:
 				TUXBOXDATADIR "/enigma/skins/stone.esml";
 */
+
+		DIR *dir;
+		struct dirent *de;
+
+	 	dir = opendir(skinDir.c_str());
+		if(dir != NULL)		       
+		    while((de = readdir(dir)) != 0)
+		    {
+			if(fnmatch("default.esml",de->d_name,FNM_FILE_NAME))continue;
+			if(fnmatch("*.esml",de->d_name,FNM_FILE_NAME)){
+				defaultSkin=de->d_name;
+				break;
+			}
+		    }
+
 		eString skinfile=defaultSkin;
 
 		char *temp=0;
