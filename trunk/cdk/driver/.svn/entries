@@ -1,7 +1,7 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/driver
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -12,7 +12,7 @@ https://openpli.svn.sourceforge.net/svnroot/openpli
 plindeman
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -27,6 +27,9 @@ svn:special svn:externals svn:needs-lock
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
 avia
+dir
+
+event
 dir
 
 Config.make
@@ -63,9 +66,6 @@ plindeman
 
 1421
 
-event
-dir
-
 include
 dir
 
@@ -87,10 +87,10 @@ dir
 lcd
 dir
 
-ost
+fp
 dir
 
-fp
+ost
 dir
 
 Rules.make

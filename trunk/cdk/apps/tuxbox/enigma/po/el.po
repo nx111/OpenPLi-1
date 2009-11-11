@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-10 19:57+0200\n"
+"POT-Creation-Date: 2009-10-24 09:54+0800\n"
 "PO-Revision-Date: Thu Aug 11 13:47:23 CEST 2005\n"
 "Last-Translator: unknown\n"
 "Language-Team: Greek / George Zotos <zotos@zotos.biz>\n"
@@ -884,7 +884,7 @@ msgstr "Τύπος:"
 msgid "KSymb/s"
 msgstr "KSymb/s"
 
-#: default.esml:935 src/enigma_dyn.cpp:627 src/sselect.cpp:515
+#: default.esml:935 src/enigma_dyn.cpp:645 src/sselect.cpp:526
 msgid "All Services"
 msgstr "Όλες οι υπηρεσίες"
 
@@ -1215,9 +1215,9 @@ msgstr "Σαβ"
 msgid "Guard:"
 msgstr ""
 
-#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6524
+#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6597
 #: src/epgsearch.cpp:299 src/epgsearch.cpp:502 src/epgwindow.cpp:369
-#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2075
+#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2090
 #, fuzzy
 msgid "EPG Search"
 msgstr "Στιλ EPG"
@@ -1477,7 +1477,7 @@ msgstr ""
 msgid "playing..."
 msgstr "Αναπαραγωγή..."
 
-#: lib/dvb/serviceplaylist.cpp:223
+#: lib/dvb/serviceplaylist.cpp:234
 #, c-format
 msgid " (%d entries)"
 msgstr " (%d θέσεις)"
@@ -1504,8 +1504,8 @@ msgid "TV/Radio"
 msgstr "TV/Radio"
 
 #: lib/dvb/servicestructure.cpp:22 src/enigma_bouquet.cpp:12
-#: src/enigma_dyn.cpp:639 src/enigma_main.cpp:9727 src/sselect.cpp:521
-#: src/sselect.cpp:528
+#: src/enigma_dyn.cpp:657 src/enigma_main.cpp:9826 src/sselect.cpp:532
+#: src/sselect.cpp:539
 msgid "Bouquets"
 msgstr "Μπουκέτα"
 
@@ -1559,7 +1559,7 @@ msgstr ""
 msgid "Could not execute script"
 msgstr ""
 
-#: lib/gui/listbox.cpp:865
+#: lib/gui/listbox.cpp:870
 msgid "no description available"
 msgstr "Δεν υπάρχει περιγραφή"
 
@@ -1797,324 +1797,324 @@ msgstr "Επανεκίνηση... περιμένετε!"
 msgid "Reloading Enigma settings, please wait"
 msgstr "Ανίχνευση σε εξέλιξη... παρακαλώ περιμένετε"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:341
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:341
 msgid "Movie"
 msgstr "Ταινία"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:343
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:343
 msgid "Adventure"
 msgstr "Περιπέτεια"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:344
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:344
 msgid "SciFi"
 msgstr "Επισ. Φαντασία"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:345
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:345
 msgid "Comedy"
 msgstr "Κωμωδία"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:346
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:346
 msgid "Soap"
 msgstr "Σαπουνόπερα"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:347
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:347
 msgid "Romance"
 msgstr "Ρομαντικό"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:348
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:348
 msgid "Serious"
 msgstr "Σοβαρό"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:349
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:349
 msgid "Adult"
 msgstr "Για μεγάλους"
 
-#: src/channelinfo.cpp:83 src/epgsearch.cpp:350
+#: src/channelinfo.cpp:103 src/epgsearch.cpp:350
 msgid "News"
 msgstr "Ειδησεογραφικό"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Weather"
 msgstr "Καιρός"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Magazine"
 msgstr "Μαγκαζίνο"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Documentary"
 msgstr "Ντοκιμαντέρ"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Discussion"
 msgstr "Συζήτηση"
 
-#: src/channelinfo.cpp:87 src/epgsearch.cpp:351
+#: src/channelinfo.cpp:107 src/epgsearch.cpp:351
 msgid "Show"
 msgstr "Διάφορα show"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Game Show"
 msgstr "Παιχνίδια"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Variety"
 msgstr "Ποικιλία"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Talk"
 msgstr "Μπλα-Μπλα"
 
-#: src/channelinfo.cpp:91 src/epgsearch.cpp:352
+#: src/channelinfo.cpp:111 src/epgsearch.cpp:352
 msgid "Sports"
 msgstr "Σπορ"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Special Event"
 msgstr "Ειδικά γεγονότα"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Sports Mag."
 msgstr "Αθλητικό μαγκαζίνο"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Football"
 msgstr "Ποδόσφαιρο"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Tennis"
 msgstr "Τέννις"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Team Sports"
 msgstr "Ομαδικά αθλήματα"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Athletics"
 msgstr "Αθλητισμός"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Motor Sports"
 msgstr "Αυτοκινητιστικά"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Water Sports"
 msgstr "Θαλάσσια σπορ"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Winter Sports"
 msgstr "Χειμερινά σπορ"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Equestrian"
 msgstr "Ιππικοί αγώνες"
 
-#: src/channelinfo.cpp:93
+#: src/channelinfo.cpp:113
 msgid "Martial Sports"
 msgstr "Πολεμικές τέχνες"
 
-#: src/channelinfo.cpp:96 src/epgsearch.cpp:353
+#: src/channelinfo.cpp:116 src/epgsearch.cpp:353
 msgid "Children"
 msgstr "Παιδικά"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Pre-School"
 msgstr "Προ-σχολικό"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Age 6-14"
 msgstr "6-14 χρονών"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Age 10-16"
 msgstr "10-16 χρονών"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "School"
 msgstr "Σχολικά"
 
-#: src/channelinfo.cpp:97
+#: src/channelinfo.cpp:117
 msgid "Cartoons"
 msgstr "Κιν. Σχέδια"
 
-#: src/channelinfo.cpp:101 src/epgsearch.cpp:354
+#: src/channelinfo.cpp:121 src/epgsearch.cpp:354
 msgid "Music"
 msgstr "Μουσική"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Rock/Pop"
 msgstr "Rock/Pop"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Classical"
 msgstr "Κλασική"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Folk"
 msgstr "Λαϊκά"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Jazz"
 msgstr "Τζάζ"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Musical"
 msgstr "Μουσική"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Ballet"
 msgstr "Μπαλέτο"
 
-#: src/channelinfo.cpp:105 src/epgsearch.cpp:355
+#: src/channelinfo.cpp:125 src/epgsearch.cpp:355
 msgid "Culture"
 msgstr "Κουλτούρα"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Perf. Arts"
 msgstr "Τένχες"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Fine Arts"
 msgstr "Υψηλή τέχνη"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Religion"
 msgstr "Θρησκία"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Pop. Arts"
 msgstr "Λαϊκή Τέχνη"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Literature"
 msgstr "Λογοτεχνία"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Film"
 msgstr "Ταινία"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Experimental"
 msgstr "Πειραματικό"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Press"
 msgstr "Τύπος"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "New Media"
 msgstr "Νέα μέσα"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Art Mag."
 msgstr "Τέχνη"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Fashion"
 msgstr "Μόδα"
 
-#: src/channelinfo.cpp:109 src/epgsearch.cpp:356
+#: src/channelinfo.cpp:129 src/epgsearch.cpp:356
 msgid "Social"
 msgstr "Κοινωνικά"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Soc. Mag."
 msgstr "Κοινονικό μαγκαζίνο"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Economics"
 msgstr "Οικονομικό"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Remark. People"
 msgstr "Ανθρωποι"
 
-#: src/channelinfo.cpp:113 src/epgsearch.cpp:357
+#: src/channelinfo.cpp:133 src/epgsearch.cpp:357
 msgid "Education"
 msgstr "Εκπαιδευτικό"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Nature"
 msgstr "φύση"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Technology"
 msgstr "Τεχνολογία"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Medicine"
 msgstr "Ιατρικό"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Expeditions"
 msgstr "Αποστολές"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Spiritual"
 msgstr "Πνευματικό"
 
-#: src/channelinfo.cpp:114
+#: src/channelinfo.cpp:134
 msgid "Further Ed."
 msgstr "Εκπαιδευτικό"
 
-#: src/channelinfo.cpp:114
+#: src/channelinfo.cpp:134
 msgid "Languages"
 msgstr "Γλώσσες"
 
-#: src/channelinfo.cpp:117 src/epgsearch.cpp:358
+#: src/channelinfo.cpp:137 src/epgsearch.cpp:358
 msgid "Hobbies"
 msgstr "Χόμπι"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Travel"
 msgstr "Ταξίδια"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Handicraft"
 msgstr "Χειροτεχνία"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Motoring"
 msgstr "Αυτοκίνητα"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Fitness"
 msgstr "Υγεία"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Cooking"
 msgstr "Μαγειρική"
 
-#: src/channelinfo.cpp:118
+#: src/channelinfo.cpp:138
 msgid "Shopping"
 msgstr "Τηλεαγορές"
 
-#: src/channelinfo.cpp:118
+#: src/channelinfo.cpp:138
 msgid "Gardening"
 msgstr "Κηπουρική"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "Orig. Lang."
 msgstr "Αρχική Γλώσσα"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "B&W"
 msgstr "Α&Μ"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "Unpublished"
 msgstr "Αδημοσίευτο"
 
-#: src/channelinfo.cpp:121 src/epgsearch.cpp:359
+#: src/channelinfo.cpp:141 src/epgsearch.cpp:359
 msgid "Live"
 msgstr "Ζωντανό"
 
-#: src/channelinfo.cpp:263
+#: src/channelinfo.cpp:317
 #, fuzzy
 msgid "no data for this service available"
 msgstr "Δεν υπάρχουν πληροφορίες"
 
-#: src/channelinfo.cpp:304
+#: src/channelinfo.cpp:358
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -2123,7 +2123,7 @@ msgstr ""
 "\n"
 "Μέγεθος αρχείου: %d MB"
 
-#: src/channelinfo.cpp:305
+#: src/channelinfo.cpp:359
 msgid "Filename: "
 msgstr "Όνομα αρχείου: "
 
@@ -2269,7 +2269,6 @@ msgid "Sticky Settings 1"
 msgstr "Ρυθμίσεις συστήματος"
 
 #: src/engrab.cpp:37 src/enigma_event.cpp:179 src/enigma_event.cpp:188
-#: src/enigma_event.cpp:352 src/enigma_event.cpp:361
 msgid "no description is available"
 msgstr "Δεν υπάρχει περιγραφή"
 
@@ -2362,21 +2361,21 @@ msgstr "Κοινή διεπαφή (CI) - mmi"
 msgid "waiting for CI answer..."
 msgstr "Αναμονή για το μόντουλ..."
 
-#: src/enigma.cpp:433 src/setup_swapandvar.cpp:112
+#: src/enigma.cpp:434 src/setup_swapandvar.cpp:112
 msgid "Internal harddisk"
 msgstr ""
 
-#: src/enigma.cpp:440 src/setup_swapandvar.cpp:111
+#: src/enigma.cpp:441 src/setup_swapandvar.cpp:111
 #: src/setup_swapandvar.cpp:393 src/setup_swapandvar.cpp:399
 #: src/setup_usb.cpp:27
 msgid "USB stick"
 msgstr ""
 
-#: src/enigma.cpp:447 src/setup_swapandvar.cpp:113
+#: src/enigma.cpp:448 src/setup_swapandvar.cpp:113
 msgid "Compact Flash card"
 msgstr ""
 
-#: src/enigma.cpp:562
+#: src/enigma.cpp:567
 msgid ""
 "Welcome to enigma.\n"
 "\n"
@@ -2388,55 +2387,55 @@ msgstr ""
 "Παρακαλώ κάντε πρώτα μία ανίχνευση για κανάλια.\n"
 "(Κυρίως Μενού > Εγκατάσταση > Κανάλια > Έρευνα αναμεταδοτων"
 
-#: src/enigma.cpp:564
+#: src/enigma.cpp:569
 msgid "First start of enigma"
 msgstr "Πρώτη εκκίνηση του Enigma"
 
-#: src/enigma.cpp:799
+#: src/enigma.cpp:804
 msgid "It's now safe to unplug power!"
 msgstr ""
 
-#: src/enigma.cpp:800
+#: src/enigma.cpp:805
 #, fuzzy
 msgid "Shutdown finished"
 msgstr "Τέλος ανίχνευσης"
 
-#: src/enigma.cpp:827
+#: src/enigma.cpp:832
 msgid "Please wait... your Dreambox is shutting down!"
 msgstr ""
 
-#: src/enigma.cpp:828
+#: src/enigma.cpp:833
 #, fuzzy
 msgid "Shutdown..."
 msgstr "Τέλος λειτουργίας"
 
-#: src/enigma_dyn.cpp:631 src/sselect.cpp:517
+#: src/enigma_dyn.cpp:649 src/sselect.cpp:528
 msgid "Satellites"
 msgstr "Δορυφόροι"
 
-#: src/enigma_dyn.cpp:635 src/sselect.cpp:520
+#: src/enigma_dyn.cpp:653 src/sselect.cpp:531
 msgid "Providers"
 msgstr "Παροχείς"
 
-#: src/enigma_dyn.cpp:806
+#: src/enigma_dyn.cpp:824
 #, fuzzy
 msgid "OSD Shot"
 msgstr "Ρυθμίσεις OSD"
 
-#: src/enigma_dyn.cpp:807
+#: src/enigma_dyn.cpp:825
 msgid "Screen Shot"
 msgstr ""
 
-#: src/enigma_dyn.cpp:810
+#: src/enigma_dyn.cpp:828
 msgid "Screen + OSD"
 msgstr ""
 
-#: src/enigma_dyn.cpp:824
+#: src/enigma_dyn.cpp:842
 #, fuzzy
 msgid "LCD Shot"
 msgstr "Ρυθμίσεις οθόνης LCD"
 
-#: src/enigma_dyn.cpp:2332
+#: src/enigma_dyn.cpp:2354
 #, fuzzy
 msgid "External Message"
 msgstr "Μήνυμα"
@@ -2538,7 +2537,7 @@ msgid ""
 "descriptions can be changed in the EPG Setup menu"
 msgstr ""
 
-#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2075
+#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2090
 #, fuzzy
 msgid " was not found!"
 msgstr "Το πρόσθετο αρχείο '%s' δεν βρέθηκε"
@@ -2609,12 +2608,11 @@ msgstr "Παράθυρο προβολής γεγονότων"
 msgid "closes the Event View"
 msgstr "Κλείνει την ένδειξη γεγονότων"
 
-#: src/enigma_event.cpp:164 src/enigma_event.cpp:342 src/streaminfo.cpp:620
-#: src/streaminfo.cpp:678
+#: src/enigma_event.cpp:164 src/streaminfo.cpp:641 src/streaminfo.cpp:699
 msgid "no information is available"
 msgstr "Δεν υπάρχουν πληροφορίες"
 
-#: src/enigma_event.cpp:256
+#: src/enigma_event.cpp:257
 msgid ""
 "\tEvent EPG\n"
 "\n"
@@ -2642,7 +2640,7 @@ msgid ""
 "[EXIT]\tClose window"
 msgstr ""
 
-#: src/enigma_event.cpp:305
+#: src/enigma_event.cpp:306
 #, c-format
 msgid "Original duration: %d min"
 msgstr ""
@@ -2653,7 +2651,7 @@ msgstr ""
 msgid "Information"
 msgstr "Πληροφορίες"
 
-#: src/enigma_info.cpp:44 src/streaminfo.cpp:585
+#: src/enigma_info.cpp:44 src/streaminfo.cpp:606
 msgid "Streaminfo"
 msgstr "Λεπτομέρειες"
 
@@ -2711,9 +2709,9 @@ msgstr "Tuner: Επίγειο"
 msgid "Frontend: Unknown"
 msgstr "Δέκτης:"
 
-#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:366
-#: src/streaminfo.cpp:377 src/streaminfo.cpp:389 src/streaminfo.cpp:401
-#: src/streaminfo.cpp:413 src/streaminfo.cpp:509 src/streaminfo.cpp:548
+#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:387
+#: src/streaminfo.cpp:398 src/streaminfo.cpp:410 src/streaminfo.cpp:422
+#: src/streaminfo.cpp:434 src/streaminfo.cpp:530 src/streaminfo.cpp:569
 msgid "none"
 msgstr "Χωρίς"
 
@@ -2734,7 +2732,7 @@ msgstr "βήτα"
 msgid "internal"
 msgstr "εσωτερική"
 
-#: src/enigma_info.cpp:251
+#: src/enigma_info.cpp:252
 #, fuzzy
 msgid "About"
 msgstr "Περί..."
@@ -2863,7 +2861,7 @@ msgstr "Παύση αναπαραγωγής"
 msgid "resume playback"
 msgstr "Συνέχιση αναπαραγωγής"
 
-#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4354
+#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4369
 msgid "record"
 msgstr "Εγγραφή"
 
@@ -3127,115 +3125,111 @@ msgstr "Αγαπημένα (Radio)"
 msgid "Favourites (File)"
 msgstr "Αγαπημένα (Αρχεία)"
 
-#: src/enigma_main.cpp:2492
+#: src/enigma_main.cpp:2505
 msgid "please wait while initializing Common Interface ..."
 msgstr "Παρακαλώ περιμένετε μέχρι να απαντήσει το CI ..."
 
-#: src/enigma_main.cpp:2577
+#: src/enigma_main.cpp:2590
 msgid "rewind 15 seconds"
 msgstr ""
 
-#: src/enigma_main.cpp:2578
+#: src/enigma_main.cpp:2591
 msgid "rewind 1 minute"
 msgstr ""
 
-#: src/enigma_main.cpp:2579
+#: src/enigma_main.cpp:2592
 msgid "rewind 5 minutes"
 msgstr ""
 
-#: src/enigma_main.cpp:2580
+#: src/enigma_main.cpp:2593
 msgid "enter number of minutes to rewind"
 msgstr ""
 
-#: src/enigma_main.cpp:2581
+#: src/enigma_main.cpp:2594
 msgid "fast forward 15 seconds"
 msgstr ""
 
-#: src/enigma_main.cpp:2582
+#: src/enigma_main.cpp:2595
 msgid "fast forward 1 minute"
 msgstr ""
 
-#: src/enigma_main.cpp:2583
+#: src/enigma_main.cpp:2596
 msgid "fast forward 5 minutes"
 msgstr ""
 
-#: src/enigma_main.cpp:2584
+#: src/enigma_main.cpp:2597
 msgid "enter number of minutes to fast forward"
 msgstr ""
 
-#: src/enigma_main.cpp:2733
-msgid "no EPG available"
-msgstr "Δεν υπάρχει EPG"
-
-#: src/enigma_main.cpp:3562
+#: src/enigma_main.cpp:3577
 msgid "ShutdownTimer"
 msgstr "Χρονοδιακόπτης τέλους λειτουργίας"
 
-#: src/enigma_main.cpp:3562
+#: src/enigma_main.cpp:3577
 msgid "SleepTimer"
 msgstr "Χρονοδιακόπτης ύπνου"
 
-#: src/enigma_main.cpp:3982
+#: src/enigma_main.cpp:3997
 #, fuzzy
 msgid "Pause"
 msgstr "Παύση"
 
-#: src/enigma_main.cpp:3982
+#: src/enigma_main.cpp:3997
 msgid "audio track"
 msgstr "Επιλογή ήχου"
 
-#: src/enigma_main.cpp:4354
+#: src/enigma_main.cpp:4369
 msgid "Sorry, you cannot record this service."
 msgstr "Αυτή η υπηρεσία δεν μπορεί να εγγραφεί."
 
-#: src/enigma_main.cpp:4581
+#: src/enigma_main.cpp:4596
 msgid "Show recorded movies?"
 msgstr "Αποθηκευμένες ταινίες"
 
-#: src/enigma_main.cpp:4581
+#: src/enigma_main.cpp:4596
 msgid "recording finished"
 msgstr "Τέλος εγγραφής"
 
-#: src/enigma_main.cpp:4909
+#: src/enigma_main.cpp:4924
 msgid "Shutdown your Receiver now?"
 msgstr "Τέλος λειτουργίας"
 
-#: src/enigma_main.cpp:4909 src/enigma_main.cpp:4929
+#: src/enigma_main.cpp:4924 src/enigma_main.cpp:4944
 msgid "Timer Message"
 msgstr "Μήνυμα"
 
-#: src/enigma_main.cpp:4929
+#: src/enigma_main.cpp:4944
 msgid "Go to Standby now?"
 msgstr "κατάσταση αναμονής λειτουργίας (οκ)"
 
-#: src/enigma_main.cpp:4984 src/enigma_main.cpp:5048
+#: src/enigma_main.cpp:4999 src/enigma_main.cpp:5063
 msgid "Enter new name:"
 msgstr "Δώστε νέο όνομα:"
 
-#: src/enigma_main.cpp:4985 src/enigma_main.cpp:5049
+#: src/enigma_main.cpp:5000 src/enigma_main.cpp:5064
 msgid "Rename entry"
 msgstr "Αλλαγή ονόματος"
 
-#: src/enigma_main.cpp:5111
+#: src/enigma_main.cpp:5126
 msgid "Sorry, you cannot delete this service."
 msgstr "Αυτή η υπηρεσία δεν μπορεί να διαγραφεί."
 
-#: src/enigma_main.cpp:5111
+#: src/enigma_main.cpp:5126
 msgid "delete service"
 msgstr "Διαγραφή υπηρεσίας"
 
-#: src/enigma_main.cpp:5136 src/enigma_main.cpp:5261 src/sselect.cpp:2379
+#: src/enigma_main.cpp:5151 src/enigma_main.cpp:5276 src/sselect.cpp:2394
 #, c-format
 msgid ""
 "You are trying to delete '%s'.\n"
 "Really do this?"
 msgstr ""
 
-#: src/enigma_main.cpp:5137
+#: src/enigma_main.cpp:5152
 msgid "Delete recorded stream"
 msgstr "Διαγραφή γραμμένου σήματος"
 
-#: src/enigma_main.cpp:5164
+#: src/enigma_main.cpp:5179
 msgid ""
 "This is a complete Bouquet!\n"
 "Really delete?"
@@ -3243,78 +3237,78 @@ msgstr ""
 "Αυτό είναι ολόκληρο μπουκέτο!\n"
 "Σίγουρα θέλετε να διαγραφεί;"
 
-#: src/enigma_main.cpp:5165
+#: src/enigma_main.cpp:5180
 msgid "Delete bouquet"
 msgstr "Διαγραφή μπουκέτου"
 
-#: src/enigma_main.cpp:5262
+#: src/enigma_main.cpp:5277
 msgid "Delete File"
 msgstr "Διαγραφή αρχείου"
 
-#: src/enigma_main.cpp:5360
+#: src/enigma_main.cpp:5375
 msgid "Enter new Filename:"
 msgstr "Δώστε νέο όνομα:"
 
-#: src/enigma_main.cpp:5361
+#: src/enigma_main.cpp:5376
 msgid "Rename File"
 msgstr "Μετονομασία αρχείου"
 
-#: src/enigma_main.cpp:5393
+#: src/enigma_main.cpp:5408
 msgid "Enter new name for the bouquet:"
 msgstr "Δώστε νέο όνομα για το μπουκέτο:"
 
-#: src/enigma_main.cpp:5394
+#: src/enigma_main.cpp:5409
 msgid "Rename bouquet"
 msgstr "Μετονομασία μπουκέτου"
 
-#: src/enigma_main.cpp:5419
+#: src/enigma_main.cpp:5434
 msgid "Enter name for the new bouquet:"
 msgstr "Δώστε όνομα του νέου μπουκέτου:"
 
-#: src/enigma_main.cpp:5420
+#: src/enigma_main.cpp:5435
 msgid "Add new bouquet"
 msgstr "Προσθήκη νέου μπουκέτου"
 
-#: src/enigma_main.cpp:5475
+#: src/enigma_main.cpp:5490
 msgid "unnamed"
 msgstr "Χωρίς όνομα"
 
-#: src/enigma_main.cpp:5476
+#: src/enigma_main.cpp:5491
 msgid "Enter marker name:"
 msgstr "Δώστε όνομα στο σημάδι:"
 
-#: src/enigma_main.cpp:5477
+#: src/enigma_main.cpp:5492
 msgid "create marker"
 msgstr "Δημιουργεία σημαδιού"
 
-#: src/enigma_main.cpp:5525
+#: src/enigma_main.cpp:5540
 msgid "unnamed bouquet"
 msgstr "Μπουκέτο χωρίς όνομα"
 
-#: src/enigma_main.cpp:5728
+#: src/enigma_main.cpp:5743
 #, fuzzy
 msgid "Do you want to rebuild your movie list?"
 msgstr "Αποθηκευμένες ταινίες"
 
-#: src/enigma_main.cpp:5729
+#: src/enigma_main.cpp:5744
 #, fuzzy
 msgid "Recover movies"
 msgstr "Αποθηκευμένες ταινίες"
 
-#: src/enigma_main.cpp:6060 src/enigma_main.cpp:6061
+#: src/enigma_main.cpp:6075 src/enigma_main.cpp:6076
 msgid "This directory doesn't contain anything playable!"
 msgstr "Αυτός ο κατάλογος δεν περιέχει κάτι που μπορεί να αναπαραχθεί!"
 
-#: src/enigma_main.cpp:6061
+#: src/enigma_main.cpp:6076
 msgid "Play"
 msgstr "Αναπαραγωγή"
 
-#: src/enigma_main.cpp:6523
+#: src/enigma_main.cpp:6596
 #, fuzzy, c-format
 msgid "%s was not found!"
 msgstr "Το πρόσθετο αρχείο '%s' δεν βρέθηκε"
 
-#: src/enigma_main.cpp:6674
+#: src/enigma_main.cpp:6747
 msgid ""
 "A timer based recording is currently in progress!\n"
 "This stops the timer, and recording!"
@@ -3322,7 +3316,7 @@ msgstr ""
 "Ο χρονοδιακόπτης έχει ενεργοποιήσει ψηφιακή εγγραφή.<nΑυτή η επιλογή θα "
 "σταματίσει τον χρονοδιακόπτη και την εγγραφή"
 
-#: src/enigma_main.cpp:6684
+#: src/enigma_main.cpp:6757
 msgid ""
 "A recording is currently in progress!\n"
 "This stops the recording!"
@@ -3330,7 +3324,7 @@ msgstr ""
 "Γίνεται ψηφιακή εγγραφή αυτή τη στιγμή!\n"
 "Αυτή η επιλογή θα σταματίσει την ψηφιακή εγγραφή!"
 
-#: src/enigma_main.cpp:6696
+#: src/enigma_main.cpp:6769
 msgid ""
 "A timer event is currently in progress!\n"
 "This stops the timer event!"
@@ -3338,393 +3332,393 @@ msgstr ""
 "Ο χρονοδιακόπτης είναι ενεργός!\n"
 "Αυτή η επιλογή θα σταματίσει τον χρονοδιακόπτη!"
 
-#: src/enigma_main.cpp:6704
+#: src/enigma_main.cpp:6777
 msgid "Really do this?"
 msgstr "Σίγουρα να γίνει αυτό;"
 
-#: src/enigma_main.cpp:6777
+#: src/enigma_main.cpp:6850
 msgid "please wait until the timer has started the recording (max 10 seconds)"
 msgstr ""
 
-#: src/enigma_main.cpp:6778
+#: src/enigma_main.cpp:6851
 msgid "information"
 msgstr "Πληροφορίες"
 
-#: src/enigma_main.cpp:7653
+#: src/enigma_main.cpp:7750
 msgid "Record failed due to inaccessable storage."
 msgstr ""
 
-#: src/enigma_main.cpp:7655
+#: src/enigma_main.cpp:7752
 msgid ""
 "Record stopped due to full harddisk. Delete some recordings and try again."
 msgstr ""
 
-#: src/enigma_main.cpp:7657
+#: src/enigma_main.cpp:7754
 msgid ""
 "Record failed due to a write error during recording. Check for filesystem "
 "corruption."
 msgstr ""
 
-#: src/enigma_main.cpp:7659
+#: src/enigma_main.cpp:7756
 msgid "record failed"
 msgstr "Τέλος εγγραφής"
 
-#: src/enigma_main.cpp:7960 src/enigma_main.cpp:7961
+#: src/enigma_main.cpp:8057 src/enigma_main.cpp:8058
 msgid "One moment please..."
 msgstr "Παρακαλώ περιμένετε..."
 
-#: src/enigma_main.cpp:7961 src/enigma_main.cpp:7969 src/enigma_main.cpp:7983
-#: src/enigma_main.cpp:7996 src/enigma_main.cpp:8008 src/enigma_main.cpp:8017
-#: src/enigma_main.cpp:8022 src/timer.cpp:2371
+#: src/enigma_main.cpp:8058 src/enigma_main.cpp:8066 src/enigma_main.cpp:8080
+#: src/enigma_main.cpp:8093 src/enigma_main.cpp:8105 src/enigma_main.cpp:8114
+#: src/enigma_main.cpp:8119 src/timer.cpp:2371
 msgid "switch"
 msgstr "Μήνυμα"
 
-#: src/enigma_main.cpp:7969 src/enigma_main.cpp:7971
+#: src/enigma_main.cpp:8066 src/enigma_main.cpp:8068
 msgid "Service could not be found !"
 msgstr "Η υπήρεσία δεν βρέθηκε."
 
-#: src/enigma_main.cpp:7983 src/enigma_main.cpp:7985
+#: src/enigma_main.cpp:8080 src/enigma_main.cpp:8082
 msgid "This service could not be descrambled"
 msgstr "Αυτή η υπηρεσία δεν μπορεί να αποκωδικοποιηθεί"
 
-#: src/enigma_main.cpp:7996 src/enigma_main.cpp:7998
+#: src/enigma_main.cpp:8093 src/enigma_main.cpp:8095
 msgid "This service doesn't currently send a signal"
 msgstr "Αυτή η υπηρεσία δεν στέλνει (τώρα) σήμα."
 
-#: src/enigma_main.cpp:8008 src/enigma_main.cpp:8010
+#: src/enigma_main.cpp:8105 src/enigma_main.cpp:8107
 msgid "This content could not be displayed"
 msgstr "Τα περιεχόμενα αυτά δεν μπορούν να αποδωθούν"
 
-#: src/enigma_main.cpp:8015 src/enigma_main.cpp:8017
+#: src/enigma_main.cpp:8112 src/enigma_main.cpp:8114
 msgid "NVOD Service - please select a starttime"
 msgstr "Υπηρεσία NVOD - Παρακαλώ επιλέξτε ώρα έναρξης!"
 
-#: src/enigma_main.cpp:8020 src/enigma_main.cpp:8022
+#: src/enigma_main.cpp:8117 src/enigma_main.cpp:8119
 msgid "Unknown error!!"
 msgstr "Σου είπε κανείς να παίζεις με τα πλήκτρα;"
 
-#: src/enigma_main.cpp:8599 src/sselect.cpp:527
+#: src/enigma_main.cpp:8698 src/sselect.cpp:538
 msgid "Playlist"
 msgstr "Λίστα αναπαραγωγής"
 
-#: src/enigma_main.cpp:8606
+#: src/enigma_main.cpp:8705
 msgid "History"
 msgstr "Ιστορία"
 
-#: src/enigma_main.cpp:9123
+#: src/enigma_main.cpp:9222
 msgid "Networks, services and user bouquets will be reloaded"
 msgstr ""
 
-#: src/enigma_main.cpp:9124 src/enigma_main.cpp:9128
+#: src/enigma_main.cpp:9223 src/enigma_main.cpp:9227
 #, fuzzy
 msgid "Reloading..."
 msgstr "Αναπαραγωγή..."
 
-#: src/enigma_main.cpp:9127
+#: src/enigma_main.cpp:9226
 #, fuzzy
 msgid "Please wait..."
 msgstr "Επανεκίνηση... περιμένετε!"
 
-#: src/enigma_main.cpp:9146
+#: src/enigma_main.cpp:9245
 msgid "Service Menu"
 msgstr "Μενού υπηρεσιών"
 
-#: src/enigma_main.cpp:9164 src/sselect.cpp:145
+#: src/enigma_main.cpp:9263 src/sselect.cpp:145
 msgid "add service to playlist"
 msgstr "Προσθήκη υπηρεσίας στην Playlist"
 
-#: src/enigma_main.cpp:9164
+#: src/enigma_main.cpp:9263
 msgid "add selected service to the playlist"
 msgstr "Προσθήκη υπηρεσίας στην Playlist"
 
-#: src/enigma_main.cpp:9176
+#: src/enigma_main.cpp:9275
 msgid "shuffle"
 msgstr ""
 
-#: src/enigma_main.cpp:9176
+#: src/enigma_main.cpp:9275
 msgid "shuffle playlist"
 msgstr ""
 
-#: src/enigma_main.cpp:9189 src/enigma_main.cpp:9196
+#: src/enigma_main.cpp:9288 src/enigma_main.cpp:9295
 #, fuzzy
 msgid "remove all 'new found' flags"
 msgstr "Δημιουργία νέου μπουκέτου"
 
-#: src/enigma_main.cpp:9189
+#: src/enigma_main.cpp:9288
 #, fuzzy
 msgid "select to remove all 'new found' flags from this satellite"
 msgstr "Δημιουργία νέου μπουκέτου"
 
-#: src/enigma_main.cpp:9195
+#: src/enigma_main.cpp:9294
 msgid "remove 'new found flag'"
 msgstr ""
 
-#: src/enigma_main.cpp:9195
+#: src/enigma_main.cpp:9294
 #, fuzzy
 msgid "select to remove the 'new found flag'"
 msgstr "Δημιουργία νέου μπουκέτου"
 
-#: src/enigma_main.cpp:9196
+#: src/enigma_main.cpp:9295
 #, fuzzy
 msgid "select to remove all 'new found' flags"
 msgstr "Δημιουργία νέου μπουκέτου"
 
-#: src/enigma_main.cpp:9200
+#: src/enigma_main.cpp:9299
 msgid "create new bouquet"
 msgstr "Δημιουργία νέου μπουκέτου"
 
-#: src/enigma_main.cpp:9200
+#: src/enigma_main.cpp:9299
 msgid "select to create a new bouquet"
 msgstr "Δημιουργία νέου μπουκέτου"
 
-#: src/enigma_main.cpp:9212
+#: src/enigma_main.cpp:9311
 msgid "duplicate bouquet"
 msgstr "Διπλότυπο μπουκέτο"
 
-#: src/enigma_main.cpp:9212
+#: src/enigma_main.cpp:9311
 msgid "duplicate the complete bouquet with all content"
 msgstr ""
 
-#: src/enigma_main.cpp:9218 src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9317 src/enigma_main.cpp:9385 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9410
 msgid "add to specific bouquet"
 msgstr "Προσθήκη σε κάποιο μπουκέτο"
 
-#: src/enigma_main.cpp:9218
+#: src/enigma_main.cpp:9317
 msgid "add the selected service to another bouquet"
 msgstr "Προσθήκη πολλαπλών υπηρεσιών σε συγκεκριμένο μπουκέτο"
 
-#: src/enigma_main.cpp:9220
+#: src/enigma_main.cpp:9319
 msgid "add marker"
 msgstr "Προσθήκη σημαδιού"
 
-#: src/enigma_main.cpp:9220
+#: src/enigma_main.cpp:9319
 msgid "create a new marker in the current bouquet"
 msgstr "Δημιουργία νέου δείκτη (marker)"
 
-#: src/enigma_main.cpp:9229 src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
-#: src/sselect.cpp:506
+#: src/enigma_main.cpp:9328 src/enigma_main.cpp:9344 src/enigma_main.cpp:9392
+#: src/sselect.cpp:517
 msgid "rename"
 msgstr "Μετονομασία"
 
-#: src/enigma_main.cpp:9229
+#: src/enigma_main.cpp:9328
 msgid "rename the current selected bouquet"
 msgstr "Διαγραφή του επιλεγμένου χρονοδιακόπτη (ok)"
 
-#: src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
+#: src/enigma_main.cpp:9344 src/enigma_main.cpp:9392
 msgid "rename the current selected service/movie"
 msgstr "Διαγραφή του επιλεγμένου χρονοδιακόπτη (ok)"
 
-#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294 src/sselect.cpp:504
+#: src/enigma_main.cpp:9348 src/enigma_main.cpp:9393 src/sselect.cpp:515
 msgid "delete"
 msgstr "*Διαγραφή*"
 
-#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294
+#: src/enigma_main.cpp:9348 src/enigma_main.cpp:9393
 msgid "delete the current selected service/movie"
 msgstr "Διαγραφή του επιλεγμένου χρονοδιακόπτη (ok)"
 
-#: src/enigma_main.cpp:9254
+#: src/enigma_main.cpp:9353
 #, fuzzy
 msgid "rebuild movie list"
 msgstr "Αποθηκευμένες ταινίες"
 
-#: src/enigma_main.cpp:9254
+#: src/enigma_main.cpp:9353
 #, fuzzy
 msgid "rebuild the current movie list"
 msgstr "Αποθήκευση τών θέσεων"
 
-#: src/enigma_main.cpp:9261
+#: src/enigma_main.cpp:9360
 msgid "set as startup service"
 msgstr ""
 
-#: src/enigma_main.cpp:9261
+#: src/enigma_main.cpp:9360
 #, fuzzy
 msgid "currently selected service will be selected on startup"
 msgstr "Προσθήκη πολλαπλών υπηρεσιών σε συγκεκριμένο μπουκέτο"
 
-#: src/enigma_main.cpp:9262 src/enigma_main.cpp:9297
+#: src/enigma_main.cpp:9361 src/enigma_main.cpp:9396
 #, fuzzy
 msgid "reset startup service"
 msgstr "Διαγραφή υπηρεσίας"
 
-#: src/enigma_main.cpp:9262
+#: src/enigma_main.cpp:9361
 #, fuzzy
 msgid "last selected service will be selected on startup"
 msgstr "Προσθήκη πολλαπλών υπηρεσιών σε συγκεκριμένο μπουκέτο"
 
-#: src/enigma_main.cpp:9269
+#: src/enigma_main.cpp:9368
 msgid "disable move mode"
 msgstr "απενεργοποίηση μετακίνησης"
 
-#: src/enigma_main.cpp:9269
+#: src/enigma_main.cpp:9368
 msgid "switch move mode off"
 msgstr "Λειτουργία με αρχεία"
 
-#: src/enigma_main.cpp:9271
+#: src/enigma_main.cpp:9370
 msgid "enable move mode"
 msgstr "ενεργοποίηση μετακίνησης"
 
-#: src/enigma_main.cpp:9271
+#: src/enigma_main.cpp:9370
 msgid "activate mode to simply change the entry order"
 msgstr ""
 
-#: src/enigma_main.cpp:9280
+#: src/enigma_main.cpp:9379
 msgid "copy to bouquet list"
 msgstr "Αντιγραφή στη λίστα μπουκέτων"
 
-#: src/enigma_main.cpp:9280
+#: src/enigma_main.cpp:9379
 msgid "copy the selected provider to the bouquet list"
 msgstr "Άνοιγμα λίστας υπηρεσιών και προβολή μπουκέτων"
 
-#: src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
+#: src/enigma_main.cpp:9385 src/enigma_main.cpp:9390
 msgid "add the selected service to a selectable bouquet"
 msgstr "Προσθήκη πολλαπλών υπηρεσιών σε συγκεκριμένο μπουκέτο"
 
-#: src/enigma_main.cpp:9296
+#: src/enigma_main.cpp:9395
 #, fuzzy
 msgid "set as startup"
 msgstr "Ρύθμιση ανατολικού τεχνητού ορίου"
 
-#: src/enigma_main.cpp:9296
+#: src/enigma_main.cpp:9395
 #, fuzzy
 msgid "set the current selected service/movie as startup service"
 msgstr "Διαγραφή του επιλεγμένου χρονοδιακόπτη (ok)"
 
-#: src/enigma_main.cpp:9297
+#: src/enigma_main.cpp:9396
 #, fuzzy
 msgid "reset startup"
 msgstr "Επανεκίνηση"
 
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9410
 msgid "add the selected file to a selectable bouquet"
 msgstr "Προσθήκη πολλαπλών υπηρεσιών σε συγκεκριμένο μπουκέτο"
 
-#: src/enigma_main.cpp:9313
+#: src/enigma_main.cpp:9412
 msgid "delete file"
 msgstr "Διαγραφή αρχείου"
 
-#: src/enigma_main.cpp:9313
+#: src/enigma_main.cpp:9412
 msgid "delete the selected file (and all corresponding ts files"
 msgstr ""
 
-#: src/enigma_main.cpp:9314
+#: src/enigma_main.cpp:9413
 msgid "rename file"
 msgstr "Μετονομασία αρχείου"
 
-#: src/enigma_main.cpp:9314
+#: src/enigma_main.cpp:9413
 msgid "rename the selected file (and all corresponding ts files"
 msgstr ""
 
-#: src/enigma_main.cpp:9328
+#: src/enigma_main.cpp:9427
 msgid "disable edit mode"
 msgstr "απενεργοποίηση επεμβάσεων"
 
-#: src/enigma_main.cpp:9328
+#: src/enigma_main.cpp:9427
 msgid "disable the edit mode"
 msgstr "απενεργοποίηση επεμβάσεων"
 
-#: src/enigma_main.cpp:9330
+#: src/enigma_main.cpp:9429
 msgid "enable edit mode"
 msgstr "ενεργοποίηση επεμβάσεων"
 
-#: src/enigma_main.cpp:9330
+#: src/enigma_main.cpp:9429
 msgid "activate mode to simply add many services to a selectable bouquet"
 msgstr "Προσθήκη υπηρεσίας σε κάποιο μπουκέτο"
 
-#: src/enigma_main.cpp:9341
+#: src/enigma_main.cpp:9440
 msgid "unlock"
 msgstr "Ξεκλείδωμα"
 
-#: src/enigma_main.cpp:9341
+#: src/enigma_main.cpp:9440
 msgid "do parental-unlock the selected service or file"
 msgstr ""
 
-#: src/enigma_main.cpp:9343
+#: src/enigma_main.cpp:9442
 msgid "lock"
 msgstr "Κλείδωμα"
 
-#: src/enigma_main.cpp:9343
+#: src/enigma_main.cpp:9442
 msgid "do parentallock the selected service or file"
 msgstr ""
 
-#: src/enigma_main.cpp:9347
+#: src/enigma_main.cpp:9446
 msgid "disable parental lock"
 msgstr "Απενεργοποίηση γωνικού κλειδώματος"
 
-#: src/enigma_main.cpp:9347
+#: src/enigma_main.cpp:9446
 msgid "temporary disable the parental locking"
 msgstr "Απενεργοποίηση γωνικού κλειδώματος"
 
-#: src/enigma_main.cpp:9349
+#: src/enigma_main.cpp:9448
 msgid "enable parental lock"
 msgstr "Ενεργοποίηση γωνικού κλειδώματος"
 
-#: src/enigma_main.cpp:9349
+#: src/enigma_main.cpp:9448
 msgid "re-enable the parental locking"
 msgstr "Ενεργοποίηση γωνικού κλειδώματος"
 
-#: src/enigma_main.cpp:9368
+#: src/enigma_main.cpp:9467
 msgid "Shutdown/Standby Menu"
 msgstr "Μενού Αναμονής/Επανεκίνησης"
 
-#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9478 src/enigma_main.cpp:9482 src/enigma_main.cpp:9489
 #, fuzzy
 msgid "restart enigma"
 msgstr "Πρώτη εκκίνηση του Enigma"
 
-#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9478 src/enigma_main.cpp:9482 src/enigma_main.cpp:9489
 msgid "only restart the software, without rebooting the receiver"
 msgstr ""
 
-#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9384
+#: src/enigma_main.cpp:9479 src/enigma_main.cpp:9483
 msgid "reboot now"
 msgstr "Επανεκίνηση τώρα"
 
-#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9392
+#: src/enigma_main.cpp:9479 src/enigma_main.cpp:9491
 msgid "restart your dreambox"
 msgstr "Επανεκίνηση του dreambox"
 
-#: src/enigma_main.cpp:9384
+#: src/enigma_main.cpp:9483
 msgid "restart your receiver"
 msgstr "Επανεκίνηση του δέκτη"
 
-#: src/enigma_main.cpp:9391 src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9490 src/enigma_main.cpp:9494
 msgid "shutdown now"
 msgstr "Τέλος λειτουργίας τώρα"
 
-#: src/enigma_main.cpp:9391
+#: src/enigma_main.cpp:9490
 msgid "shutdown your dreambox"
 msgstr "Τέλος λειτουργίας"
 
-#: src/enigma_main.cpp:9392 src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9491 src/enigma_main.cpp:9495
 msgid "restart"
 msgstr "Επανεκίνηση"
 
-#: src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9494
 msgid "shutdown your dbox-2"
 msgstr "Τέλος λειτουργίας"
 
-#: src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9495
 msgid "restart your dbox-2"
 msgstr "Επανεκίνηση του dbox-2"
 
-#: src/enigma_main.cpp:9400
+#: src/enigma_main.cpp:9499
 msgid "goto standby"
 msgstr "κατάσταση αναμονής λειτουργίας"
 
-#: src/enigma_main.cpp:9400
+#: src/enigma_main.cpp:9499
 msgid "goto standby mode"
 msgstr "κατάσταση αναμονής λειτουργίας"
 
-#: src/enigma_main.cpp:9401
+#: src/enigma_main.cpp:9500
 msgid "set sleeptimer"
 msgstr "Χρονοδιακόπτης ύπνου"
 
-#: src/enigma_main.cpp:9401
+#: src/enigma_main.cpp:9500
 msgid "set a sleep timer"
 msgstr "Χρονοδιακόπτης ύπνου"
 
-#: src/enigma_main.cpp:9405
+#: src/enigma_main.cpp:9504
 msgid ""
 "\tShutdown/Standby Menu\n"
 "\n"
@@ -3749,7 +3743,7 @@ msgid ""
 "[EXIT]\tClose window"
 msgstr ""
 
-#: src/enigma_main.cpp:9469
+#: src/enigma_main.cpp:9568
 msgid ""
 "\tSet Sleeptimer\n"
 "\n"
@@ -3777,44 +3771,44 @@ msgid ""
 "[EXIT]\tClose window without saving changes"
 msgstr ""
 
-#: src/enigma_main.cpp:9537
+#: src/enigma_main.cpp:9636
 msgid "Record Menu"
 msgstr "Μενού εγγραφών"
 
-#: src/enigma_main.cpp:9547
+#: src/enigma_main.cpp:9646
 msgid "stop record now"
 msgstr "Σταμάτημα εγγραφής"
 
-#: src/enigma_main.cpp:9547
+#: src/enigma_main.cpp:9646
 msgid "immediate stop the recording"
 msgstr ""
 
-#: src/enigma_main.cpp:9549
+#: src/enigma_main.cpp:9648
 msgid "set record duration"
 msgstr "ρύθμιση διάρκειας εγγραφής"
 
-#: src/enigma_main.cpp:9549
+#: src/enigma_main.cpp:9648
 msgid "set the recording time (in minutes)"
 msgstr "Αύξηση του χρόνου έναρξης σε βήματα του 1 λεπτού"
 
-#: src/enigma_main.cpp:9550
+#: src/enigma_main.cpp:9649
 msgid "set record stop time"
 msgstr "ρύθμιση ώρα τέλους εγγραφής"
 
-#: src/enigma_main.cpp:9550
+#: src/enigma_main.cpp:9649
 msgid "set the recording end time"
 msgstr "Ρύθμιση τέλους χρόνου εγγαφής"
 
-#: src/enigma_main.cpp:9556
+#: src/enigma_main.cpp:9655
 #, c-format
 msgid "add timeshift to recording (%d min) "
 msgstr ""
 
-#: src/enigma_main.cpp:9557
+#: src/enigma_main.cpp:9656
 msgid "add recorded timeshift at beginning of this recording"
 msgstr ""
 
-#: src/enigma_main.cpp:9691
+#: src/enigma_main.cpp:9790
 msgid "press ok to start edit mode"
 msgstr "Πατήστε OK για να κάνετε επεμβάσεις"
 
@@ -3996,7 +3990,7 @@ msgid "Couldn't read plugin directory %s"
 msgstr "Δεν ειναι δυνατή η ανάγνωση του καταλόγου με τα πρόσθετα %s"
 
 #: src/enigma_plugins.cpp:235 src/enigma_plugins.cpp:424 src/scan.cpp:1967
-#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2386
+#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2401
 msgid "Error"
 msgstr "Λάθος"
 
@@ -4202,9 +4196,9 @@ msgstr ""
 msgid "Software management"
 msgstr "Αναβάθμιση λογισμικού"
 
-#: src/enigma_setup.cpp:154
+#: src/enigma_setup.cpp:155
 #, c-format
-msgid "/var used %d%%"
+msgid "/var free %dK"
 msgstr ""
 
 #: src/enigma_standby.cpp:28
@@ -5076,32 +5070,32 @@ msgstr ""
 msgid "Error!"
 msgstr "Λάθος!"
 
-#: src/ppanel.cpp:1322
+#: src/ppanel.cpp:1323
 msgid "PPanel recovery, internet connection needed"
 msgstr ""
 
-#: src/ppanel.cpp:1430
+#: src/ppanel.cpp:1431
 #, fuzzy
 msgid "Please select an item"
 msgstr "Διαγραφή επιλεγμένης καταχώρησης"
 
-#: src/ppanel.cpp:1452
+#: src/ppanel.cpp:1453
 #, fuzzy
 msgid "latest"
 msgstr "Δοκιμή"
 
-#: src/ppanel.cpp:1499
+#: src/ppanel.cpp:1500
 msgid ""
 "A new menu is available. The new menu will be visible if you return to the "
 "setup panel.You can continue your work here after pressing OK."
 msgstr ""
 
-#: src/ppanel.cpp:1501
+#: src/ppanel.cpp:1502
 #, fuzzy
 msgid "Automatic menu update"
 msgstr "Χειροκίνητη αναβάθμιση λογισμικού"
 
-#: src/ppanel.cpp:1656 src/ppanel.cpp:1754
+#: src/ppanel.cpp:1657 src/ppanel.cpp:1755
 #, c-format
 msgid ""
 "%s\n"
@@ -6049,7 +6043,7 @@ msgstr "Τέλος ανίχνευσης"
 msgid "Manual PIDs"
 msgstr ""
 
-#: src/scan.cpp:1627 src/streaminfo.cpp:336
+#: src/scan.cpp:1627 src/streaminfo.cpp:357
 #, fuzzy
 msgid "Name:"
 msgstr "Παιχνίδια"
@@ -6064,7 +6058,7 @@ msgstr "Για να αλλαχτή η υπηρεσία πατήστε ΟΚ"
 msgid "enter service name"
 msgstr "Διαγραφή υπηρεσίας"
 
-#: src/scan.cpp:1642 src/streaminfo.cpp:348
+#: src/scan.cpp:1642 src/streaminfo.cpp:369
 #, fuzzy
 msgid "Provider:"
 msgstr "Παροχείς"
@@ -6078,7 +6072,7 @@ msgstr ""
 msgid "enter provider name"
 msgstr "Δώστε όνομα στο σημάδι:"
 
-#: src/scan.cpp:1658 src/streaminfo.cpp:360
+#: src/scan.cpp:1658 src/streaminfo.cpp:381
 #, fuzzy
 msgid "Video PID:"
 msgstr "Εικόνα"
@@ -6092,7 +6086,7 @@ msgstr "Για να αλλαχτή η υπηρεσία πατήστε ΟΚ"
 msgid "enter video pid"
 msgstr ""
 
-#: src/scan.cpp:1672 src/streaminfo.cpp:384
+#: src/scan.cpp:1672 src/streaminfo.cpp:405
 msgid "PCR PID:"
 msgstr ""
 
@@ -6104,7 +6098,7 @@ msgstr ""
 msgid "enter pcr pid (in most case the same pid as the video pid)"
 msgstr ""
 
-#: src/scan.cpp:1688 src/streaminfo.cpp:372
+#: src/scan.cpp:1688 src/streaminfo.cpp:393
 #, fuzzy
 msgid "Audio PID:"
 msgstr "Ήχος"
@@ -6137,7 +6131,7 @@ msgstr ""
 msgid "enter (video) text pid"
 msgstr ""
 
-#: src/scan.cpp:1725 src/streaminfo.cpp:456
+#: src/scan.cpp:1725 src/streaminfo.cpp:477
 #, fuzzy
 msgid "Service ID:"
 msgstr "υπηρεσίες"
@@ -6421,117 +6415,117 @@ msgstr "Απέτυχε η προσπάθεια εύρεσης διεύθυνση
 msgid "MultiEPG"
 msgstr "Πολλαπλό EPG"
 
-#: src/setup_epg.cpp:72
+#: src/setup_epg.cpp:92
 #, fuzzy
 msgid "EPG data store"
 msgstr "Επιλογή στιλ EPG"
 
-#: src/setup_epg.cpp:77
+#: src/setup_epg.cpp:97
 msgid "Select if you want the default Enigma EPG or SQLite database EPG"
 msgstr ""
 
-#: src/setup_epg.cpp:80
+#: src/setup_epg.cpp:100
 #, fuzzy
 msgid "Enigma EPG"
 msgstr "εσωτερική"
 
-#: src/setup_epg.cpp:81
+#: src/setup_epg.cpp:102
 msgid "SQLite database"
 msgstr ""
 
-#: src/setup_epg.cpp:102
+#: src/setup_epg.cpp:123
 #, fuzzy
 msgid "Select EPG store location"
 msgstr "Θέση αποθήκευσης:"
 
-#: src/setup_epg.cpp:121
+#: src/setup_epg.cpp:142
 msgid "Number of EPG days:"
 msgstr ""
 
-#: src/setup_epg.cpp:127
+#: src/setup_epg.cpp:148
 msgid "Select number of EPG days"
 msgstr ""
 
-#: src/setup_epg.cpp:140
+#: src/setup_epg.cpp:161
 #, fuzzy
 msgid "Enable MHW EPG"
 msgstr "εσωτερική"
 
-#: src/setup_epg.cpp:143
+#: src/setup_epg.cpp:164
 msgid ""
 "Mediahighway EPG, activate swap space when using with multiple operators"
 msgstr ""
 
-#: src/setup_epg.cpp:150
+#: src/setup_epg.cpp:171
 #, fuzzy
 msgid "Enable DISH/BEV EEPG"
 msgstr "εσωτερική"
 
-#: src/setup_epg.cpp:153
+#: src/setup_epg.cpp:174
 msgid "DISH/BEV network EEPG, up to 9 days EPG"
 msgstr ""
 
-#: src/setup_epg.cpp:159
+#: src/setup_epg.cpp:180
 msgid "Limit Enigma EPG size"
 msgstr ""
 
-#: src/setup_epg.cpp:162
+#: src/setup_epg.cpp:183
 msgid "Limit the Enigma EPG file to 5MB (recommended)"
 msgstr ""
 
-#: src/setup_epg.cpp:168
+#: src/setup_epg.cpp:189
 #, fuzzy
 msgid "Rescan EPG"
 msgstr "Έρευνα στο EPG"
 
-#: src/setup_epg.cpp:173
+#: src/setup_epg.cpp:194
 msgid "Rescan EPG data on current transponder"
 msgstr ""
 
-#: src/setup_epg.cpp:190
+#: src/setup_epg.cpp:211
 msgid "Enigma EPG location"
 msgstr ""
 
-#: src/setup_epg.cpp:194
+#: src/setup_epg.cpp:215
 #, fuzzy
 msgid "SQLite EPG location"
 msgstr "Θέση αποθήκευσης:"
 
-#: src/setup_epg.cpp:237
+#: src/setup_epg.cpp:258
 msgid "This directory is suitable for storage"
 msgstr ""
 
-#: src/setup_epg.cpp:241
+#: src/setup_epg.cpp:262
 #, fuzzy
 msgid "This directory has not enough space"
 msgstr "Αυτός ο κατάλογος δεν περιέχει κάτι που μπορεί να αναπαραχθεί!"
 
-#: src/setup_epg.cpp:245
+#: src/setup_epg.cpp:266
 #, fuzzy
 msgid "This directory does not exist"
 msgstr "Αυτός ο κατάλογος δεν περιέχει κάτι που μπορεί να αναπαραχθεί!"
 
-#: src/setup_epg.cpp:306
+#: src/setup_epg.cpp:327
 msgid "MultiEPG channels:"
 msgstr ""
 
-#: src/setup_epg.cpp:313
+#: src/setup_epg.cpp:334
 msgid "Number of channels per MultiEPG page to show"
 msgstr ""
 
-#: src/setup_epg.cpp:318
+#: src/setup_epg.cpp:339
 msgid "MultiEPG entry fontsize:"
 msgstr ""
 
-#: src/setup_epg.cpp:331
+#: src/setup_epg.cpp:352
 msgid "Increase/decrease entry fontsize with this number of points"
 msgstr ""
 
-#: src/setup_epg.cpp:336
+#: src/setup_epg.cpp:357
 msgid "Enable EPG genre colours"
 msgstr ""
 
-#: src/setup_epg.cpp:339
+#: src/setup_epg.cpp:360
 msgid "Make the MultiEPG entries coloured depending on the genre"
 msgstr ""
 
@@ -6639,106 +6633,115 @@ msgid "Seconds in OSD clock"
 msgstr ""
 
 #: src/setup_extra_osd.cpp:75
-msgid "No picture in radio/mp3"
-msgstr ""
+#, fuzzy
+msgid "Progress in %"
+msgstr "Πρόοδος:"
 
 #: src/setup_extra_osd.cpp:75
-msgid "No background picture in radio/mp3 mode"
+msgid "Display Progress in %"
 msgstr ""
 
 #: src/setup_extra_osd.cpp:76
+msgid "No picture in radio/mp3"
+msgstr ""
+
+#: src/setup_extra_osd.cpp:76
+msgid "No background picture in radio/mp3 mode"
+msgstr ""
+
+#: src/setup_extra_osd.cpp:77
 #, fuzzy
 msgid "Listbox OSD main menu"
 msgstr "Κυρίως μενού"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:77
 msgid "Show the Main menu in normal listbox style"
 msgstr ""
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:78
 msgid "Serviceselector help buttons"
 msgstr "Πλήκτρα βοήθειας λίστας επιλογής υπηρεσιών"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:78
 #, fuzzy
 msgid "Show coloured help buttons in service selector"
 msgstr "Εμφάνιση ένχρωμων πλήκτρων βοήθειας στην λίστα επιλογής υπηρεσιών"
 
-#: src/setup_extra_osd.cpp:80
+#: src/setup_extra_osd.cpp:81
 msgid "Show Sat position"
 msgstr "Αποθήκευση νέων δορυφορικών θέσεων"
 
-#: src/setup_extra_osd.cpp:80
+#: src/setup_extra_osd.cpp:81
 #, fuzzy
 msgid "Show satellite position in the infobar"
 msgstr "Ένδειξη εναπομείναντος χρόνου γεγονότος στην μπάρα πληροφοριών"
 
-#: src/setup_extra_osd.cpp:82
+#: src/setup_extra_osd.cpp:83
 msgid "Auto show Infobar"
 msgstr "Αυτόματη εμφάνιση μπάρας πληροφοριών"
 
-#: src/setup_extra_osd.cpp:82
+#: src/setup_extra_osd.cpp:83
 #, fuzzy
 msgid "Always show infobar when new event info is available"
 msgstr "Εμφάνιση μπάρας πληροφοριών εάν αλλάξουν πληροφορίες"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:84
 msgid "Show remaining Time"
 msgstr "Εμφάνιση εναπομείναντος χρόνου"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:84
 #, fuzzy
 msgid "Show event remaining time in the infobar"
 msgstr "Ένδειξη εναπομείναντος χρόνου γεγονότος στην μπάρα πληροφοριών"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:85
 msgid "Hide shortcut icons"
 msgstr ""
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:85
 #, fuzzy
 msgid "Don't show shortcut icons in menus"
 msgstr "Μη εμφάνιση κλειδωμένων υπηρεσιών στις λίστες"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:86
 msgid "Skip confirmations"
 msgstr "Παράλειψη επιβεβαιώσεων"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:86
 #, fuzzy
 msgid "Skip some confirmations"
 msgstr "Παράλειψη επιβεβαιώσεων"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:87
 msgid "Hide error windows"
 msgstr "Απόκρυψη μηνυμάτων λαθών"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:87
 #, fuzzy
 msgid "Don't show zap error messages like service not found"
 msgstr "Απόκρυψη μηνυμάτων λαθών zap"
 
-#: src/setup_extra_osd.cpp:89
+#: src/setup_extra_osd.cpp:90
 msgid "Enable fast zapping"
 msgstr ""
 
-#: src/setup_extra_osd.cpp:89
+#: src/setup_extra_osd.cpp:90
 msgid "Enables faster zapping.. but with visible sync"
 msgstr ""
 
-#: src/setup_extra_osd.cpp:91
+#: src/setup_extra_osd.cpp:92
 msgid "Enable Zapping History"
 msgstr ""
 
-#: src/setup_extra_osd.cpp:91
+#: src/setup_extra_osd.cpp:92
 msgid "Don't care about actual mode when zapping in history list"
 msgstr ""
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:93
 msgid "Auto bouquet change"
 msgstr "Προσθήκη στα μπουκέτα"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:93
 msgid "Change into next bouquet when end of current bouquet is reached"
 msgstr ""
 
@@ -7148,7 +7151,7 @@ msgstr "Κωδικός:"
 msgid "Enter the password of the server"
 msgstr ""
 
-#: src/setup_mounts.cpp:369 src/sselect.cpp:2341 src/sselect.cpp:2380
+#: src/setup_mounts.cpp:369 src/sselect.cpp:2356 src/sselect.cpp:2395
 #, fuzzy
 msgid "Delete"
 msgstr "*Διαγραφή*"
@@ -8853,7 +8856,7 @@ msgstr "Προσθήκη υπηρεσίας σε κάποιο μπουκέτο"
 msgid "toggle between classic and multi column style"
 msgstr "Αλλαγή στίλ, μεταξύ κλασσικού και πολλαπλών στειλών"
 
-#: src/sselect.cpp:151 src/sselect.cpp:1858 src/sselect.cpp:1868
+#: src/sselect.cpp:151 src/sselect.cpp:1868 src/sselect.cpp:1878
 msgid "toggle focus between service and bouquet list (in combi column style)"
 msgstr "Εναλλαγή μεταξύ λίστας υπηρεσιών και λίστας μπουκέτων"
 
@@ -8899,44 +8902,44 @@ msgstr "Μετονομασία επιλεγμένης καταχώρησης"
 msgid "create new marker entry"
 msgstr "Δημιουργία νέου δείκτη (marker)"
 
-#: src/sselect.cpp:377
+#: src/sselect.cpp:379
 msgid "[GO UP]"
 msgstr "[ΕΠΙΣΤΡΟΦΗ]"
 
-#: src/sselect.cpp:379
+#: src/sselect.cpp:381
 msgid "(removed service)"
 msgstr "(διαγεγραμμένη υπηρεσία)"
 
-#: src/sselect.cpp:505
+#: src/sselect.cpp:516
 msgid "mark"
 msgstr "Μαρκάρισμα"
 
-#: src/sselect.cpp:507
+#: src/sselect.cpp:518
 msgid "marker"
 msgstr "Δείκτης"
 
-#: src/sselect.cpp:525
+#: src/sselect.cpp:536
 msgid "My Dreambox"
 msgstr ""
 
-#: src/sselect.cpp:526
+#: src/sselect.cpp:537
 msgid "Movies"
 msgstr "Ταινίες"
 
-#: src/sselect.cpp:1056
+#: src/sselect.cpp:1067
 msgid "Select No or press Abort to lock/unlock the complete directory"
 msgstr "Επιλέξτε Όχι ή πατήστε Άκυρο' για να κλειδώσετε ή όχι όλο τον κατάλογο"
 
-#: src/sselect.cpp:1056
+#: src/sselect.cpp:1067
 msgid "Enter Directory"
 msgstr "Δώστε υποκατάλογο"
 
-#: src/sselect.cpp:1848
+#: src/sselect.cpp:1858
 #, fuzzy
 msgid "toggle between now and next epg entries in single column list"
 msgstr "Εναλλαγή μεταξύ λίστας υπηρεσιών και λίστας μπουκέτων"
 
-#: src/sselect.cpp:1993
+#: src/sselect.cpp:2008
 msgid ""
 "Service selector\n"
 "\n"
@@ -8945,31 +8948,31 @@ msgid ""
 "one or more columns."
 msgstr ""
 
-#: src/sselect.cpp:2338
+#: src/sselect.cpp:2353
 msgid "Root"
 msgstr "Root"
 
-#: src/sselect.cpp:2339
+#: src/sselect.cpp:2354
 #, fuzzy
 msgid "Select"
 msgstr "Επιλογή LNB"
 
-#: src/sselect.cpp:2340
+#: src/sselect.cpp:2355
 #, fuzzy
 msgid "New Directory"
 msgstr "Δώστε υποκατάλογο"
 
-#: src/sselect.cpp:2357
+#: src/sselect.cpp:2372
 #, fuzzy
 msgid "Enter name of new directory:"
 msgstr "Δώστε υποκατάλογο"
 
-#: src/sselect.cpp:2358
+#: src/sselect.cpp:2373
 #, fuzzy
 msgid "Create Directory"
 msgstr "Δώστε υποκατάλογο"
 
-#: src/sselect.cpp:2367
+#: src/sselect.cpp:2382
 #, fuzzy
 msgid "Error creating directory"
 msgstr "Προς τον προηγούμενο κατάλογο"
@@ -9006,45 +9009,45 @@ msgstr "Κομμάτι"
 msgid "length"
 msgstr "Διάρκεια"
 
-#: src/streaminfo.cpp:396
+#: src/streaminfo.cpp:417
 msgid "PMT PID:"
 msgstr ""
 
-#: src/streaminfo.cpp:408
+#: src/streaminfo.cpp:429
 msgid "Teletext PID:"
 msgstr ""
 
-#: src/streaminfo.cpp:420
+#: src/streaminfo.cpp:441
 msgid "Video format:"
 msgstr "Εικόνα:"
 
-#: src/streaminfo.cpp:432
+#: src/streaminfo.cpp:453
 #, fuzzy
 msgid "Transport Stream ID:"
 msgstr "Ανίχνευση καναλιών"
 
-#: src/streaminfo.cpp:444
+#: src/streaminfo.cpp:465
 #, fuzzy
 msgid "Original Network ID:"
 msgstr "Ενεργοποίηση Δικτύου (ok)"
 
-#: src/streaminfo.cpp:468
+#: src/streaminfo.cpp:489
 msgid "Namespace:"
 msgstr ""
 
-#: src/streaminfo.cpp:504
+#: src/streaminfo.cpp:525
 msgid "supported coding systems:"
 msgstr "Σύστηματα κωδικοποίησης DREAMBOX:"
 
-#: src/streaminfo.cpp:544
+#: src/streaminfo.cpp:565
 msgid "Systems used in service:"
 msgstr "Σύστηματα κωδικοποίησης καναλιού:"
 
-#: src/streaminfo.cpp:585
+#: src/streaminfo.cpp:606
 msgid "Record mode - read manual"
 msgstr "Έιδος εγγραφής - δήτε τις οδηγίες"
 
-#: src/streaminfo.cpp:592
+#: src/streaminfo.cpp:613
 msgid ""
 "\tStreaminfo\n"
 "\n"
@@ -9068,15 +9071,15 @@ msgid ""
 "[OK]/[EXIT]\tClose window"
 msgstr ""
 
-#: src/streaminfo.cpp:700
+#: src/streaminfo.cpp:721
 msgid "Service information (right)"
 msgstr "Πληροφορίες υπηρεσίας (>)"
 
-#: src/streaminfo.cpp:701
+#: src/streaminfo.cpp:722
 msgid "Scrambled system information (left, right)"
 msgstr "Πληροφορίες κωδικοποίησης (<, >)"
 
-#: src/streaminfo.cpp:702
+#: src/streaminfo.cpp:723
 msgid "Transponder information (left)"
 msgstr "Πληροφορίες αναμεταδότη (<)"
 
@@ -9802,7 +9805,7 @@ msgstr ""
 msgid "Upgrade in process..."
 msgstr "Αναβάθμιση σε εξέλιξη ..."
 
-#: src/wizard_language.cpp:168
+#: src/wizard_language.cpp:169
 msgid ""
 "\tOSD Language\n"
 "\n"
@@ -9821,11 +9824,11 @@ msgid ""
 "[EXIT]\tClose window without saving changes"
 msgstr ""
 
-#: src/wizard_language.cpp:180
+#: src/wizard_language.cpp:181
 msgid "Choose your language..."
 msgstr "       Γλώσσα των μενού ..."
 
-#: src/wizard_language.cpp:181
+#: src/wizard_language.cpp:182
 msgid "press up/down/ok"
 msgstr "Πατώντας ΟΚ επιλέγετε τα Ελληνικά"
 
@@ -9861,6 +9864,9 @@ msgstr ""
 #: src/wizard_scan.cpp:170
 msgid "DISH LNB for North America and Canada"
 msgstr ""
+
+#~ msgid "no EPG available"
+#~ msgstr "Δεν υπάρχει EPG"
 
 #, fuzzy
 #~ msgid "max. recording time (minutes):"

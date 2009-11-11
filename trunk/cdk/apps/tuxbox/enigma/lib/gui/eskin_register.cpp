@@ -42,7 +42,7 @@ public:
 		if(dir != NULL)		       
 		    while((de = readdir(dir)) != 0)
 		    {
-			if(fnmatch("default.esml",de->d_name,FNM_FILE_NAME))continue;
+			if(fnmatch("default.esml",de->d_name,0))continue;
 			if(fnmatch("*.esml",de->d_name,FNM_FILE_NAME)){
 				defaultSkin=de->d_name;
 				break;

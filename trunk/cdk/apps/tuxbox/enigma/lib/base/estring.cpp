@@ -550,7 +550,12 @@ eString GB2312ToUTF8(const char *szIn, int len)
 			t+=k;
 			i++;
 			}
-		else 
+		else if(cjktmp[0]==0xA9 && cjktmp[1]==0x73){
+			szOut[t++]=':';
+			szOut[t++]=' ';
+			i++;
+		}
+		else
 			szOut[t++]=szIn[i];
 	}
 	return eString(szOut,t);

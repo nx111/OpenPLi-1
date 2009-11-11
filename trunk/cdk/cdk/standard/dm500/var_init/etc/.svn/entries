@@ -1,18 +1,18 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm500/var_init/etc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -202,11 +202,11 @@ file
 
 
 
-2009-09-15T02:51:44.760541Z
-c714ef47361256d9abd8a1c6300897ae
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-28T01:26:45.877711Z
+3eaf1631a75ef805a211a2ead9ee1022
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
 
@@ -228,7 +228,7 @@ plindeman
 
 
 
-1106
+1133
 
 plimgr
 dir

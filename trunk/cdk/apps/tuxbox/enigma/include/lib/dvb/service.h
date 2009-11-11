@@ -35,6 +35,7 @@ public:
 		evtFlagsChanged,
 
 		evtAspectChanged,
+		evtVideoSystemChanged,
 
 		evtEnd,
 

@@ -23,6 +23,7 @@ public:
 	static eStreamWatchdog *getInstance();
 	int isAnamorph();
 	Signal1<void, int> AspectRatioChanged;
+	Signal1<void, int> VideoSystemChanged;
 	Signal1<void, int> VCRActivityChanged;
 };
 

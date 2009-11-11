@@ -25,7 +25,7 @@
  *  $Revision$
  */
 
-#define RELEASENAME "jade"
+#define RELEASENAME "openpli"
 #define EHTTPDOWNLOAD
 
 #include <stdio.h>
@@ -61,6 +61,7 @@
 #define PPANELRESTARTCODE (684)
 #include "ppanel.h"
 
+using namespace std ;
 InstalledPackages installedPackages;
 
 /******************************************************************************/
@@ -412,7 +413,8 @@ int ePPanelEntry::postActions(void)
 
    return rc;
 }
-	
+
+
 /******************************************************************************/
 
 MiniPressOKWindow::MiniPressOKWindow()
@@ -640,6 +642,15 @@ eListBoxEntryExecute::eListBoxEntryExecute(
    : ePPanelEntry(parentdlg, listbox, name, helptext, node)
 {
    target=node->GetAttributeValue("target");
+   checked=node->GetAttributeValue("checked");
+   if (parentdlg.checkbox=="radio" || parentdlg.checkbox=="check")
+		parentdlg.items.push_back(this);
+      //set checkedbox
+   bool chked=systemFixed(checked.c_str());
+   if(!chked){
+	setChecked(true);
+      }
+//   eDebug("PPanel:checked=%s chked=%d",checked.c_str(),chked);
 }
 
 void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
@@ -660,6 +671,19 @@ void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
       dlg.hide();
       parentdlg.show();
 
+      //set checkedbox
+      if(checked.length()){
+	      bool chked=systemFixed(checked.c_str());
+	      if(!chked){
+	      	  if(parentdlg.checkbox == "radio"){
+		       for(std::list<eListBoxEntryExecute*>::iterator i(parentdlg.items.begin());i!=parentdlg.items.end();i++)
+				(*i)->setChecked(false);
+			listbox->invalidate(listbox->getClientRect(),false);
+			}
+		setChecked(true);
+	      }
+      }
+ //  eDebug("PPanel:checked=%s chked=%d parentdlg.checkbox=%s",checked.c_str(),chked,parentdlg.checkbox.c_str());
       // Execute script after
       if(rc == 0) rc = postActions();
    }
@@ -1176,7 +1200,7 @@ void BaseWindow::setError(const eString& errmsg)
 
 PPanel::PPanel(const eString &xmlFile) 
 	: BaseWindow("PPanel"),
-	directory(0)
+	directory(0),checkbox("null")
 {
 	FILE* fh;
 	XMLTreeNode *node = 0;
@@ -1224,7 +1248,7 @@ PPanel::PPanel(const eString &xmlFile)
 
 PPanel::PPanel(XMLTreeNode *node)
 	: BaseWindow("PPanel"),
-	directory(0)
+	directory(0),checkbox("null")
 {
 	loadItems(node);
 	CONNECT(list.selected, PPanel::itemSelected);
@@ -1276,8 +1300,8 @@ eString PPanel::getPPanelName(const eString &xmlFile)
 	int len;                                                            
 	bool error = false;                                                 
 
-	XMLTreeParser* dir = new XMLTreeParser("UTF-8");
-//	XMLTreeParser* dir = new XMLTreeParser("ISO-8859-1");
+//	XMLTreeParser* dir = new XMLTreeParser("UTF-8");
+	XMLTreeParser* dir = new XMLTreeParser("ISO-8859-1");
 	FILE* fh = fopen(xmlFile.c_str(), "r");                
 
 	if(fh && dir)
@@ -1393,9 +1417,12 @@ void PPanel::loadItems(XMLTreeNode *category)
 				return;
 			}
 		}
+
+		checkbox = category->GetAttributeValue("checkbox");
 		
       list.beginAtomic();
       list.clearList();
+      items.clear();
 
       for (XMLTreeNode *r=category->GetChild(); r; r=r->GetNext())
       {

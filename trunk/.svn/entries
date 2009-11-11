@@ -1,18 +1,18 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-10-09T13:26:21.867108Z
-23
-daf2000
+2009-10-26T13:11:42.352195Z
+31
+pieterg
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -30,5 +30,8 @@ cdk
 dir
 
 external
+dir
+
+pli-oe
 dir
 

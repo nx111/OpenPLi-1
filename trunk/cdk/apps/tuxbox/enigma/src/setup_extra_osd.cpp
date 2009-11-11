@@ -73,6 +73,7 @@ ExtraOSDSetup::ExtraOSDSetup()
 	new eListBoxEntryCheck(&list, _("Expert OSD on zap"), "/ezap/osd/OSDVerboseInfoOnZap", _("Show other extra info in OSD when zapping"));
 	new eListBoxEntryCheck(&list, _("Seconds in OSD clock"), "/ezap/osd/clockSeconds", _("Seconds in OSD clock"));
 	new eListBoxEntryCheck(&list, _("Progress in %"), "/ezap/osd/PercentProgress", _("Display Progress in %"));
+	new eListBoxEntryCheck(&list, _("Filt Userbouquet"), "/ezap/osd/filtuserbouquet", _("Filt Userbouquet's Services where not my satellites"));
 	new eListBoxEntryCheck(&list, _("No picture in radio/mp3"), "/ezap/osd/hidebginradiomode", _("No background picture in radio/mp3 mode"));
 	new eListBoxEntryCheck(&list, _("Listbox OSD main menu"), "/ezap/osd/simpleMainMenu", _("Show the Main menu in normal listbox style"));
 	CONNECT((new eListBoxEntryCheck(&list,_("Serviceselector help buttons"),"/ezap/serviceselector/showButtons",_("Show coloured help buttons in service selector")))->selected, ExtraOSDSetup::colorbuttonsChanged );

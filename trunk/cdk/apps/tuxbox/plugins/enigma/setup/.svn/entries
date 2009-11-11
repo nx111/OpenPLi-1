@@ -1,7 +1,7 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma/setup
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -12,7 +12,7 @@ https://openpli.svn.sourceforge.net/svnroot/openpli
 plindeman
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -332,40 +332,6 @@ plindeman
 
 90
 
-setup_gbox.cpp
-file
-
-
-
-
-2009-09-15T02:54:00.837042Z
-17b20c55bf72bcaa84fa26c1dc424c2f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10120
-
 setup_tpl.cpp
 file
 
@@ -400,14 +366,14 @@ plindeman
 
 3259
 
-setup_gbox.h
+setup_gbox.cpp
 file
 
 
 
 
 2009-09-15T02:54:00.837042Z
-f0771af1911dd3efa8f0f471533fdc23
+17b20c55bf72bcaa84fa26c1dc424c2f
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -432,7 +398,7 @@ plindeman
 
 
 
-1594
+10120
 
 setup_tpl.h
 file
@@ -468,14 +434,14 @@ plindeman
 
 1374
 
-setup_runapp.cpp
+setup_gbox.h
 file
 
 
 
 
 2009-09-15T02:54:00.837042Z
-4ba760b6d47628f31688dcfb9835a79d
+f0771af1911dd3efa8f0f471533fdc23
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -500,7 +466,7 @@ plindeman
 
 
 
-4165
+1594
 
 setup_firewall.cpp
 file
@@ -535,6 +501,40 @@ plindeman
 
 
 5540
+
+setup_runapp.cpp
+file
+
+
+
+
+2009-09-15T02:54:00.837042Z
+4ba760b6d47628f31688dcfb9835a79d
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4165
 
 camx.cpp
 file

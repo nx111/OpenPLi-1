@@ -1,7 +1,7 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/include/lib/base
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -12,7 +12,7 @@ https://openpli.svn.sourceforge.net/svnroot/openpli
 plindeman
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -25,40 +25,6 @@ svn:special svn:externals svn:needs-lock
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-eerror.h
-file
-
-
-
-
-2009-09-15T02:52:13.956542Z
-2e46f242e3ad32b4967a3fea8c982f46
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2881
 
 epoint.h
 file
@@ -94,21 +60,14 @@ plindeman
 
 4027
 
-gb2312.h
-file
-0
-
-
-add
-
-console.h
+eerror.h
 file
 
 
 
 
-2009-09-15T02:52:13.960542Z
-6467879a765f26669542ab7bf17d8ba4
+2009-09-15T02:52:13.956542Z
+2e46f242e3ad32b4967a3fea8c982f46
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -133,7 +92,14 @@ plindeman
 
 
 
-937
+2881
+
+gb2312.h
+file
+0
+
+
+add
 
 erect.h
 file
@@ -168,6 +134,40 @@ plindeman
 
 
 4834
+
+console.h
+file
+
+
+
+
+2009-09-15T02:52:13.960542Z
+6467879a765f26669542ab7bf17d8ba4
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+937
 
 eptrlist.h
 file
@@ -305,14 +305,14 @@ plindeman
 
 4069
 
-ebase.h
+i18n.h
 file
 
 
 
 
 2009-09-15T02:52:13.956542Z
-5076ad2dcff5fe00381d18527773a196
+537eb5f2c088173fed31a20288a79433
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -337,7 +337,7 @@ plindeman
 
 
 
-6421
+1002
 
 esize.h
 file
@@ -373,14 +373,14 @@ plindeman
 
 4373
 
-i18n.h
+ebase.h
 file
 
 
 
 
 2009-09-15T02:52:13.956542Z
-537eb5f2c088173fed31a20288a79433
+5076ad2dcff5fe00381d18527773a196
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -405,7 +405,7 @@ plindeman
 
 
 
-1002
+6421
 
 Makefile.am
 file

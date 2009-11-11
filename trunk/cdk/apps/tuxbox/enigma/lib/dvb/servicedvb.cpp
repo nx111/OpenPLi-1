@@ -1048,6 +1048,12 @@ void eServiceHandlerDVB::aspectRatioChanged(int isanamorph)
 	serviceEvent(eServiceEvent(eServiceEvent::evtAspectChanged));
 }
 
+void eServiceHandlerDVB::videoSystemChanged(int vsystem)
+{
+	this->vsystem=vsystem;
+	serviceEvent(eServiceEvent(eServiceEvent::evtVideoSystemChanged));
+}
+
 eServiceHandlerDVB::eServiceHandlerDVB()
 	:eServiceHandler(eServiceReference::idDVB),
 #ifndef DISABLE_FILE
@@ -1076,6 +1082,7 @@ void eServiceHandlerDVB::init_eServiceHandlerDVB()
 	CONNECT(eDVB::getInstance()->eventOccured, eServiceHandlerDVB::handleDVBEvent);
 #endif
 	CONNECT(eStreamWatchdog::getInstance()->AspectRatioChanged, eServiceHandlerDVB::aspectRatioChanged);
+	CONNECT(eStreamWatchdog::getInstance()->VideoSystemChanged, eServiceHandlerDVB::videoSystemChanged);
 
 	int data = 0xFFFFFFFF;
 	data &= ~(1<<4);  // exclude NVOD
@@ -1358,6 +1365,11 @@ EIT *eServiceHandlerDVB::getEIT()
 int eServiceHandlerDVB::getAspectRatio()
 {
 	return aspect;
+}
+
+int eServiceHandlerDVB::getVideoSystem()
+{
+	return vsystem;
 }
 
 int eServiceHandlerDVB::getState()

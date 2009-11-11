@@ -1,7 +1,7 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/chk_stone
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -12,7 +12,7 @@ https://openpli.svn.sourceforge.net/svnroot/openpli
 plindeman
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -604,40 +604,6 @@ has-props
 
 679
 
-3D_border_unselected_ver_light.png
-file
-
-
-
-
-2009-09-15T02:53:04.192542Z
-c1f72ed60680d2ed7481eace9718c237
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-93
-
 b.png
 file
 
@@ -671,6 +637,40 @@ has-props
 
 
 380
+
+3D_border_unselected_ver_light.png
+file
+
+
+
+
+2009-09-15T02:53:04.192542Z
+c1f72ed60680d2ed7481eace9718c237
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93
 
 format_off.png
 file
@@ -706,40 +706,6 @@ has-props
 
 141
 
-red-button.png
-file
-
-
-
-
-2009-09-15T02:53:04.192542Z
-0135dd166a53823835dd1fad8fad395f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-306
-
 vt_off.png
 file
 
@@ -773,6 +739,40 @@ has-props
 
 
 126
+
+red-button.png
+file
+
+
+
+
+2009-09-15T02:53:04.192542Z
+0135dd166a53823835dd1fad8fad395f
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+306
 
 format_on.png
 file
@@ -808,40 +808,6 @@ has-props
 
 141
 
-no-button.png
-file
-
-
-
-
-2009-09-15T02:53:04.196543Z
-ffd2b127f69227ba48aa1deadd6254f0
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-246
-
 tr.png
 file
 
@@ -876,14 +842,14 @@ has-props
 
 671
 
-3D_border_unselected_corner_dark.png
+no-button.png
 file
 
 
 
 
 2009-09-15T02:53:04.196543Z
-1d2f5dc7916c261585bc39c13edaea55
+ffd2b127f69227ba48aa1deadd6254f0
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -908,7 +874,7 @@ has-props
 
 
 
-96
+246
 
 lcdmenu.png
 file
@@ -944,6 +910,40 @@ has-props
 
 143
 
+3D_border_unselected_corner_dark.png
+file
+
+
+
+
+2009-09-15T02:53:04.196543Z
+1d2f5dc7916c261585bc39c13edaea55
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+96
+
 unchecked.png
 file
 
@@ -978,40 +978,6 @@ has-props
 
 109
 
-crypt_off.png
-file
-
-
-
-
-2009-09-15T02:53:04.196543Z
-6eaf6ed9aa010f225079b31eaaaf45b4
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-99
-
 l.png
 file
 
@@ -1045,6 +1011,40 @@ has-props
 
 
 411
+
+crypt_off.png
+file
+
+
+
+
+2009-09-15T02:53:04.196543Z
+6eaf6ed9aa010f225079b31eaaaf45b4
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+99
 
 rec_symbol-fs8.png
 file

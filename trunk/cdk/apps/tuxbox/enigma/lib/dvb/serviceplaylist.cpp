@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <fnmatch.h>
 
 #include <sstream>
 #include <iostream>
@@ -44,6 +45,10 @@ int ePlaylist::load(const char *filename)
 	this->filename=filename;
 	// first determine the filepath
 	filepath = filename;
+	int userbouquets_tv_name=fnmatch("*/userbouquets.*.tv",filename,0);
+	int filtservice=0;
+	eConfig::getInstance()->getKey("/ezap/osd/filtuserbouquet",filtservice);
+
 	int service_name_set=service_name!="playlist";
 	if (!service_name_set)
 		service_name=eString("playlist: ") + filepath.mid(filepath.rfind('/')+1);
@@ -68,6 +73,7 @@ int ePlaylist::load(const char *filename)
 	char line[4096];
 	eString FullFilename = "";
 	line[255] = 0;
+	bool serviceskiped=false;
 	while (1)
 	{
 		if (!fgets(line, sizeof(line), fp))
@@ -81,6 +87,7 @@ int ePlaylist::load(const char *filename)
 			indescr = 0;
 			if (!strncmp(line, "#SERVICE", 8))
 			{
+				serviceskiped=false;				
 				int offs = line[8] == ':' ? 10 : 9;
 				eString Line = line + offs;
 				// If this is recordings.epl we change the filepath in the read line
@@ -140,10 +147,22 @@ int ePlaylist::load(const char *filename)
 					((eServiceReferenceDVB&)list.back().service).setFileLength(filelength);
 					((eServiceReferenceDVB&)list.back().service).setFileTime(filetime);
 				}
+				else if (userbouquets_tv_name && filtservice)
+				{
+					int ns=((eServiceReferenceDVB&)list.back().service).getDVBNamespace().get();
+					int pos=ns>>16;
+					eSatellite * psatellite=eTransponderList::getInstance()->findSatellite(pos);
+					if(!psatellite)
+					{
+						list.pop_back();
+						serviceskiped=true;
+					}
+					
+				}
 #endif
 				ignore_next=1;
 			}
-			else if (!strncmp(line, "#DESCRIPTION", 12))
+			else if (!strncmp(line, "#DESCRIPTION", 12) && !serviceskiped)
 			{
 				int offs = line[12] == ':' ? 14 : 13;
 				list.back().service.descr=line+offs;
@@ -154,26 +173,26 @@ int ePlaylist::load(const char *filename)
 				current=list.end();
 				current--;
 			}
-			else if (!strncmp(line, "#LAST_ACTIVATION ", 17))
+			else if (!strncmp(line, "#LAST_ACTIVATION ", 17) && !serviceskiped)
 				list.back().last_activation=atoi(line+17);
-			else if (!strncmp(line, "#CURRENT_POSITION ", 18))
+			else if (!strncmp(line, "#CURRENT_POSITION ", 18) && !serviceskiped)
 				list.back().current_position=atoi(line+18);
-			else if (!strncmp(line, "#TYPE ", 6))
+			else if (!strncmp(line, "#TYPE ", 6) && !serviceskiped)
 				list.back().type=atoi(line+6);
-			else if (!strncmp(line, "#EVENT_ID ", 10))
+			else if (!strncmp(line, "#EVENT_ID ", 10) && !serviceskiped)
 				list.back().event_id=atoi(line+10);
-			else if (!strncmp(line, "#TIME_BEGIN ", 12))
+			else if (!strncmp(line, "#TIME_BEGIN ", 12) && !serviceskiped)
 				list.back().time_begin=atoi(line+12);
-			else if (!strncmp(line, "#DURATION ", 10))
+			else if (!strncmp(line, "#DURATION ", 10) && !serviceskiped)
 				list.back().duration=atoi(line+10);
-			else if (!strncmp(line, "#NAME ", 6))
+			else if (!strncmp(line, "#NAME ", 6) && !serviceskiped)
 			{
 				service_name=line+6;
 				service_name_set=1;
 			}
 			continue;
 		}
-		if (indescr)
+		if (indescr && !serviceskiped)
 		{
 			list.back().service.descr+=line;
 			continue;

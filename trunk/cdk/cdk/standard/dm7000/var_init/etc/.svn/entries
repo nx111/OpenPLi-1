@@ -1,18 +1,18 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm7000/var_init/etc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -137,11 +137,11 @@ file
 
 
 
-2009-09-15T02:51:49.956542Z
-6bfef2477eedb349316cfe315160f0e4
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-28T01:26:46.033708Z
+6fdf06a6be268142b60dcec946cd3ec5
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
 
@@ -163,7 +163,7 @@ plindeman
 
 
 
-1109
+1136
 
 hostname
 file

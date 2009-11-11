@@ -160,7 +160,8 @@ class eServiceHandlerDVB: public eServiceHandler
 	void gotPMT(PMT *pmt);
 	void leaveService(const eServiceReferenceDVB &);
 	void aspectRatioChanged(int ratio);
-	int state, aspect, error;
+	void videoSystemChanged(int vsystem);
+	int state, aspect,vsystem,error;
 	
 	int pcrpid;
 
@@ -188,6 +189,7 @@ public:
 	EIT *getEIT();
 	
 	int getAspectRatio();
+	int getVideoSystem();
 	int getState();
 	int getErrorInfo();
 

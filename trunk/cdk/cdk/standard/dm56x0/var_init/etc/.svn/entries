@@ -1,18 +1,18 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm56x0/var_init/etc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -202,11 +202,11 @@ file
 
 
 
-2009-09-15T02:51:37.232542Z
-8801672b42dfb6751b5a85cb9b1e92ec
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-28T01:26:45.829710Z
+fce8a864caad283fd5eccf8eaee8509d
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
 
@@ -228,7 +228,7 @@ plindeman
 
 
 
-1109
+1136
 
 plimgr
 dir

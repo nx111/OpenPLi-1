@@ -1,18 +1,18 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm7020/etc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2009-09-15T02:51:50.224542Z
-28097a004a3527eb92e8bb0b82b60d6f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-10-28T01:26:46.125709Z
+1a53850eba05540ebc8af8bd07457b19
+2009-10-25T12:44:18.087787Z
+27
+pieterg
 
 
 
@@ -92,5 +92,5 @@ plindeman
 
 
 
-1093
+1120
 

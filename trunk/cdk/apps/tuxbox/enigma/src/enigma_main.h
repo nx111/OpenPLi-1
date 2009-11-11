@@ -424,6 +424,7 @@ private:
 public:	eFixedMessagePump<eEPGCache::Message> epg_messages;
 	int timeAdjusted;
 	int timeCorrectting;
+	eSize lastvsize;
 
 private:
 	eTimer timeout, clocktimer, messagetimeout,
@@ -611,6 +612,7 @@ private:
 	bool CheckService(const eServiceReference &ref );
 	void handleServiceEvent(const eServiceEvent &event);
 	void startService(const eServiceReference &, int);
+	void keyEvent(const eRCKey& rckey);
 	void gotEIT();
 	void gotSDT();
 	void gotPMT();

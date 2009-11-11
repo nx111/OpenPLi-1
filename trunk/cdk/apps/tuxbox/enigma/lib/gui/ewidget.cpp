@@ -9,6 +9,8 @@
 #include <lib/gui/guiactions.h>
 #include <lib/system/init.h>
 #include <lib/system/init_num.h>
+#include <streaminfo.h>
+#include <enigma_main.h>
 
 extern eWidget *currentFocus;
 
@@ -1037,6 +1039,10 @@ int eWidget::parse(const char* p, int *v, int *e, int max)
 
 int eWidget::setProperty(const eString &prop, const eString &value)
 {
+	unsigned int tvsystem = 0;
+	if(parent==root)
+		eConfig::getInstance()->getKey("/elitedvb/video/tvsystem", tvsystem );
+
 	if (prop=="position")
 	{
 		int v[2], e[2]={0, 0};
@@ -1044,6 +1050,16 @@ int eWidget::setProperty(const eString &prop, const eString &value)
 		{
 			e[0]=parent->clientrect.width();
 			e[1]=parent->clientrect.height();
+			if(parent==root && tvsystem>2)
+			{
+				int vhsize=getVidSize().height();
+				if(!vhsize)vhsize=eZapMain::getInstance()->lastvsize.height();
+				if(!vhsize)vhsize=576;
+
+				if(vhsize)
+					e[1]=vhsize;
+
+			}
 		}
 		int err=parse(value.c_str(), v, e, 2);
 		if (err)
@@ -1059,6 +1075,16 @@ int eWidget::setProperty(const eString &prop, const eString &value)
 		{
 			e[0]=parent->clientrect.width();
 			e[1]=parent->clientrect.height();
+			if(parent==root && tvsystem>2)
+			{
+				int vhsize=getVidSize().height();
+				if(!vhsize)vhsize=eZapMain::getInstance()->lastvsize.height();
+				if(!vhsize)vhsize=576;
+
+				if(vhsize)
+					e[1]=vhsize;
+
+			}
 		}
 		int err=parse(value.c_str(), v, e, 2);
 		if (err)
@@ -1075,6 +1101,16 @@ int eWidget::setProperty(const eString &prop, const eString &value)
 		{
 			e[0]=parent->clientrect.width()-position.x();
 			e[1]=parent->clientrect.height()-position.y();
+			if(parent==root && tvsystem>2)
+			{
+				int vhsize=getVidSize().height();
+				if(!vhsize)vhsize=eZapMain::getInstance()->lastvsize.height();
+				if(!vhsize)vhsize=576;
+
+				if(vhsize)
+					e[1]=vhsize-position.y();
+
+			}
 		}
 		int err=parse(value.c_str(), v, e, 2);
 		if (err)
@@ -1090,6 +1126,16 @@ int eWidget::setProperty(const eString &prop, const eString &value)
 		{
 			e[0]=parent->clientrect.width()-position.x();
 			e[1]=parent->clientrect.height()-position.y();
+			if(parent==root && tvsystem>2)
+			{
+				int vhsize=getVidSize().height();
+				if(!vhsize)vhsize=eZapMain::getInstance()->lastvsize.height();
+				if(!vhsize)vhsize=576;
+
+				if(vhsize)
+					e[1]=vhsize-position.y();
+
+			}
 		}
 		int err=parse(value.c_str(), v, e, 2);
 		if (err)

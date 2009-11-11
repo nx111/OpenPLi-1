@@ -713,7 +713,8 @@ void ePluginThread::finalize_plugin()
 eScriptOutputWindow::eScriptOutputWindow(ePlugin *plugin):
 eWindow(1)
 {
-	cresize(eSize(580, 420));
+	cresize(eSize(580, 390));
+	cmove(ePoint(80,50));
 
 	setText(eString().sprintf(_("Output from %s"), plugin->sopath.c_str()));
 
@@ -730,6 +731,7 @@ eWindow(1)
 	visible->move(ePoint(10, 5));
 	visible->resize(eSize(width() - 40, height() - 100));
 
+
 	label = new eLabel(visible);
 	label->setFlags(RS_WRAP);
 	float lineheight = fontRenderClass::getInstance()->getLineHeight(label->getFont());
@@ -741,6 +743,8 @@ eWindow(1)
 	label->hide();
 	label->move(ePoint(0, 0));
 	label->setText(eString().sprintf(_("Executing %s. Please wait..."), plugin->sopath.c_str()));
+	label->setName("output");
+
 	script = new eConsoleAppContainer(plugin->sopath);
 	if (!script->running())
 		label->setText(eString().sprintf(_("Could not execute %s"), plugin->sopath.c_str()));
@@ -750,6 +754,7 @@ eWindow(1)
 		CONNECT(script->dataAvail, eScriptOutputWindow::getData);
 		CONNECT(script->appClosed, eScriptOutputWindow::scriptClosed);
 	}
+
 	updateScrollbar();
 	label->show();
 

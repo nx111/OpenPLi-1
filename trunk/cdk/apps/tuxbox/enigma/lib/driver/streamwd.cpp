@@ -164,21 +164,26 @@ void eStreamWatchdog::reloadSettings(int override_aspect)
 	eAVSwitch::getInstance()->setVideoFormat( videoDisplayFormat );
 	eAVSwitch::getInstance()->setAspectRatio(doanamorph?r169:r43);
 
+	eVSystem vsystem;
 	switch (frate)
 	{
 		case 1:
 		case 2:
 		case 3:
 		case 6:
-			eAVSwitch::getInstance()->setVSystem(vsPAL);
+			vsystem=vsPAL;
 			break;
 		case 4:
 		case 5:
 		case 7:
 		case 8:
-			eAVSwitch::getInstance()->setVSystem(vsNTSC);
+			vsystem=vsNTSC;
 			break;
 	}
+	
+	eAVSwitch::getInstance()->setVSystem(vsystem);
+	/*emit*/ VideoSystemChanged(vsystem);
+
 	unsigned int auto_vcr_switching=1;
 	eConfig::getInstance()->getKey("/elitedvb/video/vcr_switching", auto_vcr_switching );
 	if ( auto_vcr_switching && VcrSlbVlt != prevVcrSlbVlt )

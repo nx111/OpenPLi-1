@@ -495,7 +495,7 @@ void eDVBServiceController::handleEvent(const eDVBEvent &event)
 		if (dvb.getState()==eDVBServiceState::stateServiceGetPMT)
 			dvb.event(eDVBServiceEvent(eDVBServiceEvent::eventServiceSwitched));
 		else
-			eDebug("nee, doch nicht (state ist %d)", (int)dvb.getState());
+			eDebug("no,not yet (state is %d)", (int)dvb.getState());
 		break;
 	}
 	case eDVBServiceEvent::eventServiceGotSDT:

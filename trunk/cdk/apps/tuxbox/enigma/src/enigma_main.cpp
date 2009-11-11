@@ -2306,9 +2306,11 @@ void eZapMain::init_main()
 
 	cur_start=cur_duration=-1;
 	cur_event_text="";
+	lastvsize=eSize(0,0);
 	cur_event_id=-1;
 
 	CONNECT(eServiceInterface::getInstance()->serviceEvent, eZapMain::handleServiceEvent);
+	CONNECT(eRCInput::getInstance()->keyEvent,eZapMain::keyEvent);
 
 	CONNECT(eEPGCache::getInstance()->EPGAvail, eZapMain::EPGAvail);
 	CONNECT(eEPGCache::getInstance()->EPGUpdated, eZapMain::EPGUpdated);
@@ -3607,6 +3609,7 @@ void eZapMain::standbyRelease()
 standby:
 		if ( !enigmaVCR::getInstance() )
 		{
+			lastvsize=getVidSize();
 			eZapStandby standby;
 			hide();
 			standby.show();
@@ -3631,6 +3634,7 @@ standby:
 #ifndef DISABLE_FILE
 			beginPermanentTimeshift();
 #endif
+			resetPositionAndSize();
 		}
 	}
 }
@@ -7605,19 +7609,23 @@ void eZapMain::resetPositionAndSize()
 	eConfig::getInstance()->getKey("/elitedvb/video/tvsystem", tvsystem );
 	if(tvsystem >2){	//not pal only nor ntsc only
 		int vhsize=getVidSize().height();
+		if(!vhsize)vhsize=lastvsize.height();
 		if(!vhsize)vhsize=576;
 
 		eWidget * desktop_fb=eZap::getInstance()->getDesktop(eZap::desktopFB);
+		desktop_fb->resetPositionSize();
+
 		int pal_offset=eSkin::getActive()->queryValue("PAL_OFFSET", 0);
 		int ntsc_offset=eSkin::getActive()->queryValue("NTSC_OFFSET", 0);
-		if(vhsize==576)vhsize+=pal_offset;
-		if(vhsize==480)vhsize+=ntsc_offset;
-		if(vhsize)
-			desktop_fb->resize(eSize(720,vhsize));
-		desktop_fb->resetPositionSize();
+		ePoint pos=getPosition();
+
+		if(vhsize==576)pos.setY(pos.y()+pal_offset);
+		if(vhsize==480)pos.setY(pos.y()+ntsc_offset);
+
+		move((const ePoint &)pos);
+
 		desktop_fb->invalidate(eRect(), 1);
 	}
-
 }
 void eZapMain::handleServiceEvent(const eServiceEvent &event)
 {
@@ -7660,13 +7668,18 @@ void eZapMain::handleServiceEvent(const eServiceEvent &event)
 	case eServiceEvent::evtAspectChanged:
 	{
 
-		resetPositionAndSize();
-
 		int aspect = eServiceInterface::getInstance()->getService()->getAspectRatio();
 		set16_9Logo(aspect);
         	VidFormat->setText(getVidFormat());
 		break;
 	}
+	case eServiceEvent::evtVideoSystemChanged:
+	{
+		
+		resetPositionAndSize();
+		break;
+	}
+
 	case eServiceEvent::evtStart:
 	{
 
@@ -8196,6 +8209,17 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 	}
 }
 
+void eZapMain::keyEvent(const eRCKey& rckey)
+{
+	struct stat buf;
+	bool willStandby=false;
+	if(-1 != stat("/var/etc/getconfig/standbying",&buf))
+		willStandby=true;
+	if( !(eZapStandby::getInstance()) && willStandby)
+		unlink("/var/etc/getconfig/standbying");
+
+}
+
 void eZapMain::gotEIT()
 {
 	eServiceHandler *sapi=eServiceInterface::getInstance()->getService();
@@ -8527,7 +8551,6 @@ void eZapMain::gotMessage(const int &c)
 				eZapStandby::getInstance()->wakeUp(0);
 			else if ( enigmaVCR::getInstance() )
 				enigmaVCR::getInstance()->switchBack();
-			resetPositionAndSize();
 			return;
 		case eZapMain::messageCheckVCR:
 			eStreamWatchdog::getInstance()->reloadSettings();

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/system
+V 68
+/svnroot/openpli/!svn/ver/31/trunk/cdk/apps/tuxbox/enigma/lib/system
 END
 http_file.cpp
 K 25
@@ -78,8 +78,8 @@ END
 info.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/system/info.cpp
+V 77
+/svnroot/openpli/!svn/ver/31/trunk/cdk/apps/tuxbox/enigma/lib/system/info.cpp
 END
 elock.cpp
 K 25

@@ -82,7 +82,7 @@ void eListBoxBase::recalcMaxEntries()
 		MaxEntries = height();
 	int tmp = MaxEntries;
 	MaxEntries /= item_height;
-/*	eDebug("height = %d, MaxEntries = %d, item height = %d",
+	/*eDebug("height = %d, MaxEntries = %d, item height = %d",
 		tmp, MaxEntries, item_height);*/
 	
 	// The code here is really funny times .. but works:)
@@ -91,7 +91,7 @@ void eListBoxBase::recalcMaxEntries()
 	// And no edge remains ..
 	if ( tmp - ( MaxEntries*item_height ) > 0 )
 	{
-/*		if ( !removed_height_pixel )
+		if ( (!removed_height_pixel)|| MaxEntries)
 		{
 			removed_height_pixel = height() - ((MaxEntries*item_height) + decoheight);
 			resize( eSize( size.width(), height()-removed_height_pixel ) );
@@ -111,10 +111,7 @@ void eListBoxBase::recalcMaxEntries()
 				removed_height_pixel += tmp;
 			}
 		}
-*/
 
-		removed_height_pixel = height() - ((MaxEntries*item_height) + decoheight);
-		resize( eSize( size.width(), height()-removed_height_pixel ) );
 	}
 /*	else
 		eDebug("is ok .. do nothing");*/

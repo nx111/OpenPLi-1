@@ -53,7 +53,7 @@ public:
 //#ifndef DISABLE_LCD
 		desktopLCD,
 //#endif
-		desktopFB
+		desktopFB,
 	};
 
 	eWidget *getDesktop(int nr)

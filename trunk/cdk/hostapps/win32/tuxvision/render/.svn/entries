@@ -1,7 +1,7 @@
-9
+10
 
 dir
-23
+31
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/hostapps/win32/tuxvision/render
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -12,7 +12,7 @@ https://openpli.svn.sourceforge.net/svnroot/openpli
 plindeman
 
 
-svn:special svn:externals svn:needs-lock
+
 
 
 
@@ -230,40 +230,6 @@ plindeman
 
 226
 
-render.h
-file
-
-
-
-
-2009-09-15T02:52:02.217042Z
-7e9e9104e8d89040d5228dbe0f5bbf99
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1825
-
 PROPERTY.CPP
 file
 
@@ -297,6 +263,40 @@ plindeman
 
 
 5056
+
+render.h
+file
+
+
+
+
+2009-09-15T02:52:02.217042Z
+7e9e9104e8d89040d5228dbe0f5bbf99
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1825
 
 filter.CPP
 file
