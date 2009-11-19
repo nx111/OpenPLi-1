@@ -379,6 +379,22 @@ int eListBoxBase::setCurrent(const eListBoxEntry *c, bool sendSelected )
 	return OK;
 }
 
+int eListBoxBase::getPos(const eListBoxEntry *c)
+{
+	ePtrList<eListBoxEntry>::iterator item(childs.begin());
+
+	int cnt=0;
+	for ( ; item != childs.end(); ++item, ++cnt)
+		if ( *item == c )
+			break;
+
+	if ( item == childs.end() ) // entry not in listbox... do nothing
+		return -1;
+
+	return cnt;
+
+}
+
 void eListBoxBase::append(eListBoxEntry* entry, bool holdCurrent, bool front)
 {
 	eListBoxEntry* cur = 0;

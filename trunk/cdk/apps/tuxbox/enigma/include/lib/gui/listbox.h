@@ -76,6 +76,7 @@ public:
 	void clearList();
 	int getCount() { return entries; }
 	int setCurrent(const eListBoxEntry *c, bool sendSelected=false);
+	int getPos(const eListBoxEntry *c);
 	void sort();
 	void shuffle();
 	int moveSelection(int dir, bool sendSelected=false);
@@ -424,6 +425,7 @@ public:
 	eListBoxEntryCheck( eListBox<eListBoxEntryMenu> *lb, const char* text, const char* regkey, const eString& hlptxt="" );
 	eListBoxEntryCheck( eListBox<eListBoxEntryMenu> *lb, const eString& text, const eString& hlptxt="", int align=0, void* key = NULL, int keytype = value );
 	void setChecked(int checkIt);
+	int  getChecked(){return checked;}
 	const eString& redraw(gPainter *rc, const eRect& rect, gColor coActiveB, gColor coActiveF, gColor coNormalB, gColor coNormalF, int state );
 };
 

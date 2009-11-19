@@ -6515,23 +6515,42 @@ int eZapMain::syncSystemTime()
 {
 
 	eDVB &dvb = *eDVB::getInstance();
-	time_t t0=time(0);
 
-	char * hostname=0;
-	eConfig::getInstance()->getKey("/elitedvb/network/hostNTP", hostname);
-	if (!hostname)hostname="time-a.nist.gov";
-	char cmdstr[250]="rdate -s ";
-	strcat(cmdstr,hostname);
+	eString hostnames="time-a.nist.gov";;
+	eConfig::getInstance()->getKey("/elitedvb/network/hostNTP", hostnames);
+	eString rdatecmd="rdate -s ";
+	time_t t0=time(0);
 
 	if(timeCorrectting)return 0;
 	timeCorrectting=1;
+	
+	std::string::size_type last = 0;
+	eString delim=";,";
+	std::string::size_type index=hostnames.find_first_of(delim,last);
+	int ret=-1;
+	while (index!=std::string::npos)
+	{
+		eString host=hostnames.substr(last,index-last);
+		t0=time(0);
 
-	int ret=system(cmdstr);
-	if (ret==127 || ret==-1 || time(0)<96656000L){    //now is before 2000-1-1,is false
+		if(index>last){
+			ret=system((rdatecmd+host).c_str());
+			if(!ret)break;
+		}
+		last=index+1;
+		index=hostnames.find_first_of(delim,last);
+	}
+	
+	if (index==std::string::npos){
+		eString host=hostnames.substr(last,hostnames.length()-last);
+		t0=time(0);
+		ret=system((rdatecmd+host).c_str());
+	}
+
+	if (ret || time(0)<96656000L){    //failed
 		timeCorrectting=0;
 		return 0;
 	}
-	
 
 	time_t t1=time(0);
 
@@ -7668,7 +7687,7 @@ void eZapMain::handleServiceEvent(const eServiceEvent &event)
 	case eServiceEvent::evtAspectChanged:
 	{
 
-		int aspect = eServiceInterface::getInstance()->getService()->getAspectRatio();
+		int aspect = ((eServiceHandlerDVB *)eServiceInterface::getInstance()->getService())->getAspectRatio();
 		set16_9Logo(aspect);
         	VidFormat->setText(getVidFormat());
 		break;

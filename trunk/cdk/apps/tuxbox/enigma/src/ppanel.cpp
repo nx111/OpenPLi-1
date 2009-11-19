@@ -677,8 +677,13 @@ void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
 	      if(!chked){
 	      	  if(parentdlg.checkbox == "radio"){
 		       for(std::list<eListBoxEntryExecute*>::iterator i(parentdlg.items.begin());i!=parentdlg.items.end();i++)
-				(*i)->setChecked(false);
-			listbox->invalidate(listbox->getClientRect(),false);
+				if((*i)->getChecked())
+				{
+					(*i)->setChecked(false);
+					int pos=listbox->getPos(*i);
+					if(pos>=0)listbox->invalidateEntry(pos);
+					
+				}
 			}
 		setChecked(true);
 	      }

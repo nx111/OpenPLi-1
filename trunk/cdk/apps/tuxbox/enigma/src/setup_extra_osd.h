@@ -39,6 +39,7 @@ class ExtraOSDSetup : public eSetupWindow, public eCallableMenu
 		eListBoxEntryMulti *timeout_infobar;
 
 		void ExtraOSDSetup::improvedBERChanged(bool b);
+		void filtUserbouquetChanged(bool b);
 		void colorbuttonsChanged(bool b);
 		void fastZappingChanged(bool b);
 		void selInfobarChanged(eListBoxEntryMenu* e);

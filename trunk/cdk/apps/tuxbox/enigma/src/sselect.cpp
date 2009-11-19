@@ -2149,6 +2149,7 @@ const eServiceReference *eServiceSelector::choose(int irc)
 		break;
 	}
 	services->endAtomic();
+	services->invalidateContent();
 
 	if ( !services->getCount() )
 		ci->clear();

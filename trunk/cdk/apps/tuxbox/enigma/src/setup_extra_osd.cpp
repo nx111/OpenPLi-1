@@ -30,6 +30,7 @@
 
 #include <sselect.h>
 #include <enigma.h>
+#include <enigma_main.h>
 #include <lib/base/i18n.h>
 #include <lib/system/econfig.h>
 #include <lib/system/info.h>
@@ -73,7 +74,7 @@ ExtraOSDSetup::ExtraOSDSetup()
 	new eListBoxEntryCheck(&list, _("Expert OSD on zap"), "/ezap/osd/OSDVerboseInfoOnZap", _("Show other extra info in OSD when zapping"));
 	new eListBoxEntryCheck(&list, _("Seconds in OSD clock"), "/ezap/osd/clockSeconds", _("Seconds in OSD clock"));
 	new eListBoxEntryCheck(&list, _("Progress in %"), "/ezap/osd/PercentProgress", _("Display Progress in %"));
-	new eListBoxEntryCheck(&list, _("Filt Userbouquet"), "/ezap/osd/filtuserbouquet", _("Filt Userbouquet's Services where not my satellites"));
+	CONNECT((new eListBoxEntryCheck(&list, _("Filt Userbouquet"), "/ezap/osd/filtuserbouquet", _("Filt Userbouquet's Services where not my satellites")))->selected,ExtraOSDSetup::filtUserbouquetChanged);;
 	new eListBoxEntryCheck(&list, _("No picture in radio/mp3"), "/ezap/osd/hidebginradiomode", _("No background picture in radio/mp3 mode"));
 	new eListBoxEntryCheck(&list, _("Listbox OSD main menu"), "/ezap/osd/simpleMainMenu", _("Show the Main menu in normal listbox style"));
 	CONNECT((new eListBoxEntryCheck(&list,_("Serviceselector help buttons"),"/ezap/serviceselector/showButtons",_("Show coloured help buttons in service selector")))->selected, ExtraOSDSetup::colorbuttonsChanged );
@@ -113,6 +114,11 @@ ExtraOSDSetup::ExtraOSDSetup()
 void ExtraOSDSetup::improvedBERChanged(bool b)
 {
 	eFrontend::getInstance()->setBERMode((int)b);
+}
+void ExtraOSDSetup::filtUserbouquetChanged(bool b)
+{
+	if(b)
+		eZapMain::getInstance()->loadUserBouquets();
 }
 
 void ExtraOSDSetup::colorbuttonsChanged(bool b)
