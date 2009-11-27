@@ -4389,11 +4389,11 @@ int eZapMain::recordDVR(int onoff, int user, time_t evtime, const char *timer_de
 		if (service)
 		{
 			servicename = service->service_name;
-			static char strfilter[4] = { 0xC2, 0x87, 0x86, 0x00 };
+		/*	static char strfilter[4] = { 0xC2, 0x87, 0x86, 0x00 };
 			// filter short name brakets...
 			for (eString::iterator it(servicename.begin()); it != servicename.end();)
 				strchr( strfilter, *it ) ? it = servicename.erase(it) : it++;
-
+		*/
 			if ( ref.getServiceType() > 4 && !timer_descr )  // nvod or linkage
 				eServiceInterface::getInstance()->removeRef(refservice);
 			else
@@ -4712,7 +4712,7 @@ void eZapMain::startSkip(int dir)
 		skipLabel1->setText(s);
 	}
 	int showosd = 1;
-	eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
+	eConfig::getInstance()->getKey("/ezap/osd/showInfoBarOnZap", showosd );
 	if (firstskip && showosd)
 		showInfobar();
 	if ( timeout.isActive() )
@@ -7402,7 +7402,7 @@ int eZapMain::eventHandler(const eWidgetEvent &event)
 					handler->serviceCommand(eServiceCommand(eServiceCommand::cmdSeekEnd));
 					updateProgress();
 					int showosd = 1;
-					eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
+					eConfig::getInstance()->getKey("/ezap/osd/showInfoBarOnZap", showosd );
 					if (showosd)
 						showInfobar(true);
 
@@ -8201,11 +8201,11 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 	}
 #endif // DISABLE_FILE
 
-	int showosd = 1;
+/*	int showosd = 1;
 	eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
 	if (showosd)
 		showInfobar(true);
-
+*/
 	cur_event_id = -1;
 
 	eServiceInterface::getInstance()->removeRef(_serviceref);

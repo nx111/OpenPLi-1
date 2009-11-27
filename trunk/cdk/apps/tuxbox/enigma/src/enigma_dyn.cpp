@@ -19,7 +19,7 @@
  *
  */
 
-// #define SCREENSHOT_PNG
+//#define SCREENSHOT_PNG
 #include <map>
 #include <time.h>
 #include <fcntl.h>
@@ -94,6 +94,7 @@
 #include <media_mapping.h>
 
 #include <parentallock.h>
+#include <imageresize.h>
 
 using namespace std;
 
@@ -1695,7 +1696,7 @@ int genScreenShot(int index, int blendtype)
 		eDebug("genScreenShot: could not open /dev/video");
 		return 1;
 	}
-
+#ifndef SCREENSHOT_PNG
 	eString filename = "/tmp/screenshot" + ((index > 0) ? eString().sprintf("%d", index) : "") + ".bmp";
 	FILE *fd2 = fopen(filename.c_str(), "wr");
 	if (fd2 < 0)
@@ -1705,7 +1706,7 @@ int genScreenShot(int index, int blendtype)
 	}
 
 	int genhdr = 1;
-
+#endif
 	int r = read(fd, frame, 720 * 576 * 3 + 16);
 	if (r < 16)
 	{
@@ -1741,6 +1742,7 @@ int genScreenShot(int index, int blendtype)
 	int galpha = gFBDC::getInstance()->getAlpha();
 	eDebug("genScreenShot: Have pixmap %s, alpha=%d blendtype=%d", pixmap ? "yes" : "no", galpha, blendtype);
 
+#ifndef SCREENSHOT_PNG
 	if (genhdr)
 	{
 		eDebug("genScreenShot: generating bitmap header.");
@@ -1761,85 +1763,104 @@ int genScreenShot(int index, int blendtype)
 #undef PUT8
 		fwrite(hdr, 1, i, fd2);
 	}
-
+#endif
 	int x, y;
+
+
+	TPicRegion sRegion,dRegion;
+	sRegion.pdata=(TARGB32*)((unsigned char *)malloc(luma_x * luma_y*4)); 
+	dRegion.pdata=(TARGB32*)((unsigned char *)malloc(pixmap->x * pixmap->y * 4));
+
+	if(!sRegion.pdata)
+	{
+		eDebug("genScreenShot: cannot allocate memory for screenpix resize source!");
+		return 1;
+	}
+	if(!dRegion.pdata)
+	{
+		eDebug("genScreenShot: cannot allocate memory for screenpix resized target!");
+		return 1;
+	}
+
+	sRegion.byte_width=luma_x * 4;
+	sRegion.width=luma_x;
+	sRegion.height=luma_y;
+
+	dRegion.byte_width=pixmap->x * 4;
+	dRegion.width=pixmap->x;
+	dRegion.height=pixmap->y;
 
 
 #if defined(SCREENSHOT_PNG)
 	gPixmap result;
-	}
 	result.bpp = 32;
 	result.bypp = 4;
 	result.stride = pixmap->x*4;
 	result.x = pixmap->x;
 	result.y = pixmap->y;
+//	result.data=(__u8 *)dRegion.pdata;
 	result.data = malloc(pixmap->x * pixmap->y * 4);
 	if (!result.data)
 	{
 		eDebug("genScreenShot: cannot allocate memory for screenpixmap");
 		return 1;
-	eDebug("genScreenShot: allocated pixmap");
+	}
+	eDebug("genScreenShot: allocated pixmap"); 
 #endif
 
-	for (y = pixmap->y - 1; y >= 0; --y)
+	eDebug("genScreenshot:begin convert YUV to RGB");
+	for (y = luma_y - 1; y >= 0; --y)
 	{
-		unsigned char line[pixmap->x * 3];
-		int ay=y*(luma_y-1)/(pixmap->y-1);
-	
-#if defined(SCREENSHOT_PNG)
-		__u8 * resline = ((__u8 *)result.data  + y * result.stride;
-#endif
-		for (x = 0; x < pixmap->x; ++x)
+		for (x = 0; x < luma_x; ++x)
 		{
-			int ax= x * (luma_x-1)/(pixmap->x-1);
-			int l = luma[ay * luma_x + ax];
+			int l = luma[y * luma_x + x];
 			int c = 0x8080;
 			switch (ssid)
 			{
 			case 0: // 4:4:4
-				c = chroma[ay * chroma_x + ax];
+				c = chroma[y * chroma_x + x];
 				break;
 			case 1: // 4:2:2
-				if (!(ax & 1))
-					c = chroma[ay * chroma_x + (ax >> 1)];
+				if (!(x & 1))
+					c = chroma[y * chroma_x + (x >> 1)];
 				else
-					c = avg2(chroma[ay * chroma_x + (ax >> 1)], chroma[ay * chroma_x + (ax >> 1) + 1]);
+					c = avg2(chroma[y * chroma_x + (x >> 1)], chroma[y * chroma_x + (x >> 1) + 1]);
 				break;
 			case 2: // 4:2:0
-				if (!((ax|ay) & 1))
-					c = chroma[(ay >> 1) * chroma_x + (ax >> 1)];
-				else if (!(ay & 1))
-					c = avg2(chroma[(ay >> 1) * chroma_x + (ax >> 1)], chroma[(ay >> 1) * chroma_x + (ax >> 1) + 1]);
-				else if (!(ax & 1))
-					c = avg2(chroma[(ay >> 1) * chroma_x + (ax >> 1)], chroma[((ay >> 1) + 1) * chroma_x + (ax >> 1)]);
+				if (!((x|y) & 1))
+					c = chroma[(y >> 1) * chroma_x + (x >> 1)];
+				else if (!(y & 1))
+					c = avg2(chroma[(y >> 1) * chroma_x + (x >> 1)], chroma[(y >> 1) * chroma_x + (x >> 1) + 1]);
+				else if (!(x & 1))
+					c = avg2(chroma[(y >> 1) * chroma_x + (x >> 1)], chroma[((y >> 1) + 1) * chroma_x + (x >> 1)]);
 				else
 					c = avg2(
-						avg2(chroma[(ay >> 1) * chroma_x + (ax >> 1)], chroma[(ay >> 1) * chroma_x + (ax >> 1) + 1]),
-						avg2(chroma[((ay >> 1) + 1) * chroma_x + (ax >> 1)], chroma[((ay >> 1) + 1) * chroma_x + (ax >> 1) + 1]));
+						avg2(chroma[(y >> 1) * chroma_x + (x >> 1)], chroma[(y >> 1) * chroma_x + (x >> 1) + 1]),
+						avg2(chroma[((y >> 1) + 1) * chroma_x + (x >> 1)], chroma[((y >> 1) + 1) * chroma_x + (x >> 1) + 1]));
 				break;
 			case 3:	// 4:2:0-half
-				if (!(((ax >> 1)|ay) & 1))
-					c = chroma[(ay >> 1) * chroma_x + (ax >> 2)];
-				else if (!(ay & 1))
-					c = avg2(chroma[(ay >> 1) * chroma_x + (ax >> 2)], chroma[(ay >> 1) * chroma_x + (ax >> 2) + 1]);
-				else if (!(ax & 2))
-					c = avg2(chroma[(ay >> 1) * chroma_x + (ax >> 2)], chroma[((ay >> 1) + 1) * chroma_x + (ax >> 2)]);
+				if (!(((x >> 1)|y) & 1))
+					c = chroma[(y >> 1) * chroma_x + (x >> 2)];
+				else if (!(y & 1))
+					c = avg2(chroma[(y >> 1) * chroma_x + (x >> 2)], chroma[(y >> 1) * chroma_x + (x >> 2) + 1]);
+				else if (!(x & 2))
+					c = avg2(chroma[(y >> 1) * chroma_x + (x >> 2)], chroma[((y >> 1) + 1) * chroma_x + (x >> 2)]);
 				else
 					c = avg2(
-						avg2(chroma[(ay >> 1) * chroma_x + (ax >> 2)], chroma[(ay >> 1) * chroma_x + (ax >> 2) + 1]),
-						avg2(chroma[((ay >> 1) + 1) * chroma_x + (ax >> 2)], chroma[((ay >> 1) + 1) * chroma_x + (ax >> 2) + 1]));
+						avg2(chroma[(y >> 1) * chroma_x + (x >> 2)], chroma[(y >> 1) * chroma_x + (x >> 2) + 1]),
+						avg2(chroma[((y >> 1) + 1) * chroma_x + (x >> 2)], chroma[((y >> 1) + 1) * chroma_x + (x >> 2) + 1]));
 				break;
 			case 4:	// 4:1:1
-				if (!((ax >> 1) & 1))
-					c = chroma[ay * chroma_x + (ax >> 2)];
+				if (!((x >> 1) & 1))
+					c = chroma[y * chroma_x + (x >> 2)];
 				else
-					c = avg2(chroma[ay * chroma_x + (ax >> 2)], chroma[ay * chroma_x + (ax >> 2) + 1]);
+					c = avg2(chroma[y * chroma_x + (x >> 2)], chroma[y * chroma_x + (x >> 2) + 1]);
 				break;
 			case 5:
-				if (!((ax >> 1) & 1))
-					c = chroma[(ay >> 2) * chroma_x + (ax >> 2)];
+				if (!((x >> 1) & 1))
+					c = chroma[(y >> 2) * chroma_x + (x >> 2)];
 				else
-					c = avg2(chroma[(ay >> 2) * chroma_x + (ax >> 2)], chroma[(ay >> 2) * chroma_x + (ax >> 2) + 1]);
+					c = avg2(chroma[(y >> 2) * chroma_x + (x >> 2)], chroma[(y >> 2) * chroma_x + (x >> 2) + 1]);
 				break;
 			}
 
@@ -1853,19 +1874,49 @@ int genScreenShot(int index, int blendtype)
 			r = 104635 * cr + l * 76310;
 			g = -25690 * cb - 53294 * cr + l * 76310;
 			b = 132278 * cb + l * 76310;
+			
+		
+			TARGB32 * pColor=(TARGB32 *)((__u8 *)sRegion.pdata+y*sRegion.byte_width + x*4);
+			pColor->a = 255;
+			pColor->r = CLAMP(r >> 16);
+			pColor->g = CLAMP(g >> 16);
+			pColor->b = CLAMP(b >> 16);
 
-			line[x * 3 + 2] = CLAMP(r >> 16);
-			line[x * 3 + 1] = CLAMP(g >> 16);
-			line[x * 3 + 0] = CLAMP(b >> 16);
-#if defined(SCREENSHOT_PNG)
-			resline[x * 4 + 0] = 255;
-			resline[x * 4 + 1] = CLAMP(r >> 16);
-			resline[x * 4 + 2] = CLAMP(g >> 16);
-			resline[x * 4 + 3] = CLAMP(b >> 16);
-#endif
 		}
+	}
 
-		if (blendtype && pixmap && y <= pixmap->y)
+	int screenshotResizeMethod=0;
+	eConfig::getInstance()->getKey("i:/ezap/extra/screenshotResizeMethod",screenshotResizeMethod);
+	if (screenshotResizeMethod==1)
+		PicZoom_Bilinear_Common((const TPicRegion&)dRegion,(const TPicRegion&)sRegion); //二次线性插值法
+	else if (screenshotResizeMethod==2)
+		PicZoom_ThreeOrder_Common((const TPicRegion&)dRegion,(const TPicRegion&)sRegion); //三次卷积法
+	else	
+		PicZoom3((const TPicRegion&)dRegion,(const TPicRegion&)sRegion);   //近邻取样插值
+
+	free((__u8*)sRegion.pdata);
+
+	for(y=pixmap->y-1;y>=0;--y)
+	{
+#ifndef SCREENSHOT_PNG
+		unsigned char line[pixmap->x * 3];
+#else
+		__u8 * resline = (__u8 *)result.data  + y * result.stride;
+#endif
+		for(x=pixmap->x-1 ; x >= 0; --x){
+			TARGB32 * pColor=(TARGB32 *)((__u8 *)dRegion.pdata+y*dRegion.byte_width + x*4);
+#ifndef SCREENSHOT_PNG
+			line[x*3+ 2]=pColor->r;
+			line[x*3+ 1]=pColor->g;
+			line[x*3+ 0]=pColor->b;
+#else
+			resline[x*4+ 0]=pColor->a;
+			resline[x*4+ 1]=pColor->r;
+			resline[x*4+ 2]=pColor->g;
+			resline[x*4+ 3]=pColor->b;
+#endif
+			}
+		if (blendtype && pixmap)
 		{
 			__u8 * prow = ((__u8 *)pixmap->data) + y*pixmap->stride;
 			
@@ -1893,10 +1944,11 @@ int genScreenShot(int index, int blendtype)
         					int pr = pixmap->clut.data[osdbyte].r;
         					int pg = pixmap->clut.data[osdbyte].g;
         					int pb = pixmap->clut.data[osdbyte].b;
-						line[px*3 + 2] = (line[px*3 + 2] * alpha + pr * (255-alpha)) >> 8; 
-						line[px*3 + 1] = (line[px*3 + 1] * alpha + pg * (255-alpha)) >> 8; 
-						line[px*3 + 0] = (line[px*3 + 0] * alpha + pb * (255-alpha)) >> 8; 
-#if defined(SCREENSHOT_PNG)
+#ifndef SCREENSHOT_PNG
+						line[px*3 + 2] = (line[px*3 + 2]  * alpha + pr * (255-alpha)) >> 8; 
+						line[px*3 + 1] = (line[px*3 + 1]  * alpha + pg * (255-alpha)) >> 8; 
+						line[px*3 + 0] = (line[px*3 + 0]  * alpha + pb * (255-alpha)) >> 8; 
+#else
 						resline[px*4 + 1] = (resline[px*4 + 1] * alpha + pr * (255-alpha)) >> 8; 
 						resline[px*4 + 2] = (resline[px*4 + 2] * alpha + pg * (255-alpha)) >> 8; 
 						resline[px*4 + 3] = (resline[px*4 + 3] * alpha + pb * (255-alpha)) >> 8; 
@@ -1922,28 +1974,34 @@ int genScreenShot(int index, int blendtype)
 								alpha <<= 1; // OSD more opaque
 								break;
 						}
+#ifndef SCREENSHOT_PNG
 						line[px*3 + 2] = (line[px*3 + 2] * (255 - alpha) + ((osdbyte >> 16) & 0xFF) * alpha) >> 8; 
 						line[px*3 + 1] = (line[px*3 + 1] * (255 - alpha) + ((osdbyte >> 8) & 0xFF) * alpha) >> 8; 
 						line[px*3 + 0] = (line[px*3 + 0] * (255 - alpha) + (osdbyte & 0xFF) * alpha) >> 8; 
-#if defined(SCREENSHOT_PNG)
+
+#else
 						resline[px*4 + 1] = (resline[px*4 + 1] * (255 - alpha) + ((osdbyte >> 16) & 0xFF) * alpha) >> 8; 
 						resline[px*4 + 2] = (resline[px*4 + 2] * (255 - alpha) + ((osdbyte >> 8) & 0xFF) * alpha) >> 8; 
 						resline[px*4 + 3] = (resline[px*4 + 3] * (255 - alpha) + (osdbyte & 0xFF) * alpha) >> 8; 
 #endif
 					}
-        			}
+        		}
 			}
 		}
-
+#ifndef SCREENSHOT_PNG
 		fwrite(line, 1, pixmap->x * 3, fd2);
-	}
-	fclose(fd2);
-#if defined(SCREENSHOT_PNG)
-	filename = "/tmp/screenshot" + ((index > 0) ? eString().sprintf("%d", index) : "") + ".png";
-	savePNG(filename.c_str(), &result);
-	free(result.data);
-	eDebug("genScreenShot: done");
 #endif
+	}
+#ifndef SCREENSHOT_PNG
+	fclose(fd2);
+#else
+	eString filename = "/tmp/screenshot" + ((index > 0) ? eString().sprintf("%d", index) : "") + ".png";
+	savePNG(filename.c_str(), &result);
+	if(result.data)
+		free(result.data);
+#endif
+	free((__u8*)dRegion.pdata);
+	eDebug("genScreenShot: done");
 	return 0;
 }
 
@@ -1958,7 +2016,11 @@ static eString getControlScreenShot(eString opts)
 	eDebug("getControlScreenshot: rc is %d", rc);
 	if (rc != 0)
 	{
+#ifndef SCREENSHOT_PNG
 		eDebug("could not generate /tmp/screenshot.bmp");
+#else
+		eDebug("could not generate /tmp/screenshot.png");
+#endif
 	}
 	else
 	{
@@ -2015,7 +2077,11 @@ static eString getControlScreenShot(eString opts)
 		result += "<img ";
 		result += " width=\"" +  eString().sprintf("%d", winxres);
 		result += "\" height=\"" + eString().sprintf("%d", winyres);
+#ifndef SCREENSHOT_PNG
 		result += "\" src=\"/root/tmp/screenshot.bmp\" border=1>";
+#else
+		result += "\" src=\"/root/tmp/screenshot.png\" border=1>";
+#endif
 		result += "<br>";
 		result += "Original format: " + eString().sprintf("%d", xres) + "x" + eString().sprintf("%d", yres);
 		result += " (" + eString().sprintf("%d", rh) + ":" + eString().sprintf("%d", rv) + ")";
