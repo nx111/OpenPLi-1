@@ -529,7 +529,7 @@ bool LocalEventData::language_exists(EITEvent *event, eString lang)
 	return retval;
 }
 
-const char MAX_LANG = 39;
+const char MAX_LANG = 41;
 /* OSD language (see /share/locales/locales) to iso639 conversion table */
 eString ISOtbl[MAX_LANG][2] =
 {
@@ -571,7 +571,9 @@ eString ISOtbl[MAX_LANG][2] =
 	{"sr_YU","scc"},
 	{"sv_SE","swe"},
 	{"tr_TR","tur"},
-	{"ur_IN","urd"}
+	{"ur_IN","urd"},
+	{"zh_CN","chn"},
+	{"zh_TW","cht"}
 };
 
 LocalEventData::LocalEventData()

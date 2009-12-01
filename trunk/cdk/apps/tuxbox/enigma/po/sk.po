@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-24 09:54+0800\n"
+"POT-Creation-Date: 2009-09-10 19:57+0200\n"
 "PO-Revision-Date: 2008-07-24 17:49+0100\n"
 "Last-Translator: A.BALOO <a.baloo@zoznam.sk>\n"
 "Language-Team: Czech / Hombre <midex@seznam.cz>\n"
@@ -872,7 +872,7 @@ msgstr "Mód:"
 msgid "KSymb/s"
 msgstr "KSymb/s"
 
-#: default.esml:935 src/enigma_dyn.cpp:645 src/sselect.cpp:526
+#: default.esml:935 src/enigma_dyn.cpp:627 src/sselect.cpp:515
 msgid "All Services"
 msgstr "Všetky programy"
 
@@ -1198,9 +1198,9 @@ msgstr "So"
 msgid "Guard:"
 msgstr "Ochrana:"
 
-#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6597
+#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6524
 #: src/epgsearch.cpp:299 src/epgsearch.cpp:502 src/epgwindow.cpp:369
-#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2090
+#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2075
 msgid "EPG Search"
 msgstr "hľadať v EPG"
 
@@ -1457,7 +1457,7 @@ msgstr "načítávam..."
 msgid "playing..."
 msgstr "prehrávam..."
 
-#: lib/dvb/serviceplaylist.cpp:234
+#: lib/dvb/serviceplaylist.cpp:223
 #, c-format
 msgid " (%d entries)"
 msgstr "(%d položiek)"
@@ -1484,8 +1484,8 @@ msgid "TV/Radio"
 msgstr "TV/Rádio"
 
 #: lib/dvb/servicestructure.cpp:22 src/enigma_bouquet.cpp:12
-#: src/enigma_dyn.cpp:657 src/enigma_main.cpp:9826 src/sselect.cpp:532
-#: src/sselect.cpp:539
+#: src/enigma_dyn.cpp:639 src/enigma_main.cpp:9727 src/sselect.cpp:521
+#: src/sselect.cpp:528
 msgid "Bouquets"
 msgstr "Prehľady"
 
@@ -1536,7 +1536,7 @@ msgstr "Čakajte prosím..."
 msgid "Could not execute script"
 msgstr "Nebolo možné vykonať skript"
 
-#: lib/gui/listbox.cpp:870
+#: lib/gui/listbox.cpp:865
 msgid "no description available"
 msgstr "Popis nie je k dispozícii"
 
@@ -1784,323 +1784,323 @@ msgstr "Obnovujem, Prosím čakajte..."
 msgid "Reloading Enigma settings, please wait"
 msgstr "načítam nastavenia Enigmy, Prosím čakajte..."
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:341
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:341
 msgid "Movie"
 msgstr "Film"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:343
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:343
 msgid "Adventure"
 msgstr "Dobrodružný"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:344
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:344
 msgid "SciFi"
 msgstr "SciFi"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:345
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:345
 msgid "Comedy"
 msgstr "Komédia"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:346
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:346
 msgid "Soap"
 msgstr "Seriál"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:347
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:347
 msgid "Romance"
 msgstr "Romantika"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:348
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:348
 msgid "Serious"
 msgstr "Dráma"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:349
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:349
 msgid "Adult"
 msgstr "Pre dospelých"
 
-#: src/channelinfo.cpp:103 src/epgsearch.cpp:350
+#: src/channelinfo.cpp:83 src/epgsearch.cpp:350
 msgid "News"
 msgstr "Správy"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Weather"
 msgstr "Počasie"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Magazine"
 msgstr "Magazín"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Documentary"
 msgstr "Dokument"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Discussion"
 msgstr "Diskusia"
 
-#: src/channelinfo.cpp:107 src/epgsearch.cpp:351
+#: src/channelinfo.cpp:87 src/epgsearch.cpp:351
 msgid "Show"
 msgstr "Show"
 
-#: src/channelinfo.cpp:107
+#: src/channelinfo.cpp:87
 msgid "Game Show"
 msgstr "Súťaž"
 
-#: src/channelinfo.cpp:107
+#: src/channelinfo.cpp:87
 msgid "Variety"
 msgstr "Varieté"
 
-#: src/channelinfo.cpp:107
+#: src/channelinfo.cpp:87
 msgid "Talk"
 msgstr "Rozhovor"
 
-#: src/channelinfo.cpp:111 src/epgsearch.cpp:352
+#: src/channelinfo.cpp:91 src/epgsearch.cpp:352
 msgid "Sports"
 msgstr "Šport"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Special Event"
 msgstr "Špeciálna ponuka"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Sports Mag."
 msgstr "Športový magazín"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Football"
 msgstr "Futbal"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Tennis"
 msgstr "Tenis"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Team Sports"
 msgstr "Tímový šport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Athletics"
 msgstr "Atletika"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Motor Sports"
 msgstr "Automobilový šport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Water Sports"
 msgstr "Vodný šport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Winter Sports"
 msgstr "Zimný šport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Equestrian"
 msgstr "Jazdectvo"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:93
 msgid "Martial Sports"
 msgstr "Bojový šport"
 
-#: src/channelinfo.cpp:116 src/epgsearch.cpp:353
+#: src/channelinfo.cpp:96 src/epgsearch.cpp:353
 msgid "Children"
 msgstr "Detský"
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "Pre-School"
 msgstr "Predškolský"
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "Age 6-14"
 msgstr "Vek 6-14"
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "Age 10-16"
 msgstr "Vek 10-16"
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "School"
 msgstr "Škola"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:97
 msgid "Cartoons"
 msgstr "Kreslený"
 
-#: src/channelinfo.cpp:121 src/epgsearch.cpp:354
+#: src/channelinfo.cpp:101 src/epgsearch.cpp:354
 msgid "Music"
 msgstr "Hudba"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Rock/Pop"
 msgstr "Rock/Pop"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Classical"
 msgstr "Klasická hudba"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Folk"
 msgstr "Folk"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Jazz"
 msgstr "Jazz"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Musical"
 msgstr "Muzikál"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Ballet"
 msgstr "Balet"
 
-#: src/channelinfo.cpp:125 src/epgsearch.cpp:355
+#: src/channelinfo.cpp:105 src/epgsearch.cpp:355
 msgid "Culture"
 msgstr "Kultúra"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Perf. Arts"
 msgstr "Divadlo"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Fine Arts"
 msgstr "Fine Arts"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Religion"
 msgstr "Náboženstvo"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Pop. Arts"
 msgstr "Pop Art"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Literature"
 msgstr "Literatúra"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Film"
 msgstr "Film"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Experimental"
 msgstr "Výskum"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Press"
 msgstr "Tlač"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "New Media"
 msgstr "Nové médiá"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Art Mag."
 msgstr "Umelecký magazín"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Fashion"
 msgstr "Móda"
 
-#: src/channelinfo.cpp:129 src/epgsearch.cpp:356
+#: src/channelinfo.cpp:109 src/epgsearch.cpp:356
 msgid "Social"
 msgstr "Spoločenský"
 
-#: src/channelinfo.cpp:129
+#: src/channelinfo.cpp:109
 msgid "Soc. Mag."
 msgstr "Spoločenský magazín"
 
-#: src/channelinfo.cpp:129
+#: src/channelinfo.cpp:109
 msgid "Economics"
 msgstr "Ekonomika"
 
-#: src/channelinfo.cpp:129
+#: src/channelinfo.cpp:109
 msgid "Remark. People"
 msgstr "Komentáre"
 
-#: src/channelinfo.cpp:133 src/epgsearch.cpp:357
+#: src/channelinfo.cpp:113 src/epgsearch.cpp:357
 msgid "Education"
 msgstr "Vzdelávanie"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Nature"
 msgstr "Príroda"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Technology"
 msgstr "Technika"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Medicine"
 msgstr "Lekárstvo"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Expeditions"
 msgstr "Expedícia"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Spiritual"
 msgstr "Duchovný"
 
-#: src/channelinfo.cpp:134
+#: src/channelinfo.cpp:114
 msgid "Further Ed."
 msgstr "Ďaľší Ed."
 
-#: src/channelinfo.cpp:134
+#: src/channelinfo.cpp:114
 msgid "Languages"
 msgstr "Jazyky"
 
-#: src/channelinfo.cpp:137 src/epgsearch.cpp:358
+#: src/channelinfo.cpp:117 src/epgsearch.cpp:358
 msgid "Hobbies"
 msgstr "Záľuby"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Travel"
 msgstr "Cestovanie"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Handicraft"
 msgstr "Ručné práce"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Motoring"
 msgstr "Motoring"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Fitness"
 msgstr "Fitness"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Cooking"
 msgstr "Varenie"
 
-#: src/channelinfo.cpp:138
+#: src/channelinfo.cpp:118
 msgid "Shopping"
 msgstr "Nakupovanie"
 
-#: src/channelinfo.cpp:138
+#: src/channelinfo.cpp:118
 msgid "Gardening"
 msgstr "Záhradkárstvo"
 
-#: src/channelinfo.cpp:141
+#: src/channelinfo.cpp:121
 msgid "Orig. Lang."
 msgstr "Orig.jazyk"
 
-#: src/channelinfo.cpp:141
+#: src/channelinfo.cpp:121
 msgid "B&W"
 msgstr "Čiernobiele"
 
-#: src/channelinfo.cpp:141
+#: src/channelinfo.cpp:121
 msgid "Unpublished"
 msgstr "Nepublikované"
 
-#: src/channelinfo.cpp:141 src/epgsearch.cpp:359
+#: src/channelinfo.cpp:121 src/epgsearch.cpp:359
 msgid "Live"
 msgstr "Naživo"
 
-#: src/channelinfo.cpp:317
+#: src/channelinfo.cpp:263
 msgid "no data for this service available"
 msgstr "pre tento program nie sú žiadne dáta k dispozícii  "
 
-#: src/channelinfo.cpp:358
+#: src/channelinfo.cpp:304
 #, c-format
 msgid ""
 "\n"
@@ -2109,7 +2109,7 @@ msgstr ""
 "\n"
 "Veľkosť/dátum: %d %cB, %s"
 
-#: src/channelinfo.cpp:359
+#: src/channelinfo.cpp:305
 msgid "Filename: "
 msgstr "Názov súboru: "
 
@@ -2242,6 +2242,7 @@ msgid "Sticky Settings 1"
 msgstr "Nastavenie priradenia 1"
 
 #: src/engrab.cpp:37 src/enigma_event.cpp:179 src/enigma_event.cpp:188
+#: src/enigma_event.cpp:352 src/enigma_event.cpp:361
 msgid "no description is available"
 msgstr "popis nie je k dispozícii"
 
@@ -2333,21 +2334,21 @@ msgstr "Common Interface Modul - mmi"
 msgid "waiting for CI answer..."
 msgstr "čakám na odpoveď CI ..."
 
-#: src/enigma.cpp:434 src/setup_swapandvar.cpp:112
+#: src/enigma.cpp:433 src/setup_swapandvar.cpp:112
 msgid "Internal harddisk"
 msgstr "Interný harddisk"
 
-#: src/enigma.cpp:441 src/setup_swapandvar.cpp:111
+#: src/enigma.cpp:440 src/setup_swapandvar.cpp:111
 #: src/setup_swapandvar.cpp:393 src/setup_swapandvar.cpp:399
 #: src/setup_usb.cpp:27
 msgid "USB stick"
 msgstr "USB"
 
-#: src/enigma.cpp:448 src/setup_swapandvar.cpp:113
+#: src/enigma.cpp:447 src/setup_swapandvar.cpp:113
 msgid "Compact Flash card"
 msgstr "CF karta"
 
-#: src/enigma.cpp:567
+#: src/enigma.cpp:562
 msgid ""
 "Welcome to enigma.\n"
 "\n"
@@ -2360,51 +2361,51 @@ msgstr ""
 "(Menu > Nastavenie > Satelity a transpondéry > ... prehľadávanie "
 "transpondéru) "
 
-#: src/enigma.cpp:569
+#: src/enigma.cpp:564
 msgid "First start of enigma"
 msgstr "Prvý štart Enigma"
 
-#: src/enigma.cpp:804
+#: src/enigma.cpp:799
 msgid "It's now safe to unplug power!"
 msgstr "Teraz je bezbečné odpojiť napájanie!"
 
-#: src/enigma.cpp:805
+#: src/enigma.cpp:800
 msgid "Shutdown finished"
 msgstr "Vypnutie ukončené"
 
-#: src/enigma.cpp:832
+#: src/enigma.cpp:827
 msgid "Please wait... your Dreambox is shutting down!"
 msgstr "Čakajte... DreamBox sa vypína!"
 
-#: src/enigma.cpp:833
+#: src/enigma.cpp:828
 msgid "Shutdown..."
 msgstr "Vypínanie..."
 
-#: src/enigma_dyn.cpp:649 src/sselect.cpp:528
+#: src/enigma_dyn.cpp:631 src/sselect.cpp:517
 msgid "Satellites"
 msgstr "Družice"
 
-#: src/enigma_dyn.cpp:653 src/sselect.cpp:531
+#: src/enigma_dyn.cpp:635 src/sselect.cpp:520
 msgid "Providers"
 msgstr "Poskytovatelia"
 
-#: src/enigma_dyn.cpp:824
+#: src/enigma_dyn.cpp:806
 msgid "OSD Shot"
 msgstr ""
 
-#: src/enigma_dyn.cpp:825
+#: src/enigma_dyn.cpp:807
 msgid "Screen Shot"
 msgstr ""
 
-#: src/enigma_dyn.cpp:828
+#: src/enigma_dyn.cpp:810
 msgid "Screen + OSD"
 msgstr "Screen + OSD"
 
-#: src/enigma_dyn.cpp:842
+#: src/enigma_dyn.cpp:824
 msgid "LCD Shot"
 msgstr ""
 
-#: src/enigma_dyn.cpp:2354
+#: src/enigma_dyn.cpp:2332
 msgid "External Message"
 msgstr "Správa po sieti"
 
@@ -2506,7 +2507,7 @@ msgstr ""
 "Počet kanálov na stránku a veľkosť písma krátkeho EPG popisu je možné meniť "
 "v menu MultiEPG"
 
-#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2090
+#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2075
 msgid " was not found!"
 msgstr "nenájdené!"
 
@@ -2567,11 +2568,12 @@ msgstr "Prieskumník Enigmy"
 msgid "closes the Event View"
 msgstr "zavrieť prieskumníka"
 
-#: src/enigma_event.cpp:164 src/streaminfo.cpp:641 src/streaminfo.cpp:699
+#: src/enigma_event.cpp:164 src/enigma_event.cpp:342 src/streaminfo.cpp:620
+#: src/streaminfo.cpp:678
 msgid "no information is available"
 msgstr "žiadne dostupné informácie"
 
-#: src/enigma_event.cpp:257
+#: src/enigma_event.cpp:256
 msgid ""
 "\tEvent EPG\n"
 "\n"
@@ -2623,7 +2625,7 @@ msgstr ""
 "\n"
 "[EXIT]\tzavrieť okno"
 
-#: src/enigma_event.cpp:306
+#: src/enigma_event.cpp:305
 #, c-format
 msgid "Original duration: %d min"
 msgstr "Pôvodná dĺžka : %d min"
@@ -2634,7 +2636,7 @@ msgstr "Pôvodná dĺžka : %d min"
 msgid "Information"
 msgstr "Informácie"
 
-#: src/enigma_info.cpp:44 src/streaminfo.cpp:606
+#: src/enigma_info.cpp:44 src/streaminfo.cpp:585
 msgid "Streaminfo"
 msgstr "Stream info"
 
@@ -2702,9 +2704,9 @@ msgstr "Pripojenie: Terestriálny príjem"
 msgid "Frontend: Unknown"
 msgstr "Pripojenie: Neznáme"
 
-#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:387
-#: src/streaminfo.cpp:398 src/streaminfo.cpp:410 src/streaminfo.cpp:422
-#: src/streaminfo.cpp:434 src/streaminfo.cpp:530 src/streaminfo.cpp:569
+#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:366
+#: src/streaminfo.cpp:377 src/streaminfo.cpp:389 src/streaminfo.cpp:401
+#: src/streaminfo.cpp:413 src/streaminfo.cpp:509 src/streaminfo.cpp:548
 msgid "none"
 msgstr "žiadny"
 
@@ -2725,7 +2727,7 @@ msgstr "beta"
 msgid "internal"
 msgstr "interný"
 
-#: src/enigma_info.cpp:252
+#: src/enigma_info.cpp:251
 msgid "About"
 msgstr "O aplikácii"
 
@@ -2853,7 +2855,7 @@ msgstr "pozastaviť prehrávanie"
 msgid "resume playback"
 msgstr "pokračovať v prehrávaní"
 
-#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4369
+#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4354
 msgid "record"
 msgstr "nahrávanie"
 
@@ -3111,99 +3113,103 @@ msgstr "Obľúbené (Rádio)"
 msgid "Favourites (File)"
 msgstr "Obľúbené (Súbor)"
 
-#: src/enigma_main.cpp:2505
+#: src/enigma_main.cpp:2492
 msgid "please wait while initializing Common Interface ..."
 msgstr "Čakajte, inicializujem Common Interface ..."
 
-#: src/enigma_main.cpp:2590
+#: src/enigma_main.cpp:2577
 msgid "rewind 15 seconds"
 msgstr "preskočiť dozadu o 15 sekund"
 
-#: src/enigma_main.cpp:2591
+#: src/enigma_main.cpp:2578
 msgid "rewind 1 minute"
 msgstr "preskočiť dozadu o 1 minútu"
 
-#: src/enigma_main.cpp:2592
+#: src/enigma_main.cpp:2579
 msgid "rewind 5 minutes"
 msgstr "preskočiť dozadu o 5 minút"
 
-#: src/enigma_main.cpp:2593
+#: src/enigma_main.cpp:2580
 msgid "enter number of minutes to rewind"
 msgstr "zadajte o koľko minút sa vrátiť späť"
 
-#: src/enigma_main.cpp:2594
+#: src/enigma_main.cpp:2581
 msgid "fast forward 15 seconds"
 msgstr "preskočiť dopredu o 15 sekúnd"
 
-#: src/enigma_main.cpp:2595
+#: src/enigma_main.cpp:2582
 msgid "fast forward 1 minute"
 msgstr "preskočiť dopredu o 1 minútu"
 
-#: src/enigma_main.cpp:2596
+#: src/enigma_main.cpp:2583
 msgid "fast forward 5 minutes"
 msgstr "preskočiť dopredu o 5 minút"
 
-#: src/enigma_main.cpp:2597
+#: src/enigma_main.cpp:2584
 msgid "enter number of minutes to fast forward"
 msgstr "zadajte o koľko minút preskočiť dopredu"
 
-#: src/enigma_main.cpp:3577
+#: src/enigma_main.cpp:2733
+msgid "no EPG available"
+msgstr "EPG nie je k dispozícii"
+
+#: src/enigma_main.cpp:3562
 msgid "ShutdownTimer"
 msgstr "Časovač vypnutia"
 
-#: src/enigma_main.cpp:3577
+#: src/enigma_main.cpp:3562
 msgid "SleepTimer"
 msgstr "Časovač Sleep módu"
 
-#: src/enigma_main.cpp:3997
+#: src/enigma_main.cpp:3982
 msgid "Pause"
 msgstr "Pauza"
 
-#: src/enigma_main.cpp:3997
+#: src/enigma_main.cpp:3982
 msgid "audio track"
 msgstr "audio stopa"
 
-#: src/enigma_main.cpp:4369
+#: src/enigma_main.cpp:4354
 msgid "Sorry, you cannot record this service."
 msgstr "Prepáčte, tento program nie je možné nahrať."
 
-#: src/enigma_main.cpp:4596
+#: src/enigma_main.cpp:4581
 msgid "Show recorded movies?"
 msgstr "Ukázať nahraté filmy?"
 
-#: src/enigma_main.cpp:4596
+#: src/enigma_main.cpp:4581
 msgid "recording finished"
 msgstr "Nahrávanie ukončené..."
 
-#: src/enigma_main.cpp:4924
+#: src/enigma_main.cpp:4909
 msgid "Shutdown your Receiver now?"
 msgstr "Vypnúť box?"
 
-#: src/enigma_main.cpp:4924 src/enigma_main.cpp:4944
+#: src/enigma_main.cpp:4909 src/enigma_main.cpp:4929
 msgid "Timer Message"
 msgstr "Info časovača"
 
-#: src/enigma_main.cpp:4944
+#: src/enigma_main.cpp:4929
 msgid "Go to Standby now?"
 msgstr "Ísť do Standby?"
 
-#: src/enigma_main.cpp:4999 src/enigma_main.cpp:5063
+#: src/enigma_main.cpp:4984 src/enigma_main.cpp:5048
 msgid "Enter new name:"
 msgstr "Zadajte nový názov:"
 
-#: src/enigma_main.cpp:5000 src/enigma_main.cpp:5064
+#: src/enigma_main.cpp:4985 src/enigma_main.cpp:5049
 msgid "Rename entry"
 msgstr "Premenovať položku"
 
-#: src/enigma_main.cpp:5126
+#: src/enigma_main.cpp:5111
 msgid "Sorry, you cannot delete this service."
 msgstr "Prepáčte, tento program nemôžete odstrániť."
 
-#: src/enigma_main.cpp:5126
+#: src/enigma_main.cpp:5111
 msgid "delete service"
 msgstr "vymazať program"
 
-#: src/enigma_main.cpp:5151 src/enigma_main.cpp:5276 src/sselect.cpp:2394
+#: src/enigma_main.cpp:5136 src/enigma_main.cpp:5261 src/sselect.cpp:2379
 #, c-format
 msgid ""
 "You are trying to delete '%s'.\n"
@@ -3212,11 +3218,11 @@ msgstr ""
 "Pokúšate sa zmazať '%s'.\n"
 "Naozaj to chcete?"
 
-#: src/enigma_main.cpp:5152
+#: src/enigma_main.cpp:5137
 msgid "Delete recorded stream"
 msgstr "Zmazať nahratý stream"
 
-#: src/enigma_main.cpp:5179
+#: src/enigma_main.cpp:5164
 msgid ""
 "This is a complete Bouquet!\n"
 "Really delete?"
@@ -3224,76 +3230,76 @@ msgstr ""
 "Bol označený celý prehľad!\n"
 "Naozaj zmazať?"
 
-#: src/enigma_main.cpp:5180
+#: src/enigma_main.cpp:5165
 msgid "Delete bouquet"
 msgstr "Zmazať prehľad"
 
-#: src/enigma_main.cpp:5277
+#: src/enigma_main.cpp:5262
 msgid "Delete File"
 msgstr "zmazať súbor"
 
-#: src/enigma_main.cpp:5375
+#: src/enigma_main.cpp:5360
 msgid "Enter new Filename:"
 msgstr "Zadajte nový názov:"
 
-#: src/enigma_main.cpp:5376
+#: src/enigma_main.cpp:5361
 msgid "Rename File"
 msgstr "premenovať súbor"
 
-#: src/enigma_main.cpp:5408
+#: src/enigma_main.cpp:5393
 msgid "Enter new name for the bouquet:"
 msgstr "Zadajte nový názov pre prehľad:"
 
-#: src/enigma_main.cpp:5409
+#: src/enigma_main.cpp:5394
 msgid "Rename bouquet"
 msgstr "Premenovať prehľad:"
 
-#: src/enigma_main.cpp:5434
+#: src/enigma_main.cpp:5419
 msgid "Enter name for the new bouquet:"
 msgstr "Zadajte názov nového prehľadu:"
 
-#: src/enigma_main.cpp:5435
+#: src/enigma_main.cpp:5420
 msgid "Add new bouquet"
 msgstr "Pridať nový prehľad"
 
-#: src/enigma_main.cpp:5490
+#: src/enigma_main.cpp:5475
 msgid "unnamed"
 msgstr "bez názvu"
 
-#: src/enigma_main.cpp:5491
+#: src/enigma_main.cpp:5476
 msgid "Enter marker name:"
 msgstr "Zadajte názov záložky:"
 
-#: src/enigma_main.cpp:5492
+#: src/enigma_main.cpp:5477
 msgid "create marker"
 msgstr "Vytvoriť záložku"
 
-#: src/enigma_main.cpp:5540
+#: src/enigma_main.cpp:5525
 msgid "unnamed bouquet"
 msgstr "prehľad bez názvu"
 
-#: src/enigma_main.cpp:5743
+#: src/enigma_main.cpp:5728
 msgid "Do you want to rebuild your movie list?"
 msgstr "Želáte si obnoviť zoznam filmov?"
 
-#: src/enigma_main.cpp:5744
+#: src/enigma_main.cpp:5729
 msgid "Recover movies"
 msgstr "Obnovenie zoznamu filmov"
 
-#: src/enigma_main.cpp:6075 src/enigma_main.cpp:6076
+#: src/enigma_main.cpp:6060 src/enigma_main.cpp:6061
 msgid "This directory doesn't contain anything playable!"
 msgstr "Adresár neobsahuje nič na prehrávanie!"
 
-#: src/enigma_main.cpp:6076
+#: src/enigma_main.cpp:6061
 msgid "Play"
 msgstr "Play"
 
-#: src/enigma_main.cpp:6596
+#: src/enigma_main.cpp:6523
 #, c-format
 msgid "%s was not found!"
 msgstr "%s nenájdené!"
 
-#: src/enigma_main.cpp:6747
+#: src/enigma_main.cpp:6674
 msgid ""
 "A timer based recording is currently in progress!\n"
 "This stops the timer, and recording!"
@@ -3301,7 +3307,7 @@ msgstr ""
 "Práve prebieha nahrávanie podľa časovača!\n"
 "Týmto zrušíte časovač aj nahrávanie!"
 
-#: src/enigma_main.cpp:6757
+#: src/enigma_main.cpp:6684
 msgid ""
 "A recording is currently in progress!\n"
 "This stops the recording!"
@@ -3309,7 +3315,7 @@ msgstr ""
 "Práve prebieha nahrávanie!\n"
 "Chcete zrušiť nahrávanie?"
 
-#: src/enigma_main.cpp:6769
+#: src/enigma_main.cpp:6696
 msgid ""
 "A timer event is currently in progress!\n"
 "This stops the timer event!"
@@ -3317,380 +3323,380 @@ msgstr ""
 "Prebieha načasovaná udalosť!\n"
 "Týmto ju zrušíte!"
 
-#: src/enigma_main.cpp:6777
+#: src/enigma_main.cpp:6704
 msgid "Really do this?"
 msgstr "Naozaj vykonať?"
 
-#: src/enigma_main.cpp:6850
+#: src/enigma_main.cpp:6777
 msgid "please wait until the timer has started the recording (max 10 seconds)"
 msgstr "počkajte prosím, kým časovač nespustí nahrávanie (max. 10sekúnd)"
 
-#: src/enigma_main.cpp:6851
+#: src/enigma_main.cpp:6778
 msgid "information"
 msgstr "Informácia"
 
-#: src/enigma_main.cpp:7750
+#: src/enigma_main.cpp:7653
 msgid "Record failed due to inaccessable storage."
 msgstr "Záznam zlyhal z dôvodu nedostupného úložiska."
 
-#: src/enigma_main.cpp:7752
+#: src/enigma_main.cpp:7655
 msgid ""
 "Record stopped due to full harddisk. Delete some recordings and try again."
 msgstr ""
 "Záznam bol zastavený, pretože harddisk je plný. Zmažte niektoré súbory a "
 "skúste to znovu."
 
-#: src/enigma_main.cpp:7754
+#: src/enigma_main.cpp:7657
 msgid ""
 "Record failed due to a write error during recording. Check for filesystem "
 "corruption."
 msgstr "Záznam zlyhal z dôvodu chyby počas zápisu. Skontrolujte filesystem."
 
-#: src/enigma_main.cpp:7756
+#: src/enigma_main.cpp:7659
 msgid "record failed"
 msgstr "chyba pri nahrávaní"
 
-#: src/enigma_main.cpp:8057 src/enigma_main.cpp:8058
+#: src/enigma_main.cpp:7960 src/enigma_main.cpp:7961
 msgid "One moment please..."
 msgstr "Čakajte prosím..."
 
-#: src/enigma_main.cpp:8058 src/enigma_main.cpp:8066 src/enigma_main.cpp:8080
-#: src/enigma_main.cpp:8093 src/enigma_main.cpp:8105 src/enigma_main.cpp:8114
-#: src/enigma_main.cpp:8119 src/timer.cpp:2371
+#: src/enigma_main.cpp:7961 src/enigma_main.cpp:7969 src/enigma_main.cpp:7983
+#: src/enigma_main.cpp:7996 src/enigma_main.cpp:8008 src/enigma_main.cpp:8017
+#: src/enigma_main.cpp:8022 src/timer.cpp:2371
 msgid "switch"
 msgstr "prepnúť"
 
-#: src/enigma_main.cpp:8066 src/enigma_main.cpp:8068
+#: src/enigma_main.cpp:7969 src/enigma_main.cpp:7971
 msgid "Service could not be found !"
 msgstr "Program nenájdený!"
 
-#: src/enigma_main.cpp:8080 src/enigma_main.cpp:8082
+#: src/enigma_main.cpp:7983 src/enigma_main.cpp:7985
 msgid "This service could not be descrambled"
 msgstr "Program nemôže byť dekódovaný"
 
-#: src/enigma_main.cpp:8093 src/enigma_main.cpp:8095
+#: src/enigma_main.cpp:7996 src/enigma_main.cpp:7998
 msgid "This service doesn't currently send a signal"
 msgstr "Program momentálne nevysiela signál"
 
-#: src/enigma_main.cpp:8105 src/enigma_main.cpp:8107
+#: src/enigma_main.cpp:8008 src/enigma_main.cpp:8010
 msgid "This content could not be displayed"
 msgstr "Obsah nemôže byť zobrazený"
 
-#: src/enigma_main.cpp:8112 src/enigma_main.cpp:8114
+#: src/enigma_main.cpp:8015 src/enigma_main.cpp:8017
 msgid "NVOD Service - please select a starttime"
 msgstr "NVOD služba - prosím, zvoľte čas spustenia"
 
-#: src/enigma_main.cpp:8117 src/enigma_main.cpp:8119
+#: src/enigma_main.cpp:8020 src/enigma_main.cpp:8022
 msgid "Unknown error!!"
 msgstr "Neznáma chyba !!!"
 
-#: src/enigma_main.cpp:8698 src/sselect.cpp:538
+#: src/enigma_main.cpp:8599 src/sselect.cpp:527
 msgid "Playlist"
 msgstr "Playlist"
 
-#: src/enigma_main.cpp:8705
+#: src/enigma_main.cpp:8606
 msgid "History"
 msgstr "História"
 
-#: src/enigma_main.cpp:9222
+#: src/enigma_main.cpp:9123
 msgid "Networks, services and user bouquets will be reloaded"
 msgstr "Sieť, programy a užívateľské prehľady budú znovu načítané"
 
-#: src/enigma_main.cpp:9223 src/enigma_main.cpp:9227
+#: src/enigma_main.cpp:9124 src/enigma_main.cpp:9128
 msgid "Reloading..."
 msgstr "Načítavam..."
 
-#: src/enigma_main.cpp:9226
+#: src/enigma_main.cpp:9127
 msgid "Please wait..."
 msgstr "Čakajte prosím..."
 
-#: src/enigma_main.cpp:9245
+#: src/enigma_main.cpp:9146
 msgid "Service Menu"
 msgstr "Programové menu"
 
-#: src/enigma_main.cpp:9263 src/sselect.cpp:145
+#: src/enigma_main.cpp:9164 src/sselect.cpp:145
 msgid "add service to playlist"
 msgstr "pridať do Playlistu"
 
-#: src/enigma_main.cpp:9263
+#: src/enigma_main.cpp:9164
 msgid "add selected service to the playlist"
 msgstr "pridať vybraný program/film do Playlistu"
 
-#: src/enigma_main.cpp:9275
+#: src/enigma_main.cpp:9176
 msgid "shuffle"
 msgstr "náhodné prehrávanie"
 
-#: src/enigma_main.cpp:9275
+#: src/enigma_main.cpp:9176
 msgid "shuffle playlist"
 msgstr "vytvoriť náhodné poradie pre prehrávanie"
 
-#: src/enigma_main.cpp:9288 src/enigma_main.cpp:9295
+#: src/enigma_main.cpp:9189 src/enigma_main.cpp:9196
 msgid "remove all 'new found' flags"
 msgstr "zrušiť všetky označenia 'nové'"
 
-#: src/enigma_main.cpp:9288
+#: src/enigma_main.cpp:9189
 msgid "select to remove all 'new found' flags from this satellite"
 msgstr "vybrať a odstrániť označenie 'nové' pre tento satelit"
 
-#: src/enigma_main.cpp:9294
+#: src/enigma_main.cpp:9195
 msgid "remove 'new found flag'"
 msgstr "zrušiť označenie 'nové'"
 
-#: src/enigma_main.cpp:9294
+#: src/enigma_main.cpp:9195
 msgid "select to remove the 'new found flag'"
 msgstr "vybrať a odstrániť označenie 'nové'"
 
-#: src/enigma_main.cpp:9295
+#: src/enigma_main.cpp:9196
 msgid "select to remove all 'new found' flags"
 msgstr "vybrať a odstrániť všetky označenia 'nové'"
 
-#: src/enigma_main.cpp:9299
+#: src/enigma_main.cpp:9200
 msgid "create new bouquet"
 msgstr "vytvoriť nový prehľad"
 
-#: src/enigma_main.cpp:9299
+#: src/enigma_main.cpp:9200
 msgid "select to create a new bouquet"
 msgstr "zvoľte pre vytvorenie nového prehľadu"
 
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9212
 msgid "duplicate bouquet"
 msgstr "duplikovať prehľad"
 
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9212
 msgid "duplicate the complete bouquet with all content"
 msgstr "duplikovať celý prehľad vrátane obsahu"
 
-#: src/enigma_main.cpp:9317 src/enigma_main.cpp:9385 src/enigma_main.cpp:9390
-#: src/enigma_main.cpp:9410
+#: src/enigma_main.cpp:9218 src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
+#: src/enigma_main.cpp:9311
 msgid "add to specific bouquet"
 msgstr "pridať do vybraného prehľadu"
 
-#: src/enigma_main.cpp:9317
+#: src/enigma_main.cpp:9218
 msgid "add the selected service to another bouquet"
 msgstr "pridať vybraný program do niektorého prehľadu"
 
-#: src/enigma_main.cpp:9319
+#: src/enigma_main.cpp:9220
 msgid "add marker"
 msgstr "pridať záložku"
 
-#: src/enigma_main.cpp:9319
+#: src/enigma_main.cpp:9220
 msgid "create a new marker in the current bouquet"
 msgstr "vytvoriť novú záložku v používanom prehľade"
 
-#: src/enigma_main.cpp:9328 src/enigma_main.cpp:9344 src/enigma_main.cpp:9392
-#: src/sselect.cpp:517
+#: src/enigma_main.cpp:9229 src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
+#: src/sselect.cpp:506
 msgid "rename"
 msgstr "premenovať"
 
-#: src/enigma_main.cpp:9328
+#: src/enigma_main.cpp:9229
 msgid "rename the current selected bouquet"
 msgstr "premenovať označený prehľad"
 
-#: src/enigma_main.cpp:9344 src/enigma_main.cpp:9392
+#: src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
 msgid "rename the current selected service/movie"
 msgstr "premenovať označený program/film"
 
-#: src/enigma_main.cpp:9348 src/enigma_main.cpp:9393 src/sselect.cpp:515
+#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294 src/sselect.cpp:504
 msgid "delete"
 msgstr "zmazať"
 
-#: src/enigma_main.cpp:9348 src/enigma_main.cpp:9393
+#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294
 msgid "delete the current selected service/movie"
 msgstr "zmazať označený program/film"
 
-#: src/enigma_main.cpp:9353
+#: src/enigma_main.cpp:9254
 msgid "rebuild movie list"
 msgstr "obnoviť zoznam filmov"
 
-#: src/enigma_main.cpp:9353
+#: src/enigma_main.cpp:9254
 msgid "rebuild the current movie list"
 msgstr "obnový aktuálny zoznam filmov"
 
-#: src/enigma_main.cpp:9360
+#: src/enigma_main.cpp:9261
 msgid "set as startup service"
 msgstr "nastaviť ako program po spustení"
 
-#: src/enigma_main.cpp:9360
+#: src/enigma_main.cpp:9261
 msgid "currently selected service will be selected on startup"
 msgstr "po štarte bude prepnuté na vybraný program "
 
-#: src/enigma_main.cpp:9361 src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9262 src/enigma_main.cpp:9297
 msgid "reset startup service"
 msgstr "zrušiť nastavenie po spustení"
 
-#: src/enigma_main.cpp:9361
+#: src/enigma_main.cpp:9262
 msgid "last selected service will be selected on startup"
 msgstr "po štarte bude prepnuté na posledný sledovaný program  "
 
-#: src/enigma_main.cpp:9368
+#: src/enigma_main.cpp:9269
 msgid "disable move mode"
 msgstr "zakázať presun"
 
-#: src/enigma_main.cpp:9368
+#: src/enigma_main.cpp:9269
 msgid "switch move mode off"
 msgstr "vypnúť mód presunu"
 
-#: src/enigma_main.cpp:9370
+#: src/enigma_main.cpp:9271
 msgid "enable move mode"
 msgstr "povoliť presun"
 
-#: src/enigma_main.cpp:9370
+#: src/enigma_main.cpp:9271
 msgid "activate mode to simply change the entry order"
 msgstr "aktivovať mód pre zmeny poradia záznamov"
 
-#: src/enigma_main.cpp:9379
+#: src/enigma_main.cpp:9280
 msgid "copy to bouquet list"
 msgstr "skopírovať do prehľadu"
 
-#: src/enigma_main.cpp:9379
+#: src/enigma_main.cpp:9280
 msgid "copy the selected provider to the bouquet list"
 msgstr "skopírovať vybraných poskytovateľov do zoznamu prehľadov"
 
-#: src/enigma_main.cpp:9385 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
 msgid "add the selected service to a selectable bouquet"
 msgstr "pridať vybraný program/film do zvoleného prehľadu"
 
-#: src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9296
 msgid "set as startup"
 msgstr "nastaviť po štarte"
 
-#: src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9296
 msgid "set the current selected service/movie as startup service"
 msgstr "nastaviť vybraný program/film po štarte  "
 
-#: src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9297
 msgid "reset startup"
 msgstr "zrušiť nastavenie po štarte"
 
-#: src/enigma_main.cpp:9410
+#: src/enigma_main.cpp:9311
 msgid "add the selected file to a selectable bouquet"
 msgstr "pridať vybraný súbor do zvoleného prehľadu"
 
-#: src/enigma_main.cpp:9412
+#: src/enigma_main.cpp:9313
 msgid "delete file"
 msgstr "vymazať súbor"
 
-#: src/enigma_main.cpp:9412
+#: src/enigma_main.cpp:9313
 msgid "delete the selected file (and all corresponding ts files"
 msgstr "vymazať zvolený súbor (a všetky súvisiace .ts súbory)"
 
-#: src/enigma_main.cpp:9413
+#: src/enigma_main.cpp:9314
 msgid "rename file"
 msgstr "premenovať súbor"
 
-#: src/enigma_main.cpp:9413
+#: src/enigma_main.cpp:9314
 msgid "rename the selected file (and all corresponding ts files"
 msgstr "premenovať zvolený súbor (a všetky súvisiace .ts súbory)"
 
-#: src/enigma_main.cpp:9427
+#: src/enigma_main.cpp:9328
 msgid "disable edit mode"
 msgstr "zakázať editáciu"
 
-#: src/enigma_main.cpp:9427
+#: src/enigma_main.cpp:9328
 msgid "disable the edit mode"
 msgstr "zakázať editáciu"
 
-#: src/enigma_main.cpp:9429
+#: src/enigma_main.cpp:9330
 msgid "enable edit mode"
 msgstr "povoliť editáciu"
 
-#: src/enigma_main.cpp:9429
+#: src/enigma_main.cpp:9330
 msgid "activate mode to simply add many services to a selectable bouquet"
 msgstr "aktivovať mód pre pridávanie programov do vybraného prehľadu"
 
-#: src/enigma_main.cpp:9440
+#: src/enigma_main.cpp:9341
 msgid "unlock"
 msgstr "odomknúť"
 
-#: src/enigma_main.cpp:9440
+#: src/enigma_main.cpp:9341
 msgid "do parental-unlock the selected service or file"
 msgstr "zrušiť rodičovský zámok u vybraného programu alebo súboru"
 
-#: src/enigma_main.cpp:9442
+#: src/enigma_main.cpp:9343
 msgid "lock"
 msgstr "zámok"
 
-#: src/enigma_main.cpp:9442
+#: src/enigma_main.cpp:9343
 msgid "do parentallock the selected service or file"
 msgstr "nastaviť rodičovský zámok na vybraný program alebo súbor"
 
-#: src/enigma_main.cpp:9446
+#: src/enigma_main.cpp:9347
 msgid "disable parental lock"
 msgstr "zakázať rodičovský zámok"
 
-#: src/enigma_main.cpp:9446
+#: src/enigma_main.cpp:9347
 msgid "temporary disable the parental locking"
 msgstr "dočasne zakázať rodičovský zámok"
 
-#: src/enigma_main.cpp:9448
+#: src/enigma_main.cpp:9349
 msgid "enable parental lock"
 msgstr "povoliť rodičovský zámok"
 
-#: src/enigma_main.cpp:9448
+#: src/enigma_main.cpp:9349
 msgid "re-enable the parental locking"
 msgstr "znovu povoliť rodičovský zámok"
 
-#: src/enigma_main.cpp:9467
+#: src/enigma_main.cpp:9368
 msgid "Shutdown/Standby Menu"
 msgstr "Vypnúť/Standby Menu"
 
-#: src/enigma_main.cpp:9478 src/enigma_main.cpp:9482 src/enigma_main.cpp:9489
+#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
 msgid "restart enigma"
 msgstr "Reštart Enigma"
 
-#: src/enigma_main.cpp:9478 src/enigma_main.cpp:9482 src/enigma_main.cpp:9489
+#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
 msgid "only restart the software, without rebooting the receiver"
 msgstr "iba reštart software bez reboot-u boxu"
 
-#: src/enigma_main.cpp:9479 src/enigma_main.cpp:9483
+#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9384
 msgid "reboot now"
 msgstr "rešatrtovať teraz"
 
-#: src/enigma_main.cpp:9479 src/enigma_main.cpp:9491
+#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9392
 msgid "restart your dreambox"
 msgstr "reštartovať Dreambox (reboot)"
 
-#: src/enigma_main.cpp:9483
+#: src/enigma_main.cpp:9384
 msgid "restart your receiver"
 msgstr "reštartovať príjímač"
 
-#: src/enigma_main.cpp:9490 src/enigma_main.cpp:9494
+#: src/enigma_main.cpp:9391 src/enigma_main.cpp:9395
 msgid "shutdown now"
 msgstr "Vypnúť box"
 
-#: src/enigma_main.cpp:9490
+#: src/enigma_main.cpp:9391
 msgid "shutdown your dreambox"
 msgstr "vypnúť Dreambox"
 
-#: src/enigma_main.cpp:9491 src/enigma_main.cpp:9495
+#: src/enigma_main.cpp:9392 src/enigma_main.cpp:9396
 msgid "restart"
 msgstr "Rešatrtovať box"
 
-#: src/enigma_main.cpp:9494
+#: src/enigma_main.cpp:9395
 msgid "shutdown your dbox-2"
 msgstr "Vypnúť dbox-2"
 
-#: src/enigma_main.cpp:9495
+#: src/enigma_main.cpp:9396
 msgid "restart your dbox-2"
 msgstr "reštartovať dbox-2"
 
-#: src/enigma_main.cpp:9499
+#: src/enigma_main.cpp:9400
 msgid "goto standby"
 msgstr "Prejsť do Standby"
 
-#: src/enigma_main.cpp:9499
+#: src/enigma_main.cpp:9400
 msgid "goto standby mode"
 msgstr "prejsť do pohotovostného módu"
 
-#: src/enigma_main.cpp:9500
+#: src/enigma_main.cpp:9401
 msgid "set sleeptimer"
 msgstr "Nastaviť čas vypnutia (Sleep timer)"
 
-#: src/enigma_main.cpp:9500
+#: src/enigma_main.cpp:9401
 msgid "set a sleep timer"
 msgstr "nastaviť čas vypnutia"
 
-#: src/enigma_main.cpp:9504
+#: src/enigma_main.cpp:9405
 msgid ""
 "\tShutdown/Standby Menu\n"
 "\n"
@@ -3737,7 +3743,7 @@ msgstr ""
 "\n"
 "[EXIT]\tZavrieť okno"
 
-#: src/enigma_main.cpp:9568
+#: src/enigma_main.cpp:9469
 msgid ""
 "\tSet Sleeptimer\n"
 "\n"
@@ -3788,44 +3794,44 @@ msgstr ""
 "\n"
 "[EXIT]\tzavrieť okno bez uloženia zmien"
 
-#: src/enigma_main.cpp:9636
+#: src/enigma_main.cpp:9537
 msgid "Record Menu"
 msgstr "Menu záznam"
 
-#: src/enigma_main.cpp:9646
+#: src/enigma_main.cpp:9547
 msgid "stop record now"
 msgstr "zastaviť záznam"
 
-#: src/enigma_main.cpp:9646
+#: src/enigma_main.cpp:9547
 msgid "immediate stop the recording"
 msgstr "ihneď zastaviť nahrávanie"
 
-#: src/enigma_main.cpp:9648
+#: src/enigma_main.cpp:9549
 msgid "set record duration"
 msgstr "nastaviť dĺžku záznamu"
 
-#: src/enigma_main.cpp:9648
+#: src/enigma_main.cpp:9549
 msgid "set the recording time (in minutes)"
 msgstr "nastaviť čas záznamu (v minutách)"
 
-#: src/enigma_main.cpp:9649
+#: src/enigma_main.cpp:9550
 msgid "set record stop time"
 msgstr "nastaviť čas ukončenia záznamu"
 
-#: src/enigma_main.cpp:9649
+#: src/enigma_main.cpp:9550
 msgid "set the recording end time"
 msgstr "nastaviť čas ukončenia záznamu"
 
-#: src/enigma_main.cpp:9655
+#: src/enigma_main.cpp:9556
 #, c-format
 msgid "add timeshift to recording (%d min) "
 msgstr "pridať timeshift k nahrávke (%d min)"
 
-#: src/enigma_main.cpp:9656
+#: src/enigma_main.cpp:9557
 msgid "add recorded timeshift at beginning of this recording"
 msgstr "pridať nahrávku timeshiftu na začiatok tohto nahrávania"
 
-#: src/enigma_main.cpp:9790
+#: src/enigma_main.cpp:9691
 msgid "press ok to start edit mode"
 msgstr "stlačte OK pre editačný mód"
 
@@ -4020,7 +4026,7 @@ msgid "Couldn't read plugin directory %s"
 msgstr "Nedá sa otvoriť adresár pluginov %s"
 
 #: src/enigma_plugins.cpp:235 src/enigma_plugins.cpp:424 src/scan.cpp:1967
-#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2401
+#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2386
 msgid "Error"
 msgstr "Chyba"
 
@@ -4216,9 +4222,9 @@ msgstr "inštalácia a odinštalácia software"
 msgid "Software management"
 msgstr "Správa software"
 
-#: src/enigma_setup.cpp:155
-#, fuzzy, c-format
-msgid "/var free %dK"
+#: src/enigma_setup.cpp:154
+#, c-format
+msgid "/var used %d%%"
 msgstr "/var využité %d%%"
 
 #: src/enigma_standby.cpp:28
@@ -5118,19 +5124,19 @@ msgstr ""
 msgid "Error!"
 msgstr "Chyba!"
 
-#: src/ppanel.cpp:1323
+#: src/ppanel.cpp:1322
 msgid "PPanel recovery, internet connection needed"
 msgstr "Obnova PPanelu, je potrebné pripojenie k internetu"
 
-#: src/ppanel.cpp:1431
+#: src/ppanel.cpp:1430
 msgid "Please select an item"
 msgstr "Prosím, zvoľte položku"
 
-#: src/ppanel.cpp:1453
+#: src/ppanel.cpp:1452
 msgid "latest"
 msgstr "posledný"
 
-#: src/ppanel.cpp:1500
+#: src/ppanel.cpp:1499
 msgid ""
 "A new menu is available. The new menu will be visible if you return to the "
 "setup panel.You can continue your work here after pressing OK."
@@ -5138,11 +5144,11 @@ msgstr ""
 "Je k dispozícii nové menu. Nové menu sa zobrazí po návrate do panelu pre "
 "nastavenie. Môžete pokračovať v práci po stlačení OK."
 
-#: src/ppanel.cpp:1502
+#: src/ppanel.cpp:1501
 msgid "Automatic menu update"
 msgstr "Automatický update menu"
 
-#: src/ppanel.cpp:1657 src/ppanel.cpp:1755
+#: src/ppanel.cpp:1656 src/ppanel.cpp:1754
 #, c-format
 msgid ""
 "%s\n"
@@ -6202,7 +6208,7 @@ msgstr "Prehľadávanie ukončené"
 msgid "Manual PIDs"
 msgstr "Ručné zadanie PIDs"
 
-#: src/scan.cpp:1627 src/streaminfo.cpp:357
+#: src/scan.cpp:1627 src/streaminfo.cpp:336
 msgid "Name:"
 msgstr "Meno:"
 
@@ -6214,7 +6220,7 @@ msgstr "pre zadanie názvu programu stlačte OK"
 msgid "enter service name"
 msgstr "zadať názov programu"
 
-#: src/scan.cpp:1642 src/streaminfo.cpp:369
+#: src/scan.cpp:1642 src/streaminfo.cpp:348
 msgid "Provider:"
 msgstr "Poskytovateľ:"
 
@@ -6226,7 +6232,7 @@ msgstr "pre zadanie názvu poskytovateľa stlačte OK"
 msgid "enter provider name"
 msgstr "zadať názov poskytovateľa:"
 
-#: src/scan.cpp:1658 src/streaminfo.cpp:381
+#: src/scan.cpp:1658 src/streaminfo.cpp:360
 msgid "Video PID:"
 msgstr ""
 
@@ -6238,7 +6244,7 @@ msgstr "pre zadanie video pid použijte OK"
 msgid "enter video pid"
 msgstr "zadať video pid"
 
-#: src/scan.cpp:1672 src/streaminfo.cpp:405
+#: src/scan.cpp:1672 src/streaminfo.cpp:384
 msgid "PCR PID:"
 msgstr ""
 
@@ -6250,7 +6256,7 @@ msgstr "pre zadanie pcr pid stlačte OK"
 msgid "enter pcr pid (in most case the same pid as the video pid)"
 msgstr "zadať pcr pid (vo viacerých prípadoch sa zhoduje s video pid)"
 
-#: src/scan.cpp:1688 src/streaminfo.cpp:393
+#: src/scan.cpp:1688 src/streaminfo.cpp:372
 msgid "Audio PID:"
 msgstr ""
 
@@ -6282,7 +6288,7 @@ msgstr "pre zadanie (video) text pid stlačte OK"
 msgid "enter (video) text pid"
 msgstr "zadajte (video) text pid"
 
-#: src/scan.cpp:1725 src/streaminfo.cpp:477
+#: src/scan.cpp:1725 src/streaminfo.cpp:456
 msgid "Service ID:"
 msgstr "Program ID:"
 
@@ -6586,109 +6592,109 @@ msgstr "Detekcia MAC adresy bola neúspešná!"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: src/setup_epg.cpp:92
+#: src/setup_epg.cpp:72
 msgid "EPG data store"
 msgstr "Uloženie EPG dát"
 
-#: src/setup_epg.cpp:97
+#: src/setup_epg.cpp:77
 msgid "Select if you want the default Enigma EPG or SQLite database EPG"
 msgstr "voľba Enigma EPG alebo SQLite databáza"
 
-#: src/setup_epg.cpp:100
+#: src/setup_epg.cpp:80
 msgid "Enigma EPG"
 msgstr "Enigma EPG"
 
-#: src/setup_epg.cpp:102
+#: src/setup_epg.cpp:81
 msgid "SQLite database"
 msgstr "SQLite databáza"
 
-#: src/setup_epg.cpp:123
+#: src/setup_epg.cpp:102
 msgid "Select EPG store location"
 msgstr "nastavenie umiestnenia pre ukladanie EPG"
 
-#: src/setup_epg.cpp:142
+#: src/setup_epg.cpp:121
 msgid "Number of EPG days:"
 msgstr "Počet dní EPG:"
 
-#: src/setup_epg.cpp:148
+#: src/setup_epg.cpp:127
 msgid "Select number of EPG days"
 msgstr "počet dní, pre ktoré sú informácie EPG načítané"
 
-#: src/setup_epg.cpp:161
+#: src/setup_epg.cpp:140
 msgid "Enable MHW EPG"
 msgstr "MHW EPG"
 
-#: src/setup_epg.cpp:164
+#: src/setup_epg.cpp:143
 msgid ""
 "Mediahighway EPG, activate swap space when using with multiple operators"
 msgstr ""
 "Mediahighway EPG. Aktivujte Swap, pokiaľ sa používa pre viacero operátorov"
 
-#: src/setup_epg.cpp:171
+#: src/setup_epg.cpp:150
 msgid "Enable DISH/BEV EEPG"
 msgstr "DISH/BEV EEPG"
 
-#: src/setup_epg.cpp:174
+#: src/setup_epg.cpp:153
 msgid "DISH/BEV network EEPG, up to 9 days EPG"
 msgstr "DISH network EEPG, EPG až pre 9 dní"
 
-#: src/setup_epg.cpp:180
+#: src/setup_epg.cpp:159
 msgid "Limit Enigma EPG size"
 msgstr "Obmedziť veľkosť Enigma EPG"
 
-#: src/setup_epg.cpp:183
+#: src/setup_epg.cpp:162
 msgid "Limit the Enigma EPG file to 5MB (recommended)"
 msgstr "obmedziť veľkosť EPG súboru na 5MB (doporučené)"
 
-#: src/setup_epg.cpp:189
+#: src/setup_epg.cpp:168
 msgid "Rescan EPG"
 msgstr "Načítať EPG"
 
-#: src/setup_epg.cpp:194
+#: src/setup_epg.cpp:173
 msgid "Rescan EPG data on current transponder"
 msgstr "nové načítanie EPG dát daného transpondéra"
 
-#: src/setup_epg.cpp:211
+#: src/setup_epg.cpp:190
 msgid "Enigma EPG location"
 msgstr "Umiestnenie Enigma EPG:"
 
-#: src/setup_epg.cpp:215
+#: src/setup_epg.cpp:194
 msgid "SQLite EPG location"
 msgstr "SQLite EPG umiestnenie"
 
-#: src/setup_epg.cpp:258
+#: src/setup_epg.cpp:237
 msgid "This directory is suitable for storage"
 msgstr " - tento adresár vyhovuje pre uloženie"
 
-#: src/setup_epg.cpp:262
+#: src/setup_epg.cpp:241
 msgid "This directory has not enough space"
 msgstr "v tomto adresári nie je dostatok miesta"
 
-#: src/setup_epg.cpp:266
+#: src/setup_epg.cpp:245
 msgid "This directory does not exist"
 msgstr "adresár neexistuje"
 
-#: src/setup_epg.cpp:327
+#: src/setup_epg.cpp:306
 msgid "MultiEPG channels:"
 msgstr "MultiEPG kanálov:"
 
-#: src/setup_epg.cpp:334
+#: src/setup_epg.cpp:313
 msgid "Number of channels per MultiEPG page to show"
 msgstr "počet zobrazovaných kanálov na stránke s MultiEPG"
 
-#: src/setup_epg.cpp:339
+#: src/setup_epg.cpp:318
 msgid "MultiEPG entry fontsize:"
 msgstr "MultiEPG veľkosť písma:"
 
-#: src/setup_epg.cpp:352
+#: src/setup_epg.cpp:331
 msgid "Increase/decrease entry fontsize with this number of points"
 msgstr "zvyšuje alebo znižuje veľkosť fontu v MultiEPG o daný počet bodov"
 
-#: src/setup_epg.cpp:357
+#: src/setup_epg.cpp:336
 msgid "Enable EPG genre colours"
 msgstr "Povoliť farby EPG podľa žánru"
 
-#: src/setup_epg.cpp:360
+#: src/setup_epg.cpp:339
 msgid "Make the MultiEPG entries coloured depending on the genre"
 msgstr "jednotlivé položky MultiEPG majú farbu podľa žánru"
 
@@ -6794,108 +6800,99 @@ msgid "Seconds in OSD clock"
 msgstr "Sekundy v OSD hodinách"
 
 #: src/setup_extra_osd.cpp:75
-#, fuzzy
-msgid "Progress in %"
-msgstr "Priebeh:"
-
-#: src/setup_extra_osd.cpp:75
-msgid "Display Progress in %"
-msgstr ""
-
-#: src/setup_extra_osd.cpp:76
 msgid "No picture in radio/mp3"
 msgstr "Bez obrázku v radio/mp3"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:75
 msgid "No background picture in radio/mp3 mode"
 msgstr "bez obrázku v pozadí pri prehrávaní rádia alebo mp3"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:76
 msgid "Listbox OSD main menu"
 msgstr "Hlavné menu ako zoznam"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:76
 msgid "Show the Main menu in normal listbox style"
 msgstr "zobrazovať hlavné menu ako klasický zoznam"
 
-#: src/setup_extra_osd.cpp:78
+#: src/setup_extra_osd.cpp:77
 msgid "Serviceselector help buttons"
 msgstr "Popis tl. vo výbere"
 
-#: src/setup_extra_osd.cpp:78
+#: src/setup_extra_osd.cpp:77
 msgid "Show coloured help buttons in service selector"
 msgstr "zobrazovať popisy farebných tlačidiel vo výbere programov"
 
-#: src/setup_extra_osd.cpp:81
+#: src/setup_extra_osd.cpp:80
 msgid "Show Sat position"
 msgstr "Zobrazovať pozíciu satelitu"
 
-#: src/setup_extra_osd.cpp:81
+#: src/setup_extra_osd.cpp:80
 msgid "Show satellite position in the infobar"
 msgstr "zobrazovať pozíciu satelitu sledovaného programu v Infobar"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:82
 msgid "Auto show Infobar"
 msgstr "Autom. zobraziť Infobar"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:82
 msgid "Always show infobar when new event info is available"
 msgstr "zobraziť Infobar vždy pri začiatku novej relácie"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:83
 msgid "Show remaining Time"
 msgstr "Zostávajúci čas"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:83
 msgid "Show event remaining time in the infobar"
 msgstr "zobrazovať v Infobar čas zostávajúci do konca relácie"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:84
 msgid "Hide shortcut icons"
 msgstr "Skryť ikony skrátených volieb"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:84
 msgid "Don't show shortcut icons in menus"
 msgstr "nezobrazovať ikony skrátených volieb v menu"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:85
 msgid "Skip confirmations"
 msgstr "Preskakovať potvrdzovanie"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:85
 msgid "Skip some confirmations"
 msgstr "nežiadať niektoré potvrdenia (pozor na nechcené zmazania a pod.)"
 
-#: src/setup_extra_osd.cpp:87
+#: src/setup_extra_osd.cpp:86
 msgid "Hide error windows"
 msgstr "Skryť chybové hlášky"
 
-#: src/setup_extra_osd.cpp:87
+#: src/setup_extra_osd.cpp:86
 msgid "Don't show zap error messages like service not found"
 msgstr ""
 "nezobrazovať chybové hlášky pri prepínaní (napr. program nenájdený a pod.)"
 
-#: src/setup_extra_osd.cpp:90
+#: src/setup_extra_osd.cpp:89
 msgid "Enable fast zapping"
 msgstr "Rýchle prepínanie"
 
-#: src/setup_extra_osd.cpp:90
+#: src/setup_extra_osd.cpp:89
 msgid "Enables faster zapping.. but with visible sync"
 msgstr "rýchlejšie prepínanie... ale s viditeľným pozastavením obrazu"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:91
 msgid "Enable Zapping History"
 msgstr "Povoliť históriu prepínania"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:91
 msgid "Don't care about actual mode when zapping in history list"
 msgstr "zahŕňa aj zmeny módu do prepínania pomocou histórie"
 
-#: src/setup_extra_osd.cpp:93
+#: src/setup_extra_osd.cpp:92
 msgid "Auto bouquet change"
 msgstr "Autom. zmena prehľadu"
 
-#: src/setup_extra_osd.cpp:93
+#: src/setup_extra_osd.cpp:92
 msgid "Change into next bouquet when end of current bouquet is reached"
 msgstr "na konci prehľadu automaticky prejsť do nasledujúceho prehľadu"
 
@@ -7300,7 +7297,7 @@ msgstr "Heslo"
 msgid "Enter the password of the server"
 msgstr "zadajte heslo pre server"
 
-#: src/setup_mounts.cpp:369 src/sselect.cpp:2356 src/sselect.cpp:2395
+#: src/setup_mounts.cpp:369 src/sselect.cpp:2341 src/sselect.cpp:2380
 msgid "Delete"
 msgstr "Zmazať"
 
@@ -9132,7 +9129,7 @@ msgstr "pridať program do zvoleného prehľadu"
 msgid "toggle between classic and multi column style"
 msgstr "prepína medzi klasickým a viacstĺpcovým štýlom"
 
-#: src/sselect.cpp:151 src/sselect.cpp:1868 src/sselect.cpp:1878
+#: src/sselect.cpp:151 src/sselect.cpp:1858 src/sselect.cpp:1868
 msgid "toggle focus between service and bouquet list (in combi column style)"
 msgstr ""
 "prepína kurzor medzi prehľadom programov a zoznamom prehľadov (vo viacstĺ. "
@@ -9178,46 +9175,46 @@ msgstr "premenovať vybranú položku"
 msgid "create new marker entry"
 msgstr "vytvoriť novú záložku"
 
-#: src/sselect.cpp:379
+#: src/sselect.cpp:377
 msgid "[GO UP]"
 msgstr "[ späť ]"
 
-#: src/sselect.cpp:381
+#: src/sselect.cpp:379
 msgid "(removed service)"
 msgstr "(kanál odstránený)"
 
-#: src/sselect.cpp:516
+#: src/sselect.cpp:505
 msgid "mark"
 msgstr "označiť"
 
-#: src/sselect.cpp:518
+#: src/sselect.cpp:507
 msgid "marker"
 msgstr "záložka"
 
-#: src/sselect.cpp:536
+#: src/sselect.cpp:525
 msgid "My Dreambox"
 msgstr "Môj box"
 
-#: src/sselect.cpp:537
+#: src/sselect.cpp:526
 msgid "Movies"
 msgstr "Filmy"
 
-#: src/sselect.cpp:1067
+#: src/sselect.cpp:1056
 msgid "Select No or press Abort to lock/unlock the complete directory"
 msgstr "Vyberte Nie alebo Zrušiť k zamknutiu/odomknutiu celého adresára"
 
-#: src/sselect.cpp:1067
+#: src/sselect.cpp:1056
 msgid "Enter Directory"
 msgstr "Zadať adresár"
 
-#: src/sselect.cpp:1858
+#: src/sselect.cpp:1848
 #, fuzzy
 msgid "toggle between now and next epg entries in single column list"
 msgstr ""
 "prepína kurzor medzi prehľadom programov a zoznamom prehľadov (vo viacstĺ. "
 "kombinovanm zobrazení)"
 
-#: src/sselect.cpp:2008
+#: src/sselect.cpp:1993
 msgid ""
 "Service selector\n"
 "\n"
@@ -9231,31 +9228,31 @@ msgstr ""
 "podľa skupín (Satelity, Prehľady, Všetko, Poskytovateľ, Rádio/TV, Súbory) a "
 "môže ich zobraziť v jednom alebo viac stĺpcoch."
 
-#: src/sselect.cpp:2353
+#: src/sselect.cpp:2338
 msgid "Root"
 msgstr "Root"
 
-#: src/sselect.cpp:2354
+#: src/sselect.cpp:2339
 #, fuzzy
 msgid "Select"
 msgstr "Vyber LNB"
 
-#: src/sselect.cpp:2355
+#: src/sselect.cpp:2340
 #, fuzzy
 msgid "New Directory"
 msgstr "Adresár"
 
-#: src/sselect.cpp:2372
+#: src/sselect.cpp:2357
 #, fuzzy
 msgid "Enter name of new directory:"
 msgstr "zadajte adresár servera"
 
-#: src/sselect.cpp:2373
+#: src/sselect.cpp:2358
 #, fuzzy
 msgid "Create Directory"
 msgstr "Zadať adresár"
 
-#: src/sselect.cpp:2382
+#: src/sselect.cpp:2367
 #, fuzzy
 msgid "Error creating directory"
 msgstr "choď o adresár vyššie"
@@ -9292,43 +9289,43 @@ msgstr "stopa"
 msgid "length"
 msgstr "dĺžka"
 
-#: src/streaminfo.cpp:417
+#: src/streaminfo.cpp:396
 msgid "PMT PID:"
 msgstr ""
 
-#: src/streaminfo.cpp:429
+#: src/streaminfo.cpp:408
 msgid "Teletext PID:"
 msgstr ""
 
-#: src/streaminfo.cpp:441
+#: src/streaminfo.cpp:420
 msgid "Video format:"
 msgstr "Formát videa:"
 
-#: src/streaminfo.cpp:453
+#: src/streaminfo.cpp:432
 msgid "Transport Stream ID:"
 msgstr ""
 
-#: src/streaminfo.cpp:465
+#: src/streaminfo.cpp:444
 msgid "Original Network ID:"
 msgstr ""
 
-#: src/streaminfo.cpp:489
+#: src/streaminfo.cpp:468
 msgid "Namespace:"
 msgstr ""
 
-#: src/streaminfo.cpp:525
+#: src/streaminfo.cpp:504
 msgid "supported coding systems:"
 msgstr "podporovaný kódovací systém:"
 
-#: src/streaminfo.cpp:565
+#: src/streaminfo.cpp:544
 msgid "Systems used in service:"
 msgstr "systémy použité v programe:"
 
-#: src/streaminfo.cpp:606
+#: src/streaminfo.cpp:585
 msgid "Record mode - read manual"
 msgstr "Nahrávací mód - ručné načítanie"
 
-#: src/streaminfo.cpp:613
+#: src/streaminfo.cpp:592
 msgid ""
 "\tStreaminfo\n"
 "\n"
@@ -9371,15 +9368,15 @@ msgstr ""
 "\n"
 "[OK]/[EXIT]\tzavrieť okno"
 
-#: src/streaminfo.cpp:721
+#: src/streaminfo.cpp:700
 msgid "Service information (right)"
 msgstr "informácie o programe (vpravo)"
 
-#: src/streaminfo.cpp:722
+#: src/streaminfo.cpp:701
 msgid "Scrambled system information (left, right)"
 msgstr "informácie o kódovacom systéme (vľavo, vpravo)"
 
-#: src/streaminfo.cpp:723
+#: src/streaminfo.cpp:702
 msgid "Transponder information (left)"
 msgstr "informácie o transpondéri (vlevo)"
 
@@ -10202,7 +10199,7 @@ msgstr ""
 msgid "Upgrade in process..."
 msgstr "Prebieha aktualizácia..."
 
-#: src/wizard_language.cpp:169
+#: src/wizard_language.cpp:168
 msgid ""
 "\tOSD Language\n"
 "\n"
@@ -10236,11 +10233,11 @@ msgstr ""
 "\n"
 "[EXIT]\tZavrieť okno bez uloženia zmien"
 
-#: src/wizard_language.cpp:181
+#: src/wizard_language.cpp:180
 msgid "Choose your language..."
 msgstr "vyberte jazyk... "
 
-#: src/wizard_language.cpp:182
+#: src/wizard_language.cpp:181
 msgid "press up/down/ok"
 msgstr "stlačte hore/dole/OK"
 
@@ -10277,9 +10274,6 @@ msgstr ""
 #: src/wizard_scan.cpp:170
 msgid "DISH LNB for North America and Canada"
 msgstr ""
-
-#~ msgid "no EPG available"
-#~ msgstr "EPG nie je k dispozícii"
 
 #~ msgid "No backup device found"
 #~ msgstr "žiadne zariadenie pre uloženie zálohy"

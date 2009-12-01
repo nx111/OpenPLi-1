@@ -1,7 +1,7 @@
 10
 
 dir
-31
+51
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/templates
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-HTMLServiceEPG.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.772542Z
-743f623f148437447ff43ab8fafc4946
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-539
 
 eit.tmp
 file
@@ -94,14 +60,14 @@ plindeman
 
 845
 
-wapepg.tmp
+HTMLServiceEPG.tmp
 file
 
 
 
 
-2009-09-15T02:53:13.776543Z
-80b1191cbc359f365a20c06d83013aa1
+2009-09-15T02:53:13.772542Z
+743f623f148437447ff43ab8fafc4946
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -126,7 +92,7 @@ plindeman
 
 
 
-204
+539
 
 root.tmp
 file
@@ -161,6 +127,40 @@ plindeman
 
 
 1500
+
+wapepg.tmp
+file
+
+
+
+
+2009-09-15T02:53:13.776543Z
+80b1191cbc359f365a20c06d83013aa1
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+204
 
 wapTimerList.tmp
 file
@@ -264,40 +264,6 @@ plindeman
 
 3177
 
-wap.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.776543Z
-e7982ed2868672d1f9271e4f151083c1
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-728
-
 sat.tmp
 file
 
@@ -331,6 +297,40 @@ plindeman
 
 
 967
+
+wap.tmp
+file
+
+
+
+
+2009-09-15T02:53:13.776543Z
+e7982ed2868672d1f9271e4f151083c1
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+728
 
 index2.tmp
 file
@@ -434,40 +434,6 @@ plindeman
 
 2291
 
-webxtvMSIE.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.776543Z
-02fe24e5d17ef89db8dfaa39e158d098
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10450
-
 XMLTimerList.tmp
 file
 
@@ -501,6 +467,40 @@ plindeman
 
 
 46
+
+webxtvMSIE.tmp
+file
+
+
+
+
+2009-09-15T02:53:13.776543Z
+02fe24e5d17ef89db8dfaa39e158d098
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10450
 
 helpDMMSites.tmp
 file
@@ -1114,40 +1114,6 @@ plindeman
 
 218
 
-bootMgrSettings.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.788541Z
-79014def3a3aadd414cba8e4c063cd41
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2903
-
 XMLData.tmp
 file
 
@@ -1181,6 +1147,40 @@ plindeman
 
 
 204
+
+bootMgrSettings.tmp
+file
+
+
+
+
+2009-09-15T02:53:13.788541Z
+79014def3a3aadd414cba8e4c063cd41
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2903
 
 addTimerEvent.tmp
 file
@@ -1216,40 +1216,6 @@ plindeman
 
 4486
 
-remoteControl.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.788541Z
-77527290f88c7036403a63b9d3fe915c
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3865
-
 deleteTimerComplete.tmp
 file
 
@@ -1284,14 +1250,14 @@ plindeman
 
 332
 
-serviceepg.xsl
+remoteControl.tmp
 file
 
 
 
 
 2009-09-15T02:53:13.788541Z
-54d9e607827b0d13db1f55056b7f2c00
+77527290f88c7036403a63b9d3fe915c
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1316,7 +1282,7 @@ plindeman
 
 
 
-1444
+3865
 
 movies.tmp
 file
@@ -1351,6 +1317,40 @@ plindeman
 
 
 5993
+
+serviceepg.xsl
+file
+
+
+
+
+2009-09-15T02:53:13.788541Z
+54d9e607827b0d13db1f55056b7f2c00
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1444
 
 chttpdSettings.tmp
 file
@@ -1454,40 +1454,6 @@ plindeman
 
 1051
 
-queryEditTimer.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.792541Z
-673452dfd60ff6939414480f282725f7
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-702
-
 mountPoint.tmp
 file
 
@@ -1521,6 +1487,40 @@ plindeman
 
 
 557
+
+queryEditTimer.tmp
+file
+
+
+
+
+2009-09-15T02:53:13.792541Z
+673452dfd60ff6939414480f282725f7
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+702
 
 XMLServiceEPG.tmp
 file
@@ -1556,14 +1556,14 @@ plindeman
 
 219
 
-streaminfo_satellite.xsl
+pdaResponse.tmp
 file
 
 
 
 
 2009-09-15T02:53:13.792541Z
-970cf273b67f81565d930e4dd551e174
+75633c3ccfbab3632793c65796a5e585
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1588,7 +1588,7 @@ plindeman
 
 
 
-2649
+143
 
 addImageWindow.tmp
 file
@@ -1624,14 +1624,14 @@ plindeman
 
 391
 
-pdaResponse.tmp
+streaminfo_satellite.xsl
 file
 
 
 
 
 2009-09-15T02:53:13.792541Z
-75633c3ccfbab3632793c65796a5e585
+970cf273b67f81565d930e4dd551e174
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1656,7 +1656,7 @@ plindeman
 
 
 
-143
+2649
 
 subChannelSelection.tmp
 file
@@ -1794,40 +1794,6 @@ plindeman
 
 2365
 
-teletext.tmp
-file
-
-
-
-
-2009-09-15T02:53:13.796543Z
-24084a63c394f59b14f30c70cc145036
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2800
-
 sendMessage.tmp
 file
 
@@ -1862,14 +1828,14 @@ plindeman
 
 522
 
-index_small.tmp
+teletext.tmp
 file
 
 
 
 
 2009-09-15T02:53:13.796543Z
-86cc698e94840dae461e2ad7a0f6c8c0
+24084a63c394f59b14f30c70cc145036
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1894,7 +1860,7 @@ plindeman
 
 
 
-1653
+2800
 
 mountPoints.tmp
 file
@@ -1929,6 +1895,40 @@ plindeman
 
 
 417
+
+index_small.tmp
+file
+
+
+
+
+2009-09-15T02:53:13.796543Z
+86cc698e94840dae461e2ad7a0f6c8c0
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1653
 
 webxtvFirefox.tmp
 file
@@ -2066,14 +2066,14 @@ plindeman
 
 371
 
-streamingServer.tmp
+pdaRemoteControlDbox2.tmp
 file
 
 
 
 
 2009-09-15T02:53:13.800543Z
-f0bd3d6e50a674d31071ef4a91da8b7e
+1cf20008514879e3dc5dde347c707a5b
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -2098,7 +2098,7 @@ plindeman
 
 
 
-5079
+2812
 
 mepg_small.tmp
 file
@@ -2134,14 +2134,14 @@ plindeman
 
 477
 
-pdaRemoteControlDbox2.tmp
+streamingServer.tmp
 file
 
 
 
 
 2009-09-15T02:53:13.800543Z
-1cf20008514879e3dc5dde347c707a5b
+f0bd3d6e50a674d31071ef4a91da8b7e
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -2166,7 +2166,7 @@ plindeman
 
 
 
-2812
+5079
 
 pdaRemoteControl.tmp
 file

@@ -802,7 +802,7 @@ void eEPGCache::cleanLoop()
 	if ( isRunning || (temp.size() && haveData) || !epgStore )
 	{
 		CleanTimer.startLongTimer(5);
-		eDebug("[EPGC] schedule cleanloop");
+		eDebug("[EPGC] busy, delay cleanloop");
 		return;
 	}
 	
@@ -1309,7 +1309,11 @@ eServiceReferenceDVB eEPGCache::getServiceReference(const eServiceReferenceDVB &
 	eServiceDVB* servicedvb=tplist->searchService(service);
 	if(!servicedvb)
 		return service;
-	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(servicedvb->service_name);
+	eString servicename=servicedvb->service_name;
+	static char strfilter[7] = {' ','\t','\n','\r','\b','\f','_' };
+	for (eString::iterator it(servicename.begin()); it != servicename.end();)
+				strchr( strfilter, *it ) ? it = servicename.erase(it) : it++;
+	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(servicename);
 	if(mIt==ServiceMapping.end())
 		return service;
 	return eServiceReferenceDVB(service.getDVBNamespace(),mIt->second.tsid,mIt->second.onid,mIt->second.sid,service.getServiceType());
@@ -1339,14 +1343,14 @@ int eEPGCache::readServiceMappingFile()
 		while(p){
 			char *s=sec[count];
 			char *search;
-		        for(search=p; *search==' '  || *search=='\t' ||  *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f'; search++);
+		        for(search=p; *search==' '  || *search=='\t' ||  *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f'|| *search=='_' ; search++);
 		        do {
 		                *s++ = *search++;
 		        } while (*search != '\0');
 
 		        search = s;
 
-		        for(search--; *search==' '  || *search=='\t' || *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f'; search--);
+		        for(search--; *search==' '  || *search=='\t' || *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f' || *search=='_'; search--);
 		        search++;
 		        *search='\0' ;
 

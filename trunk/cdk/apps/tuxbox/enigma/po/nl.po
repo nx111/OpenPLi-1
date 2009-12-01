@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-24 09:54+0800\n"
+"POT-Creation-Date: 2009-09-10 19:57+0200\n"
 "PO-Revision-Date: 2009-06-12 20:39+0100\n"
 "Last-Translator: dAF2000 <David@daf2000.nl>\n"
 "Language-Team: Dutch / Michel Weeren <sales@dream-multimedia.nl>\n"
@@ -860,7 +860,7 @@ msgstr "Modus:"
 msgid "KSymb/s"
 msgstr "KSymb/s"
 
-#: default.esml:935 src/enigma_dyn.cpp:645 src/sselect.cpp:526
+#: default.esml:935 src/enigma_dyn.cpp:627 src/sselect.cpp:515
 msgid "All Services"
 msgstr "Alle services"
 
@@ -1184,9 +1184,9 @@ msgstr "Za"
 msgid "Guard:"
 msgstr "Guard:"
 
-#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6597
+#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6524
 #: src/epgsearch.cpp:299 src/epgsearch.cpp:502 src/epgwindow.cpp:369
-#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2090
+#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2075
 msgid "EPG Search"
 msgstr "EPG zoeken"
 
@@ -1443,7 +1443,7 @@ msgstr "Bezig met bufferen..."
 msgid "playing..."
 msgstr "Bezig met afspelen..."
 
-#: lib/dvb/serviceplaylist.cpp:234
+#: lib/dvb/serviceplaylist.cpp:223
 #, c-format
 msgid " (%d entries)"
 msgstr " (%d items)"
@@ -1470,8 +1470,8 @@ msgid "TV/Radio"
 msgstr "TV/Radio"
 
 #: lib/dvb/servicestructure.cpp:22 src/enigma_bouquet.cpp:12
-#: src/enigma_dyn.cpp:657 src/enigma_main.cpp:9826 src/sselect.cpp:532
-#: src/sselect.cpp:539
+#: src/enigma_dyn.cpp:639 src/enigma_main.cpp:9727 src/sselect.cpp:521
+#: src/sselect.cpp:528
 msgid "Bouquets"
 msgstr "Boeketten"
 
@@ -1522,7 +1522,7 @@ msgstr "Een moment"
 msgid "Could not execute script"
 msgstr "Kan script niet uitvoeren"
 
-#: lib/gui/listbox.cpp:870
+#: lib/gui/listbox.cpp:865
 msgid "no description available"
 msgstr "Geen omschrijving beschikbaar"
 
@@ -1770,323 +1770,323 @@ msgstr "Herstellen, een moment"
 msgid "Reloading Enigma settings, please wait"
 msgstr "Laden van Enigma instellingen, een moment"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:341
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:341
 msgid "Movie"
 msgstr "Film"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:343
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:343
 msgid "Adventure"
 msgstr "Avontuur"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:344
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:344
 msgid "SciFi"
 msgstr "Sci-Fi"
 
-#: src/channelinfo.cpp:99 src/epgsearch.cpp:345
+#: src/channelinfo.cpp:79 src/epgsearch.cpp:345
 msgid "Comedy"
 msgstr "Humor"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:346
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:346
 msgid "Soap"
 msgstr "Soap"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:347
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:347
 msgid "Romance"
 msgstr "Romantiek"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:348
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:348
 msgid "Serious"
 msgstr "Serieus"
 
-#: src/channelinfo.cpp:100 src/epgsearch.cpp:349
+#: src/channelinfo.cpp:80 src/epgsearch.cpp:349
 msgid "Adult"
 msgstr "18+"
 
-#: src/channelinfo.cpp:103 src/epgsearch.cpp:350
+#: src/channelinfo.cpp:83 src/epgsearch.cpp:350
 msgid "News"
 msgstr "Nieuws"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Weather"
 msgstr "Weer"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Magazine"
 msgstr "Magazine"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Documentary"
 msgstr "Documentaires"
 
-#: src/channelinfo.cpp:103
+#: src/channelinfo.cpp:83
 msgid "Discussion"
 msgstr "Discussie"
 
-#: src/channelinfo.cpp:107 src/epgsearch.cpp:351
+#: src/channelinfo.cpp:87 src/epgsearch.cpp:351
 msgid "Show"
 msgstr "Show"
 
-#: src/channelinfo.cpp:107
+#: src/channelinfo.cpp:87
 msgid "Game Show"
 msgstr "Spelprogramma's"
 
-#: src/channelinfo.cpp:107
+#: src/channelinfo.cpp:87
 msgid "Variety"
 msgstr "Variété"
 
-#: src/channelinfo.cpp:107
+#: src/channelinfo.cpp:87
 msgid "Talk"
 msgstr "Talkshow"
 
-#: src/channelinfo.cpp:111 src/epgsearch.cpp:352
+#: src/channelinfo.cpp:91 src/epgsearch.cpp:352
 msgid "Sports"
 msgstr "Sport"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Special Event"
 msgstr "Speciale uitzending"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Sports Mag."
 msgstr "Sportmagazine"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Football"
 msgstr "Voetbal"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Tennis"
 msgstr "Tennis"
 
-#: src/channelinfo.cpp:111
+#: src/channelinfo.cpp:91
 msgid "Team Sports"
 msgstr "Teamsporten"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Athletics"
 msgstr "Atletiek"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Motor Sports"
 msgstr "Motorsport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Water Sports"
 msgstr "Watersport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Winter Sports"
 msgstr "Wintersport"
 
-#: src/channelinfo.cpp:112
+#: src/channelinfo.cpp:92
 msgid "Equestrian"
 msgstr "Paardensport"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:93
 msgid "Martial Sports"
 msgstr "Gevechtsporten"
 
-#: src/channelinfo.cpp:116 src/epgsearch.cpp:353
+#: src/channelinfo.cpp:96 src/epgsearch.cpp:353
 msgid "Children"
 msgstr "Kinderen"
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "Pre-School"
 msgstr "< 6 jaar"
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "Age 6-14"
 msgstr "Van 6-14 jr."
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "Age 10-16"
 msgstr "Van 10-16 jr."
 
-#: src/channelinfo.cpp:116
+#: src/channelinfo.cpp:96
 msgid "School"
 msgstr "School"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:97
 msgid "Cartoons"
 msgstr "Cartoons"
 
-#: src/channelinfo.cpp:121 src/epgsearch.cpp:354
+#: src/channelinfo.cpp:101 src/epgsearch.cpp:354
 msgid "Music"
 msgstr "Muziek"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Rock/Pop"
 msgstr "Rock/Pop"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Classical"
 msgstr "Klassiek"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Folk"
 msgstr "Volksmuziek"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Jazz"
 msgstr "Jazz"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Musical"
 msgstr "Musical"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:101
 msgid "Ballet"
 msgstr "Ballet"
 
-#: src/channelinfo.cpp:125 src/epgsearch.cpp:355
+#: src/channelinfo.cpp:105 src/epgsearch.cpp:355
 msgid "Culture"
 msgstr "Cultuur"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Perf. Arts"
 msgstr "Uitvoerende kunsten"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Fine Arts"
 msgstr "Fijne kunsten"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Religion"
 msgstr "Religie"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Pop. Arts"
 msgstr "Populaire kunst"
 
-#: src/channelinfo.cpp:125
+#: src/channelinfo.cpp:105
 msgid "Literature"
 msgstr "Literatuur"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Film"
 msgstr "Film"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Experimental"
 msgstr "Expirimenteel"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Press"
 msgstr "Pers"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "New Media"
 msgstr "Nieuwe media"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Art Mag."
 msgstr "Kunstmagazine"
 
-#: src/channelinfo.cpp:126
+#: src/channelinfo.cpp:106
 msgid "Fashion"
 msgstr "Mode"
 
-#: src/channelinfo.cpp:129 src/epgsearch.cpp:356
+#: src/channelinfo.cpp:109 src/epgsearch.cpp:356
 msgid "Social"
 msgstr "Sociaal"
 
-#: src/channelinfo.cpp:129
+#: src/channelinfo.cpp:109
 msgid "Soc. Mag."
 msgstr "Sociaal magazine"
 
-#: src/channelinfo.cpp:129
+#: src/channelinfo.cpp:109
 msgid "Economics"
 msgstr "Economie"
 
-#: src/channelinfo.cpp:129
+#: src/channelinfo.cpp:109
 msgid "Remark. People"
 msgstr "Opvallende mensen"
 
-#: src/channelinfo.cpp:133 src/epgsearch.cpp:357
+#: src/channelinfo.cpp:113 src/epgsearch.cpp:357
 msgid "Education"
 msgstr "Educatief"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Nature"
 msgstr "Natuur"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Technology"
 msgstr "Technologie"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Medicine"
 msgstr "Geneeskunde"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Expeditions"
 msgstr "Expedities"
 
-#: src/channelinfo.cpp:133
+#: src/channelinfo.cpp:113
 msgid "Spiritual"
 msgstr "Spiritueel"
 
-#: src/channelinfo.cpp:134
+#: src/channelinfo.cpp:114
 msgid "Further Ed."
 msgstr "Educatief"
 
-#: src/channelinfo.cpp:134
+#: src/channelinfo.cpp:114
 msgid "Languages"
 msgstr "Talen"
 
-#: src/channelinfo.cpp:137 src/epgsearch.cpp:358
+#: src/channelinfo.cpp:117 src/epgsearch.cpp:358
 msgid "Hobbies"
 msgstr "Hobbies"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Travel"
 msgstr "Reizen"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Handicraft"
 msgstr "Handarbeid"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Motoring"
 msgstr "Motoren"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Fitness"
 msgstr "Fitness"
 
-#: src/channelinfo.cpp:137
+#: src/channelinfo.cpp:117
 msgid "Cooking"
 msgstr "Koken"
 
-#: src/channelinfo.cpp:138
+#: src/channelinfo.cpp:118
 msgid "Shopping"
 msgstr "Winkelen"
 
-#: src/channelinfo.cpp:138
+#: src/channelinfo.cpp:118
 msgid "Gardening"
 msgstr "Tuinieren"
 
-#: src/channelinfo.cpp:141
+#: src/channelinfo.cpp:121
 msgid "Orig. Lang."
 msgstr "Org. taal"
 
-#: src/channelinfo.cpp:141
+#: src/channelinfo.cpp:121
 msgid "B&W"
 msgstr "Zwart/wit"
 
-#: src/channelinfo.cpp:141
+#: src/channelinfo.cpp:121
 msgid "Unpublished"
 msgstr "Ongepubliceerd"
 
-#: src/channelinfo.cpp:141 src/epgsearch.cpp:359
+#: src/channelinfo.cpp:121 src/epgsearch.cpp:359
 msgid "Live"
 msgstr "Live"
 
-#: src/channelinfo.cpp:317
+#: src/channelinfo.cpp:263
 msgid "no data for this service available"
 msgstr "Geen gegevens over deze service beschikbaar"
 
-#: src/channelinfo.cpp:358
+#: src/channelinfo.cpp:304
 #, c-format
 msgid ""
 "\n"
@@ -2095,7 +2095,7 @@ msgstr ""
 "\n"
 "Bestandsformaat/datum: %d %cB, %s"
 
-#: src/channelinfo.cpp:359
+#: src/channelinfo.cpp:305
 msgid "Filename: "
 msgstr "Bestandsnaam:"
 
@@ -2230,6 +2230,7 @@ msgid "Sticky Settings 1"
 msgstr "Sticky-instellingen 1"
 
 #: src/engrab.cpp:37 src/enigma_event.cpp:179 src/enigma_event.cpp:188
+#: src/enigma_event.cpp:352 src/enigma_event.cpp:361
 msgid "no description is available"
 msgstr "Geen omschrijving beschikbaar"
 
@@ -2321,21 +2322,21 @@ msgstr "Common Interface module - MMI"
 msgid "waiting for CI answer..."
 msgstr "Wacht op CI-antwoord..."
 
-#: src/enigma.cpp:434 src/setup_swapandvar.cpp:112
+#: src/enigma.cpp:433 src/setup_swapandvar.cpp:112
 msgid "Internal harddisk"
 msgstr "Interne harddisk"
 
-#: src/enigma.cpp:441 src/setup_swapandvar.cpp:111
+#: src/enigma.cpp:440 src/setup_swapandvar.cpp:111
 #: src/setup_swapandvar.cpp:393 src/setup_swapandvar.cpp:399
 #: src/setup_usb.cpp:27
 msgid "USB stick"
 msgstr "USB-stick"
 
-#: src/enigma.cpp:448 src/setup_swapandvar.cpp:113
+#: src/enigma.cpp:447 src/setup_swapandvar.cpp:113
 msgid "Compact Flash card"
 msgstr "Compact Flash-kaart"
 
-#: src/enigma.cpp:567
+#: src/enigma.cpp:562
 msgid ""
 "Welcome to enigma.\n"
 "\n"
@@ -2347,51 +2348,51 @@ msgstr ""
 "Voer eerst een transponderscan uit.\n"
 "(Hoofdmenu > Instellingen > Zenders > Transponderscan)"
 
-#: src/enigma.cpp:569
+#: src/enigma.cpp:564
 msgid "First start of enigma"
 msgstr "Dit is de eerste start van Enigma"
 
-#: src/enigma.cpp:804
+#: src/enigma.cpp:799
 msgid "It's now safe to unplug power!"
 msgstr "U kunt nu de spanning uitschakelen!"
 
-#: src/enigma.cpp:805
+#: src/enigma.cpp:800
 msgid "Shutdown finished"
 msgstr "Afsluiten afgerond"
 
-#: src/enigma.cpp:832
+#: src/enigma.cpp:827
 msgid "Please wait... your Dreambox is shutting down!"
 msgstr "Moment... de Dreambox sluit af!"
 
-#: src/enigma.cpp:833
+#: src/enigma.cpp:828
 msgid "Shutdown..."
 msgstr "Uitschakelen"
 
-#: src/enigma_dyn.cpp:649 src/sselect.cpp:528
+#: src/enigma_dyn.cpp:631 src/sselect.cpp:517
 msgid "Satellites"
 msgstr "Satellieten"
 
-#: src/enigma_dyn.cpp:653 src/sselect.cpp:531
+#: src/enigma_dyn.cpp:635 src/sselect.cpp:520
 msgid "Providers"
 msgstr "Providers"
 
-#: src/enigma_dyn.cpp:824
+#: src/enigma_dyn.cpp:806
 msgid "OSD Shot"
 msgstr "OSD Shot"
 
-#: src/enigma_dyn.cpp:825
+#: src/enigma_dyn.cpp:807
 msgid "Screen Shot"
 msgstr "Screen Shot"
 
-#: src/enigma_dyn.cpp:828
+#: src/enigma_dyn.cpp:810
 msgid "Screen + OSD"
 msgstr "Screen + OSD"
 
-#: src/enigma_dyn.cpp:842
+#: src/enigma_dyn.cpp:824
 msgid "LCD Shot"
 msgstr "LCD Shot"
 
-#: src/enigma_dyn.cpp:2354
+#: src/enigma_dyn.cpp:2332
 msgid "External Message"
 msgstr "Extern bericht"
 
@@ -2492,7 +2493,7 @@ msgstr ""
 "Het aantal kanalen per scherm en de fontgrootte kunnen in EPG instellingen "
 "ingesteld worden"
 
-#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2090
+#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2075
 msgid " was not found!"
 msgstr " was niet gevonden!"
 
@@ -2553,11 +2554,12 @@ msgstr "Item bekijken"
 msgid "closes the Event View"
 msgstr "Item afsluiten"
 
-#: src/enigma_event.cpp:164 src/streaminfo.cpp:641 src/streaminfo.cpp:699
+#: src/enigma_event.cpp:164 src/enigma_event.cpp:342 src/streaminfo.cpp:620
+#: src/streaminfo.cpp:678
 msgid "no information is available"
 msgstr "Geen informatie beschikbaar"
 
-#: src/enigma_event.cpp:257
+#: src/enigma_event.cpp:256
 msgid ""
 "\tEvent EPG\n"
 "\n"
@@ -2609,7 +2611,7 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window"
 
-#: src/enigma_event.cpp:306
+#: src/enigma_event.cpp:305
 #, c-format
 msgid "Original duration: %d min"
 msgstr "Originele duur: %d min"
@@ -2620,7 +2622,7 @@ msgstr "Originele duur: %d min"
 msgid "Information"
 msgstr "Informatie"
 
-#: src/enigma_info.cpp:44 src/streaminfo.cpp:606
+#: src/enigma_info.cpp:44 src/streaminfo.cpp:585
 msgid "Streaminfo"
 msgstr "Streaminfo"
 
@@ -2688,9 +2690,9 @@ msgstr "Frontend: Terrestrial"
 msgid "Frontend: Unknown"
 msgstr "Frontend: Onbekend"
 
-#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:387
-#: src/streaminfo.cpp:398 src/streaminfo.cpp:410 src/streaminfo.cpp:422
-#: src/streaminfo.cpp:434 src/streaminfo.cpp:530 src/streaminfo.cpp:569
+#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:366
+#: src/streaminfo.cpp:377 src/streaminfo.cpp:389 src/streaminfo.cpp:401
+#: src/streaminfo.cpp:413 src/streaminfo.cpp:509 src/streaminfo.cpp:548
 msgid "none"
 msgstr "Geen"
 
@@ -2711,7 +2713,7 @@ msgstr "Beta"
 msgid "internal"
 msgstr "Intern"
 
-#: src/enigma_info.cpp:252
+#: src/enigma_info.cpp:251
 msgid "About"
 msgstr "Informatie"
 
@@ -2839,7 +2841,7 @@ msgstr "Pauzeren"
 msgid "resume playback"
 msgstr "Verdergaan met afspelen"
 
-#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4369
+#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4354
 msgid "record"
 msgstr "Opnemen"
 
@@ -3097,99 +3099,103 @@ msgstr "Favorieten (Radio)"
 msgid "Favourites (File)"
 msgstr "Favorieten (Bestand)"
 
-#: src/enigma_main.cpp:2505
+#: src/enigma_main.cpp:2492
 msgid "please wait while initializing Common Interface ..."
 msgstr "Common interface wordt geïnitialiseerd ..."
 
-#: src/enigma_main.cpp:2590
+#: src/enigma_main.cpp:2577
 msgid "rewind 15 seconds"
 msgstr "15 seconden terugspoelen"
 
-#: src/enigma_main.cpp:2591
+#: src/enigma_main.cpp:2578
 msgid "rewind 1 minute"
 msgstr "1 minuut terugspoelen"
 
-#: src/enigma_main.cpp:2592
+#: src/enigma_main.cpp:2579
 msgid "rewind 5 minutes"
 msgstr "5 minuten terugspoelen"
 
-#: src/enigma_main.cpp:2593
+#: src/enigma_main.cpp:2580
 msgid "enter number of minutes to rewind"
 msgstr "geef aantal minuten om terug te spoelen in"
 
-#: src/enigma_main.cpp:2594
+#: src/enigma_main.cpp:2581
 msgid "fast forward 15 seconds"
 msgstr "15 seconden vooruitspoelen"
 
-#: src/enigma_main.cpp:2595
+#: src/enigma_main.cpp:2582
 msgid "fast forward 1 minute"
 msgstr "1 minuut vooruitspoelen"
 
-#: src/enigma_main.cpp:2596
+#: src/enigma_main.cpp:2583
 msgid "fast forward 5 minutes"
 msgstr "5 minuten vooruitspoelen"
 
-#: src/enigma_main.cpp:2597
+#: src/enigma_main.cpp:2584
 msgid "enter number of minutes to fast forward"
 msgstr "Geef het aantal minuten om vooruit te spoelen in"
 
-#: src/enigma_main.cpp:3577
+#: src/enigma_main.cpp:2733
+msgid "no EPG available"
+msgstr "Geen EPG beschikbaar"
+
+#: src/enigma_main.cpp:3562
 msgid "ShutdownTimer"
 msgstr "Uitschakeltimer"
 
-#: src/enigma_main.cpp:3577
+#: src/enigma_main.cpp:3562
 msgid "SleepTimer"
 msgstr "Slaaptimer"
 
-#: src/enigma_main.cpp:3997
+#: src/enigma_main.cpp:3982
 msgid "Pause"
 msgstr "Pauze"
 
-#: src/enigma_main.cpp:3997
+#: src/enigma_main.cpp:3982
 msgid "audio track"
 msgstr "Audiotrack"
 
-#: src/enigma_main.cpp:4369
+#: src/enigma_main.cpp:4354
 msgid "Sorry, you cannot record this service."
 msgstr "Deze service kan niet opgenomen worden"
 
-#: src/enigma_main.cpp:4596
+#: src/enigma_main.cpp:4581
 msgid "Show recorded movies?"
 msgstr "Opgenomen videobestanden weergeven?"
 
-#: src/enigma_main.cpp:4596
+#: src/enigma_main.cpp:4581
 msgid "recording finished"
 msgstr "Opname beëindigd"
 
-#: src/enigma_main.cpp:4924
+#: src/enigma_main.cpp:4909
 msgid "Shutdown your Receiver now?"
 msgstr "Dreambox nu uitschakelen?"
 
-#: src/enigma_main.cpp:4924 src/enigma_main.cpp:4944
+#: src/enigma_main.cpp:4909 src/enigma_main.cpp:4929
 msgid "Timer Message"
 msgstr "Timerbericht"
 
-#: src/enigma_main.cpp:4944
+#: src/enigma_main.cpp:4929
 msgid "Go to Standby now?"
 msgstr "Nu naar standby schakelen?"
 
-#: src/enigma_main.cpp:4999 src/enigma_main.cpp:5063
+#: src/enigma_main.cpp:4984 src/enigma_main.cpp:5048
 msgid "Enter new name:"
 msgstr "Nieuwe naam:"
 
-#: src/enigma_main.cpp:5000 src/enigma_main.cpp:5064
+#: src/enigma_main.cpp:4985 src/enigma_main.cpp:5049
 msgid "Rename entry"
 msgstr "Item hernoemen"
 
-#: src/enigma_main.cpp:5126
+#: src/enigma_main.cpp:5111
 msgid "Sorry, you cannot delete this service."
 msgstr "Deze service kan niet worden gewist"
 
-#: src/enigma_main.cpp:5126
+#: src/enigma_main.cpp:5111
 msgid "delete service"
 msgstr "Item wissen"
 
-#: src/enigma_main.cpp:5151 src/enigma_main.cpp:5276 src/sselect.cpp:2394
+#: src/enigma_main.cpp:5136 src/enigma_main.cpp:5261 src/sselect.cpp:2379
 #, c-format
 msgid ""
 "You are trying to delete '%s'.\n"
@@ -3198,11 +3204,11 @@ msgstr ""
 "U wilt '%s' wissen.\n"
 "Weet u het zeker?"
 
-#: src/enigma_main.cpp:5152
+#: src/enigma_main.cpp:5137
 msgid "Delete recorded stream"
 msgstr "Opgenomen stream verwijderen"
 
-#: src/enigma_main.cpp:5179
+#: src/enigma_main.cpp:5164
 msgid ""
 "This is a complete Bouquet!\n"
 "Really delete?"
@@ -3210,76 +3216,76 @@ msgstr ""
 "Dit is een compleet Boeket!\n"
 "Wilt u dit echt verwijderen?"
 
-#: src/enigma_main.cpp:5180
+#: src/enigma_main.cpp:5165
 msgid "Delete bouquet"
 msgstr "Boeket wissen"
 
-#: src/enigma_main.cpp:5277
+#: src/enigma_main.cpp:5262
 msgid "Delete File"
 msgstr "Bestand verwijderen"
 
-#: src/enigma_main.cpp:5375
+#: src/enigma_main.cpp:5360
 msgid "Enter new Filename:"
 msgstr "Nieuwe bestandsnaam:"
 
-#: src/enigma_main.cpp:5376
+#: src/enigma_main.cpp:5361
 msgid "Rename File"
 msgstr "Bestand hernoemen"
 
-#: src/enigma_main.cpp:5408
+#: src/enigma_main.cpp:5393
 msgid "Enter new name for the bouquet:"
 msgstr "Voer de nieuwe naam voor het boeket in:"
 
-#: src/enigma_main.cpp:5409
+#: src/enigma_main.cpp:5394
 msgid "Rename bouquet"
 msgstr "Boeket hernoemen"
 
-#: src/enigma_main.cpp:5434
+#: src/enigma_main.cpp:5419
 msgid "Enter name for the new bouquet:"
 msgstr "Naam van het nieuwe boeket:"
 
-#: src/enigma_main.cpp:5435
+#: src/enigma_main.cpp:5420
 msgid "Add new bouquet"
 msgstr "Nieuw boeket toevoegen"
 
-#: src/enigma_main.cpp:5490
+#: src/enigma_main.cpp:5475
 msgid "unnamed"
 msgstr "Naamloos"
 
-#: src/enigma_main.cpp:5491
+#: src/enigma_main.cpp:5476
 msgid "Enter marker name:"
 msgstr "Voor markeringsnaam in:"
 
-#: src/enigma_main.cpp:5492
+#: src/enigma_main.cpp:5477
 msgid "create marker"
 msgstr "Markering aanmaken"
 
-#: src/enigma_main.cpp:5540
+#: src/enigma_main.cpp:5525
 msgid "unnamed bouquet"
 msgstr "Naamloos boeket"
 
-#: src/enigma_main.cpp:5743
+#: src/enigma_main.cpp:5728
 msgid "Do you want to rebuild your movie list?"
 msgstr "Filmlijst opnieuw genereren?"
 
-#: src/enigma_main.cpp:5744
+#: src/enigma_main.cpp:5729
 msgid "Recover movies"
 msgstr "Opgenomen videobestanden herstellen"
 
-#: src/enigma_main.cpp:6075 src/enigma_main.cpp:6076
+#: src/enigma_main.cpp:6060 src/enigma_main.cpp:6061
 msgid "This directory doesn't contain anything playable!"
 msgstr "Deze map bevat geen afspeelbare bestanden"
 
-#: src/enigma_main.cpp:6076
+#: src/enigma_main.cpp:6061
 msgid "Play"
 msgstr "Afspelen"
 
-#: src/enigma_main.cpp:6596
+#: src/enigma_main.cpp:6523
 #, c-format
 msgid "%s was not found!"
 msgstr "%s was niet gevonden!"
 
-#: src/enigma_main.cpp:6747
+#: src/enigma_main.cpp:6674
 msgid ""
 "A timer based recording is currently in progress!\n"
 "This stops the timer, and recording!"
@@ -3287,7 +3293,7 @@ msgstr ""
 "Op dit moment wordt automatisch opgenomen! (timer)\n"
 "Als u nu bevestigt, stopt de timer en daarmee de opname!"
 
-#: src/enigma_main.cpp:6757
+#: src/enigma_main.cpp:6684
 msgid ""
 "A recording is currently in progress!\n"
 "This stops the recording!"
@@ -3295,7 +3301,7 @@ msgstr ""
 "Op dit moment is een opname geaktiveerd!\n"
 "Hiermee stopt de opname!"
 
-#: src/enigma_main.cpp:6769
+#: src/enigma_main.cpp:6696
 msgid ""
 "A timer event is currently in progress!\n"
 "This stops the timer event!"
@@ -3303,30 +3309,30 @@ msgstr ""
 "Op dit moment is er een timeritem actief!\n"
 "Dit deactiveert het timeritem! "
 
-#: src/enigma_main.cpp:6777
+#: src/enigma_main.cpp:6704
 msgid "Really do this?"
 msgstr "Weet u het zeker?"
 
-#: src/enigma_main.cpp:6850
+#: src/enigma_main.cpp:6777
 msgid "please wait until the timer has started the recording (max 10 seconds)"
 msgstr "Wacht tot de timer de opname gestart heeft a.u.b. (max. 10 seconden)"
 
-#: src/enigma_main.cpp:6851
+#: src/enigma_main.cpp:6778
 msgid "information"
 msgstr "Informatie"
 
-#: src/enigma_main.cpp:7750
+#: src/enigma_main.cpp:7653
 msgid "Record failed due to inaccessable storage."
 msgstr "Opname mislukt. Het opslagmedium is niet toegankelijk."
 
-#: src/enigma_main.cpp:7752
+#: src/enigma_main.cpp:7655
 msgid ""
 "Record stopped due to full harddisk. Delete some recordings and try again."
 msgstr ""
 "Opname afgebroken. Het opslagmedium is vol. Wis enkele opnames en probeer "
 "opnieuw."
 
-#: src/enigma_main.cpp:7754
+#: src/enigma_main.cpp:7657
 msgid ""
 "Record failed due to a write error during recording. Check for filesystem "
 "corruption."
@@ -3334,352 +3340,352 @@ msgstr ""
 "Opname afgebroken. Fout tijdens de schrijfactie. Controleer het "
 "bestandssysteem op fouten."
 
-#: src/enigma_main.cpp:7756
+#: src/enigma_main.cpp:7659
 msgid "record failed"
 msgstr "Opnamefout"
 
-#: src/enigma_main.cpp:8057 src/enigma_main.cpp:8058
+#: src/enigma_main.cpp:7960 src/enigma_main.cpp:7961
 msgid "One moment please..."
 msgstr "Een ogenblik geduld a.u.b."
 
-#: src/enigma_main.cpp:8058 src/enigma_main.cpp:8066 src/enigma_main.cpp:8080
-#: src/enigma_main.cpp:8093 src/enigma_main.cpp:8105 src/enigma_main.cpp:8114
-#: src/enigma_main.cpp:8119 src/timer.cpp:2371
+#: src/enigma_main.cpp:7961 src/enigma_main.cpp:7969 src/enigma_main.cpp:7983
+#: src/enigma_main.cpp:7996 src/enigma_main.cpp:8008 src/enigma_main.cpp:8017
+#: src/enigma_main.cpp:8022 src/timer.cpp:2371
 msgid "switch"
 msgstr "Schakelen"
 
-#: src/enigma_main.cpp:8066 src/enigma_main.cpp:8068
+#: src/enigma_main.cpp:7969 src/enigma_main.cpp:7971
 msgid "Service could not be found !"
 msgstr "Deze service is niet gevonden!"
 
-#: src/enigma_main.cpp:8080 src/enigma_main.cpp:8082
+#: src/enigma_main.cpp:7983 src/enigma_main.cpp:7985
 msgid "This service could not be descrambled"
 msgstr "Deze service kan niet worden gedecodeerd"
 
-#: src/enigma_main.cpp:8093 src/enigma_main.cpp:8095
+#: src/enigma_main.cpp:7996 src/enigma_main.cpp:7998
 msgid "This service doesn't currently send a signal"
 msgstr "Op deze frequentie is momenteel geen signaal"
 
-#: src/enigma_main.cpp:8105 src/enigma_main.cpp:8107
+#: src/enigma_main.cpp:8008 src/enigma_main.cpp:8010
 msgid "This content could not be displayed"
 msgstr "Deze gegevens kunnen niet worden weergegeven"
 
-#: src/enigma_main.cpp:8112 src/enigma_main.cpp:8114
+#: src/enigma_main.cpp:8015 src/enigma_main.cpp:8017
 msgid "NVOD Service - please select a starttime"
 msgstr "NVOD service - Selecteer de starttijd a.u.b."
 
-#: src/enigma_main.cpp:8117 src/enigma_main.cpp:8119
+#: src/enigma_main.cpp:8020 src/enigma_main.cpp:8022
 msgid "Unknown error!!"
 msgstr "- Onbekende fout - "
 
-#: src/enigma_main.cpp:8698 src/sselect.cpp:538
+#: src/enigma_main.cpp:8599 src/sselect.cpp:527
 msgid "Playlist"
 msgstr "Afspeellijst"
 
-#: src/enigma_main.cpp:8705
+#: src/enigma_main.cpp:8606
 msgid "History"
 msgstr "Geschiedenis"
 
-#: src/enigma_main.cpp:9222
+#: src/enigma_main.cpp:9123
 msgid "Networks, services and user bouquets will be reloaded"
 msgstr "Netwerk, kanalen en bouquetten worden opnieuw geladen"
 
-#: src/enigma_main.cpp:9223 src/enigma_main.cpp:9227
+#: src/enigma_main.cpp:9124 src/enigma_main.cpp:9128
 msgid "Reloading..."
 msgstr "Herstellen..."
 
-#: src/enigma_main.cpp:9226
+#: src/enigma_main.cpp:9127
 msgid "Please wait..."
 msgstr "Een moment..."
 
-#: src/enigma_main.cpp:9245
+#: src/enigma_main.cpp:9146
 msgid "Service Menu"
 msgstr "Servicemenu"
 
-#: src/enigma_main.cpp:9263 src/sselect.cpp:145
+#: src/enigma_main.cpp:9164 src/sselect.cpp:145
 msgid "add service to playlist"
 msgstr "Item toevoegen aan de playlist"
 
-#: src/enigma_main.cpp:9263
+#: src/enigma_main.cpp:9164
 msgid "add selected service to the playlist"
 msgstr "Voeg deze service toe aan de playlist"
 
-#: src/enigma_main.cpp:9275
+#: src/enigma_main.cpp:9176
 msgid "shuffle"
 msgstr "schudden"
 
-#: src/enigma_main.cpp:9275
+#: src/enigma_main.cpp:9176
 msgid "shuffle playlist"
 msgstr "afspeellijst schudden"
 
-#: src/enigma_main.cpp:9288 src/enigma_main.cpp:9295
+#: src/enigma_main.cpp:9189 src/enigma_main.cpp:9196
 msgid "remove all 'new found' flags"
 msgstr "Verwijder alle 'nieuw gevonden' markeringen"
 
-#: src/enigma_main.cpp:9288
+#: src/enigma_main.cpp:9189
 msgid "select to remove all 'new found' flags from this satellite"
 msgstr "Hiermee wist u alle 'nieuw gevonden' markeringen op deze satelliet."
 
-#: src/enigma_main.cpp:9294
+#: src/enigma_main.cpp:9195
 msgid "remove 'new found flag'"
 msgstr "Verwijder 'nieuw gevonden' markering"
 
-#: src/enigma_main.cpp:9294
+#: src/enigma_main.cpp:9195
 msgid "select to remove the 'new found flag'"
 msgstr "Hiermee wist u de geselecteerde 'nieuw gevonden' markering"
 
-#: src/enigma_main.cpp:9295
+#: src/enigma_main.cpp:9196
 msgid "select to remove all 'new found' flags"
 msgstr "Hiermee wist u alle 'nieuw gevonden' markeringen"
 
-#: src/enigma_main.cpp:9299
+#: src/enigma_main.cpp:9200
 msgid "create new bouquet"
 msgstr "Nieuw boeket aanmaken"
 
-#: src/enigma_main.cpp:9299
+#: src/enigma_main.cpp:9200
 msgid "select to create a new bouquet"
 msgstr "Selecteer om een nieuw boeket aan te maken"
 
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9212
 msgid "duplicate bouquet"
 msgstr "Boeket dupliceren"
 
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9212
 msgid "duplicate the complete bouquet with all content"
 msgstr "Dupliceer het gehele boeket en zijn inhoud"
 
-#: src/enigma_main.cpp:9317 src/enigma_main.cpp:9385 src/enigma_main.cpp:9390
-#: src/enigma_main.cpp:9410
+#: src/enigma_main.cpp:9218 src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
+#: src/enigma_main.cpp:9311
 msgid "add to specific bouquet"
 msgstr "Aan een specifiek boeket toevoegen"
 
-#: src/enigma_main.cpp:9317
+#: src/enigma_main.cpp:9218
 msgid "add the selected service to another bouquet"
 msgstr "De geselecteerde services aan een ander boeket toevoegen"
 
-#: src/enigma_main.cpp:9319
+#: src/enigma_main.cpp:9220
 msgid "add marker"
 msgstr "Markering toevoegen"
 
-#: src/enigma_main.cpp:9319
+#: src/enigma_main.cpp:9220
 msgid "create a new marker in the current bouquet"
 msgstr "Een nieuwe markering in het boeket aanmaken"
 
-#: src/enigma_main.cpp:9328 src/enigma_main.cpp:9344 src/enigma_main.cpp:9392
-#: src/sselect.cpp:517
+#: src/enigma_main.cpp:9229 src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
+#: src/sselect.cpp:506
 msgid "rename"
 msgstr "Hernoemen"
 
-#: src/enigma_main.cpp:9328
+#: src/enigma_main.cpp:9229
 msgid "rename the current selected bouquet"
 msgstr "Het geselecteerde boeket hernoemen"
 
-#: src/enigma_main.cpp:9344 src/enigma_main.cpp:9392
+#: src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
 msgid "rename the current selected service/movie"
 msgstr "De geselecteerde service/film hernoemen"
 
-#: src/enigma_main.cpp:9348 src/enigma_main.cpp:9393 src/sselect.cpp:515
+#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294 src/sselect.cpp:504
 msgid "delete"
 msgstr "Wissen"
 
-#: src/enigma_main.cpp:9348 src/enigma_main.cpp:9393
+#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294
 msgid "delete the current selected service/movie"
 msgstr "De huidige service/opname verwijderen"
 
-#: src/enigma_main.cpp:9353
+#: src/enigma_main.cpp:9254
 msgid "rebuild movie list"
 msgstr "Lijst opnieuw genereren"
 
-#: src/enigma_main.cpp:9353
+#: src/enigma_main.cpp:9254
 msgid "rebuild the current movie list"
 msgstr "De opname lijst opnieuw genereren"
 
-#: src/enigma_main.cpp:9360
+#: src/enigma_main.cpp:9261
 msgid "set as startup service"
 msgstr "instellen als start service"
 
-#: src/enigma_main.cpp:9360
+#: src/enigma_main.cpp:9261
 msgid "currently selected service will be selected on startup"
 msgstr "De geselecteerde service zal gestart worden bij startup"
 
-#: src/enigma_main.cpp:9361 src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9262 src/enigma_main.cpp:9297
 msgid "reset startup service"
 msgstr "Herstel startup service"
 
-#: src/enigma_main.cpp:9361
+#: src/enigma_main.cpp:9262
 msgid "last selected service will be selected on startup"
 msgstr "Laatst geselecteerde service zal geselecteerd worden na startup"
 
-#: src/enigma_main.cpp:9368
+#: src/enigma_main.cpp:9269
 msgid "disable move mode"
 msgstr "Verplaatsmodus uitschakelen"
 
-#: src/enigma_main.cpp:9368
+#: src/enigma_main.cpp:9269
 msgid "switch move mode off"
 msgstr "Verplaatsmodus uitschakelen"
 
-#: src/enigma_main.cpp:9370
+#: src/enigma_main.cpp:9271
 msgid "enable move mode"
 msgstr "Verplaatsmodus inschakelen"
 
-#: src/enigma_main.cpp:9370
+#: src/enigma_main.cpp:9271
 msgid "activate mode to simply change the entry order"
 msgstr "Activeer de eenvoudige sorteermodus"
 
-#: src/enigma_main.cpp:9379
+#: src/enigma_main.cpp:9280
 msgid "copy to bouquet list"
 msgstr "Naar de boeketlijst kopiëren"
 
-#: src/enigma_main.cpp:9379
+#: src/enigma_main.cpp:9280
 msgid "copy the selected provider to the bouquet list"
 msgstr "Kopieer de geselecteerde provider naar de boeketlijst "
 
-#: src/enigma_main.cpp:9385 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
 msgid "add the selected service to a selectable bouquet"
 msgstr "De geselecteerde service aan een boeket toevoegen"
 
-#: src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9296
 msgid "set as startup"
 msgstr "Stel in als startup"
 
-#: src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9296
 msgid "set the current selected service/movie as startup service"
 msgstr "Stel de huidige service/opname in als startup"
 
-#: src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9297
 msgid "reset startup"
 msgstr "Herstel startup service"
 
-#: src/enigma_main.cpp:9410
+#: src/enigma_main.cpp:9311
 msgid "add the selected file to a selectable bouquet"
 msgstr "Het geselecteerde bestand aan een boeket toevoegen"
 
-#: src/enigma_main.cpp:9412
+#: src/enigma_main.cpp:9313
 msgid "delete file"
 msgstr "Verwijder bestand"
 
-#: src/enigma_main.cpp:9412
+#: src/enigma_main.cpp:9313
 msgid "delete the selected file (and all corresponding ts files"
 msgstr ""
 "Verwijder het geselecteerde bestand (en alle bijbehorende ts-bestanden)"
 
-#: src/enigma_main.cpp:9413
+#: src/enigma_main.cpp:9314
 msgid "rename file"
 msgstr "Bestand hernoemen"
 
-#: src/enigma_main.cpp:9413
+#: src/enigma_main.cpp:9314
 msgid "rename the selected file (and all corresponding ts files"
 msgstr "Hernoem het geselecteerde bestand (en alle bijbehorende ts-bestanden)"
 
-#: src/enigma_main.cpp:9427
+#: src/enigma_main.cpp:9328
 msgid "disable edit mode"
 msgstr "Editmodus uitschakelen"
 
-#: src/enigma_main.cpp:9427
+#: src/enigma_main.cpp:9328
 msgid "disable the edit mode"
 msgstr "Editmodus uitschakelen"
 
-#: src/enigma_main.cpp:9429
+#: src/enigma_main.cpp:9330
 msgid "enable edit mode"
 msgstr "Editmodus inschakelen"
 
-#: src/enigma_main.cpp:9429
+#: src/enigma_main.cpp:9330
 msgid "activate mode to simply add many services to a selectable bouquet"
 msgstr "Eenvoudig meerdere services aan een boeket toevoegen activeren"
 
-#: src/enigma_main.cpp:9440
+#: src/enigma_main.cpp:9341
 msgid "unlock"
 msgstr "Vrijgeven"
 
-#: src/enigma_main.cpp:9440
+#: src/enigma_main.cpp:9341
 msgid "do parental-unlock the selected service or file"
 msgstr "Kinderbeveiliging opheffen voor de geselecteerde service of bestand"
 
-#: src/enigma_main.cpp:9442
+#: src/enigma_main.cpp:9343
 msgid "lock"
 msgstr "Blokkeren"
 
-#: src/enigma_main.cpp:9442
+#: src/enigma_main.cpp:9343
 msgid "do parentallock the selected service or file"
 msgstr "Kinderbeveiliging activeren voor de geselecteerde service of bestand"
 
-#: src/enigma_main.cpp:9446
+#: src/enigma_main.cpp:9347
 msgid "disable parental lock"
 msgstr "Kinderbeveiliging uitschakelen"
 
-#: src/enigma_main.cpp:9446
+#: src/enigma_main.cpp:9347
 msgid "temporary disable the parental locking"
 msgstr "Kinderbeveiliging tijdelijk uitschakelen"
 
-#: src/enigma_main.cpp:9448
+#: src/enigma_main.cpp:9349
 msgid "enable parental lock"
 msgstr "Kinderbeveiliging activeren"
 
-#: src/enigma_main.cpp:9448
+#: src/enigma_main.cpp:9349
 msgid "re-enable the parental locking"
 msgstr "Kinderbeveiliging opnieuw activeren"
 
-#: src/enigma_main.cpp:9467
+#: src/enigma_main.cpp:9368
 msgid "Shutdown/Standby Menu"
 msgstr "Uitschakel/standby-menu"
 
-#: src/enigma_main.cpp:9478 src/enigma_main.cpp:9482 src/enigma_main.cpp:9489
+#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
 msgid "restart enigma"
 msgstr "Enigma herstarten"
 
-#: src/enigma_main.cpp:9478 src/enigma_main.cpp:9482 src/enigma_main.cpp:9489
+#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
 msgid "only restart the software, without rebooting the receiver"
 msgstr "herstart alleen de software zonder de Dreambox volledig te herstarten"
 
-#: src/enigma_main.cpp:9479 src/enigma_main.cpp:9483
+#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9384
 msgid "reboot now"
 msgstr "Nu herstarten"
 
-#: src/enigma_main.cpp:9479 src/enigma_main.cpp:9491
+#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9392
 msgid "restart your dreambox"
 msgstr "Dreambox herstarten"
 
-#: src/enigma_main.cpp:9483
+#: src/enigma_main.cpp:9384
 msgid "restart your receiver"
 msgstr "Dreambox herstarten"
 
-#: src/enigma_main.cpp:9490 src/enigma_main.cpp:9494
+#: src/enigma_main.cpp:9391 src/enigma_main.cpp:9395
 msgid "shutdown now"
 msgstr "Nu uitschakelen"
 
-#: src/enigma_main.cpp:9490
+#: src/enigma_main.cpp:9391
 msgid "shutdown your dreambox"
 msgstr "Dreambox uitschakelen"
 
-#: src/enigma_main.cpp:9491 src/enigma_main.cpp:9495
+#: src/enigma_main.cpp:9392 src/enigma_main.cpp:9396
 msgid "restart"
 msgstr "Herstart"
 
-#: src/enigma_main.cpp:9494
+#: src/enigma_main.cpp:9395
 msgid "shutdown your dbox-2"
 msgstr "Dbox-2 uitschakelen"
 
-#: src/enigma_main.cpp:9495
+#: src/enigma_main.cpp:9396
 msgid "restart your dbox-2"
 msgstr "Dbox-2 herstarten"
 
-#: src/enigma_main.cpp:9499
+#: src/enigma_main.cpp:9400
 msgid "goto standby"
 msgstr "Schakel naar standby"
 
-#: src/enigma_main.cpp:9499
+#: src/enigma_main.cpp:9400
 msgid "goto standby mode"
 msgstr "Schakel naar standby-modus"
 
-#: src/enigma_main.cpp:9500
+#: src/enigma_main.cpp:9401
 msgid "set sleeptimer"
 msgstr "Slaaptimer instellen"
 
-#: src/enigma_main.cpp:9500
+#: src/enigma_main.cpp:9401
 msgid "set a sleep timer"
 msgstr "Sleeptimer instellen"
 
-#: src/enigma_main.cpp:9504
+#: src/enigma_main.cpp:9405
 msgid ""
 "\tShutdown/Standby Menu\n"
 "\n"
@@ -3725,7 +3731,7 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window"
 
-#: src/enigma_main.cpp:9568
+#: src/enigma_main.cpp:9469
 msgid ""
 "\tSet Sleeptimer\n"
 "\n"
@@ -3777,44 +3783,44 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window without saving changes"
 
-#: src/enigma_main.cpp:9636
+#: src/enigma_main.cpp:9537
 msgid "Record Menu"
 msgstr "Opname menu"
 
-#: src/enigma_main.cpp:9646
+#: src/enigma_main.cpp:9547
 msgid "stop record now"
 msgstr "Opname nu stoppen"
 
-#: src/enigma_main.cpp:9646
+#: src/enigma_main.cpp:9547
 msgid "immediate stop the recording"
 msgstr "Opname direct stoppen"
 
-#: src/enigma_main.cpp:9648
+#: src/enigma_main.cpp:9549
 msgid "set record duration"
 msgstr "Opnameduur instellen"
 
-#: src/enigma_main.cpp:9648
+#: src/enigma_main.cpp:9549
 msgid "set the recording time (in minutes)"
 msgstr "Stel de opnametijd in (in minuten)"
 
-#: src/enigma_main.cpp:9649
+#: src/enigma_main.cpp:9550
 msgid "set record stop time"
 msgstr "Eindtijd van de opname instellen"
 
-#: src/enigma_main.cpp:9649
+#: src/enigma_main.cpp:9550
 msgid "set the recording end time"
 msgstr "Stel de opname-eindtijd in "
 
-#: src/enigma_main.cpp:9655
+#: src/enigma_main.cpp:9556
 #, c-format
 msgid "add timeshift to recording (%d min) "
 msgstr "voeg timeshift aan de opname toe (%d min)"
 
-#: src/enigma_main.cpp:9656
+#: src/enigma_main.cpp:9557
 msgid "add recorded timeshift at beginning of this recording"
 msgstr "voeg een opgenomen timeshift toe aan het begin van deze opname"
 
-#: src/enigma_main.cpp:9790
+#: src/enigma_main.cpp:9691
 msgid "press ok to start edit mode"
 msgstr "Druk op OK om de edit mode te activeren"
 
@@ -4009,7 +4015,7 @@ msgid "Couldn't read plugin directory %s"
 msgstr "Kan de pluginmap %s niet lezen"
 
 #: src/enigma_plugins.cpp:235 src/enigma_plugins.cpp:424 src/scan.cpp:1967
-#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2401
+#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2386
 msgid "Error"
 msgstr "Fout"
 
@@ -4205,9 +4211,9 @@ msgstr "Software installeren en verwijderen"
 msgid "Software management"
 msgstr "Softwarebeheer"
 
-#: src/enigma_setup.cpp:155
-#, fuzzy, c-format
-msgid "/var free %dK"
+#: src/enigma_setup.cpp:154
+#, c-format
+msgid "/var used %d%%"
 msgstr "/var vol %d%%"
 
 #: src/enigma_standby.cpp:28
@@ -5096,19 +5102,19 @@ msgstr ""
 msgid "Error!"
 msgstr "Fout!"
 
-#: src/ppanel.cpp:1323
+#: src/ppanel.cpp:1322
 msgid "PPanel recovery, internet connection needed"
 msgstr "PPanel herstel, internetverbinding noodzakelijk"
 
-#: src/ppanel.cpp:1431
+#: src/ppanel.cpp:1430
 msgid "Please select an item"
 msgstr "Selecteer een item"
 
-#: src/ppanel.cpp:1453
+#: src/ppanel.cpp:1452
 msgid "latest"
 msgstr "laatste"
 
-#: src/ppanel.cpp:1500
+#: src/ppanel.cpp:1499
 msgid ""
 "A new menu is available. The new menu will be visible if you return to the "
 "setup panel.You can continue your work here after pressing OK."
@@ -5116,11 +5122,11 @@ msgstr ""
 "Er is een nieuw menu beschikbaar. U kunt dit menu zien als u terug gaat naar "
 "het setup panel. U kunt hier verder werken nadat u op OK drukt."
 
-#: src/ppanel.cpp:1502
+#: src/ppanel.cpp:1501
 msgid "Automatic menu update"
 msgstr "Automatische menu update"
 
-#: src/ppanel.cpp:1657 src/ppanel.cpp:1755
+#: src/ppanel.cpp:1656 src/ppanel.cpp:1754
 #, c-format
 msgid ""
 "%s\n"
@@ -6178,7 +6184,7 @@ msgstr "Scan afgerond"
 msgid "Manual PIDs"
 msgstr "Handmatige PIDs"
 
-#: src/scan.cpp:1627 src/streaminfo.cpp:357
+#: src/scan.cpp:1627 src/streaminfo.cpp:336
 msgid "Name:"
 msgstr "Naam:"
 
@@ -6190,7 +6196,7 @@ msgstr "Voer de servicenaam in en druk op OK"
 msgid "enter service name"
 msgstr "Servicenaam invoeren"
 
-#: src/scan.cpp:1642 src/streaminfo.cpp:369
+#: src/scan.cpp:1642 src/streaminfo.cpp:348
 msgid "Provider:"
 msgstr "Aanbieder:"
 
@@ -6202,7 +6208,7 @@ msgstr "Druk op OK om de providernaam in te voeren"
 msgid "enter provider name"
 msgstr "Voer providernaam in:"
 
-#: src/scan.cpp:1658 src/streaminfo.cpp:381
+#: src/scan.cpp:1658 src/streaminfo.cpp:360
 msgid "Video PID:"
 msgstr "Video PID:"
 
@@ -6214,7 +6220,7 @@ msgstr "Druk op OK om de Video PID in te voeren"
 msgid "enter video pid"
 msgstr "Voer de Video PID in"
 
-#: src/scan.cpp:1672 src/streaminfo.cpp:405
+#: src/scan.cpp:1672 src/streaminfo.cpp:384
 msgid "PCR PID:"
 msgstr "PCR PID:"
 
@@ -6226,7 +6232,7 @@ msgstr "Druk op OK om de PCR PID in te voeren"
 msgid "enter pcr pid (in most case the same pid as the video pid)"
 msgstr "Voer de PCR PID in (meestal gelijk aan de Video PID)"
 
-#: src/scan.cpp:1688 src/streaminfo.cpp:393
+#: src/scan.cpp:1688 src/streaminfo.cpp:372
 msgid "Audio PID:"
 msgstr "Audio PID:"
 
@@ -6258,7 +6264,7 @@ msgstr "Druk op OK om de Teletekst PID in te voeren"
 msgid "enter (video) text pid"
 msgstr "Voer Teletekst PID in"
 
-#: src/scan.cpp:1725 src/streaminfo.cpp:477
+#: src/scan.cpp:1725 src/streaminfo.cpp:456
 msgid "Service ID:"
 msgstr "Service ID:"
 
@@ -6565,108 +6571,108 @@ msgstr "Hardware adres (MAC) detectie mislukt"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: src/setup_epg.cpp:92
+#: src/setup_epg.cpp:72
 msgid "EPG data store"
 msgstr "EPG opslag"
 
-#: src/setup_epg.cpp:97
+#: src/setup_epg.cpp:77
 msgid "Select if you want the default Enigma EPG or SQLite database EPG"
 msgstr "Selecteer of u de standaard Enigma EPG of SQLite database EPG wilt"
 
-#: src/setup_epg.cpp:100
+#: src/setup_epg.cpp:80
 msgid "Enigma EPG"
 msgstr "Enigma EPG"
 
-#: src/setup_epg.cpp:102
+#: src/setup_epg.cpp:81
 msgid "SQLite database"
 msgstr "SQLite database"
 
-#: src/setup_epg.cpp:123
+#: src/setup_epg.cpp:102
 msgid "Select EPG store location"
 msgstr "Kies EPG opslaglocatie"
 
-#: src/setup_epg.cpp:142
+#: src/setup_epg.cpp:121
 msgid "Number of EPG days:"
 msgstr "Aantal EPG-dagen:"
 
-#: src/setup_epg.cpp:148
+#: src/setup_epg.cpp:127
 msgid "Select number of EPG days"
 msgstr "Selecteer het aantal dagen in de EPG"
 
-#: src/setup_epg.cpp:161
+#: src/setup_epg.cpp:140
 msgid "Enable MHW EPG"
 msgstr "MediaHighWay EPG inschakelen"
 
-#: src/setup_epg.cpp:164
+#: src/setup_epg.cpp:143
 msgid ""
 "Mediahighway EPG, activate swap space when using with multiple operators"
 msgstr "MediaHighway EPG, activeer swap-ruimte bij meerdere operators"
 
-#: src/setup_epg.cpp:171
+#: src/setup_epg.cpp:150
 msgid "Enable DISH/BEV EEPG"
 msgstr "DISH EEPG/BEV inschakelen"
 
-#: src/setup_epg.cpp:174
+#: src/setup_epg.cpp:153
 msgid "DISH/BEV network EEPG, up to 9 days EPG"
 msgstr "DISH/BEV netwerk EEPG, tot 9 dagen EPG"
 
-#: src/setup_epg.cpp:180
+#: src/setup_epg.cpp:159
 msgid "Limit Enigma EPG size"
 msgstr "Beperk Enigma EPG-grootte"
 
-#: src/setup_epg.cpp:183
+#: src/setup_epg.cpp:162
 msgid "Limit the Enigma EPG file to 5MB (recommended)"
 msgstr "Beperk Enigma EPG-bestand tot 5MB (aanbevolen)"
 
-#: src/setup_epg.cpp:189
+#: src/setup_epg.cpp:168
 msgid "Rescan EPG"
 msgstr "Scan EPG"
 
-#: src/setup_epg.cpp:194
+#: src/setup_epg.cpp:173
 msgid "Rescan EPG data on current transponder"
 msgstr "Scan EPG op huidige transponder"
 
-#: src/setup_epg.cpp:211
+#: src/setup_epg.cpp:190
 msgid "Enigma EPG location"
 msgstr "Enigma EPG locatie"
 
-#: src/setup_epg.cpp:215
+#: src/setup_epg.cpp:194
 msgid "SQLite EPG location"
 msgstr "SQLite EPG locatie"
 
-#: src/setup_epg.cpp:258
+#: src/setup_epg.cpp:237
 msgid "This directory is suitable for storage"
 msgstr "Deze directory is bruikbaar voor opslag"
 
-#: src/setup_epg.cpp:262
+#: src/setup_epg.cpp:241
 msgid "This directory has not enough space"
 msgstr "Deze directory heeft niet voldoende ruimte"
 
-#: src/setup_epg.cpp:266
+#: src/setup_epg.cpp:245
 msgid "This directory does not exist"
 msgstr "Deze directory bestaat niet"
 
-#: src/setup_epg.cpp:327
+#: src/setup_epg.cpp:306
 msgid "MultiEPG channels:"
 msgstr "MultiEPG kanalen:"
 
-#: src/setup_epg.cpp:334
+#: src/setup_epg.cpp:313
 msgid "Number of channels per MultiEPG page to show"
 msgstr "Aantal kanalen in het MultiEPG scherm"
 
-#: src/setup_epg.cpp:339
+#: src/setup_epg.cpp:318
 msgid "MultiEPG entry fontsize:"
 msgstr "MultiEPG fontgrootte:"
 
-#: src/setup_epg.cpp:352
+#: src/setup_epg.cpp:331
 msgid "Increase/decrease entry fontsize with this number of points"
 msgstr "Vergroot/verklein de fontgrootte met dit aantal punten"
 
-#: src/setup_epg.cpp:357
+#: src/setup_epg.cpp:336
 msgid "Enable EPG genre colours"
 msgstr "Activeer EPG genre kleuren"
 
-#: src/setup_epg.cpp:360
+#: src/setup_epg.cpp:339
 msgid "Make the MultiEPG entries coloured depending on the genre"
 msgstr "Gebruik kleuren in de MultiEPG afhankelijk van het genre"
 
@@ -6773,107 +6779,98 @@ msgid "Seconds in OSD clock"
 msgstr "Seconden in de OSD klok"
 
 #: src/setup_extra_osd.cpp:75
-#, fuzzy
-msgid "Progress in %"
-msgstr "Voortgang:"
-
-#: src/setup_extra_osd.cpp:75
-msgid "Display Progress in %"
-msgstr ""
-
-#: src/setup_extra_osd.cpp:76
 msgid "No picture in radio/mp3"
 msgstr "Geen achtergrond in radio/mp3"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:75
 msgid "No background picture in radio/mp3 mode"
 msgstr "Laat geen achtergrond zien in radio/mp3 mode"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:76
 msgid "Listbox OSD main menu"
 msgstr "Hoofdmenu weergeven als een lijst"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:76
 msgid "Show the Main menu in normal listbox style"
 msgstr "Hoofdmenu als lijst weergeven"
 
-#: src/setup_extra_osd.cpp:78
+#: src/setup_extra_osd.cpp:77
 msgid "Serviceselector help buttons"
 msgstr "Serviceselectie helpfunctie"
 
-#: src/setup_extra_osd.cpp:78
+#: src/setup_extra_osd.cpp:77
 msgid "Show coloured help buttons in service selector"
 msgstr "Geef de gekleurde helpbuttons in de serviceselectie weer"
 
-#: src/setup_extra_osd.cpp:81
+#: src/setup_extra_osd.cpp:80
 msgid "Show Sat position"
 msgstr "Sat positie weergeven"
 
-#: src/setup_extra_osd.cpp:81
+#: src/setup_extra_osd.cpp:80
 msgid "Show satellite position in the infobar"
 msgstr "Sat posities in de infobalk weergeven"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:82
 msgid "Auto show Infobar"
 msgstr "Infobalk automatisch weergeven"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:82
 msgid "Always show infobar when new event info is available"
 msgstr "Infobalk weergeven als de now/next info wijzigt"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:83
 msgid "Show remaining Time"
 msgstr "Resterende tijd weergeven"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:83
 msgid "Show event remaining time in the infobar"
 msgstr "Resterende tijd weergeven in de infobalk"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:84
 msgid "Hide shortcut icons"
 msgstr "Snelkeuze-iconen verbergen"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:84
 msgid "Don't show shortcut icons in menus"
 msgstr "Geen snelkeuze-iconen in de menu's laten zien"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:85
 msgid "Skip confirmations"
 msgstr "Niet om bevestiging vragen"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:85
 msgid "Skip some confirmations"
 msgstr "Niet om bevestiging vragen"
 
-#: src/setup_extra_osd.cpp:87
+#: src/setup_extra_osd.cpp:86
 msgid "Hide error windows"
 msgstr "Foutmeldingen verbergen"
 
-#: src/setup_extra_osd.cpp:87
+#: src/setup_extra_osd.cpp:86
 msgid "Don't show zap error messages like service not found"
 msgstr "Geen zap-foutmeldingen weergeven"
 
-#: src/setup_extra_osd.cpp:90
+#: src/setup_extra_osd.cpp:89
 msgid "Enable fast zapping"
 msgstr "Snel zappen inschakelen"
 
-#: src/setup_extra_osd.cpp:90
+#: src/setup_extra_osd.cpp:89
 msgid "Enables faster zapping.. but with visible sync"
 msgstr "Sneller zappen, maar met zichtbare sync"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:91
 msgid "Enable Zapping History"
 msgstr "Zapgeschiedenis inschakelen"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:91
 msgid "Don't care about actual mode when zapping in history list"
 msgstr "Negeer huidige modus bij zappen in geschiedenislijst"
 
-#: src/setup_extra_osd.cpp:93
+#: src/setup_extra_osd.cpp:92
 msgid "Auto bouquet change"
 msgstr "Automatisch van boeket wisselen"
 
-#: src/setup_extra_osd.cpp:93
+#: src/setup_extra_osd.cpp:92
 msgid "Change into next bouquet when end of current bouquet is reached"
 msgstr ""
 "Naar het volgende boeket springen als het eind van een eerder boeket is "
@@ -7289,7 +7286,7 @@ msgstr "Wachtwoord"
 msgid "Enter the password of the server"
 msgstr "Geef het wachtwoord van de server in"
 
-#: src/setup_mounts.cpp:369 src/sselect.cpp:2356 src/sselect.cpp:2395
+#: src/setup_mounts.cpp:369 src/sselect.cpp:2341 src/sselect.cpp:2380
 msgid "Delete"
 msgstr "Wissen"
 
@@ -9116,7 +9113,7 @@ msgstr "Service aan een boeket toevoegen"
 msgid "toggle between classic and multi column style"
 msgstr "Wisselen tussen standaard en multi-kolom weergave"
 
-#: src/sselect.cpp:151 src/sselect.cpp:1868 src/sselect.cpp:1878
+#: src/sselect.cpp:151 src/sselect.cpp:1858 src/sselect.cpp:1868
 msgid "toggle focus between service and bouquet list (in combi column style)"
 msgstr "Wisselen tussen service of boeket-lijst (in combi kolom stijl)"
 
@@ -9163,44 +9160,44 @@ msgstr "Geselecteerd item hernoemen"
 msgid "create new marker entry"
 msgstr "Nieuwe markering invoegen"
 
-#: src/sselect.cpp:379
+#: src/sselect.cpp:377
 msgid "[GO UP]"
 msgstr "[terug]"
 
-#: src/sselect.cpp:381
+#: src/sselect.cpp:379
 msgid "(removed service)"
 msgstr "(verwijderd item)"
 
-#: src/sselect.cpp:516
+#: src/sselect.cpp:505
 msgid "mark"
 msgstr "Markeren"
 
-#: src/sselect.cpp:518
+#: src/sselect.cpp:507
 msgid "marker"
 msgstr "Markering"
 
-#: src/sselect.cpp:536
+#: src/sselect.cpp:525
 msgid "My Dreambox"
 msgstr "Mijn Dreambox"
 
-#: src/sselect.cpp:537
+#: src/sselect.cpp:526
 msgid "Movies"
 msgstr "Films"
 
-#: src/sselect.cpp:1067
+#: src/sselect.cpp:1056
 msgid "Select No or press Abort to lock/unlock the complete directory"
 msgstr ""
 "Kies 'nee' of druk op 'afbreken' om de gehele map te blokkeren/deblokkeren "
 
-#: src/sselect.cpp:1067
+#: src/sselect.cpp:1056
 msgid "Enter Directory"
 msgstr "Voer map in"
 
-#: src/sselect.cpp:1858
+#: src/sselect.cpp:1848
 msgid "toggle between now and next epg entries in single column list"
 msgstr "Wissel tussen huidig en toekomstig programma"
 
-#: src/sselect.cpp:2008
+#: src/sselect.cpp:1993
 msgid ""
 "Service selector\n"
 "\n"
@@ -9214,27 +9211,27 @@ msgstr ""
 "(Satellite, Bouquet, All, Provider, Radio/TV, File), and can show these in "
 "one or more columns."
 
-#: src/sselect.cpp:2353
+#: src/sselect.cpp:2338
 msgid "Root"
 msgstr "Root"
 
-#: src/sselect.cpp:2354
+#: src/sselect.cpp:2339
 msgid "Select"
 msgstr "Selecteer"
 
-#: src/sselect.cpp:2355
+#: src/sselect.cpp:2340
 msgid "New Directory"
 msgstr "Nieuwe directory"
 
-#: src/sselect.cpp:2372
+#: src/sselect.cpp:2357
 msgid "Enter name of new directory:"
 msgstr "Geef de serverdirectory in:"
 
-#: src/sselect.cpp:2373
+#: src/sselect.cpp:2358
 msgid "Create Directory"
 msgstr "Creëer directory"
 
-#: src/sselect.cpp:2382
+#: src/sselect.cpp:2367
 msgid "Error creating directory"
 msgstr "Fout tijdens creëeren van directory"
 
@@ -9270,43 +9267,43 @@ msgstr "Nummer"
 msgid "length"
 msgstr "Lengte"
 
-#: src/streaminfo.cpp:417
+#: src/streaminfo.cpp:396
 msgid "PMT PID:"
 msgstr "PMT PID:"
 
-#: src/streaminfo.cpp:429
+#: src/streaminfo.cpp:408
 msgid "Teletext PID:"
 msgstr "Teletext PID:"
 
-#: src/streaminfo.cpp:441
+#: src/streaminfo.cpp:420
 msgid "Video format:"
 msgstr "Videoformaat:"
 
-#: src/streaminfo.cpp:453
+#: src/streaminfo.cpp:432
 msgid "Transport Stream ID:"
 msgstr "Transport Stream ID:"
 
-#: src/streaminfo.cpp:465
+#: src/streaminfo.cpp:444
 msgid "Original Network ID:"
 msgstr "Original Network ID:"
 
-#: src/streaminfo.cpp:489
+#: src/streaminfo.cpp:468
 msgid "Namespace:"
 msgstr "Namespace:"
 
-#: src/streaminfo.cpp:525
+#: src/streaminfo.cpp:504
 msgid "supported coding systems:"
 msgstr "Ondersteunde coderingssystemen:"
 
-#: src/streaminfo.cpp:565
+#: src/streaminfo.cpp:544
 msgid "Systems used in service:"
 msgstr "Systemen die deze service gebruikt:"
 
-#: src/streaminfo.cpp:606
+#: src/streaminfo.cpp:585
 msgid "Record mode - read manual"
 msgstr "Opnamemodus - lees de gebruiksaanwijzing"
 
-#: src/streaminfo.cpp:613
+#: src/streaminfo.cpp:592
 msgid ""
 "\tStreaminfo\n"
 "\n"
@@ -9350,15 +9347,15 @@ msgstr ""
 "\n"
 "[OK]/[EXIT]\tClose window"
 
-#: src/streaminfo.cpp:721
+#: src/streaminfo.cpp:700
 msgid "Service information (right)"
 msgstr "Service-informatie (rechts)"
 
-#: src/streaminfo.cpp:722
+#: src/streaminfo.cpp:701
 msgid "Scrambled system information (left, right)"
 msgstr "Systeeminformatie codering (links, rechts)"
 
-#: src/streaminfo.cpp:723
+#: src/streaminfo.cpp:702
 msgid "Transponder information (left)"
 msgstr "Transponderinformatie (links)"
 
@@ -10177,7 +10174,7 @@ msgstr ""
 msgid "Upgrade in process..."
 msgstr "Bezig met bijwerken..."
 
-#: src/wizard_language.cpp:169
+#: src/wizard_language.cpp:168
 msgid ""
 "\tOSD Language\n"
 "\n"
@@ -10211,11 +10208,11 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window without saving changes"
 
-#: src/wizard_language.cpp:181
+#: src/wizard_language.cpp:180
 msgid "Choose your language..."
 msgstr "Kies uw taal..."
 
-#: src/wizard_language.cpp:182
+#: src/wizard_language.cpp:181
 msgid "press up/down/ok"
 msgstr "Druk op omhoog/omlaag/ok"
 
@@ -10250,9 +10247,6 @@ msgstr "Standaard LNB, behalve voor de VS en Canada"
 #: src/wizard_scan.cpp:170
 msgid "DISH LNB for North America and Canada"
 msgstr "DISH LNB voor de VS en Canada"
-
-#~ msgid "no EPG available"
-#~ msgstr "Geen EPG beschikbaar"
 
 #~ msgid "Show current BN version"
 #~ msgstr "Laat huidige BN-versie zien"

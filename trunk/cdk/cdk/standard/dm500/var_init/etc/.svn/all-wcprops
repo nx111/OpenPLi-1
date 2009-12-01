@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svnroot/openpli/!svn/ver/27/trunk/cdk/cdk/standard/dm500/var_init/etc
+/svnroot/openpli/!svn/ver/37/trunk/cdk/cdk/standard/dm500/var_init/etc
 END
 hosts
 K 25
@@ -37,7 +37,7 @@ software.xml
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svnroot/openpli/!svn/ver/27/trunk/cdk/cdk/standard/dm500/var_init/etc/software.xml
+/svnroot/openpli/!svn/ver/37/trunk/cdk/cdk/standard/dm500/var_init/etc/software.xml
 END
 hostname
 K 25

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openpli/!svn/ver/27/trunk/cdk/cdk/standard/dm500plus/etc
+/svnroot/openpli/!svn/ver/37/trunk/cdk/cdk/standard/dm500plus/etc
 END
 software.ver
 K 25
@@ -13,5 +13,5 @@ software.xml
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openpli/!svn/ver/27/trunk/cdk/cdk/standard/dm500plus/etc/software.xml
+/svnroot/openpli/!svn/ver/37/trunk/cdk/cdk/standard/dm500plus/etc/software.xml
 END

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/bin
+V 55
+/svnroot/openpli/!svn/ver/37/trunk/cdk/cdk/allboxes/bin
 END
 install.sh
 K 25
@@ -24,6 +24,6 @@ END
 ppanelupdate.sh
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/allboxes/bin/ppanelupdate.sh
+V 71
+/svnroot/openpli/!svn/ver/37/trunk/cdk/cdk/allboxes/bin/ppanelupdate.sh
 END

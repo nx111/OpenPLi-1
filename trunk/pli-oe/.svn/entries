@@ -1,14 +1,14 @@
 10
 
 dir
-31
+51
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/pli-oe
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-10-25T15:01:34.769145Z
-29
+2009-11-27T12:50:54.199413Z
+48
 pieterg
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2009-10-28T01:26:46.385710Z
-7c9bc956589df6796f413e1ca69853e4
-2009-10-20T22:06:02.236123Z
-25
-plindeman
+2009-12-01T04:23:34.764210Z
+6904b9d99c9b60155f73f4bdd31ee5b9
+2009-11-27T12:50:54.199413Z
+48
+pieterg
 has-props
 
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-2963
+3950
 
 Makefile
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2009-10-28T01:26:46.385710Z
-645c4c8f97563b24139dbf6ef72621fa
-2009-10-25T15:01:34.769145Z
-29
+2009-12-01T04:23:34.764210Z
+4837e470fea2e21d02a42ea2896067fe
+2009-11-20T00:10:21.432086Z
+46
 pieterg
 
 
@@ -126,7 +126,7 @@ pieterg
 
 
 
-3590
+3752
 
 recreate_feed
 file
@@ -134,11 +134,11 @@ file
 
 
 
-2009-10-28T01:26:46.385710Z
-15adec40698835641a49cff962a6ad9d
-2009-10-20T22:06:02.236123Z
-25
-plindeman
+2009-12-01T04:23:34.764210Z
+0e863dca6f4ed8fd1f67dbf66452ec04
+2009-11-01T17:30:10.195665Z
+40
+pieterg
 has-props
 
 
@@ -160,5 +160,5 @@ has-props
 
 
 
-1471
+1444
 

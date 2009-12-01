@@ -1,15 +1,15 @@
 10
 
 dir
-31
+51
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm600pvr/etc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-10-25T12:44:18.087787Z
-27
-pieterg
+2009-11-01T14:34:16.896578Z
+37
+daf2000
 
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2009-10-28T01:26:46.169284Z
-f489325937cbaf4cf3bdbb2d3171c7af
-2009-10-25T12:44:18.087787Z
-27
-pieterg
+2009-12-01T04:21:57.992206Z
+42401378796c572be4bef45b9f83c2da
+2009-11-01T14:34:16.896578Z
+37
+daf2000
 
 
 
@@ -92,5 +92,5 @@ pieterg
 
 
 
-1117
+1145
 

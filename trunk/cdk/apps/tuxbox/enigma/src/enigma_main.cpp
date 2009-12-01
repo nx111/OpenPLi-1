@@ -1944,6 +1944,47 @@ int eZapMain::doHideInfobar()
 	return 0;
 }
 
+int eZapMain::testOnline()
+{
+	eString hostnames="www.g.cn";
+	eConfig::getInstance()->getKey("/elitedvb/network/host4test",hostnames);
+
+	std::string::size_type last = 0;
+	eString delim=";,";
+	std::string::size_type index=hostnames.find_first_of(delim,last);
+	int ret=-1;
+	while (index!=std::string::npos)
+	{
+		eString host=hostnames.substr(last,index-last);
+
+		if(index>last){
+			ret=system(("ping -c 1 -w 500 "+host+" >/dev/null 2>&1 ").c_str());
+			if(!ret)break;
+		}
+		last=index+1;
+		index=hostnames.find_first_of(delim,last);
+	}
+	
+	if (index==std::string::npos){
+		eString host=hostnames.substr(last,hostnames.length()-last);
+		ret=system(("ping -c 1 -w 500 "+host+" >/dev/null 2>&1 ").c_str());
+	}
+
+	if(ret<0 || ret ==127)result=0;
+	else 
+		ret=1;
+	if(ret){
+		Online->show();
+		Offline->hide();
+		}
+	else{
+		Online->hide();
+		Offline->show();
+	}
+	isOnline=result;
+	return isOnline;
+}
+
 eZapMain::eZapMain()
 	:eWidget(0, 1)
 	,mute( eZap::getInstance()->getDesktop( eZap::desktopFB ) )
@@ -2004,6 +2045,7 @@ void eZapMain::init_main()
 
 
 	isVT=0;
+	isOnline=0;
 	eSkin *skin=eSkin::getActive();
 	if (skin->build(this, "ezap_main"))
 		eFatal("skin load of \"ezap_main\" failed");
@@ -2278,16 +2320,21 @@ void eZapMain::init_main()
 	ASSIGN(WideOff, eLabel, "osd_format_off");
 	ASSIGN(VtxtOff, eLabel, "osd_txt_off");
 	ASSIGN(AudioOff, eLabel, "osd_audio_off");
+	ASSIGN(Online, eLabel, "osd_online");
+	ASSIGN(Offline, eLabel, "osd_offline");
+
 	DolbyOn->hide();
 	CryptOn->hide();
 	WideOn->hide();
 	VtxtOn->hide();
 	AudioOn->hide();
+	Online->hide();
 	DolbyOff->show();
 	CryptOff->show();
 	WideOff->show();
 	VtxtOff->show();
 	AudioOff->show();
+	Offline->show();
 
 	ButtonRedEn->hide();
 	ButtonRedDis->show();
@@ -2357,11 +2404,13 @@ void eZapMain::init_main()
 
 	actual_eventDisplay=0;
 
+	testOnline();
+
 	int useSystemTime=0,autoSetTime=0;
 	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", useSystemTime );
 	eConfig::getInstance()->getKey("/elitedvb/extra/autoSetTime", autoSetTime );
 
-	if(useSystemTime && autoSetTime)
+	if(useSystemTime && autoSetTime && isOnline)
 		syncSystemTime();
 
 	clockUpdate();

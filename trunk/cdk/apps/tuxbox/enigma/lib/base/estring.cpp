@@ -609,7 +609,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 		case 0:
 			++i;
 			break;
-		case 1 ... 12:
+		case 1 ... 11:
 			encode=data[i++]+4;
 //			eDebug("(1..12)text encoded in ISO-8859-%d",table);
 			break;

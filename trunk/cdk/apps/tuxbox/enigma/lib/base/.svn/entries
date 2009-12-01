@@ -1,15 +1,15 @@
 10
 
 dir
-31
+51
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/lib/base
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2009-11-09T20:06:09.247898Z
+45
+pieterg
 
 
 
@@ -406,31 +406,9 @@ file
 
 
 
-2009-09-15T02:52:50.364543Z
-ee06a53694de2bca2c9a825d92541c2e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-26693
+865fc71c2bd64ef85a04f0785de3d55e
+2009-11-09T20:06:09.247898Z
+45
+pieterg
 

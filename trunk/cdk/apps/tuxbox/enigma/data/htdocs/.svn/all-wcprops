@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs
+V 69
+/svnroot/openpli/!svn/ver/38/trunk/cdk/apps/tuxbox/enigma/data/htdocs
 END
 back_top_left.png
 K 25
@@ -21,17 +21,17 @@ svn:wc:ra_dav:version-url
 V 77
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/xear.png
 END
-top-banner.jpg
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/top-banner.jpg
-END
 corner-top-left.gif
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/corner-top-left.gif
+END
+top-banner.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/top-banner.jpg
 END
 trash.gif
 K 25
@@ -39,29 +39,29 @@ svn:wc:ra_dav:version-url
 V 78
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/trash.gif
 END
-lock_off.gif
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/lock_off.gif
-END
 corner-bottom-left.gif
 K 25
 svn:wc:ra_dav:version-url
 V 91
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/corner-bottom-left.gif
 END
-lock_on.gif
+lock_off.gif
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/lock_on.gif
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/lock_off.gif
 END
 up.gif
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/up.gif
+END
+lock_on.gif
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/lock_on.gif
 END
 xdeinterlace.png
 K 25
@@ -207,17 +207,17 @@ svn:wc:ra_dav:version-url
 V 82
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/xspeak_on.png
 END
-player_rew.gif
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/player_rew.gif
-END
 1rightarrow.gif
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/1rightarrow.gif
+END
+player_rew.gif
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/player_rew.gif
 END
 off.gif
 K 25
@@ -225,17 +225,17 @@ svn:wc:ra_dav:version-url
 V 76
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/off.gif
 END
-on.gif
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/on.gif
-END
 xplay.png
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/xplay.png
+END
+on.gif
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/on.gif
 END
 back_bottom_left.png
 K 25
@@ -243,29 +243,29 @@ svn:wc:ra_dav:version-url
 V 89
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/back_bottom_left.png
 END
-index.js
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/index.js
-END
 xdown.png
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/xdown.png
 END
-back_mid_left.png
+index.js
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/back_mid_left.png
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/index.js
 END
 epg.js
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/epg.js
+END
+back_mid_left.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/back_mid_left.png
 END
 corner-mid-left.gif
 K 25
@@ -303,17 +303,17 @@ svn:wc:ra_dav:version-url
 V 81
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/speak_on.gif
 END
-arrow_down.png
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/arrow_down.png
-END
 xtv.png
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/xtv.png
+END
+arrow_down.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/arrow_down.png
 END
 zap.js
 K 25
@@ -321,17 +321,17 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/zap.js
 END
-movieplayer.js
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/movieplayer.js
-END
 corner-top-right.gif
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/corner-top-right.gif
+END
+movieplayer.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/movieplayer.js
 END
 rc_dbox2_small.jpg
 K 25
@@ -339,17 +339,17 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/rc_dbox2_small.jpg
 END
-sf.html
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/sf.html
-END
 down.gif
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/down.gif
+END
+sf.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/sf.html
 END
 top.jpg
 K 25
@@ -363,11 +363,11 @@ svn:wc:ra_dav:version-url
 V 78
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/window.js
 END
-mountMgr.js
+webif.css
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/mountMgr.js
+V 79
+/svnroot/openpli/!svn/ver/38/trunk/cdk/apps/tuxbox/enigma/data/htdocs/webif.css
 END
 dhtml.js
 K 25
@@ -375,11 +375,11 @@ svn:wc:ra_dav:version-url
 V 77
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/dhtml.js
 END
-webif.css
+mountMgr.js
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/webif.css
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/htdocs/mountMgr.js
 END
 timer.gif
 K 25
