@@ -1,7 +1,7 @@
 10
 
 dir
-51
+54
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -94,6 +94,9 @@ has-props
 
 1592
 
+root
+dir
+
 rules-archive.pl
 file
 
@@ -127,9 +130,6 @@ has-props
 
 
 1456
-
-root
-dir
 
 AUTHORS
 file
@@ -165,6 +165,9 @@ plindeman
 
 0
 
+Patches
+dir
+
 ChangeLog
 file
 
@@ -198,9 +201,6 @@ plindeman
 
 
 0
-
-Patches
-dir
 
 rules-install-flash
 file
@@ -270,40 +270,6 @@ plindeman
 
 272
 
-prepare
-file
-
-
-
-
-2009-10-28T01:26:46.181711Z
-cfa9153a4e88fa1d2fcebc20d680139f
-2009-10-20T21:36:31.923783Z
-24
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2670
-
 rules-install
 file
 
@@ -337,6 +303,40 @@ plindeman
 
 
 5670
+
+prepare
+file
+
+
+
+
+2009-10-28T01:26:46.181711Z
+cfa9153a4e88fa1d2fcebc20d680139f
+2009-10-20T21:36:31.923783Z
+24
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2670
 
 standard
 dir

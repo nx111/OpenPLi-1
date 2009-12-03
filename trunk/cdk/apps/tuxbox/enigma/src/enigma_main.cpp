@@ -2834,7 +2834,7 @@ void eZapMain::setNext(EITEvent *event)
 
 void eZapMain::setEIT(EIT *eit)
 {
-	if (eit && (setEPGNowNext() < 0))
+	if (eit)
 	{
 		int p = 0;
 		eServiceReferenceDVB &ref=(eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
@@ -4438,11 +4438,12 @@ int eZapMain::recordDVR(int onoff, int user, time_t evtime, const char *timer_de
 		if (service)
 		{
 			servicename = service->service_name;
-		/*	static char strfilter[4] = { 0xC2, 0x87, 0x86, 0x00 };
+//			static char strfilter[4] = { 0xC2, 0x87, 0x86, 0x00 };
+			static char strfilter[10] = { '\"','\'','*','?','/','\\','|',':' ,'<','>'};
 			// filter short name brakets...
 			for (eString::iterator it(servicename.begin()); it != servicename.end();)
-				strchr( strfilter, *it ) ? it = servicename.erase(it) : it++;
-		*/
+				(strchr( strfilter, *it ) || *it<0x20) ? it = servicename.erase(it) : it++;
+		
 			if ( ref.getServiceType() > 4 && !timer_descr )  // nvod or linkage
 				eServiceInterface::getInstance()->removeRef(refservice);
 			else

@@ -1,7 +1,7 @@
 10
 
 dir
-51
+54
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/fx2
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -27,9 +27,6 @@ plindeman
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
 bouquet
-dir
-
-solitair
 dir
 
 Imakefile
@@ -66,37 +63,40 @@ plindeman
 
 140
 
+solitair
+dir
+
 satfind
 dir
 
 lemm
 dir
 
-outdoor
+master
 dir
 
-master
+outdoor
 dir
 
 sokoban
 dir
 
-sol
+tank
 dir
 
-tank
+sol
 dir
 
 snake
 dir
 
-pac
+c64emu
 dir
 
 lcdcirc
 dir
 
-c64emu
+pac
 dir
 
 lib

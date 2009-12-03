@@ -6,7 +6,7 @@
 #include <lib/gdi/epng.h>
 #include <lib/gdi/gfbdc.h>
 
-const char *ePicon::piconPaths[] = { CONFIGDIR "/enigma/picon/", TUXBOXDATADIR "/enigma/picon/", "/media/cf/picon/", "/media/usb/picon/", "" };
+const char *ePicon::piconPaths[] = { CONFIGDIR "/enigma/picon/", TUXBOXDATADIR "/enigma/picon/", "/media/hdd/picon/","/media/cf/picon/", "/media/usb/picon/", "/tmp/picon/","" };
 
 ePicon::ePicon(eWidget *parent)
 : eWidget(parent)
@@ -34,15 +34,21 @@ void ePicon::redrawWidget(gPainter *paint, const eRect &area)
 gPixmap *ePicon::loadPicon(eString &refname, const eSize &size)
 {
 	gPixmap *picon = NULL;
-	eString name;
-
+	eString name,name2;
+    eString servicename=refname;
+	if(servicename.size()>3 && (servicename.right(3) =="\xe5\x8f\xb0"))   //"台"
+			servicename=refname.left(refname.size()-3);
+	
 	for (int i = 0; piconPaths[i][0]; i++)
 	{
 		if (access(piconPaths[i], X_OK) < 0) continue;
 		name = piconPaths[i];
-		name += refname;
+		name += servicename;
 		name += ".png";
-		if (access(name.c_str(), R_OK) < 0) continue;
+		if (access(name.c_str(), R_OK) < 0) {
+			name= piconPaths[i] + servicename + "\xe5\x8f\xb0" + ".png";
+			if (access(name.c_str(), R_OK) < 0) continue;
+		}
 		picon = loadPNG(name.c_str());
 		if (picon)
 		{
@@ -71,6 +77,18 @@ gPixmap *ePicon::loadPicon(eServiceReference &ref, const eSize &size)
 
 	picon = loadPicon(refname, size);
 	if (picon) return picon;
+
+	eTransponderList *tplist=eTransponderList::getInstance();
+	eServiceDVB* servicedvb=tplist->searchService(ref);
+	if(servicedvb){
+		eString servicename="p_"+servicedvb->service_name;
+		static char strfilter[10] = { '\"','\'','*','?','/','\\','|',':' ,'<','>'};
+		for (eString::iterator it(servicename.begin()); it != servicename.end();)
+				(strchr( strfilter, *it ) || *it<0x20) ? it = servicename.erase(it) : it++;
+		
+		picon=loadPicon(servicename,size);
+		if(picon)return picon;
+		}
 
 	eString fallbackrefname = ref.toString();
 	if (fallbackrefname.empty() || fallbackrefname == refname) return NULL;

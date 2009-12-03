@@ -1,7 +1,7 @@
 10
 
 dir
-51
+54
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/fx2/solitair
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -60,40 +60,6 @@ plindeman
 
 1064
 
-Block.h
-file
-
-
-
-
-2009-09-15T02:53:42.948541Z
-f49ee9a01686f96e60e67d1e866b801f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-447
-
 backbuffer.h
 file
 
@@ -127,6 +93,40 @@ plindeman
 
 
 444
+
+Block.h
+file
+
+
+
+
+2009-09-15T02:53:42.948541Z
+f49ee9a01686f96e60e67d1e866b801f
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+447
 
 Wastepile.h
 file
@@ -162,40 +162,6 @@ plindeman
 
 465
 
-pnm_res.cpp
-file
-
-
-
-
-2009-09-15T02:53:42.952542Z
-5c6c020f91bcfe759793d70291db671c
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-362872
-
 solitair.cfg
 file
 
@@ -230,14 +196,14 @@ plindeman
 
 107
 
-Foundation.cpp
+pnm_res.cpp
 file
 
 
 
 
 2009-09-15T02:53:42.952542Z
-f003b1be84e6c7e6635df5eaa500cda9
+5c6c020f91bcfe759793d70291db671c
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -262,7 +228,7 @@ plindeman
 
 
 
-1483
+362872
 
 colors.h
 file
@@ -298,14 +264,14 @@ plindeman
 
 154
 
-Card.cpp
+Foundation.cpp
 file
 
 
 
 
 2009-09-15T02:53:42.952542Z
-d499687a4aea795f1fe0917e9c772de0
+f003b1be84e6c7e6635df5eaa500cda9
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -330,7 +296,7 @@ plindeman
 
 
 
-6896
+1483
 
 Buffer.cpp
 file
@@ -365,6 +331,40 @@ plindeman
 
 
 584
+
+Card.cpp
+file
+
+
+
+
+2009-09-15T02:53:42.952542Z
+d499687a4aea795f1fe0917e9c772de0
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6896
 
 Hand.cpp
 file
@@ -468,40 +468,6 @@ plindeman
 
 2799
 
-Card.h
-file
-
-
-
-
-2009-09-15T02:53:42.960544Z
-5657032554fac5789dfc5e13c3802b2f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1207
-
 Buffer.h
 file
 
@@ -535,6 +501,40 @@ plindeman
 
 
 425
+
+Card.h
+file
+
+
+
+
+2009-09-15T02:53:42.960544Z
+5657032554fac5789dfc5e13c3802b2f
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1207
 
 Hand.h
 file

@@ -188,10 +188,10 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 			if ( tm_it_tmp->first == TM ) // correct eventData
 			{
 							// exempt memory
-				delete ev_it->second;
-				evt = new eventData(eit_event, eit_event_size, source);
-				ev_it->second=evt;
-				tm_it_tmp->second=evt;
+			//	delete ev_it->second;
+			//	evt = new eventData(eit_event, eit_event_size, source);
+			//	ev_it->second=evt;
+			//	tm_it_tmp->second=evt;
 				return;
 			}
 			else
@@ -199,7 +199,7 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 				tm_erase_count++;
 				// delete the found record from timemap
 		//		servicemap.second.erase(tm_it_tmp);
-				prevTimeIt=servicemap.second.end();
+		//		prevTimeIt=servicemap.second.end();
 			}
 		}
 	}
@@ -223,7 +223,7 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 			ev_erase_count++;
 			// delete the found record from eventmap
 		//	servicemap.first.erase(ev_it_tmp);
-			prevEventIt=servicemap.first.end();
+		//	prevEventIt=servicemap.first.end();
 		}
 	}
 
@@ -235,20 +235,21 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 	//	delete tm_it->second;
 	//	ev_it->second=evt;
 	//	tm_it->second=evt;
+		delete evt;
 	}
 	else if (ev_erase_count == 0 && tm_erase_count > 0)
 	{
 		// exempt memory
-	//	delete ev_it->second;
+		delete ev_it->second;
 	//	tm_it=prevTimeIt=servicemap.second.insert( prevTimeIt, std::pair<const time_t, eventData*>( TM, evt ) );
-	//	ev_it->second=evt;
+		ev_it->second=evt;
 	}
 	else if (ev_erase_count > 0 && tm_erase_count == 0)
 	{
 		// exempt memory
-	//	delete tm_it->second;
+		delete tm_it->second;
 	//	ev_it=prevEventIt=servicemap.first.insert( prevEventIt, std::pair<const __u16, eventData*>( event_id, evt) );
-	//	tm_it->second=evt;
+		tm_it->second=evt;
 	}
 	else // added new eventData
 	{

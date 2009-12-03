@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svnroot/openpli/!svn/ver/10/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr
+/svnroot/openpli/!svn/ver/54/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr
 END
 fuz_decrypt.c
 K 25
@@ -15,29 +15,29 @@ svn:wc:ra_dav:version-url
 V 83
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/service.cpp
 END
-wrappers.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/wrappers.cpp
-END
 fbinfo.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/fbinfo.cpp
 END
-pli_pmthelper.c
+wrappers.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/pli_pmthelper.c
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/wrappers.cpp
 END
 AUTHORS
 K 25
 svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/AUTHORS
+END
+pli_pmthelper.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/pli_pmthelper.c
 END
 service.h
 K 25
@@ -57,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 88
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/xmlgenerator.cpp
 END
-wrappers.h
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/wrappers.h
-END
 pli_ecmhelper.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/pli_ecmhelper.cpp
+END
+wrappers.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/wrappers.h
 END
 pli_clfb.cpp
 K 25
@@ -75,17 +75,17 @@ svn:wc:ra_dav:version-url
 V 84
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/pli_clfb.cpp
 END
-xmlgenerator.h
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/xmlgenerator.h
-END
 README
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/README
+END
+xmlgenerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/xmlgenerator.h
 END
 configure.ac
 K 25
@@ -97,7 +97,7 @@ main.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openpli/!svn/ver/10/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/main.cpp
+/svnroot/openpli/!svn/ver/53/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/main.cpp
 END
 fuz_crypt.c
 K 25
@@ -108,14 +108,14 @@ END
 configtree.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/configtree.cpp
+V 87
+/svnroot/openpli/!svn/ver/53/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/configtree.cpp
 END
 Makefile.am
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/Makefile.am
+V 84
+/svnroot/openpli/!svn/ver/54/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/Makefile.am
 END
 pip.c
 K 25
@@ -126,14 +126,14 @@ END
 main.h
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/main.h
+V 79
+/svnroot/openpli/!svn/ver/53/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/main.h
 END
 configtree.h
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/configtree.h
+V 85
+/svnroot/openpli/!svn/ver/53/trunk/cdk/apps/tuxbox/plugins/enigma/plimgr/configtree.h
 END
 flashtool.c
 K 25
