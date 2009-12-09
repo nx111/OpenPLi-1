@@ -1946,7 +1946,7 @@ int eZapMain::doHideInfobar()
 
 int eZapMain::testOnline()
 {
-	eString hostnames="www.g.cn";
+	eString hostnames="www.google.com";
 	eConfig::getInstance()->getKey("/elitedvb/network/host4test",hostnames);
 
 	std::string::size_type last = 0;
@@ -1958,7 +1958,7 @@ int eZapMain::testOnline()
 		eString host=hostnames.substr(last,index-last);
 
 		if(index>last){
-			ret=system(("ping -c 1 -w 500 "+host+" >/dev/null 2>&1 ").c_str());
+			ret=system(("ping -c 2 "+host+" >/dev/null 2>&1 ").c_str());
 			if(!ret)break;
 		}
 		last=index+1;
@@ -1967,13 +1967,12 @@ int eZapMain::testOnline()
 	
 	if (index==std::string::npos){
 		eString host=hostnames.substr(last,hostnames.length()-last);
-		ret=system(("ping -c 1 -w 500 "+host+" >/dev/null 2>&1 ").c_str());
+		ret=system(("ping -c 2 "+host+" >/dev/null 2>&1 ").c_str());
 	}
 
-	if(ret<0 || ret ==127)result=0;
-	else 
-		ret=1;
-	if(ret){
+	if(!ret)result=1;
+	else result=0;
+	if(result){
 		Online->show();
 		Offline->hide();
 		}
@@ -2001,7 +2000,7 @@ eZapMain::eZapMain()
 	,timeout(eApp)
 	,clocktimer(eApp), messagetimeout(eApp), progresstimer(eApp)
 	,volumeTimer(eApp), recStatusBlink(eApp), doubleklickTimer(eApp)
-	,unusedTimer(eApp), permanentTimeshiftTimer(eApp), epgNowNextTimer(eApp),epgReadyTimer(eApp), currentSelectedUserBouquet(0), timeshift(0)
+	,unusedTimer(eApp), permanentTimeshiftTimer(eApp), epgNowNextTimer(eApp),epgReadyTimer(eApp),syncTimeTimer(eApp), currentSelectedUserBouquet(0), timeshift(0)
 	,standby_nomenu(0)
 	,skipping(0)
 	,state(0)
@@ -2371,6 +2370,8 @@ void eZapMain::init_main()
 
 	CONNECT(progresstimer.timeout, eZapMain::updateProgress);
 	CONNECT(epgReadyTimer.timeout,eZapMain::EPGReady);
+	CONNECT(syncTimeTimer.timeout,eZapMain::syncTime);
+
 
 	CONNECT(eDVB::getInstance()->timeUpdated, eZapMain::clockUpdate);
 	CONNECT(eAVSwitch::getInstance()->volumeChanged, eZapMain::updateVolume);
@@ -2404,14 +2405,6 @@ void eZapMain::init_main()
 
 	actual_eventDisplay=0;
 
-	testOnline();
-
-	int useSystemTime=0,autoSetTime=0;
-	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", useSystemTime );
-	eConfig::getInstance()->getKey("/elitedvb/extra/autoSetTime", autoSetTime );
-
-	if(useSystemTime && autoSetTime && isOnline)
-		syncSystemTime();
 
 	clockUpdate();
 
@@ -2507,8 +2500,15 @@ void eZapMain::init_main()
 			playService( modeLast[mode].current() ,0 );  // then play the last service
 	}
 	message_notifier.send(eZapMain::messageCheckVCR);
-
 	epgReadyTimer.start(1000*10);
+
+	testOnline();
+	int useSystemTime=0,autoSetTime=0;
+	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", useSystemTime );
+	eConfig::getInstance()->getKey("/elitedvb/extra/autoSetTime", autoSetTime );
+
+	if(useSystemTime && autoSetTime && isOnline)
+		syncTimeTimer.start(1000);
 	
 }
 
@@ -2932,7 +2932,7 @@ void eZapMain::epgNowNextRefresh()
 
 int eZapMain::setEPGNowNext()
 {
-	int ret = -1;
+/*	int ret = -1;
 
 	eServiceReferenceDVB &ref = (eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
 
@@ -2963,6 +2963,32 @@ int eZapMain::setEPGNowNext()
 		}
 	}
 
+	epgNowNextTimer.startLongTimer(30);
+	return ret;
+*/
+
+	int ret = -1;
+
+	eServiceReferenceDVB &ref = (eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
+	EITEvent *e=eEPGCache::getInstance()->lookupEvent((const eServiceReferenceDVB&)ref);
+	if (e)
+	{
+		cur_event_id = e->event_id;
+		cur_start = e->start_time;
+		cur_duration = e->duration;
+		clockUpdate();
+		setNow(e);
+		ret = 0;
+		
+		time_t t = e->start_time+e->duration+61;
+		delete e;
+		e = eEPGCache::getInstance()->lookupEvent((const eServiceReferenceDVB&)ref,t);
+		if(e)
+		{
+			setNext(e);
+			delete e;
+		}
+	}
 	epgNowNextTimer.startLongTimer(30);
 	return ret;
 }
@@ -6560,6 +6586,21 @@ void eZapMain::showEPGList(eServiceReferenceDVB service)
 	}
 }
 
+void eZapMain::syncTime()
+{
+	static int TDTstarted=0;
+	int ret=syncSystemTime();
+	if(!ret){
+		if(!TDTstarted){
+			eDVBServiceController *sapi = eDVB::getInstance()->getServiceAPI();
+			if ( sapi )
+				sapi->startTDT();
+			}
+		syncTimeTimer.start(1000*5);
+		}
+	else
+		syncTimeTimer.stop();	
+}
 
 int eZapMain::syncSystemTime()
 {
@@ -6571,7 +6612,8 @@ int eZapMain::syncSystemTime()
 	eString rdatecmd="rdate -s ";
 	time_t t0=time(0);
 
-	if(timeCorrectting)return 0;
+	//if(timeCorrectting)return 0;
+	while(timeCorrectting)sleep(1);
 	timeCorrectting=1;
 	
 	std::string::size_type last = 0;
@@ -6589,6 +6631,7 @@ int eZapMain::syncSystemTime()
 		}
 		last=index+1;
 		index=hostnames.find_first_of(delim,last);
+		sleep(2);
 	}
 	
 	if (index==std::string::npos){
@@ -6597,22 +6640,26 @@ int eZapMain::syncSystemTime()
 		ret=system((rdatecmd+host).c_str());
 	}
 
-	if (ret || time(0)<96656000L){    //failed
+	if (ret || time(0)<96656000L || ret<0){    //failed
 		timeCorrectting=0;
+		timeAdjusted=-1;
 		return 0;
 	}
 
 	time_t t1=time(0);
 
 	dvb.time_difference+=t1-t0;
-
+	eRCInput::getInstance()->lock();
 	for (ePtrList<eMainloop>::iterator it(eMainloop::existing_loops)
 		;it != eMainloop::existing_loops.end(); ++it)
 		it->setTimerOffset(dvb.time_difference);
-
+	eRCInput::getInstance()->unlock();
 	dvb.time_difference= 1;
 	/*emit*/ dvb.timeUpdated();
 
+	//time difference more than 30 minutes then reload memstore epg
+	if((t1-t0)>30*60*60)
+		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::reloadStore));
 	timeCorrectting=0;
 	
 	timeAdjusted=1;

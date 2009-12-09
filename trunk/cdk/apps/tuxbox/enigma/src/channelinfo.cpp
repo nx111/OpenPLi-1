@@ -258,7 +258,7 @@ void eChannelInfo::ParseEITInfo(EITEvent *e)
 		}
 		else{
 			p_event->setPerc(perc);
-			cname.hide();
+			cname.show();
 			ctime.show();
 			p_event->show();
 			copos.show();
@@ -386,6 +386,8 @@ void eChannelInfo::update( const eServiceReferenceDVB& service )
 	{
 		current = service;
 		DescriptionForEPGSearch = ""; // EPG search
+		eServiceDVB* pservice( eDVB::getInstance()->settings->getTransponders()->searchService( service ) );
+		servicename=pservice->service_name;
 		getServiceInfo(current);
 	}
 }
@@ -457,7 +459,7 @@ void eChannelInfo::changeSize()
 			clientrect=crect;
 
 		int dx=clientrect.width()/8;
-		int dy=clientrect.height()/3;
+		int dy=clientrect.height()/4;
 
          	if(mode==modePLI){
 			p_event->hide();
@@ -483,17 +485,20 @@ void eChannelInfo::changeSize()
 			cscrambled.resize( eSize(25,15) );
 		} else{
 
-			cname.hide();			
-			ctime.move( ePoint(10,0) );
+			cname.move( ePoint( 4, 0 ) );
+			cname.resize( eSize( dx*8-10, dy ));
+			cname.show();
+		
+			ctime.move( ePoint(10,dy) );
 			ctime.resize( eSize(120, dy ));
-			cntime.move( ePoint(240,0) );
+			cntime.move( ePoint(240,dy) );
 			cntime.resize( eSize(80, dy ));
 			cntime.show();
 
-			cdescr.move( ePoint(10, dy) );
+			cdescr.move( ePoint(10, dy+dy) );
 			cdescr.resize( eSize( clientrect.width() - 20, dy+dy-5) );
 
-			copos.move( ePoint( clientrect.width() - (dx+10), 0) );
+			copos.move( ePoint( clientrect.width() - (dx+10), dy) );
 			copos.resize( eSize(dx + 4, dy) );
 
 			cdolby.hide();
@@ -510,12 +515,11 @@ int eChannelInfo::eventHandler(const eWidgetEvent &event)
 	switch (event.type)
 	{
 		case eWidgetEvent::changedSize:
-		{
 			changeSize();
 			break;
-    		}
+	
 		default:
-		break;
+			break;
 	}
 	return eDecoWidget::eventHandler(event);
 }

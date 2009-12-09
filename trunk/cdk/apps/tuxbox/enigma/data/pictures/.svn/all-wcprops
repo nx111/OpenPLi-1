@@ -81,6 +81,12 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/folder-fs8.png
 END
+check-fs8.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/check-fs8.png
+END
 padlock-fs8.png
 K 25
 svn:wc:ra_dav:version-url
@@ -92,12 +98,6 @@ K 25
 svn:wc:ra_dav:version-url
 V 93
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/newfound_small-fs8.png
-END
-check-fs8.png
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/check-fs8.png
 END
 format_on_small.png
 K 25

@@ -377,7 +377,7 @@ private:
 		*ButtonGreenEn, *ButtonGreenDis,
 		*ButtonYellowEn, *ButtonYellowDis,
 		*ButtonBlueEn, *ButtonBlueDis,
-		*DolbyOn, *DolbyOff, *CryptOn, *CryptOff, *WideOn, *WideOff, *VtxtOn, *VtxtOff, *AudioOn, *AudioOff, *recstatus, *recchannel,
+		*DolbyOn, *DolbyOff, *CryptOn, *CryptOff, *WideOn, *WideOff, *VtxtOn, *VtxtOff, *AudioOn, *AudioOff,*Online,*Offline, *recstatus, *recchannel,
 		mute, volume,
 		*IrdetoEcm, *SecaEcm, *ViaEcm, *CWEcm, *NagraEcm, *NDSEcm, *ConaxEcm, *BetaEcm, *PowerVuEcm, *DreamCrEcm, *RusCrEcm, *IceCrEcm, *CodiCrEcm,
 		*IrdetoNo, *SecaNo, *ViaNo, *CWNo, *NagraNo, *NDSNo, *ConaxNo, *BetaNo, *PowerVuNo, *DreamCrNo, *RusCrNo, *IceCrNo, *CodiCrNo,
@@ -429,7 +429,7 @@ public:	eFixedMessagePump<eEPGCache::Message> epg_messages;
 private:
 	eTimer timeout, clocktimer, messagetimeout,
 					progresstimer, volumeTimer, recStatusBlink,
-					doubleklickTimer, unusedTimer, permanentTimeshiftTimer, epgNowNextTimer,epgReadyTimer;
+					doubleklickTimer, unusedTimer, permanentTimeshiftTimer, epgNowNextTimer,epgReadyTimer,syncTimeTimer;
 /* SNR,AGC,BER DISPLAY */
 	eTimer *snrTimer;
 /* SNR,AGC,BER DISPLAY */
@@ -483,10 +483,12 @@ private:
 	int isCrypted;
 	int showOSDOnEITUpdate;
 	int serviceFlags;
+	int isOnline;
 	int isSeekable() const { return serviceFlags & eServiceHandler::flagIsSeekable; }
 //#ifndef DISABLE_LCD
 	eZapLCD lcdmain;
 //#endif
+	int testOnline();
 	void eraseBackground(gPainter *, const eRect &where);
 	void setEIT(EIT *);
 	void epgNowNextRefresh();
@@ -650,6 +652,7 @@ private:
 	void EPGOrganiseRequest();
 
 	void EPGReady();
+	void syncTime();
 
 public:
 	void deleteFile(eServiceReference);

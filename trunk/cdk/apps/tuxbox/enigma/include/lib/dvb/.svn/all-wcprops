@@ -171,17 +171,17 @@ svn:wc:ra_dav:version-url
 V 90
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/dvb/serviceplaylist.h
 END
-freesat_tables.h
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/include/lib/dvb/freesat_tables.h
-END
 Makefile.am
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/dvb/Makefile.am
+END
+freesat_tables.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/include/lib/dvb/freesat_tables.h
 END
 servicecache.h
 K 25

@@ -700,7 +700,9 @@ void eDVBServiceController::TDTready(int error)
 
 	int usesystemtime = 0;
 	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", usesystemtime);
-	if ((usesystemtime && eZapMain::getInstance()->timeAdjusted) ||(eZapMain::getInstance()->timeCorrectting)) return;
+	if (usesystemtime && (eZapMain::getInstance()->timeAdjusted==1)) return;
+	while(eZapMain::getInstance()->timeCorrectting)
+		sleep(1);
 
 	eZapMain::getInstance()->timeCorrectting=1;
 	if (!error && transponder)

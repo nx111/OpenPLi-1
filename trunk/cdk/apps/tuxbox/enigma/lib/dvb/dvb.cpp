@@ -1244,7 +1244,7 @@ void eTransponderList::gotPMT(int err)
 						service.service_name=eString().sprintf("%d%c",
 							t->satellite.frequency/1000,
 							t->satellite.polarisation ? 'V' : 'H');
-						service.service_provider=eString().sprintf("%d %d.%d?c",
+						service.service_provider=eString().sprintf("%d %d.%d°%c",
 							t->satellite.frequency/1000,
 							abs(t->satellite.orbital_position)/10,
 							abs(t->satellite.orbital_position)%10,

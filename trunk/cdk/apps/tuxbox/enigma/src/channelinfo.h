@@ -12,7 +12,7 @@ class eChannelInfo : public eDecoWidget
 {	
 	eLabel ctime, cname, copos, cdescr, cdolby, cstereo, cformat, cscrambled,cntime;
 	eProgress *p_event;
-	eString name, descr, genre, starttime,endtime,nowtime;
+	eString name, descr, genre, starttime,endtime,nowtime,servicename;
 	int cflags;
 	int perc,mode;
 
@@ -42,6 +42,7 @@ public:
 		modePLI=0,
 		modeGemini=1
 	};
+
 
 	eChannelInfo( eWidget*, const char* deco="eStatusBar" );
 	~eChannelInfo()

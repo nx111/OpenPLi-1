@@ -21,17 +21,17 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/lcdcirc.c
 END
-AUTHORS
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/AUTHORS
-END
 bcdclock.c
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/bcdclock.c
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/AUTHORS
 END
 observe.c
 K 25
@@ -39,11 +39,11 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/observe.c
 END
-sinus.h
+drunken_dennis.c
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/sinus.h
+V 86
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/drunken_dennis.c
 END
 ChangeLog
 K 25
@@ -51,23 +51,11 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/ChangeLog
 END
-drunken_dennis.c
+sinus.h
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/drunken_dennis.c
-END
-sin_create.c
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/sin_create.c
-END
-README
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/README
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/sinus.h
 END
 ani.h
 K 25
@@ -75,11 +63,23 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/ani.h
 END
-myclockasy.c
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/README
+END
+sin_create.c
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/myclockasy.c
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/sin_create.c
+END
+bmp_show.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/bmp_show.c
 END
 bmp.c
 K 25
@@ -87,11 +87,11 @@ svn:wc:ra_dav:version-url
 V 75
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/bmp.c
 END
-bmp_show.c
+myclockasy.c
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/bmp_show.c
+V 82
+/svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/funstuff/lcd-savers/myclockasy.c
 END
 lcdstars.c
 K 25

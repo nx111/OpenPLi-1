@@ -549,6 +549,7 @@ eString GB2312ToUTF8(const char *szIn, int len)
 			int k=UnicodeToUTF8(code,szOut+t);
 			t+=k;
 			i++;
+
 			}
 		else if(cjktmp[0]==0xA9 && cjktmp[1]==0x73){
 			szOut[t++]=':';
@@ -568,7 +569,7 @@ eString Big5ToUTF8(const char *szIn, int len)
 	unsigned long code=0;
 	int t=0;
 
-	int big52gb;
+	int big52gb=1;
 	eConfig::getInstance()->getKey("/elitedvb/system/convertBig5ToGB2312", big52gb);
 	for(int i=0;i<len;i++){
 			cjktmp[0]=szIn[i];
