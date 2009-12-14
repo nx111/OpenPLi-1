@@ -314,7 +314,8 @@ void eChannelInfo::getServiceInfo( const eServiceReferenceDVB& service )
 		}
 		else  // we parse the eit...
 		{
-			cname.setText(_("no data for this service available"));
+			//cname.setText(_("no data for this service available"));
+			cname.setText("");
 			eDVBServiceController *sapi=eDVB::getInstance()->getServiceAPI();
 			if (!sapi)
 				return;
@@ -473,7 +474,7 @@ void eChannelInfo::changeSize()
 			cntime.hide();
 
 			cdescr.move( ePoint(dx + 4, dy) );
-			cdescr.resize( eSize( clientrect.width() - (dx*2 + 4), dy+dy-5) );
+			cdescr.resize( eSize( clientrect.width() - (dx*2 + 4), dy+dy-2) );
 
 			copos.move( ePoint( clientrect.width() - (dx+10), 0) );
 			copos.resize( eSize(dx + 4, dy) );
@@ -485,20 +486,23 @@ void eChannelInfo::changeSize()
 			cscrambled.resize( eSize(25,15) );
 		} else{
 
-			cname.move( ePoint( 4, 0 ) );
-			cname.resize( eSize( dx*8-10, dy ));
+			cname.move( ePoint( 10, 4) );
+			cname.resize( eSize( dx*7-10, dy ));
 			cname.show();
 		
-			ctime.move( ePoint(10,dy) );
-			ctime.resize( eSize(120, dy ));
-			cntime.move( ePoint(240,dy) );
-			cntime.resize( eSize(80, dy ));
+			ctime.move( ePoint(50,dy) );
+			ctime.resize( eSize(120, dy));
+
+			p_event->move(ePoint(180,dy+dy/2-p_event->getSize().height()/2));
+
+			cntime.move( ePoint(280,dy) );
+			cntime.resize( eSize(80, dy));
 			cntime.show();
 
-			cdescr.move( ePoint(10, dy+dy) );
-			cdescr.resize( eSize( clientrect.width() - 20, dy+dy-5) );
+			cdescr.move( ePoint(10, dy+dy-2) );
+			cdescr.resize( eSize( clientrect.width() - 20, dy+dy-1) );
 
-			copos.move( ePoint( clientrect.width() - (dx+10), dy) );
+			copos.move( ePoint( clientrect.width() - (dx+10), 4) );
 			copos.resize( eSize(dx + 4, dy) );
 
 			cdolby.hide();

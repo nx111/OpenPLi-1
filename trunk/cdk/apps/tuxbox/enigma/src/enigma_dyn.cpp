@@ -236,9 +236,9 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	eString command = opt["command"];
 	eString result;
 	if (eSystemInfo::getInstance()->canShutdown())
-		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,saveepg,timeupdate)";
+		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netstat)";
 	else
-		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,saveepg,timeupdate)";
+		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netstat)";
 	if (command == "shutdown")
 	{
 		if (eSystemInfo::getInstance()->canShutdown())
@@ -301,13 +301,24 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::save));
 		result = "EPGCache saveed...";
 	}
-	else 
-	if (command == "timeupdate")
+	else
+	if (command == "adjusttime")
 	{
-		eZapMain::getInstance()->syncSystemTime();
-		result = "time updated...";
+		long long diff=0;
+		sscanf(opt["timediff"].c_str(),"%Ld",&diff);
+		if(diff)
+			eZapMain::getInstance()->adjustTime(diff);
+		eDebug("adjusttime:input=%s timediff=%Ld",opt["timediff"].c_str(),diff);
+		result="time adjusted...";
 	}
-
+	else 
+	if (command == "netstat")
+	{
+		eString sonline= opt["online"];
+		int online=(sonline=="1")?1:0;
+		eZapMain::getInstance()->netstat(online);
+		result = "network status updated...";
+	}
 	return "<html>" + eString(CHARSETMETA) + "<head><title>" + command + "</title></head><body>" + result + "</body></html>";
 }
 

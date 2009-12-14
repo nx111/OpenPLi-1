@@ -59,16 +59,16 @@ eString& eString::upper()
 				*it -= 32;
 			break;
 
-			case 'ä' :
-				*it = 'Ä';
+			case 'Ã¤' :
+				*it = 'Ã„';
 			break;
 			
-			case 'ü' :
-				*it = 'Ü';
+			case 'Ã¼' :
+				*it = 'Ãœ';
 			break;
 			
-			case 'ö' :
-				*it = 'Ö';
+			case 'Ã¶' :
+				*it = 'Ã–';
 			break;
 		}
 
@@ -119,6 +119,10 @@ int parseEncoding(char *encoding)
 		return GB2312_ENCODING;
 	else if (strcasecmp(encoding, "big5") == 0)
 		return BIG5_ENCODING;
+	else if (strncasecmp(encoding, "UTF16BE",7)==0)
+		return UTF16BE_ENCODING;	
+	else if (strncasecmp(encoding, "UTF16LE",7)==0)
+		return UTF16LE_ENCODING;	
 	else
 	{
 		int enc;
@@ -653,8 +657,10 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			break;
 		case 0x16:
 			encode=UNICODE_ENCODING;
+		case 0x17:
+			encode=UTF16LE_ENCODING;
 		case 0xD ... 0xF:
-		case 0x17 ... 0x1F:
+		case 0x18 ... 0x1F:
 			eDebug("reserved %d", data[0]);
 			++i;
 			break;
@@ -682,29 +688,59 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 
 	
 			if ( encode==VIDEOTEXSUPPL_ENCODING && (i+1) < len && tsidonid &&
-				eString::TransponderUseTwoCharMapping.find(tsidonid) != eString::TransponderUseTwoCharMapping.end() &&
-			(code=doVideoTexSuppl(data[i], data[i+1])) )
+				eString::TransponderUseTwoCharMapping.find(tsidonid) != eString::TransponderUseTwoCharMapping.end() &&	(code=doVideoTexSuppl(data[i], data[i+1])) )
 				i++;
-
-			if (encode==UNICODE_ENCODING){
+			else if (encode==UNICODE_ENCODING){
 				unsigned long code1=data[i];
 				unsigned long code2=data[i+1];
 				code=(code2<<8)|code1;
 				i++;
 			}
-
-			if (!code)
-				code=recode(data[i], encode);
-			if (!code){
-				i++;
-				continue;
+			else if(encode==UTF16BE_ENCODING){
+				if((i+2)>len)return eString("");
+				unsigned long w1=((unsigned long)(data[i])<<8) |((unsigned long)(data[i+1]));
+				if(w1<0xD800UL || w1>0xDFFFUL){
+					code=w1;
+					i+=2;
 				}
-		
-			if  (encode==0 || encode==UTF8_ENCODING){ 	// UTF-8 or default
+				else if(w1>0xDBFFUL)
+					return eString("");
+				else if((i+4)<len){
+					unsigned long w2=((unsigned long)(data[i+2])<<8) |((unsigned long)(data[i+3]));
+					if(w2<0xDC00UL || w2>0xDFFFUL)return eString("");
+					code=0x10000UL + ((w1 & 0x03FFUL)<<10 ) | (w2 & 0x03FFUL);
+					i+=4;
+				}
+				else 
+					return eString("");
+			}
+			else if(encode==UTF16LE_ENCODING){
+				if((i+2)>len)return eString("");
+				unsigned long w1=((unsigned long)(data[i+1])<<8) |((unsigned long)(data[i]));
+				if(w1<0xD800UL || w1>0xDFFFUL){
+					code=w1;
+					i+=2;
+				}
+				else if(w1>0xDBFFUL)
+					return eString("");
+				else if((i+4)<len){
+					unsigned long w2=((unsigned long)(data[i+3])<<8) |((unsigned long)(data[i+2]));
+					if(w2<0xDC00UL || w2>0xDFFFUL)return eString("");
+					code=0x10000UL + ((w1 & 0x03FFUL)<<10 ) | (w2 & 0x03FFUL);
+					i+=4;
+				}
+				else
+					return eString("");
+			}
+			else if  (encode==0 || encode==UTF8_ENCODING){ 	// UTF-8 or default
 				res[t++]=data[i++];
 				continue;
 			}
+			else
+				code=recode(data[i++], encode);
 
+			if (!code)
+				continue;
 	
 			if (code < 0x80){ // identity ascii <-> utf8 mapping
 				res[t++]=char(code);
@@ -904,4 +940,3 @@ int isUTF8(const eString &string)
 	}
 	return 1; // can be UTF8 (or pure ASCII, at least no non-UTF-8 8bit characters)
 }
-

@@ -422,14 +422,14 @@ private:
 	eFixedMessagePump<eMMIMessage> mmi_messages;
 //#endif
 public:	eFixedMessagePump<eEPGCache::Message> epg_messages;
-	int timeAdjusted;
 	int timeCorrectting;
+	bool timeAdjusted;
 	eSize lastvsize;
 
 private:
 	eTimer timeout, clocktimer, messagetimeout,
 					progresstimer, volumeTimer, recStatusBlink,
-					doubleklickTimer, unusedTimer, permanentTimeshiftTimer, epgNowNextTimer,epgReadyTimer,syncTimeTimer;
+					doubleklickTimer, unusedTimer, permanentTimeshiftTimer, epgNowNextTimer,epgReadyTimer;
 /* SNR,AGC,BER DISPLAY */
 	eTimer *snrTimer;
 /* SNR,AGC,BER DISPLAY */
@@ -488,7 +488,6 @@ private:
 //#ifndef DISABLE_LCD
 	eZapLCD lcdmain;
 //#endif
-	int testOnline();
 	void eraseBackground(gPainter *, const eRect &where);
 	void setEIT(EIT *);
 	void epgNowNextRefresh();
@@ -512,6 +511,7 @@ public:
 	void repeatSkip(int dir);
 	void stopSkip(int dir);
 	void endSkip(void);
+	void timeupdate();
 	void skipLoop();
 	enum { skipForward, skipReverse };
 	int isRecording() {return state & stateRecording;}
@@ -652,7 +652,6 @@ private:
 	void EPGOrganiseRequest();
 
 	void EPGReady();
-	void syncTime();
 
 public:
 	void deleteFile(eServiceReference);
@@ -667,7 +666,9 @@ public:
 	void createEmptyBouquet(int mode);
 	void copyProviderToBouquets(eServiceSelector *);
 	void toggleScart( int state );
-	int syncSystemTime();
+	void adjustTime(long timediff=0);
+	void netstat(int online=-1);
+
 	void postMessage(const eZapMessage &message, int clear=0);
 	void gotMessage(const int &);
 	void gotEPGMessage(const eEPGCache::Message&);

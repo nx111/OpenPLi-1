@@ -698,12 +698,18 @@ void eDVBServiceController::TDTready(int error)
 	// receive new TDT every 60 minutes
 	updateTDTTimer.start(60*60*1000,true);
 
+	if(eZapMain::getInstance()->timeCorrectting)return;
+	if(!access("/tmp/.timeCorrectting",F_OK))return;
+
 	int usesystemtime = 0;
 	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", usesystemtime);
-	if (usesystemtime && (eZapMain::getInstance()->timeAdjusted==1)) return;
-	while(eZapMain::getInstance()->timeCorrectting)
-		sleep(1);
+	if (usesystemtime && eZapMain::getInstance()->timeAdjusted) return;
+	if (usesystemtime && 
+		(eSystemInfo::getInstance()->getHwType() == eSystemInfo::DM7020 ||	
+		 eSystemInfo::getInstance()->getHwType() == eSystemInfo::DM7000
+		))return;
 
+	system("touch /tmp/.timeCorrectting");
 	eZapMain::getInstance()->timeCorrectting=1;
 	if (!error && transponder)
 	{
@@ -866,7 +872,7 @@ void eDVBServiceController::TDTready(int error)
 		else
 			eDebug("[TIME] strange: RTC not ready :(");
 	}
-	eZapMain::getInstance()->timeCorrectting=0;
+	system("rm -f /tmp/.timeCorrectting");
 }
 
 void eDVBServiceController::scanPMT( PMT *pmt )

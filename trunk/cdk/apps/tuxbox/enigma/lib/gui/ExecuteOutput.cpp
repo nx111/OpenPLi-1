@@ -32,17 +32,12 @@ ExecuteOutput::ExecuteOutput(const eString &title, const eString &target)
    unsigned int v_tvsystem;
    
    eConfig::getInstance()->getKey("/elitedvb/video/tvsystem", v_tvsystem);
-   int deltaY = (v_tvsystem == 2) ? -48 : 0;
-	eRCInput::getInstance()->lock();
+
+   eRCInput::getInstance()->lock();
    setText(title);
 
    resize(eSize(560, 390));
    move(ePoint(80,50));
-
-//   cresize(eSize(560, 390));
-//   cmove(ePoint(80,50));
-
-//   valign();
 
    setListboxFont(eSkin::getActive()->queryFont("global.nonprop.small"));
 

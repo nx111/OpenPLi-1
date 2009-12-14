@@ -13,6 +13,8 @@
 #define BIG5_ENCODING			0x14
 #define UTF8_ENCODING			0x15
 #define UNICODE_ENCODING		0x16
+#define UTF16BE_ENCODING		0x17
+#define UTF16LE_ENCODING		0x18
 #define AUTO_ENCODING			0x1F	//use for read epg.dat encode,not use in convertDVBUTF8
 
 class eString : public std::string
