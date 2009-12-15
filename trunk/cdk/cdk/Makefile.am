@@ -12,11 +12,14 @@ BUILDENV := \
 	PKG_CONFIG_PATH=$(targetprefix)/lib/pkgconfig
 
 if MAXVAR
-cramfssize = 1024
-squashfssize = 4194304
+#cramfssize = 1024
+#squashfssize = 4194304
+cramfssize = 1152
+squashfssize = 6291456
 else
 cramfssize = 1152
-squashfssize = 5111808
+#squashfssize = 5111808
+squashfssize = 6291456
 endif
 
 if LIBTOOLIZEVERSION_1
