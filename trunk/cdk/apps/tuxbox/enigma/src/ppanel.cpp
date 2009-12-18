@@ -663,30 +663,29 @@ void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
    {
       // Execute script before
       rc = preActions();
-
-      ExecuteOutput dlg(getText(), target);
-      parentdlg.hide();
-      dlg.show();
-      dlg.exec();
-      dlg.hide();
-      parentdlg.show();
-
+	  if(target.length()){
+		  ExecuteOutput dlg(getText(), target);
+		  parentdlg.hide();
+		  dlg.show();
+		  dlg.exec();
+		  dlg.hide();
+		  parentdlg.show();
+	  }
       //set checkedbox
       if(checked.length()){
-	      bool chked=systemFixed(checked.c_str());
-	      if(!chked){
-	      	  if(parentdlg.checkbox == "radio"){
+	      bool chked=!systemFixed(checked.c_str());
+      	  if(parentdlg.checkbox == "radio" && chked){
 		       for(std::list<eListBoxEntryExecute*>::iterator i(parentdlg.items.begin());i!=parentdlg.items.end();i++)
-				if((*i)->getChecked())
-				{
-					(*i)->setChecked(false);
-					int pos=listbox->getPos(*i);
-					if(pos>=0)listbox->invalidateEntry(pos);
-					
-				}
-			}
-		setChecked(true);
-	      }
+					if((*i)->getChecked())
+						{
+							(*i)->setChecked(false);
+							int pos=listbox->getPos(*i);
+							if(pos>=0)listbox->invalidateEntry(pos);
+						}
+				setChecked(true);
+		  }
+		  else if(parentdlg.checkbox == "check")
+					setChecked(chked);
       }
  //  eDebug("PPanel:checked=%s chked=%d parentdlg.checkbox=%s",checked.c_str(),chked,parentdlg.checkbox.c_str());
       // Execute script after
@@ -1397,7 +1396,8 @@ XMLTreeNode* PPanel::loadFile(FILE *fh)
 	}                                                                   
 	else                                                                
 	{                                                                   
-	   node = directory->RootNode();                                 
+	   node = directory->RootNode();    
+	   checkbox=node->GetAttributeValue("checkbox");                             
 	}                                                                   
 
    return node;
@@ -1460,8 +1460,8 @@ void PPanel::loadItems(XMLTreeNode *category)
          
          eString helptext;   
          const char *helptmp = r->GetAttributeValue("helptext");
-         helptext = helptmp ? helptmp : _("Please select an item");
-
+         helptext = helptmp ? helptmp : name;
+	
          if(!strcmp(r->GetType(), "category") ||
 				!strcmp(r->GetType(), "ppanel"))
 			   // category is basically the same as ppanel

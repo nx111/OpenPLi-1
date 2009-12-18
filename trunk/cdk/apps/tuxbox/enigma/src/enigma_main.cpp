@@ -2809,35 +2809,24 @@ void eZapMain::setNext(EITEvent *event)
 
 void eZapMain::setEIT(EIT *eit)
 {
-	if (eit)
+	bool EPGNowNextSetted=(0<=setEPGNowNext());
+	if (eit && !EPGNowNextSetted)
 	{
 		int p = 0;
 		eServiceReferenceDVB &ref=(eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
-		EITEvent *enow= eEPGCache::getInstance()->lookupEvent(ref);
-		EITEvent *enext= eEPGCache::getInstance()->lookupEvent(ref,enow->start_time+enow->duration+60);
 		for (ePtrList<EITEvent>::iterator i(eit->events); i != eit->events.end(); ++i,p++)
 		{
 			EITEvent *event=*i;
-			bool IgnoreIt=false;
 
 //			eDebug("event->running_status=%d, p=%d", event->running_status, p );
 			if ((event->running_status>=2) || ((!p) && (!event->running_status)))
 			{
 //				eDebug("set cur_event_id to %d", event->event_id);
 
-				time_t now = time(0) + eDVB::getInstance()->time_difference;
-				if(!p && (event->duration + event->start_time)<now)IgnoreIt=true;
-				if(!p && enow && event->start_time <= enow->start_time)IgnoreIt=true;
-
-				if(p && enext && event->start_time > enext->start_time)IgnoreIt=true;
-				if(p && enext && (event->duration > enext->duration))IgnoreIt=true;
-				if(!IgnoreIt)
-				{
-					cur_event_id=event->event_id;
-					cur_start=event->start_time;
-					cur_duration=event->duration;
-					clockUpdate();
-				}
+				cur_event_id=event->event_id;
+				cur_start=event->start_time;
+				cur_duration=event->duration;
+				clockUpdate();
 
 				int cnt=0;
 				for (ePtrList<Descriptor>::iterator d(event->descriptor); d != event->descriptor.end(); ++d)
@@ -2873,7 +2862,6 @@ void eZapMain::setEIT(EIT *eit)
 				}
 			}
 
-			if(!IgnoreIt)
 			switch (p)
 			{
 			case 0:
@@ -2896,7 +2884,7 @@ void eZapMain::setEIT(EIT *eit)
 	{
 		/* we have no EIT, try to use EPG instead */
 		validEITReceived = false;
-		if (setEPGNowNext() < 0)
+		if (!EPGNowNextSetted)
 		{
 			/* no EPG either, clear 'now' info */
 			setNow(NULL);
@@ -6576,7 +6564,13 @@ void eZapMain::showEPGList(eServiceReferenceDVB service)
 
 void eZapMain::adjustTime(long timediff)
 {
-	if ((timediff>-10 && timediff<10) || timeCorrectting)return;
+	if (timeCorrectting)return;
+	if(timediff>-10 && timediff<10){
+		timeAdjusted=true;
+		timeCorrectting=0;
+		system("rm -f /tmp/.timeCorrectting");
+		return;
+	}
 
 	timeCorrectting=1;
 	eDVB &dvb=*eDVB::getInstance();
@@ -6602,6 +6596,7 @@ void eZapMain::adjustTime(long timediff)
 
 	timeAdjusted=true;
 	timeCorrectting=0;
+	system("rm -f /tmp/.timeCorrectting");
 }
 
 void eZapMain::EPGReady()
