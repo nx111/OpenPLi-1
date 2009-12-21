@@ -448,28 +448,28 @@ const eString &eListBoxEntryService::redraw(gPainter *rc, const eRect &rect, gCo
 #endif
 									}
 								}
-							curEventId = e->event_id;
+								curEventId = e->event_id;
 
-							descrXOffs = newNameXOffs+namePara->getBoundBox().width();
-							if ( service.isLocked() && locked && pinCheck::getInstance()->getParentalEnabled() )
-								descrXOffs += locked->x;
-							if (numPara)
-								descrXOffs += numPara->getBoundBox().height();
-							if (descrPara)
-								descrPara->destroy();
-							if(percentprogress){
-								descrPara = new eTextPara( eRect( 0, 0, rect.width()-descrXOffs, rect.height()));
-								descrPara->setFont( descrFont );
-								eString nsdesc="(";
-								if(perc>=0)nsdesc+=eString().sprintf("%d%%",100-perc);
-								nsdesc+=" "+sdescr+")";
-								descrPara->renderString(nsdesc);
-							}else{
-								descrPara = new eTextPara( eRect( 0, 0, rect.width()-52-descrXOffs,rect.height()));
-								descrPara->setFont( descrFont );
-								descrPara->renderString( sdescr);
-							}
-							descrYOffs = ((rect.height()-descrPara->getBoundBox().height())/2)-descrPara->getBoundBox().top();
+								descrXOffs = newNameXOffs+namePara->getBoundBox().width();
+								if ( service.isLocked() && locked && pinCheck::getInstance()->getParentalEnabled() )
+									descrXOffs += locked->x;
+								if (numPara)
+									descrXOffs += numPara->getBoundBox().height();
+								if (descrPara)
+									descrPara->destroy();
+								if(percentprogress){
+									descrPara = new eTextPara( eRect( 0, 0, rect.width()-descrXOffs, rect.height()));
+									descrPara->setFont( descrFont );
+									eString nsdesc="(";
+									if(perc>=0)nsdesc+=eString().sprintf("%d%%",100-perc);
+									nsdesc+=" "+sdescr+")";
+									descrPara->renderString(nsdesc);
+								}else{
+									descrPara = new eTextPara( eRect( 0, 0, rect.width()-52-descrXOffs,rect.height()));
+									descrPara->setFont( descrFont );
+									descrPara->renderString( sdescr);
+								}
+								descrYOffs = ((rect.height() - descrPara->getBoundBox().height()) / 2 ) - descrPara->getBoundBox().top();
 						}
 						delete e;
 					}
@@ -1202,7 +1202,8 @@ void eServiceSelector::showRecordingInfo(eString path)
 
 void eServiceSelector::forEachServiceRef( Signal1<void,const eServiceReference&> callback, bool fromBeg )
 {
-	eListBoxEntryService *safe = services->getCurrent(),*p, *beg;
+	eListBoxEntryService *safe = services->getCurrent(),
+											 *p, *beg;
 	if ( fromBeg )
 	{
 		services->moveSelection( eListBoxBase::dirFirst );
@@ -1930,7 +1931,7 @@ void eServiceSelector::setStyle(int newStyle, bool force)
 		if ( services->isVisible() )
 			setFocus(services);
 		setKeyDescriptions();
-	};
+	}
 
 	int percentprogress=0;
 	eConfig::getInstance()->getKey("/ezap/osd/PercentProgress", percentprogress);
@@ -2131,6 +2132,8 @@ const eServiceReference *eServiceSelector::choose(int irc)
 	services->beginAtomic();
 	result=0;
 
+	selectService(eServiceInterface::getInstance()->service);
+
 	switch (irc)
 	{
 	case dirUp:
@@ -2149,7 +2152,6 @@ const eServiceReference *eServiceSelector::choose(int irc)
 		break;
 	}
 	services->endAtomic();
-	services->invalidateContent();
 
 	if ( !services->getCount() )
 		ci->clear();

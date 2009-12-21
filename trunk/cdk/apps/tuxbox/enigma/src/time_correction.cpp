@@ -166,7 +166,6 @@ void eTimeCorrectionEditWindow::savePressed()
 		it->setTimerOffset(newTime-now);
 
 	/*emit*/ dvb.timeUpdated();
-	eZapMain::getInstance()->timeAdjusted=true;
 
 // for calc new transponder correction
 	eDVBServiceController *sapi = dvb.getServiceAPI();

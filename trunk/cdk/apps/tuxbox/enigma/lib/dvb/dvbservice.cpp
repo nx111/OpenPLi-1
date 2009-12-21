@@ -695,23 +695,19 @@ time_t getRTC()
 void eDVBServiceController::TDTready(int error)
 {
 	eDebug("TDTready %d", error);
-	static bool TDTadjusted=false;
 	bool doNothing=false;
 	int usesystemtime = 0;
 	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", usesystemtime);
-	if (usesystemtime && eZapMain::getInstance()->timeAdjusted) doNothing=true;
+	if (usesystemtime && access("/tmp/flag/alwaysAllowTDT",F_OK)!=0) doNothing=true;
 	if (usesystemtime && 
 		(eSystemInfo::getInstance()->getHwType() == eSystemInfo::DM7020 ||	
 		 eSystemInfo::getInstance()->getHwType() == eSystemInfo::DM7000
 		))doNothing=true;
 
-	if(doNothing || !TDTadjusted)
-		updateTDTTimer.start(10*1000,true);
-	else
-		updateTDTTimer.start(60*60*1000,true);
+	updateTDTTimer.start(60*60*1000,true);
 	
 
-	if(eZapMain::getInstance()->timeCorrectting || doNothing || !access("/tmp/.timeCorrectting",F_OK))return;
+	if(eZapMain::getInstance()->timeCorrectting || doNothing || !access("/tmp/flag/timeCorrectting",F_OK))return;
 
 
 	system("touch /tmp/.timeCorrectting");
@@ -878,8 +874,7 @@ void eDVBServiceController::TDTready(int error)
 			eDebug("[TIME] strange: RTC not ready :(");
 	}
 
-	TDTadjusted=true;
-	system("rm -f /tmp/.timeCorrectting");
+	system("rm -f /tmp/flag/timeCorrectting");
 	eZapMain::getInstance()->timeCorrectting=0;
 
 }

@@ -305,17 +305,24 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	if (command == "adjusttime")
 	{
 		long long diff=0;
-		sscanf(opt["timediff"].c_str(),"%Ld",&diff);
-		if(diff)
-			eZapMain::getInstance()->adjustTime(diff);
-		eDebug("adjusttime:input=%s timediff=%Ld",opt["timediff"].c_str(),diff);
+		eString arg=opt["value"];
+		if(!strcasecmp(arg.c_str(),"startTDT")){
+			eDVBServiceController *sapi = eDVB::getInstance()->getServiceAPI();
+			if ( sapi )
+				sapi->startTDT();
+		}
+		else{
+			if(sscanf(arg.c_str(),"%Ld",&diff))
+				eZapMain::getInstance()->adjustTime(diff);
+		}
+		eDebug("adjusttime:input=%s timediff=%Ld",opt["value"].c_str(),diff);
 		result="time adjusted...";
 	}
 	else 
 	if (command == "netstat")
 	{
 		eString sonline= opt["online"];
-		int online=(sonline=="1")?1:0;
+		int online=(sonline=="1" || !strcasecmp(sonline.c_str(),"true"))?1:0;
 		eZapMain::getInstance()->netstat(online);
 		result = "network status updated...";
 	}

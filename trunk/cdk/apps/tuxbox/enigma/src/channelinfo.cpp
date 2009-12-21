@@ -294,6 +294,13 @@ void eChannelInfo::getServiceInfo( const eServiceReferenceDVB& service )
 	if (!service.path.size())
 	{
 		DescriptionForEPGSearch = "";  // EPG search
+
+		eServiceDVB* pservice( eDVB::getInstance()->settings->getTransponders()->searchService( service ) );
+		if(pservice)
+			servicename=pservice->service_name;
+		else 
+			servicename="";
+
 		cdescr.show();
 		int opos=service.getDVBNamespace().get()>>16;
 		if ( eSystemInfo::getInstance()->getFEType() == eSystemInfo::feSatellite )
@@ -358,6 +365,7 @@ void eChannelInfo::getServiceInfo( const eServiceReferenceDVB& service )
 		i++;
 		size.sprintf(_("\nFilesize/date: %d %cB, %s"), filelength > 10240 ? filelength/1024: filelength, filelength > 10240 ? 'M' : 'k', ::ctime(&filetime));
 		cname.setText(eString(_("Filename: "))+service.path.mid( i, service.path.length()-i)+size );
+		servicename=service.path.mid( i, service.path.length()-i);
 	}
 }
 	
@@ -387,8 +395,6 @@ void eChannelInfo::update( const eServiceReferenceDVB& service )
 	{
 		current = service;
 		DescriptionForEPGSearch = ""; // EPG search
-		eServiceDVB* pservice( eDVB::getInstance()->settings->getTransponders()->searchService( service ) );
-		servicename=pservice->service_name;
 		getServiceInfo(current);
 	}
 }

@@ -2329,7 +2329,6 @@ void eZapMain::init_main()
 	cur_event_id=-1;
 
 	CONNECT(eServiceInterface::getInstance()->serviceEvent, eZapMain::handleServiceEvent);
-	CONNECT(eRCInput::getInstance()->keyEvent,eZapMain::keyEvent);
 
 	CONNECT(eEPGCache::getInstance()->EPGAvail, eZapMain::EPGAvail);
 	CONNECT(eEPGCache::getInstance()->EPGUpdated, eZapMain::EPGUpdated);
@@ -2375,8 +2374,6 @@ void eZapMain::init_main()
 	softcamInfo[0] = 0;
 
 	actual_eventDisplay=0;
-
-	timeAdjusted=false;
 
 	clockUpdate();
 
@@ -2874,7 +2871,7 @@ void eZapMain::setEIT(EIT *eit)
 		}
 		/* now that we've got EIT now/next, stop refreshing now/next with EPG */
 		validEITReceived = true;
-		epgNowNextTimer.stop();	//EPG can redisplay in OSD.
+//		epgNowNextTimer.stop();	//EPG can redisplay in OSD.
 
 		eDVBServiceController *sapi = eDVB::getInstance()->getServiceAPI();
 		if ( sapi )
@@ -3165,8 +3162,7 @@ void eZapMain::showServiceSelector(int dir, int newTarget )
 			e->eventHandler( eWidgetEvent(eWidgetEvent::evtAction, action));
 		}
 	}
-
-	e->selectService(eServiceInterface::getInstance()->service);
+//	e->selectService(eServiceInterface::getInstance()->service);
 	const eServiceReference *service = e->choose(dir); // reset path only when NOT showing specific list
 
 #ifndef DISABLE_LCD
@@ -6566,9 +6562,7 @@ void eZapMain::adjustTime(long timediff)
 {
 	if (timeCorrectting)return;
 	if(timediff>-10 && timediff<10){
-		timeAdjusted=true;
 		timeCorrectting=0;
-		system("rm -f /tmp/.timeCorrectting");
 		return;
 	}
 
@@ -6594,9 +6588,7 @@ void eZapMain::adjustTime(long timediff)
 	if(timediff<0 || timediff>30*60)
 		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::reloadStore));
 
-	timeAdjusted=true;
 	timeCorrectting=0;
-	system("rm -f /tmp/.timeCorrectting");
 }
 
 void eZapMain::EPGReady()
@@ -8255,17 +8247,6 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 				2000, 1);
 		}
 	}
-}
-
-void eZapMain::keyEvent(const eRCKey& rckey)
-{
-	struct stat buf;
-	bool willStandby=false;
-	if(-1 != stat("/var/etc/getconfig/standbying",&buf))
-		willStandby=true;
-	if( !(eZapStandby::getInstance()) && willStandby)
-		unlink("/var/etc/getconfig/standbying");
-
 }
 
 void eZapMain::gotEIT()

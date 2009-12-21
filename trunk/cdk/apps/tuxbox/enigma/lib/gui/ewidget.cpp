@@ -11,6 +11,7 @@
 #include <lib/system/init_num.h>
 #include <streaminfo.h>
 #include <enigma_main.h>
+#include <lib/driver/eavswitch.h>
 
 extern eWidget *currentFocus;
 
@@ -242,7 +243,12 @@ void eWidget::valign()
 		config->getKey("/enigma/plugins/needoffsets/left", offsetLeft);
 		config->getKey("/enigma/plugins/needoffsets/right", offsetRight);
 		config->getKey("/enigma/plugins/needoffsets/bottom", offsetBottom);
-		
+
+		if (offsetBottom>480)               //offset is setted for PAL
+			offsetBottom=(eAVSwitch::getInstance()->getVSystem() == vsNTSC )?(offsetBottom-(576-480)):offsetBottom;
+		else                                //offset is setted for NTSC
+			offsetBottom=(eAVSwitch::getInstance()->getVSystem() == vsNTSC )?offsetBottom:(offsetBottom+(576-480));
+
 		move(ePoint(
 			(offsetRight - offsetLeft - size.width())/2 + offsetLeft,
 			(offsetBottom - offsetTop - size.height())/2 + offsetTop));

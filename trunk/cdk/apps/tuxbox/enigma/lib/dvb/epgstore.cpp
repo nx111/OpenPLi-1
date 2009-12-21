@@ -511,6 +511,10 @@ int eEPGMemStore::readEncode()
 					result = UTF8_ENCODING;
 				else if (strcasecmp(sec, "unicode") == 0)
 					result = UNICODE_ENCODING;
+				else if (strcasecmp(sec, "utf16be") == 0)
+					result = UTF16BE_ENCODING;
+				else if (strcasecmp(sec, "utf16le") == 0)
+					result = UTF16LE_ENCODING;
 				else if (strcasecmp(sec, "auto") == 0)
 					result = AUTO_ENCODING;
 				if (result)break;
