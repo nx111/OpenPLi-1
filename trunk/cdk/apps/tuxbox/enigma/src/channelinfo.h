@@ -14,7 +14,7 @@ class eChannelInfo : public eDecoWidget
 	eProgress *p_event;
 	eString name, descr, genre, starttime,endtime,nowtime,servicename;
 	int cflags;
-	int perc,mode;
+	int perc,mode,lineheight;
 
 	static const char *genresTableShort[];
 

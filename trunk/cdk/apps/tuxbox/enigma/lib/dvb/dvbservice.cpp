@@ -698,15 +698,18 @@ void eDVBServiceController::TDTready(int error)
 	bool doNothing=false;
 	int usesystemtime = 0;
 	eConfig::getInstance()->getKey("/elitedvb/extra/useSystemTime", usesystemtime);
+	int interval=60*60;
+	eConfig::getInstance()->getKey("/elitedvb/extra/TDTInterval", interval);
+
 	if (usesystemtime && access("/tmp/flag/alwaysAllowTDT",F_OK)!=0) doNothing=true;
 	if (usesystemtime && 
 		(eSystemInfo::getInstance()->getHwType() == eSystemInfo::DM7020 ||	
 		 eSystemInfo::getInstance()->getHwType() == eSystemInfo::DM7000
 		))doNothing=true;
 
-	updateTDTTimer.start(60*60*1000,true);
+	updateTDTTimer.start((unsigned long)interval*1000,true);
 	
-
+	if(!access("/tmp/flag/timeAdjustOK",F_OK))timeSet=true;
 	if(eZapMain::getInstance()->timeCorrectting || doNothing || !access("/tmp/flag/timeCorrectting",F_OK))return;
 
 
@@ -796,6 +799,8 @@ void eDVBServiceController::TDTready(int error)
 		if (!new_diff)
 		{
 			eDebug("[TIME] not changed");
+			system("rm -f /tmp/flag/timeCorrectting");
+			eZapMain::getInstance()->timeCorrectting=0;
 			return;
 		}
 

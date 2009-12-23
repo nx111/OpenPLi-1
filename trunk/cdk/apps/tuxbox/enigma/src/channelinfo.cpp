@@ -28,6 +28,7 @@ void eChannelInfo::init_eChannelInfo()
 	foregroundColor=eSkin::getActive()->queryColor("eStatusBar.foreground");
 	backgroundColor=eSkin::getActive()->queryColor("eStatusBar.background");
 	gFont fn = eSkin::getActive()->queryFont("eChannelInfo");
+	lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )+2;
 
 	int percentprogress=0;
 	eConfig::getInstance()->getKey("/ezap/osd/PercentProgress", percentprogress);
@@ -36,7 +37,6 @@ void eChannelInfo::init_eChannelInfo()
 	perc=-1;
 
 	cdescr.setFont( fn );
-	int lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )*12/10;
 	cdescr.setLineHeight(lineheight);
 	cdescr.setForegroundColor( foregroundColor );
 	cdescr.setBackgroundColor( backgroundColor );
@@ -50,16 +50,19 @@ void eChannelInfo::init_eChannelInfo()
 	copos.setFlags( RS_FADE );
 
 	cname.setFont( fn );
+	cname.setLineHeight(lineheight);
 	cname.setForegroundColor( foregroundColor );
 	cname.setBackgroundColor( backgroundColor );
 	cname.setFlags( RS_FADE );
 
 	ctime.setFont( fn );
+	ctime.setLineHeight(lineheight);
 	ctime.setForegroundColor( foregroundColor );
 	ctime.setBackgroundColor( backgroundColor );
 	ctime.setFlags( RS_FADE );
 
 	cntime.setFont( fn );
+	cntime.setLineHeight(lineheight);
 	cntime.setForegroundColor( foregroundColor );
 	cntime.setBackgroundColor( backgroundColor );
 	cntime.setFlags( RS_FADE );
@@ -466,23 +469,24 @@ void eChannelInfo::changeSize()
 			clientrect=crect;
 
 		int dx=clientrect.width()/8;
-		int dy=clientrect.height()/4;
+		int dy=(clientrect.height()-6)/4;
 
          	if(mode==modePLI){
 			p_event->hide();
 
-			ctime.move( ePoint(0,0) );
+			ctime.move( ePoint(0,3) );
 			ctime.resize( eSize(dx, 36 ));
 		
-			cname.move( ePoint( dx + 4, 0 ) );
+			cname.move( ePoint( dx + 4, 3 ) );
 			cname.resize( eSize( dx*6-14, dy ));
 			cname.show();
 			cntime.hide();
 
-			cdescr.move( ePoint(dx + 4, dy) );
-			cdescr.resize( eSize( clientrect.width() - (dx*2 + 4), dy+dy-2) );
+			int cdescrHeight=(dy>lineheight)?lineheight+lineheight:dy+dy;
+			cdescr.move( ePoint(dx + 4, dy+3) );
+			cdescr.resize( eSize( clientrect.width() - (dx*2 + 4),cdescrHeight ) );
 
-			copos.move( ePoint( clientrect.width() - (dx+10), 0) );
+			copos.move( ePoint( clientrect.width() - (dx+10), 3) );
 			copos.resize( eSize(dx + 4, dy) );
 			copos.show();
 
@@ -492,23 +496,24 @@ void eChannelInfo::changeSize()
 			cscrambled.resize( eSize(25,15) );
 		} else{
 
-			cname.move( ePoint( 10, 4) );
+			cname.move( ePoint( 10, 3) );
 			cname.resize( eSize( dx*7-10, dy ));
 			cname.show();
 		
-			ctime.move( ePoint(50,dy) );
+			ctime.move( ePoint(50,dy+3) );
 			ctime.resize( eSize(120, dy));
 
-			p_event->move(ePoint(180,dy+dy/2-p_event->getSize().height()/2));
+			p_event->move(ePoint(180,dy+3+dy/2-p_event->getSize().height()/2));
 
-			cntime.move( ePoint(280,dy) );
+			cntime.move( ePoint(280,dy+3) );
 			cntime.resize( eSize(80, dy));
 			cntime.show();
 
-			cdescr.move( ePoint(10, dy+dy-2) );
-			cdescr.resize( eSize( clientrect.width() - 20, dy+dy-1) );
+			cdescr.move( ePoint(10, dy+dy+3) );
+			int cdescrHeight=(dy>lineheight)?lineheight+lineheight:dy+dy;
+			cdescr.resize( eSize( clientrect.width() - 20, cdescrHeight) );
 
-			copos.move( ePoint( clientrect.width() - (dx+10), 4) );
+			copos.move( ePoint( clientrect.width() - (dx+10), 3) );
 			copos.resize( eSize(dx + 4, dy) );
 
 			cdolby.hide();
