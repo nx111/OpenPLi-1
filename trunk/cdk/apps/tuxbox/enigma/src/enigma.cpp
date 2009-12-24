@@ -706,6 +706,9 @@ eZap::~eZap()
 	eDebug("[ENIGMA] beginning clean shutdown");
 	// Shutdown plimgr on CDK boxes in a try to prevent hangs of enigma
 	// Still not a 100% solution but better then doing nothing
+
+	eRCInput::getInstance()->lock();
+
 	if (!eSystemInfo::getInstance()->isOpenEmbedded())	
 	{
 		eDebug("[ENIGMA] tell plimgr to shutdown");

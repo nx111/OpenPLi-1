@@ -95,6 +95,8 @@ int eZapStandby::eventHandler(const eWidgetEvent &event)
 	case eWidgetEvent::execBegin:
 	{
 		eZapMain::getInstance()->savePlaylist();
+		eString eplPath = CONFIGDIR "/enigma";
+		eTransponderList::getInstance()->writeTimeOffsetData( ( eplPath+ "/timeOffsetMap").c_str() );
 		eConfig::getInstance()->flush();
 		/*emit*/ enterStandby();
 		struct stat s;

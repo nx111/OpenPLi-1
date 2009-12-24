@@ -28,7 +28,7 @@ void eChannelInfo::init_eChannelInfo()
 	foregroundColor=eSkin::getActive()->queryColor("eStatusBar.foreground");
 	backgroundColor=eSkin::getActive()->queryColor("eStatusBar.background");
 	gFont fn = eSkin::getActive()->queryFont("eChannelInfo");
-	lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )+2;
+	lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )+3;
 
 	int percentprogress=0;
 	eConfig::getInstance()->getKey("/ezap/osd/PercentProgress", percentprogress);
