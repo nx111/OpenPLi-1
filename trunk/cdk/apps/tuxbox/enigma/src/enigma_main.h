@@ -665,7 +665,7 @@ public:
 	void copyProviderToBouquets(eServiceSelector *);
 	void toggleScart( int state );
 	void adjustTime(long timediff=0);
-	void netstat(int online=-1);
+	void netupdown(int up=-1);
 
 	void postMessage(const eZapMessage &message, int clear=0);
 	void gotMessage(const int &);

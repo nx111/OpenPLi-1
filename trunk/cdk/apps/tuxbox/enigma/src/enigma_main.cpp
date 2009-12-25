@@ -58,6 +58,7 @@
 #include <lib/dvb/dvbservice.h>
 #include <lib/gdi/lcd.h>
 #include <lib/gdi/glcddc.h>
+#include <lib/socket/socket.h>
 #include <lib/system/info.h>
 #include <src/time_correction.h>
 #include <lib/driver/audiodynamic.h>
@@ -1944,18 +1945,21 @@ int eZapMain::doHideInfobar()
 	return 0;
 }
 
-void eZapMain::netstat(int online)
+void eZapMain::netupdown(int up)
 {
-	if (online==-1)return;
-	if(online==1){
+	if (up==-1 || up==isOnline)return;
+
+	if(up==1){
 		Online->show();
 		Offline->hide();
+		unlink("/tmp/flag/offline");
 		}
 	else{
 		Online->hide();
 		Offline->show();
+		creat("/tmp/flag/offline",744);
 	}
-	isOnline=online;
+	isOnline=up;
 }
 
 eZapMain::eZapMain()
@@ -4157,6 +4161,8 @@ void eZapMain::showInfobar(bool startTimeout)
 		}
 	}
 /* SNR,AGC DISPLAY end */
+
+	netupdown(get_netlink_status("eth0"));
 }
 
 void eZapMain::hideInfobar()

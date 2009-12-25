@@ -236,9 +236,9 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	eString command = opt["command"];
 	eString result;
 	if (eSystemInfo::getInstance()->canShutdown())
-		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netstat)";
+		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netupdown)";
 	else
-		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netstat)";
+		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netupdown)";
 	if (command == "shutdown")
 	{
 		if (eSystemInfo::getInstance()->canShutdown())
@@ -319,11 +319,11 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 		result="time adjusted...";
 	}
 	else 
-	if (command == "netstat")
+	if (command == "netupdown")
 	{
-		eString sonline= opt["online"];
+		eString sonline= opt["up"];
 		int online=(sonline=="1" || !strcasecmp(sonline.c_str(),"true"))?1:0;
-		eZapMain::getInstance()->netstat(online);
+		eZapMain::getInstance()->netupdown(online);
 		result = "network status updated...";
 	}
 	return "<html>" + eString(CHARSETMETA) + "<head><title>" + command + "</title></head><body>" + result + "</body></html>";

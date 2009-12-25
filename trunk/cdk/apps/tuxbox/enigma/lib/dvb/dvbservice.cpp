@@ -713,7 +713,7 @@ void eDVBServiceController::TDTready(int error)
 	if(eZapMain::getInstance()->timeCorrectting || doNothing || !access("/tmp/flag/timeCorrectting",F_OK))return;
 
 
-	system("touch /tmp/.timeCorrectting");
+	creat("/tmp/flag/timeCorrectting",777);
 	eZapMain::getInstance()->timeCorrectting=1;
 	if (!error && transponder)
 	{
@@ -736,9 +736,9 @@ void eDVBServiceController::TDTready(int error)
 			// difference between reference time (current enigma time) 
 			// and the transponder time
 			eDebug("[TIME] diff is %d", enigma_diff);
-			if ( abs(enigma_diff) < 120 )
+			if ( abs(enigma_diff) < 60 )
 			{
-				eDebug("[TIME] diff < 120 .. use Transponder Time");
+				eDebug("[TIME] diff < 60 .. use Transponder Time");
 				tOffsMap[*transponder] = 0;
 				new_diff = enigma_diff;
 			}
@@ -761,12 +761,12 @@ void eDVBServiceController::TDTready(int error)
 					new_diff = rtc-nowTime;  // set enigma time to rtc
 					eDebug("[TIME] update stored correction to %d (calced against RTC time)", rtc-tdt->UTC_time );
 				}
-				else if ( abs(ddiff) <= 120 )
+				else if ( abs(ddiff) <= 60 )
 				{
 // with stored correction calced time difference is lower 2 min
 // this don't help when a transponder have a clock running to slow or to fast
 // then its better to have a DM7020 with always running RTC
-					eDebug("[TIME] use stored correction(corr < 2 min)");
+					eDebug("[TIME] use stored correction(corr < 1 min)");
 					new_diff = ddiff;
 				}
 				else  // big change in calced correction.. hold current time and update correction
@@ -799,7 +799,7 @@ void eDVBServiceController::TDTready(int error)
 		if (!new_diff)
 		{
 			eDebug("[TIME] not changed");
-			system("rm -f /tmp/flag/timeCorrectting");
+			unlink("/tmp/flag/timeCorrectting");
 			eZapMain::getInstance()->timeCorrectting=0;
 			return;
 		}
@@ -879,7 +879,7 @@ void eDVBServiceController::TDTready(int error)
 			eDebug("[TIME] strange: RTC not ready :(");
 	}
 
-	system("rm -f /tmp/flag/timeCorrectting");
+	unlink("/tmp/flag/timeCorrectting");
 	eZapMain::getInstance()->timeCorrectting=0;
 
 }

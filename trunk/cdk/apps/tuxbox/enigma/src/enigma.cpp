@@ -128,6 +128,7 @@ void eZap::init_eZap(int argc, char **argv)
 
 	openlog(PACKAGE, LOG_NDELAY, LOG_DAEMON);
 	logOutputSyslog = 1;
+	mkdir("/tmp/flag",774);
 
 #ifdef ENABLE_EXPERT_WEBIF
 	// Mount all network mounts
