@@ -1949,15 +1949,15 @@ void eZapMain::netupdown(int up)
 {
 	if (up==-1 || up==isOnline)return;
 
-	if(up==1){
-		Online->show();
-		Offline->hide();
-		unlink("/tmp/flag/offline");
-		}
-	else{
+	if(!up){
 		Online->hide();
 		Offline->show();
 		creat("/tmp/flag/offline",744);
+		}
+	else{
+		Online->show();
+		Offline->hide();
+		unlink("/tmp/flag/offline");
 	}
 	isOnline=up;
 }
@@ -2474,7 +2474,6 @@ void eZapMain::init_main()
 	}
 	message_notifier.send(eZapMain::messageCheckVCR);
 	epgReadyTimer.start(1000*5);
-
 }
 
 #ifndef DISABLE_CI
@@ -4162,7 +4161,6 @@ void eZapMain::showInfobar(bool startTimeout)
 	}
 /* SNR,AGC DISPLAY end */
 
-	netupdown(get_netlink_status("eth0"));
 }
 
 void eZapMain::hideInfobar()

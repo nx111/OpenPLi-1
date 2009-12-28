@@ -15,14 +15,6 @@
 #include <libsig_comp.h>
 #include <lib/base/buffer.h>
 
-typedef unsigned short u16;
-typedef unsigned int u32;
-typedef unsigned long u64;
-typedef unsigned char u8;
-
-#include <linux/if.h>
-#include  <linux/sockios.h>
-#include  <linux/ethtool.h>
 
 class eSocket: public Object
 {
@@ -78,7 +70,5 @@ public:
 	~eUnixDomainSocket();
 	int connectToPath(eString path);
 };
-
-int get_netlink_status(const char *if_name);
 
 #endif /* __socket_h */

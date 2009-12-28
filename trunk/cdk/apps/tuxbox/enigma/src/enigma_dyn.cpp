@@ -322,7 +322,7 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	if (command == "netupdown")
 	{
 		eString sonline= opt["up"];
-		int online=(sonline=="1" || !strcasecmp(sonline.c_str(),"true"))?1:0;
+		int online=(sonline=="1" || !strcasecmp(sonline.c_str(),"true") || !strcasecmp(sonline.c_str(),"yes") )?1:0;
 		eZapMain::getInstance()->netupdown(online);
 		result = "network status updated...";
 	}
