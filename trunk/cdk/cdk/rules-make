@@ -24,7 +24,7 @@ watchdog;5.2;watchdog-5.2.orig;watchdog_5.2.orig.tar.gz:watchdog.diff;extract:wa
 #
 # root
 #
-busybox;1.01;busybox-1.01;busybox-1.01.tar.bz2:busybox.diff:busybox-pli.diff:wget-useragent.diff;extract:busybox-1.01.tar.bz2;patch:busybox.diff;patch:busybox-pli.diff;patch:wget-useragent.diff
+busybox;1.01;busybox-1.01;busybox-1.01.tar.bz2:busybox.diff;extract:busybox-1.01.tar.bz2;patch:busybox.diff
 busybox12;1.2.1;busybox-1.2.1;busybox-1.2.1.tar.bz2;extract:busybox-1.2.1.tar.bz2;patch:busybox12.diff
 busybox17;1.7.2;busybox-1.7.2;busybox-1.7.2.tar.bz2;extract:busybox-1.7.2.tar.bz2;patch:busybox17.diff
 busybox113;1.13.0;busybox-1.13.0;busybox-1.13.0.tar.bz2;extract:busybox-1.13.0.tar.bz2;patch:busybox-1.13.0.diff
