@@ -144,3 +144,5 @@ public:
 	void downloadDone(int err);	
 };
 
+static int getEncodeTableValue(char* encoding);
+static int freadLines(FILE *f,char *buf,int maxsize);

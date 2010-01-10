@@ -302,6 +302,7 @@ void eEPGCache::init_eEPGCache()
 	CONNECT(organiseTimer.timeout, eEPGCache::organiseEvent);
 	instance=this;
 	readServiceMappingFile();
+	saveServiceMappingFile();
 	epgStore = eEPGStore::createEPGStore();
 	setOrganiseTimer();
 	epgHours = 4 * 24;
@@ -1299,6 +1300,7 @@ void eEPGCache::abortEPG()
 		eDebug("[EPGC] abort caching events !!");
 		Lock();
 		temp.clear();
+		ServiceMapping.clear();
 		Unlock();
 	}
 }
@@ -1310,10 +1312,29 @@ eServiceReferenceDVB eEPGCache::getServiceReference(const eServiceReferenceDVB &
 	if(!servicedvb)
 		return service;
 	eString servicename=servicedvb->service_name;
-	static char strfilter[7] = {' ','\t','\n','\r','\b','\f','_' };
-	for (eString::iterator it(servicename.begin()); it != servicename.end();)
-				strchr( strfilter, *it ) ? it = servicename.erase(it) : it++;
-	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(servicename);
+
+	unsigned int i,j;
+	char chname[256];
+	bool spacech=false;
+	for(i=0,j=0;i<(servicename.length()) && j<255;i++){
+			if (servicename[i]<' ')continue;
+			if (servicename[i]==' ' ||  servicename[i]=='\t' || servicename[i]=='_'){
+				if(spacech)
+					continue;
+				else{
+					chname[j]='_';
+					spacech=true;
+				}
+			}
+			else{
+				spacech=false;
+				chname[j]=servicename[i];
+			}
+			j++;
+		}
+		chname[j]='\0';
+
+	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(chname);
 	if(mIt==ServiceMapping.end())
 		return service;
 	return eServiceReferenceDVB(service.getDVBNamespace(),mIt->second.tsid,mIt->second.onid,mIt->second.sid,service.getServiceType());
@@ -1322,7 +1343,7 @@ eServiceReferenceDVB eEPGCache::getServiceReference(const eServiceReferenceDVB &
 int eEPGCache::readServiceMappingFile()
 {
 
-	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "r");
+	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "rt");
 	if(!f)return -1;
 	ServiceMapping.clear();
 	
@@ -1343,14 +1364,15 @@ int eEPGCache::readServiceMappingFile()
 		while(p){
 			char *s=sec[count];
 			char *search;
-		        for(search=p; *search==' '  || *search=='\t' ||  *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f'|| *search=='_' ; search++);
+		        for(search=p; *(unsigned char *)search<=' ' || *search=='_' ; search++);
+
 		        do {
 		                *s++ = *search++;
 		        } while (*search != '\0');
 
 		        search = s;
 
-		        for(search--; *search==' '  || *search=='\t' || *search=='\n' || *search=='\r' || *search=='\b' || *search=='\f' || *search=='_'; search--);
+		        for(search--; *(unsigned char *)search<=' '  || *search=='_'; search--);
 		        search++;
 		        *search='\0' ;
 
@@ -1366,13 +1388,62 @@ int eEPGCache::readServiceMappingFile()
 			}
 		}
 		if(count<4)continue;
+		char *search;
+		char chname[256];
+		bool spacech=false;
+		for(search=sec[3],i=0;search<(sec[3]+strlen(sec[3])) && i<255;search++){
+			if (*(unsigned char *)search<' ')continue;
+			if (*search==' ' ||  *search=='\t' || *search=='_'){
+				if(spacech)
+					continue;
+				else{
+					chname[i]='_';
+					spacech=true;
+				}
+			}
+			else{
+				spacech=false;
+				chname[i]=*search;
+			}
+			i++;
+		}
+		chname[i]='\0';
+		
+
 		if((sscanf(sec[0], "0x%x", &sid) == 1 && sscanf(sec[1], "0x%x", &onid) == 1 && sscanf(sec[2], "0x%x", &tsid) == 1) || (sscanf(sec[0], "%d", &sid) == 1 && sscanf(sec[1], "%d", &onid) == 1 && sscanf(sec[2], "%d", &tsid) == 1))
 		{
-			ServiceMapping[sec[3]]=uniqueEPGKey(sid,onid,tsid);
+			std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(chname);
+			if(mIt==ServiceMapping.end())
+					ServiceMapping[chname]=uniqueEPGKey(sid,onid,tsid);
 		}
 	}
 	free(line);
 	fclose(f);
+	return 0;
+}
+
+int eEPGCache::saveServiceMappingFile()
+{
+	std::map<uniqueEPGKey,eString> MVMap;
+	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "wt");
+	if(!f)return -1;
+	for(std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.begin();mIt != ServiceMapping.end();++mIt){
+		fprintf(f,"%d:%d:%d=%s\n",mIt->second.sid,mIt->second.onid,mIt->second.tsid,mIt->first.c_str());
+		//create mvmap;
+		std::map<uniqueEPGKey,eString>::iterator mvIt=MVMap.find(mIt->second);
+		if(mvIt==MVMap.end())
+			MVMap[mIt->second]=mIt->first;
+	}
+	fclose(f);
+	
+	f = fopen(CONFIGDIR"/enigma/mvmap.dat", "wt");
+	if(f)
+		for(std::map<uniqueEPGKey,eString>::iterator mvIt=MVMap.begin();mvIt != MVMap.end();mvIt++){
+			fprintf(f,"%d:%d:%d=%s\n",mvIt->first.sid,mvIt->first.onid,mvIt->first.tsid,mvIt->second.c_str());
+		}
+	fclose(f);
+	
+	MVMap.clear();
 	return 0;
 }
 
@@ -1933,7 +2004,7 @@ int eScheduleMhw::sectionRead(__u8 *data)
 		{
 			tnew_summary_read = time(0)+eDVB::getInstance()->time_difference;
 			eString the_text = (char *) (data + 11 + summary->nb_replays * 7);
-			the_text.strReplace( "\r\n", " " );
+			the_text.strReplace( "\r\n", " " ,UTF8_ENCODING);
 			
 			// Find corresponding title, store title and summary in epgcache.
 			std::map<__u32, mhw_title_t>::iterator itTitle( titles.find( itProgid->second ) );

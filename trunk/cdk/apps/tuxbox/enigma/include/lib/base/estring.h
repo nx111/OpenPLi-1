@@ -42,12 +42,12 @@ public:
 	eString& sprintf(char *fmt, ...);
 	eString& setNum(int val, int sys=10);
 	eString& removeChars(const char fchar);
-	eString& strReplace(const char* fstr, const eString& rstr);
+	eString& strReplace(const char* fstr, const eString& rstr,int encode=0);
 	eString& upper();
 	int icompare(const eString& s);
 };
 
-eString convertDVBUTF8(const unsigned char *data, int len, int table=0, int tsidonid=0); // with default ISO8859-1/Latin1
+eString convertDVBUTF8(const unsigned char *data, int len, int table=0, int tsidonid=0,int withEncodeID=1); // with default ISO8859-1/Latin1
 eString convertUTF8DVB(const eString &string, int table=0); // with default ISO8859-1/Latin1
 eString convertLatin1UTF8(const eString &string);
 int isUTF8(const eString &string);

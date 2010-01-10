@@ -86,7 +86,7 @@ class eSCGui: public eWindow
 	void changeSout();
 	eString filePos(int both, eString name, eString size, eString& text);
 	void getSavedPath();
-
+	eString UrlEncode(const eString & src);
 public:
 	eSCGui();
 	~eSCGui();

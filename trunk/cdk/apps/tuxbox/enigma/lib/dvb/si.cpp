@@ -840,9 +840,9 @@ void ShortEventDescriptor::init_ShortEventDescriptor(descr_gen_t *descr)
 
 	event_name=convertDVBUTF8((unsigned char*)data+ptr, len, encode, tsidonid);
 	// filter newlines in ARD ShortEventDescriptor event_name
-	event_name.strReplace("\xc2\x8a",": ");
-	event_name.strReplace("\n", " - ");
-	event_name.strReplace("\r", " ");
+	event_name.strReplace("\xc2\x8a",": ",UTF8_ENCODING);
+	event_name.strReplace("\n", " - ",UTF8_ENCODING);
+	event_name.strReplace("\r", " ",UTF8_ENCODING);
 //	eDebug("ShortEvent: s=%s event_name=%s",data+ptr,event_name.c_str());
 
 	ptr+=len;

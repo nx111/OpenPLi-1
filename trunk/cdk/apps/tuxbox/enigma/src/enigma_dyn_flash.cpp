@@ -332,7 +332,7 @@ eFlashMgr::eFlashMgr()
 			tmp >> t;
 		}
 		mtd.name.left(mtd.name.length() - 2);
-		mtd.name.strReplace("\"", "");
+		mtd.name.strReplace("\"", "",UTF8_ENCODING);
 		mtds.push_back(mtd);
 		mtd.dev = t;
 	}

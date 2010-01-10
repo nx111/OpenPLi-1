@@ -51,8 +51,9 @@ eSCGui::eSCGui(): menu(true)
 
 	pauseBox = new eMessageBox(_("Press yellow or green button for continue..."),_("Pause"), eMessageBox::iconInfo);
 
-	cmove(ePoint(90, 110));
+	//cmove(ePoint(90, 60));
 	cresize(eSize(540, 380));
+	valign();
 
 	addActionMap(&i_shortcutActions->map);
 	addActionMap(&i_cursorActions->map);
@@ -176,7 +177,7 @@ void eSCGui::loadList(int mode, eString pathfull)
 	}
 
 	eString response;
-	CURLcode httpres= sendGetRequest("/requests/browse.xml?dir=" + pathfull.strReplace(" ", "%20"), response);
+	CURLcode httpres= sendGetRequest("/requests/browse.xml?dir=" + UrlEncode(pathfull), response);
 
 	//std::replace(response.begin(), response.end(), '\\', '/');  for auto-subtitles under Windows must be commented !!!
 	response.strReplace("://", ":/"); // what the heck...
@@ -950,8 +951,9 @@ int eSCGui::eventHandler(const eWidgetEvent &e)
 
 eSCGuiHelp::eSCGuiHelp()  // Help window
 {
-	cmove(ePoint(90, 80));
-	cresize(eSize(540, 440));
+	//cmove(ePoint(90, 80));
+	cresize(eSize(540, 380));
+	valign();
 
 	eString rel = REL;
 	setText((eString)_("Help")+" - "+rel);
@@ -1039,6 +1041,34 @@ eString eSCGui::getPar(eString buf, const char* parameter)
 	}
 	eDebug("[getPar] parameter: %s par: %s",parameter,par.c_str());
 	return par;
+}
+
+eString eSCGui::UrlEncode(const eString & src)
+{
+    static    char hex[] = "0123456789ABCDEF";
+    eString dst;
+    
+    for (size_t i = 0; i < src.size(); i++)
+    {
+        unsigned char ch = src[i];
+        if (isalnum(ch))
+        {
+            dst += ch;
+        }
+        else
+            if (src[i] == ' ')
+            {
+                dst += '%20';
+            }
+            else
+            {
+                unsigned char c = static_cast<unsigned char>(src[i]);
+                dst += '%';
+                dst += hex[c / 16];
+                dst += hex[c % 16];
+            }
+    }
+    return dst;
 }
 
 eSCGuiConfig::eSCGuiConfig(): ePLiWindow(_("Options"), 400)  // Config window
@@ -1236,6 +1266,7 @@ void eSCGuiConfig::setDVB(int status)
 		eMoviePlayer::getInstance()->stopDVB();
 	}
 }
+
 
 int plugin_exec(PluginParam *par)
 {

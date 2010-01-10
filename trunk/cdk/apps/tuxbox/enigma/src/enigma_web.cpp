@@ -207,7 +207,7 @@ void eHTTPLog::recvMessage(int lvl, const eString &msg)
 		if (format == 0) // text/plain
 		{
 			res=msg;
-			res.strReplace("\n", "\r\n");
+			res.strReplace("\n", "\r\n",UTF8_ENCODING);
 		} else
 		{
 			if (last != lvl)
@@ -334,7 +334,7 @@ static void processEvent(eString &res, EITEvent *ev, const eString &search, int 
 		if (description)
 		{
 			res += "T: ";
-			description.strReplace("\n", eString("\\n"));
+			description.strReplace("\n", eString("\\n"),UTF8_ENCODING);
 			res += description;
 			res +=" \n";
 		}

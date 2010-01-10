@@ -132,7 +132,7 @@ eString getServiceEPG(eString format, eString opts)
 					genreSubCat = 0;
 					LocalEventData led;
 					led.getLocalData(&event, &description, &details);
-					details.strReplace("\n", "<br/>");
+					details.strReplace("\n", "<br/>",UTF8_ENCODING);
 
 					for (ePtrList<Descriptor>::iterator d(event.descriptor); d != event.descriptor.end(); ++d)
 					{
@@ -176,9 +176,9 @@ eString getServiceEPG(eString format, eString opts)
 					
 					eString tmp = filter_string(description);
 					result.strReplace("#DESCRIPTION#", XMLify(tmp, format)); 
-					tmp.strReplace("\'", "\\\'");
-					tmp.strReplace("\"", "\\\"");
-					tmp.strReplace("&", "~");
+					tmp.strReplace("\'", "\\\'",UTF8_ENCODING);
+					tmp.strReplace("\"", "\\\"",UTF8_ENCODING);
+					tmp.strReplace("&", "~",UTF8_ENCODING);
 					result.strReplace("#DESCRIPTIONJS#", XMLify(tmp, format));
 					result.strReplace("#TIMERENDACTION#", eString().sprintf("%d", defaultendaction));
 					
@@ -190,9 +190,9 @@ eString getServiceEPG(eString format, eString opts)
 					
 					tmp = filter_string(current->service_name);
 					result.strReplace("#NAME#", XMLify(tmp, format));
-					tmp.strReplace("\'", "\\\'");
-					tmp.strReplace("\"", "\\\"");
-					tmp.strReplace("&", "~");
+					tmp.strReplace("\'", "\\\'",UTF8_ENCODING);
+					tmp.strReplace("\"", "\\\"",UTF8_ENCODING);
+					tmp.strReplace("&", "~",UTF8_ENCODING);
 					result.strReplace("#NAMEJS#", XMLify(tmp, format));
 					
 					events += result;
@@ -246,11 +246,11 @@ eString getEITC(eString result, eString format)
 				{
 					case 0:
 						led.getLocalData(event, &now_text, &now_longtext);
-						now_longtext.strReplace("\n", "<br/>");
+						now_longtext.strReplace("\n", "<br/>",UTF8_ENCODING);
 						break;
 					case 1:
 						led.getLocalData(event, &next_text, &next_longtext);
-						next_longtext.strReplace("\n", "<br/>");
+						next_longtext.strReplace("\n", "<br/>",UTF8_ENCODING);
 						break;
 				}
 				p++;
@@ -266,8 +266,8 @@ eString getEITC(eString result, eString format)
 	if (now_duration)
 		now_duration = "(" + now_duration + ")";
 	result.strReplace("#NOWD#", now_duration);
-	result.strReplace("#NOWST#", XMLify(filter_string(now_text.strReplace("\"", "'")), format));
-	result.strReplace("#NOWLT#", XMLify(filter_string(now_longtext.strReplace("\"", "'")), format));
+	result.strReplace("#NOWST#", XMLify(filter_string(now_text.strReplace("\"", "'",UTF8_ENCODING)), format));
+	result.strReplace("#NOWLT#", XMLify(filter_string(now_longtext.strReplace("\"", "'",UTF8_ENCODING)), format));
 	result.strReplace("#NEXTSTART#", next_start);
 	result.strReplace("#NEXTT#", next_time);
 	result.strReplace("#NEXTDATE#", next_date);
@@ -275,8 +275,8 @@ eString getEITC(eString result, eString format)
 	if (next_duration)
 		next_duration = "(" + next_duration + ")";
 	result.strReplace("#NEXTD#", next_duration);
-	result.strReplace("#NEXTST#", XMLify(filter_string(next_text.strReplace("\"", "'")), format));
-	result.strReplace("#NEXTLT#", XMLify(filter_string(next_longtext.strReplace("\"", "'")), format));
+	result.strReplace("#NEXTST#", XMLify(filter_string(next_text.strReplace("\"", "'",UTF8_ENCODING)), format));
+	result.strReplace("#NEXTLT#", XMLify(filter_string(next_longtext.strReplace("\"", "'",UTF8_ENCODING)), format));
 
 	eString curService = getCurService();
 	eString curServiceRef;
@@ -370,7 +370,7 @@ public:
 						EITEvent event(*It->second, tsidonid, It->second->type,It->second->source);
 						LocalEventData led;
 						led.getLocalData(&event, &description, &details);
-						details.strReplace("\n", "<br/>");
+						details.strReplace("\n", "<br/>",UTF8_ENCODING);
 						genre = "";
 						genreCategory = 0; //none
 						genreSubCat = 0; //default
@@ -457,9 +457,9 @@ public:
 								<< event.start_time - (timeroffsetstart * 60) << "','"
 								<< event.duration + (timeroffsetstart * 60) + (timeroffsetstop * 60) << "','";
 							eString tmp = filter_string(description);
-							tmp.strReplace("\'", "\\\'");
-							tmp.strReplace("\"", "\\\"");
-							tmp.strReplace("&", "~");
+							tmp.strReplace("\'", "\\\'",UTF8_ENCODING);
+							tmp.strReplace("\"", "\\\"",UTF8_ENCODING);
+							tmp.strReplace("&", "~",UTF8_ENCODING);
 							result  << tmp << "','"
 								<< filter_string(current->service_name)
 								<< "','"

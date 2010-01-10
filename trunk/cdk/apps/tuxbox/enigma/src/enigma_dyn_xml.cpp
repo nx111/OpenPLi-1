@@ -89,7 +89,7 @@ extern eString getCurrentSubChannel(eString);
 eString XMLify(eString s, eString format)
 {
 	if (format == "XML")
-		s.strReplace("&", "&amp;");
+		s.strReplace("&", "&amp;",UTF8_ENCODING);
 	return s;
 }
 
@@ -333,7 +333,7 @@ static eString getXMLServices(eString request, eString dirpath, eString opt, eHT
 	result += "<" + getTag(mod, subm) + "s>";
 	getContent t(mod, subm, ref, result, true);
 	result += "\n</" + getTag(mod, subm) + "s>";
-	result.strReplace("&", "&amp;");
+	result.strReplace("&", "&amp;",UTF8_ENCODING);
 //	result.strReplace("<", "&lt;");
 //	result.strReplace(">", "&gt;");
 //	result.strReplace("\'", "&apos;");

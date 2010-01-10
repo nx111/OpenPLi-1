@@ -28,35 +28,58 @@ eString& eString::upper()
 				*it -= 32;
 			break;
 
-			case 'ä' :
-				*it = 'Ä';
+			case '\xe4' : 		//Ã¤
+				*it = '\xc4';	//Ã„
 			break;
 			
-			case 'ü' :
-				*it = 'Ü';
+			case '\xfc' :		//Ã¼
+				*it = '\xdc';	//Ãœ
 			break;
 			
-			case 'ö' :
-				*it = 'Ö';
+			case '\xf6' :		//Ã¶
+				*it = '\xd6';	//Ã–
 			break;
 		}
 
 	return *this;
 }
 
-eString& eString::strReplace(const char* fstr, const eString& rstr)
+eString& eString::strReplace(const char* fstr, const eString& rstr,int encode)
 {
 //	replace all occurrence of fstr with rstr and, and returns a reference to itself
 	unsigned int index=0;
 	unsigned int fstrlen = strlen(fstr);
 	int rstrlen=rstr.size();
 
-	while ( ( index = find(fstr, index) ) != npos )
-	{
-		replace(index, fstrlen, rstr);
-		index+=rstrlen;
+	switch(encode){
+	case UTF8_ENCODING:
+		while(index<length()){
+			if( (fstrlen+index)<=length() && !strcmp(mid(index,fstrlen).c_str(),fstr) ){
+				replace(index,fstrlen,rstr);
+				index+=rstrlen;
+				continue;
+			}
+			if((at(index) & 0xE0)==0xC0)
+				index+=2;
+			else
+			if((at(index) & 0xF0)==0xE0)
+				index+=3;
+			else
+			if((at(index) & 0xF8)==0xF0)
+				index+=4;
+			else 
+				index++;
+		}
+		break;
+	default:
+		while ( ( index = find(fstr, index) ) != npos )
+		{
+			replace(index, fstrlen, rstr);
+			index+=rstrlen;
+		}
+		break;
 	}
-	
 	return *this;
 }
+
 

@@ -148,7 +148,7 @@ const eString &eListBoxEntryEPG::redraw(gPainter *rc, const eRect& rect, gColor 
 			paraDate->destroy();
 		paraDate = new eTextPara( eRect( 0, 0, dateXSize, rect.height()) );
 		paraDate->setFont( TimeFont );
-		hlp.sprintf("%02d.%02d.", start_time.tm_mday, start_time.tm_mon + 1);
+		hlp.sprintf("%02d.%02d", start_time.tm_mon + 1 , start_time.tm_mday);
 		paraDate->renderString( eString(dayStrShort[start_time.tm_wday])+' '+hlp );
 		paraDate->realign( eTextPara::dirRight );
 		// TimeYOffs = ((rect.height() - paraDate->getBoundBox().height()) / 2 ) - paraDate->getBoundBox().top();
@@ -188,7 +188,7 @@ const eString &eListBoxEntryEPG::redraw(gPainter *rc, const eRect& rect, gColor 
 		paraDescr = new eTextPara( eRect( 0 ,0, rect.width()-xpos - 10, rect.height()) );  // -10 is margin of text from right
 		paraDescr->setFont( DescrFont );
 		paraDescr->renderString(descr);
-		DescrYOffs = 0; // ((rect.height() - paraDescr->getBoundBox().height()) / 2 ) - paraDescr->getBoundBox().top();
+		DescrYOffs = ((rect.height() - paraDescr->getBoundBox().height()) / 2 ) - paraDescr->getBoundBox().top();
 		hlp=hlp+' '+descr;
 	}
 	rc->renderPara(*paraDescr, ePoint( xpos, rect.top() + TimeYOffs ) );
@@ -669,8 +669,6 @@ void LocalEventData::getLocalData(EITEvent *event, eString *name, eString *desc)
 	{
 		*desc = ShortEventText;
 		
-//		eDebug("LocalEventData::getLocalData ShortEventText=%s",ShortEventText.c_str());
-//		eDebug("LocalEventData::getLocalData ExtendedEventText=%s",ExtendedEventText.c_str());
 		int showAllEventText=0;
 		eConfig::getInstance()->getKey("/ezap/osd/showAllEventText",showAllEventText);
 		if (ExtendedEventText )

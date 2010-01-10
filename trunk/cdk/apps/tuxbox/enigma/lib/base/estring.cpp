@@ -59,35 +59,87 @@ eString& eString::upper()
 				*it -= 32;
 			break;
 
-			case 'ä' :
-				*it = 'Ä';
+			case '\xe4' : 		//ä
+				*it = '\xc4';	//Ä
 			break;
 			
-			case 'ü' :
-				*it = 'Ü';
+			case '\xfc' :		//ü
+				*it = '\xdc';	//Ü
 			break;
 			
-			case 'ö' :
-				*it = 'Ö';
+			case '\xf6' :		//ö
+				*it = '\xd6';	//Ö
 			break;
 		}
 
 	return *this;
 }
 
-eString& eString::strReplace(const char* fstr, const eString& rstr)
+eString& eString::strReplace(const char* fstr, const eString& rstr,int encode)
 {
 //	replace all occurrence of fstr with rstr and, and returns a reference to itself
 	unsigned int index=0;
 	unsigned int fstrlen = strlen(fstr);
 	int rstrlen=rstr.size();
 
-	while ( ( index = find(fstr, index) ) != npos )
-	{
-		replace(index, fstrlen, rstr);
-		index+=rstrlen;
+	switch(encode){
+	case UTF8_ENCODING:
+		while(index<length()){
+			if( (fstrlen+index)<=length() && !strcmp(mid(index,fstrlen).c_str(),fstr) ){
+				replace(index,fstrlen,rstr);
+				index+=rstrlen;
+				continue;
+			}
+			if((at(index) & 0xE0)==0xC0)
+				index+=2;
+			else
+			if((at(index) & 0xF0)==0xE0)
+				index+=3;
+			else
+			if((at(index) & 0xF8)==0xF0)
+				index+=4;
+			else
+				index++;
+		}
+		break;
+	case BIG5_ENCODING:
+	case GB2312_ENCODING:
+		while(index<length()){
+			if((fstrlen+index)<=length() && !strcmp(mid(index,fstrlen).c_str(),fstr)){
+				replace(index,fstrlen,rstr);
+				index+=rstrlen;
+				continue;
+			}
+			if((index+1)>=length())break;
+			unsigned char c1=at(index);
+			unsigned char c2=at(index+1);
+			if ( (c1>0x80 && c1<0xff && c2>=0x40 && c2<0xff)	//GBK
+				||(c1>0xa0 && c1<0xf9 && ((c2>=0x40 && c2<0x7f)||(c2>0xa0 && c2<0xff)))	//BIG5
+			)
+				index+=2;
+			else
+				index++;
+		}
+		break;
+	case UNICODE_ENCODING:
+		while(index<length()){
+			if((fstrlen+index)<=length() && !strcmp(mid(index,fstrlen).c_str(),fstr)){
+				replace(index,fstrlen,rstr);
+				index+=rstrlen;
+				continue;
+			}
+			index+=2;
+		}
+		break;
+
+	default:
+		while ( ( index = find(fstr, index) ) != npos )
+		{
+			replace(index, fstrlen, rstr);
+			index+=rstrlen;
+		}
+		break;
 	}
-	
 	return *this;
 }
 
@@ -115,10 +167,12 @@ int parseEncoding(char *encoding)
 {
 	if (strcasecmp(encoding, "VideoTexSuppl") == 0)
 		return VIDEOTEXSUPPL_ENCODING;
-	else if (strcasecmp(encoding, "gb2312") == 0)
+	else if (strcasecmp(encoding, "gb2312") == 0 || strcasecmp(encoding, "gbk") == 0)
 		return GB2312_ENCODING;
 	else if (strcasecmp(encoding, "big5") == 0)
 		return BIG5_ENCODING;
+	else if (strcasecmp(encoding,"UTF8") == 0 || strcasecmp(encoding,"UTF-8") == 0 )
+		return UTF8_ENCODING;
 	else if (strncasecmp(encoding, "UTF16BE",7)==0)
 		return UTF16BE_ENCODING;	
 	else if (strncasecmp(encoding, "UTF16LE",7)==0)
@@ -548,18 +602,14 @@ eString GB2312ToUTF8(const char *szIn, int len)
 		cjktmp[0]=szIn[i];
 		cjktmp[1]=szIn[i+1];
 		cjktmp[2]='\0';
-		if((cjktmp[0]>0xA0) && (cjktmp[1]>0xA0)){
-			gb2312_mbtowc((ucs4_t*)(&code),cjktmp,2);
+		if (cjktmp[0]>0x80 && cjktmp[0]<0xff && cjktmp[1]>=0x40 && cjktmp[1]<0xff)
+		{
+			gbk_mbtowc((ucs4_t*)(&code),cjktmp,2);
 			int k=UnicodeToUTF8(code,szOut+t);
 			t+=k;
 			i++;
 
 			}
-		else if(cjktmp[0]==0xA9 && cjktmp[1]==0x73){
-			szOut[t++]=':';
-			szOut[t++]=' ';
-			i++;
-		}
 		else
 			szOut[t++]=szIn[i];
 	}
@@ -573,20 +623,14 @@ eString Big5ToUTF8(const char *szIn, int len)
 	unsigned long code=0;
 	int t=0;
 
-	int big52gb=1;
-	eConfig::getInstance()->getKey("/elitedvb/system/convertBig5ToGB2312", big52gb);
 	for(int i=0;i<len;i++){
 			cjktmp[0]=szIn[i];
 			cjktmp[1]=szIn[i+1];
 			cjktmp[2]='\0';gbtmp[2]='\0';
 			if((cjktmp[0]>0xA0) && (cjktmp[0]<=0xF9)&&(
-				((cjktmp[1]>0x40)&&(cjktmp[1]<0x7F)) || ((cjktmp[1]>0xA0)&&(cjktmp[1]<0xFF))
+				((cjktmp[1]>=0x40)&&(cjktmp[1]<=0x7F)) || ((cjktmp[1]>0xA0)&&(cjktmp[1]<0xFF))
 			    )){
-				if(big52gb){
-					big5_to_gb2312(gbtmp,cjktmp,2);
-					memcpy(cjktmp,gbtmp,3);
-					}
-				gb2312_mbtowc((ucs4_t*)(&code),cjktmp,2);
+				big5_mbtowc((ucs4_t*)(&code),cjktmp,2);
 				int k=UnicodeToUTF8(code,szOut+t);
 				t+=k;
 				i++;
@@ -598,7 +642,7 @@ eString Big5ToUTF8(const char *szIn, int len)
 	
 }
 
-eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidonid)
+eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidonid,int withEncodeID)
 {
 	if (!len)
 		return "";
@@ -609,6 +653,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 
 //	eDebug("ConvertDVBUTF8-1:<data=%s><table=0x%x><tsidonid=%d>\n",data,table,tsidonid);
 	if (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING ||encode==GB2312_ENCODING || encode==BIG5_ENCODING )
+	if(withEncodeID)
 	 switch(data[0])
 	 {
 		case 0:

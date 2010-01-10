@@ -58,14 +58,14 @@ eString getWebifVersion()
 
 eString htmlChars(eString s)
 {
-	s.strReplace("\'", "&#39;");
-	s.strReplace("\"", "&quot;");
+	s.strReplace("\'", "&#39;",UTF8_ENCODING);
+	s.strReplace("\"", "&quot;",UTF8_ENCODING);
 	return s;
 }
 eString unHtmlChars(eString s)
 {
-	s.strReplace("&#39;", "\'");
-	s.strReplace("&quot;", "\"");
+	s.strReplace("&#39;", "\'",UTF8_ENCODING);
+	s.strReplace("&quot;", "\"",UTF8_ENCODING);
 	return s;
 }
 eString getAttribute(eString filename, eString attribute)
@@ -179,10 +179,10 @@ eString getTitle(eString title)
 
 eString filter_string(eString string)
 {
-	string.strReplace("\xc2\x86","");
-	string.strReplace("\xc2\x87","");
-	string.strReplace("\xc2\x8a"," ");
-	string.strReplace("\"", "'");
+	string.strReplace("\xc2\x86","",UTF8_ENCODING);
+	string.strReplace("\xc2\x87","",UTF8_ENCODING);
+	string.strReplace("\xc2\x8a"," ",UTF8_ENCODING);
+	string.strReplace("\"", "'",UTF8_ENCODING);
 	return string;
 }
 

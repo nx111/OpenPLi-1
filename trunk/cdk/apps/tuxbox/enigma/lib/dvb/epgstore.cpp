@@ -351,23 +351,41 @@ void eEPGMemStore::flushEPG( const uniqueEPGKey& s, const int event_id )
 timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, time_t from, time_t to, int limit )
 {
 	lock();
+	timeMap *newMap=new timeMap;
+
+	if (from == 0)
+		from = time(0) + eDVB::getInstance()->time_difference;
 
 	eventCache::iterator it = eventDB.find( uniqueEPGKey( service ) );
-	if ( it != eventDB.end() && it->second.second.size() )
-	{
-		return timeMapPtr( this, &(it->second.second) );
-	}
-	else
-	{
-		/* even though we return an empty timeMap, we use the 'this' pointer to ensure freeTimeMap is called */
+	if ( it == eventDB.end() || !it->second.second.size() )
 		return timeMapPtr(this, NULL);
+
+	int c=0;
+	timeMap::iterator nowIt = it->second.second.lower_bound(from);
+	if ( nowIt != it->second.second.end() )
+	{
+		nowIt--;
+		if ( nowIt != it->second.second.end() )
+		{
+			for(timeMap::iterator i=nowIt;i!=it->second.second.end();i++,c){
+				if((limit && c>=limit) || (to && to >= it->first) )
+					break;
+				newMap->insert(std::pair<time_t, eventData*>(i->first,i->second));
+			 }
+		}
 	}
-		
+
+	return timeMapPtr(this,newMap);	
 }
 
 
 void eEPGMemStore::freeTimeMap( timeMap* ptr )
 {
+	if (ptr)
+	{
+		ptr->clear();
+		delete ptr;
+	}
 	unlock();
 }
 
@@ -503,7 +521,7 @@ int eEPGMemStore::readEncode()
 					continue;
 				for(i=0;i<strlen(sec) && sec[i]!='#';i++);
 				sec[i]='\0';
-				if (strcasecmp(sec, "gb2312") == 0)
+				if (strcasecmp(sec, "gb2312") == 0 || strcasecmp(sec, "gbk") == 0)
 					result = GB2312_ENCODING;
 				else if (strcasecmp(sec, "big5") == 0)
 					result = BIG5_ENCODING;

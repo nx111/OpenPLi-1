@@ -1112,8 +1112,8 @@ public:
 
 		if (addEPG && short_description)
 			tmp = tmp + " - " + event_start + " (" + event_duration + ") " + filter_string(short_description);
-		tmp.strReplace("\"", "'");
-		tmp.strReplace("\n", "-");
+		tmp.strReplace("\"", "'",UTF8_ENCODING);
+		tmp.strReplace("\n", "-",UTF8_ENCODING);
 
 		if (zapMode == ZAPMODERECORDINGS)
 		{

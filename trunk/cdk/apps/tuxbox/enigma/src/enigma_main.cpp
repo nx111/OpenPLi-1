@@ -4539,7 +4539,7 @@ int eZapMain::recordDVR(int onoff, int user, time_t evtime, const char *timer_de
 
 			ref2.path=filename;
 			ref2.descr=descr;
-			ref2.descr.strReplace("\n", " ");
+			ref2.descr.strReplace("\n", " ",UTF8_ENCODING);
 			ePlaylistEntry en(ref2);
 			en.type=ePlaylistEntry::PlaylistEntry|ePlaylistEntry::boundFile;
 			eDebug("First re-read recordings file");

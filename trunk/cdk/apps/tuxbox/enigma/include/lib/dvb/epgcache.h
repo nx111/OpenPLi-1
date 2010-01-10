@@ -160,6 +160,7 @@ public:
 				};
 	static std::map<eString, uniqueEPGKey>	eEPGCache::ServiceMapping;
 	static int readServiceMappingFile();
+	static int saveServiceMappingFile();
 	eServiceReferenceDVB getServiceReference(const eServiceReferenceDVB &service);
 
 #ifdef ENABLE_MHW_EPG
