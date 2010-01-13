@@ -1,14 +1,14 @@
 10
 
 dir
-54
+65
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-11-01T14:34:16.896578Z
-37
+2010-01-11T16:59:16.629113Z
+65
 daf2000
 
 
@@ -94,6 +94,9 @@ has-props
 
 1592
 
+root
+dir
+
 rules-archive.pl
 file
 
@@ -127,9 +130,6 @@ has-props
 
 
 1456
-
-root
-dir
 
 AUTHORS
 file
@@ -165,6 +165,9 @@ plindeman
 
 0
 
+Patches
+dir
+
 ChangeLog
 file
 
@@ -198,9 +201,6 @@ plindeman
 
 
 0
-
-Patches
-dir
 
 rules-install-flash
 file
@@ -270,40 +270,6 @@ plindeman
 
 272
 
-prepare
-file
-
-
-
-
-2009-12-09T08:20:10.676021Z
-cfa9153a4e88fa1d2fcebc20d680139f
-2009-10-20T21:36:31.923783Z
-24
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2670
-
 rules-install
 file
 
@@ -337,6 +303,40 @@ plindeman
 
 
 5670
+
+prepare
+file
+
+
+
+
+2009-12-09T08:20:10.676021Z
+cfa9153a4e88fa1d2fcebc20d680139f
+2009-10-20T21:36:31.923783Z
+24
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2670
 
 standard
 dir
@@ -418,11 +418,11 @@ file
 
 
 
-2009-12-09T08:20:10.676021Z
-c640e47298f63a768de8ef89d7050ffe
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-12T13:52:03.548502Z
+31b7bbdc4104cc68adef795dfde1b3a4
+2010-01-10T17:47:11.530075Z
+60
+daf2000
 
 
 
@@ -444,7 +444,7 @@ plindeman
 
 
 
-15026
+15293
 
 rules.pl
 file
@@ -594,33 +594,11 @@ file
 
 
 
-2009-12-09T08:20:10.680023Z
-f9396e618a507a1a41492949614e9567
-2009-09-13T12:34:56.427896Z
-14
+
+983fa9526255a59d2715a3ed3b9ce852
+2010-01-11T16:59:16.629113Z
+65
 daf2000
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-112923
 
 rules-archive
 file

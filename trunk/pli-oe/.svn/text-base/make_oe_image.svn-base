@@ -37,7 +37,9 @@ OE_IPK=$OE_BUILD/tmp/deploy/ipk
 OE_IMAGES=$OE_BUILD/tmp/deploy/images
 
 #old images can be cleared
-rm -f $OE_IMAGES/*
+rm -f $OE_IMAGES/*.nfi
+rm -f $OE_IMAGES/*.zip
+rm -f $OE_IMAGES/*.jfs2
 
 #you have to define FORCECLEAN=1 to clean some more
 if [ "${FORCECLEAN}" = "1" ]; then
@@ -102,8 +104,9 @@ FILENAME="OpenPLi-unstable-${MACHINE}-`date +%Y%m%d`"
 mv $OE_IMAGES/*.nfi $OE_IMAGES/$FILENAME.nfi
 zip -j $OE_IMAGES/$FILENAME $OE_IMAGES/$FILENAME.nfi
 
+mv $OE_IMAGES/*_usb.zip $OE_IMAGES/${FILENAME}_usb.zip
 
-rsync $OE_IMAGES/$FILENAME.zip rsync://upload.pli-images.org:8730::/builds/$IMAGEDIR/
+rsync $OE_IMAGES/$FILENAME*.zip rsync://upload.pli-images.org:8730::/builds/$IMAGEDIR/
 
 rm -Rf $OE_BUILD/tmp/deploy/3rd-party
 mkdir $OE_BUILD/tmp/deploy/3rd-party

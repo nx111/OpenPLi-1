@@ -77,6 +77,7 @@ public:
 	int getCount() { return entries; }
 	int setCurrent(const eListBoxEntry *c, bool sendSelected=false);
 	int getPos(const eListBoxEntry *c);
+	void setItemHeight(int item_height);
 	void sort();
 	void shuffle();
 	int moveSelection(int dir, bool sendSelected=false);
@@ -104,8 +105,8 @@ class eListBox: public eListBoxBase
 public:
 	Signal1<void, T*> selected;
 	Signal1<void, T*> selchanged;
-	eListBox(eWidget *parent, const eWidget* descr=0, int takefocus=1 )
-		:eListBoxBase( parent, descr, takefocus, T::getEntryHeight() )
+	eListBox(eWidget *parent, const eWidget* descr=0, int takefocus=1)
+		:eListBoxBase( parent, descr, takefocus, T::getEntryHeight())
 	{
 	}
 	T* getCurrent()	{ return (T*)eListBoxBase::getCurrent(); }

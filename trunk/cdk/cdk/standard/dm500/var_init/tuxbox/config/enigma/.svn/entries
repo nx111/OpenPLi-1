@@ -1,15 +1,15 @@
 10
 
 dir
-54
+65
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm500/var_init/tuxbox/config/enigma
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-11T14:10:26.738539Z
+64
+daf2000
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2009-12-09T08:20:05.164024Z
-ea5b7b6a8467504f8c3d7f54b3f8ef33
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-12T13:52:01.068504Z
+41bd6f459ed997e4a8c2e43bf7ba37aa
+2010-01-11T14:10:26.738539Z
+64
+daf2000
 has-props
 
 
@@ -58,5 +58,5 @@ has-props
 
 
 
-1429
+1473
 

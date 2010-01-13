@@ -557,7 +557,7 @@ static inline unsigned int recode(unsigned char d, int cp)
 	}
 }
 
-int UnicodeToUTF8(ucs4_t c, char *out)
+int UnicodeToUTF8(long c, char *out)
 {
 	char *s = out;
 	int ret = 0;
@@ -589,71 +589,71 @@ int UnicodeToUTF8(ucs4_t c, char *out)
 	return ret;
 }
 
-eString Big5ToUTF8(const char *szIn, int len);
 
-eString GB2312ToUTF8(const char *szIn, int len)
+eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen)
 {
 	char szOut[len * 2];
 	unsigned long code=0;
-	int t=0;
-	unsigned char cjktmp[3];
+	int t=0,i=0;
 
-	for(int i=0;i<len;i++){
-		cjktmp[0]=szIn[i];
-		cjktmp[1]=szIn[i+1];
-		cjktmp[2]='\0';
-		if (cjktmp[0]>0x80 && cjktmp[0]<0xff && cjktmp[1]>=0x40 && cjktmp[1]<0xff)
+	for(;i<(len-1);i++){
+		if (szIn[i]>0x80 && szIn[i]<0xff && szIn[i+1]>=0x40 && szIn[i+1]<0xff)
 		{
-			gbk_mbtowc((ucs4_t*)(&code),cjktmp,2);
+			gbk_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,2);
 			int k=UnicodeToUTF8(code,szOut+t);
 			t+=k;
 			i++;
-
 			}
 		else
 			szOut[t++]=szIn[i];
 	}
+  	if(szIn[i]<0x80)
+		szOut[t++]=szIn[i++];
+
+	if(pconvertedLen)*pconvertedLen=i;
 	return eString(szOut,t);
 }
 
-eString Big5ToUTF8(const char *szIn, int len)
+eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen)
 {
 	char szOut[len * 2];
-	unsigned char cjktmp[3],gbtmp[3];
 	unsigned long code=0;
-	int t=0;
+	int t=0,i=0;
 
-	for(int i=0;i<len;i++){
-			cjktmp[0]=szIn[i];
-			cjktmp[1]=szIn[i+1];
-			cjktmp[2]='\0';gbtmp[2]='\0';
-			if((cjktmp[0]>0xA0) && (cjktmp[0]<=0xF9)&&(
-				((cjktmp[1]>=0x40)&&(cjktmp[1]<=0x7F)) || ((cjktmp[1]>0xA0)&&(cjktmp[1]<0xFF))
-			    )){
-				big5_mbtowc((ucs4_t*)(&code),cjktmp,2);
-				int k=UnicodeToUTF8(code,szOut+t);
-				t+=k;
-				i++;
-			     }
-			else 
-				szOut[t++]=szIn[i];
+	for(;i<(len-1);i++){
+		if((szIn[i]>0xA0) && szIn[i]<=0xF9 &&(
+			((szIn[i+1]>=0x40)&&(szIn[i+1]<=0x7F)) || ((szIn[i+1]>0xA0)&&(szIn[i+1]<0xFF))
+		    )){
+			big5_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,2);
+			int k=UnicodeToUTF8(code,szOut+t);
+			t+=k;
+			i++;
+		     }
+		else 
+			szOut[t++]=szIn[i];
 	}
+
+  	if(szIn[i]<0xA0 || szIn[i]>0xF9)
+		szOut[t++]=szIn[i++];
+
+	if(pconvertedLen)*pconvertedLen=i;
 	return eString(szOut,t);
 	
 }
 
-eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidonid,int withEncodeID)
+eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidonid,int noEncodeID,int *pconvertedLen)
 {
-	if (!len)
+	if (!len){
+		if(pconvertedLen)*pconvertedLen=0;
 		return "";
+	}
 
 	int i=0, t=0;
 	int encode=table;
-
+	
 
 //	eDebug("ConvertDVBUTF8-1:<data=%s><table=0x%x><tsidonid=%d>\n",data,table,tsidonid);
-	if (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING ||encode==GB2312_ENCODING || encode==BIG5_ENCODING )
-	if(withEncodeID)
+	if (!noEncodeID && (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING ||encode==GB2312_ENCODING || encode==BIG5_ENCODING )) 
 	 switch(data[0])
 	 {
 		case 0:
@@ -702,8 +702,12 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			break;
 		case 0x16:
 			encode=UNICODE_ENCODING;
+			++i;
+			break;
 		case 0x17:
 			encode=UTF16LE_ENCODING;
+			++i;
+			break;
 		case 0xD ... 0xF:
 		case 0x18 ... 0x1F:
 			eDebug("reserved %d", data[0]);
@@ -719,16 +723,16 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			encode = (it->second) & 0x7F;
 	}
 
-	unsigned char res[2*len];
+	unsigned char res[4096];
 	switch(encode)
 	{
 		case 0 ... 16:
 		case VIDEOTEXSUPPL_ENCODING:
 		case 0x12:
 		case 0x15 ... 0x1F:
-
-		while (i < len)
 		{
+ 		  while (i < len)
+		  {
 			unsigned long code=0;
 
 	
@@ -742,14 +746,14 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 				i++;
 			}
 			else if(encode==UTF16BE_ENCODING){
-				if((i+2)>len)return eString("");
+				if((i+2)>len)break;
 				unsigned long w1=((unsigned long)(data[i])<<8) |((unsigned long)(data[i+1]));
 				if(w1<0xD800UL || w1>0xDFFFUL){
 					code=w1;
 					i+=2;
 				}
 				else if(w1>0xDBFFUL)
-					return eString("");
+					break;
 				else if((i+4)<len){
 					unsigned long w2=((unsigned long)(data[i+2])<<8) |((unsigned long)(data[i+3]));
 					if(w2<0xDC00UL || w2>0xDFFFUL)return eString("");
@@ -757,25 +761,25 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 					i+=4;
 				}
 				else 
-					return eString("");
+					break;
 			}
 			else if(encode==UTF16LE_ENCODING){
-				if((i+2)>len)return eString("");
+				if((i+2)>len)break;
 				unsigned long w1=((unsigned long)(data[i+1])<<8) |((unsigned long)(data[i]));
 				if(w1<0xD800UL || w1>0xDFFFUL){
 					code=w1;
 					i+=2;
 				}
 				else if(w1>0xDBFFUL)
-					return eString("");
+					break;
 				else if((i+4)<len){
 					unsigned long w2=((unsigned long)(data[i+3])<<8) |((unsigned long)(data[i+2]));
-					if(w2<0xDC00UL || w2>0xDFFFUL)return eString("");
+					if(w2<0xDC00UL || w2>0xDFFFUL)break;
 					code=0x10000UL + ((w1 & 0x03FFUL)<<10 ) | (w2 & 0x03FFUL);
 					i+=4;
 				}
 				else
-					return eString("");
+					break;
 			}
 			else if  (encode==0 || encode==UTF8_ENCODING){ 	// UTF-8 or default
 				res[t++]=data[i++];
@@ -807,20 +811,21 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 				res[t++]=(code&0x3F)|0x80;
 			}
 			i++;
-			if (t+4 > 2047)	{
-				eDebug("convertDVBUTF8 buffer to small.. break now");
+			if (t+4 > 4095)	{
+				eDebug("convertDVBUTF8 buffer to small,must not more than 4095 bytes. break now!");
 				break;
 				}
 			}
-//		eDebug("ConvertDVBUTF8-4:<return=%s>\n",res);
-		return eString((char*)res, t);
-		break;
-
+        
+		  if(pconvertedLen)*pconvertedLen=i;
+		  return eString((char*)res, t);
+		  break;
+        }
 		case GB2312_ENCODING:
-			return GB2312ToUTF8((const char *)(data + i), len - i);
+			return GB2312ToUTF8((const char *)(data + i), len - i,pconvertedLen);
 			break;
 		case BIG5_ENCODING:
-			return Big5ToUTF8((const char *)(data + i), len - i);
+			return Big5ToUTF8((const char *)(data + i), len - i,pconvertedLen);
 	}
 	return eString("");
 	

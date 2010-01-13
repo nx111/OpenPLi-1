@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svnroot/openpli/!svn/ver/36/trunk/cdk/apps/tuxbox/enigma/lib/dvb
+/svnroot/openpli/!svn/ver/61/trunk/cdk/apps/tuxbox/enigma/lib/dvb
 END
 epgcache.cpp
 K 25
@@ -97,13 +97,7 @@ subtitle.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openpli/!svn/ver/20/trunk/cdk/apps/tuxbox/enigma/lib/dvb/subtitle.cpp
-END
-cahandler.README
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/cahandler.README
+/svnroot/openpli/!svn/ver/61/trunk/cdk/apps/tuxbox/enigma/lib/dvb/subtitle.cpp
 END
 dvbservice.cpp
 K 25
@@ -111,23 +105,29 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvbservice.cpp
 END
+cahandler.README
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/cahandler.README
+END
 service.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/service.cpp
 END
-pvrparse.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/pvrparse.cpp
-END
 dvbwidgets.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvbwidgets.cpp
+END
+pvrparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/pvrparse.cpp
 END
 decoder.cpp
 K 25
@@ -141,11 +141,11 @@ svn:wc:ra_dav:version-url
 V 77
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/esection.cpp
 END
-si.cpp
+eventdata.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/si.cpp
+V 78
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/eventdata.cpp
 END
 dvb.cpp
 K 25
@@ -153,11 +153,11 @@ svn:wc:ra_dav:version-url
 V 72
 /svnroot/openpli/!svn/ver/7/trunk/cdk/apps/tuxbox/enigma/lib/dvb/dvb.cpp
 END
-eventdata.cpp
+si.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/eventdata.cpp
+V 71
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/lib/dvb/si.cpp
 END
 frontend.cpp
 K 25
@@ -181,7 +181,7 @@ subtitling.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openpli/!svn/ver/20/trunk/cdk/apps/tuxbox/enigma/lib/dvb/subtitling.cpp
+/svnroot/openpli/!svn/ver/61/trunk/cdk/apps/tuxbox/enigma/lib/dvb/subtitling.cpp
 END
 Makefile.am
 K 25

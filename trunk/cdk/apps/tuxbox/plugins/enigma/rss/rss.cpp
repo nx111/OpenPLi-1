@@ -98,8 +98,10 @@ rssMain::rssMain(): eWindow(1)
 	cresize(eSize(640, 380));
 	valign();
 	setText("Dreambox RSS reader");
-
+	
+	int itemHeight=eListBoxEntryText::getEntryHeight() * 3/2;
 	theList = new eListBox<eListBoxEntryText>(this);
+	theList->setItemHeight(itemHeight);
 	theList->move(ePoint(10, 10));
 	theList->resize(eSize(clientrect.width() - 20, clientrect.height() - 20));
 	theList->loadDeco();
@@ -174,7 +176,9 @@ rssFeed::rssFeed(): eWindow(1)
 	valign();
 	setText("Feed");
 
+	int itemHeight=eListBoxEntryText::getEntryHeight() * 3/2;
 	theList = new eListBox<eListBoxEntryText>(this);
+	theList->setItemHeight(itemHeight);
 	theList->move(ePoint(10, 10));
 	theList->resize(eSize(clientrect.width() - 20, clientrect.height() - 20));
 	theList->loadDeco();
@@ -605,6 +609,7 @@ void RSSParser::save(NewsItem i)
 void RSSParser::parse(eString file)
 {	XMLTreeParser * parser;
 	FILE *in = fopen(file.c_str(), "rt");
+	FILE *out= fopen("/tmp/rss_out.xml","wt");
 	newsItems.clear();
 
         if(in) 
@@ -615,8 +620,9 @@ void RSSParser::parse(eString file)
 		int encode=0;
 		sprintf(encoding,"ISO-8859-1");
 		unsigned int len=0;
+		int convertedLen=0;
 		char * pointer;
-		len=freadLines(in,buf,sizeof(buf));
+		len=fread(buf,1,sizeof(buf),in);
 		pointer=strstr(buf, "encoding=");
 		if (pointer!=NULL) pointer=strstr(pointer, "\"");
 		if (pointer!=NULL){
@@ -631,35 +637,57 @@ void RSSParser::parse(eString file)
 		if (strcmp(encoding,"windows-1254")==0){
 		    sprintf(encoding,"ISO-8859-9");
 		}
+		encode=getEncodeTableValue(encoding);
+		eDebug("RSS:encoding=%s encode=%d",encoding,encode);
+
+		eString ubuf=convertDVBUTF8((const unsigned char *)buf,len,encode,0,1,&convertedLen);	
+		eDebug("RSS:Read %d bytes,converted %d bytes",len,convertedLen);
+
+		if ((strcasecmp(encoding,"ISO-8859-1")!=0)&&(strcasecmp(encoding,"UTF-8")!=0)){
+			eString nbuf=ubuf.strReplace(encoding,"UTF-8",UTF8_ENCODING);
+			ubuf=nbuf;
+		    sprintf(encoding,"UTF-8");
+		}
+
 		for (unsigned int i=0;i<strlen(encoding);i++){
 		    encoding[i]=toupper(encoding[i]);
 		}
-		encode=getEncodeTableValue(encoding);
-		eDebug("RSS:encoding=%s encode=%d",encoding,encode);
-		if ((strcmp(encoding,"ISO-8859-1")!=0)&&(strcmp(encoding,"UTF-8")!=0)){
-		    sprintf(encoding,"UTF-8");
-		}
+
 		parser = new XMLTreeParser(encoding);
 		if (parser==NULL){
 		    parser = new XMLTreeParser("UTF-8");
 		}
-		eString ubuf=convertDVBUTF8((const unsigned char *)buf,len,encode,0,0);
+
+		fwrite(ubuf.c_str(),1,ubuf.length(),out);
+		fseek(in,convertedLen-len,SEEK_CUR);
+
 		do 
-		{	len=freadLines(in,buf, sizeof(buf));
-			ubuf=convertDVBUTF8((const unsigned char *)buf,len,encode,0,0);
-			done = feof(in);
+		{
+			done = (len==0 || feof(in));
 			if ( ! parser->Parse( ubuf.c_str(), ubuf.length(), done ) ) 
-			{	eMessageBox msg(_("XML parse error (general xml)"), _("Error"), eMessageBox::iconWarning|eMessageBox::btOK);
-				msg.show();     msg.exec();     msg.hide();
+			{
+				int errorcode=parser->GetErrorCode();
+				eString errmsg;
+				errmsg.sprintf("XML parse error (general xml),ErrorCode=%d",errorcode);
+				eMessageBox msg(errmsg, _("Error"), eMessageBox::iconWarning|eMessageBox::btOK);
+				msg.show(); msg.exec();  msg.hide();
 				delete parser;
 				parser = NULL;
 				return;
 			}
 
+			len=fread(buf,1,sizeof(buf),in);
+			ubuf=convertDVBUTF8((const unsigned char *)buf,len,encode,0,1,&convertedLen);
+			eDebug("RSS:Read %d bytes,converted %d bytes",len,convertedLen);
+
+			fwrite(ubuf.c_str(),1,ubuf.length(),out);
+			fseek(in,convertedLen-len,SEEK_CUR);
+
 		} 
 		while (!done);
 
                 fclose(in);
+		fclose(out);
 
 		XMLTreeNode * root = parser->RootNode();
 		if(!root)
@@ -760,19 +788,3 @@ static int getEncodeTableValue(char * encoding)
 	return 0;
 }
 
-static int freadLines(FILE *f,char *buf,int maxsize)
-{
-	int len=fread(buf,sizeof(char),maxsize-1,f);
-	int rlen=len;
-	int back=0;
-	buf[len]='\0';
-	char *p=strrchr(buf,'\n');
-	if(p) {
-		rlen=(p-buf);
-		back=rlen-len;
-	}
-	if(back!=0)
-		fseek(f,back,SEEK_CUR);
-
-	return rlen;
-}

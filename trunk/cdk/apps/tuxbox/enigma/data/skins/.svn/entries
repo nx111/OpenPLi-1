@@ -1,15 +1,15 @@
 10
 
 dir
-54
+65
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/skins
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-11T16:59:16.629113Z
+65
+daf2000
 
 
 
@@ -672,40 +672,6 @@ plindeman
 
 41
 
-pingu.esml
-file
-
-
-
-
-2009-12-09T08:20:35.568018Z
-fe78e9d72ae2c0381b79d7e9c001340e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-27290
-
 chk_blue2.png
 file
 
@@ -740,17 +706,51 @@ has-props
 
 2084
 
+pingu.esml
+file
+
+
+
+
+2009-12-09T08:20:35.568018Z
+fe78e9d72ae2c0381b79d7e9c001340e
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27290
+
 default.esml
 file
 
 
 
 
-2009-12-09T08:20:35.572019Z
-39e0c774c8c4f85e620b0ab61da192a7
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-12T13:53:08.028504Z
+23b7ee7be6ce1bb8f9f13bdab37f8266
+2010-01-11T16:59:16.629113Z
+65
+daf2000
 
 
 
@@ -772,41 +772,7 @@ plindeman
 
 
 
-67620
-
-small169_snr.info
-file
-
-
-
-
-2009-12-09T08:20:35.572019Z
-d989e60ef6abb39a5cc9172c3f2a0fc0
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-56
+67661
 
 small_snr.info
 file
@@ -842,6 +808,40 @@ plindeman
 
 48
 
+small169_snr.info
+file
+
+
+
+
+2009-12-09T08:20:35.572019Z
+d989e60ef6abb39a5cc9172c3f2a0fc0
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+56
+
 blueqt.info
 file
 
@@ -875,40 +875,6 @@ plindeman
 
 
 29
-
-carbon.png
-file
-
-
-
-
-2009-12-09T08:20:35.572019Z
-a73df814d074c44646740779c8590349
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1394
 
 stone.esml
 file
@@ -944,14 +910,14 @@ plindeman
 
 37987
 
-small169.png
+carbon.png
 file
 
 
 
 
-2009-12-09T08:20:35.584019Z
-dc59766ed0beca68b1859d23a1a122fd
+2009-12-09T08:20:35.572019Z
+a73df814d074c44646740779c8590349
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -976,7 +942,7 @@ has-props
 
 
 
-1199
+1394
 
 small.png
 file
@@ -1012,17 +978,18 @@ has-props
 
 1199
 
-chk_blue2.esml
+small169.png
 file
 
 
 
 
 2009-12-09T08:20:35.584019Z
-09c01e166ed21caeb9b683ebd84ddad0
+dc59766ed0beca68b1859d23a1a122fd
 2009-08-14T21:33:06.552841Z
 2
 plindeman
+has-props
 
 
 
@@ -1043,8 +1010,7 @@ plindeman
 
 
 
-
-18129
+1199
 
 stone_snr.png
 file
@@ -1079,6 +1045,40 @@ has-props
 
 
 3100
+
+chk_blue2.esml
+file
+
+
+
+
+2009-12-09T08:20:35.584019Z
+09c01e166ed21caeb9b683ebd84ddad0
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18129
 
 silver.info
 file

@@ -91,7 +91,13 @@ void eListBoxBase::recalcMaxEntries()
 	// And no edge remains ..
 	if ( tmp - ( MaxEntries*item_height ) > 0 )
 	{
-		if ( (!removed_height_pixel)|| MaxEntries)
+		
+		if ( !MaxEntries){
+				removed_height_pixel = tmp-item_height-decoheight;
+				resize( eSize( size.width(), item_height+decoheight ) );
+				MaxEntries ++;
+		}
+		else if ( (!removed_height_pixel) || !(flags & flagShowPartial) )
 		{
 			removed_height_pixel = height() - ((MaxEntries*item_height) + decoheight);
 			resize( eSize( size.width(), height()-removed_height_pixel ) );
@@ -172,6 +178,14 @@ int eListBoxBase::setProperty(const eString &prop, const eString &value)
 		return eDecoWidget::setProperty(prop, value);
 
 	return 0;
+}
+void eListBoxBase::setItemHeight(int itemHeight)
+{
+	if(!itemHeight)return;
+
+	item_height=itemHeight;
+	event(eWidgetEvent(eWidgetEvent::changedSize));
+
 }
 
 void eListBoxBase::recalcScrollBar()

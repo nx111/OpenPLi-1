@@ -47,10 +47,14 @@ public:
 	int icompare(const eString& s);
 };
 
-eString convertDVBUTF8(const unsigned char *data, int len, int table=0, int tsidonid=0,int withEncodeID=1); // with default ISO8859-1/Latin1
+eString convertDVBUTF8(const unsigned char *data, int len, int table=0, int tsidonid=0,int noEncodeID=0,int *pconvertedLen=0); // with default ISO8859-1/Latin1
 eString convertUTF8DVB(const eString &string, int table=0); // with default ISO8859-1/Latin1
 eString convertLatin1UTF8(const eString &string);
 int isUTF8(const eString &string);
+
+eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
+eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
+int UnicodeToUTF8(long c, char *out);
 
 /////////////////////////////////////////////// Copy Constructors ////////////////////////////////////////////////
 inline eString::eString(const std::string &s)

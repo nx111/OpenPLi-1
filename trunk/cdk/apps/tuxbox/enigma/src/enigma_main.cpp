@@ -3165,7 +3165,7 @@ void eZapMain::showServiceSelector(int dir, int newTarget )
 			e->eventHandler( eWidgetEvent(eWidgetEvent::evtAction, action));
 		}
 	}
-//	e->selectService(eServiceInterface::getInstance()->service);
+	e->selectService(eServiceInterface::getInstance()->service);
 	const eServiceReference *service = e->choose(dir); // reset path only when NOT showing specific list
 
 #ifndef DISABLE_LCD
@@ -4764,7 +4764,7 @@ void eZapMain::startSkip(int dir)
 		skipLabel1->setText(s);
 	}
 	int showosd = 1;
-	eConfig::getInstance()->getKey("/ezap/osd/showInfoBarOnZap", showosd );
+	eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
 	if (firstskip && showosd)
 		showInfobar();
 	if ( timeout.isActive() )
@@ -7427,7 +7427,7 @@ int eZapMain::eventHandler(const eWidgetEvent &event)
 					handler->serviceCommand(eServiceCommand(eServiceCommand::cmdSeekEnd));
 					updateProgress();
 					int showosd = 1;
-					eConfig::getInstance()->getKey("/ezap/osd/showInfoBarOnZap", showosd );
+					eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
 					if (showosd)
 						showInfobar(true);
 
@@ -8226,11 +8226,6 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 	}
 #endif // DISABLE_FILE
 
-/*	int showosd = 1;
-	eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showosd );
-	if (showosd)
-		showInfobar(true);
-*/
 	cur_event_id = -1;
 
 	eServiceInterface::getInstance()->removeRef(_serviceref);
@@ -8240,7 +8235,7 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 
 
 	showInfobarOnZap = 1;
-	eConfig::getInstance()->getKey("/ezap/osd/showInfoBarOnZap", showInfobarOnZap);
+	eConfig::getInstance()->getKey("/ezap/osd/showOSDOnSwitchService", showInfobarOnZap);
 	if (showInfobarOnZap) {
 		showInfobar(true);
 		if (doHideInfobar())
