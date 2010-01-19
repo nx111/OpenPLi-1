@@ -95,16 +95,16 @@ eString removeTrailingSpaces(const eString& in)
 rssMain::rssMain(): eWindow(1)
 {
 //	cmove(ePoint(140, 120));
-	cresize(eSize(640, 380));
+	resize(eSize(640, 390));
 	valign();
 	setText("Dreambox RSS reader");
 	
-	int itemHeight=eListBoxEntryText::getEntryHeight() * 3/2;
+	int itemHeight=eListBoxEntryText::getEntryHeight()+10;
 	theList = new eListBox<eListBoxEntryText>(this);
 	theList->setItemHeight(itemHeight);
 	theList->move(ePoint(10, 10));
 	theList->resize(eSize(clientrect.width() - 20, clientrect.height() - 20));
-	theList->loadDeco();
+//	theList->loadDeco();
 	theList->setColumns(1);
 
 	setFocus(theList);
@@ -172,16 +172,16 @@ rssFeed::rssFeed(): eWindow(1)
 	//560x376
 
 //	move(ePoint(80, 100));
-	resize(eSize(660, 390));
+	resize(eSize(640, 390));
 	valign();
 	setText("Feed");
 
-	int itemHeight=eListBoxEntryText::getEntryHeight() * 3/2;
+	int itemHeight=eListBoxEntryText::getEntryHeight() +10;
 	theList = new eListBox<eListBoxEntryText>(this);
 	theList->setItemHeight(itemHeight);
 	theList->move(ePoint(10, 10));
 	theList->resize(eSize(clientrect.width() - 20, clientrect.height() - 20));
-	theList->loadDeco();
+//	theList->loadDeco();
 	theList->setColumns(1);
 
 	setFocus(theList);
@@ -478,7 +478,7 @@ rssDetail::rssDetail(const char *title, const char *desc) : eWindow(0)
 	setText(title);
 
 //	move(ePoint(80, 123));
-	resize(eSize(660, 383));	
+	resize(eSize(640, 390));	
 	valign();
 
 	scrollbar = new eProgress(this);
@@ -660,11 +660,11 @@ void RSSParser::parse(eString file)
 
 		fwrite(ubuf.c_str(),1,ubuf.length(),out);
 		fseek(in,convertedLen-len,SEEK_CUR);
-
+		int pareseFailed=0;
 		do 
 		{
 			done = (len==0 || feof(in));
-			if ( ! parser->Parse( ubuf.c_str(), ubuf.length(), done ) ) 
+			if (!pareseFailed && ! parser->Parse( ubuf.c_str(), ubuf.length(), done ) ) 
 			{
 				int errorcode=parser->GetErrorCode();
 				eString errmsg;
@@ -673,7 +673,7 @@ void RSSParser::parse(eString file)
 				msg.show(); msg.exec();  msg.hide();
 				delete parser;
 				parser = NULL;
-				return;
+				pareseFailed=1;
 			}
 
 			len=fread(buf,1,sizeof(buf),in);
@@ -688,6 +688,8 @@ void RSSParser::parse(eString file)
 
                 fclose(in);
 		fclose(out);
+
+		if(pareseFailed)return ;
 
 		XMLTreeNode * root = parser->RootNode();
 		if(!root)

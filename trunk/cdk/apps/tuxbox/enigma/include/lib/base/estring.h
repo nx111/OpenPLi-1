@@ -55,6 +55,7 @@ int isUTF8(const eString &string);
 eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
 eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
 int UnicodeToUTF8(long c, char *out);
+int isSpaceChar(char ch);
 
 /////////////////////////////////////////////// Copy Constructors ////////////////////////////////////////////////
 inline eString::eString(const std::string &s)

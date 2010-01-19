@@ -1322,7 +1322,7 @@ int eListBoxEntryText::getEntryHeight()
 	if ( !font.pointSize)
 		font = eSkin::getActive()->queryFont("eListBox.EntryText.normal");
 
-	return calcFontHeight( font ) + 4;
+	return calcFontHeight( font ) + 6;
 }
 
 int eListBoxEntryTextStream::getEntryHeight()
@@ -1330,7 +1330,7 @@ int eListBoxEntryTextStream::getEntryHeight()
 	if ( !font.pointSize)
 		font = eSkin::getActive()->queryFont("eListBox.EntryText.normal");
 
-	return calcFontHeight( font ) + 4;
+	return calcFontHeight( font ) + 6;
 }
 
 int calcFontHeight( const gFont& font)
@@ -1429,8 +1429,8 @@ const eString& eListBoxEntryText::redraw(gPainter *rc, const eRect& rect, gColor
 		para->setFont( font );
 		para->renderString(text);
 		para->realign(align);
-//		yOffs = ((rect.height() - para->getBoundBox().height()) / 2 + 0) - para->getBoundBox().top() ;
-		yOffs=0;
+		yOffs = ((rect.height() - para->getBoundBox().height()) / 2 + 0) - para->getBoundBox().top() ;
+//		yOffs=0;
 	}
 	rc->renderPara(*para, ePoint( lft, rect.top()+yOffs ) );
 

@@ -1317,32 +1317,30 @@ eServiceReferenceDVB eEPGCache::getServiceReference(const eServiceReferenceDVB &
 	char chname[256];
 	bool spacech=false;
 	for(i=0,j=0;i<(servicename.length()) && j<255;i++){
-			if (servicename[i]<' ')continue;
 			if (servicename[i]==' ' ||  servicename[i]=='\t' || servicename[i]=='_'){
 				if(spacech)
 					continue;
 				else{
-					chname[j]='_';
+					chname[j++]='_';
 					spacech=true;
 				}
 			}
-			else{
+			else if (!isspace(servicename[i])){
 				spacech=false;
-				chname[j]=servicename[i];
+				chname[j++]=servicename[i];
 			}
-			j++;
-		}
-		chname[j]='\0';
+	}
+	chname[j]='\0';
 
-	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(chname);
+	std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(eString((const char *)chname));
 	if(mIt==ServiceMapping.end())
 		return service;
 	return eServiceReferenceDVB(service.getDVBNamespace(),mIt->second.tsid,mIt->second.onid,mIt->second.sid,service.getServiceType());
 }
 
+
 int eEPGCache::readServiceMappingFile()
 {
-
 	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "rt");
 	if(!f)return -1;
 	ServiceMapping.clear();
@@ -1354,58 +1352,51 @@ int eEPGCache::readServiceMappingFile()
 	int sid,tsid, onid;
 	while( getline(&line, &bufsize, f) != -1 )
 	{
-		if ( line[0] == '#' )
-			continue;
+		for(i=0;line[i] && line[i]!='#' ;i++);
+		line[i]=0;
 
 		char sec[4][250];
 		const char splitch[]=":=";
 		char *p=strtok(line,splitch);
+		char *search;
 		count=0;
-		while(p){
+		do{
 			char *s=sec[count];
-			char *search;
-		        for(search=p; *(unsigned char *)search<=' ' || *search=='_' ; search++);
 
-		        do {
-		                *s++ = *search++;
-		        } while (*search != '\0');
+			/***********   trim  begin **********/
+			for(search=p; isSpaceChar(*search) ; search++);
 
-		        search = s;
+			do {
+				*s++ = *search++;
+			}while (*search != '\0');
 
-		        for(search--; *(unsigned char *)search<=' '  || *search=='_'; search--);
-		        search++;
-		        *search='\0' ;
+			search = s;
+			for(search--;isSpaceChar(*search); search--);
 
+			search++;
+			*search='\0' ;
+			/**************  trim end  ************/
 			count++;
 			p=strtok(NULL,splitch);
-			}
-		for (i = 0; i < count; i++)
-		{
-			if (sec[i][0] == '#')
-			{
-				count = i;
-				break;
-			}
-		}
+		}while(p);
+
 		if(count<4)continue;
-		char *search;
+
 		char chname[256];
-		bool spacech=false;
+		int spacech=0;
 		for(search=sec[3],i=0;search<(sec[3]+strlen(sec[3])) && i<255;search++){
-			if (*(unsigned char *)search<' ')continue;
 			if (*search==' ' ||  *search=='\t' || *search=='_'){
 				if(spacech)
 					continue;
 				else{
-					chname[i]='_';
-					spacech=true;
+					chname[i++]='_';
+					spacech=1;
 				}
 			}
-			else{
-				spacech=false;
-				chname[i]=*search;
+			else if (!isSpaceChar(*search)){
+				spacech=0;
+				chname[i++]=*search;
 			}
-			i++;
 		}
 		chname[i]='\0';
 		

@@ -185,22 +185,22 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 			servicemap.second.find(ev_it->second->getStartTime());
 		if ( tm_it_tmp != servicemap.second.end() )
 		{
-			if ( tm_it_tmp->first == TM ) // correct eventData
+		/*	if ( tm_it_tmp->first == TM ) // correct eventData
 			{
 							// exempt memory
-			//	delete ev_it->second;
-			//	evt = new eventData(eit_event, eit_event_size, source);
-			//	ev_it->second=evt;
-			//	tm_it_tmp->second=evt;
+				delete ev_it->second;
+				evt = new eventData(eit_event, eit_event_size, source);
+				ev_it->second=evt;
+				tm_it_tmp->second=evt;
 				return;
 			}
 			else
-			{
-				tm_erase_count++;
+			{	
+		*/		tm_erase_count++;
 				// delete the found record from timemap
 		//		servicemap.second.erase(tm_it_tmp);
 		//		prevTimeIt=servicemap.second.end();
-			}
+		//	}
 		}
 	}
 
@@ -235,7 +235,7 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 	//	delete tm_it->second;
 	//	ev_it->second=evt;
 	//	tm_it->second=evt;
-		delete evt;
+	//	delete evt;
 	}
 	else if (ev_erase_count == 0 && tm_erase_count > 0)
 	{
@@ -525,7 +525,7 @@ int eEPGMemStore::readEncode()
 					result = GB2312_ENCODING;
 				else if (strcasecmp(sec, "big5") == 0)
 					result = BIG5_ENCODING;
-				else if (strcasecmp(sec, "utf8") == 0)
+				else if (strcasecmp(sec, "utf8") == 0 || strcasecmp(sec, "utf-8") == 0)
 					result = UTF8_ENCODING;
 				else if (strcasecmp(sec, "unicode") == 0)
 					result = UNICODE_ENCODING;
@@ -547,6 +547,7 @@ int eEPGMemStore::readEncode()
 void eEPGMemStore::load()
 {	
 	MemStoreEncode=0;	//init epg.dat's encode
+	unlink("/tmp/.EPG_LOAD_NOTHING");
 
 	struct stat epgStat;
 	int epgStoreLimit = 1;
@@ -617,7 +618,7 @@ void eEPGMemStore::load()
 						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
 					}
 					eventData::load(f,srPLI_EPGDAT);
-					
+					if(!cnt)system("touch /tmp/.EPG_LOAD_NOTHING &");
 					eDebug("[EPGM] %d events read from ENIGMA_PLI_V5 %s", cnt, (dbDir + "/epg.dat").c_str());
 				}
 				else if ( !strncmp( text1, "ENIGMA_EPG_V7", 13) )
@@ -659,6 +660,7 @@ void eEPGMemStore::load()
 						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
 					}
 					eventData::load(f,srGEMINI_EPGDAT);
+					if(!cnt)system("touch /tmp/.EPG_LOAD_NOTHING &");
 					eDebug("[EPGM] %d events read from ENIGMA_EPG_V7 %s", cnt, (dbDir + "/epg.dat").c_str());
 				}
 				else

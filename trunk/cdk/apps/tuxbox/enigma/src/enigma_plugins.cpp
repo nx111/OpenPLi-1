@@ -25,6 +25,7 @@
 #include <lib/gui/eskin.h>
 #include <lib/gui/eprogress.h>
 #include <lib/system/info.h>
+#include <lib/driver/eavswitch.h>
 
 #define PPANELDIR "/var/etc/ppanels/"
 
@@ -613,6 +614,10 @@ void ePluginThread::start()
 					eConfig::getInstance()->getKey("/enigma/plugins/needoffsets/top", top);
 					eConfig::getInstance()->getKey("/enigma/plugins/needoffsets/right", right);
 					eConfig::getInstance()->getKey("/enigma/plugins/needoffsets/bottom", bottom);
+					if (bottom>480)               //offset is setted for PAL
+					    bottom=(eAVSwitch::getInstance()->getVSystem() == vsNTSC )?(bottom-(576-480)):bottom;
+					else                          //offset is setted for NTSC
+					    bottom=(eAVSwitch::getInstance()->getVSystem() == vsNTSC )?bottom:(bottom+(576-480));
 					MakeParam(P_ID_OFF_X, left);
 					MakeParam(P_ID_OFF_Y, top);
 					MakeParam(P_ID_END_X, right);

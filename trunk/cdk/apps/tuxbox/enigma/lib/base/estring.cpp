@@ -607,7 +607,7 @@ eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen)
 		else
 			szOut[t++]=szIn[i];
 	}
-  	if(szIn[i]<0x80)
+  	if(szIn[i]<0x80 && szIn[i])
 		szOut[t++]=szIn[i++];
 
 	if(pconvertedLen)*pconvertedLen=i;
@@ -633,7 +633,7 @@ eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen)
 			szOut[t++]=szIn[i];
 	}
 
-  	if(szIn[i]<0xA0 || szIn[i]>0xF9)
+  	if(szIn[i] && (szIn[i]<0xA0 || szIn[i]>0xF9))
 		szOut[t++]=szIn[i++];
 
 	if(pconvertedLen)*pconvertedLen=i;
@@ -990,3 +990,10 @@ int isUTF8(const eString &string)
 	}
 	return 1; // can be UTF8 (or pure ASCII, at least no non-UTF-8 8bit characters)
 }
+
+int isSpaceChar(char ch)
+{
+	unsigned char chin=(unsigned char)ch;
+	return (chin<=' ');
+}
+
