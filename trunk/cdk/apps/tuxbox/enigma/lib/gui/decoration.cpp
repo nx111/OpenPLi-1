@@ -38,13 +38,13 @@ bool eDecoration::load(const eString& base)
 		borderLeft=borderTop=borderRight=borderBottom=0;
 	
 		if (iTop)
-			borderTop = iTop->y;
+			borderTop = iTop->y + 1;
 		if (iLeft)
-			borderLeft = iLeft->x;
+			borderLeft = iLeft->x + 1;
 		if (iRight)
-			borderRight = iRight->x;
+			borderRight = iRight->x - 1;
 		if (iBottom)
-			borderBottom = iBottom->y;
+			borderBottom = iBottom->y - 1;
 /*		if (iTopLeft)
 		{
 			if ( iTopLeft->y > borderTop)

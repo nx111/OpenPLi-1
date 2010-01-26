@@ -52,7 +52,7 @@ class ExtraOSDSetupFactory : public eCallableMenuFactory
 ExtraOSDSetupFactory ExtraOSDSetup_factory;
 
 ExtraOSDSetup::ExtraOSDSetup()
-	:eSetupWindow(_(MENUNAME), 14, 600)
+	:eSetupWindow(_(MENUNAME), 13, 600)
 {
 	valign();
 	list.setFlags(list.getFlags()|eListBoxBase::flagNoPageMovement);

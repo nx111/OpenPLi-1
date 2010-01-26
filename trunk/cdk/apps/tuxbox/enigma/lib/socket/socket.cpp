@@ -354,4 +354,3 @@ int eUnixDomainSocket::connectToPath(eString path)
 	}
 	return(0);
 }
-

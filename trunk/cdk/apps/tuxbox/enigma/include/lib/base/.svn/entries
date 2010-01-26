@@ -94,13 +94,6 @@ plindeman
 
 4027
 
-gb2312.h
-file
-0
-
-
-add
-
 console.h
 file
 
@@ -168,6 +161,13 @@ plindeman
 
 
 4834
+
+gbk.h
+file
+0
+
+
+add
 
 eptrlist.h
 file

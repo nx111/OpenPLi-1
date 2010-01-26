@@ -939,6 +939,7 @@ struct updateEPGChangedService
 				{
 					if ( e->getEventID() != l.curEventId )
 					{
+						cnt=l.listbox->getPos((const eListBoxEntry *)(&l));
 						if ( redrawOnly )
 							((eListBox<eListBoxEntryService>*) l.listbox)->invalidateEntry(cnt);
 						else
@@ -958,10 +959,8 @@ void eServiceSelector::EPGUpdated()
 	epgcache->Lock();
 	tmpMap *tmp = epgcache->getUpdatedMap();
 
-	services->beginAtomic();
 	services->forEachEntry( updateEPGChangedService( tmp ) );
 	services->forEachVisibleEntry( updateEPGChangedService( tmp, true ) );
-	services->endAtomic();
 	tmp->clear();
 	epgcache->Unlock();
 }
@@ -982,10 +981,8 @@ struct invalidateServiceDescr
 void eServiceSelector::SwitchNowNext()
 {
 	eListBoxEntryService::nownextEPG = 1-eListBoxEntryService::nownextEPG;
-	services->beginAtomic();
 	services->forEachEntry( invalidateServiceDescr() );
 	services->invalidate();
-	services->endAtomic();
 	updateCi();
 }
 
@@ -1209,7 +1206,6 @@ void eServiceSelector::forEachServiceRef( Signal1<void,const eServiceReference&>
 {
 	eListBoxEntryService *safe = services->getCurrent(),
 											 *p, *beg;
-	services->beginAtomic();
 	if ( fromBeg )
 	{
 		services->moveSelection( eListBoxBase::dirFirst );
@@ -1230,7 +1226,6 @@ void eServiceSelector::forEachServiceRef( Signal1<void,const eServiceReference&>
 
 	if ( fromBeg )
 		services->setCurrent(safe);
-	services->endAtomic();
 }
 
 int eServiceSelector::eventHandler(const eWidgetEvent &event)

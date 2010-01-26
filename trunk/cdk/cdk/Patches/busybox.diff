@@ -1,6 +1,6 @@
 diff -Naur busybox-1.01.orig/editors/vi.c busybox-1.01/editors/vi.c
 --- busybox-1.01.orig/editors/vi.c	2005-08-17 09:29:16.000000000 +0800
-+++ busybox-1.01/editors/vi.c	2009-12-31 08:58:48.756427965 +0800
++++ busybox-1.01/editors/vi.c	2010-01-20 17:04:59.124740215 +0800
 @@ -19,7 +19,7 @@
   */
  
@@ -274,8 +274,19 @@ diff -Naur busybox-1.01.orig/editors/vi.c busybox-1.01/editors/vi.c
  			}
 diff -Naur busybox-1.01.orig/include/usage.h busybox-1.01/include/usage.h
 --- busybox-1.01.orig/include/usage.h	2005-08-17 09:29:15.000000000 +0800
-+++ busybox-1.01/include/usage.h	2009-12-31 08:58:48.760428196 +0800
-@@ -1886,8 +1886,15 @@
++++ busybox-1.01/include/usage.h	2010-01-20 17:12:40.472736768 +0800
+@@ -1787,7 +1787,9 @@
+ 	"\t-l\t\tlisten mode, for inbound connects\n" \
+ 	"\t-p PORT\t\tlocal port number\n" \
+ 	"\t-i SECS\t\tdelay interval for lines sent\n" \
+-	"\t-e PROG\t\tprogram to exec after connect (dangerous!)"
++	"\t-e PROG\t\tprogram to exec after connect (dangerous!)"\
++	"\t-w timeout\t\ttimeout,seconds\n"\
++	"\t-z\t\tzero input/output mode,no data send or receive."
+ #define nc_example_usage \
+ 	"$ nc foobar.somedomain.com 25\n" \
+ 	"220 foobar ESMTP Exim 3.12 #1 Sat, 15 Apr 2000 00:03:02 -0600\n" \
+@@ -1886,8 +1888,15 @@
  	"Options:\n" \
  	"\t-c COUNT\tSend only COUNT pings.\n" \
  	"\t-s SIZE\t\tSend SIZE data bytes in packets (default=56).\n" \
@@ -293,7 +304,7 @@ diff -Naur busybox-1.01.orig/include/usage.h busybox-1.01/include/usage.h
  #endif
  #define ping_example_usage \
  	"$ ping localhost\n" \
-@@ -1978,12 +1985,13 @@
+@@ -1978,12 +1987,13 @@
  	"/root\n"
  
  #define rdate_trivial_usage \
@@ -309,7 +320,7 @@ diff -Naur busybox-1.01.orig/include/usage.h busybox-1.01/include/usage.h
  
  #define readlink_trivial_usage \
  	""
-@@ -2814,7 +2822,8 @@
+@@ -2814,7 +2824,8 @@
  
  #define wget_trivial_usage \
  	"[-c|--continue] [-q|--quiet] [-O|--output-document file]\n" \
@@ -319,7 +330,7 @@ diff -Naur busybox-1.01.orig/include/usage.h busybox-1.01/include/usage.h
  #define wget_full_usage \
  	"wget retrieves files via HTTP or FTP\n\n" \
  	"Options:\n" \
-@@ -2822,6 +2831,8 @@
+@@ -2822,6 +2833,8 @@
  	"\t-q\tquiet mode - do not print\n" \
  	"\t-P\tSet directory prefix to DIR\n" \
  	"\t-O\tsave to filename ('-' for stdout)\n" \
@@ -330,7 +341,7 @@ diff -Naur busybox-1.01.orig/include/usage.h busybox-1.01/include/usage.h
  #define which_trivial_usage \
 diff -Naur busybox-1.01.orig/init/init.c busybox-1.01/init/init.c
 --- busybox-1.01.orig/init/init.c	2005-08-17 09:29:16.000000000 +0800
-+++ busybox-1.01/init/init.c	2009-12-31 08:58:48.764430382 +0800
++++ busybox-1.01/init/init.c	2010-01-20 17:04:59.188735524 +0800
 @@ -375,7 +375,7 @@
  	while ((fd = open(console, O_RDONLY | O_NONBLOCK)) < 0 && tried < 2) {
  		/* Can't open selected console -- try
@@ -362,7 +373,7 @@ diff -Naur busybox-1.01.orig/init/init.c busybox-1.01/init/init.c
  }
 diff -Naur busybox-1.01.orig/libbb/messages.c busybox-1.01/libbb/messages.c
 --- busybox-1.01.orig/libbb/messages.c	2005-08-17 09:29:14.000000000 +0800
-+++ busybox-1.01/libbb/messages.c	2009-12-31 08:58:48.764430382 +0800
++++ busybox-1.01/libbb/messages.c	2010-01-20 17:04:59.196735147 +0800
 @@ -59,27 +59,47 @@
  #endif
  
@@ -418,7 +429,7 @@ diff -Naur busybox-1.01.orig/libbb/messages.c busybox-1.01/libbb/messages.c
  
 diff -Naur busybox-1.01.orig/libbb/procps.c busybox-1.01/libbb/procps.c
 --- busybox-1.01.orig/libbb/procps.c	2005-08-17 09:29:14.000000000 +0800
-+++ busybox-1.01/libbb/procps.c	2009-12-31 08:58:48.764430382 +0800
++++ busybox-1.01/libbb/procps.c	2010-01-20 17:04:59.204731418 +0800
 @@ -22,7 +22,7 @@
  #endif
  	)
@@ -672,7 +683,7 @@ diff -Naur busybox-1.01.orig/libbb/procps.c busybox-1.01/libbb/procps.c
  
 diff -Naur busybox-1.01.orig/miscutils/hdparm.c busybox-1.01/miscutils/hdparm.c
 --- busybox-1.01.orig/miscutils/hdparm.c	2005-08-17 09:29:15.000000000 +0800
-+++ busybox-1.01/miscutils/hdparm.c	2009-12-31 08:58:48.768429495 +0800
++++ busybox-1.01/miscutils/hdparm.c	2010-01-20 17:04:59.216732109 +0800
 @@ -1254,6 +1254,7 @@
  static unsigned long set_sleepnow   = 0, get_sleepnow   = 0;
  static unsigned long get_powermode  = 0;
@@ -718,7 +729,7 @@ diff -Naur busybox-1.01.orig/miscutils/hdparm.c busybox-1.01/miscutils/hdparm.c
  						noisy = 1;
 diff -Naur busybox-1.01.orig/modutils/lsmod.c busybox-1.01/modutils/lsmod.c
 --- busybox-1.01.orig/modutils/lsmod.c	2005-08-17 09:29:11.000000000 +0800
-+++ busybox-1.01/modutils/lsmod.c	2009-12-31 08:58:48.768429495 +0800
++++ busybox-1.01/modutils/lsmod.c	2010-01-20 17:04:59.224743465 +0800
 @@ -38,6 +38,9 @@
  #include <sys/file.h>
  #include "busybox.h"
@@ -729,9 +740,83 @@ diff -Naur busybox-1.01.orig/modutils/lsmod.c busybox-1.01/modutils/lsmod.c
  
  #ifndef CONFIG_FEATURE_CHECK_TAINTED_MODULE
  static inline void check_tainted(void) { printf("\n"); }
+diff -Naur busybox-1.01.orig/networking/nc.c busybox-1.01/networking/nc.c
+--- busybox-1.01.orig/networking/nc.c	2005-08-17 09:29:10.000000000 +0800
++++ busybox-1.01/networking/nc.c	2010-01-20 17:10:31.904738166 +0800
+@@ -33,6 +33,7 @@
+ 
+ #include <sys/types.h>
+ #include <sys/socket.h>
++#include <sys/signal.h>
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
+ #include <netdb.h>
+@@ -42,9 +43,14 @@
+ 
+ #define GAPING_SECURITY_HOLE
+ 
++static void timeout(int signum)
++{
++	bb_error_msg_and_die("timed out");
++}
++
+ int nc_main(int argc, char **argv)
+ {
+-	int do_listen = 0, lport = 0, delay = 0, tmpfd, opt, sfd, x;
++	int do_listen = 0, lport = 0, delay = 0, tmpfd, opt, sfd, x, wsecs = 0, zero =0;
+ 	char buf[BUFSIZ];
+ #ifdef GAPING_SECURITY_HOLE
+ 	char * pr00gie = NULL;
+@@ -55,7 +61,7 @@
+ 
+ 	fd_set readfds, testfds;
+ 
+-	while ((opt = getopt(argc, argv, "lp:i:e:")) > 0) {
++	while ((opt = getopt(argc, argv, "zw:lp:i:e:")) > 0) {
+ 		switch (opt) {
+ 			case 'l':
+ 				do_listen++;
+@@ -71,11 +77,22 @@
+ 				pr00gie = optarg;
+ 				break;
+ #endif
++			case 'w':
++				wsecs = atoi(optarg);
++				break;
++			case 'z':
++				zero = 1;
++				break;
+ 			default:
+ 				bb_show_usage();
+ 		}
+ 	}
+ 
++	if (wsecs) {
++		signal(SIGALRM, timeout);
++		alarm(wsecs);
++	}
++
+ #ifdef GAPING_SECURITY_HOLE
+ 	if (pr00gie) {
+ 		/* won't need stdin */
+@@ -141,7 +158,7 @@
+ 	FD_SET(sfd, &readfds);
+ 	FD_SET(STDIN_FILENO, &readfds);
+ 
+-	while (1) {
++	while (!zero) {
+ 		int fd;
+ 		int ofd;
+ 		int nread;
+@@ -177,4 +194,5 @@
+ 			}
+ 		}
+ 	}
++	return 0;
+ }
 diff -Naur busybox-1.01.orig/networking/ping.c busybox-1.01/networking/ping.c
 --- busybox-1.01.orig/networking/ping.c	2005-08-17 09:29:10.000000000 +0800
-+++ busybox-1.01/networking/ping.c	2009-12-31 08:58:48.772429726 +0800
++++ busybox-1.01/networking/ping.c	2010-01-20 17:04:59.240725670 +0800
 @@ -57,8 +57,8 @@
  static const int MAXICMPLEN = 76;
  static const int MAXPACKET = 65468;
@@ -832,7 +917,7 @@ diff -Naur busybox-1.01.orig/networking/ping.c busybox-1.01/networking/ping.c
  		}
 diff -Naur busybox-1.01.orig/networking/wget.c busybox-1.01/networking/wget.c
 --- busybox-1.01.orig/networking/wget.c	2005-08-17 09:29:10.000000000 +0800
-+++ busybox-1.01/networking/wget.c	2009-12-31 09:02:32.668431592 +0800
++++ busybox-1.01/networking/wget.c	2010-01-20 17:04:59.248734791 +0800
 @@ -40,6 +40,7 @@
  };
  
@@ -923,7 +1008,7 @@ diff -Naur busybox-1.01.orig/networking/wget.c busybox-1.01/networking/wget.c
  {
 diff -Naur busybox-1.01.orig/sysdeps/linux/Config.in busybox-1.01/sysdeps/linux/Config.in
 --- busybox-1.01.orig/sysdeps/linux/Config.in	2005-08-17 09:29:15.000000000 +0800
-+++ busybox-1.01/sysdeps/linux/Config.in	2009-12-31 08:58:48.772429726 +0800
++++ busybox-1.01/sysdeps/linux/Config.in	2010-01-20 17:04:59.256743074 +0800
 @@ -203,6 +203,14 @@
  	  if you want to add some simple compiler switches (like -march=i686),
  	  or check for warnings using -Werror, just those options here.
@@ -941,7 +1026,7 @@ diff -Naur busybox-1.01.orig/sysdeps/linux/Config.in busybox-1.01/sysdeps/linux/
  menu 'Installation Options'
 diff -Naur busybox-1.01.orig/util-linux/mount.c busybox-1.01/util-linux/mount.c
 --- busybox-1.01.orig/util-linux/mount.c	2005-08-17 09:29:17.000000000 +0800
-+++ busybox-1.01/util-linux/mount.c	2009-12-31 08:58:48.776424648 +0800
++++ busybox-1.01/util-linux/mount.c	2010-01-20 17:04:59.320733071 +0800
 @@ -52,6 +52,11 @@
  #include <stdio.h>
  #include <mntent.h>
@@ -987,7 +1072,7 @@ diff -Naur busybox-1.01.orig/util-linux/mount.c busybox-1.01/util-linux/mount.c
  				 useMtab, fakeIt, extra_opts, TRUE, all)) {
 diff -Naur busybox-1.01.orig/util-linux/rdate.c busybox-1.01/util-linux/rdate.c
 --- busybox-1.01.orig/util-linux/rdate.c	2005-08-17 09:29:17.000000000 +0800
-+++ busybox-1.01/util-linux/rdate.c	2009-12-31 08:58:48.776424648 +0800
++++ busybox-1.01/util-linux/rdate.c	2010-01-20 17:04:59.320733071 +0800
 @@ -38,6 +38,7 @@
  
  

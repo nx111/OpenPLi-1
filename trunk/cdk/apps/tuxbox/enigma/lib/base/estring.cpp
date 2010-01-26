@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <limits.h>
 #include <lib/system/elock.h>
-#include <lib/base/gb2312.h>
+#include <lib/base/gbk.h>
 #include <lib/base/big5.h>
 #include <lib/system/econfig.h>
 
