@@ -352,7 +352,7 @@ timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, tim
 {
 	lock();
 	timeMap *newMap=new timeMap;
-
+	eDebug("getTimeMapPtr:from=%d to=%d ",from,to);
 	if (from == 0)
 		from = time(0) + eDVB::getInstance()->time_difference;
 
@@ -361,18 +361,11 @@ timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, tim
 		return timeMapPtr(this, NULL);
 
 	int c=0;
-	timeMap::iterator nowIt = it->second.second.lower_bound(from);
-	if ( nowIt != it->second.second.end() )
-	{
-		nowIt--;
-		if ( nowIt != it->second.second.end() )
-		{
-			for(timeMap::iterator i=nowIt;i!=it->second.second.end();i++,c){
-				if((limit && c>=limit) || (to && to >= it->first) )
-					break;
-				newMap->insert(std::pair<time_t, eventData*>(i->first,i->second));
-			 }
-		}
+	for(timeMap::iterator i = it->second.second.begin();i != it->second.second.end();i++){
+		if((i->first+i->second->getDuration())<from)continue;
+		if((limit && c>=limit) || (to && to< i->first) )break;
+		newMap->insert(std::pair<time_t, eventData*>(i->first,i->second));
+		c++;
 	}
 
 	return timeMapPtr(this,newMap);	

@@ -92,12 +92,7 @@ void eListBoxBase::recalcMaxEntries()
 	if ( tmp - ( MaxEntries*item_height ) > 0 )
 	{
 		
-		if ( !MaxEntries){
-				removed_height_pixel = tmp-item_height-decoheight;
-				resize( eSize( size.width(), item_height+decoheight ) );
-				MaxEntries ++;
-		}
-		else if ( (!removed_height_pixel) || !(flags & flagShowPartial) )
+		if ( (!removed_height_pixel) || (MaxEntries && !(flags & flagShowPartial)) )
 		{
 			removed_height_pixel = height() - ((MaxEntries*item_height) + decoheight);
 			resize( eSize( size.width(), height()-removed_height_pixel ) );
@@ -132,7 +127,7 @@ eRect eListBoxBase::getEntryRect(int pos)
 			// in case we show partial last lines (which only works in single-column),
 			// we increase MaxEntries by one since we don't want the last line
 			// one the next (invisible) column
-	if ( (columns == 1) && (flags & flagShowPartial))
+	if ( (columns == 1) && (flags & flagShowPartial) && entries==(MaxEntries+1))
 		++lme;
 	if ( deco_selected && have_focus )
 		return eRect( ePoint( deco_selected.borderLeft + ( ( pos / lme) * ( crect_selected.width() / columns ) ) , deco_selected.borderTop + ( pos % lme) * item_height ), eSize( (crect_selected.width() / columns) - (sbar?scrollbar->width()+5:columns>1?5:0), item_height ) );
@@ -358,7 +353,7 @@ int eListBoxBase::setCurrent(const eListBoxEntry *c, bool sendSelected )
 		while (newCurPos == -1 && MaxEntries)  // MaxEntries is already checked above...
 		{
 			if ( bottom != childs.end() )
-				top = bottom;		// n‰chster Durchlauf
+				top = bottom;		// n√§chster Durchlauf
 
 			for (i = 0; (i < (MaxEntries*columns) ) && (bottom != childs.end()); ++bottom, ++i)
 			{
@@ -1663,3 +1658,4 @@ int eListBoxEntryMulti::eventHandler( const eWidgetEvent &e )
 	}
 	return 0;
 }
+

@@ -1,7 +1,7 @@
 10
 
 dir
-65
+71
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/dvb/dvbsnoop/src
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,9 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-tvanytime
-dir
 
 dvbsnoop.h
 file
@@ -63,16 +60,16 @@ plindeman
 
 3428
 
-ts
+tvanytime
 dir
 
-pes
+ts
 dir
 
 sections
 dir
 
-strings
+pes
 dir
 
 dvbsnoop.1
@@ -109,6 +106,9 @@ plindeman
 
 15759
 
+strings
+dir
+
 misc
 dir
 
@@ -119,6 +119,9 @@ dvb_api
 dir
 
 datacarousel
+dir
+
+testdata
 dir
 
 Makefile.am
@@ -154,9 +157,6 @@ plindeman
 
 
 1173
-
-testdata
-dir
 
 private
 dir

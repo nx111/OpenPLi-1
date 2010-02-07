@@ -69,7 +69,7 @@ void eSatEditDialog::init_eSatEditDialog()
 	name->setMaxChars(50);
 	name->loadDeco();
 	name->setText( tp->name );
-	name->setUseableChars("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,/()-°");
+	name->setUseableChars("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,/()-Â°");
 	name->setFlags( eTextInputField::flagVCenter);
 	eLabel *l = new eLabel(this);
 	l->move( ePoint(10, 55) );
@@ -531,3 +531,4 @@ void eTransponderEditWindow::removeNetwork()
 		show();
 	}
 }
+

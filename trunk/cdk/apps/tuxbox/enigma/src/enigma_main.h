@@ -428,7 +428,7 @@ public:	eFixedMessagePump<eEPGCache::Message> epg_messages;
 private:
 	eTimer timeout, clocktimer, messagetimeout,
 					progresstimer, volumeTimer, recStatusBlink,
-					doubleklickTimer, unusedTimer, permanentTimeshiftTimer, epgNowNextTimer,epgReadyTimer;
+					doubleklickTimer, unusedTimer, permanentTimeshiftTimer, epgNowNextTimer;
 /* SNR,AGC,BER DISPLAY */
 	eTimer *snrTimer;
 /* SNR,AGC,BER DISPLAY */
@@ -648,8 +648,6 @@ private:
 	void EPGUpdated();
 	void EPGAvail(bool);
 	void EPGOrganiseRequest();
-
-	void EPGReady();
 
 public:
 	void deleteFile(eServiceReference);

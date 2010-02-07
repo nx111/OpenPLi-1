@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svnroot/openpli/!svn/ver/65/trunk/cdk/apps/tuxbox/enigma/po
+/svnroot/openpli/!svn/ver/68/trunk/cdk/apps/tuxbox/enigma/po
 END
 cs.po
 K 25
@@ -123,17 +123,17 @@ svn:wc:ra_dav:version-url
 V 65
 /svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/et.po
 END
-hr.po
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/hr.po
-END
 nl.po
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/nl.po
+END
+hr.po
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/hr.po
 END
 locale.alias
 K 25
@@ -177,17 +177,17 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/openpli/!svn/ver/43/trunk/cdk/apps/tuxbox/enigma/po/pt.po
 END
-sr.po
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/sr.po
-END
 da.po
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/da.po
+END
+sr.po
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/openpli/!svn/ver/8/trunk/cdk/apps/tuxbox/enigma/po/sr.po
 END
 LINGUAS
 K 25
@@ -223,7 +223,7 @@ bg.po
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svnroot/openpli/!svn/ver/65/trunk/cdk/apps/tuxbox/enigma/po/bg.po
+/svnroot/openpli/!svn/ver/68/trunk/cdk/apps/tuxbox/enigma/po/bg.po
 END
 Makefile.am
 K 25

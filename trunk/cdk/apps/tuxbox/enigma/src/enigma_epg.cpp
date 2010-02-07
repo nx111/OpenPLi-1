@@ -622,15 +622,9 @@ void eZapEPG::buildService(serviceentry &service)
 	{
 		return;
 	}
-
-	timeMap::const_iterator ibegin = evmap->lower_bound(start);
-	if ((ibegin != evmap->end()) && (ibegin != evmap->begin()) )
-	{
-		if ( ibegin->first != start )
-			--ibegin;
-	}
-	else
-		ibegin=evmap->begin();
+	timeMap::const_iterator ibegin = evmap->begin();
+	for(;ibegin != evmap->end();ibegin++)
+		if ( (ibegin->first + ibegin->second->getDuration()) > start )break;
 
 	timeMap::const_iterator iend = evmap->lower_bound(end);
 
@@ -671,7 +665,7 @@ void eZapEPG::buildService(serviceentry &service)
 			LocalEventData led;
 			led.getLocalData(ev, &e->title, &description);
 			tm *begin=localtime(&ev->start_time);
-
+			
 			genre = "";
 			genreCategory = 0; // none
 			for (ePtrList<Descriptor>::iterator d(ev->descriptor); d != ev->descriptor.end(); ++d)

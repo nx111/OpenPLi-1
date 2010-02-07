@@ -213,6 +213,7 @@ void eMainMenu::init_eMainMenu()
 			pixmaps[i][0]=NULL;
 			pixmaps[i][1]=NULL;
 		}
+		wnd.getList()->beginAtomic();
 		CONNECT((new eListBoxEntryMenu(wnd.getList(), _("TV mode"), eString().sprintf("(%d) %s", ++entry, _("TV mode")) ))->selected, eMainMenu::sel_tv);
 		CONNECT((new eListBoxEntryMenu(wnd.getList(), _("Radio mode"), eString().sprintf("(%d) %s", ++entry, _("Radio mode")) ))->selected, eMainMenu::sel_radio);
 #ifndef DISABLE_FILE
@@ -235,6 +236,7 @@ void eMainMenu::init_eMainMenu()
 		new eListBoxEntryMenuSeparator(wnd.getList(), eSkin::getActive()->queryImage("listbox.separator"), 0, true );
 		CONNECT((new eListBoxEntryMenu(wnd.getList(), _("Information"), eString().sprintf("(%d) %s", ++entry, _("Information")) ))->selected, eMainMenu::sel_info);
 #endif
+		wnd.getList()->endAtomic();
 	}
 
 	/* help text for main menu */

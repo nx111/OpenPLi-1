@@ -1977,7 +1977,7 @@ eZapMain::eZapMain()
 	,timeout(eApp)
 	,clocktimer(eApp), messagetimeout(eApp), progresstimer(eApp)
 	,volumeTimer(eApp), recStatusBlink(eApp), doubleklickTimer(eApp)
-	,unusedTimer(eApp), permanentTimeshiftTimer(eApp), epgNowNextTimer(eApp),epgReadyTimer(eApp), currentSelectedUserBouquet(0), timeshift(0)
+	,unusedTimer(eApp), permanentTimeshiftTimer(eApp), epgNowNextTimer(eApp), currentSelectedUserBouquet(0), timeshift(0)
 	,standby_nomenu(0)
 	,skipping(0)
 	,state(0)
@@ -2345,7 +2345,6 @@ void eZapMain::init_main()
 	CONNECT(epgNowNextTimer.timeout, eZapMain::epgNowNextRefresh);
 
 	CONNECT(progresstimer.timeout, eZapMain::updateProgress);
-	CONNECT(epgReadyTimer.timeout,eZapMain::EPGReady);
 
 	CONNECT(eDVB::getInstance()->timeUpdated, eZapMain::clockUpdate);
 	CONNECT(eAVSwitch::getInstance()->volumeChanged, eZapMain::updateVolume);
@@ -2473,7 +2472,6 @@ void eZapMain::init_main()
 			playService( modeLast[mode].current() ,0 );  // then play the last service
 	}
 	message_notifier.send(eZapMain::messageCheckVCR);
-	epgReadyTimer.start(1000*5);
 }
 
 #ifndef DISABLE_CI
@@ -5428,7 +5426,7 @@ void eZapMain::renameFile( eServiceSelector *sel )
 	if ( b != eString::npos )
 		fname.erase(b);
 
-	TextEditWindow wnd(_("Enter new Filename:"),"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 -_äöüÄÖÜ");
+	TextEditWindow wnd(_("Enter new Filename:"),"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 -_Ã¤Ã¶Ã¼ÃÃÃ");
 	wnd.setText(_("Rename File"));
 	wnd.show();
 	wnd.setEditText(fname);
@@ -6595,24 +6593,6 @@ void eZapMain::adjustTime(long timediff)
 	timeCorrectting=0;
 }
 
-void eZapMain::EPGReady()
-{
-	static int count=3;
-	const char signalfn[]="/tmp/.EPGReady";
-	struct stat fabuf;
-	if(stat(signalfn,&fabuf)==0){
-		unlink(signalfn);
-		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::reloadStore));
-		epgReadyTimer.stop();
-		return;
-	}
-	if (count)
-		epgReadyTimer.start(1000*10);
-	else 
-		epgReadyTimer.stop();
-	count--;
-}
-
 void eZapMain::EPGSearchEvent(eServiceReferenceDVB service)	// EPG search
 {
 	if (service.type != eServiceReference::idDVB)
@@ -7334,7 +7314,7 @@ int eZapMain::eventHandler(const eWidgetEvent &event)
 			if ( num && ( (myref.type == eServiceReference::idDVB && myref.path)
 				|| (myref.type == eServiceReference::idUser
 				&& myref.data[0] == eMP3Decoder::codecMPG ) || (myref.type == eServiceReference::idUser
-				&& (myref.data[0] == eMP3Decoder::codecMP3 || myref.data[0] == eMP3Decoder::codecFLAC || myref.data[0] == eMP3Decoder::codecOGG)) || timeshift ) && (handler->getState() == eServiceHandler::statePlaying || handler->getState() == eServiceHandler::statePause)) // nur, wenn ts, mpg oder mp3 ausgew�hlt ist und vor allem, wenn es abgespielt wird oder im Standbild ist! :-)
+				&& (myref.data[0] == eMP3Decoder::codecMP3 || myref.data[0] == eMP3Decoder::codecFLAC || myref.data[0] == eMP3Decoder::codecOGG)) || timeshift ) && (handler->getState() == eServiceHandler::statePlaying || handler->getState() == eServiceHandler::statePause)) // nur, wenn ts, mpg oder mp3 ausgewählt ist und vor allem, wenn es abgespielt wird oder im Standbild ist! :-)
 			{
 				if (handler->getState() == eServiceHandler::statePause)
 					pause();// continue playing in preparation for skipping
@@ -9938,3 +9918,4 @@ int SkipEditWindow::eventHandler( const eWidgetEvent &e )
 }
 /*##################################################*/
 #endif //DISABLE_FILE
+
