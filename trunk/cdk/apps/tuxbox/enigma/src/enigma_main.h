@@ -587,6 +587,9 @@ private:
 public:
 	void clockUpdate();
 	void addServiceToLastScannedUserBouquet (const eServiceReference &service, int service_type, int services_scanned, bool newService);
+	void fillFastscanBouquet(eString bouquetname, std::map<int, eServiceReferenceDVB> &numbered_channels, int originalNumbering, bool radio=false);
+	bool existsBouquet(eString bouquetname, bool radio=false);
+
 private:
 	void addServiceToCurUserBouquet(const eServiceReference &ref);
 	void removeServiceFromUserBouquet( eServiceSelector *s );
@@ -613,6 +616,7 @@ private:
 	bool CheckService(const eServiceReference &ref );
 	void handleServiceEvent(const eServiceEvent &event);
 	void startService(const eServiceReference &, int);
+	void keyEvent(const eRCKey& rckey);
 	void gotEIT();
 	void gotSDT();
 	void gotPMT();

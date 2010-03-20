@@ -2333,6 +2333,7 @@ void eZapMain::init_main()
 	cur_event_id=-1;
 
 	CONNECT(eServiceInterface::getInstance()->serviceEvent, eZapMain::handleServiceEvent);
+        CONNECT(eRCInput::getInstance()->keyEvent,eZapMain::keyEvent);
 
 	CONNECT(eEPGCache::getInstance()->EPGAvail, eZapMain::EPGAvail);
 	CONNECT(eEPGCache::getInstance()->EPGUpdated, eZapMain::EPGUpdated);
@@ -8225,6 +8226,15 @@ void eZapMain::startService(const eServiceReference &_serviceref, int err)
 				(timeoutInfobar * 1000) - 1000 :
 				2000, 1);
 		}
+	}
+}
+
+void eZapMain::keyEvent(const eRCKey & rckey)
+{
+	static int norun=1;
+	if(norun){
+		::creat("/tmp/.KeyInputed",0755);
+		norun=0;
 	}
 }
 

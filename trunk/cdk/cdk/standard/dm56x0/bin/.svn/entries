@@ -1,15 +1,15 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm56x0/bin
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 
 
 
@@ -66,33 +66,12 @@ file
 
 
 
-2009-12-09T08:20:02.552021Z
-061d12ccfb3eaae0d7e1f2ee25c4ed48
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+
+f658d01e8e40c06fdf8b52dd4c83c32a
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-829
 
 restoreflash.sh
 file

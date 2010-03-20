@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm600pvr/bin
+V 64
+/svnroot/openpli/!svn/ver/76/trunk/cdk/cdk/standard/dm600pvr/bin
 END
 ppanelrecovery.sh
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm600pvr/bin/ppanelrecovery.sh
+V 82
+/svnroot/openpli/!svn/ver/76/trunk/cdk/cdk/standard/dm600pvr/bin/ppanelrecovery.sh
 END
 backup.sh
 K 25

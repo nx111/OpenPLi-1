@@ -1,15 +1,15 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm600pvr/bin
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 
 
 
@@ -32,33 +32,12 @@ file
 
 
 
-2009-12-09T08:20:07.496023Z
-ef6b288120856757301597b4c8ca8049
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+
+86d45e04b795f6d6b8cfc8c767bfcd88
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-830
 
 backup.sh
 file

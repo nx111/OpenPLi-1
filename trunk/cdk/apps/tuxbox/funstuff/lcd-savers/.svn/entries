@@ -1,7 +1,7 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/funstuff/lcd-savers
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -128,40 +128,6 @@ plindeman
 
 3441
 
-bcdclock.c
-file
-
-
-
-
-2009-12-09T08:20:53.940022Z
-89ef2e99a87420c52a954c62f95fb372
-2009-09-06T20:04:40.428599Z
-7
-daf2000
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2330
-
 AUTHORS
 file
 
@@ -195,6 +161,40 @@ plindeman
 
 
 0
+
+bcdclock.c
+file
+
+
+
+
+2009-12-09T08:20:53.940022Z
+89ef2e99a87420c52a954c62f95fb372
+2009-09-06T20:04:40.428599Z
+7
+daf2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2330
 
 observe.c
 file
@@ -230,14 +230,14 @@ daf2000
 
 2237
 
-drunken_dennis.c
+sinus.h
 file
 
 
 
 
 2009-12-09T08:20:53.960021Z
-2d92239a887136970ceb116b1f6088cd
+3c99e95884760d60bb4e8275eea49797
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -262,7 +262,7 @@ plindeman
 
 
 
-4146
+8565
 
 ChangeLog
 file
@@ -298,14 +298,14 @@ plindeman
 
 0
 
-sinus.h
+drunken_dennis.c
 file
 
 
 
 
 2009-12-09T08:20:53.960021Z
-3c99e95884760d60bb4e8275eea49797
+2d92239a887136970ceb116b1f6088cd
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -330,75 +330,7 @@ plindeman
 
 
 
-8565
-
-ani.h
-file
-
-
-
-
-2009-12-09T08:20:53.964020Z
-a33cbc26de5cf9af0d89f45dcc667f9b
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-336
-
-README
-file
-
-
-
-
-2009-12-09T08:20:53.960021Z
-d41d8cd98f00b204e9800998ecf8427e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
+4146
 
 sin_create.c
 file
@@ -434,14 +366,14 @@ plindeman
 
 672
 
-bmp_show.c
+README
 file
 
 
 
 
-2009-12-09T08:20:53.964020Z
-d61a0ced737a7e07befd1921d260d8eb
+2009-12-09T08:20:53.960021Z
+d41d8cd98f00b204e9800998ecf8427e
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -466,7 +398,75 @@ plindeman
 
 
 
-2545
+0
+
+ani.h
+file
+
+
+
+
+2009-12-09T08:20:53.964020Z
+a33cbc26de5cf9af0d89f45dcc667f9b
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+336
+
+myclockasy.c
+file
+
+
+
+
+2009-12-09T08:20:53.964020Z
+fc401fbfaa634e3f854a77a879dff7f0
+2009-09-06T20:04:40.428599Z
+7
+daf2000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6975
 
 bmp.c
 file
@@ -502,17 +502,17 @@ plindeman
 
 643
 
-myclockasy.c
+bmp_show.c
 file
 
 
 
 
 2009-12-09T08:20:53.964020Z
-fc401fbfaa634e3f854a77a879dff7f0
-2009-09-06T20:04:40.428599Z
-7
-daf2000
+d61a0ced737a7e07befd1921d260d8eb
+2009-08-14T21:33:06.552841Z
+2
+plindeman
 
 
 
@@ -534,7 +534,7 @@ daf2000
 
 
 
-6975
+2545
 
 lcdstars.c
 file

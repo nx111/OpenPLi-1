@@ -1,7 +1,7 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/hostapps/win32/tuxvision/tuxvision
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-TuxVision.ico
-file
-
-
-
-
-2009-12-09T08:20:12.176027Z
-1e2f835df9d680ae0d4286114c54db95
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4846
 
 Options.h
 file
@@ -93,6 +59,40 @@ plindeman
 
 
 1180
+
+TuxVision.ico
+file
+
+
+
+
+2009-12-09T08:20:12.176027Z
+1e2f835df9d680ae0d4286114c54db95
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4846
 
 WinHelper.h
 file
@@ -162,40 +162,6 @@ plindeman
 
 5554
 
-TuxVision.cpp
-file
-
-
-
-
-2009-12-09T08:20:12.180024Z
-f63b08e8ca16a0d5de2a85650e7c565a
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-46192
-
 Registry.cpp
 file
 
@@ -229,6 +195,40 @@ plindeman
 
 
 2789
+
+TuxVision.cpp
+file
+
+
+
+
+2009-12-09T08:20:12.180024Z
+f63b08e8ca16a0d5de2a85650e7c565a
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+46192
 
 mimetypes.ini
 file
@@ -264,17 +264,18 @@ plindeman
 
 3726
 
-TuxVision.dsp
+tux.bmp
 file
 
 
 
 
 2009-12-09T08:20:12.180024Z
-012e6795b2c3a1f7cba903e1cd38024d
+fcfde2d0484d63d29d5731106e518919
 2009-08-14T21:33:06.552841Z
 2
 plindeman
+has-props
 
 
 
@@ -295,8 +296,7 @@ plindeman
 
 
 
-
-5368
+30846
 
 AX_HELPER.H
 file
@@ -332,48 +332,14 @@ plindeman
 
 3267
 
-tux.bmp
+TuxVision.dsp
 file
 
 
 
 
 2009-12-09T08:20:12.180024Z
-fcfde2d0484d63d29d5731106e518919
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-30846
-
-TuxVision.h
-file
-
-
-
-
-2009-12-09T08:20:12.196021Z
-ec8f1b49da8fee99638753b297769c2b
+012e6795b2c3a1f7cba903e1cd38024d
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -398,41 +364,7 @@ plindeman
 
 
 
-3536
-
-TCPServer.cpp
-file
-
-
-
-
-2009-12-09T08:20:12.180024Z
-7c2f52ab910298e3ef9ff3c5c29c3ecc
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-25770
+5368
 
 Registry.h
 file
@@ -468,14 +400,14 @@ plindeman
 
 1167
 
-logger.cpp
+TCPServer.cpp
 file
 
 
 
 
-2009-12-09T08:20:12.200022Z
-d3019d5868c8b1fd53fa4bc133efd95d
+2009-12-09T08:20:12.180024Z
+7c2f52ab910298e3ef9ff3c5c29c3ecc
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -500,7 +432,41 @@ plindeman
 
 
 
-1979
+25770
+
+TuxVision.h
+file
+
+
+
+
+2009-12-09T08:20:12.196021Z
+ec8f1b49da8fee99638753b297769c2b
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3536
 
 wsasimpl.zip
 file
@@ -535,6 +501,40 @@ has-props
 
 
 6692
+
+logger.cpp
+file
+
+
+
+
+2009-12-09T08:20:12.200022Z
+d3019d5868c8b1fd53fa4bc133efd95d
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1979
 
 guids.h
 file

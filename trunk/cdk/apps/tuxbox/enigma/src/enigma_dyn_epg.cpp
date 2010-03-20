@@ -211,52 +211,53 @@ eString getEITC(eString result, eString format)
 	eString now_start, now_date, now_time, now_duration, now_text, now_longtext,
 		next_start, next_date, next_time, next_duration, next_text, next_longtext;
 
-	EIT *eit = eDVB::getInstance()->getEIT();
-	if (eit)
+	eServiceReferenceDVB &ref = (eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
+
+	timeMapPtr pMap = eEPGCache::getInstance()->getTimeMapPtr(ref, 0, 0, 2);
+
+	if (pMap)
 	{
 		int p = 0;
-		for (ePtrList<EITEvent>::iterator event(eit->events); event != eit->events.end(); ++event)
+		int tsidonid = (ref.getTransportStreamID().get() << 16) | ref.getOriginalNetworkID().get();
+
+		for (timeMap::const_iterator It = pMap->begin(); It != pMap->end() && p < 2; It++, p++)
 		{
-			if (*event)
+			EITEvent event(*It->second, tsidonid, It->second->type,It->second->source);
+			if (p == 0)
 			{
-				if (p == 0)
+				if (event.start_time)
 				{
-					if (event->start_time)
-					{
-						now_start = eString().sprintf("%d", (int)event->start_time);
-						tm* t = localtime(&event->start_time);
-						now_time = getTimeStr(t, 0);
-						now_date.sprintf("%02d.%02d.%04d", t->tm_mday, t->tm_mon + 1, t->tm_year + 1900);
-						now_duration.sprintf("%d", (int)(event->duration / 60));
-					}
+					now_start = eString().sprintf("%d", (int)event.start_time);
+					tm* t = localtime(&event.start_time);
+					now_time = getTimeStr(t, 0);
+					now_date.sprintf("%02d.%02d.%04d", t->tm_mday, t->tm_mon + 1, t->tm_year + 1900);
+					now_duration.sprintf("%d", (int)(event.duration / 60));
 				}
-				if (p == 1)
+			}
+			if (p == 1)
+			{
+				if (event.start_time)
 				{
-					if (event->start_time)
-					{
-						next_start = eString().sprintf("%d", (int)event->start_time);
-						tm* t = localtime(&event->start_time);
-						next_time = getTimeStr(t, 0);
-						next_date.sprintf("%02d.%02d.%04d", t->tm_mday, t->tm_mon + 1, t->tm_year + 1900);
-						next_duration.sprintf("%d", (int)(event->duration / 60));
-					}
+					next_start = eString().sprintf("%d", (int)event.start_time);
+					tm* t = localtime(&event.start_time);
+					next_time = getTimeStr(t, 0);
+					next_date.sprintf("%02d.%02d.%04d", t->tm_mday, t->tm_mon + 1, t->tm_year + 1900);
+					next_duration.sprintf("%d", (int)(event.duration / 60));
 				}
-				LocalEventData led;
-				switch (p)
-				{
-					case 0:
-						led.getLocalData(event, &now_text, &now_longtext);
-						now_longtext.strReplace("\n", "<br/>",UTF8_ENCODING);
-						break;
-					case 1:
-						led.getLocalData(event, &next_text, &next_longtext);
-						next_longtext.strReplace("\n", "<br/>",UTF8_ENCODING);
-						break;
-				}
-				p++;
-		 	}
+			}
+			LocalEventData led;
+			switch (p)
+			{
+				case 0:
+					led.getLocalData(&event, &now_text, &now_longtext);
+					now_longtext.strReplace("\n", "<br/>",UTF8_ENCODING);
+					break;
+				case 1:
+					led.getLocalData(&event, &next_text, &next_longtext);
+					next_longtext.strReplace("\n", "<br/>",UTF8_ENCODING);
+					break;
+			}
 		}
-		eit->unlock();
 	}
 
 	result.strReplace("#NOWSTART#", now_start);

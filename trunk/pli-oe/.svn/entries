@@ -1,15 +1,15 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/pli-oe
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2010-01-11T10:43:23.273768Z
-62
-sjaaky
+2010-02-07T00:29:39.186081Z
+83
+pieterg
 
 
 
@@ -66,10 +66,10 @@ file
 
 
 
-2010-01-12T13:53:09.128506Z
-c1e5f056ae9898cac1096c023eaca990
-2010-01-10T00:05:29.921770Z
-59
+2010-02-22T02:22:52.271248Z
+e56cb252cdb09735607cb7e9f2df00e9
+2010-02-07T00:29:39.186081Z
+83
 pieterg
 has-props
 
@@ -92,7 +92,7 @@ has-props
 
 
 
-4057
+4406
 
 Makefile
 file

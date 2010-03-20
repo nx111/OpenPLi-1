@@ -59,7 +59,7 @@ eZapScanFactory eZapScan_factory;
 eZapScan::eZapScan()
 	:eSetupWindow(_(MENUNAME),
 	eSystemInfo::getInstance()->getFEType()
-		== eSystemInfo::feSatellite ? 10 : 8, 400)
+		== eSystemInfo::feSatellite ? 11 : 8, 400)
 {
 	init_eZapScan();
 }
@@ -88,8 +88,10 @@ void eZapScan::init_eZapScan()
 	if ( eSystemInfo::getInstance()->getFEType() != eSystemInfo::feCable )
 		new eListBoxEntryMenuSeparator(&list, eSkin::getActive()->queryImage("listbox.separator"), 0, true );
 	CONNECT((new eListBoxEntryMenu(&list, _("Automatic Transponder Scan"), eString().sprintf("(%d) %s", ++entry, _("open automatic transponder scan"))))->selected, eZapScan::sel_autoScan);
-	if ( eSystemInfo::getInstance()->getFEType() == eSystemInfo::feSatellite )  // only when a sat box is avail we shows a satellite config
+	if ( eSystemInfo::getInstance()->getFEType() == eSystemInfo::feSatellite ) { // only when a sat box is avail we shows a satellite config
 		CONNECT((new eListBoxEntryMenu(&list, _("Automatic Multisat Scan"), eString().sprintf("(%d) %s", ++entry, _("open automatic multisat transponder scan"))))->selected, eZapScan::sel_multiScan);
+//		CONNECT((new eListBoxEntryMenu(&list, _("Fast Scan"), eString().sprintf("(%d) %s", ++entry, _("open fast scan"))))->selected, eZapScan::sel_Fastscan);
+	}
 
 	CONNECT((new eListBoxEntryMenu(&list, _("Manual Transponder Scan"), eString().sprintf("(%d) %s", ++entry, _("open manual transponder scan"))))->selected, eZapScan::sel_manualScan);
 	if ( eFrontend::getInstance()->canBlindScan() && eZapPlugins(eZapPlugins::StandardPlugin).execPluginByName("enigma_blindscan.cfg", true) == "OK" )
@@ -98,6 +100,8 @@ void eZapScan::init_eZapScan()
 	new eListBoxEntryMenuSeparator(&list, eSkin::getActive()->queryImage("listbox.separator"), 0, true);
 
 	new eListBoxEntryCheck(&list, _("Disable background scanning"), "/elitedvb/extra/disableSDTScan", _("Don't look for new services in the background"));
+
+	new eListBoxEntryCheck(&list, _("Hold Service Name"), "/elitedvb/extra/holdServiceName", _("Hold service's name when scanning"));
 }
 
 void eZapScan::sel_satfind()
@@ -128,6 +132,18 @@ void eZapScan::sel_multiScan()
 	TransponderScan setup(LCDTitle, LCDElement, TransponderScan::stateMulti);
 #else
 	TransponderScan setup(0,0,TransponderScan::stateMulti);
+#endif
+	hide();
+	setup.exec();
+	show();
+}
+
+void eZapScan::sel_Fastscan()
+{
+#ifndef DISABLE_LCD
+	TransponderScan setup(LCDTitle, LCDElement, TransponderScan::stateFastscan);
+#else
+	TransponderScan setup(0,0,TransponderScan::stateFastscan);
 #endif
 	hide();
 	setup.exec();

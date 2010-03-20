@@ -1,15 +1,15 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm7000/bin
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 
 
 
@@ -236,33 +236,12 @@ file
 
 
 
-2009-12-09T08:20:07.068023Z
-9cfbde2d9a37949b81e75b593401e322
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+
+4de4ca5bb42a065e2f8307095c558266
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-829
 
 restoreflash.sh
 file

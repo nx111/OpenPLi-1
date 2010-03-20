@@ -1,7 +1,7 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/pli_shared
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -502,40 +502,6 @@ has-props
 
 192
 
-slider.png
-file
-
-
-
-
-2009-12-09T08:20:38.700019Z
-6b928c5294b07d5ad0082be15223b9b1
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-638
-
 window-right.png
 file
 
@@ -570,14 +536,14 @@ has-props
 
 162
 
-window-bottomleft.png
+slider.png
 file
 
 
 
 
-2009-12-09T08:20:38.704018Z
-e7dc691f642db2e90b9deabd5bf980a5
+2009-12-09T08:20:38.700019Z
+6b928c5294b07d5ad0082be15223b9b1
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -602,7 +568,7 @@ has-props
 
 
 
-290
+638
 
 icon_scart.png
 file
@@ -637,6 +603,40 @@ has-props
 
 
 3387
+
+window-bottomleft.png
+file
+
+
+
+
+2009-12-09T08:20:38.704018Z
+e7dc691f642db2e90b9deabd5bf980a5
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+290
 
 osd_text_on.png
 file
@@ -808,40 +808,6 @@ has-props
 
 162
 
-osd_audio_on.png
-file
-
-
-
-
-2009-12-09T08:20:38.708020Z
-fe711874f0ece2378459c0c325bc6a16
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-515
-
 icon_arrow.png
 file
 
@@ -875,6 +841,40 @@ has-props
 
 
 317
+
+osd_audio_on.png
+file
+
+
+
+
+2009-12-09T08:20:38.708020Z
+fe711874f0ece2378459c0c325bc6a16
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+515
 
 icon_info.png
 file

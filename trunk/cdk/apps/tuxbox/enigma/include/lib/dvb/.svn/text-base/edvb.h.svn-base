@@ -37,6 +37,7 @@ class eRFmod;
 class MHWEIT;
 class eDVBRecorder;
 class eDVBScanController;
+class eDVBFastscanController;
 class eDVB;
 class eConsoleAppContainer;
 
@@ -194,7 +195,8 @@ public:
 	void setMode(int mode);
 	eDVBServiceController *getServiceAPI();
 	eDVBScanController *getScanAPI();
-	enum {controllerNone,controllerScan,controllerService};
+	eDVBFastscanController *getFastscanAPI();
+	enum {controllerNone,controllerScan,controllerService,controllerFastscan};
 protected:
 	int controllertype;
 	eDVBController *controller;

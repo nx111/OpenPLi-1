@@ -1,15 +1,15 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm500plus/bin
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 
 
 
@@ -32,33 +32,12 @@ file
 
 
 
-2009-12-09T08:20:07.276022Z
-b6fe09c0f48ad1bcc9b6542cde2e8aae
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+
+41b5785d9bc0ae929f7b720012942976
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-835
 
 backup.sh
 file

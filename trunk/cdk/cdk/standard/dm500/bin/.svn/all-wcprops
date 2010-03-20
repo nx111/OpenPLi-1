@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm500/bin
+V 61
+/svnroot/openpli/!svn/ver/76/trunk/cdk/cdk/standard/dm500/bin
 END
 CCcam
 K 25
@@ -12,8 +12,8 @@ END
 ppanelrecovery.sh
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/standard/dm500/bin/ppanelrecovery.sh
+V 79
+/svnroot/openpli/!svn/ver/76/trunk/cdk/cdk/standard/dm500/bin/ppanelrecovery.sh
 END
 restoreflash.sh
 K 25

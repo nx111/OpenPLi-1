@@ -322,9 +322,15 @@ void eServiceDVB::update(const SDTEntry *sdtentry)
 		eDebug("tried to update sid %x with sdt-sid %x", service_id.get(), sdtentry->service_id);
 		return;
 	}
-	if ( !(dxflags & dxHoldName) )
+	int boolHoldName=0;
+	eConfig::getInstance()->getKey("/elitedvb/extra/holdServiceName",boolHoldName);
+	int boolKeepName=boolHoldName && service_name && !service_name.empty();
+	int boolKeepSP=boolHoldName && service_provider && !service_provider.empty();
+
+	if ( !(dxflags & dxHoldName) && !boolKeepName )
 		service_name="unknown";
-	service_provider="unknown";
+	if(!boolKeepSP)
+		service_provider="unknown";
 	service_type=0;
 	service_id=sdtentry->service_id;
 	for (ePtrList<Descriptor>::const_iterator d(sdtentry->descriptors); d != sdtentry->descriptors.end(); ++d)
@@ -332,13 +338,13 @@ void eServiceDVB::update(const SDTEntry *sdtentry)
 		{
 			const ServiceDescriptor *nd=(ServiceDescriptor*)*d;
 
-			if ( !(dxflags & dxHoldName) )
+			if ( !(dxflags & dxHoldName) && !boolKeepName)
 				service_name=nd->service_name;
 
-			if (!nd->service_provider.empty())
+			if (!nd->service_provider.empty() && !boolKeepSP )
 				service_provider=nd->service_provider;
 
-			if (!service_name && !(dxflags & dxHoldName) )
+			if (!service_name && !(dxflags & dxHoldName) && !boolKeepName  )
 				service_name="unnamed service";
 
 			service_type=nd->service_type;
@@ -763,7 +769,6 @@ void eTransponderList::readTimeOffsetData( const char* filename )
 	if (!f)
 		return;
 	char line[256];
-	fgets(line, 256, f);
 	while (true)
 	{
 		if (!fgets( line, 256, f ))
@@ -918,9 +923,10 @@ eServiceDVB &eTransponderList::createService(const eServiceReferenceDVB &service
 					std::pair<eServiceReferenceDVB,eServiceDVB>
 						(service,
 							eServiceDVB(service.getDVBNamespace(),
-							service.getTransportStreamID(),
-							service.getOriginalNetworkID(),
-							service.getServiceID(),chnum))
+								service.getTransportStreamID(),
+								service.getOriginalNetworkID(),
+								service.getServiceID(),
+								chnum))
 							).first->second;
 
 		channel_number.insert(std::pair<int,eServiceReferenceDVB>(chnum,service));

@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/rss
+V 69
+/svnroot/openpli/!svn/ver/75/trunk/cdk/apps/tuxbox/plugins/enigma/rss
 END
 feeds.xml
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/rss/feeds.xml
+V 79
+/svnroot/openpli/!svn/ver/75/trunk/cdk/apps/tuxbox/plugins/enigma/rss/feeds.xml
 END
 rss.cfg
 K 25

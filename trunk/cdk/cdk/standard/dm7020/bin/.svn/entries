@@ -1,15 +1,15 @@
 10
 
 dir
-71
+85
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm7020/bin
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 
 
 
@@ -100,33 +100,12 @@ file
 
 
 
-2009-12-09T08:20:07.396018Z
-be49b842aa9e7144b24cf240a7d99e07
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+
+6cb1b1f68e207c7ccf300d77798a8410
+2010-01-31T09:34:06.158416Z
+76
+daf2000
 has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-829
 
 backup.sh
 file

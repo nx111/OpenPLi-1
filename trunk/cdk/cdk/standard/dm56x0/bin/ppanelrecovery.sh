@@ -3,7 +3,7 @@
 # ppanelrecovery.sh DM500 version
 # Tries to download known XML files from the server if the file is missing.
 
-VERSION=0.8
+VERSION=0.9
 RELEASE=openpli
 BOX=dm56xx
 
