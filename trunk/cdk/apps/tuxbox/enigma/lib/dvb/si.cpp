@@ -2123,9 +2123,6 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 		case srPLI_SQLITE:encode=UTF8_ENCODING;break;	//UTF8,  pli sqlite data
 		default:encode=0;break;
 	}
-	if((source==srPLI_EPGDAT || source==srGEMINI_EPGDAT)&&MemStoreEncode)  //if epg.dat is not utf8
-		encode=MemStoreEncode;
-	if(MemStoreEncode==AUTO_ENCODING)encode=0;
 	
 	while (ptr<len)
 	{

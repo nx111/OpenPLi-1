@@ -1526,7 +1526,9 @@ eListBoxEntryCheck::eListBoxEntryCheck( eListBox<eListBoxEntryMenu> *lb, const e
 void eListBoxEntryCheck::setChecked(int checkIt)
 {
 	checked = checkIt;
-	listbox->invalidateCurrent();
+	if(regKey)
+		eConfig::getInstance()->setKey( regKey.c_str(), checked );
+	listbox->invalidateEntry(listbox->getPos(this));
 }
 
 void eListBoxEntryCheck::LBSelected(eListBoxEntry* t)

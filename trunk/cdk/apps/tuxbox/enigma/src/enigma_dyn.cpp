@@ -236,9 +236,9 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	eString command = opt["command"];
 	eString result;
 	if (eSystemInfo::getInstance()->canShutdown())
-		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netupdown)";
+		result =  "Unknown admin command. (valid commands are: shutdown, reboot, restart, standby, wakeup,maketvmap,restartepg,saveepg,adjusttime,netupdown)";
 	else
-		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,restartepg,saveepg,adjusttime,netupdown)";
+		result =  "Unknown admin command. (valid commands are: reboot, restart, standby, wakeup,maketvmap,restartepg,saveepg,adjusttime,netupdown)";
 	if (command == "shutdown")
 	{
 		if (eSystemInfo::getInstance()->canShutdown())
@@ -294,6 +294,12 @@ static eString admin(eString request, eString dirpath, eString opts, eHTTPConnec
 	{
 		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::reloadStore));
 		result = "EPGCache restarted...";
+	}
+	else 
+	if (command == "maketvmap")
+	{
+		eEPGCache::getInstance()->messages.send(eEPGCache::Message(eEPGCache::Message::makeTvMap));
+		result = "tvmap.dat created...";
 	}
 	else
 	if (command == "saveepg")

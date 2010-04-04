@@ -626,7 +626,7 @@ int eEPGCache::sectionRead(__u8 *data, int source)
 		}
 #endif
 
-		// hier wird immer eine eventMap zurück gegeben.. entweder eine vorhandene..
+		// hier wird immer eine eventMap zurÃ¼ck gegeben.. entweder eine vorhandene..
 		// oder eine durch [] erzeugte
 	
 		while (ptr<len)
@@ -1008,16 +1008,23 @@ void eEPGCache::organise()
 		epgStore->organise();
 }
 
-
+void eEPGCache::makeTvMap()
+{
+	int storeType;
+	
+	if ( eConfig::getInstance()->getKey("/enigma/epgStore", storeType ) ) return;
+	if(storeType != eEPGStore::MEM_STORE || !epgStore)return;
+	epgStore->makeTvMap();
+}
 void eEPGCache::reloadStore()	// Can be used to switch between stores
 {
-	pauseEPG();
+//	pauseEPG();
 	
 	// Avoid race
 	eEPGStore *tempStore = epgStore;
 	epgStore = 0;
 	delete tempStore;
-	serviceLastUpdated.clear();
+//	serviceLastUpdated.clear();
 	readServiceMappingFile();
 
 	epgStore = eEPGStore::createEPGStore();
@@ -1404,8 +1411,8 @@ int eEPGCache::readServiceMappingFile()
 		if((sscanf(sec[0], "0x%x", &sid) == 1 && sscanf(sec[1], "0x%x", &onid) == 1 && sscanf(sec[2], "0x%x", &tsid) == 1) || (sscanf(sec[0], "%d", &sid) == 1 && sscanf(sec[1], "%d", &onid) == 1 && sscanf(sec[2], "%d", &tsid) == 1))
 		{
 			std::map<eString, uniqueEPGKey>::iterator mIt=ServiceMapping.find(chname);
-			if(mIt==ServiceMapping.end())
-					ServiceMapping[chname]=uniqueEPGKey(sid,onid,tsid);
+			if(mIt==ServiceMapping.end() || (mIt->second.sid + mIt->second.onid )>(sid+onid))
+			      ServiceMapping[chname]=uniqueEPGKey(sid,onid,tsid);
 		}
 	}
 	free(line);
@@ -1482,6 +1489,9 @@ void eEPGCache::gotMessage( const Message &msg )
 			break;	*/
 		case Message::reloadStore:
 			reloadStore();
+			break;
+		case Message::makeTvMap:
+			makeTvMap();
 			break;
 		case Message::forceEpgScan:
 			forceEpgScan();
@@ -2132,3 +2142,4 @@ void eBevEEPG::sectionFinish(int err)
 }
 
 #endif
+

@@ -192,6 +192,7 @@ public:
 			content_pid,
 			save,
 			load,
+			makeTvMap,
 			reloadStore,
 			forceEpgScan,
 			organise
@@ -281,6 +282,7 @@ private:
 	void leaveService(const eServiceReferenceDVB &);
 
 	void cleanLoop();
+	void makeTvMap();
 	void pauseEPG();
 	void restartEPG();
 	void reloadStore();

@@ -55,6 +55,7 @@
 #include <lib/system/econfig.h>
 #include <lib/gui/ExecuteOutput.h>
 #include <lib/gui/myListBoxEntryText.h>
+#include <lib/driver/rc.h>
 
 #include <parentallock.h>
 
@@ -367,7 +368,7 @@ ePPanelEntry::ePPanelEntry(
    : eListBoxEntryCheck(listbox, name, helptext), 
    parentdlg(parentdlg), node(node), name(name)
 {
-	setChecked(checked);
+   setChecked(checked);
    confirmation=node->GetAttributeValue("confirmation");
    quit=node->GetAttributeValue("quit");
    runBefore = node->GetAttributeValue("runBefore");
@@ -642,20 +643,21 @@ eListBoxEntryExecute::eListBoxEntryExecute(
    : ePPanelEntry(parentdlg, listbox, name, helptext, node)
 {
    target=node->GetAttributeValue("target");
+   targetOption=node->GetAttributeValue("option");
    checked=node->GetAttributeValue("checked");
    if (parentdlg.checkbox=="radio" || parentdlg.checkbox=="check")
 		parentdlg.items.push_back(this);
       //set checkedbox
-   bool chked=systemFixed(checked.c_str());
-   if(!chked){
-	setChecked(true);
-      }
+   bool chked=false;
+   if(checked && checked != "")
+   	chked=(0==systemFixed(checked.c_str()));
+   setChecked(chked);
 //   eDebug("PPanel:checked=%s chked=%d",checked.c_str(),chked);
 }
 
 void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
 {
-	if (t != this) return;
+   if (t != this) return;
    int rc = 0;
 
    if(confirmUser(confirmation, 
@@ -663,33 +665,46 @@ void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
    {
       // Execute script before
       rc = preActions();
-	  if(target.length()){
+	if(target.length()){
+//            eDebug("PPanel:targetOption=%s",targetOption.c_str());
+          if(targetOption=="showNone")
+                  rc=runScript(target,false,parentdlg);
+          else if(targetOption=="showInfo"){
+                  eMessageBox mb(getText(), _("Please wait"), eMessageBox::iconInfo);
+                  mb.show();
+                  rc=runScript(target,false,parentdlg);
+                  }
+          else{
+
 		  ExecuteOutput dlg(getText(), target);
 		  parentdlg.hide();
 		  dlg.show();
 		  dlg.exec();
 		  dlg.hide();
 		  parentdlg.show();
+              }
 	  }
+ //  eDebug("PPanel:checked=%s chked=%d parentdlg.checkbox=%s",checked.c_str(),chked,parentdlg.checkbox.c_str());
+      // Execute script after
+      if(rc == 0) rc = postActions();
+
       //set checkedbox
-      if(checked.length()){
-	      bool chked=!systemFixed(checked.c_str());
+      if(checked != ""){
+	  int chked=(0==systemFixed(checked.c_str()));
       	  if(parentdlg.checkbox == "radio" && chked){
 		       for(std::list<eListBoxEntryExecute*>::iterator i(parentdlg.items.begin());i!=parentdlg.items.end();i++)
 					if((*i)->getChecked())
 						{
 							(*i)->setChecked(false);
-							int pos=listbox->getPos(*i);
-							if(pos>=0)listbox->invalidateEntry(pos);
 						}
 				setChecked(true);
-		  }
-		  else if(parentdlg.checkbox == "check")
-					setChecked(chked);
+	}
+       else if(parentdlg.checkbox == "check"){
+		setChecked(chked);
+
+	}
       }
- //  eDebug("PPanel:checked=%s chked=%d parentdlg.checkbox=%s",checked.c_str(),chked,parentdlg.checkbox.c_str());
-      // Execute script after
-      if(rc == 0) rc = postActions();
+
    }
 }
 
@@ -1405,6 +1420,7 @@ XMLTreeNode* PPanel::loadFile(FILE *fh)
 
 void PPanel::loadItems(XMLTreeNode *category)
 {
+
    if (category)
    {
       eString title = category->GetAttributeValue("name");
@@ -1428,6 +1444,8 @@ void PPanel::loadItems(XMLTreeNode *category)
       list.beginAtomic();
       list.clearList();
       items.clear();
+
+      eRCInput::getInstance()->lock();
 
       for (XMLTreeNode *r=category->GetChild(); r; r=r->GetNext())
       {
@@ -1518,9 +1536,11 @@ void PPanel::loadItems(XMLTreeNode *category)
 				new eListBoxEntryEnigmaMenu(*this, &list, name, helptext, r);
       }
 
+      eRCInput::getInstance()->unlock();
       setFocus(&list);
       list.endAtomic();
    }
+
 }
 
 void PPanel::itemSelected(eListBoxEntryMenu *item)

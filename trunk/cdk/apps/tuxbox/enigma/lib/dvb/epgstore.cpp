@@ -10,7 +10,6 @@
 #include <lib/base/estring.h>
 
 descriptorMap eventData::descriptors;
-int MemStoreEncode;
 
 const eventData* eEPGStore::lookupEventData( const eServiceReferenceDVB &service, time_t t )
 {
@@ -352,7 +351,7 @@ timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, tim
 {
 	lock();
 	timeMap *newMap=new timeMap;
-	eDebug("getTimeMapPtr:from=%d to=%d ",from,to);
+
 	if (from == 0)
 		from = time(0) + eDVB::getInstance()->time_difference;
 
@@ -496,71 +495,54 @@ bool eEPGMemStore::hasEPGData( const uniqueEPGKey& key )
 	return ret;
 }
 
-int eEPGMemStore::readEncode()
-{
-	int result=0;
-	FILE * ef=fopen((dbDir+"/epg.dat.cfg").c_str(),"r");
-	if(ef){
-			char *line = (char*) malloc(256);
-			size_t bufsize=256;
-			unsigned int count, i;
-			while( getline(&line, &bufsize, ef) != -1 )
-			{
-				if ( line[0] == '#' )
-					continue;
-				char sec[256]="";
-				count = sscanf(line, "%s", sec);
-				if ((sec[0] == '#')||!count)
-					continue;
-				for(i=0;i<strlen(sec) && sec[i]!='#';i++);
-				sec[i]='\0';
-				if (strcasecmp(sec, "gb2312") == 0 || strcasecmp(sec, "gbk") == 0)
-					result = GB2312_ENCODING;
-				else if (strcasecmp(sec, "big5") == 0)
-					result = BIG5_ENCODING;
-				else if (strcasecmp(sec, "utf8") == 0 || strcasecmp(sec, "utf-8") == 0)
-					result = UTF8_ENCODING;
-				else if (strcasecmp(sec, "unicode") == 0)
-					result = UNICODE_ENCODING;
-				else if (strcasecmp(sec, "utf16be") == 0)
-					result = UTF16BE_ENCODING;
-				else if (strcasecmp(sec, "utf16le") == 0)
-					result = UTF16LE_ENCODING;
-				else if (strcasecmp(sec, "auto") == 0)
-					result = AUTO_ENCODING;
-				if (result)break;
-			}
-			fclose(ef);
-			free(line);
-	}
-	return result;
-
-}
 
 void eEPGMemStore::load()
 {	
-	MemStoreEncode=0;	//init epg.dat's encode
 	unlink("/tmp/.EPG_LOAD_NOTHING");
 
 	struct stat epgStat;
 	int epgStoreLimit = 1;
 	int epgLimitPerChannel=100;
+	int total=0;
+	int totalReaded=0;
+
+	std::list<eString> EPGFILELIST;
 
 	eConfig::getInstance()->getKey("/enigma/epgStoreLimit", epgStoreLimit);
 	eConfig::getInstance()->getKey("/enigma/epgLimitPerChannel", epgLimitPerChannel);
 	
 	// Check if file is available
-	if (!stat( (dbDir + "/epg.dat").c_str(), &epgStat ))
+	eString epgfile=dbDir + "/epg.dat";
+	if(access(epgfile.c_str(),R_OK) && !access((dbDir + "/epg.fls").c_str(),R_OK)){
+		FILE *ef=fopen((dbDir + "/epg.fls").c_str(),"r");
+		if(ef){
+			char *line = (char*) malloc(256);
+			size_t bufsize=256;
+			unsigned int count;
+			while( getline(&line, &bufsize, ef) != -1 )
+			{
+				char sec[256]="";
+				count = sscanf(line, "%s", sec);
+				if ((sec[0] == '#')||!count)
+					continue;
+				EPGFILELIST.push_back(sec);
+			}
+			fclose(ef);
+		}
+	}
+	if(EPGFILELIST.begin() == EPGFILELIST.end())
+		EPGFILELIST.push_back(epgfile);
+	for(std::list<eString>::iterator ei=EPGFILELIST.begin();ei != EPGFILELIST.end();ei++)
+	if (!stat( ei->c_str(), &epgStat ))
 	{
+		epgfile=*ei;
+//		eDebug("[EPGStore]Load EPG from %s",epgfile.c_str());
 		// Only open epg file if it is smaller than 5 MB (or if limit disabled)
 		if(!epgStoreLimit || (epgStat.st_size <= 5*(1<<20)))
 		{
-			FILE *f = fopen((dbDir + "/epg.dat").c_str(), "r");
+			FILE *f = fopen(epgfile.c_str(), "r");
 			if (f)
 			{
-				int size=0;
-				int cnt=0;
-				MemStoreEncode=readEncode();
 				unsigned int magic=0;
 				fread( &magic, sizeof(int), 1, f);
 				if (magic != 0x98765432)
@@ -575,6 +557,9 @@ void eEPGMemStore::load()
 				fread( text1, 13, 1, f);
 				if ( !strncmp( text1, "ENIGMA_PLI_V5", 13) )
 				{
+					int size=0;
+					int cnt=0;
+
 					fread( &size, sizeof(int), 1, f);
 					while(size--)
 					{
@@ -596,6 +581,7 @@ void eEPGMemStore::load()
 							fread( event->EITdata, len, 1, f);
 							time_t start_time=parseDVBtime(event->EITdata[2], event->EITdata[3], event->EITdata[4], event->EITdata[5], event->EITdata[6]);
 							int duration=fromBCD(event->EITdata[7])*3600+fromBCD(event->EITdata[8])*60+fromBCD(event->EITdata[9]);;
+							++count;
 							if(((start_time+duration)<nowtime)||(count>=epgLimitPerChannel))
 								{
 									delete event;
@@ -606,17 +592,20 @@ void eEPGMemStore::load()
 							evMap[ event->getEventID() ]=event;
 							tmMap[ event->getStartTime() ]=event;
 							++cnt;
-							++count;
 						}
+						totalReaded+=count;
 						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
 					}
 					eventData::load(f,srPLI_EPGDAT);
-					if(!cnt)system("touch /tmp/.EPG_LOAD_NOTHING &");
-					eDebug("[EPGM] %d events read from ENIGMA_PLI_V5 %s", cnt, (dbDir + "/epg.dat").c_str());
+					total+=cnt;
+					eDebug("[EPGM] %d events read from ENIGMA_PLI_V5 %s", cnt, epgfile.c_str());
 				}
 				else if ( !strncmp( text1, "ENIGMA_EPG_V7", 13) )
 				{
 				//add support enigma_epg_v7 epg.dat here
+					int size=0;
+					int cnt=0;
+
 					fread( &size, sizeof(int), 1, f);
 					while(size--)
 					{
@@ -638,6 +627,7 @@ void eEPGMemStore::load()
 							fread( event->EITdata, len, 1, f);
 							time_t start_time=parseDVBtime(event->EITdata[2], event->EITdata[3], event->EITdata[4], event->EITdata[5], event->EITdata[6]);
 							int duration=fromBCD(event->EITdata[7])*3600+fromBCD(event->EITdata[8])*60+fromBCD(event->EITdata[9]);;
+							++count;
 							if(((start_time+duration)<nowtime)||(count>=epgLimitPerChannel))
 								{
 									delete event;
@@ -648,13 +638,13 @@ void eEPGMemStore::load()
 							evMap[ event->getEventID() ]=event;
 							tmMap[ event->getStartTime() ]=event;
 							++cnt;
-							++count;
 						}
+						totalReaded+=count;
 						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
 					}
 					eventData::load(f,srGEMINI_EPGDAT);
-					if(!cnt)system("touch /tmp/.EPG_LOAD_NOTHING &");
-					eDebug("[EPGM] %d events read from ENIGMA_EPG_V7 %s", cnt, (dbDir + "/epg.dat").c_str());
+					total+=cnt;
+					eDebug("[EPGM] %d events read from ENIGMA_EPG_V7 %s", cnt, epgfile.c_str());
 				}
 				else
 				{
@@ -665,13 +655,20 @@ void eEPGMemStore::load()
 		}
 		else
 		{
-			eDebug("[EPGM] epg data: file too big");
+			eDebug("[EPGM] epg data: file %s too big",epgfile.c_str());
 		}
 	}
-	else
-	{
-		eDebug("[EPGM] epg data: problem reading file");
-	}
+//	else
+//	{
+//		eDebug("[EPGM] epg data: problem reading file");
+//	}
+
+	if(!total && totalReaded)
+		system("touch /tmp/.EPG_LOAD_NOTHING &");
+	for(std::list<eString>::iterator ei=EPGFILELIST.begin();ei != EPGFILELIST.end();)
+		EPGFILELIST.erase(ei++);
+	EPGFILELIST.clear();
+		
 }
 
 
@@ -743,7 +740,32 @@ void eEPGMemStore::save()
 		}
 	}
 }
-
+void eEPGMemStore::makeTvMap()
+{
+	if(eventDB.empty())return;
+	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "wt");
+	if(!f)return ;
+	for (eventCache::iterator service_it(eventDB.begin()); service_it != eventDB.end(); ++service_it)
+	{
+		eventMap &evMap = service_it->second.first;
+		eventMap::iterator evit(evMap.begin());
+		if(evit ==evMap.end())continue;
+		EITEvent eit( *evit->second, (service_it->first.tsid<<16)|service_it->first.onid, evit->second->type,evit->second->source);
+		eString HeadEventText;
+		for (ePtrList<Descriptor>::iterator descriptor(eit.descriptor); descriptor != eit.descriptor.end(); ++descriptor)
+			if (descriptor->Tag() == DESCR_EXTENDED_EVENT)
+			{
+				ExtendedEventDescriptor *ss = (ExtendedEventDescriptor*)*descriptor;
+				HeadEventText=ss->text;
+				break;
+			}
+		unsigned int index=0;
+		if( (index = HeadEventText.find(":", 0) ) == std::string::npos)continue;
+		eString channelName=HeadEventText.left(index);
+		fprintf(f,"%d:%d:%d=%s\n",service_it->first.sid,service_it->first.onid,service_it->first.tsid,channelName.c_str());
+	}
+	fclose(f);
+}
 
 //*******  eEPGSqlBase  *************
 

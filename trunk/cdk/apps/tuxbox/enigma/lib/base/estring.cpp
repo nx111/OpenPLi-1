@@ -653,7 +653,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 	
 
 //	eDebug("ConvertDVBUTF8-1:<data=%s><table=0x%x><tsidonid=%d>\n",data,table,tsidonid);
-	if (!noEncodeID && (!encode || encode==AUTO_ENCODING || encode==UNICODE_ENCODING ||encode==GB2312_ENCODING || encode==BIG5_ENCODING )) 
+	if (!noEncodeID ) 
 	 switch(data[0])
 	 {
 		case 0:

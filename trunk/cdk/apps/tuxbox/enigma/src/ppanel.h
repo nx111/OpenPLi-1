@@ -155,6 +155,7 @@ class eListBoxEntryExecute:public ePPanelEntry
 {
    protected:
    eString target;
+   eString targetOption;
    eString checked;
 
    public:
