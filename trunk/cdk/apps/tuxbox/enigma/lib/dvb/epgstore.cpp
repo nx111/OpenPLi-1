@@ -347,6 +347,8 @@ void eEPGMemStore::flushEPG( const uniqueEPGKey& s, const int event_id )
 }
 
 
+
+
 timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, time_t from, time_t to, int limit )
 {
 	lock();
@@ -355,7 +357,7 @@ timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, tim
 	if (from == 0)
 		from = time(0) + eDVB::getInstance()->time_difference;
 
-	eventCache::iterator it = eventDB.find( uniqueEPGKey( service ) );
+	eventCache::iterator it = eventDB.find( uniqueEPGKey( eEPGCache::getInstance()->getServiceReference(service) ) );
 	if ( it == eventDB.end() || !it->second.second.size() )
 		return timeMapPtr(this, NULL);
 
@@ -385,7 +387,7 @@ void eEPGMemStore::freeTimeMap( timeMap* ptr )
 EITEvent *eEPGMemStore::lookupEvent( const eServiceReferenceDVB &service, int event_id )
 {
 	singleLock s(cacheLock);
-	uniqueEPGKey key( service );
+	uniqueEPGKey key( eEPGCache::getInstance()->getServiceReference(service) );
 
 	eventCache::iterator It = eventDB.find( key );
 	if ( It != eventDB.end() && !It->second.first.empty() ) // entrys cached?
@@ -405,7 +407,7 @@ EITEvent *eEPGMemStore::lookupEvent( const eServiceReferenceDVB &service, int ev
 const eventData *eEPGMemStore::searchByTime( const eServiceReferenceDVB &service, time_t t )
 // if t == 0 we search the current event...
 {
-	uniqueEPGKey key(service);
+	uniqueEPGKey key(eEPGCache::getInstance()->getServiceReference(service));
 
 	// check if EPG for this service is ready...
 	eventCache::iterator It = eventDB.find( key );

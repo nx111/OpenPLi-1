@@ -161,7 +161,6 @@ public:
 	static std::map<eString, uniqueEPGKey>	eEPGCache::ServiceMapping;
 	static int readServiceMappingFile();
 	static int saveServiceMappingFile();
-	eServiceReferenceDVB getServiceReference(const eServiceReferenceDVB &service);
 
 #ifdef ENABLE_MHW_EPG
 	friend class eScheduleMhw;
@@ -303,11 +302,12 @@ public:
 	inline void Lock();
 	inline void Unlock();
 
+	eServiceReferenceDVB getServiceReference(const eServiceReferenceDVB &service);
 	tmpMap* getUpdatedMap() { return &temp; }
 	timeMapPtr getTimeMapPtr(const eServiceReferenceDVB &service, time_t from=0, time_t to=0, int limit=0)
 	{
 		if ( epgStore )
-			return epgStore->getTimeMapPtr( getServiceReference(service), from, to, limit );
+			return epgStore->getTimeMapPtr( service, from, to, limit );
 		else
 			return timeMapPtr();
 	}
@@ -315,7 +315,7 @@ public:
 	eventDataPtr getEventDataPtr( const eServiceReferenceDVB& ref, time_t t )
 	{
 		if ( epgStore )
-			return epgStore->getEventDataPtr(  getServiceReference(ref), t );
+			return epgStore->getEventDataPtr( ref, t );
 		else
 			return eventDataPtr();
 	}
@@ -341,7 +341,7 @@ public:
 
 inline const std::list<NVODReferenceEntry>* eEPGCache::getNVODRefList(const eServiceReferenceDVB &service)
 {
-	nvodMap::iterator It = NVOD.find(  getServiceReference(service) );
+	nvodMap::iterator It = NVOD.find( service );
 	if ( It != NVOD.end() && It->second.size() )
 		return &(It->second);
 	else
