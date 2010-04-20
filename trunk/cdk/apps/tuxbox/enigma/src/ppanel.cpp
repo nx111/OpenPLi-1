@@ -645,6 +645,7 @@ eListBoxEntryExecute::eListBoxEntryExecute(
    target=node->GetAttributeValue("target");
    targetOption=node->GetAttributeValue("option");
    checked=node->GetAttributeValue("checked");
+   infotxt=node->GetAttributeValue("infotext");
    if (parentdlg.checkbox=="radio" || parentdlg.checkbox=="check")
 		parentdlg.items.push_back(this);
       //set checkedbox
@@ -670,7 +671,9 @@ void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
           if(targetOption=="showNone")
                   rc=runScript(target,false,parentdlg);
           else if(targetOption=="showInfo"){
-                  eMessageBox mb(getText(), _("Please wait"), eMessageBox::iconInfo);
+		  if(infotxt=="")
+			infotxt=getText();
+                  eMessageBox mb(infotxt, _("Please wait"), eMessageBox::iconInfo);
                   mb.show();
                   rc=runScript(target,false,parentdlg);
                   }

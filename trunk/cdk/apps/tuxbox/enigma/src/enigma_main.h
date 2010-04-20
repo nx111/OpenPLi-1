@@ -491,8 +491,8 @@ private:
 	void setEIT(EIT *);
 	void epgNowNextRefresh();
 	int setEPGNowNext();
-	void setNow(EITEvent *event);
-	void setNext(EITEvent *event);
+	int setNow(EITEvent *event);
+	int setNext(EITEvent *event);
 	int setEITcache();
 	void handleNVODService(SDTEntry *sdtentry);
 

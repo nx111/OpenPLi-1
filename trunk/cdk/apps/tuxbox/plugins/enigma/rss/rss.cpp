@@ -320,6 +320,8 @@ void replace_sonderzeichen(char * pointer){
 // Sonderzeichen ersetzen
     replace(pointer, "&nbsp;", " ");
     replace(pointer, "&quot;", "\"");
+    replace(pointer, "&ldquo;", "“");
+    replace(pointer, "&rdquo;", "“");
     replace(pointer, "&apos;", "'");
     replace(pointer, "&gt;", ">");
     replace(pointer, "&lt;", "<");
@@ -501,8 +503,8 @@ rssDetail::rssDetail(const char *title, const char *desc) : eWindow(0)
 	float lineheight=fontRenderClass::getInstance()->getLineHeight( descrLabel->getFont() )*3/2;
 	int lines = descrWidget->getSize().height() / (int)lineheight;
 	//pageHeight = (int)(lines * lineheight);
-	int newheight = lines * (int)lineheight + (int)(round(lineheight + 0.5) - (int)lineheight);
-	descrWidget->resize( eSize( descrWidget->getSize().width(), newheight + (int)lineheight/6 ));
+	int newheight = lines * (int)lineheight ;
+	descrWidget->resize( eSize( descrWidget->getSize().width(), newheight ));
 	descrLabel->resize( 
 		eSize(
 			descrWidget->getSize().width(), 

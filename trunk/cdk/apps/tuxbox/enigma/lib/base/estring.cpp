@@ -607,7 +607,7 @@ eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen)
 		else
 			szOut[t++]=szIn[i];
 	}
-  	if(szIn[i]<0x80 && szIn[i])
+  	if(i<len && szIn[i]<0x80 && szIn[i])
 		szOut[t++]=szIn[i++];
 
 	if(pconvertedLen)*pconvertedLen=i;
@@ -633,7 +633,7 @@ eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen)
 			szOut[t++]=szIn[i];
 	}
 
-  	if(szIn[i] && (szIn[i]<0xA0 || szIn[i]>0xF9))
+  	if(i<len && szIn[i] && (szIn[i]<0xA0 || szIn[i]>0xF9))
 		szOut[t++]=szIn[i++];
 
 	if(pconvertedLen)*pconvertedLen=i;

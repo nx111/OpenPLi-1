@@ -157,6 +157,7 @@ class eListBoxEntryExecute:public ePPanelEntry
    eString target;
    eString targetOption;
    eString checked;
+   eString infotxt;
 
    public:
    eListBoxEntryExecute(
