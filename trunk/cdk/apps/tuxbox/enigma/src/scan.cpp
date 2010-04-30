@@ -2421,7 +2421,7 @@ void tsFastscanGUI::init_tsFastscanGUI(eWidget *parent, eWidget* LCDTitle, eWidg
 	entrys[0]=new eListBoxEntryText(l_provider, _("Canal Digitaal"), (void*)0);
 	entrys[1]=new eListBoxEntryText(l_provider, _("TV Vlaanderen"), (void*)1);
 #if HDINE1
-	eString ts = _("TéléSAT");
+	eString ts = _("TeleSAT");
 	entrys[2]=new eListBoxEntryText(l_provider, convertDVBUTF8((const unsigned char*)ts.c_str(), strlen(ts.c_str())) ,(void*)2);
 #endif
 	l_provider->setCurrent(entrys[v_provider]);

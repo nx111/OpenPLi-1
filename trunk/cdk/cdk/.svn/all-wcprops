@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 42
-/svnroot/openpli/!svn/ver/85/trunk/cdk/cdk
+V 43
+/svnroot/openpli/!svn/ver/104/trunk/cdk/cdk
 END
 prepare_neutrino
 K 25
@@ -13,7 +13,7 @@ customize-flash-past
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openpli/!svn/ver/14/trunk/cdk/cdk/customize-flash-past
+/svnroot/openpli/!svn/ver/92/trunk/cdk/cdk/customize-flash-past
 END
 rules-archive.pl
 K 25
@@ -45,35 +45,35 @@ svn:wc:ra_dav:version-url
 V 48
 /svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/README
 END
-rules-install
-K 25
-svn:wc:ra_dav:version-url
-V 55
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-install
-END
 prepare
 K 25
 svn:wc:ra_dav:version-url
 V 50
 /svnroot/openpli/!svn/ver/24/trunk/cdk/cdk/prepare
 END
+rules-install
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-install
+END
 customize-flash-pre
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/customize-flash-pre
-END
-rules-make-cygwin
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-make-cygwin
+V 62
+/svnroot/openpli/!svn/ver/92/trunk/cdk/cdk/customize-flash-pre
 END
 configure.ac
 K 25
 svn:wc:ra_dav:version-url
 V 55
 /svnroot/openpli/!svn/ver/60/trunk/cdk/cdk/configure.ac
+END
+rules-make-cygwin
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/rules-make-cygwin
 END
 rules.pl
 K 25
@@ -103,7 +103,7 @@ Makefile.am
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svnroot/openpli/!svn/ver/67/trunk/cdk/cdk/Makefile.am
+/svnroot/openpli/!svn/ver/93/trunk/cdk/cdk/Makefile.am
 END
 rules-archive
 K 25

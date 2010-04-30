@@ -41,6 +41,7 @@
 #include <lib/system/init.h>
 #include <lib/system/init_num.h>
 #include <lib/system/econfig.h>
+#include <resolv.h>
 
 eDVBController::~eDVBController()
 {
@@ -655,6 +656,7 @@ void eDVB::configureNetwork()
 	}
 #endif
 
+	res_init();
 #endif // USE_IFUPDOWN
 }
 #endif

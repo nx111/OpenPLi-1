@@ -7,6 +7,7 @@
 #include <lib/dvb/epgcache.h>
 #include <lib/dvb/dvbservice.h>
 #include <lib/dvb/frontend.h>
+#include <lib/socket/dpopen.h>
 #include <lib/system/info.h>
 #include <sys/stat.h>
 #include <time.h>
@@ -28,7 +29,7 @@ void eChannelInfo::init_eChannelInfo()
 	foregroundColor=eSkin::getActive()->queryColor("eStatusBar.foreground");
 	backgroundColor=eSkin::getActive()->queryColor("eStatusBar.background");
 	gFont fn = eSkin::getActive()->queryFont("eChannelInfo");
-	lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )+3;
+	lineheight=(int)fontRenderClass::getInstance()->getLineHeight(fn )+4;
 
 	int percentprogress=0;
 	eConfig::getInstance()->getKey("/ezap/osd/PercentProgress", percentprogress);
@@ -197,6 +198,30 @@ void eChannelInfo::ParseEITInfo(EITEvent *e)
 
 		LocalEventData led;
 		led.getLocalData(e, &name, &descr);
+
+		int formatEvent=0;
+		eConfig::getInstance()->getKey("/ezap/osd/formatEvent",formatEvent);
+
+		if(formatEvent && !access("/var/etc/enigma_format_event.sh",X_OK)){
+		   FILE *fi=dpopen("/var/etc/enigma_format_event.sh channelinfo");
+		   if(fi){
+			fprintf(fi,"%s",descr.c_str());
+  		        if (dphalfclose(fi) >= 0) {
+				char temp[4096];
+				int len;
+				eString temp_description;
+				temp_description.clear();
+				while(len=fread(temp,sizeof(char),sizeof(temp)-1,fi)){
+					temp[len]='\0';
+					temp_description += temp;
+				}
+				if(temp_description != "")
+					descr=temp_description;
+			}
+			dpclose(fi);
+		   }
+		}
+
 		DescriptionForEPGSearch = name;  // EPG search
 		for (ePtrList<Descriptor>::iterator d(e->descriptor); d != e->descriptor.end(); ++d)
 		{

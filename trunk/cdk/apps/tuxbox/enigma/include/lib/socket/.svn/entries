@@ -1,7 +1,7 @@
 10
 
 dir
-85
+104
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/include/lib/socket
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -93,6 +93,20 @@ plindeman
 
 
 0
+
+dpopen.h
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 socket.h
 file

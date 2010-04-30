@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svnroot/openpli/!svn/ver/71/trunk/cdk/apps/tuxbox/enigma/data/pictures
+/svnroot/openpli/!svn/ver/99/trunk/cdk/apps/tuxbox/enigma/data/pictures
 END
 stereo_on.png
 K 25
@@ -49,7 +49,7 @@ radio.mvi
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svnroot/openpli/!svn/ver/21/trunk/cdk/apps/tuxbox/enigma/data/pictures/radio.mvi
+/svnroot/openpli/!svn/ver/99/trunk/cdk/apps/tuxbox/enigma/data/pictures/radio.mvi
 END
 video.png
 K 25
@@ -81,6 +81,12 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/folder-fs8.png
 END
+check-fs8.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/check-fs8.png
+END
 padlock-fs8.png
 K 25
 svn:wc:ra_dav:version-url
@@ -92,12 +98,6 @@ K 25
 svn:wc:ra_dav:version-url
 V 93
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/newfound_small-fs8.png
-END
-check-fs8.png
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/check-fs8.png
 END
 format_on_small.png
 K 25
@@ -123,23 +123,17 @@ svn:wc:ra_dav:version-url
 V 86
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/button_blue.png
 END
-event_failed-fs8.png
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/event_failed-fs8.png
-END
 newfound-fs8.png
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/newfound-fs8.png
 END
-diseqc_0-fs8.png
+event_failed-fs8.png
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/diseqc_0-fs8.png
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/event_failed-fs8.png
 END
 rass_page1.png
 K 25
@@ -147,11 +141,11 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/rass_page1.png
 END
-diseqc_1-fs8.png
+diseqc_0-fs8.png
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/diseqc_1-fs8.png
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/diseqc_0-fs8.png
 END
 rass_page2.png
 K 25
@@ -159,17 +153,11 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/rass_page2.png
 END
-diseqc_2-fs8.png
+diseqc_1-fs8.png
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/diseqc_2-fs8.png
-END
-lcdmenu.png
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/lcdmenu.png
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/diseqc_1-fs8.png
 END
 rass_page3.png
 K 25
@@ -177,17 +165,29 @@ svn:wc:ra_dav:version-url
 V 85
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/rass_page3.png
 END
-rass_page4.png
+lcdmenu.png
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/rass_page4.png
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/lcdmenu.png
+END
+diseqc_2-fs8.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/diseqc_2-fs8.png
 END
 rass_logo.png
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/rass_logo.png
+END
+rass_page4.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/rass_page4.png
 END
 unchecked.png
 K 25

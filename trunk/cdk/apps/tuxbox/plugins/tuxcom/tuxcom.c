@@ -481,9 +481,51 @@ void RenderString(const char *string, int sx, int sy, int maxwidth, int layout, 
 
 		while(*string != '\0' && *string != '\n')
 		{
-			if((charwidth = RenderChar(*string, sx, sy, ex, color)) == -1) return; /* string > maxwidth */
+            FT_ULong code=0;
+            unsigned char c1=0,c2=0,c3=0,c4=0;
 
-			sx += charwidth;
+            if((*string & 0x80)==0)
+                code=*string;
+            else if((*string & 0xE0) == 0xC0){
+                c1=*string;
+                string++;
+                c2=*string;
+                if(c2 != '\0' && (c2 & 0xE0)==0x80)
+                    code=(c1 & 0x3F )<<6 | (c2 & 0x3F);
+            }
+            else if((*string & 0xF0) == 0xE0){
+                c1=*string;
+                string++;
+                if(*string != '\0' && (*string & 0xC0)==0x80){
+                    c2=*string;
+                    string++;
+                    if(*string != '\0' && (*string & 0xC0)==0x80){
+                        c3=*string;
+                        code=(c1&0x1F)<<12 | (c2&0x3F)<<6 | (c3 & 0x3F);
+                        }   
+                    }
+            }   
+            else if((*string & 0xF8) == 0xF0){
+                c1=*string;
+                string++;
+                if(*string != '\0' && (*string & 0xC0)==0x80){
+                    c2=*string;
+                    string++;
+                    if(*string != '\0' && (*string & 0xC0)==0x80){
+                        c3=*string;
+                        string++;                       
+                        if(*string != '\0' && (*string & 0xC0)==0x80){
+                            c4=*string;
+                            code=(c1 & 0x0F)<<18 | (c2&0x1F)<<12 | (c3&0x3F)<<6 | (c4 & 0x3F);
+                            }
+                        }   
+                    }
+            }       
+
+            if(code){
+			    if((charwidth = RenderChar(code, sx, sy, ex, color)) == -1) return; /* string > maxwidth */
+			    sx += charwidth;
+            }
 			string++;
 		}
 }

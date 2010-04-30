@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 53
-/svnroot/openpli/!svn/ver/85/trunk/cdk/cdk/root/share
+V 54
+/svnroot/openpli/!svn/ver/104/trunk/cdk/cdk/root/share
 END
 Makefile.am
 K 25

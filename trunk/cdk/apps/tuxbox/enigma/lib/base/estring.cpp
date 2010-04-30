@@ -696,9 +696,9 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			encode=BIG5_ENCODING;
 //			eDebug("unsup. Big5 subset of ISO/IEC 10646-1 enc.");
 			break;
-		case 0x15:
+		case 0x15: // UTF-8 encoding of ISO/IEC 10646-1
 			encode=UTF8_ENCODING;
-			++i;
+			return std::string((char*)data+1, len-1);
 			break;
 		case 0x16:
 			encode=UNICODE_ENCODING;

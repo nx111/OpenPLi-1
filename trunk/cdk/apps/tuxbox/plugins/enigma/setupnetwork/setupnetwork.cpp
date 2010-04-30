@@ -33,6 +33,7 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <resolv.h>
 
 #include "enigma_mount.h"
 
@@ -166,6 +167,7 @@ void configureNetwork()
 				//dns[0], dns[1], dns[2], dns[3]);
 		}
 	}
+	res_init();
 }
 
 

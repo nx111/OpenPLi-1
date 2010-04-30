@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svnroot/openpli/!svn/ver/71/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics
+/svnroot/openpli/!svn/ver/87/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics
 END
 button_audio.png
 K 25
@@ -93,17 +93,17 @@ svn:wc:ra_dav:version-url
 V 94
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_info.png
 END
-button_-.png
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_-.png
-END
 button_dbox.png
 K 25
 svn:wc:ra_dav:version-url
 V 94
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_dbox.png
+END
+button_-.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_-.png
 END
 button_0.png
 K 25
@@ -111,17 +111,17 @@ svn:wc:ra_dav:version-url
 V 91
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_0.png
 END
-button_1.png
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_1.png
-END
 button_green.png
 K 25
 svn:wc:ra_dav:version-url
 V 95
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_green.png
+END
+button_1.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_1.png
 END
 button_2.png
 K 25
@@ -141,17 +141,17 @@ svn:wc:ra_dav:version-url
 V 91
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_4.png
 END
-button_5.png
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_5.png
-END
 button_menu.png
 K 25
 svn:wc:ra_dav:version-url
 V 94
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_menu.png
+END
+button_5.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_5.png
 END
 button_6.png
 K 25
@@ -159,29 +159,29 @@ svn:wc:ra_dav:version-url
 V 91
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_6.png
 END
-button_7.png
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_7.png
-END
 button_bouq.png
 K 25
 svn:wc:ra_dav:version-url
 V 94
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_bouq.png
 END
-button_shift_red.png
+button_7.png
 K 25
 svn:wc:ra_dav:version-url
-V 99
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_shift_red.png
+V 91
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_7.png
 END
 button_8.png
 K 25
 svn:wc:ra_dav:version-url
 V 91
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_8.png
+END
+button_shift_red.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/button_shift_red.png
 END
 button_9.png
 K 25
@@ -229,7 +229,7 @@ Makefile.am
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/openpli/!svn/ver/71/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/Makefile.am
+/svnroot/openpli/!svn/ver/87/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics/Makefile.am
 END
 button_shift_green.png
 K 25

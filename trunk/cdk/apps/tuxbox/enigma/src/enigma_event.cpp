@@ -10,6 +10,7 @@
 #include <lib/gui/eskin.h>
 #include <lib/gui/eprogress.h>
 #include <lib/gui/guiactions.h>
+#include <lib/socket/dpopen.h>
 #include <lib/system/init_num.h>
 #include <epgwindow.h>
 #include <enigma_main.h>
@@ -157,6 +158,29 @@ void eEventDisplay::setEPGSearchEvent(eServiceReferenceDVB &Ref, EITEvent *event
 		
 		LocalEventData led;
 		led.getLocalData(evt, &_title, &_long_description);
+		
+		int formatEvent=0;
+		eConfig::getInstance()->getKey("/ezap/osd/formatEvent",formatEvent);
+
+		if(formatEvent && !access("/var/etc/enigma_format_event.sh",X_OK)){
+		   FILE *fi=dpopen("/var/etc/enigma_format_event.sh descr");
+		   if(fi){
+			fprintf(fi,"%s",_long_description.c_str());
+  		        if (dphalfclose(fi) >= 0) {
+				char temp[4096];
+				int len;
+				eString temp_description;
+				temp_description.clear();
+				while(len=fread(temp,sizeof(char),sizeof(temp)-1,fi)){
+					temp[len]='\0';
+					temp_description += temp;
+				}
+				if(temp_description != "")
+					_long_description=temp_description;
+			}
+			dpclose(fi);
+		   }
+		}
 
 		if (_title)
 			valid |= 4;
@@ -331,6 +355,29 @@ void eEventDisplay::setEvent(EITEvent *event)
 
 		LocalEventData led;
 		led.getLocalData(event, &_title, &_long_description);
+
+		int formatEvent=0;
+		eConfig::getInstance()->getKey("/ezap/osd/formatEvent",formatEvent);
+
+		if(formatEvent && !access("/var/etc/enigma_format_event.sh",X_OK)){
+		   FILE *fi=dpopen("/var/etc/enigma_format_event.sh descr");
+		   if(fi){
+			fprintf(fi,"%s",_long_description.c_str());
+  		        if (dphalfclose(fi) >= 0) {
+				char temp[4096];
+				int len;
+				eString temp_description;
+				temp_description.clear();
+				while(len=fread(temp,sizeof(char),sizeof(temp)-1,fi)){
+					temp[len]='\0';
+					temp_description += temp;
+				}
+				if(temp_description != "")
+					_long_description=temp_description;
+			}
+			dpclose(fi);
+		   }
+		}
 
 #ifndef DISABLE_LCD
 		if (LCDElement)

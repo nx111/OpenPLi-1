@@ -1051,7 +1051,6 @@ void eEPGCache::forceEpgScan()
 
 void eEPGCache::startEPG()
 {
-
 	if (paused)  // called from the updateTimer during pause...
 	{
 		paused++;
@@ -1195,10 +1194,10 @@ void eEPGCache::enterService(const eServiceReferenceDVB& ref, int err)
 
 	if ( thread_running() )
 	// -> gotMessage -> changedService
-		messages.send(Message(Message::enterService, ref, err));
+		messages.send(Message(Message::enterService, getServiceReference(ref), err));
 	else
 	{
-		cached_service = ref;
+		cached_service = getServiceReference(ref);
 		cached_err = err;
 	}
 }

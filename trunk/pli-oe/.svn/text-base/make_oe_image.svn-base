@@ -7,10 +7,6 @@ if [ "${OE_BUILD}x" = "x" -a "${MACHINE}x" = "x" ]; then
 	exit
 fi
 
-if [ "${DISTROVERSION}x" = "x" ]; then
-	DISTROVERSION=openpli
-fi
-
 # Default: build image from /dreambox/oe/build if these env. variables are not set
 if [ "${OE_ROOT}x" = "x" ]; then
 	OE_ROOT=/dreambox/oe
@@ -28,6 +24,13 @@ fi
 if [ "${MACHINE}x" = "x" ]; then
 	#when MACHINE is not defined, OE_BUILD must be defined (checked above)
 	MACHINE=`grep "^MACHINE = " $OE_BUILD/conf/local.conf | sed "s/MACHINE = \"//" | sed "s/\"$//"`
+fi
+
+if [ "${DISTROVERSION}x" = "x" ]; then
+	DISTROVERSION=openpli
+	FILENAME="OpenPLi-unstable-${MACHINE}-`date +%Y%m%d`"
+else
+	FILENAME="${DISTROVERSION}-${MACHINE}-`date +%Y%m%d`"
 fi
 
 OE_WORK=$OE_BUILD/tmp/work
@@ -94,13 +97,6 @@ rm -f $OE_BUILD/tmp/deploy/ipk/Packages.gz
 
 cd $OE_BUILD && . env.source && bitbake dreambox-image || ( echo "Error building image started in $OE_BUILD"; exit 1 )
 
-ENIGMADIR=`find $OE_WORK -maxdepth 1 -name enigma-$DISTROVERSION-\* | tail -1`/enigma
-#IMAGENAME=`find $OE_WORK -maxdepth 1 -name pli-files-\* | tail -1`
-#IMAGENAME=`basename $IMAGENAME`
-#IMAGENAME=${IMAGENAME#pli-files-}
-#IMAGENAME=${IMAGENAME%-*}
-FILENAME="OpenPLi-unstable-${MACHINE}-`date +%Y%m%d`"
-
 mv $OE_IMAGES/*.nfi $OE_IMAGES/$FILENAME.nfi
 zip -j $OE_IMAGES/$FILENAME $OE_IMAGES/$FILENAME.nfi
 
@@ -115,6 +111,11 @@ cd $OE_ROOT
 ./recreate_feed $OE_BUILD/tmp/deploy/3rd-party
 rsync -h -r --timeout=600 --progress --delete-during $OE_BUILD/tmp/deploy/3rd-party/ rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/3rd-party/$MACHINE/
 
+if [ ! -f $OE_BUILD/tmp/deploy/ipk/Packages.gz ]; then
+	echo "Feed not complete!"
+	exit
+fi
+
 #don't delete locale packages from enigma images, we need enigma-locale-??
 if [ "${MACHINE}" != "dm500plus" -a "${MACHINE}" != "dm600pvr" -a "${MACHINE}" != "dm7020" ]; then
 	rm -f $OE_BUILD/tmp/deploy/ipk/*-locale-*.ipk
@@ -123,8 +124,4 @@ rm -f $OE_BUILD/tmp/deploy/ipk/*-dbg_*.ipk
 rm -f $OE_BUILD/tmp/deploy/ipk/*-doc_*.ipk
 cd $OE_BUILD && bitbake package-index
 
-if [ ! -f $OE_BUILD/tmp/deploy/ipk/Packages.gz ]; then
-	echo "Feed not complete!"
-	exit
-fi
 rsync -h -r --timeout=600 --progress --delete-during --exclude morgue $OE_BUILD/tmp/deploy/ipk/ rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/$MACHINE/

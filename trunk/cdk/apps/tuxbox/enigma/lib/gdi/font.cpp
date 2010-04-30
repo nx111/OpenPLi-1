@@ -24,6 +24,7 @@
 #include <lib/system/elock.h>
 #include <lib/system/init.h>
 #include <lib/system/init_num.h>
+#include <lib/system/econfig.h>
 
 #define HAVE_FRIBIDI
 // until we have it in the cdk
@@ -303,6 +304,15 @@ int eTextPara::appendGlyph(Font *current_font, FT_Face current_face, FT_UInt gly
 	FTC_SBit glyph;
 	if (current_font->getGlyphBitmap(glyphIndex, &glyph))
 		return 1;
+	static int is1bytelang=-1;
+	if( is1bytelang == -1){
+	    	char *lang=0;
+		eConfig::getInstance()->getKey("/elitedvb/language", lang); // fetch selected OSD country
+		if(lang && 0==strncmp(lang,"zh",2))
+	     		is1bytelang=0;
+		else
+			is1bytelang=1;
+	}
 
 	int nx=cursor.x();
 
@@ -314,7 +324,8 @@ int eTextPara::appendGlyph(Font *current_font, FT_Face current_face, FT_UInt gly
 		glyphString::reverse_iterator i(glyphs.rbegin());
 		while (i != glyphs.rend())
 		{
-			if (i->flags&(GS_ISSPACE|GS_ISFIRST))
+			if ( (i->flags&(GS_ISSPACE|GS_ISFIRST) && is1bytelang==1)  //one byte language
+			   || (i->flags&(GS_ISFIRST) && is1bytelang==0) )   //multi bytes language
 				break;
 			cnt++;
 			++i;

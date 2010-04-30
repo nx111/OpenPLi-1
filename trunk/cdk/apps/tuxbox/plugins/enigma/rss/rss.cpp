@@ -320,8 +320,6 @@ void replace_sonderzeichen(char * pointer){
 // Sonderzeichen ersetzen
     replace(pointer, "&nbsp;", " ");
     replace(pointer, "&quot;", "\"");
-    replace(pointer, "&ldquo;", "“");
-    replace(pointer, "&rdquo;", "“");
     replace(pointer, "&apos;", "'");
     replace(pointer, "&gt;", ">");
     replace(pointer, "&lt;", "<");
@@ -334,6 +332,11 @@ void replace_sonderzeichen(char * pointer){
     replace(pointer, "&Ouml;", "Ö");
     replace(pointer, "&Uuml;", "Ü");
     replace(pointer, "&szlig;", "ß");
+    replace(pointer, "&hellip;","\133");      //…
+    replace(pointer, "&ldquo;", "\147");      //“
+    replace(pointer, "&rdquo;", "\148");      //”
+    replace(pointer, "&ndash;","\150");	      //–
+    replace(pointer, "&mdash;","\151");       //—
     replace(pointer, "&copy;", "\169");
     replace(pointer, "&shy;", "\173");
     replace(pointer, "&Agrave;", "\192");
@@ -714,16 +717,18 @@ void RSSParser::parse(eString file)
 									thisItem.title.removeChars('\n');
 									thisItem.title.removeChars('\r');
 									thisItem.title.strReplace("\t"," ");
+//									eDebug("title:%s",thisItem.title.c_str());
 								}
 								if(!strcmp(i->GetType(), "description"))
 								{	eString desc = i->GetData();
 									replace_sonderzeichen((char *)desc.c_str());
-									desc.removeChars('\n');
-									desc.removeChars('\r');
+//									desc.removeChars('\n');
+//									desc.removeChars('\r');
 									desc.strReplace("\t", " ");
 									desc = removeTags(desc);
 									desc = removeTrailingSpaces(desc);
 									thisItem.description = desc;
+//									eDebug("description:%s",desc.c_str());
 								}
 							}
 							thisItem.id = idcnt++;

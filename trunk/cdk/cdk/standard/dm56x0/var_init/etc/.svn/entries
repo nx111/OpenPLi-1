@@ -1,14 +1,14 @@
 10
 
 dir
-85
+104
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm56x0/var_init/etc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-11-01T14:34:16.896578Z
-37
+2010-03-14T19:54:00.080957Z
+91
 daf2000
 
 
@@ -100,11 +100,11 @@ file
 
 
 
-2009-12-09T08:20:02.804023Z
-83458767092fdab98a65fc0e731447af
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-04-26T17:35:15.742872Z
+cb8c199b8c8880ba9d0931e3e23e4add
+2010-03-14T19:54:00.080957Z
+91
+daf2000
 
 
 
@@ -126,7 +126,7 @@ plindeman
 
 
 
-19262
+20659
 
 smb.conf
 file

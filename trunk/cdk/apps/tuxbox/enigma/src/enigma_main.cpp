@@ -2461,6 +2461,7 @@ void eZapMain::init_main()
 		CONNECT( eDVB::getInstance()->DVBCI2->ci_mmi_progress, eZapMain::receiveMMIMessageCI2 );
 #endif
 	CONNECT( rdstext_decoder.textReady, eZapMain::gotRDSText );
+
 	int bootcount=1;
 	eConfig::getInstance()->getKey("/elitedvb/system/bootCount", bootcount);
 	if ( bootcount > 1 )
@@ -2669,10 +2670,10 @@ void eZapMain::setEPGButton(bool b)
 		isEPG = 1;
 
 		/* we have epg available for our channel, immediately fill now/next with our epg data, if we didn't get valid now/next EIT already */
-	//	if (!validEITReceived)
-	//	{
+		if (!validEITReceived)
+		{
 			setEPGNowNext();
-	//	}
+		}
 		
 	}
 	else
@@ -2892,7 +2893,7 @@ void eZapMain::setEIT(EIT *eit)
 	else
 	{
 		/* we have no EIT, try to use EPG instead */
-		validEITReceived = false;
+		validEITReceived = EPGNowNextSetted;
 		if (!EPGNowNextSetted)
 		{
 			/* no EPG either, clear 'now' info */
@@ -2974,9 +2975,10 @@ int eZapMain::setEPGNowNext()
 		}
 	}
 	if(SettedNow || SettedNext){
-		epgNowNextTimer.startLongTimer(30);
+		validEITReceived = true;
 		ret=1;
 	}
+	epgNowNextTimer.startLongTimer(30);
 	return ret;
 }
 
