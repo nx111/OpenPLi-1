@@ -1,7 +1,7 @@
 AUTOMAKE_OPTIONS = gnu
 
 SUBDIRS = \
-	include tuxmail tuxtxt tuxcom tuxcal fx2 vncviewer enigma
+	include tuxmail tuxtxt tuxcom tuxcal fx2 vncviewer enigma pmttrans
 
 if BOXTYPE_DREAMBOX
 SUBDIRS += pip mosaic

@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/pmttrans
+https://openpli.svn.sourceforge.net/svnroot/openpli
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+056643be-5495-4fc0-9e08-4bf5907aba9a
+
+update.log
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+pmttrans.c
+file
+
+
+
+add
+
+.deps
+dir
+
+
+
+add
+

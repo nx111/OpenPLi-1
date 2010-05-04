@@ -94,6 +94,7 @@ vncviewer/Makefile
 vncviewer/rfb/Makefile
 dvbsub/Makefile
 pip/Makefile
+pmttrans/Makefile
 mosaic/Makefile
 enigma/Makefile
 enigma/bitrate/Makefile

@@ -35,10 +35,13 @@ dir
 debian
 dir
 
+tuxmail
+dir
+
 include
 dir
 
-tuxmail
+dvbsub
 dir
 
 AUTHORS
@@ -75,12 +78,6 @@ plindeman
 
 0
 
-dvbsub
-dir
-
-pluginx
-dir
-
 progtest.m4
 file
 
@@ -114,6 +111,9 @@ plindeman
 
 
 2972
+
+pluginx
+dir
 
 ChangeLog
 file
@@ -189,10 +189,10 @@ plindeman
 fx2
 dir
 
-enigma
+tuxcal
 dir
 
-tuxcal
+enigma
 dir
 
 configure.ac
@@ -265,6 +265,13 @@ plindeman
 
 vncviewer
 dir
+
+pmttrans
+dir
+
+
+
+add
 
 Makefile.am
 file
