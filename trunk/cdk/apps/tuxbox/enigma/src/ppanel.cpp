@@ -77,6 +77,20 @@ int plugin_exec(PluginParam *par)
 }
 #endif
 
+
+/******************************************************************************/
+eString expandURL(eString instr,bool getBaseURLagain=false)
+{
+	static eString baseurl="";
+	static bool readed=false;
+	if(getBaseURLagain | !readed){
+		eSimpleConfigFile config("/var/etc/ppanel.conf");
+		baseurl=config.getInfo("PPANEL_BASEURL");
+	}
+	
+	return instr.strReplace("#PPANEL_BASEURL#",baseurl);
+}
+
 /******************************************************************************/
 
 // Fixed version of system()
@@ -85,10 +99,10 @@ int plugin_exec(PluginParam *par)
 int systemFixed(const char *command)
 {
    int retval;
-   eString newCommand;
+   eString newCommand,tmpCommand;
    const char *ppr = "/tmp/returnvalue";
-
-   newCommand = (eString)command + (eString)" ;echo $? > " + (eString)ppr;
+   tmpCommand=expandURL((eString)command,true);
+   newCommand = tmpCommand + (eString)" ;echo $? > " + (eString)ppr;
    
    char temp[1024];
    FILE *pipe = popen(newCommand.c_str(), "r");
@@ -131,6 +145,9 @@ int runScript(
 
    if(command.length() > 0)
    {
+      eString ncommand=expandURL(command,true);
+      command=ncommand;
+
       // Script available
       if(output)
       {
@@ -202,9 +219,9 @@ int downloadFile(
 	bool dontCheckDownload = false)
 {
    int rc = 0;
-   
 	url.strReplace("#RELEASE#", RELEASENAME);
-
+   eString turl=expandURL(url,true);
+   url=turl;	
    if(url.left(6) == "ftp://")
    {
       // FTP download (without download progressbar)
