@@ -2116,18 +2116,14 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 #ifdef ENABLE_DISH_EPG
 	DishEventNameDescriptor *ndescr = NULL;
 #endif
-	__u8 encode=0;
-	switch(source){
-		case srPLI_EPGDAT:encode=UTF8_ENCODING;break;	//UTF8,  enigma_pli_v5 epg.dat
-		case srGEMINI_EPGDAT:encode=UTF8_ENCODING;break;	//UTF8,	 enigma_epg_v7 epg.dat
-		case srPLI_SQLITE:encode=UTF8_ENCODING;break;	//UTF8,  pli sqlite data
-		default:encode=0;break;
-	}
-	
+	//data is from epg data file
+	if(source)
+		source +=0x0100;
+
 	while (ptr<len)
 	{
 		descr_gen_t *d=(descr_gen_t*) (((__u8*)(event+1))+ptr);
-		Descriptor *descr = Descriptor::create(d,tsidonid,0,encode);
+		Descriptor *descr = Descriptor::create(d,tsidonid,0,source);
 		descriptor.push_back(descr);
 // HACK	
 		if ( descr->Tag() == DESCR_SHORT_EVENT )
@@ -2169,7 +2165,9 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 			}
 		}
 #endif
-///
+		else if(descr->Tag() == '\0')
+			break;
+
 		ptr+=d->descriptor_length+2;
 	}
 }

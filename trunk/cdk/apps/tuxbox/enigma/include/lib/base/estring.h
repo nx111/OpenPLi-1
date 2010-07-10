@@ -8,7 +8,7 @@
 #include <map>
 #include "eerror.h"
 
-#define VIDEOTEXSUPPL_ENCODING		0x11
+#define VIDEOTEXSUPPL_ENCODING		0x1E
 #define GB2312_ENCODING			0x13
 #define BIG5_ENCODING			0x14
 #define UTF8_ENCODING			0x15
@@ -17,13 +17,18 @@
 #define UTF16LE_ENCODING		0x18
 #define AUTO_ENCODING			0x1F	//use for read epg.dat encode,not use in convertDVBUTF8
 
+
 class eString : public std::string
 {
 public:
 	static std::map<eString, int> eString::CountryCodeDefaultMapping;
 	static std::map<int, int> eString::TransponderDefaultMapping; // more priority as country..
 	static std::set<int> eString::TransponderUseTwoCharMapping;
+	static std::map<int, int> eString::ChineseTradAndSimpMapping;
+	static int eString::convertChineseTradToSimp;
+
 	static int readEncodingFile();
+	static int readChineseMapFile();
 public:
 // constructors
 	inline eString()	{}	
@@ -47,6 +52,7 @@ public:
 	int icompare(const eString& s);
 };
 
+
 eString convertDVBUTF8(const unsigned char *data, int len, int table=0, int tsidonid=0,int noEncodeID=0,int *pconvertedLen=0); // with default ISO8859-1/Latin1
 eString convertUTF8DVB(const eString &string, int table=0); // with default ISO8859-1/Latin1
 eString convertLatin1UTF8(const eString &string);
@@ -55,6 +61,9 @@ int isUTF8(const eString &string);
 eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
 eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
 int UnicodeToUTF8(long c, char *out);
+unsigned long ChineseTradToSimp(long c);
+eString ChineseTradToSimp(const char *szIn,int len);
+
 int isSpaceChar(char ch);
 
 /////////////////////////////////////////////// Copy Constructors ////////////////////////////////////////////////

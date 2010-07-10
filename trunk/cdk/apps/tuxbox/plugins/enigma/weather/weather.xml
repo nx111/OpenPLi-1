@@ -1,389 +1,436 @@
 <config>
-	<locations>
-		<location>
-			<name>Athens</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/063/c00177?type=plain</url>
-		</location> 
-			<location>
-			<name>Amsterdam</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/037/c00143?type=plain</url>
-		</location>
-		<location>
-			<name>Berlin</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/016/c00059?type=plain</url>
-		</location>
-		<location>
-			<name>Cologne</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/016/c00056?type=plain</url>
-		</location>
-		<location>
-			<name>Brussels</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/053/c00191?type=plain</url>
-			</location>
-		<location>
-			<name>Budapest</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/017/c00060?type=plain</url>
-		</location>
-		<location>
-			<name>Dublin</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/067/c00188?type=plain</url>
-		</location>
-		<location>
-			<name>Copenhagen</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/173/c00190?type=plain</url>
-		</location>
-		<location>
-			<name>Lissabon</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/003/c00002?type=plain</url>
-		</location>
-		<location>
-			<name>London</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/010/c00032?type=plain</url>
-		</location>
-		<location>
-			<name>Moscow</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/107/c00206?type=plain</url>
-		</location>
-		<location>
-			<name>Munchen</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/016/c00058?type=plain</url>
-		</location> 
-		<location>
-			<name>Oslo</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/008/c00021?type=plain</url>
-		</location>
-		<location>
-			<name>Paris</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/062/c00194?type=plain</url>
-		</location>
-		<location>
-			<name>S/C de Tenerife</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/186/c00304?type=plain</url>
-		</location> 
-		<location>
-			<name>Stockholm</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/096/c00187?type=plain</url>
-		</location>
-		<location>
-			<name>Vienna</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/006/c00017?type=plain</url>
-		</location>
-		<location>
-			<name>Zurich</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/087/c00312?type=plain</url>
-		</location>		
-		<location>
-			<name>Bangkok</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/089/c00233?type=plain</url>
-		</location>
-		<location>
-			<name>Buenos Aires</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/050/c00294?type=plain</url>
-		</location>
-		<location>
-			<name>Eilat</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/013/c00046?type=plain</url>
-		</location>
-		<location>
-			<name>Istanbul</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/014/c00047?type=plain</url>
-		</location>
-		<location>
-			<name>Jerusalem</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/013/c00043?type=plain</url>
-		</location>
-		<location>
-			<name>Johannesburg</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/035/c00139?type=plain</url>
-		</location>
-		<location>
-			<name>Los Angeles</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/093/c00269?type=plain</url>
-		</location>
-		<location>
-			<name>Miami</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/093/c00267?type=plain</url>
-		</location> 
-		<location>
-			<name>New York</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/093/c00278?type=plain</url>
-		</location>
-		<location>
-			<name>Beijing</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/001/c00147?type=plain</url>
-		</location>
-		<location>
-			<name>Rio de Janeiro</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/136/c01080?type=plain</url>
-		</location>
-		<location>
-			<name>Tokio</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/068/c000183?type=plain</url>
-		</location>
-		<location>
-			<name>Toronto</name>
-			<url>http://weather.nearperfect.com/weather/world.rss/056/c00264?type=plain</url>
-		</location>		
-		
-	</locations>
+     <locations> 
+     	<location> 
+     		<name><![CDATA[广州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=guangzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[上海市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shanghai]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[北京市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=beijing]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[天津市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=tianjin]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[绍兴市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shaoxing]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[长沙市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=changsha]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[安化市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=anhua]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[重庆市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zhongqing]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[合肥市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=hefei]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[福州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=fuzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[厦门市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=xiamen]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[兰州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=lanzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[深圳市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shenzhen]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[贵阳市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=guiyang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[石家庄市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shijiazhuang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[哈尔滨市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=haerbin]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[郑州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zhengzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[武汉市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=wuhan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[长春市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=changchun]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[南昌市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=nanchang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[南京市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=nanjing]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[无锡市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=wuxi]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[沈阳市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shenyang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[大连市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=dalian]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[济南市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=jinan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[青岛市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=qingdao]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[西安市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=xian]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[太原市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=taiyuan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[成都市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=chengdu]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[昆明市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=kunming]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[宁波市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=ningbo]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[西宁市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=xining]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[南宁市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=nanning]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[呼和浩特市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=huhehaote]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[银川市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=yinchuan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[拉萨市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=lasa]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[乌鲁木齐市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=wulumuqi]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[临沂市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=linyi]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[九江市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=jiujiang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[韶关市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shaoguan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[郴州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=chenzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[乐山市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=leshan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[苏州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=suzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[常熟市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=changshu]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[常州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=changzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[连云港天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=lianyungang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[济宁市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=jining]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[襄樊市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=xiangfan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[柳州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=liuzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[邵阳市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shaoyang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[揭阳市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=jieyang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[茂名市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=maoming]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[汕头市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=shantou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[潮阳市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=chaoyang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[桂林市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=guilin]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[湛江市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zhanjiang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[湖州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=huzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[香港天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=xianggang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[海口市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=haikou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[玉溪市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=yuxi]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[昆明市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=kunming]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[泉州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=quanzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[张家港天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zhangjiagang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[嘉兴市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=jiaxing]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[榆林市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=yulin]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[延安市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=yanan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[遵义市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zunyi]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[保定市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=baoding]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[三亚市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=sanya]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[遵化市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zunhua]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[鞍山市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=anshan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[大同市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=datong]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[株洲市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=zhuzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[怀化市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=huaihua]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[潍坊市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=weifang]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[东营市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=dongying]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[北海市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=beihai]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[荷泽市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=heze]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[邯郸市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=handan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[芜湖市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=wuhu]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[东莞市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=dongguan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[都匀市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=duyun]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[六安市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=luan]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[延吉市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=yanji]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[靖边市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=jingbian]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[南通市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=nantong]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[铜仁市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=tongren]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[秦皇岛天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=qinhuangdao]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[扬州市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=yangzhou]]></url>
+     	</location> 
+     	<location> 
+     		<name><![CDATA[莆田市天气预报]]></name>
+     		<url><![CDATA[http://epg.net.cn/weather.aspx?id=putian]]></url>
+     	</location> 
+     </locations> 
+
 	<mapping>
-		<origdescription>Sand</origdescription>
-		<description>Sand</description>
-		<icon>19.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Dust</origdescription>
-		<description>Dust</description>
-		<icon>19.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Thunderstorms</origdescription>
-		<description>Thunderstorms</description>
-		<icon>38.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Thundery Showers</origdescription>
-		<description>Thunderstorms</description>
+		<origdescription>雷阵雨</origdescription>
+		<description>雷阵雨</description>
 		<icon>4.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Thundershowers</origdescription>
-		<description>Thunderstorms</description>
-		<icon>4.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Storm</origdescription>
-		<description>Storm</description>
-		<icon>23.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Lightning</origdescription>
-		<description>Thunderstorms</description>
-		<icon>38.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Hail</origdescription>
-		<description>Hail</description>
-		<icon>10.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Blowing Snow</origdescription>
-		<description>Blowing Snow</description>
-		<icon>43.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Blizzard</origdescription>
-		<description>Sneeuwstorm</description>
-		<icon>43.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Snowdrift</origdescription>
-		<description>Blowing Snow</description>
-		<icon>43.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Snowstorm</origdescription>
-		<description>Blowing Snow</description>
-		<icon>43.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Snow Showers</origdescription>
-		<description>Blowing Snow</description>
-		<icon>16.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Flurries</origdescription>
-		<description>Flurries</description>
-		<icon>16.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Snow</origdescription>
-		<description>Flurries</description>
-		<icon>16.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Light Snow</origdescription>
-		<description>Light Snow</description>
-		<icon>13.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Sleet</origdescription>
-		<description>Sleet</description>
+		<origdescription>雨夹雪</origdescription>
+		<description>雨夹雪</description>
 		<icon>5.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Showers</origdescription>
-		<description>Showers</description>
+		<origdescription>小雨</origdescription>
+		<description>小雨</description>
 		<icon>11.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Heavy Showers</origdescription>
-		<description>Heavy Showers</description>
+		<origdescription>阵雨</origdescription>
+		<description>阵雨</description>
+		<icon>11.png</icon>
+	</mapping>
+	<mapping>
+		<origdescription>暴雨</origdescription>
+		<description>暴雨</description>
 		<icon>12.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Rainshower</origdescription>
-		<description>Showers</description>
-		<icon>11.png</icon>
+		<origdescription>晴转多云</origdescription>
+		<description>晴转多云</description>
+		<icon>30.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Shower</origdescription>
-		<description>Showers</description>
-		<icon>11.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Occasional Showers</origdescription>
-		<description>Occasional Showers</description>
+		<origdescription>阵雨</origdescription>
+		<description>阵雨</description>
 		<icon>39.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Scattered Showers</origdescription>
-		<description>Scattered Showers</description>
-		<icon>39.png</icon>
+		<origdescription>小雪</origdescription>
+		<description>小雪</description>
+		<icon>13.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Frequent Showers</origdescription>
-		<description>Frequent Showers</description>
-		<icon>39.png</icon>
+		<origdescription>中雪</origdescription>
+		<description>中雪</description>
+		<icon>14.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Isolated Showers</origdescription>
-		<description>Isolated Showers</description>
-		<icon>39.png</icon>
+		<origdescription>大雪</origdescription>
+		<description>大雪</description>
+		<icon>15.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Mostly Dry</origdescription>
-		<description>Mostly Dry</description>
-		<icon>39.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Light Showers</origdescription>
-		<description>Light Showers</description>
-		<icon>11.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Freezing Rain</origdescription>
-		<description>Freezing Rain</description>
-		<icon>10.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Rain</origdescription>
-		<description>Rain</description>
-		<icon>11.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Drizzle</origdescription>
-		<description>Drizzle</description>
-		<icon>11.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Light Rain</origdescription>
-		<description>Light Rain</description>
-		<icon>11.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Fog</origdescription>
-		<description>Fog</description>
-		<icon>20.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Mist</origdescription>
-		<description>Mist</description>
-		<icon>20.png</icon>
-	</mapping>
-	<mapping>
-		<origdescription>Haze</origdescription>
-		<description>Haze</description>
-		<icon>21.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Overcast</origdescription>
-		<description>Overcast</description>
-		<icon>26.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Sunny Interval</origdescription>
-		<description>Sunny Interval</description>
+		<origdescription>多云转晴</origdescription>
+		<description>多云转晴</description>
 		<icon>28.png</icon>
-	</mapping>	
+	</mapping>
 	<mapping>
-		<origdescription>Sunny Intervals</origdescription>
-		<description>Sunny Intervals</description>
-		<icon>28.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>No Rain</origdescription>
-		<description>No Rain</description>
-		<icon>28.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Clearing</origdescription>
-		<description>Clearing</description>
-		<icon>28.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Sunny Period</origdescription>
-		<description>Sunny Period</description>
-		<icon>30.png</icon>
-	</mapping>		
-	<mapping>
-		<origdescription>Partly Cloudy</origdescription>
-		<description>Partly Cloudy</description>
-		<icon>30.png</icon>
-	</mapping>	
-		<mapping>
-		<origdescription>Isolated Clouds</origdescription>
-		<description>Isolated Clouds</description>
-		<icon>30.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Partly Bright</origdescription>
-		<description>Partly Bright</description>
-		<icon>30.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Mild</origdescription>
-		<description>Mild</description>
-		<icon>30.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Cloudy</origdescription>
-		<description>Cloudy</description>
-		<icon>26.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Mostly Cloudy</origdescription>
-		<description>Mostly Cloudy</description>
+		<origdescription>多云</origdescription>
+		<description>多云</description>
 		<icon>26.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Bright</origdescription>
-		<description>Bright</description>
-		<icon>32.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Sunny</origdescription>
-		<description>Sunny</description>
-		<icon>32.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Dry</origdescription>
-		<description>Dry</description>
-		<icon>32.png</icon>
+		<origdescription>阴</origdescription>
+		<description>阴</description>
+		<icon>26.png</icon>
 	</mapping>
 	<mapping>
-		<origdescription>Fine</origdescription>
-		<description>Fine</description>
+		<origdescription>晴</origdescription>
+		<description>晴</description>
 		<icon>32.png</icon>
 	</mapping>
-	<mapping>
-		<origdescription>Fair</origdescription>
-		<description>Fair</description>
-		<icon>32.png</icon>
-	</mapping>	
-	<mapping>
-		<origdescription>Clear</origdescription>
-		<description>Clear</description>
-		<icon>32.png</icon>
-	</mapping>			
+				
 </config>

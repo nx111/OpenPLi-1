@@ -103,6 +103,7 @@ public:
 class weatherMain: public eWindow
 {
 private:
+	int startpos;
 	ConfigParser * theConfigParser;
 	Fetcher * theFetcher;
 	void parse(eString url);
@@ -110,8 +111,11 @@ private:
 	int getTemp(eString description, eString key);
 	void getDescription(eString description, eString * out);
 	eLabel *lb1, *lb2, *lb3, *lb4, *lb5, *lb6, *lb7;
-	eButton *btn1;
+	eButton *btn1,*btnF,*btnB;
+	void dispDataPage(int first=0);
 	void dispData();
+	void dispDataBack();
+	void dispDataForward();
 	locationSelect * theLocationSelect;
                                 	                                
 public:

@@ -2918,11 +2918,13 @@ void eZapMain::epgNowNextRefresh()
 
 int eZapMain::setEPGNowNext()
 {
-/*	int ret = -1;
+	int ret = -1;
 
 	eServiceReferenceDVB &ref = (eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
 
 	timeMapPtr pMap = eEPGCache::getInstance()->getTimeMapPtr(ref, 0, 0, 2);
+	
+	time_t nowtime=time(0) + eDVB::getInstance()->time_difference;
 
 	if (pMap)
 	{
@@ -2943,41 +2945,13 @@ int eZapMain::setEPGNowNext()
 				ret = 0;
 				break;
 			case 1:
-				setNext(&event);
+				if(event.start_time <(nowtime+12*3600) && event.start_time>nowtime)
+					setNext(&event);
 				break;
 			}
 		}
 	}
 
-	epgNowNextTimer.startLongTimer(30);
-	return ret;
-*/
-
-	int ret = 0;
-	int SettedNow=0,SettedNext=0;
-	eServiceReferenceDVB &ref = (eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
-	EITEvent *e=eEPGCache::getInstance()->lookupEvent((const eServiceReferenceDVB&)ref);
-	if (e)
-	{
-		cur_event_id = e->event_id;
-		cur_start = e->start_time;
-		cur_duration = e->duration;
-		clockUpdate();
-		SettedNow=setNow(e);
-		
-		time_t t = e->start_time+e->duration+61;
-		delete e;
-		e = eEPGCache::getInstance()->lookupEvent((const eServiceReferenceDVB&)ref,t);
-		if(e)
-		{
-			SettedNext=setNext(e);
-			delete e;
-		}
-	}
-	if(SettedNow || SettedNext){
-		validEITReceived = true;
-		ret=1;
-	}
 	epgNowNextTimer.startLongTimer(30);
 	return ret;
 }

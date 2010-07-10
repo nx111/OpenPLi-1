@@ -239,16 +239,16 @@ void eEPGMemStore::processEpgRecord( uniqueEPGKey epgKey, int source, __u8 *eitD
 	else if (ev_erase_count == 0 && tm_erase_count > 0)
 	{
 		// exempt memory
-		delete ev_it->second;
+	//	delete ev_it->second;
 	//	tm_it=prevTimeIt=servicemap.second.insert( prevTimeIt, std::pair<const time_t, eventData*>( TM, evt ) );
-		ev_it->second=evt;
+	//	ev_it->second=evt;
 	}
 	else if (ev_erase_count > 0 && tm_erase_count == 0)
 	{
 		// exempt memory
-		delete tm_it->second;
+	//	delete tm_it->second;
 	//	ev_it=prevEventIt=servicemap.first.insert( prevEventIt, std::pair<const __u16, eventData*>( event_id, evt) );
-		tm_it->second=evt;
+	//	tm_it->second=evt;
 	}
 	else // added new eventData
 	{
@@ -362,13 +362,16 @@ timeMapPtr eEPGMemStore::getTimeMapPtr( const eServiceReferenceDVB& service, tim
 		return timeMapPtr(this, NULL);
 
 	int c=0;
-	for(timeMap::iterator i = it->second.second.begin();i != it->second.second.end();i++){
+	timeMap::iterator i = it->second.second.lower_bound(from);
+	if( i == it->second.second.end() || 
+		(i != it->second.second.begin() && i->first > from) )
+			 i--;
+	for(;i != it->second.second.end();i++){
 		if((i->first+i->second->getDuration())<from)continue;
 		if((limit && c>=limit) || (to && to< i->first) )break;
 		newMap->insert(std::pair<time_t, eventData*>(i->first,i->second));
 		c++;
 	}
-
 	return timeMapPtr(this,newMap);	
 }
 
@@ -417,17 +420,11 @@ const eventData *eEPGMemStore::searchByTime( const eServiceReferenceDVB &service
 			t = time(0)+eDVB::getInstance()->time_difference;
 
 		timeMap::iterator i = It->second.second.lower_bound(t);
-		if ( i != It->second.second.end() )
-		{
-			i--;
-			if ( i != It->second.second.end() )
-			{
-				if ( t <= i->first+i->second->getDuration() )
-				{
-					return i->second;
-				}
-			}
-		}
+		if ( i == It->second.second.end() ||
+			  (i->first > t  && i !=It->second.second.begin()) )			
+				i--;
+		if ( i != It->second.second.end()  && t <= i->first+i->second->getDuration() )
+			return i->second;
 
 		for ( eventMap::iterator i( It->second.first.begin() ); i != It->second.first.end(); i++)
 		{
@@ -690,7 +687,7 @@ void eEPGMemStore::save()
 	}
 
 	// We won't write anyway if there's less than 5MB available
-	if ( tmp < 1024*1024*5 ) // storage size < 5MB
+	if ( tmp > 0 && tmp < 1024*1024*5 ) // storage size < 5MB
 	{
 		eDebug("eEPGMemStore save():tmp size is %d ,too short",tmp);
 		return;
@@ -699,8 +696,9 @@ void eEPGMemStore::save()
 	// check for enough free space on storage
 	tmp=s.f_bfree;
 	tmp*=s.f_bsize;
-	if ( tmp < (eventData::CacheSize*12)/10 ) // 20% overhead
+	if ( tmp > 0 && tmp < (eventData::CacheSize*12)/10 ) // 20% overhead
 		return;
+ //   }
 
 	FILE *f = fopen((dbDir + "/epg.dat").c_str(), "w");
 	int cnt=0;
@@ -720,10 +718,11 @@ void eEPGMemStore::save()
 			fwrite( &size, sizeof(int), 1, f);
 			for (timeMap::iterator time_it(timemap.begin()); time_it != timemap.end(); ++time_it)
 			{
-				__u16 len = time_it->second->getSize();
+				const eit_event_struct* eit=time_it->second->get();
+				__u16 len = HILO(eit->descriptors_loop_length) + EIT_LOOP_SIZE;
 				fwrite( &time_it->second->type, sizeof(__u8), 1, f );
 				fwrite( &len, sizeof(__u16), 1, f);
-				fwrite( time_it->second->EITdata, len, 1, f);
+				fwrite( (char *)eit, len, 1, f);
 				++cnt;
 			}
 		}
@@ -747,6 +746,7 @@ void eEPGMemStore::makeTvMap()
 	if(eventDB.empty())return;
 	FILE *f = fopen(CONFIGDIR"/enigma/tvmap.dat", "wt");
 	if(!f)return ;
+	std::map<eString,uniqueEPGKey> tvmap;
 	for (eventCache::iterator service_it(eventDB.begin()); service_it != eventDB.end(); ++service_it)
 	{
 		eventMap &evMap = service_it->second.first;
@@ -762,11 +762,21 @@ void eEPGMemStore::makeTvMap()
 				break;
 			}
 		unsigned int index=0;
-		if( (index = HeadEventText.find(":", 0) ) == std::string::npos)continue;
+		if( (index = HeadEventText.find(":", 0) ) == std::string::npos || index>36)continue;
 		eString channelName=HeadEventText.left(index);
-		fprintf(f,"%d:%d:%d=%s\n",service_it->first.sid,service_it->first.onid,service_it->first.tsid,channelName.c_str());
+		std::map<eString,uniqueEPGKey>::iterator tvit=tvmap.find(channelName);
+		if(tvit !=tvmap.end()){
+			if(evMap.size() < eventDB[tvit->second].second.size())continue;
+			tvmap[channelName]=tvit->second;
+		}
+		else
+			tvmap[channelName]=service_it->first;
 	}
+	for(std::map<eString,uniqueEPGKey>::iterator tvit=tvmap.begin();tvit!=tvmap.end();tvit++)
+		fprintf(f,"%d:%d:%d=%s\n",tvit->second.sid,tvit->second.onid,tvit->second.tsid,tvit->first.c_str());
+
 	fclose(f);
+	tvmap.clear();
 }
 
 //*******  eEPGSqlBase  *************

@@ -162,6 +162,8 @@ int eString::icompare(const eString& s)
 std::map<eString, int> eString::CountryCodeDefaultMapping;
 std::map<int, int> eString::TransponderDefaultMapping;
 std::set<int> eString::TransponderUseTwoCharMapping;
+std::map<int, int> eString::ChineseTradAndSimpMapping;
+int eString::convertChineseTradToSimp=0;
 
 int parseEncoding(char *encoding)
 {
@@ -177,6 +179,8 @@ int parseEncoding(char *encoding)
 		return UTF16BE_ENCODING;	
 	else if (strncasecmp(encoding, "UTF16LE",7)==0)
 		return UTF16LE_ENCODING;	
+	else if (strcasecmp(encoding, "UNICODE")==0)
+		return UNICODE_ENCODING;	
 	else
 	{
 		int enc;
@@ -185,6 +189,46 @@ int parseEncoding(char *encoding)
 	}
 	return -1;
 }
+
+int eString::readChineseMapFile()
+{
+	FILE *f = fopen(CONFIGDIR "/enigma/chinese.map","rb");
+	if(!f)f = fopen(TUXBOXDATADIR "/enigma/chinese.map","rb");
+	if(!f)return -1;
+	int s=0,t=0;
+	unsigned short lastcode=0;
+	ChineseTradAndSimpMapping.clear();
+	int endian=0;
+	while (!feof(f)){
+		char tmp[20];
+		unsigned short code;
+		if(!endian){
+			if(!fread(tmp,10,1,f))break;
+			if(memcmp(tmp,"\x00\x55\x00\x43\x00\x53\x00\x2D\x00\x32",10)==0)
+				endian=1;	//big endian
+			else if(memcmp(tmp,"\x55\x00\x43\x00\x53\x00\x2D\x00\x32\x00",10)==0)
+				endian=2;	//little endian
+			else break;
+		}
+		if(!fread(tmp,2,1,f))break;
+		if(endian==1)
+			code=tmp[0] << 8 | tmp[1];
+		else
+			code=tmp[1] <<8 | tmp[0];
+		if(code==0x3A || code==0xFF1A)	// acsii char : or chinese :
+			s=lastcode;  
+	
+		if(lastcode==0x3A || lastcode==0xFF1A ){
+			t=code;
+			ChineseTradAndSimpMapping[t]=s;
+			lastcode=0;
+		}
+		if(code>0x100 || code==0x3A  || code==0xFF1A)
+			lastcode=code;
+	}
+	fclose(f);	
+}
+
 
 int eString::readEncodingFile()
 {
@@ -237,7 +281,7 @@ int eString::readEncodingFile()
 				if (encoding == VIDEOTEXSUPPL_ENCODING)
 					TransponderUseTwoCharMapping.insert((tsid<<16)|onid);
 				else{
-					if(count==4 && strcasecmp(sec[3],"swap")==0)
+					if(count==4 && strcasecmp(sec[3],"noEncodeID")==0)	//data has not first encode type id.
 						encoding=encoding | 0x80;
 					TransponderDefaultMapping[(tsid<<16)|onid]=encoding;
 					}
@@ -557,6 +601,116 @@ static inline unsigned int recode(unsigned char d, int cp)
 	}
 }
 
+unsigned long ChineseTradToSimp(long c)
+{
+	if (eString::convertChineseTradToSimp==0)
+		return c;
+	std::map<int, int>::iterator i=eString::ChineseTradAndSimpMapping.find(c);
+	if(i!=eString::ChineseTradAndSimpMapping.end())
+		return i->second;
+	else 
+		return c;
+}
+
+eString ChineseTradToSimp(const char *szIn,int len)
+{
+	if (eString::convertChineseTradToSimp==0)
+		return eString(szIn,len);
+	unsigned long code=0;
+	unsigned char temp[4096];
+	unsigned int j=0;
+	for (int i=0; i < len; ++i)
+	{
+		if (!(szIn[i]&0x80)){ // normal ASCII
+			temp[j++]=szIn[i];
+			continue;
+		}else if ((szIn[i] & 0xE0) == 0xC0) // one char following.
+		{
+				// first, length check:
+			if (i+1 >= len){
+				temp[j++]=szIn[i];
+				break;
+			}else	if ((szIn[i+1]&0xC0) != 0x80){
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i];
+				continue;
+			}
+			code=(szIn[i] & 0x1F)<<6 | (szIn[i+1] & 0x3F);
+			i++;	
+		} else if ((szIn[i] & 0xF0) == 0xE0)
+		{
+			if ((i+2) >= len){
+				temp[j++]=szIn[i];
+				break;
+			}else	if ((szIn[i+1]&0xC0) != 0x80 || (szIn[i+2]&0xC0) != 0x80 ){
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i];
+				continue;
+			}
+			code=((szIn[i] & 0x0F)<<12) | ((szIn[i+1] & 0x3F)<<6) | (szIn[i+2] & 0x3F);
+			i+=2;
+		} else if ((szIn[i] & 0xF8) == 0xF0)
+		{
+			if ((i+3) >= len){
+				temp[j++]=szIn[i];
+				break;
+			}else	if ((szIn[i+1]&0xC0) != 0x80 || (szIn[i+2]&0xC0) != 0x80 || (szIn[i+3]&0xC0) != 0x80){
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i];
+				continue;
+			}
+			code=((szIn[i] & 0x07)<<18)|((szIn[i+1] & 0x3F)<<12) | ((szIn[i+2] & 0x3F)<<6) | (szIn[i+3] & 0x3F);
+			i+=3;
+		} else if ((szIn[i] & 0xFC) == 0xF8)
+		{
+			if ((i+4) >= len){
+				temp[j++]=szIn[i];
+				break;
+			}else if ((szIn[i+1]&0xC0) != 0x80 || (szIn[i+2]&0xC0) != 0x80 || (szIn[i+3]&0xC0) != 0x80
+				|| (szIn[i+4]&0xC0) != 0x80){
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i];		
+				continue;
+			}
+			code=((szIn[i] & 0x03)<<24)|((szIn[i+1] & 0x3F)<<18)|((szIn[i+2] & 0x3F)<<12) | ((szIn[i+3] & 0x3F)<<6) | (szIn[i+4] & 0x3F);
+			i+=4;
+		} else if ((szIn[i] & 0xFD) == 0xFC)
+		{
+			if ((i+5) >= len){
+				temp[j++]=szIn[i];
+				break;
+			}else if ((szIn[i+1]&0xC0) != 0x80 || (szIn[i+2]&0xC0) != 0x80 || (szIn[i+3]&0xC0) != 0x80
+				|| (szIn[i+4]&0xC0) != 0x80 || (szIn[i+5]&0xC0) != 0x80){
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i++];
+				temp[j++]=szIn[i];
+				continue;		
+			}
+			code=((szIn[i] & 0x01)<<30)|((szIn[i+1] & 0x03F)<<24)|((szIn[i+2] & 0x3F)<<18)|((szIn[i+3] & 0x3F)<<12) | ((szIn[i+4] & 0x3F)<<6) | (szIn[i+5] & 0x3F);
+		i+=5;
+		}else{
+			temp[j++]=szIn[i];
+			continue;
+		}
+		code=ChineseTradToSimp(code);
+		int ret=UnicodeToUTF8(code,(char*)temp+j);
+		j+=ret;
+	}
+	temp[j]='\0';
+//	eDebug("[ChineseTradToSimp] %s",temp);
+	return eString((const char *)temp,j);
+	
+}
+
 int UnicodeToUTF8(long c, char *out)
 {
 	char *s = out;
@@ -600,6 +754,7 @@ eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen)
 		if (szIn[i]>0x80 && szIn[i]<0xff && szIn[i+1]>=0x40 && szIn[i+1]<0xff)
 		{
 			gbk_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,2);
+			code=ChineseTradToSimp(code);
 			int k=UnicodeToUTF8(code,szOut+t);
 			t+=k;
 			i++;
@@ -625,6 +780,7 @@ eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen)
 			((szIn[i+1]>=0x40)&&(szIn[i+1]<=0x7F)) || ((szIn[i+1]>0xA0)&&(szIn[i+1]<0xFF))
 		    )){
 			big5_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,2);
+			code=ChineseTradToSimp(code);
 			int k=UnicodeToUTF8(code,szOut+t);
 			t+=k;
 			i++;
@@ -650,15 +806,26 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 
 	int i=0, t=0;
 	int encode=table;
-	
 
+	if(table>0x100)
+		encode=0;
+
+	//encode > 0x100 when load from data file. 
+
+	if ( tsidonid && (!encode || encode==AUTO_ENCODING ) && table<0x100)
+	{
+		std::map<int, int>::iterator it =
+			eString::TransponderDefaultMapping.find(tsidonid);
+		if ( it != eString::TransponderDefaultMapping.end() )
+			encode = (it->second) & 0x7F;
+	}
+
+	
+	int hasEncodeByte=(encode & 0x80)?0:1;
 //	eDebug("ConvertDVBUTF8-1:<data=%s><table=0x%x><tsidonid=%d>\n",data,table,tsidonid);
-	if (!noEncodeID ) 
+	if (!noEncodeID && (hasEncodeByte || table>0x100) )
 	 switch(data[0])
 	 {
-		case 0:
-			++i;
-			break;
 		case 1 ... 11:
 			encode=data[i++]+4;
 //			eDebug("(1..12)text encoded in ISO-8859-%d",table);
@@ -678,8 +845,8 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			}
 			break;
 		}
-		case 0x11:
-			eDebug("unsup. Basic Multilingual Plane of ISO/IEC 10646-1 enc.");
+		case 0x11: //  Basic Multilingual Plane of ISO/IEC 10646-1 enc  (UTF-16... Unicode)
+			encode=UTF16BE_ENCODING;
 			++i;
 			break;
 		case 0x12:
@@ -698,37 +865,35 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			break;
 		case 0x15: // UTF-8 encoding of ISO/IEC 10646-1
 			encode=UTF8_ENCODING;
-			return std::string((char*)data+1, len-1);
+//			return std::string((char*)data+1, len-1);
+			return ChineseTradToSimp((char*)data+1, len-1);
 			break;
 		case 0x16:
 			encode=UNICODE_ENCODING;
 			++i;
 			break;
 		case 0x17:
+			encode=UTF16BE_ENCODING;
+			++i;
+			break;
+		case 0x18:
 			encode=UTF16LE_ENCODING;
 			++i;
 			break;
+		case 0:
 		case 0xD ... 0xF:
-		case 0x18 ... 0x1F:
+		case 0x19 ... 0x1F:
 			eDebug("reserved %d", data[0]);
 			++i;
 			break;
 	}
 
-	if ( tsidonid && (!encode || encode==AUTO_ENCODING))
-	{
-		std::map<int, int>::iterator it =
-			eString::TransponderDefaultMapping.find(tsidonid);
-		if ( it != eString::TransponderDefaultMapping.end() )
-			encode = (it->second) & 0x7F;
-	}
 
 	unsigned char res[4096];
 	switch(encode)
 	{
 		case 0 ... 16:
-		case VIDEOTEXSUPPL_ENCODING:
-		case 0x12:
+		case 0x11 ... 0x12:
 		case 0x15 ... 0x1F:
 		{
  		  while (i < len)
@@ -736,7 +901,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			unsigned long code=0;
 
 	
-			if ( encode==VIDEOTEXSUPPL_ENCODING && (i+1) < len && tsidonid &&
+			if ( table < 0x100 && (i+1) < len && tsidonid &&
 				eString::TransponderUseTwoCharMapping.find(tsidonid) != eString::TransponderUseTwoCharMapping.end() &&	(code=doVideoTexSuppl(data[i], data[i+1])) )
 				i++;
 			else if (encode==UNICODE_ENCODING){
@@ -750,7 +915,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 				unsigned long w1=((unsigned long)(data[i])<<8) |((unsigned long)(data[i+1]));
 				if(w1<0xD800UL || w1>0xDFFFUL){
 					code=w1;
-					i+=2;
+					i++;
 				}
 				else if(w1>0xDBFFUL)
 					break;
@@ -758,7 +923,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 					unsigned long w2=((unsigned long)(data[i+2])<<8) |((unsigned long)(data[i+3]));
 					if(w2<0xDC00UL || w2>0xDFFFUL)return eString("");
 					code=0x10000UL + ((w1 & 0x03FFUL)<<10 ) | (w2 & 0x03FFUL);
-					i+=4;
+					i+=3;
 				}
 				else 
 					break;
@@ -768,7 +933,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 				unsigned long w1=((unsigned long)(data[i+1])<<8) |((unsigned long)(data[i]));
 				if(w1<0xD800UL || w1>0xDFFFUL){
 					code=w1;
-					i+=2;
+					i++;
 				}
 				else if(w1>0xDBFFUL)
 					break;
@@ -776,7 +941,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 					unsigned long w2=((unsigned long)(data[i+3])<<8) |((unsigned long)(data[i+2]));
 					if(w2<0xDC00UL || w2>0xDFFFUL)break;
 					code=0x10000UL + ((w1 & 0x03FFUL)<<10 ) | (w2 & 0x03FFUL);
-					i+=4;
+					i+=3;
 				}
 				else
 					break;
@@ -791,6 +956,8 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			if (!code)
 				continue;
 	
+			code=ChineseTradToSimp(code);
+
 			if (code < 0x80){ // identity ascii <-> utf8 mapping
 				res[t++]=char(code);
 				}

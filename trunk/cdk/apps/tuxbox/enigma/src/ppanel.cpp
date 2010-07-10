@@ -472,6 +472,8 @@ void eListBoxEntryPPanel::LBSelected(eListBoxEntry* t)
    eString downloadFilename;
    bool removeAfterwards = false;
 
+   target=expandURL(target,false);
+
    if(confirmUser(confirmation, 
 		eString().sprintf(_("Are you sure to open\n%s?"), name.c_str())))
    {
@@ -552,6 +554,7 @@ void eListBoxEntryFile::LBSelected(eListBoxEntry* t)
       // Execute script before
       rc = preActions();
 
+      target=expandURL(target,false);
       if(rc == 0)
       {
 			if(dontCheck == "true")
@@ -696,7 +699,7 @@ void eListBoxEntryExecute::LBSelected(eListBoxEntry* t)
                   }
           else{
 
-		  ExecuteOutput dlg(getText(), target);
+		  ExecuteOutput dlg(getText(), expandURL(target,true));
 		  parentdlg.hide();
 		  dlg.show();
 		  dlg.exec();
@@ -780,7 +783,7 @@ void eListBoxEntryTarball::LBSelected(eListBoxEntry* t)
    bool showAsInstalled = true;
    bool alreadyInstalled = false;
    int rc = 0;
-
+   url=expandURL(url,true);
    if(confirmUser(confirmation, 
       eString().sprintf(_("Are you sure to install\n%s?"), getText().c_str())))
    {
@@ -1048,6 +1051,8 @@ void eListBoxEntryMedia::LBSelected(eListBoxEntry* t)
    int rc = 0;
    eString downloadFilename;
    bool removeAfterwards = false;
+
+   target=expandURL(target,false);
 
    if(confirmUser(confirmation, 
       eString().sprintf(_("Are you sure to play\n%s?"), target.c_str())))

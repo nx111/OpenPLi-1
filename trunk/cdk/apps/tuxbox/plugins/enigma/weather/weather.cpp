@@ -19,6 +19,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include <weather.h>
 #include <lib/gdi/epng.h>
+#include <lib/socket/dpopen.h>
 
 
 extern "C" int plugin_exec( PluginParam *par );
@@ -51,11 +52,11 @@ const char * mystrcasestr(const char *haystack, const char *needle)
         int i;
         for ( i = 0; i < needleLen; i++) {
             if ( tolower( haystack[i] ) != tolower( needle[i] ) )
-                break;
+		  break;
         }
 
         // If it matched along the whole needle length, we found it
-        if ( i == needleLen )
+        if ( i == needleLen)
             return haystack;
 
         matchLen--;
@@ -65,13 +66,14 @@ const char * mystrcasestr(const char *haystack, const char *needle)
     return NULL;
 }
 
+
 void weatherMain::selectLocation()
 {	// Display location select window
 	this->hide();
+
 	theLocationSelect->setLBFocus();
 	theLocationSelect->show();
 	theLocationSelect->exec();
-
 
 	if(theLocationSelect->selectedURL != "")
 	{	theFetcher->url = theLocationSelect->selectedURL;
@@ -88,31 +90,75 @@ void weatherMain::selectLocation()
 }
 
 void weatherMain::dispData()
+{
+	dispDataPage(0);
+}
+
+void weatherMain::dispDataForward()
+{
+	dispDataPage(startpos+3);
+}
+void weatherMain::dispDataBack()
+{
+	dispDataPage(startpos-3);
+}
+
+void weatherMain::dispDataPage(int first)
 {	eString desc, icon;
 	int factor = 197;
-	
+	int itemcount=weatherItems.size();
+	if(first>=0 && first<itemcount){
+		clear();
+		startpos=first;
+	}else   return;
+		
 	setFocus(btn1);
 
 	this->show();
 
-	btn1->move(ePoint(10, 400));
-	btn1->resize(eSize(180, 30));
+	btn1->move(ePoint(10, 360));
+	btn1->resize(eSize(150, 30));
 	btn1->setShortcut("green");
 	btn1->setShortcutPixmap("green");
 	btn1->loadDeco();
-	btn1->setText("Select location");
-	btn1->setHelpText("Click to select another location");
+	btn1->setText(_("Select location"));
+	btn1->setHelpText(_("Click to select another location"));
+
+	btnB->move(ePoint(250, 360));
+	btnB->resize(eSize(150, 30));
+	btnB->setShortcut("yellow");
+	btnB->setShortcutPixmap("yellow");
+	btnB->loadDeco();
+	btnB->setText(_("Last Page"));
+
+	btnF->move(ePoint(430, 360));
+	btnF->resize(eSize(150, 30));
+	btnF->setShortcut("blue");
+	btnF->setShortcutPixmap("blue");
+	btnF->loadDeco();
+	btnF->setText(_("Next Page"));
+	
+	if(!first)
+		btnB->hide();
+	else
+		btnB->show();
+	if(first+3>(itemcount-1))
+		btnF->hide();
+	else
+		btnF->show();
 
 	std::list<WeatherItem>::iterator i;
-	int j = 0;
-	for(i = weatherItems.begin(); i != weatherItems.end() && j < 3; ++i)
-	{	theConfigParser->LookUp(i->description, desc, icon);
+	int j = 0,k=0;
+	for(i = weatherItems.begin(); i != weatherItems.end() && j < 3; ++i,++k)
+	{
+		if(k<startpos)continue;
+		theConfigParser->LookUp(i->description, desc, icon);
 		lb1->move(ePoint((j * factor), 20));
 		lb1->resize(eSize(factor, 40));
 		lb1->setProperty("align", "center");
 		lb1->setText(i->date);
 
-		lb2->move(ePoint((j * factor), 280));
+		lb2->move(ePoint((j * factor), 270));
 		lb2->resize(eSize(factor, 80));
 		lb2->setProperty("align", "center");
 		lb2->setProperty("wrap", "on");
@@ -131,7 +177,7 @@ void weatherMain::dispData()
 			p.mergePalette(*mp);
 
 			lb3->move(ePoint((j * factor) + 30, 90));
-			lb3->resize(eSize(factor, 500));
+			lb3->resize(eSize(factor-40, 400));
 			lb3->setBlitFlags(BF_ALPHATEST);
 			lb3->setProperty("align", "center");
 			lb3->setPixmap(img);
@@ -142,43 +188,51 @@ void weatherMain::dispData()
 			msg.show();     msg.exec();     msg.hide();
 		}
 
-		lb4->move(ePoint(65 + (j * factor), 320));
-		lb4->resize(eSize(40, 40));
-		lb4->setText("Min");
-
-		lb5->move(ePoint(65 + (j * factor), 360));
-		lb5->resize(eSize(40, 40));
+		lb5->move(ePoint(65 + (j * factor), 310));
+		lb5->resize(eSize(30, 40));
 		lb5->setText(eString().sprintf("%d", i->min_temp));
 
-		lb6->move(ePoint(105 + (j * factor), 320));
-		lb6->resize(eSize(40, 40));
-		lb6->setText("Max");
+		lb6->move(ePoint(95 + (j * factor), 310));
+		lb6->resize(eSize(30, 40));
+		lb6->setText("~");
 
-		lb7->move(ePoint(105 + (j * factor), 360));
-		lb7->resize(eSize(40, 40));
+		lb7->move(ePoint(125 + (j * factor), 310));
+		lb7->resize(eSize(30, 40));
 		lb7->setText(eString().sprintf("%d", i->max_temp));
 
 		j++;
 	}
 	if(j == 0)
-	{	eMessageBox msg1("No items to display", _("Timeout"), eMessageBox::iconWarning|eMessageBox::btOK);
+	{	eMessageBox msg1(_("No items to display"), _("Timeout"), eMessageBox::iconWarning|eMessageBox::btOK);
 		msg1.show();     msg1.exec();     msg1.hide();
 	}
 }
 
-weatherMain::weatherMain(): eWindow(1)
-{	cmove(ePoint(70, 80));
-	cresize(eSize(590, 446));
+weatherMain::weatherMain(): eWindow(1),startpos(0)
+{	cmove(ePoint(70, 50));
+	cresize(eSize(590, 400));
 	
+
 	theConfigParser = new ConfigParser;
 
 	setText(theConfigParser->name);	
-	theFetcher = new Fetcher(theConfigParser->url);
+
+	theLocationSelect = new locationSelect(theConfigParser);
+
+	if(theLocationSelect->selectedURL != "")
+	{	theFetcher = new Fetcher(theLocationSelect->selectedURL);
+	}
+	else
+	{		theFetcher = new Fetcher(theConfigParser->url);
+	}
+
+	if(theLocationSelect->selectedName != "")
+	{	setText(theLocationSelect->selectedName);
+	}
+
 	CONNECT(theFetcher->downloadDone, weatherMain::downloadDone);
 	CONNECT(theFetcher->downloadTimeout, weatherMain::downloadTimeout);
 	theFetcher->fetch();
-
-	theLocationSelect = new locationSelect(theConfigParser);
 
 	lb1 	= new eLabel(this);
 	lb2 	= new eLabel(this);
@@ -189,8 +243,11 @@ weatherMain::weatherMain(): eWindow(1)
 	lb7	= new eLabel(this);
 
 	btn1 = new eButton(this);
+	btnB= new eButton(this);
+	btnF= new eButton(this);
 	CONNECT(btn1->selected, weatherMain::selectLocation);	
-
+	CONNECT(btnB->selected, weatherMain::dispDataBack);	
+	CONNECT(btnF->selected, weatherMain::dispDataForward);	
 	this->hide();
 }
 
@@ -207,7 +264,7 @@ void weatherMain::downloadDone(int err)
 void weatherMain::downloadTimeout(int err)
 {	theLocationSelect->hide();
 
-	eMessageBox msg1("Timeout downloading weather data", _("Timeout"), eMessageBox::iconWarning|eMessageBox::btOK);
+	eMessageBox msg1(_("Timeout downloading weather data"), _("Timeout"), eMessageBox::iconWarning|eMessageBox::btOK);
 	msg1.show();     msg1.exec();     msg1.hide();		
 
 	dispData();
@@ -215,6 +272,13 @@ void weatherMain::downloadTimeout(int err)
 
 void weatherMain::parse(eString file)
 {	XMLTreeParser * parser;
+
+	if(!access("/var/tuxbox/config/weather/format_weather.sh",X_OK)){
+		char cmdstr[1024];
+		sprintf(cmdstr,"/var/tuxbox/config/weather/format_weather.sh %s",file.c_str());
+		system((const char *)cmdstr);
+	}
+
 	FILE *in = fopen(file.c_str(), "rt");
 
 	weatherItems.clear();
@@ -330,15 +394,31 @@ locationSelect::locationSelect(ConfigParser * t) : eWindow(1), theConfigParser(t
 
 	CONNECT(theList->selected, locationSelect::selectedItem);
 
+	int selected=false;
+	FILE *f=fopen("/var/tuxbox/config/weather/weather.cfg","rt");
+	if(f){
+		unsigned char Name[1024];
+		if(1==fscanf(f,"selectedName=%s",Name)){
+			selectedName=(const char *)Name;
+			selected=true;
+		}
+		fclose(f);
+	}
+
 	std::list<LocationItem>::iterator i;
 	for(i = theConfigParser->locationItems.begin(); i != theConfigParser->locationItems.end(); ++i)
 	{	new eListBoxEntryText(theList, i->name.c_str(), (void *) &(i->id));
+		if(i->name==selectedName && selected)
+			selectedURL=i->url;
 	}
+
+
 }
 
 void locationSelect::setLBFocus()
 {	setFocus(theList);
 }
+
 
 void locationSelect::selectedItem(eListBoxEntryText *item)
 {	if(item)
@@ -348,6 +428,11 @@ void locationSelect::selectedItem(eListBoxEntryText *item)
 		{	if(i->id == *iKey)
 			{	selectedURL = i->url;
 				selectedName = i->name;
+				FILE *f=fopen("/var/tuxbox/config/weather/weather.cfg","wt");
+				if(f){
+					fprintf(f,"selectedName=%s",selectedName.c_str());
+					fclose(f);
+				}
 			}
 		}
 		reject();
@@ -438,14 +523,19 @@ void ConfigParser::LookUp(eString orig, eString &desc, eString &icon)
 	{	icon = "unknown.png";
 	}
 	if(desc == "")
-	{	desc = orig;
+	{	
+		unsigned int pos = orig.find("<br>",0);
+		if(pos!=std::string::npos && pos)
+			desc=orig.left(pos);
+		else		
+			desc = orig;
 	}
 }
 
 ConfigParser::ConfigParser()
 {	XMLTreeParser * parser;
 
-	FILE *in = fopen("/var/tuxbox/config/weather.xml", "rt");
+	FILE *in = fopen("/var/tuxbox/config/weather/weather.xml", "rt");
 	if (!in)
 		in = fopen(CONFIGDIR"/weather.xml", "rt");
 	

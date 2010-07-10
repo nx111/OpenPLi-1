@@ -1,16 +1,16 @@
 10
 
 dir
-104
-https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/external/tuxterm/e2_python_startplugin
+125
+https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/external/tuxterm-enigma2-plugin
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
+2010-06-05T18:53:52.690060Z
+119
+pieterg
+has-props
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2009-12-09T08:21:27.396024Z
+2010-07-10T17:03:40.141659Z
 0774e22293150fafcebbb4fdbc7da4a0
 2009-08-14T21:33:06.552841Z
 2
@@ -66,7 +66,7 @@ file
 
 
 
-2009-12-09T08:21:27.396024Z
+2010-07-10T17:03:40.145659Z
 d8775671b5e78d693934ee02a604852f
 2009-08-14T21:33:06.552841Z
 2
@@ -100,7 +100,7 @@ file
 
 
 
-2009-12-09T08:21:27.396024Z
+2010-07-10T17:03:40.145659Z
 d41d8cd98f00b204e9800998ecf8427e
 2009-08-14T21:33:06.552841Z
 2
@@ -134,11 +134,11 @@ file
 
 
 
-2009-12-09T08:21:27.396024Z
-a82d12b9dd6ff949769bc35ff79105d1
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-07-10T17:03:40.145659Z
+ffb841105e81a8e28e1f1b206b717025
+2010-06-05T17:17:12.975763Z
+118
+pieterg
 
 
 
@@ -160,7 +160,7 @@ plindeman
 
 
 
-13149
+13186
 
 Makefile.am
 file
@@ -168,7 +168,7 @@ file
 
 
 
-2009-12-09T08:21:27.396024Z
+2010-07-10T17:03:40.145659Z
 f53123335b1afce6750c7cfe97c69256
 2009-08-14T21:33:06.552841Z
 2

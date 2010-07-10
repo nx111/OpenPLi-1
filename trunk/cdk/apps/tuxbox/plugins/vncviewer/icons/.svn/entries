@@ -1,7 +1,7 @@
 10
 
 dir
-104
+125
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/vncviewer/icons
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -128,40 +128,6 @@ has-props
 
 57614
 
-kbd-trans-UC.ppm
-file
-
-
-
-
-2009-12-09T08:21:05.184027Z
-9024b38839e5a6f23eb1e0da3bc7d0c5
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-57659
-
 ico_pan2.ppm
 file
 
@@ -195,6 +161,40 @@ has-props
 
 
 634
+
+kbd-trans-UC.ppm
+file
+
+
+
+
+2009-12-09T08:21:05.184027Z
+9024b38839e5a6f23eb1e0da3bc7d0c5
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+57659
 
 ico_kbdtoggle.ppm
 file
@@ -332,40 +332,6 @@ has-props
 
 570
 
-pgmtoc.pl
-file
-
-
-
-
-2009-12-09T08:21:05.188019Z
-93ee5a5b9989d7774f125cc91505f1ee
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-378
-
 ico_pan.ppm
 file
 
@@ -399,6 +365,40 @@ has-props
 
 
 634
+
+pgmtoc.pl
+file
+
+
+
+
+2009-12-09T08:21:05.188019Z
+93ee5a5b9989d7774f125cc91505f1ee
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+378
 
 ico_zoom.ppm
 file
@@ -434,40 +434,6 @@ has-props
 
 1407
 
-ppmtoc.pl
-file
-
-
-
-
-2009-12-09T08:21:05.208020Z
-8dedf4ce96bf473d30c2d5bd18c2d6f8
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-482
-
 kbd-trans-LC.ppm
 file
 
@@ -501,6 +467,40 @@ plindeman
 
 
 57659
+
+ppmtoc.pl
+file
+
+
+
+
+2009-12-09T08:21:05.208020Z
+8dedf4ce96bf473d30c2d5bd18c2d6f8
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+482
 
 ico_mouse.ppm
 file

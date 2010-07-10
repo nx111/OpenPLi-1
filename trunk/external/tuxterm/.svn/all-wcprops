@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 50
-/svnroot/openpli/!svn/ver/2/trunk/external/tuxterm
+V 52
+/svnroot/openpli/!svn/ver/119/trunk/external/tuxterm
 END
 render.c
 K 25
@@ -30,8 +30,8 @@ END
 acinclude.m4
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/openpli/!svn/ver/2/trunk/external/tuxterm/acinclude.m4
+V 65
+/svnroot/openpli/!svn/ver/117/trunk/external/tuxterm/acinclude.m4
 END
 colors.h
 K 25
