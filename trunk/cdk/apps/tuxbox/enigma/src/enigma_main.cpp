@@ -2918,7 +2918,8 @@ void eZapMain::epgNowNextRefresh()
 
 int eZapMain::setEPGNowNext()
 {
-	int ret = -1;
+	int ret = 0;
+	int settedNow=0,settedNext=0;
 
 	eServiceReferenceDVB &ref = (eServiceReferenceDVB&)eServiceInterface::getInstance()->service;
 
@@ -2941,17 +2942,17 @@ int eZapMain::setEPGNowNext()
 				cur_start = event.start_time;
 				cur_duration = event.duration;
 				clockUpdate();
-				setNow(&event);
-				ret = 0;
+				settedNow=setNow(&event);
 				break;
 			case 1:
-				if(event.start_time <(nowtime+12*3600) && event.start_time>nowtime)
-					setNext(&event);
+				if(event.start_time <(cur_start+cur_duration+12*3600) && event.start_time>nowtime)
+					settedNext=setNext(&event);
 				break;
 			}
 		}
 	}
-
+	
+	ret=settedNow || settedNext;
 	epgNowNextTimer.startLongTimer(30);
 	return ret;
 }
