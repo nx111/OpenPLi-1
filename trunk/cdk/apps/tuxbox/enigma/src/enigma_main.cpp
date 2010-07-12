@@ -2942,7 +2942,12 @@ int eZapMain::setEPGNowNext()
 				cur_start = event.start_time;
 				cur_duration = event.duration;
 				clockUpdate();
-				settedNow=setNow(&event);
+				if(cur_start>nowtime){
+					settedNext=setNext(&event);
+					p++;	//skip next event
+				}
+				else
+					settedNow=setNow(&event);
 				break;
 			case 1:
 				if(event.start_time <(cur_start+cur_duration+12*3600) && event.start_time>nowtime)
