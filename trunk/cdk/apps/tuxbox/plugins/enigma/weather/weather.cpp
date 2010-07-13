@@ -524,11 +524,17 @@ void ConfigParser::LookUp(eString orig, eString &desc, eString &icon)
 			    {
 				if ((nErrCode = regexec(&oRegex, orig.c_str(), 1, pm, 0)) == 0)
 				{
-			    	    desc=orig.substr(pm[0].rm_so, pm[0].rm_eo-pm[0].rm_so); 
-				    icon= i->icon; 
+//			    	        desc=orig.substr(pm[0].rm_so, pm[0].rm_eo-pm[0].rm_so); 
+
+					unsigned int pos = orig.find("<br>",0);
+					if(pos!=std::string::npos && pos)
+						desc=orig.left(pos);
+					else		
+						desc = orig;
+				    	icon= i->icon; 
 			
-				    regfree(&oRegex);
-				    break;
+				    	regfree(&oRegex);
+				    	break;
 				}
 			    }
 			 }
