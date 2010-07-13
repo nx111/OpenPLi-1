@@ -68,20 +68,6 @@ const char * mystrcasestr(const char *haystack, const char *needle)
 
 }
 
-int regexp_cmp(const char * regx,const char *str)
-{
-    regex_t oRegex;
-    int nErrCode = 0;
-   if ((nErrCode = regcomp(&oRegex, regx, 0)) == 0)
-    {
-        if ((nErrCode = regexec(&oRegex, str, 0, NULL, 0)) == 0)
-        {
-            regfree(&oRegex);
-            return 0;
-        }
-    }
-   return -1;
-}
 
 void weatherMain::selectLocation()
 {	// Display location select window
@@ -529,10 +515,27 @@ void ConfigParser::LookUp(eString orig, eString &desc, eString &icon)
 	{	// Nothing found, try a less exact match
 		for(i = configItems.begin(); i != configItems.end(); ++i)
 		{	eString sMsg = "Looking for " + orig + " and found " + i->origdescription + " and " + i->icon;
-			if(regexp_cmp(i->origdescription.c_str(),orig.c_str())==0 
-				|| mystrcasestr(orig.upper().c_str(), i->origdescription.upper().c_str()))
+			if(strncasecmp(i->origdescription.c_str(),"regexp:",7)==0){
+			    eString regx="\\("+i->origdescription.substr(7)+"\\)";
+			    regex_t oRegex;
+			    regmatch_t pm[1];  
+			    int nErrCode = 0;
+			    if ((nErrCode = regcomp(&oRegex, regx.c_str(), 0)) == 0)
+			    {
+				if ((nErrCode = regexec(&oRegex, orig.c_str(), 1, pm, 0)) == 0)
+				{
+			    	    desc=orig.substr(pm[0].rm_so, pm[0].rm_eo-pm[0].rm_so); 
+				    icon= i->icon; 
+			
+				    regfree(&oRegex);
+				    break;
+				}
+			    }
+			 }
+			else if( mystrcasestr(orig.upper().c_str(), i->origdescription.upper().c_str()))
 			{       desc = i->description;
 				icon = i->icon;
+				break;
 			}
 		}
 	}
