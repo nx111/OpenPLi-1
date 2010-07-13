@@ -20,6 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include <weather.h>
 #include <lib/gdi/epng.h>
 #include <lib/socket/dpopen.h>
+#include <regex.h>
 
 
 extern "C" int plugin_exec( PluginParam *par );
@@ -64,8 +65,23 @@ const char * mystrcasestr(const char *haystack, const char *needle)
     }
 
     return NULL;
+
 }
 
+int regexp_cmp(const char * regx,const char *str)
+{
+    regex_t oRegex;
+    int nErrCode = 0;
+   if ((nErrCode = regcomp(&oRegex, regx, 0)) == 0)
+    {
+        if ((nErrCode = regexec(&oRegex, str, 0, NULL, 0)) == 0)
+        {
+            regfree(&oRegex);
+            return 0;
+        }
+    }
+   return -1;
+}
 
 void weatherMain::selectLocation()
 {	// Display location select window
@@ -513,7 +529,8 @@ void ConfigParser::LookUp(eString orig, eString &desc, eString &icon)
 	{	// Nothing found, try a less exact match
 		for(i = configItems.begin(); i != configItems.end(); ++i)
 		{	eString sMsg = "Looking for " + orig + " and found " + i->origdescription + " and " + i->icon;
-			if(mystrcasestr(orig.upper().c_str(), i->origdescription.upper().c_str()))
+			if(regexp_cmp(i->origdescription.c_str(),orig.c_str())==0 
+				|| mystrcasestr(orig.upper().c_str(), i->origdescription.upper().c_str()))
 			{       desc = i->description;
 				icon = i->icon;
 			}
