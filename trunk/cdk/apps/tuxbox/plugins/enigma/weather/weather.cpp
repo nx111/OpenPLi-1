@@ -514,7 +514,7 @@ void ConfigParser::LookUp(eString orig, eString &desc, eString &icon)
 	if(icon == "")
 	{	// Nothing found, try a less exact match
 		for(i = configItems.begin(); i != configItems.end(); ++i)
-		{	eString sMsg = "Looking for " + orig + " and found " + i->origdescription + " and " + i->icon;
+		{//	eString sMsg = "Looking for " + orig + " and found " + i->origdescription + " and " + i->icon;
 			if(strncasecmp(i->origdescription.c_str(),"regexp:",7)==0){
 			    eString regx="\\("+i->origdescription.substr(7)+"\\)";
 			    regex_t oRegex;
@@ -526,11 +526,7 @@ void ConfigParser::LookUp(eString orig, eString &desc, eString &icon)
 				{
 //			    	        desc=orig.substr(pm[0].rm_so, pm[0].rm_eo-pm[0].rm_so); 
 
-					unsigned int pos = orig.find("<br>",0);
-					if(pos!=std::string::npos && pos)
-						desc=orig.left(pos);
-					else		
-						desc = orig;
+					desc = orig;
 				    	icon= i->icon; 
 			
 				    	regfree(&oRegex);

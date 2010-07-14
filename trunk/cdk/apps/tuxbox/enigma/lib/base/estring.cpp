@@ -58,7 +58,7 @@ eString& eString::upper()
 			case 'a' ... 'z' :
 				*it -= 32;
 			break;
-
+/*
 			case '\xe4' : 		//ä
 				*it = '\xc4';	//Ä
 			break;
@@ -70,7 +70,7 @@ eString& eString::upper()
 			case '\xf6' :		//ö
 				*it = '\xd6';	//Ö
 			break;
-		}
+*/		}
 
 	return *this;
 }
