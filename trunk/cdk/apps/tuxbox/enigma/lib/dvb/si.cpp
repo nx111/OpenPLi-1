@@ -1004,7 +1004,10 @@ void ExtendedEventDescriptor::init_ExtendedEventDescriptor(descr_gen_t *descr)
 	}
 
 	int text_length=data[ptr++];
-	text=convertDVBUTF8((unsigned char*) data+ptr, text_length, table, tsidonid);
+
+//	 *******will convert to UTF8 after merge all text,(in epgwindow.cpp)
+//	text=convertDVBUTF8((unsigned char*) data+ptr, text_length, table, tsidonid);
+	text=eString((const char*)data+ptr,text_length);
 	ptr+=text_length;
 //	eDebug("ExtendEventDescriptor text=%s",text.c_str());
 }
@@ -2119,7 +2122,6 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 	//data is from epg data file
 	if(source)
 		source +=0x0100;
-
 	while (ptr<len)
 	{
 		descr_gen_t *d=(descr_gen_t*) (((__u8*)(event+1))+ptr);
@@ -2142,11 +2144,11 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 		}
 		else if ( descr->Tag() == DESCR_EXTENDED_EVENT && sdescr )
 		{
-			ExtendedEventDescriptor *edescr = (ExtendedEventDescriptor*) descr;
-			unsigned int s1 = sdescr->text.size();
-			unsigned int s2 = edescr->text.size();
-			if ( s2 && !strncmp( sdescr->text.c_str(), edescr->text.c_str(), s2 < s1 ? s2 : s1 ) )
-				sdescr->text.clear();
+		//	ExtendedEventDescriptor *edescr = (ExtendedEventDescriptor*) descr;
+		//	unsigned int s1 = sdescr->text.size();
+		//	unsigned int s2 = edescr->text.size();
+		//	if ( s2 && !strncmp( sdescr->text.c_str(), edescr->text.c_str(), s2 < s1 ? s2 : s1 ) )
+		//		sdescr->text.clear();
 			sdescr = NULL;
 			//eDebug("EITEvent: extended event, text: %s\n", edescr->text.c_str());
 		}
@@ -2165,9 +2167,8 @@ void EITEvent::init_EITEvent(const eit_event_struct *event, int tsidonid)
 			}
 		}
 #endif
-		else if(descr->Tag() == '\0')
+		else if (descr->Tag() < 0x40 && descr->Tag() !=0x13 && descr->Tag() !=0x0A && descr->Tag() != 0x05)
 			break;
-
 		ptr+=d->descriptor_length+2;
 	}
 }

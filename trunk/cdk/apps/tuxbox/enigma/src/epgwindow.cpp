@@ -499,11 +499,13 @@ bool LocalEventData::language_exists(EITEvent *event, eString lang)
 {
 	ShortEventName=ExtendedEventText=ShortEventText="";
 	bool retval=0;
+	int tsidonid=0;
 	for (ePtrList<Descriptor>::iterator descriptor(event->descriptor); descriptor != event->descriptor.end(); ++descriptor)
 	{
 		if (descriptor->Tag() == DESCR_SHORT_EVENT)
 		{
 			ShortEventDescriptor *ss = (ShortEventDescriptor*)*descriptor;
+			tsidonid=ss->tsidonid;
 			if (!lang || !strncasecmp(lang.c_str(), ss->language_code, 3) )
 			{
 				ShortEventName=ss->event_name;
@@ -514,9 +516,14 @@ bool LocalEventData::language_exists(EITEvent *event, eString lang)
 		else if (descriptor->Tag() == DESCR_EXTENDED_EVENT)
 		{
 			ExtendedEventDescriptor *ss = (ExtendedEventDescriptor*)*descriptor;
+			tsidonid=ss->tsidonid;
 			if (!lang || !strncasecmp(lang.c_str(), ss->language_code, 3) )
 			{
-				ExtendedEventText += ss->text;
+				eString txt=ss->text;
+				if(txt.size() && txt.at(0)<0x20 && ExtendedEventText.size())
+					txt=ss->text.right(ss->text.size()-1);
+				
+				ExtendedEventText += txt;
 				retval=1;
 			}
 		}
@@ -524,7 +531,14 @@ bool LocalEventData::language_exists(EITEvent *event, eString lang)
 	if (retval > 0)
 	{
 		if (ShortEventText == ShortEventName) ShortEventText = "";
-		if (ExtendedEventText == ShortEventText || ExtendedEventText == ShortEventName) ExtendedEventText = "";
+		if (ExtendedEventText == ShortEventText || ExtendedEventText == ShortEventName) 
+			ExtendedEventText = "";	
+		else
+			ExtendedEventText = convertDVBUTF8((const unsigned char *)(ExtendedEventText.c_str()),
+								ExtendedEventText.size(),
+								tsidonid,
+								event->source
+							   );
 	}
 	return retval;
 }
@@ -677,6 +691,12 @@ void LocalEventData::getLocalData(EITEvent *event, eString *name, eString *desc)
 		eConfig::getInstance()->getKey("/ezap/osd/showAllEventText",showAllEventText);
 		if (ExtendedEventText )
 		{
+
+			unsigned int s1 = ShortEventText.size();
+			unsigned int s2 = ExtendedEventText.size();
+			if ( s2 && !strncmp( ShortEventText.c_str(), ExtendedEventText.c_str(), s2 < s1 ? s2 : s1 ) )
+				ShortEventText.clear();
+
 			if(showAllEventText)
 			{
 				/*
