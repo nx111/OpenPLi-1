@@ -324,7 +324,7 @@ public:
 	int last_descriptor_number;
 	char language_code[3];
 	ePtrList< ItemEntry > items;
-	eString text;
+	eString text,old_text;
 	int tsidonid;
 };
 
@@ -557,7 +557,7 @@ public:
 	EITEvent(const eit_event_struct *event, int tsidonid, int type,int source=srDEFAULT);
 	EITEvent();
 	int event_id;
-	int source;		
+	int source;
 	time_t start_time;
 	int duration;
 	int running_status;

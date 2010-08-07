@@ -1005,9 +1005,8 @@ void ExtendedEventDescriptor::init_ExtendedEventDescriptor(descr_gen_t *descr)
 
 	int text_length=data[ptr++];
 
-//	 *******will convert to UTF8 after merge all text,(in epgwindow.cpp)
-//	text=convertDVBUTF8((unsigned char*) data+ptr, text_length, table, tsidonid);
-	text=eString((const char*)data+ptr,text_length);
+	text=convertDVBUTF8((unsigned char*) data+ptr, text_length, table, tsidonid);
+	old_text=eString((const char*)data+ptr,text_length);
 	ptr+=text_length;
 //	eDebug("ExtendEventDescriptor text=%s",text.c_str());
 }

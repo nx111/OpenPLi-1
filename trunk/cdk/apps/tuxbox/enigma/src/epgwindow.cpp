@@ -519,10 +519,9 @@ bool LocalEventData::language_exists(EITEvent *event, eString lang)
 			tsidonid=ss->tsidonid;
 			if (!lang || !strncasecmp(lang.c_str(), ss->language_code, 3) )
 			{
-				eString txt=ss->text;
+				eString txt=ss->old_text;
 				if(txt.size() && txt.at(0)<0x20 && ExtendedEventText.size())
-					txt=ss->text.right(ss->text.size()-1);
-				
+					txt.erase(0,1);
 				ExtendedEventText += txt;
 				retval=1;
 			}
