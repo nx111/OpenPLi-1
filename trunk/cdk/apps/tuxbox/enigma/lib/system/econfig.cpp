@@ -135,37 +135,42 @@ int eConfig::getKey(const char *key, eString &string)
 int eConfig::setKey(const char *key, const int &i)
 {
 	keys_int[key] = i;
+	keys_modified[key]=1;
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const unsigned int &ui)
 {
 	keys_uint[key] = ui;
+	keys_modified[key]=1;
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const double &d)
 {
 	keys_double[key] = d;
+	keys_modified[key]=1;
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const char *s)
 {
 	keys_string[key] = s;
+	keys_modified[key]=1;
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const eString &string)
 {
 	keys_string[key] = string;
+	keys_modified[key]=1;
 	return 0;
 }
 
 void eConfig::delKey(const char *key)
 {
 	std::map<eString, int> del_keys;
-	
+
 	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end(); ++i)		
 		if(strncmp(i->first.c_str(), key,  strlen(key))==0)
 			del_keys[i->first.c_str()] = 1;
@@ -181,6 +186,7 @@ void eConfig::delKey(const char *key)
 	
 	for (std::map<eString, int>::iterator i(del_keys.begin()); i != del_keys.end(); ++i)
 	{
+		keys_modified[i->first]=0;
 		keys_int.erase(i->first.c_str());
 		keys_string.erase(i->first.c_str());
 		keys_uint.erase(i->first.c_str());
@@ -190,7 +196,64 @@ void eConfig::delKey(const char *key)
 
 void eConfig::flush()
 {
-	FILE *f = fopen(CONFIGDIR "/enigma/config", "w");
+
+	DIR *configdir;
+	
+	FILE *f = fopen(CONFIGDIR "/enigma/config", "r");
+	if (f)
+	{
+		char buffer[1024];
+		while (1)
+		{
+			if (!fgets(buffer, 1024, f))
+				break;
+			if (strlen(buffer) < 4)
+				break;
+			buffer[strlen(buffer)-1]=0;
+			char *key = buffer + 2;
+			char *opt = strchr(key, '=');
+			if (!opt)
+				continue;
+			*opt++ = 0;
+
+		     std::map<eString, int>::iterator ikey=keys_modified.find(key);
+		     if(ikey==keys_modified.end())
+			switch(*buffer)
+			{
+			case 's': keys_string[key] = opt;  break;
+			case 'u': keys_uint[key] = strtoul(opt, 0, 0x10); break;
+			case 'd':
+			{
+				char *endptr=0;
+				keys_double[key] = strtod(opt, &endptr);
+				if ( endptr && *endptr )
+				{
+					if ( *endptr == ',' )
+						*endptr = '.';
+					else if (*endptr == '.' )
+						*endptr = ',';
+					endptr=0;
+					keys_double[key] = strtod(opt, &endptr);
+					if ( endptr && *endptr )
+						eDebug("failed to parse %s %s", key, opt);
+				}
+				break;
+			}
+			case 'i':
+			{
+				if ( sscanf(opt, "%x", &keys_int[key] ) != 1 )
+				{
+					if (sscanf(opt, "%x", &keys_int[key] ) != 1 )
+						eDebug("couldn't parse %s", opt);
+				}
+				break;
+			}              
+			}
+		}
+		fclose(f);
+	}
+	
+	f = fopen(CONFIGDIR "/enigma/config", "w");
 	if (!f)
 	{
 		eWarning("couldn't write config!");

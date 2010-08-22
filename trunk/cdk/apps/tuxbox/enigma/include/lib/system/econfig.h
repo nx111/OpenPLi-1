@@ -14,6 +14,7 @@ class eConfig // : public NConfig
 	std::map<eString, eString> keys_string;
 	std::map<eString, unsigned int> keys_uint;
 	std::map<eString, double> keys_double;
+	std::map<eString, int> keys_modified;
 	void init_eConfig();	
 public:
 	static eConfig *getInstance() { return instance; }

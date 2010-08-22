@@ -2767,6 +2767,11 @@ int eZapMain::setNow(EITEvent *event)
 			duration.sprintf("");
 		}
 	}
+	else{
+		cur_start=-1;
+		cur_duration=-1;
+	}
+
 	if (cur_event_text && cur_event_text != "" ){
 		fileinfos->setText(cur_event_text);
 		EINow->setText(cur_event_text);
@@ -2938,16 +2943,19 @@ int eZapMain::setEPGNowNext()
 			switch (p)
 			{
 			case 0:
-				cur_event_id = event.event_id;
-				cur_start = event.start_time;
-				cur_duration = event.duration;
-				clockUpdate();
-				if(cur_start>nowtime){
+				if(event.start_time>nowtime){
+					setNow(NULL);
+					clockUpdate();
+					
 					settedNext=setNext(&event);
 					p++;	//skip next event
 				}
-				else
+				else{
+					cur_event_id = event.event_id;
+					cur_start = event.start_time;
+					cur_duration = event.duration;
 					settedNow=setNow(&event);
+				}
 				break;
 			case 1:
 				if(event.start_time <(cur_start+cur_duration+12*3600) && event.start_time>nowtime)
@@ -6573,11 +6581,9 @@ void eZapMain::adjustTime(long timediff)
 
 	dvb.time_difference+=timediff;
 
-//	eRCInput::getInstance()->lock();
 	for (ePtrList<eMainloop>::iterator it(eMainloop::existing_loops)
 		;it != eMainloop::existing_loops.end(); ++it)
 		it->setTimerOffset(dvb.time_difference);
-//	eRCInput::getInstance()->unlock();
 	dvb.time_difference= 1;
 	/*emit*/ dvb.timeUpdated();
 

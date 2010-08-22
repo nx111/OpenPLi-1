@@ -800,6 +800,7 @@ void eEPGCache::flushEPG(const uniqueEPGKey & s)
 
 void eEPGCache::cleanLoop()
 {
+
 	if ( isRunning || (temp.size() && haveData) || !epgStore )
 	{
 		CleanTimer.startLongTimer(5);
@@ -1020,13 +1021,14 @@ void eEPGCache::makeTvMap()
 }
 void eEPGCache::reloadStore()	// Can be used to switch between stores
 {
-//	pauseEPG();
+	pauseEPG();
 	
 	// Avoid race
 	eEPGStore *tempStore = epgStore;
 	epgStore = 0;
 	delete tempStore;
-//	serviceLastUpdated.clear();
+
+	serviceLastUpdated.clear();
 	readServiceMappingFile();
 
 	epgStore = eEPGStore::createEPGStore();

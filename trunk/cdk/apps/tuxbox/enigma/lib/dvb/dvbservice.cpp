@@ -714,6 +714,7 @@ void eDVBServiceController::TDTready(int error)
 
 
 	creat("/tmp/flag/timeCorrectting",777);
+	creat("/tmp/flag/TDTupdating",777);
 	eZapMain::getInstance()->timeCorrectting=1;
 	if (!error && transponder)
 	{
@@ -880,6 +881,7 @@ void eDVBServiceController::TDTready(int error)
 	}
 
 	unlink("/tmp/flag/timeCorrectting");
+	unlink("/tmp/flag/TDTupdating");
 	eZapMain::getInstance()->timeCorrectting=0;
 
 }
