@@ -4,6 +4,7 @@
 #include <lib/system/init_num.h>
 #include <sys/stat.h>
 #include <dirent.h>
+#include <errno.h>
 
 eConfig *eConfig::instance;
 
@@ -190,14 +191,13 @@ void eConfig::delKey(const char *key)
 
 void eConfig::flush()
 {
-//	FILE *f = fopen(CONFIGDIR "/enigma/config", "w");
-	FILE *f = fopen("/tmp/enigma.config", "w");
+	FILE *f = fopen(CONFIGDIR "/enigma/config.tmp", "w");
 	if (!f)
 	{
 		eWarning("couldn't write config!");
 		return;
 	}
-
+	errno=0;
 	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end(); ++i)
 		fprintf(f, "i:%s=%08x\n", i->first.c_str(), i->second);
 	for (std::map<eString, unsigned int>::iterator i(keys_uint.begin()); i != keys_uint.end(); ++i)
@@ -209,10 +209,10 @@ void eConfig::flush()
 
 	fclose(f);
 
+	if(errno)return;
 	remove(CONFIGDIR "/enigma/config.bak");
-	if(rename("/tmp/enigma.config ", CONFIGDIR "/enigma/config.new") < 0 )return;
 	rename(CONFIGDIR "/enigma/config",CONFIGDIR "/enigma/config.bak");
-	rename(CONFIGDIR "/enigma/config.new",CONFIGDIR "/enigma/config");
+	rename(CONFIGDIR "/enigma/config.tmp",CONFIGDIR "/enigma/config");
 }
 
 eSimpleConfigFile::eSimpleConfigFile(const char *filename)
