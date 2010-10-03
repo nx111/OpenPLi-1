@@ -1,7 +1,7 @@
 10
 
 dir
-125
+159
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/keypics
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -536,40 +536,6 @@ has-props
 
 205
 
-button_-.png
-file
-
-
-
-
-2009-12-09T08:20:44.180020Z
-018e16d91bc5a630b711f549b4ea536f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-154
-
 button_dbox.png
 file
 
@@ -603,6 +569,40 @@ has-props
 
 
 199
+
+button_-.png
+file
+
+
+
+
+2009-12-09T08:20:44.180020Z
+018e16d91bc5a630b711f549b4ea536f
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+154
 
 button_0.png
 file
@@ -638,14 +638,14 @@ has-props
 
 164
 
-button_1.png
+button_green.png
 file
 
 
 
 
-2009-12-09T08:20:44.180020Z
-399f0ed121388e4766578865fc50083f
+2009-12-09T08:20:44.196024Z
+da7b08eb2d9ad160e87f4635baf04630
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -672,14 +672,14 @@ has-props
 
 162
 
-button_green.png
+button_1.png
 file
 
 
 
 
-2009-12-09T08:20:44.196024Z
-da7b08eb2d9ad160e87f4635baf04630
+2009-12-09T08:20:44.180020Z
+399f0ed121388e4766578865fc50083f
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -808,40 +808,6 @@ has-props
 
 179
 
-button_5.png
-file
-
-
-
-
-2009-12-09T08:20:44.196024Z
-385cd6e128989e0532fe593a889e27cb
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-170
-
 button_menu.png
 file
 
@@ -875,6 +841,40 @@ has-props
 
 
 205
+
+button_5.png
+file
+
+
+
+
+2009-12-09T08:20:44.196024Z
+385cd6e128989e0532fe593a889e27cb
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+170
 
 button_6.png
 file
@@ -910,40 +910,6 @@ has-props
 
 172
 
-button_7.png
-file
-
-
-
-
-2009-12-09T08:20:44.200018Z
-a674783465bf879156a62665391efdee
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-168
-
 button_bouq.png
 file
 
@@ -978,14 +944,14 @@ has-props
 
 258
 
-button_shift_red.png
+button_7.png
 file
 
 
 
 
 2009-12-09T08:20:44.200018Z
-065f5e6e0428f7859a3e23706092f9b3
+a674783465bf879156a62665391efdee
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1010,7 +976,7 @@ has-props
 
 
 
-274
+168
 
 button_8.png
 file
@@ -1045,6 +1011,40 @@ has-props
 
 
 176
+
+button_shift_red.png
+file
+
+
+
+
+2009-12-09T08:20:44.200018Z
+065f5e6e0428f7859a3e23706092f9b3
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+274
 
 button_shift_yellow.png
 file

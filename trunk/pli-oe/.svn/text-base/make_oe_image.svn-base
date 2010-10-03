@@ -28,7 +28,7 @@ fi
 
 if [ "${DISTROVERSION}x" = "x" ]; then
 	DISTROVERSION=openpli
-	FILENAME="OpenPLi-unstable-${MACHINE}-`date +%Y%m%d`"
+	FILENAME="OpenPLi-beta-${MACHINE}-`date +%Y%m%d`"
 else
 	FILENAME="${DISTROVERSION}-${MACHINE}-`date +%Y%m%d`"
 fi
@@ -107,6 +107,7 @@ rsync $OE_IMAGES/$FILENAME*.zip rsync://upload.pli-images.org:8730::/builds/$IMA
 rm -Rf $OE_BUILD/tmp/deploy/3rd-party
 mkdir $OE_BUILD/tmp/deploy/3rd-party
 rsync rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/3rd-party/upload/*.ipk $OE_BUILD/tmp/deploy/3rd-party/
+rsync rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/3rd-party/upload/$MACHINE/*.ipk $OE_BUILD/tmp/deploy/3rd-party/
 cd $OE_ROOT
 ./recreate_feed $OE_BUILD/tmp/deploy/3rd-party
 rsync -h -r --timeout=600 --progress --delete-during $OE_BUILD/tmp/deploy/3rd-party/ rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/3rd-party/$MACHINE/

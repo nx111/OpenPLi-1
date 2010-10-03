@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/svnroot/openpli/!svn/ver/45/trunk/cdk/apps/tuxbox/enigma/lib/base
+V 67
+/svnroot/openpli/!svn/ver/150/trunk/cdk/apps/tuxbox/enigma/lib/base
 END
 eerror.cpp
 K 25
@@ -72,6 +72,6 @@ END
 estring.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/45/trunk/cdk/apps/tuxbox/enigma/lib/base/estring.cpp
+V 79
+/svnroot/openpli/!svn/ver/150/trunk/cdk/apps/tuxbox/enigma/lib/base/estring.cpp
 END

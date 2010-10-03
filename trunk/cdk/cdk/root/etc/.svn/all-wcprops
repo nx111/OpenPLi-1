@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 50
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc
+V 52
+/svnroot/openpli/!svn/ver/139/trunk/cdk/cdk/root/etc
 END
 services
 K 25
@@ -9,17 +9,17 @@ svn:wc:ra_dav:version-url
 V 59
 /svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/services
 END
-rpc
-K 25
-svn:wc:ra_dav:version-url
-V 54
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/rpc
-END
 protocols
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/protocols
+END
+rpc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/rpc
 END
 nsswitch.conf
 K 25
@@ -36,14 +36,14 @@ END
 timezone.xml
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/timezone.xml
+V 65
+/svnroot/openpli/!svn/ver/139/trunk/cdk/cdk/root/etc/timezone.xml
 END
-vsftpd.conf
+inittab
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/vsftpd.conf
+V 58
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/inittab
 END
 mime.types
 K 25
@@ -51,11 +51,11 @@ svn:wc:ra_dav:version-url
 V 61
 /svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/mime.types
 END
-inittab
+vsftpd.conf
 K 25
 svn:wc:ra_dav:version-url
-V 58
-/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/inittab
+V 62
+/svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/etc/vsftpd.conf
 END
 termcap
 K 25

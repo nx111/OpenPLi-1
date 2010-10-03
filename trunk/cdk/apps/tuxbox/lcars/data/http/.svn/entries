@@ -1,7 +1,7 @@
 10
 
 dir
-125
+159
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/lcars/data/http
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -400,40 +400,6 @@ plindeman
 
 21
 
-channels3.htm
-file
-
-
-
-
-2009-12-09T08:21:13.296022Z
-61e30fc55c43444ccd5a9967247772dc
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-22
-
 form_cha.css
 file
 
@@ -468,18 +434,17 @@ plindeman
 
 1492
 
-beginn.gif
+channels3.htm
 file
 
 
 
 
 2009-12-09T08:21:13.296022Z
-87965666e6f206e5c5aba84387a69eba
+61e30fc55c43444ccd5a9967247772dc
 2009-08-14T21:33:06.552841Z
 2
 plindeman
-has-props
 
 
 
@@ -500,7 +465,8 @@ has-props
 
 
 
-883
+
+22
 
 channels4.htm
 file
@@ -535,6 +501,40 @@ plindeman
 
 
 45
+
+beginn.gif
+file
+
+
+
+
+2009-12-09T08:21:13.296022Z
+87965666e6f206e5c5aba84387a69eba
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+883
 
 rc.gif
 file

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/openpli/!svn/ver/111/trunk/cdk/apps/tuxbox/enigma/data
+/svnroot/openpli/!svn/ver/157/trunk/cdk/apps/tuxbox/enigma/data
 END
 Makefile.am
 K 25
@@ -12,6 +12,6 @@ END
 encoding.conf
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/encoding.conf
+V 77
+/svnroot/openpli/!svn/ver/157/trunk/cdk/apps/tuxbox/enigma/data/encoding.conf
 END

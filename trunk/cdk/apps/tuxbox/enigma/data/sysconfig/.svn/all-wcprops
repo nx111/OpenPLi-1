@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/sysconfig
+V 73
+/svnroot/openpli/!svn/ver/145/trunk/cdk/apps/tuxbox/enigma/data/sysconfig
 END
 zoneinfo.tar.bz2
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/sysconfig/zoneinfo.tar.bz2
+V 90
+/svnroot/openpli/!svn/ver/138/trunk/cdk/apps/tuxbox/enigma/data/sysconfig/zoneinfo.tar.bz2
 END
 Makefile.am
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/sysconfig/Makefile.am
+V 85
+/svnroot/openpli/!svn/ver/145/trunk/cdk/apps/tuxbox/enigma/data/sysconfig/Makefile.am
 END

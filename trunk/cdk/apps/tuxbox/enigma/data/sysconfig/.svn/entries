@@ -1,15 +1,15 @@
 10
 
 dir
-125
+159
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/sysconfig
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-09-13T10:39:00.717032Z
+145
+pieterg
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2009-12-09T08:20:34.912020Z
-e71deeec84de1d1aff98ad0a36efa89d
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-10-03T07:30:04.378983Z
+1a28ffc3ad23ef0028b2ecc1b9172f82
+2010-09-02T15:43:21.268426Z
+138
+pieterg
 has-props
 
 
@@ -58,7 +58,7 @@ has-props
 
 
 
-20409
+20443
 
 Makefile.am
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2009-12-09T08:20:34.912020Z
-2f6b2f25f278fb2f00f758458a6afafa
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-10-03T07:30:04.378983Z
+9b56b96469226b0f869b5e00db0cd436
+2010-09-13T10:39:00.717032Z
+145
+pieterg
 
 
 
@@ -92,5 +92,5 @@ plindeman
 
 
 
-910
+918
 

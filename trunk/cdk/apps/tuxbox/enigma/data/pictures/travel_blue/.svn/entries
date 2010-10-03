@@ -1,7 +1,7 @@
 10
 
 dir
-125
+159
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/travel_blue
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,108 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-osd_clock.png
-file
-
-
-
-
-2009-12-09T08:20:39.696028Z
-8a60105769b7c8b92b54eb7cc16cca37
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-193
-
-osd_dvr.png
-file
-
-
-
-
-2009-12-09T08:20:39.700023Z
-b27bba8536091ad2fdc186e78a9f993c
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1257
-
-osd_info.png
-file
-
-
-
-
-2009-12-09T08:20:39.700023Z
-073dfaab32f60e6238a64c08d62ab1f8
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-285
 
 window_arrow_combo.png
 file
@@ -162,6 +60,108 @@ has-props
 
 209
 
+osd_info.png
+file
+
+
+
+
+2009-12-09T08:20:39.700023Z
+073dfaab32f60e6238a64c08d62ab1f8
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+285
+
+osd_dvr.png
+file
+
+
+
+
+2009-12-09T08:20:39.700023Z
+b27bba8536091ad2fdc186e78a9f993c
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1257
+
+osd_clock.png
+file
+
+
+
+
+2009-12-09T08:20:39.696028Z
+8a60105769b7c8b92b54eb7cc16cca37
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+193
+
 window_top_corner.png
 file
 
@@ -195,74 +195,6 @@ has-props
 
 
 147
-
-osd_audio_on.png
-file
-
-
-
-
-2009-12-09T08:20:39.700023Z
-688ec0e2a04dbc5ef1d14d9c8fc84f24
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-183
-
-osd_crypt_on.png
-file
-
-
-
-
-2009-12-09T08:20:39.704018Z
-d4873a829f2628ab8286ba12f2389045
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-155
 
 osd_stereo_on.png
 file
@@ -298,14 +230,14 @@ has-props
 
 168
 
-window_top_left.png
+osd_crypt_on.png
 file
 
 
 
 
 2009-12-09T08:20:39.704018Z
-1332192e71836547f9f3da8e83d2a7ad
+d4873a829f2628ab8286ba12f2389045
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -330,7 +262,41 @@ has-props
 
 
 
-147
+155
+
+osd_audio_on.png
+file
+
+
+
+
+2009-12-09T08:20:39.700023Z
+688ec0e2a04dbc5ef1d14d9c8fc84f24
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+183
 
 window_bottom_corner.png
 file
@@ -366,6 +332,40 @@ has-props
 
 146
 
+window_top_left.png
+file
+
+
+
+
+2009-12-09T08:20:39.704018Z
+1332192e71836547f9f3da8e83d2a7ad
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+147
+
 main_logo.png
 file
 
@@ -400,40 +400,6 @@ has-props
 
 359
 
-window_arrow_down.png
-file
-
-
-
-
-2009-12-09T08:20:39.728025Z
-dc6c07ccbc26d3a2810e5890c1eb6e58
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-196
-
 icon_back.png
 file
 
@@ -467,6 +433,40 @@ has-props
 
 
 555
+
+window_arrow_down.png
+file
+
+
+
+
+2009-12-09T08:20:39.728025Z
+dc6c07ccbc26d3a2810e5890c1eb6e58
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+196
 
 osd_dolby_on.png
 file
