@@ -2767,11 +2767,6 @@ int eZapMain::setNow(EITEvent *event)
 			duration.sprintf("");
 		}
 	}
-	else{
-		cur_start=-1;
-		cur_duration=-1;
-	}
-
 	if (cur_event_text && cur_event_text != "" ){
 		fileinfos->setText(cur_event_text);
 		EINow->setText(cur_event_text);
@@ -2822,6 +2817,7 @@ void eZapMain::setEIT(EIT *eit)
 {
 	int EPGNowNextSetted=setEPGNowNext();
 	int SettedNow=0,SettedNext=0;
+	time_t nowtime=time(0) + eDVB::getInstance()->time_difference;
 	if (eit && !EPGNowNextSetted)
 	{
 		int p = 0;
@@ -2835,9 +2831,14 @@ void eZapMain::setEIT(EIT *eit)
 			{
 //				eDebug("set cur_event_id to %d", event->event_id);
 
-				cur_event_id=event->event_id;
-				cur_start=event->start_time;
-				cur_duration=event->duration;
+				if(event->start_time <= nowtime && event->start_time+event->duration >= nowtime){
+					cur_event_id=event->event_id;
+					cur_start=event->start_time;
+					cur_duration=event->duration;
+				}
+				else
+					p++;
+			
 				clockUpdate();
 
 				int cnt=0;
@@ -2943,18 +2944,15 @@ int eZapMain::setEPGNowNext()
 			switch (p)
 			{
 			case 0:
-				if(event.start_time>nowtime){
-					setNow(NULL);
-					clockUpdate();
-					
-					settedNext=setNext(&event);
-					p++;	//skip next event
-				}
-				else{
+				if(event.start_time<=nowtime && event.start_time+event.duration>=nowtime){
 					cur_event_id = event.event_id;
 					cur_start = event.start_time;
 					cur_duration = event.duration;
 					settedNow=setNow(&event);
+				}
+				else {
+					settedNext=setNext(&event);
+					p++;	//skip next event
 				}
 				break;
 			case 1:
@@ -2962,6 +2960,7 @@ int eZapMain::setEPGNowNext()
 					settedNext=setNext(&event);
 				break;
 			}
+			clockUpdate();
 		}
 	}
 	
@@ -6581,9 +6580,11 @@ void eZapMain::adjustTime(long timediff)
 
 	dvb.time_difference+=timediff;
 
+//	eRCInput::getInstance()->lock();
 	for (ePtrList<eMainloop>::iterator it(eMainloop::existing_loops)
 		;it != eMainloop::existing_loops.end(); ++it)
 		it->setTimerOffset(dvb.time_difference);
+//	eRCInput::getInstance()->unlock();
 	dvb.time_difference= 1;
 	/*emit*/ dvb.timeUpdated();
 
