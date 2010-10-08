@@ -784,7 +784,7 @@ void RSSParser::parse(eString file)
 static int getEncodeTableValue(char * encoding)
 {
  	if (strcasecmp(encoding, "GB2312") == 0 || strcasecmp(encoding, "GBK") == 0)
-		return GB2312_ENCODING;
+		return GB18030_ENCODING;
 	else if (strcasecmp(encoding, "BIG5") == 0)
 		return BIG5_ENCODING;
 	else if (strcasecmp(encoding,"UTF8") == 0 || strcasecmp(encoding,"UTF-8") == 0 )

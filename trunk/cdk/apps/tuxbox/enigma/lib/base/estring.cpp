@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <limits.h>
 #include <lib/system/elock.h>
-#include <lib/base/gbk.h>
+#include <lib/base/gb18030.h>
 #include <lib/base/big5.h>
 #include <lib/system/econfig.h>
 
@@ -103,7 +103,7 @@ eString& eString::strReplace(const char* fstr, const eString& rstr,int encode)
 		}
 		break;
 	case BIG5_ENCODING:
-	case GB2312_ENCODING:
+	case GB18030_ENCODING:
 		while(index<length()){
 			if((fstrlen+index)<=length() && !strcmp(mid(index,fstrlen).c_str(),fstr)){
 				replace(index,fstrlen,rstr);
@@ -170,7 +170,7 @@ int parseEncoding(char *encoding)
 	if (strcasecmp(encoding, "VideoTexSuppl") == 0)
 		return VIDEOTEXSUPPL_ENCODING;
 	else if (strcasecmp(encoding, "gb2312") == 0 || strcasecmp(encoding, "gbk") == 0)
-		return GB2312_ENCODING;
+		return GB18030_ENCODING;
 	else if (strcasecmp(encoding, "big5") == 0)
 		return BIG5_ENCODING;
 	else if (strcasecmp(encoding,"UTF8") == 0 || strcasecmp(encoding,"UTF-8") == 0 )
@@ -744,26 +744,24 @@ int UnicodeToUTF8(long c, char *out)
 }
 
 
-eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen)
+eString GB18030ToUTF8(const char *szIn, int len,int *pconvertedLen)
 {
 	char szOut[len * 2];
 	unsigned long code=0;
-	int t=0,i=0;
+	int t=0,i;
 
-	for(;i<(len-1);i++){
-		if (szIn[i]>0x80 && szIn[i]<0xff && szIn[i+1]>=0x40 && szIn[i+1]<0xff)
-		{
-			gbk_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,2);
-			code=ChineseTradToSimp(code);
-			int k=UnicodeToUTF8(code,szOut+t);
-			t+=k;
-			i++;
-			}
+	for(i=0;i<(len-1);){
+		int cl=0,k=0;
+
+		cl=gb18030_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,len-i);
+		if(cl>0)
+			k=UnicodeToUTF8(code,szOut+t);
+		t+=k;
+		if(cl>0)
+			i+=cl;
 		else
-			szOut[t++]=szIn[i];
+			i++;
 	}
-  	if(i<len && szIn[i]<0x80 && szIn[i])
-		szOut[t++]=szIn[i++];
 
 	if(pconvertedLen)*pconvertedLen=i;
 	return eString(szOut,t);
@@ -847,6 +845,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 		}
 		case 0x11: //  Basic Multilingual Plane of ISO/IEC 10646-1 enc  (UTF-16... Unicode)
 			encode=UTF16BE_ENCODING;
+			tsidonid = 0;
 			++i;
 			break;
 		case 0x12:
@@ -855,7 +854,7 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 			break;
 		case 0x13:
 			++i;
-			encode=GB2312_ENCODING;
+			encode=GB18030_ENCODING;
 //			eDebug("unsup. GB-2312-1980 enc.");
 			break;
 		case 0x14:
@@ -900,7 +899,6 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 		  {
 			unsigned long code=0;
 
-	
 			if ( table < 0x100 && (i+1) < len && tsidonid &&
 				eString::TransponderUseTwoCharMapping.find(tsidonid) != eString::TransponderUseTwoCharMapping.end() &&	(code=doVideoTexSuppl(data[i], data[i+1])) )
 				i++;
@@ -988,8 +986,8 @@ eString convertDVBUTF8(const unsigned char *data, int len, int table, int tsidon
 		  return eString((char*)res, t);
 		  break;
         }
-		case GB2312_ENCODING:
-			return GB2312ToUTF8((const char *)(data + i), len - i,pconvertedLen);
+		case GB18030_ENCODING:
+			return GB18030ToUTF8((const char *)(data + i), len - i,pconvertedLen);
 			break;
 		case BIG5_ENCODING:
 			return Big5ToUTF8((const char *)(data + i), len - i,pconvertedLen);

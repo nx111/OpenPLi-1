@@ -9,7 +9,7 @@
 #include "eerror.h"
 
 #define VIDEOTEXSUPPL_ENCODING		0x1E
-#define GB2312_ENCODING			0x13
+#define GB18030_ENCODING			0x13
 #define BIG5_ENCODING			0x14
 #define UTF8_ENCODING			0x15
 #define UNICODE_ENCODING		0x16
@@ -59,7 +59,7 @@ eString convertLatin1UTF8(const eString &string);
 int isUTF8(const eString &string);
 
 eString Big5ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
-eString GB2312ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
+eString GB18030ToUTF8(const char *szIn, int len,int *pconvertedLen=0);
 int UnicodeToUTF8(long c, char *out);
 unsigned long ChineseTradToSimp(long c);
 eString ChineseTradToSimp(const char *szIn,int len);
