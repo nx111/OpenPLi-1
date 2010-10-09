@@ -53,7 +53,6 @@ eSCGui::eSCGui(): menu(true)
 
     cmove(ePoint(90, 110));
 	cresize(eSize(540, 380));
-	valign();
 
 	addActionMap(&i_shortcutActions->map);
 	addActionMap(&i_cursorActions->map);
@@ -186,6 +185,7 @@ void eSCGui::loadList(int mode, eString pathfull)
 	}
 
 	eString response;
+//	CURLcode httpres= sendGetRequest("/requests/browse.xml?dir=" + pathfull.strReplace(" ", "%20"), response);
 	CURLcode httpres= sendGetRequest("/requests/browse.xml?dir=" + UrlEncode(pathfull), response);
 
 	//std::replace(response.begin(), response.end(), '\\', '/');  for auto-subtitles under Windows must be commented !!!
@@ -499,7 +499,7 @@ void eSCGui::timerHandler()
 			}
 			if(jumpBox)
 			{
-				int msgTime=3;
+				unsigned int msgTime=3;
 				eConfig::getInstance()->getKey((pathcfg+"msgtime").c_str(), msgTime );
 				if(++skip_time >= msgTime)
 				{
@@ -1000,9 +1000,8 @@ int eSCGui::eventHandler(const eWidgetEvent &e)
 
 eSCGuiHelp::eSCGuiHelp()  // Help window
 {
-	//cmove(ePoint(90, 80));
-	cresize(eSize(540, 380));
-	valign();
+	cmove(ePoint(90, 80));
+	cresize(eSize(540, 440));
 
 	eString rel = REL;
 	setText((eString)_("Help")+" - "+rel);
@@ -1095,7 +1094,7 @@ eString eSCGui::getPar(eString buf, const char* parameter)
 
 eString eSCGui::UrlEncode(const eString & src)
 {
-    static    char hex[] = "0123456789ABCDEF";
+    static char hex[] = "0123456789ABCDEF";
     eString dst;
     
     for (size_t i = 0; i < src.size(); i++)
@@ -1108,12 +1107,12 @@ eString eSCGui::UrlEncode(const eString & src)
         else
             if (src[i] == ' ')
             {
-                dst += '%20';
+                dst += "%20";
             }
             else
             {
                 unsigned char c = static_cast<unsigned char>(src[i]);
-                dst += '%';
+                dst += "%";
                 dst += hex[c / 16];
                 dst += hex[c % 16];
             }
@@ -1391,7 +1390,6 @@ void eSCGuiConfig::setDVB(int status)
 		eMoviePlayer::getInstance()->stopDVB();
 	}
 }
-
 
 int plugin_exec(PluginParam *par)
 {
