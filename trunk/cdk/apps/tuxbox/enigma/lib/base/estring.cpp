@@ -750,7 +750,7 @@ eString GB18030ToUTF8(const char *szIn, int len,int *pconvertedLen)
 	unsigned long code=0;
 	int t=0,i;
 
-	for(i=0;i<(len-1);){
+	for(i=0;i<len;){
 		int cl=0,k=0;
 
 		cl=gb18030_mbtowc((ucs4_t*)(&code),(const unsigned char *)szIn+i,len-i);
