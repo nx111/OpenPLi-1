@@ -198,18 +198,22 @@ void eConfig::flush()
 		return;
 	}
 	errno=0;
-	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end(); ++i)
-		fprintf(f, "i:%s=%08x\n", i->first.c_str(), i->second);
-	for (std::map<eString, unsigned int>::iterator i(keys_uint.begin()); i != keys_uint.end(); ++i)
-		fprintf(f, "u:%s=%08x\n", i->first.c_str(), i->second);
-	for (std::map<eString, double>::iterator i(keys_double.begin()); i != keys_double.end(); ++i)
-		fprintf(f, "d:%s=%lf\n", i->first.c_str(), i->second);
-	for (std::map<eString, eString>::iterator i(keys_string.begin()); i != keys_string.end(); ++i)
-		fprintf(f, "s:%s=%s\n", i->first.c_str(), i->second.c_str());
+	int writed=0;
+	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end() && writed>=0; ++i)
+		writed=fprintf(f, "i:%s=%08x\n", i->first.c_str(), i->second);
+	for (std::map<eString, unsigned int>::iterator i(keys_uint.begin()); i != keys_uint.end() && writed>=0; ++i)
+		writed=fprintf(f, "u:%s=%08x\n", i->first.c_str(), i->second);
+	for (std::map<eString, double>::iterator i(keys_double.begin()); i != keys_double.end() && writed>=0; ++i)
+		writed=fprintf(f, "d:%s=%lf\n", i->first.c_str(), i->second);
+	for (std::map<eString, eString>::iterator i(keys_string.begin()); i != keys_string.end() && writed>=0; ++i)
+		writed=fprintf(f, "s:%s=%s\n", i->first.c_str(), i->second.c_str());
 
 	fclose(f);
 
-	if(errno)return;
+	if(errno || writed<0){
+		remove(CONFIGDIR "/enigma/config");
+		return;
+	}
 	remove(CONFIGDIR "/enigma/config.bak");
 	rename(CONFIGDIR "/enigma/config",CONFIGDIR "/enigma/config.bak");
 	rename(CONFIGDIR "/enigma/config.tmp",CONFIGDIR "/enigma/config");
