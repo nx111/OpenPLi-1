@@ -1,14 +1,14 @@
 10
 
 dir
-159
+184
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/pli-oe
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2010-09-25T08:23:46.174152Z
-153
+2010-12-04T15:45:35.898632Z
+183
 pieterg
 
 
@@ -25,6 +25,40 @@ pieterg
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+make_oe_image-2.0
+file
+
+
+
+
+2010-12-09T04:16:00.246030Z
+94f47e7ac8fd83d7380f14dd00855265
+2010-12-04T15:45:35.898632Z
+183
+pieterg
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2760
 
 clean_oe_dirs.pl
 file
@@ -93,6 +127,40 @@ has-props
 
 
 4342
+
+Makefile-2.0
+file
+
+
+
+
+2010-12-09T04:16:00.250030Z
+0a260853ba82f1523398a1a33fc0b906
+2010-12-04T15:37:50.737663Z
+182
+pieterg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3661
 
 Makefile
 file

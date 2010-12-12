@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/libtuxtxt
+V 66
+/svnroot/openpli/!svn/ver/178/trunk/cdk/apps/tuxbox/libs/libtuxtxt
 END
 tuxtxt_def.h
 K 25
@@ -30,6 +30,6 @@ END
 tuxtxt_common.h
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/libs/libtuxtxt/tuxtxt_common.h
+V 82
+/svnroot/openpli/!svn/ver/178/trunk/cdk/apps/tuxbox/libs/libtuxtxt/tuxtxt_common.h
 END

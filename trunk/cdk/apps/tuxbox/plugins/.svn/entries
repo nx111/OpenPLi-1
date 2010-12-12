@@ -1,14 +1,14 @@
 10
 
 dir
-159
+184
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2010-07-19T19:15:37.157718Z
-132
+2010-11-30T18:02:11.331795Z
+180
 daf2000
 
 
@@ -35,13 +35,10 @@ dir
 debian
 dir
 
-tuxmail
-dir
-
 include
 dir
 
-dvbsub
+tuxmail
 dir
 
 AUTHORS
@@ -78,6 +75,12 @@ plindeman
 
 0
 
+dvbsub
+dir
+
+pluginx
+dir
+
 progtest.m4
 file
 
@@ -111,9 +114,6 @@ plindeman
 
 
 2972
-
-pluginx
-dir
 
 ChangeLog
 file
@@ -189,10 +189,10 @@ plindeman
 fx2
 dir
 
-tuxcal
+enigma
 dir
 
-enigma
+tuxcal
 dir
 
 configure.ac

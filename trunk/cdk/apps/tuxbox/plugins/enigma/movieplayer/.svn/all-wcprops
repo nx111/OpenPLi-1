@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svnroot/openpli/!svn/ver/132/trunk/cdk/apps/tuxbox/plugins/enigma/movieplayer
+/svnroot/openpli/!svn/ver/180/trunk/cdk/apps/tuxbox/plugins/enigma/movieplayer
 END
 movieplayer.h
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svnroot/openpli/!svn/ver/132/trunk/cdk/apps/tuxbox/plugins/enigma/movieplayer/movieplayer.h
+/svnroot/openpli/!svn/ver/167/trunk/cdk/apps/tuxbox/plugins/enigma/movieplayer/movieplayer.h
 END
 Makefile.am
 K 25
@@ -25,5 +25,5 @@ movieplayer.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/svnroot/openpli/!svn/ver/132/trunk/cdk/apps/tuxbox/plugins/enigma/movieplayer/movieplayer.cpp
+/svnroot/openpli/!svn/ver/180/trunk/cdk/apps/tuxbox/plugins/enigma/movieplayer/movieplayer.cpp
 END

@@ -17,6 +17,11 @@ void eConfig::init_eConfig()
 	if (!instance)
 		instance=this;
 	DIR *configdir;
+	struct stat stbuf;
+	eConfigFileTime = 0;
+	if(stat(CONFIGDIR "/enigma/config", &stbuf) >= 0)
+		eConfigFileTime=stbuf.st_mtime;
+
 	FILE *f = fopen(CONFIGDIR "/enigma/config", "r");
 	if (f)
 	{
@@ -136,30 +141,35 @@ int eConfig::getKey(const char *key, eString &string)
 int eConfig::setKey(const char *key, const int &i)
 {
 	keys_int[key] = i;
+	keys_modified[key]='i';
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const unsigned int &ui)
 {
 	keys_uint[key] = ui;
+	keys_modified[key]='u';
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const double &d)
 {
 	keys_double[key] = d;
+	keys_modified[key]='d';
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const char *s)
 {
 	keys_string[key] = s;
+	keys_modified[key]='s';
 	return 0;
 }
 
 int eConfig::setKey(const char *key, const eString &string)
 {
 	keys_string[key] = string;
+	keys_modified[key]='s';
 	return 0;
 }
 
@@ -168,17 +178,28 @@ void eConfig::delKey(const char *key)
 	std::map<eString, int> del_keys;
 	
 	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end(); ++i)		
-		if(strncmp(i->first.c_str(), key,  strlen(key))==0)
+		if(strncmp(i->first.c_str(), key,  strlen(key))==0){
 			del_keys[i->first.c_str()] = 1;
+			keys_modified[key]='i';
+		}
+
 	for (std::map<eString, unsigned int>::iterator i(keys_uint.begin()); i != keys_uint.end(); ++i)
-		if(strncmp(i->first.c_str(), key,  strlen(key))==0)
+		if(strncmp(i->first.c_str(), key,  strlen(key))==0){
 			del_keys[i->first.c_str()] = 1;
+			keys_modified[key]='u';
+		}
+
 	for (std::map<eString, double>::iterator i(keys_double.begin()); i != keys_double.end(); ++i)
-		if(strncmp(i->first.c_str(), key,  strlen(key))==0)
+		if(strncmp(i->first.c_str(), key,  strlen(key))==0){
 			del_keys[i->first.c_str()] = 1;
+			keys_modified[key]='d';
+		}
+
 	for (std::map<eString, eString>::iterator i(keys_string.begin()); i != keys_string.end(); ++i)
-		if(strncmp(i->first.c_str(), key,  strlen(key))==0)
+		if(strncmp(i->first.c_str(), key,  strlen(key))==0){
 			del_keys[i->first.c_str()] = 1;
+			keys_modified[key]='s';
+		}
 	
 	for (std::map<eString, int>::iterator i(del_keys.begin()); i != del_keys.end(); ++i)
 	{
@@ -191,32 +212,102 @@ void eConfig::delKey(const char *key)
 
 void eConfig::flush()
 {
-	FILE *f = fopen(CONFIGDIR "/enigma/config.tmp", "w");
+	FILE *f ;
+	struct stat stbuf;
+	if(stat(CONFIGDIR "/enigma/config", &stbuf)<0)return;
+	
+//	std::map<eString, char>::iterator it=keys_modified.begin();
+//	for(;it != keys_modified.end(); it++){
+//		eDebug("keys_modified[%s]",it->first.c_str());
+//	}
+
+	if(eConfigFileTime != stbuf.st_mtime &&
+	    (f=fopen(CONFIGDIR "/enigma/config", "r")) )
+	{
+		char buffer[1024];
+		while (1)
+		{
+			if (!fgets(buffer, 1024, f))
+				break;
+			if (strlen(buffer) < 4)
+				break;
+			buffer[strlen(buffer)-1]=0;
+			char *key = buffer + 2;
+			char *opt = strchr(key, '=');
+			if (!opt)
+				continue;
+			*opt++ = 0;
+
+			std::map<eString, char>::iterator ikey=keys_modified.find(key);
+			//if the key is changed,don't reload it
+			if(ikey != keys_modified.end() && ikey->second == buffer[0])
+				continue;	
+				
+//			eDebug("reload econfig key: %s",buffer); 
+
+			switch(*buffer)
+			{
+			case 's': keys_string[key] = opt; break;
+			case 'u': keys_uint[key] = strtoul(opt, 0, 0x10); break;
+			case 'd':
+			{
+				char *endptr=0;
+				keys_double[key] = strtod(opt, &endptr);
+				if ( endptr && *endptr )
+				{
+					if ( *endptr == ',' )
+						*endptr = '.';
+					else if (*endptr == '.' )
+						*endptr = ',';
+					endptr=0;
+					keys_double[key] = strtod(opt, &endptr);
+					if ( endptr && *endptr )
+						eDebug("failed to parse %s %s", key, opt);
+				}
+				break;
+			}
+			case 'i':
+			{
+				if ( sscanf(opt, "%x", &keys_int[key] ) != 1 )
+				{
+					if (sscanf(opt, "%x", &keys_int[key] ) != 1 )
+						eDebug("couldn't parse %s", opt);
+				}
+				break;
+			}              
+			}
+		}
+		fclose(f);
+	}
+//	keys_modified.clear();
+
+	rename(CONFIGDIR "/enigma/config",CONFIGDIR "/enigma/config.lastgood");
+	f = fopen(CONFIGDIR "/enigma/config", "w");
 	if (!f)
 	{
 		eWarning("couldn't write config!");
 		return;
 	}
 	errno=0;
-	int writed=0;
-	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end() && writed>=0; ++i)
-		writed=fprintf(f, "i:%s=%08x\n", i->first.c_str(), i->second);
-	for (std::map<eString, unsigned int>::iterator i(keys_uint.begin()); i != keys_uint.end() && writed>=0; ++i)
-		writed=fprintf(f, "u:%s=%08x\n", i->first.c_str(), i->second);
-	for (std::map<eString, double>::iterator i(keys_double.begin()); i != keys_double.end() && writed>=0; ++i)
-		writed=fprintf(f, "d:%s=%lf\n", i->first.c_str(), i->second);
-	for (std::map<eString, eString>::iterator i(keys_string.begin()); i != keys_string.end() && writed>=0; ++i)
-		writed=fprintf(f, "s:%s=%s\n", i->first.c_str(), i->second.c_str());
+	for (std::map<eString, int>::iterator i(keys_int.begin()); i != keys_int.end(); ++i)
+		fprintf(f, "i:%s=%08x\n", i->first.c_str(), i->second);
+	for (std::map<eString, unsigned int>::iterator i(keys_uint.begin()); i != keys_uint.end(); ++i)
+		fprintf(f, "u:%s=%08x\n", i->first.c_str(), i->second);
+	for (std::map<eString, double>::iterator i(keys_double.begin()); i != keys_double.end(); ++i)
+		fprintf(f, "d:%s=%lf\n", i->first.c_str(), i->second);
+	for (std::map<eString, eString>::iterator i(keys_string.begin()); i != keys_string.end(); ++i)
+		fprintf(f, "s:%s=%s\n", i->first.c_str(), i->second.c_str());
 
 	fclose(f);
 
-	if(errno || writed<0){
-		remove(CONFIGDIR "/enigma/config");
+	if(errno){
+		eDebug("eConfig::flush error(%d)!",errno);
+		rename(CONFIGDIR "/enigma/config.lastgood",CONFIGDIR "/enigma/config");
 		return;
 	}
-	remove(CONFIGDIR "/enigma/config.bak");
-	rename(CONFIGDIR "/enigma/config",CONFIGDIR "/enigma/config.bak");
-	rename(CONFIGDIR "/enigma/config.tmp",CONFIGDIR "/enigma/config");
+	if(stat(CONFIGDIR "/enigma/config", &stbuf) >= 0)
+		eConfigFileTime=stbuf.st_mtime;
+	keys_modified.clear();
 }
 
 eSimpleConfigFile::eSimpleConfigFile(const char *filename)

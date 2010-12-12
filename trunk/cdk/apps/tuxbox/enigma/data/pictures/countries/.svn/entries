@@ -1,14 +1,14 @@
 10
 
 dir
-159
+184
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2010-01-11T16:59:16.629113Z
-65
+2010-10-25T20:18:59.128369Z
+170
 daf2000
 
 
@@ -502,40 +502,6 @@ has-props
 
 982
 
-no.png
-file
-
-
-
-
-2009-12-09T08:20:39.312019Z
-6bcc80eff9973175f1e93d24123174bb
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1497
-
 hu.png
 file
 
@@ -570,14 +536,14 @@ has-props
 
 861
 
-fy.png
+no.png
 file
 
 
 
 
 2009-12-09T08:20:39.312019Z
-163c9d353ed713569ca58285151511b5
+6bcc80eff9973175f1e93d24123174bb
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -602,7 +568,41 @@ has-props
 
 
 
-2685
+1497
+
+fy.png
+file
+
+
+
+
+2010-12-09T04:12:57.182030Z
+14abc791b0c4d1ff7f6396b9a312235c
+2010-10-25T20:09:23.529692Z
+169
+daf2000
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1284
 
 lt.png
 file
@@ -706,17 +706,17 @@ has-props
 
 2206
 
-pt.png
+lv.png
 file
 
 
 
 
-2009-12-09T08:20:39.336027Z
-2f9036f7c45309fabdc2c3ce01d40aca
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-12-09T04:12:57.182030Z
+b515ee2e2034f24e8dbbae1d83cb5d55
+2010-10-25T20:18:59.128369Z
+170
+daf2000
 has-props
 
 
@@ -738,7 +738,7 @@ has-props
 
 
 
-1561
+430
 
 vn.png
 file
@@ -774,14 +774,14 @@ has-props
 
 1224
 
-ae.png
+pt.png
 file
 
 
 
 
 2009-12-09T08:20:39.336027Z
-71dab8c85d48b2e584c0c08919cbdd81
+2f9036f7c45309fabdc2c3ce01d40aca
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -806,7 +806,7 @@ has-props
 
 
 
-225
+1561
 
 tr.png
 file
@@ -842,6 +842,40 @@ has-props
 
 1502
 
+ae.png
+file
+
+
+
+
+2010-12-09T04:12:57.182030Z
+d138a1b1511bd3e6a2888b986a4efb62
+2010-10-25T20:09:23.529692Z
+169
+daf2000
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+403
+
 ru.png
 file
 
@@ -875,74 +909,6 @@ has-props
 
 
 976
-
-ee.png
-file
-
-
-
-
-2009-12-09T08:20:39.340018Z
-a5e106523ca36e0c8abe5d68cbdbe3b2
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1197
-
-zh_gb.png
-file
-
-
-
-
-2009-12-09T08:20:39.340018Z
-e2ad9eeefd2508279a60765b783dea83
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2509
 
 zh_py.png
 file
@@ -978,6 +944,74 @@ has-props
 
 2689
 
+zh_gb.png
+file
+
+
+
+
+2009-12-09T08:20:39.340018Z
+e2ad9eeefd2508279a60765b783dea83
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2509
+
+ee.png
+file
+
+
+
+
+2009-12-09T08:20:39.340018Z
+a5e106523ca36e0c8abe5d68cbdbe3b2
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1197
+
 en.png
 file
 
@@ -1012,40 +1046,6 @@ has-props
 
 2108
 
-catalan.png
-file
-
-
-
-
-2009-12-09T08:20:39.344020Z
-627c3f54327a3a02795f996538c8126d
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1184
-
 eo.png
 file
 
@@ -1079,6 +1079,40 @@ has-props
 
 
 972
+
+catalan.png
+file
+
+
+
+
+2009-12-09T08:20:39.344020Z
+627c3f54327a3a02795f996538c8126d
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1184
 
 in.png
 file
@@ -1732,10 +1766,10 @@ file
 
 
 
-2010-01-12T13:53:08.156511Z
-9e77366d2506a050b6f0109bc1b5e1d3
-2010-01-11T16:59:16.629113Z
-65
+2010-12-09T04:12:57.182030Z
+872028d1cf2a5749570918876b4247a7
+2010-10-25T20:09:23.529692Z
+169
 daf2000
 
 
@@ -1758,7 +1792,7 @@ daf2000
 
 
 
-293
+303
 
 us.png
 file
@@ -1834,10 +1868,10 @@ file
 
 
 
-2010-01-12T13:53:08.156511Z
-68e0ad39608c0cf5b11f154546d8da38
-2010-01-11T16:59:16.629113Z
-65
+2010-12-09T04:12:57.182030Z
+29c88825808bba60e7e17b4e662842bd
+2010-10-25T20:18:59.128369Z
+170
 daf2000
 has-props
 
@@ -1860,5 +1894,5 @@ has-props
 
 
 
-153
+459
 

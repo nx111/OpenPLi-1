@@ -214,6 +214,7 @@ void eZap::init_eZap(int argc, char **argv)
 
 
 	desktop_fb=new eWidget();
+	desktop_fb->makeRoot();
 	desktop_fb->setName("desktop_fb");
 	desktop_fb->move(ePoint(0, 0));
 
@@ -221,7 +222,6 @@ void eZap::init_eZap(int argc, char **argv)
 	eConfig::getInstance()->getKey("/elitedvb/video/tvsystem", v_tvsystem );
 	desktop_fb->resize(eSize(720, (v_tvsystem==2) ? 480 : 576));
 	desktop_fb->setTarget(gFBDC::getInstance());
-	desktop_fb->makeRoot();
 	desktop_fb->setBackgroundColor(gColor(0));
 	desktop_fb->show();
 

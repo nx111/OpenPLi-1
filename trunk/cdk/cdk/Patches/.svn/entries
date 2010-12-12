@@ -1,7 +1,7 @@
 10
 
 dir
-159
+184
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/Patches
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -94,14 +94,14 @@ plindeman
 
 8003
 
-ltrace.diff
+libfreetype.diff
 file
 
 
 
 
 2009-12-09T08:19:59.704024Z
-3ed7759507c9db5e6c3887e8191fe5a9
+687ac95345a635c2b5065182ac09a7e0
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -126,7 +126,7 @@ plindeman
 
 
 
-1424
+511
 
 libpcap.diff
 file
@@ -162,14 +162,14 @@ plindeman
 
 307
 
-libfreetype.diff
+ltrace.diff
 file
 
 
 
 
 2009-12-09T08:19:59.704024Z
-687ac95345a635c2b5065182ac09a7e0
+3ed7759507c9db5e6c3887e8191fe5a9
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -194,7 +194,7 @@ plindeman
 
 
 
-511
+1424
 
 linux-cifs145.diff
 file
@@ -332,40 +332,6 @@ plindeman
 
 881
 
-kaffeh.diff
-file
-
-
-
-
-2009-12-09T08:19:59.708017Z
-1224ce2c03b25107673caade391a0544
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-486
-
 sqlite3.diff
 file
 
@@ -399,6 +365,40 @@ plindeman
 
 
 2528
+
+kaffeh.diff
+file
+
+
+
+
+2009-12-09T08:19:59.708017Z
+1224ce2c03b25107673caade391a0544
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+486
 
 jpeg.diff
 file
@@ -1148,40 +1148,6 @@ plindeman
 
 288956
 
-bild.dm56x0
-file
-
-
-
-
-2010-10-03T07:29:57.118983Z
-0a3303ce52d278907ea0190c082238b2
-2010-07-12T16:28:18.065432Z
-127
-daf2000
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-59877
-
 samba_ppc.diff
 file
 
@@ -1215,6 +1181,40 @@ plindeman
 
 
 3822
+
+bild.dm56x0
+file
+
+
+
+
+2010-10-03T07:29:57.118983Z
+0a3303ce52d278907ea0190c082238b2
+2010-07-12T16:28:18.065432Z
+127
+daf2000
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+59877
 
 netkit-telnet.diff
 file
@@ -1284,48 +1284,14 @@ plindeman
 
 4169
 
-libffi.diff
-file
-
-
-
-
-2009-12-09T08:19:59.752021Z
-5629d9fb626958aba9e708db93555ff3
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7686
-
-glibc-makefile-printf.diff
+xmlparse.diff
 file
 
 
 
 
 2009-12-09T08:19:59.748025Z
-5edda2f4a9117b9377246cb150bc990a
+09218b14a976f8248aaf09affc0b9469
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1350,41 +1316,7 @@ plindeman
 
 
 
-1341
-
-busybox.diff
-file
-
-
-
-
-2009-12-09T08:19:59.748025Z
-cfeb046da87afc3f38e85baefcf9c1d0
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19458
+6976
 
 nano.diff
 file
@@ -1420,14 +1352,14 @@ plindeman
 
 1412
 
-xmlparse.diff
+busybox.diff
 file
 
 
 
 
 2009-12-09T08:19:59.748025Z
-09218b14a976f8248aaf09affc0b9469
+cfeb046da87afc3f38e85baefcf9c1d0
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1452,7 +1384,75 @@ plindeman
 
 
 
-6976
+19458
+
+glibc-makefile-printf.diff
+file
+
+
+
+
+2009-12-09T08:19:59.748025Z
+5edda2f4a9117b9377246cb150bc990a
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1341
+
+libffi.diff
+file
+
+
+
+
+2009-12-09T08:19:59.752021Z
+5629d9fb626958aba9e708db93555ff3
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7686
 
 libungif.diff
 file
@@ -1488,18 +1488,17 @@ plindeman
 
 1445
 
-head.ko.old driver dm500
+sqlite.diff
 file
 
 
 
 
-2009-12-09T08:19:59.756020Z
-cae28f701855129c5ba6609ae38f0fc2
+2009-12-09T08:19:59.752021Z
+f858285599b92c47da1107f584a3f25b
 2009-08-14T21:33:06.552841Z
 2
 plindeman
-has-props
 
 
 
@@ -1520,7 +1519,8 @@ has-props
 
 
 
-275112
+
+4029
 
 autofs.diff
 file
@@ -1556,17 +1556,18 @@ plindeman
 
 3397
 
-sqlite.diff
+head.ko.old driver dm500
 file
 
 
 
 
-2009-12-09T08:19:59.752021Z
-f858285599b92c47da1107f584a3f25b
+2009-12-09T08:19:59.756020Z
+cae28f701855129c5ba6609ae38f0fc2
 2009-08-14T21:33:06.552841Z
 2
 plindeman
+has-props
 
 
 
@@ -1587,8 +1588,7 @@ plindeman
 
 
 
-
-4029
+275112
 
 gdb-6.3-5.diff
 file
@@ -1930,14 +1930,14 @@ plindeman
 
 1085
 
-linux-enable-autofs.diff
+sqlite1.diff
 file
 
 
 
 
 2009-12-09T08:19:59.764020Z
-cb57a8cf13ab2f9720ab2c1b1d897104
+ec285784e3c51292754af93ce6b6a3f7
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1962,7 +1962,7 @@ plindeman
 
 
 
-1744
+2493
 
 reiserfsprogs_add_credits.diff
 file
@@ -1998,14 +1998,14 @@ plindeman
 
 5116
 
-sqlite1.diff
+linux-enable-autofs.diff
 file
 
 
 
 
 2009-12-09T08:19:59.764020Z
-ec285784e3c51292754af93ce6b6a3f7
+cb57a8cf13ab2f9720ab2c1b1d897104
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -2030,7 +2030,7 @@ plindeman
 
 
 
-2493
+1744
 
 zh.ttf.old
 file
@@ -2066,40 +2066,6 @@ has-props
 
 497860
 
-bild.dm500
-file
-
-
-
-
-2010-10-03T07:29:57.118983Z
-0a3303ce52d278907ea0190c082238b2
-2010-07-12T16:28:18.065432Z
-127
-daf2000
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-59877
-
 scummvm.diff
 file
 
@@ -2133,6 +2099,40 @@ plindeman
 
 
 4058
+
+bild.dm500
+file
+
+
+
+
+2010-10-03T07:29:57.118983Z
+0a3303ce52d278907ea0190c082238b2
+2010-07-12T16:28:18.065432Z
+127
+daf2000
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+59877
 
 busybox.config
 file

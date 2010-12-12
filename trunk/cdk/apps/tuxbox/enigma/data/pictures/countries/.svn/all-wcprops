@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/svnroot/openpli/!svn/ver/65/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries
+V 82
+/svnroot/openpli/!svn/ver/170/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries
 END
 zh_bj.png
 K 25
@@ -87,23 +87,23 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/th.png
 END
-no.png
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/no.png
-END
 hu.png
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/hu.png
 END
-fy.png
+no.png
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/fy.png
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/no.png
+END
+fy.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/169/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/fy.png
 END
 lt.png
 K 25
@@ -123,11 +123,11 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/zh.png
 END
-vn.png
+lv.png
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/vn.png
+V 89
+/svnroot/openpli/!svn/ver/170/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/lv.png
 END
 pt.png
 K 25
@@ -135,17 +135,23 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/pt.png
 END
+vn.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/vn.png
+END
+ae.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/openpli/!svn/ver/169/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/ae.png
+END
 tr.png
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/tr.png
-END
-ae.png
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/ae.png
 END
 ru.png
 K 25
@@ -153,11 +159,11 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/ru.png
 END
-zh_py.png
+ee.png
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/zh_py.png
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/ee.png
 END
 zh_gb.png
 K 25
@@ -165,11 +171,11 @@ svn:wc:ra_dav:version-url
 V 90
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/zh_gb.png
 END
-ee.png
+zh_py.png
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/ee.png
+V 90
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/zh_py.png
 END
 en.png
 K 25
@@ -177,17 +183,17 @@ svn:wc:ra_dav:version-url
 V 87
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/en.png
 END
-eo.png
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/eo.png
-END
 catalan.png
 K 25
 svn:wc:ra_dav:version-url
 V 92
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/catalan.png
+END
+eo.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/eo.png
 END
 in.png
 K 25
@@ -306,8 +312,8 @@ END
 Makefile.am
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/svnroot/openpli/!svn/ver/65/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/Makefile.am
+V 94
+/svnroot/openpli/!svn/ver/169/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/Makefile.am
 END
 us.png
 K 25
@@ -324,6 +330,6 @@ END
 bg.png
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svnroot/openpli/!svn/ver/65/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/bg.png
+V 89
+/svnroot/openpli/!svn/ver/170/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries/bg.png
 END

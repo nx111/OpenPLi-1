@@ -1,7 +1,7 @@
 10
 
 dir
-159
+184
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/darkpli_8
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -230,40 +230,6 @@ has-props
 
 342
 
-window-top.png
-file
-
-
-
-
-2009-12-09T08:20:41.072016Z
-9a7c05c9c6f13157586a70dddc01a58c
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-289
-
 window-bottomright.png
 file
 
@@ -297,6 +263,40 @@ has-props
 
 
 304
+
+window-top.png
+file
+
+
+
+
+2009-12-09T08:20:41.072016Z
+9a7c05c9c6f13157586a70dddc01a58c
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+289
 
 window-bottom.png
 file
@@ -332,14 +332,14 @@ has-props
 
 291
 
-window-topleft.png
+back-main.png
 file
 
 
 
 
 2009-12-09T08:20:41.052019Z
-896418f9fb78a0140190a9831e31e2a7
+5a081c46b6d32919efe6e8339b551272
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -364,7 +364,7 @@ has-props
 
 
 
-335
+2028
 
 window-right.png
 file
@@ -400,14 +400,14 @@ has-props
 
 273
 
-back-main.png
+window-topleft.png
 file
 
 
 
 
 2009-12-09T08:20:41.052019Z
-5a081c46b6d32919efe6e8339b551272
+896418f9fb78a0140190a9831e31e2a7
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -432,7 +432,7 @@ has-props
 
 
 
-2028
+335
 
 window-bottomleft.png
 file

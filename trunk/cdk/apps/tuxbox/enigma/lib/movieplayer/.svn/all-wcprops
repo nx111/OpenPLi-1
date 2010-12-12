@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svnroot/openpli/!svn/ver/148/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer
+/svnroot/openpli/!svn/ver/163/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer
 END
 utils.cpp
 K 25
@@ -25,5 +25,5 @@ movieplayer.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/svnroot/openpli/!svn/ver/148/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer/movieplayer.cpp
+/svnroot/openpli/!svn/ver/163/trunk/cdk/apps/tuxbox/enigma/lib/movieplayer/movieplayer.cpp
 END
