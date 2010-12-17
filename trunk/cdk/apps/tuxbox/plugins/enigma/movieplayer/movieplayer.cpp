@@ -578,7 +578,7 @@ void eSCGui::playerStart(int val)
 		changeSout();  // change some sout parameters
 		setText(path); // refresh title
 		eString filePath = eString().sprintf("%s%s","file:///", playList[val].Fullname.c_str());  // for support autosubtitles by VLC
-		eMoviePlayer::getInstance()->control("start2", filePath.c_str());
+		eMoviePlayer::getInstance()->control("start2", UrlEncode(filePath).c_str());
 		timer->start(2000, true);
 	}
 }
@@ -1108,13 +1108,15 @@ eString eSCGui::UrlEncode(const eString & src)
             {
                 dst += "%20";
             }
-            else
+            else if (ch > 0x7F)
             {
                 unsigned char c = static_cast<unsigned char>(src[i]);
                 dst += "%";
                 dst += hex[c / 16];
                 dst += hex[c % 16];
             }
+	    else
+		dst +=ch;
     }
     return dst;
 }
