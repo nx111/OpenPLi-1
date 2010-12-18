@@ -1,7 +1,7 @@
 10
 
 dir
-184
+193
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/driver
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -27,9 +27,6 @@ plindeman
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
 avia
-dir
-
-event
 dir
 
 Config.make
@@ -66,6 +63,9 @@ plindeman
 
 1421
 
+event
+dir
+
 include
 dir
 
@@ -87,10 +87,10 @@ dir
 lcd
 dir
 
-fp
+ost
 dir
 
-ost
+fp
 dir
 
 Rules.make

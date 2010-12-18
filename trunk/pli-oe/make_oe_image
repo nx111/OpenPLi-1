@@ -7,9 +7,9 @@ if [ "${OE_BUILD}x" = "x" -a "${MACHINE}x" = "x" ]; then
 	exit
 fi
 
-# Default: build image from /dreambox/oe/build if these env. variables are not set
+# Default: build image from PWD
 if [ "${OE_ROOT}x" = "x" ]; then
-	OE_ROOT=/dreambox/oe
+	OE_ROOT=${PWD}
 fi
 
 if [ "${OE_BUILD}x" = "x" ]; then
@@ -17,13 +17,13 @@ if [ "${OE_BUILD}x" = "x" ]; then
 	OE_BUILD=${OE_ROOT}/build-${MACHINE}
 fi
 
-if [ "${IMAGEDIR}x" = "x" ]; then
-	IMAGEDIR=${OE_ROOT}
-fi
-
 if [ "${MACHINE}x" = "x" ]; then
 	#when MACHINE is not defined, OE_BUILD must be defined (checked above)
 	MACHINE=`grep "^MACHINE = " $OE_BUILD/conf/local.conf | sed "s/MACHINE = \"//" | sed "s/\"$//"`
+fi
+
+if [ "${IMAGEDIR}x" = "x" ]; then
+	IMAGEDIR=${MACHINE}
 fi
 
 if [ "${DISTROVERSION}x" = "x" ]; then
@@ -106,6 +106,7 @@ rsync $OE_IMAGES/$FILENAME*.zip rsync://upload.pli-images.org:8730::/builds/$IMA
 
 rm -Rf $OE_BUILD/tmp/deploy/3rd-party
 mkdir $OE_BUILD/tmp/deploy/3rd-party
+mkdir $OE_BUILD/tmp/deploy/3rd-party/old
 rsync rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/3rd-party/upload/*.ipk $OE_BUILD/tmp/deploy/3rd-party/
 rsync rsync://upload.pli-images.org:8730::/feeds/$DISTROVERSION/3rd-party/upload/$MACHINE/*.ipk $OE_BUILD/tmp/deploy/3rd-party/
 cd $OE_ROOT

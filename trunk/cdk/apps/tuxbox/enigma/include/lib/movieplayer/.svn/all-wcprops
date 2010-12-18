@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svnroot/openpli/!svn/ver/148/trunk/cdk/apps/tuxbox/enigma/include/lib/movieplayer
+/svnroot/openpli/!svn/ver/192/trunk/cdk/apps/tuxbox/enigma/include/lib/movieplayer
 END
 movieplayer.h
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/svnroot/openpli/!svn/ver/148/trunk/cdk/apps/tuxbox/enigma/include/lib/movieplayer/movieplayer.h
+/svnroot/openpli/!svn/ver/192/trunk/cdk/apps/tuxbox/enigma/include/lib/movieplayer/movieplayer.h
 END
 mpconfig.h
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/include/lib/movieplayer/mpconfig.h
+V 93
+/svnroot/openpli/!svn/ver/192/trunk/cdk/apps/tuxbox/enigma/include/lib/movieplayer/mpconfig.h
 END

@@ -1,7 +1,7 @@
 10
 
 dir
-184
+193
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/fx2/solitair
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -60,40 +60,6 @@ plindeman
 
 1064
 
-backbuffer.h
-file
-
-
-
-
-2009-12-09T08:20:57.636023Z
-17e31bf44d261fbfee2c440cf5d36406
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-444
-
 Block.h
 file
 
@@ -127,6 +93,40 @@ plindeman
 
 
 447
+
+backbuffer.h
+file
+
+
+
+
+2009-12-09T08:20:57.636023Z
+17e31bf44d261fbfee2c440cf5d36406
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+444
 
 Wastepile.h
 file
@@ -162,40 +162,6 @@ plindeman
 
 465
 
-solitair.cfg
-file
-
-
-
-
-2009-12-09T08:20:57.636023Z
-079a98f3afc670a8c279ff7d384fb979
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-107
-
 pnm_res.cpp
 file
 
@@ -230,14 +196,14 @@ plindeman
 
 362872
 
-colors.h
+solitair.cfg
 file
 
 
 
 
-2009-12-09T08:20:57.640021Z
-b0eefb9ddf377763b9091936941fa19d
+2009-12-09T08:20:57.636023Z
+079a98f3afc670a8c279ff7d384fb979
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -262,7 +228,7 @@ plindeman
 
 
 
-154
+107
 
 Foundation.cpp
 file
@@ -298,14 +264,14 @@ plindeman
 
 1483
 
-Buffer.cpp
+colors.h
 file
 
 
 
 
 2009-12-09T08:20:57.640021Z
-761af3ffc9a410ee9e6d198a99508865
+b0eefb9ddf377763b9091936941fa19d
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -330,7 +296,7 @@ plindeman
 
 
 
-584
+154
 
 Card.cpp
 file
@@ -365,6 +331,40 @@ plindeman
 
 
 6896
+
+Buffer.cpp
+file
+
+
+
+
+2009-12-09T08:20:57.640021Z
+761af3ffc9a410ee9e6d198a99508865
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+584
 
 Hand.cpp
 file
@@ -468,40 +468,6 @@ plindeman
 
 2799
 
-Buffer.h
-file
-
-
-
-
-2009-12-09T08:20:57.644018Z
-a9206d68a3a442d60b6b1e32f12df369
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-425
-
 Card.h
 file
 
@@ -535,6 +501,40 @@ plindeman
 
 
 1207
+
+Buffer.h
+file
+
+
+
+
+2009-12-09T08:20:57.644018Z
+a9206d68a3a442d60b6b1e32f12df369
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+425
 
 Hand.h
 file

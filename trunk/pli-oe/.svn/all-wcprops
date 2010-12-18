@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/svnroot/openpli/!svn/ver/183/trunk/pli-oe
+/svnroot/openpli/!svn/ver/191/trunk/pli-oe
 END
 make_oe_image-2.0
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svnroot/openpli/!svn/ver/183/trunk/pli-oe/make_oe_image-2.0
+/svnroot/openpli/!svn/ver/188/trunk/pli-oe/make_oe_image-2.0
 END
 clean_oe_dirs.pl
 K 25
@@ -19,7 +19,7 @@ make_oe_image
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svnroot/openpli/!svn/ver/153/trunk/pli-oe/make_oe_image
+/svnroot/openpli/!svn/ver/191/trunk/pli-oe/make_oe_image
 END
 Makefile-2.0
 K 25
@@ -36,6 +36,6 @@ END
 recreate_feed
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svnroot/openpli/!svn/ver/40/trunk/pli-oe/recreate_feed
+V 56
+/svnroot/openpli/!svn/ver/189/trunk/pli-oe/recreate_feed
 END
