@@ -762,6 +762,7 @@ eString GB18030ToUTF8(const char *szIn, int len,int *pconvertedLen)
 		else
 			i++;
 	}
+	szOut[t]='\0';
 
 	if(pconvertedLen)*pconvertedLen=i;
 	return eString(szOut,t);

@@ -685,6 +685,9 @@ void RSSParser::parse(eString file)
 			ubuf=convertDVBUTF8((const unsigned char *)buf,len,encode,0,1,&convertedLen);
 			eDebug("RSS:Read %d bytes,converted %d bytes",len,convertedLen);
 
+			if(!convertedLen && feof(in))
+				break;
+
 			fwrite(ubuf.c_str(),1,ubuf.length(),out);
 			fseek(in,convertedLen-len,SEEK_CUR);
 
