@@ -159,10 +159,13 @@ bool eMPConfig::load()
 			vlc.vlcPass = node->GetAttributeValue("pass");
 			vlc.startDir = node->GetAttributeValue("startdir");
 			vlc.CDDrive  = node->GetAttributeValue("cddrive");
-//eDebug("mpconfig2 IP=%s wPort=%s sPort=%s U=%s Pass=%s Dir=%s Drive=%s",vlc.serverIP.c_str(),vlc.webifPort.c_str(),vlc.streamingPort.c_str(),vlc.vlcUser.c_str(),vlc.vlcPass.c_str(),vlc.startDir.c_str(),vlc.CDDrive.c_str());
+eDebug("mpconfig2 IP=%s wPort=%s sPort=%s U=%s Pass=%s Dir=%s Drive=%s",vlc.serverIP.c_str(),vlc.webifPort.c_str(),vlc.streamingPort.c_str(),vlc.vlcUser.c_str(),vlc.vlcPass.c_str(),vlc.startDir.c_str(),vlc.CDDrive.c_str());
 			vlcServerList.push_back(vlc);
 		}
 	}
+
+	if(!first)	// if no vlcsrv 
+		vlcServerList.push_back(serverConf);
 
 	/*eDebug("\nIP:%s",VLCsend::getInstance()->send_parms.IP.c_str());
 	eDebug("WEBIF-PORT:%s",VLCsend::getInstance()->send_parms.IF_PORT.c_str());
