@@ -353,7 +353,7 @@ int eListBoxBase::setCurrent(const eListBoxEntry *c, bool sendSelected )
 		while (newCurPos == -1 && MaxEntries)  // MaxEntries is already checked above...
 		{
 			if ( bottom != childs.end() )
-				top = bottom;		// nächster Durchlauf
+				top = bottom;		// n鋍hster Durchlauf
 
 			for (i = 0; (i < (MaxEntries*columns) ) && (bottom != childs.end()); ++bottom, ++i)
 			{
@@ -1317,7 +1317,7 @@ int eListBoxEntryText::getEntryHeight()
 	if ( !font.pointSize)
 		font = eSkin::getActive()->queryFont("eListBox.EntryText.normal");
 
-	return calcFontHeight( font ) + 6;
+	return calcFontHeight( font ) + 4;
 }
 
 int eListBoxEntryTextStream::getEntryHeight()
@@ -1325,7 +1325,7 @@ int eListBoxEntryTextStream::getEntryHeight()
 	if ( !font.pointSize)
 		font = eSkin::getActive()->queryFont("eListBox.EntryText.normal");
 
-	return calcFontHeight( font ) + 6;
+	return calcFontHeight( font ) + 4;
 }
 
 int calcFontHeight( const gFont& font)
@@ -1424,8 +1424,8 @@ const eString& eListBoxEntryText::redraw(gPainter *rc, const eRect& rect, gColor
 		para->setFont( font );
 		para->renderString(text);
 		para->realign(align);
-		yOffs = ((rect.height() - para->getBoundBox().height()) / 2 + 0) - para->getBoundBox().top() ;
-//		yOffs=0;
+//		yOffs = ((rect.height() - para->getBoundBox().height()) / 2 + 0) - para->getBoundBox().top() ;
+		yOffs=0;
 	}
 	rc->renderPara(*para, ePoint( lft, rect.top()+yOffs ) );
 
@@ -1660,4 +1660,3 @@ int eListBoxEntryMulti::eventHandler( const eWidgetEvent &e )
 	}
 	return 0;
 }
-

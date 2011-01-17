@@ -279,7 +279,6 @@ void eConfig::flush()
 		}
 		fclose(f);
 	}
-//	keys_modified.clear();
 
 	rename(CONFIGDIR "/enigma/config",CONFIGDIR "/enigma/config.lastgood");
 	f = fopen(CONFIGDIR "/enigma/config", "w");

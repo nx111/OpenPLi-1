@@ -110,7 +110,8 @@ eEPGMemStore::eEPGMemStore()
 	dbDir = getDefaultStorageDir();
 	eConfig::getInstance()->getKey("/enigma/epgMemStoreDir", dbDir);
 	eDebug("[EPGM] Using EPG directory %s", dbDir.c_str());
-	
+
+	flushEPG();
 	load();
 }
 
@@ -531,6 +532,8 @@ void eEPGMemStore::load()
 	}
 	if(EPGFILELIST.begin() == EPGFILELIST.end())
 		EPGFILELIST.push_back(epgfile);
+
+	
 	for(std::list<eString>::iterator ei=EPGFILELIST.begin();ei != EPGFILELIST.end();ei++)
 	if (!stat( ei->c_str(), &epgStat ))
 	{
@@ -563,11 +566,18 @@ void eEPGMemStore::load()
 					while(size--)
 					{
 						uniqueEPGKey key;
-						eventMap evMap;
-						timeMap tmMap;
+
 						int size=0,count=0;
 						fread( &key, sizeof(uniqueEPGKey), 1, f);
 						fread( &size, sizeof(int), 1, f);
+
+						eventCache::iterator ie=eventDB.find(key);
+						if(ie == eventDB.end() ){
+							timeMap tmMap;
+							eventMap evMap;
+							eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
+						}
+						
 						while(size--)
 						{
 							__u16 len=0;
@@ -588,12 +598,12 @@ void eEPGMemStore::load()
 								}
 
 							eventData::CacheSize+=len;
-							evMap[ event->getEventID() ]=event;
-							tmMap[ event->getStartTime() ]=event;
+							eventDB[key].first[ event->getEventID() ]=event;
+							eventDB[key].second[ event->getStartTime() ]=event;
 							++cnt;
 						}
 						totalReaded+=count;
-						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
+//						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
 					}
 					eventData::load(f,srPLI_EPGDAT);
 					total+=cnt;
@@ -608,12 +618,18 @@ void eEPGMemStore::load()
 					fread( &size, sizeof(int), 1, f);
 					while(size--)
 					{
-						uniqueEPGKey key;
-						eventMap evMap;
-						timeMap tmMap;
 						int size=0,count=0;
+						uniqueEPGKey key;
+
 						fread( &key, sizeof(uniqueEPGKey), 1, f);
 						fread( &size, sizeof(int), 1, f);
+
+						eventCache::iterator ie=eventDB.find(key);
+						if(ie == eventDB.end() ){
+							timeMap tmMap;
+							eventMap evMap;
+							eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
+						}
 						while(size--)
 						{
 							__u8 len=0;
@@ -634,12 +650,12 @@ void eEPGMemStore::load()
 								}
 
 							eventData::CacheSize+=len;
-							evMap[ event->getEventID() ]=event;
-							tmMap[ event->getStartTime() ]=event;
+							eventDB[key].first[ event->getEventID() ]=event;
+							eventDB[key].second[ event->getStartTime() ]=event;
 							++cnt;
 						}
 						totalReaded+=count;
-						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
+//						eventDB[key]=std::pair<eventMap,timeMap>(evMap,tmMap);
 					}
 					eventData::load(f,srGEMINI_EPGDAT);
 					total+=cnt;
@@ -661,6 +677,7 @@ void eEPGMemStore::load()
 //	{
 //		eDebug("[EPGM] epg data: problem reading file");
 //	}
+
 
 	if(!total && totalReaded)
 		system("touch /tmp/.EPG_LOAD_NOTHING &");
