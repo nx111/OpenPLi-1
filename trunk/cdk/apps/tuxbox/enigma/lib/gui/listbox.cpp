@@ -127,7 +127,7 @@ eRect eListBoxBase::getEntryRect(int pos)
 			// in case we show partial last lines (which only works in single-column),
 			// we increase MaxEntries by one since we don't want the last line
 			// one the next (invisible) column
-	if ( (columns == 1) && (flags & flagShowPartial) && entries==(MaxEntries+1))
+	if ( (columns == 1) && (flags & flagShowPartial) && entries==(unsigned int)(MaxEntries+1))
 		++lme;
 	if ( deco_selected && have_focus )
 		return eRect( ePoint( deco_selected.borderLeft + ( ( pos / lme) * ( crect_selected.width() / columns ) ) , deco_selected.borderTop + ( pos % lme) * item_height ), eSize( (crect_selected.width() / columns) - (sbar?scrollbar->width()+5:columns>1?5:0), item_height ) );
@@ -1426,7 +1426,7 @@ const eString& eListBoxEntryText::redraw(gPainter *rc, const eRect& rect, gColor
 		para->realign(align);
 //		yOffs = ((rect.height() - para->getBoundBox().height()) / 2 ) - para->getBoundBox().top() ;
 //		yOffs=0;
-		yOffs = (rect.height() - para->getLineHeight()) / 2;
+		yOffs = (rect.height() - getEntryHeight() - 4 ) / 2;
 	}
 	rc->renderPara(*para, ePoint( lft, rect.top()+yOffs ) );
 
