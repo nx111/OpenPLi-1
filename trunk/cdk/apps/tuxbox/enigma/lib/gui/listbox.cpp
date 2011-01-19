@@ -1426,7 +1426,7 @@ const eString& eListBoxEntryText::redraw(gPainter *rc, const eRect& rect, gColor
 		para->realign(align);
 //		yOffs = ((rect.height() - para->getBoundBox().height()) / 2 ) - para->getBoundBox().top() ;
 //		yOffs=0;
-		yOffs = (rect.height() - getEntryHeight() - 4 ) / 2;
+		yOffs = (rect.height() - getEntryHeight() + 4 ) / 2;
 	}
 	rc->renderPara(*para, ePoint( lft, rect.top()+yOffs ) );
 
