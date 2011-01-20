@@ -3270,10 +3270,12 @@ void eZapMain::nextService(int add)
 					do
 					{
 						ret = switchToNum( num, true );
-						if ( ret == -1 )
-							++num;
-						else if ( ret )  // last service in bouquet(s)... wrap around
+						if ( ret )  // last service in bouquet(s)... wrap around
 							num=1;
+						else if ( ret == -1 ){
+							++num;
+							continue;
+						}
 						else
 							ok=true;
 					}
@@ -3332,16 +3334,16 @@ void eZapMain::prevService()
 					int ret=0;
 					do
 					{
-						newNum-=1;
+						--newNum;
 						if ( !newNum ) // end of bouquet
 							newNum=INT_MAX - switchToNum(INT_MAX, true);  // fake call for get last service in last bouquet
 						ret = switchToNum(newNum);
-						if ( ret == -1 )  // parental locked.. try next..
+						if ( ret == -1 || ret)  // error or parental locked.. try next..
 							continue;
-						else if ( !ret )
+						else 
 							ok=true;
 					}
-					while ( ret == -1 );  // parental locked
+					while ( ret );  // parental locked
 				}
 			}
 		}
