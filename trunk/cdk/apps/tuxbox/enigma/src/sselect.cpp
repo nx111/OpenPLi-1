@@ -400,9 +400,9 @@ const eString &eListBoxEntryService::redraw(gPainter *rc, const eRect &rect, gCo
 	{
 		int perc = -1;
 		if (//  !descrPara &&  
-					service.type == eServiceReference::idDVB &&
-					(!(service.flags & eServiceReference::isDirectory)) &&
-					(!service.path.size()) )  // recorded dvb streams
+			service.type == eServiceReference::idDVB &&
+			(!(service.flags & eServiceReference::isDirectory)) &&
+			(!service.path.size()) )  // recorded dvb streams
 		{
 			if (pservice && service.type == eServiceReference::idDVB && !(service.flags & eServiceReference::isDirectory) )
 			{
@@ -430,46 +430,47 @@ const eString &eListBoxEntryService::redraw(gPainter *rc, const eRect &rect, gCo
 								sdescr='('+nexttime+' '+sdescr+')';
 							}
 							else
-								if (e->start_time != -1)
+							if (e->start_time != -1)
+							{
+								time_t endtime = e->start_time + e->duration;
+								time_t now = time(0) + eDVB::getInstance()->time_difference;
+#if no
+								tm *begin = localtime(&e->start_time);
+								sdescr += " - " + getTimeStr(begin, 0) +
+									eString().sprintf(" - %d min", e->duration/60);
+#endif
+								if ((e->start_time <= now) && (now < endtime))
 								{
-									time_t endtime = e->start_time + e->duration;
-									time_t now = time(0) + eDVB::getInstance()->time_difference;
+									time_t left = endtime - now;
+									perc = left * 100 / e->duration;
 #if no
-									tm *begin = localtime(&e->start_time);
-									sdescr += " - " + getTimeStr(begin, 0) +
-										eString().sprintf(" - %d min", e->duration/60);
+									sdescr += eString().sprintf(" - +%d min (%d%%)", left/60, perc);
 #endif
-									if ((e->start_time <= now) && (now < endtime))
-									{
-										time_t left = endtime - now;
-										perc = left * 100 / e->duration;
-#if no
-										sdescr += eString().sprintf(" - +%d min (%d%%)", left/60, perc);
-#endif
-									}
 								}
-								curEventId = e->event_id;
+							}
+							curEventId = e->event_id;
 
-								descrXOffs = newNameXOffs+namePara->getBoundBox().width();
-								if ( service.isLocked() && locked && pinCheck::getInstance()->getParentalEnabled() )
-									descrXOffs += locked->x;
-								if (numPara)
-									descrXOffs += numPara->getBoundBox().height();
-								if (descrPara)
-									descrPara->destroy();
-								if(percentprogress){
-									descrPara = new eTextPara( eRect( 0, 0, rect.width()-descrXOffs, rect.height()));
-									descrPara->setFont( descrFont );
-									eString nsdesc="(";
-									if(perc>=0)nsdesc+=eString().sprintf("%d%%",100-perc);
-									nsdesc+=" "+sdescr+")";
-									descrPara->renderString(nsdesc);
-								}else{
-									descrPara = new eTextPara( eRect( 0, 0, rect.width()-52-descrXOffs,rect.height()));
-									descrPara->setFont( descrFont );
-									descrPara->renderString( sdescr);
-								}
-								descrYOffs = ((rect.height() - descrPara->getBoundBox().height()) / 2 ) - descrPara->getBoundBox().top();
+							descrXOffs = newNameXOffs+namePara->getBoundBox().width();
+							if ( service.isLocked() && locked && pinCheck::getInstance()->getParentalEnabled() )
+								descrXOffs += locked->x;
+							if (numPara)
+								descrXOffs += numPara->getBoundBox().height();
+							if (descrPara)
+								descrPara->destroy();
+							if(percentprogress){
+								descrPara = new eTextPara( eRect( 0, 0, rect.width()-descrXOffs, rect.height()));
+								descrPara->setFont( descrFont );
+								eString nsdesc="(";
+								if(perc>=0)nsdesc+=eString().sprintf("%d%%",100-perc);
+								nsdesc+=" "+sdescr+")";
+								descrPara->renderString(nsdesc);
+							}else{
+								descrPara = new eTextPara( eRect( 0, 0, rect.width()-52-descrXOffs,rect.height()));
+								descrPara->setFont( descrFont );
+								descrPara->renderString( sdescr);
+							}
+//							descrYOffs = ((rect.height() - descrPara->getBoundBox().height()) / 2 ) - descrPara->getBoundBox().top();
+							descrYOffs = (rect.height() - descrFont.pointSize + 4) / 2 ;
 						}
 						delete e;
 					}

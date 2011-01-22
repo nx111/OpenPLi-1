@@ -1330,13 +1330,15 @@ int eListBoxEntryTextStream::getEntryHeight()
 
 int calcFontHeight( const gFont& font)
 {
-	eTextPara *test;
+/*	eTextPara *test;
 	test = new eTextPara( eRect(0,0,100,50) );
 	test->setFont( font );
 	test->renderString("Mjdyl");
 	int i =  test->getBoundBox().height();
 	test->destroy();
 	return i;
+*/
+	return font.pointSize;
 }
 
 const eString& eListBoxEntryText::redraw(gPainter *rc, const eRect& rect, gColor coActiveB, gColor coActiveF, gColor coNormalB, gColor coNormalF, int state)
