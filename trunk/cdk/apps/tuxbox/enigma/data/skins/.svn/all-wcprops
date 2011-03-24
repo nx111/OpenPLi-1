@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svnroot/openpli/!svn/ver/173/trunk/cdk/apps/tuxbox/enigma/data/skins
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins
 END
 blueqt.png
 K 25
@@ -18,8 +18,8 @@ END
 mediapli.esml
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/mediapli.esml
+V 83
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins/mediapli.esml
 END
 neutrino.png
 K 25
@@ -102,8 +102,8 @@ END
 mediapli_8.esml
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/mediapli_8.esml
+V 85
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins/mediapli_8.esml
 END
 stone.png
 K 25
@@ -117,17 +117,17 @@ svn:wc:ra_dav:version-url
 V 81
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/mediapli.info
 END
+pingu.esml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins/pingu.esml
+END
 chk_blue2.png
 K 25
 svn:wc:ra_dav:version-url
 V 81
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/chk_blue2.png
-END
-pingu.esml
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/pingu.esml
 END
 default.esml
 K 25
@@ -135,17 +135,17 @@ svn:wc:ra_dav:version-url
 V 82
 /svnroot/openpli/!svn/ver/173/trunk/cdk/apps/tuxbox/enigma/data/skins/default.esml
 END
-small_snr.info
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/small_snr.info
-END
 small169_snr.info
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/small169_snr.info
+END
+small_snr.info
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/small_snr.info
 END
 blueqt.info
 K 25
@@ -153,23 +153,17 @@ svn:wc:ra_dav:version-url
 V 79
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/blueqt.info
 END
-stone.esml
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/stone.esml
-END
 carbon.png
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/carbon.png
 END
-small.png
+stone.esml
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/small.png
+V 80
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins/stone.esml
 END
 small169.png
 K 25
@@ -177,17 +171,23 @@ svn:wc:ra_dav:version-url
 V 80
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/small169.png
 END
-stone_snr.png
+small.png
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/stone_snr.png
+V 77
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/small.png
 END
 chk_blue2.esml
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/chk_blue2.esml
+END
+stone_snr.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/stone_snr.png
 END
 silver.info
 K 25
@@ -210,8 +210,8 @@ END
 travel_blue.esml
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/travel_blue.esml
+V 86
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins/travel_blue.esml
 END
 mediapli_8.info
 K 25
@@ -246,8 +246,8 @@ END
 darkpli_8.esml
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/enigma/data/skins/darkpli_8.esml
+V 84
+/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/skins/darkpli_8.esml
 END
 small169_snr.png
 K 25

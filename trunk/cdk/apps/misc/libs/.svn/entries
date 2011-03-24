@@ -1,7 +1,7 @@
 10
 
 dir
-193
+202
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/misc/libs
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -131,6 +131,9 @@ plindeman
 libconnection
 dir
 
+libflashimage
+dir
+
 ChangeLog
 file
 
@@ -164,12 +167,6 @@ plindeman
 
 
 0
-
-libflashimage
-dir
-
-libconfigfile
-dir
 
 tuxbox-connection.pc.in
 file
@@ -205,7 +202,7 @@ plindeman
 
 230
 
-libcrypto++
+libconfigfile
 dir
 
 README
@@ -242,6 +239,9 @@ plindeman
 
 0
 
+libcrypto++
+dir
+
 libeventserver
 dir
 
@@ -249,9 +249,6 @@ libmpegtools
 dir
 
 libmd5sum
-dir
-
-libcramfs
 dir
 
 tuxbox-configfile.pc.in
@@ -287,6 +284,9 @@ plindeman
 
 
 212
+
+libcramfs
+dir
 
 configure.ac
 file

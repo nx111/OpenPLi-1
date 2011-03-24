@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/dbepg/scripts
+V 80
+/svnroot/openpli/!svn/ver/202/trunk/cdk/apps/tuxbox/plugins/enigma/dbepg/scripts
 END
 assies_nl.sh
 K 25
@@ -18,6 +18,6 @@ END
 rt_uk.sh
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/svnroot/openpli/!svn/ver/2/trunk/cdk/apps/tuxbox/plugins/enigma/dbepg/scripts/rt_uk.sh
+V 89
+/svnroot/openpli/!svn/ver/202/trunk/cdk/apps/tuxbox/plugins/enigma/dbepg/scripts/rt_uk.sh
 END

@@ -1,7 +1,7 @@
 10
 
 dir
-193
+202
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/pictures/countries
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -502,40 +502,6 @@ has-props
 
 982
 
-no.png
-file
-
-
-
-
-2009-12-09T08:20:39.312019Z
-6bcc80eff9973175f1e93d24123174bb
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1497
-
 hu.png
 file
 
@@ -569,6 +535,40 @@ has-props
 
 
 861
+
+no.png
+file
+
+
+
+
+2009-12-09T08:20:39.312019Z
+6bcc80eff9973175f1e93d24123174bb
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1497
 
 fy.png
 file
@@ -672,40 +672,6 @@ has-props
 
 897
 
-lv.png
-file
-
-
-
-
-2010-12-09T04:12:57.182030Z
-b515ee2e2034f24e8dbbae1d83cb5d55
-2010-10-25T20:18:59.128369Z
-170
-daf2000
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-430
-
 zh.png
 file
 
@@ -740,17 +706,17 @@ has-props
 
 2206
 
-pt.png
+lv.png
 file
 
 
 
 
-2009-12-09T08:20:39.336027Z
-2f9036f7c45309fabdc2c3ce01d40aca
-2009-08-14T21:33:06.552841Z
-2
-plindeman
+2010-12-09T04:12:57.182030Z
+b515ee2e2034f24e8dbbae1d83cb5d55
+2010-10-25T20:18:59.128369Z
+170
+daf2000
 has-props
 
 
@@ -772,7 +738,7 @@ has-props
 
 
 
-1561
+430
 
 vn.png
 file
@@ -808,17 +774,17 @@ has-props
 
 1224
 
-ae.png
+pt.png
 file
 
 
 
 
-2010-12-09T04:12:57.182030Z
-d138a1b1511bd3e6a2888b986a4efb62
-2010-10-25T20:09:23.529692Z
-169
-daf2000
+2009-12-09T08:20:39.336027Z
+2f9036f7c45309fabdc2c3ce01d40aca
+2009-08-14T21:33:06.552841Z
+2
+plindeman
 has-props
 
 
@@ -840,7 +806,7 @@ has-props
 
 
 
-403
+1561
 
 tr.png
 file
@@ -876,6 +842,40 @@ has-props
 
 1502
 
+ae.png
+file
+
+
+
+
+2010-12-09T04:12:57.182030Z
+d138a1b1511bd3e6a2888b986a4efb62
+2010-10-25T20:09:23.529692Z
+169
+daf2000
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+403
+
 ru.png
 file
 
@@ -910,14 +910,14 @@ has-props
 
 976
 
-ee.png
+zh_py.png
 file
 
 
 
 
 2009-12-09T08:20:39.340018Z
-a5e106523ca36e0c8abe5d68cbdbe3b2
+146618653c22298659f05f44e99115c6
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -942,7 +942,7 @@ has-props
 
 
 
-1197
+2689
 
 zh_gb.png
 file
@@ -978,14 +978,14 @@ has-props
 
 2509
 
-zh_py.png
+ee.png
 file
 
 
 
 
 2009-12-09T08:20:39.340018Z
-146618653c22298659f05f44e99115c6
+a5e106523ca36e0c8abe5d68cbdbe3b2
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1010,7 +1010,7 @@ has-props
 
 
 
-2689
+1197
 
 en.png
 file
