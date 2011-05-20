@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/resources
+/svnroot/openpli/!svn/ver/205/trunk/cdk/apps/tuxbox/enigma/data/resources
 END
 rcdboxbuttons.xml
 K 25
@@ -25,25 +25,25 @@ rcdm5xxx.xml
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/resources/rcdm5xxx.xml
+/svnroot/openpli/!svn/ver/205/trunk/cdk/apps/tuxbox/enigma/data/resources/rcdm5xxx.xml
 END
 rcdreambox_inputdev.xml
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/resources/rcdreambox_inputdev.xml
+/svnroot/openpli/!svn/ver/205/trunk/cdk/apps/tuxbox/enigma/data/resources/rcdreambox_inputdev.xml
 END
 rclargesilver.xml
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/resources/rclargesilver.xml
+/svnroot/openpli/!svn/ver/205/trunk/cdk/apps/tuxbox/enigma/data/resources/rclargesilver.xml
 END
 rcdreambox_keyboard.xml
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/svnroot/openpli/!svn/ver/201/trunk/cdk/apps/tuxbox/enigma/data/resources/rcdreambox_keyboard.xml
+/svnroot/openpli/!svn/ver/205/trunk/cdk/apps/tuxbox/enigma/data/resources/rcdreambox_keyboard.xml
 END
 keymappings.xml
 K 25

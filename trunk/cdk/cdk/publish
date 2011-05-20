@@ -1,0 +1,8 @@
+scriptdir=${0%/*}
+flashdir=$scriptdir/../root/cdkflash/
+publishdir=$scriptdir/../../../../pli-nx111
+cp $flashdir/root/bin/enigma $publishdir/bin/
+cp $flashdir/root/bin/busybox $publishdir/bin/
+cp $flashdir/root/lib/tuxbox/plugins/movieplayer.so $publishdir/lib/tuxbox/plugins/
+cp $flashdir/root/lib/tuxbox/plugins/rss.so $publishdir/lib/tuxbox/plugins/
+cp $flashdir/root/etc/issue.net $publishdir/etc/

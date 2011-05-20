@@ -1,15 +1,15 @@
 10
 
 dir
-202
+206
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2011-01-23T09:38:01.927858Z
-200
-pieterg
+2011-04-28T17:06:10.343604Z
+206
+daf2000
 
 
 
@@ -529,6 +529,20 @@ plindeman
 
 
 1106
+
+publish
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 FAQ
 file
