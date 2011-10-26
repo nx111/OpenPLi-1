@@ -1,14 +1,14 @@
 10
 
 dir
-206
+232
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm56x0/etc/init.d
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-11-01T10:04:50.290125Z
-35
+2011-08-23T18:08:03.814774Z
+227
 daf2000
 
 
@@ -66,10 +66,10 @@ file
 
 
 
-2009-12-09T08:20:02.592024Z
-e711ce4fae78176f93b7e06c089a4ec3
-2009-11-01T10:04:50.290125Z
-35
+2011-10-26T05:48:36.392640Z
+5d49ea0fca600feb1e0f71bafc64c50f
+2011-08-23T18:08:03.814774Z
+227
 daf2000
 has-props
 
@@ -92,5 +92,5 @@ has-props
 
 
 
-3368
+3381
 

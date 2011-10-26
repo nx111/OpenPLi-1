@@ -1,7 +1,7 @@
 10
 
 dir
-206
+232
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma/weather/icons
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -264,40 +264,6 @@ has-props
 
 7493
 
-20.png
-file
-
-
-
-
-2009-12-09T08:21:03.344019Z
-d6d19a71569296b90d5966cf75bdf7ac
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3594
-
 11.png
 file
 
@@ -332,14 +298,14 @@ has-props
 
 4594
 
-21.png
+20.png
 file
 
 
 
 
 2009-12-09T08:21:03.344019Z
-8a13df1810c32899e5a941fc6fbe1107
+d6d19a71569296b90d5966cf75bdf7ac
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -364,41 +330,7 @@ has-props
 
 
 
-8193
-
-12.png
-file
-
-
-
-
-2009-12-09T08:21:03.344019Z
-88f91fb959fc6704b01e6cae07bdc7fd
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5997
+3594
 
 30.png
 file
@@ -434,6 +366,74 @@ has-props
 
 5816
 
+12.png
+file
+
+
+
+
+2009-12-09T08:21:03.344019Z
+88f91fb959fc6704b01e6cae07bdc7fd
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5997
+
+21.png
+file
+
+
+
+
+2009-12-09T08:21:03.344019Z
+8a13df1810c32899e5a941fc6fbe1107
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8193
+
 13.png
 file
 
@@ -468,40 +468,6 @@ has-props
 
 5403
 
-14.png
-file
-
-
-
-
-2009-12-09T08:21:03.360018Z
-93029253a10eeae4f5727e36de18732f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6233
-
 32.png
 file
 
@@ -535,6 +501,40 @@ has-props
 
 
 5925
+
+14.png
+file
+
+
+
+
+2009-12-09T08:21:03.360018Z
+93029253a10eeae4f5727e36de18732f
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6233
 
 23.png
 file

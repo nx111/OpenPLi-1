@@ -1,14 +1,14 @@
 10
 
 dir
-206
+232
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm7000/etc/init.d
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
 
 
-2009-11-01T10:04:50.290125Z
-35
+2011-08-23T18:08:03.814774Z
+227
 daf2000
 
 
@@ -66,10 +66,10 @@ file
 
 
 
-2009-12-09T08:20:07.108023Z
-117c6d94b8943e8e2401424b927c0978
-2009-11-01T10:04:50.290125Z
-35
+2011-10-26T05:48:36.916642Z
+3682a12972952beb0ce189db727d3c7e
+2011-08-23T18:08:03.814774Z
+227
 daf2000
 has-props
 
@@ -92,5 +92,5 @@ has-props
 
 
 
-6078
+6091
 

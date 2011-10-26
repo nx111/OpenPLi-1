@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svnroot/openpli/!svn/ver/35/trunk/cdk/cdk/standard/dm500/etc/init.d
+V 69
+/svnroot/openpli/!svn/ver/227/trunk/cdk/cdk/standard/dm500/etc/init.d
 END
 init1
 K 25
@@ -12,6 +12,6 @@ END
 rcS
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/svnroot/openpli/!svn/ver/35/trunk/cdk/cdk/standard/dm500/etc/init.d/rcS
+V 73
+/svnroot/openpli/!svn/ver/227/trunk/cdk/cdk/standard/dm500/etc/init.d/rcS
 END

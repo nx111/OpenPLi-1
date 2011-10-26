@@ -2617,6 +2617,7 @@ endif
 
 	rm -f $(flashprefix)/root/share/tuxbox/enigma/pictures/radio.mvi
 	cp -pa $(targetprefix)/share/tuxbox/enigma/* $(flashprefix)/root/share/tuxbox/enigma
+	rm -f $(flashprefix)/root/share/tuxbox/enigma/pictures/scan.mvi
 
 	@for i in `find $(flashprefix)/root/share/tuxbox/enigma/htdocs` ; do \
 		case $$i in \

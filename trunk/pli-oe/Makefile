@@ -7,7 +7,7 @@ BUILDDIR = build-${MACHINE}
 # for a list of some other repositories have
 # a look at http://git.opendreambox.org/
 GIT_URL = git://openpli.git.sourceforge.net/gitroot/openpli/openembedded
-GIT_BRANCH = master
+GIT_BRANCH = 1.0
 
 # in case you want to send pull requests or generate patches
 #GIT_AUTHOR_NAME ?= Your Name
@@ -63,7 +63,7 @@ initialize: $(OE_BASE)/cache sources $(OE_BASE)/${BUILDDIR} $(OE_BASE)/${BUILDDI
 	$(OE_BASE)/${BUILDDIR}/tmp $(OE_BASE)/openembedded $(OE_BASE)/${BUILDDIR}/conf/local.conf \
 	$(OE_BASE)/${BUILDDIR}/env.source bb
 
-openembedded-update: $(OE_BASE)/openembedded
+openembedded-update: initialize
 	cd $(OE_BASE)/openembedded && $(GIT) pull origin $(GIT_BRANCH)
 
 $(OE_BASE)/${BUILDDIR} $(OE_BASE)/${BUILDDIR}/conf $(OE_BASE)/${BUILDDIR}/tmp $(OE_BASE)/cache sources:

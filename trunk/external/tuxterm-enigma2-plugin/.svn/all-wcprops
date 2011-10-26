@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/openpli/!svn/ver/154/trunk/external/tuxterm-enigma2-plugin
+/svnroot/openpli/!svn/ver/211/trunk/external/tuxterm-enigma2-plugin
 END
 configure.ac
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openpli/!svn/ver/119/trunk/external/tuxterm-enigma2-plugin/configure.ac
+/svnroot/openpli/!svn/ver/211/trunk/external/tuxterm-enigma2-plugin/configure.ac
 END
 plugin.py
 K 25
@@ -25,7 +25,7 @@ acinclude.m4
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svnroot/openpli/!svn/ver/119/trunk/external/tuxterm-enigma2-plugin/acinclude.m4
+/svnroot/openpli/!svn/ver/211/trunk/external/tuxterm-enigma2-plugin/acinclude.m4
 END
 Makefile.am
 K 25

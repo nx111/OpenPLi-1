@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svnroot/openpli/!svn/ver/203/trunk/cdk/cdk/root/share/tuxbox
+/svnroot/openpli/!svn/ver/228/trunk/cdk/cdk/root/share/tuxbox
 END
 terrestrial.xml
 K 25
 svn:wc:ra_dav:version-url
 V 75
 /svnroot/openpli/!svn/ver/2/trunk/cdk/cdk/root/share/tuxbox/terrestrial.xml
+END
+scart.conf
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/openpli/!svn/ver/214/trunk/cdk/cdk/root/share/tuxbox/scart.conf
 END
 cables.xml
 K 25
@@ -19,7 +25,7 @@ satellites.xml
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svnroot/openpli/!svn/ver/203/trunk/cdk/cdk/root/share/tuxbox/satellites.xml
+/svnroot/openpli/!svn/ver/228/trunk/cdk/cdk/root/share/tuxbox/satellites.xml
 END
 Makefile.am
 K 25

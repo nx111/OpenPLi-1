@@ -38,6 +38,8 @@ extra: java contrib_apps fun dvb_apps
 #   core
 #
 
+toolchain: .directories .gcc .glibc .libcommoncplusplus .binutils .libcrypto .libncurses
+
 core: .directories .binutils .linuxdir .glibc .gcc
 
 checkout_lcars:
@@ -62,14 +64,17 @@ checkout:
 	touch $@
 
 .directories:
-	@for i in bin boot dev etc include mnt lib lib/pkgconfig proc root sbin tmp var/run $(UCODEDIR); do \
+	@for i in bin boot dev etc mnt proc root sbin tmp var/run $(UCODEDIR); do \
 		$(INSTALL) -d $(targetprefix)/$$i ; done;
 	$(INSTALL) -d $(hostprefix)/$(target)
+	$(INSTALL) -d $(hostprefix)/$(target)/lib
+	$(INSTALL) -d $(hostprefix)/$(target)/include
 	$(INSTALL) -d $(bootprefix)
-	-rm $(hostprefix)/$(target)/include
-	-rm $(hostprefix)/$(target)/lib
-	-ln -s $(targetprefix)/include $(hostprefix)/$(target)/include
-	-ln -s $(targetprefix)/lib $(hostprefix)/$(target)/lib
+	-rm $(targetprefix)/include
+	-rm $(targetprefix)/lib
+	-ln -s $(hostprefix)/$(target)/include $(targetprefix)/include 
+	-ln -s $(hostprefix)/$(target)/lib $(targetprefix)/lib 
+	$(INSTALL) -d $(hostprefix)/$(target)/lib/pkgconfig
 if TARGETRULESET_FLASH
 	$(INSTALL) -d $(flashprefix)
 endif
@@ -245,6 +250,8 @@ bootstrap_gcc: @DEPENDS_bootstrap_gcc@
 	rm -rf $(hostprefix)/$(target)/lib/nof
 	ln -sf $(hostprefix)/$(target)/lib $(hostprefix)/$(target)/lib/nof
 	@CLEANUP_gcc@
+	rm -f $(hostprefix)/$(target)/lib/*.la
+	sed -i "s:$(targetprefix)/lib/::g" `grep -Il $(targetprefix) $(targetprefix)/lib/*.so`
 	touch $@
 
 #######################
@@ -2631,8 +2638,7 @@ endif
 
 	rm -f $(flashprefix)/root/share/tuxbox/enigma/pictures/radio.mvi
 	cp -pa $(targetprefix)/share/tuxbox/enigma/* $(flashprefix)/root/share/tuxbox/enigma
-	rm -f $(flashprefix)/root/share/tuxbox/enigma/pictures/radio.mvi
-	cp -pa $(targetprefix)/share/tuxbox/enigma/* $(flashprefix)/root/share/tuxbox/enigma
+	rm -f $(flashprefix)/root/share/tuxbox/enigma/pictures/scan.mvi
 
 	@for i in `find $(flashprefix)/root/share/tuxbox/enigma/htdocs` ; do \
 		case $$i in \
