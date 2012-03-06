@@ -1,7 +1,7 @@
 10
 
 dir
-232
+245
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/tools/db_epg
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-epgcache.cpp
-file
-
-
-
-
-2009-12-09T08:20:54.880016Z
-6f413656c168ee312ca6393a0bcc2d6c
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8920
 
 readerfactory.h
 file
@@ -93,6 +59,40 @@ plindeman
 
 
 1069
+
+epgcache.cpp
+file
+
+
+
+
+2009-12-09T08:20:54.880016Z
+6f413656c168ee312ca6393a0bcc2d6c
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8920
 
 cgenremap.cpp
 file
@@ -298,40 +298,6 @@ plindeman
 
 1002
 
-si.h
-file
-
-
-
-
-2009-12-09T08:20:54.920026Z
-cf32495070ce293a650db9e867a658f0
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-288
-
 crtreader.h
 file
 
@@ -366,14 +332,14 @@ plindeman
 
 1160
 
-configure.ac
+si.h
 file
 
 
 
 
 2009-12-09T08:20:54.920026Z
-a784dd56ef02cca473700c8f6cffc404
+cf32495070ce293a650db9e867a658f0
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -398,7 +364,7 @@ plindeman
 
 
 
-144
+288
 
 util.h
 file
@@ -434,14 +400,14 @@ plindeman
 
 1145
 
-crtepgdata.h
+configure.ac
 file
 
 
 
 
-2009-12-09T08:20:54.924018Z
-5e2543029ee9768cbe5414e6961f736a
+2009-12-09T08:20:54.920026Z
+a784dd56ef02cca473700c8f6cffc404
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -466,7 +432,7 @@ plindeman
 
 
 
-2051
+144
 
 xmltok.h
 file
@@ -501,6 +467,40 @@ plindeman
 
 
 9326
+
+crtepgdata.h
+file
+
+
+
+
+2009-12-09T08:20:54.924018Z
+5e2543029ee9768cbe5414e6961f736a
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2051
 
 asciitab.h
 file
@@ -1148,40 +1148,6 @@ plindeman
 
 1885
 
-cmain.cpp
-file
-
-
-
-
-2009-12-09T08:20:54.956019Z
-15d998d13ab65881c51ae7a4a85be829
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3986
-
 xmlrole.h
 file
 
@@ -1215,6 +1181,40 @@ plindeman
 
 
 2679
+
+cmain.cpp
+file
+
+
+
+
+2009-12-09T08:20:54.956019Z
+15d998d13ab65881c51ae7a4a85be829
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3986
 
 xmlreader.h
 file
@@ -1556,40 +1556,6 @@ plindeman
 
 11829
 
-cmapfile.h
-file
-
-
-
-
-2009-12-09T08:20:54.924018Z
-c3cdee8827ab78ad0c5a0579b9fc96b4
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-158
-
 xmltree.h
 file
 
@@ -1624,14 +1590,14 @@ plindeman
 
 4367
 
-optionparser.h
+cmapfile.h
 file
 
 
 
 
 2009-12-09T08:20:54.924018Z
-f7bc717e48e9660c7f1558c65bd2ddd1
+c3cdee8827ab78ad0c5a0579b9fc96b4
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -1656,7 +1622,7 @@ plindeman
 
 
 
-1860
+158
 
 readerfactory.cpp
 file
@@ -1691,6 +1657,40 @@ plindeman
 
 
 1590
+
+optionparser.h
+file
+
+
+
+
+2009-12-09T08:20:54.924018Z
+f7bc717e48e9660c7f1558c65bd2ddd1
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1860
 
 lat1tab.h
 file
@@ -1862,40 +1862,6 @@ plindeman
 
 0
 
-crtepgdata.cpp
-file
-
-
-
-
-2009-12-09T08:20:54.936019Z
-723700c40c594f6cc7ce51928292059d
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4399
-
 cchannelmap.h
 file
 
@@ -1929,6 +1895,40 @@ plindeman
 
 
 971
+
+crtepgdata.cpp
+file
+
+
+
+
+2009-12-09T08:20:54.936019Z
+723700c40c594f6cc7ce51928292059d
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4399
 
 utf8tab.h
 file
@@ -1964,40 +1964,6 @@ plindeman
 
 2305
 
-TODO
-file
-
-
-
-
-2009-12-09T08:20:54.952042Z
-d41d8cd98f00b204e9800998ecf8427e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
-
 xmldef.h
 file
 
@@ -2032,14 +1998,14 @@ plindeman
 
 743
 
-cdbiface.h
+TODO
 file
 
 
 
 
-2009-12-09T08:20:54.956019Z
-71871d58dab6b9e2355267bd1121f9a3
+2009-12-09T08:20:54.952042Z
+d41d8cd98f00b204e9800998ecf8427e
 2009-08-14T21:33:06.552841Z
 2
 plindeman
@@ -2064,7 +2030,7 @@ plindeman
 
 
 
-1306
+0
 
 optionparser.cpp
 file
@@ -2099,6 +2065,40 @@ plindeman
 
 
 10512
+
+cdbiface.h
+file
+
+
+
+
+2009-12-09T08:20:54.956019Z
+71871d58dab6b9e2355267bd1121f9a3
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1306
 
 eit.h
 file

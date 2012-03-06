@@ -2478,9 +2478,16 @@ void eZapMain::init_main()
 		int startup=0;
 		eConfig::getInstance()->getKey(eString().sprintf("/ezap/ui/startup/%d",mode).c_str(), startup );
 		if ( startup == 0 && playlist->current != playlist->getConstList().end() )
-			playService( playlist->current->service, psDontAdd|psSeekPos);  // then play the last service
+			try{
+				playService( playlist->current->service, psDontAdd|psSeekPos);  // then play the last service
+			}
+			catch(...){
+				playlist->deleteService(playlist->current);
+			}
 		else if ( modeLast[mode].current() )
-			playService( modeLast[mode].current() ,0 );  // then play the last service
+			try{
+				playService( modeLast[mode].current() ,0 );  // then play the last service
+			}
 	}
 	message_notifier.send(eZapMain::messageCheckVCR);
 }

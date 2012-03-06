@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/svnroot/openpli/!svn/ver/232/trunk/pli-oe
+/svnroot/openpli/!svn/ver/238/trunk/pli-oe
 END
 make_oe_image-2.0
 K 25
@@ -37,7 +37,7 @@ Makefile-2.1
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svnroot/openpli/!svn/ver/232/trunk/pli-oe/Makefile-2.1
+/svnroot/openpli/!svn/ver/238/trunk/pli-oe/Makefile-2.1
 END
 Makefile
 K 25

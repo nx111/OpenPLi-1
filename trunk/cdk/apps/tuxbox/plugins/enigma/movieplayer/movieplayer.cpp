@@ -639,7 +639,7 @@ eString eSCGui::mrl_par(int value, int mode)
 */
 	eString tmp = "";
 	if(mode==DATA)
-		tmp += "file:///";
+		tmp += "file://";
 	tmp += url_code(playList[value].Fullname) + mrlpars;
 	tmp += ( mode==DATA ? " :file-caching=1000" : " :dvdread-caching=2000" );
 	if(sub_color)

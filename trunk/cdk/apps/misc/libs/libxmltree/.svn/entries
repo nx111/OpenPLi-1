@@ -1,7 +1,7 @@
 10
 
 dir
-232
+245
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/misc/libs/libxmltree
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -128,40 +128,6 @@ plindeman
 
 2937
 
-iasctab.h
-file
-
-
-
-
-2009-12-09T08:21:18.668014Z
-fadffe36730c79de62d226b752e12343
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2373
-
 xmltimpl.h
 file
 
@@ -195,6 +161,40 @@ plindeman
 
 
 1194
+
+iasctab.h
+file
+
+
+
+
+2009-12-09T08:21:18.668014Z
+fadffe36730c79de62d226b752e12343
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2373
 
 nametab.h
 file
@@ -332,40 +332,6 @@ plindeman
 
 7195
 
-utf8tab.h
-file
-
-
-
-
-2009-12-09T08:21:18.672019Z
-c56e6a90a9148cbe51861cdbc442294d
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2305
-
 xmlrole.c
 file
 
@@ -399,6 +365,40 @@ plindeman
 
 
 23284
+
+utf8tab.h
+file
+
+
+
+
+2009-12-09T08:21:18.672019Z
+c56e6a90a9148cbe51861cdbc442294d
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2305
 
 xmltok.h
 file
@@ -434,40 +434,6 @@ plindeman
 
 9326
 
-asciitab.h
-file
-
-
-
-
-2009-12-09T08:21:18.672019Z
-964f2e0c1c4c657596f0f285423c8efd
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2303
-
 xmldef.h
 file
 
@@ -501,6 +467,40 @@ plindeman
 
 
 743
+
+asciitab.h
+file
+
+
+
+
+2009-12-09T08:21:18.672019Z
+964f2e0c1c4c657596f0f285423c8efd
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2303
 
 xmltree.h
 file
