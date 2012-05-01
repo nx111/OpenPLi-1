@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm500
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -26,9 +26,6 @@ daf2000
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
-share
-dir
-
 var_flash
 dir
 
@@ -39,5 +36,8 @@ etc
 dir
 
 var_init
+dir
+
+share
 dir
 

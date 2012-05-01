@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plisetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-10 19:57+0200\n"
+"POT-Creation-Date: 2009-12-14 16:25+0800\n"
 "PO-Revision-Date: 2008-07-25 18:37+0200\n"
 "Last-Translator: Indrek70 <indrek70@hot.ee>\n"
 "Language-Team: est <indrek70@hot.ee>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -875,7 +876,7 @@ msgstr "Režiim:"
 msgid "KSymb/s"
 msgstr "KSüm/s"
 
-#: default.esml:935 src/enigma_dyn.cpp:627 src/sselect.cpp:515
+#: default.esml:935 src/enigma_dyn.cpp:657 src/sselect.cpp:526
 msgid "All Services"
 msgstr "Kõik kanalid"
 
@@ -1122,7 +1123,7 @@ msgstr "vali salvestamise lõpetamise aega ja sulge aken (ok)"
 msgid "close Satellite Configuration"
 msgstr "sulge Satelliidi seaded"
 
-#: default.esml:708 stone.esml:584 src/setup_epg.cpp:6
+#: default.esml:708 stone.esml:584 src/enigma_dyn.cpp:603 src/setup_epg.cpp:6
 msgid "EPG"
 msgstr "EPG"
 
@@ -1204,9 +1205,9 @@ msgstr "L"
 msgid "Guard:"
 msgstr "Kaitse:"
 
-#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6524
+#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6656
 #: src/epgsearch.cpp:299 src/epgsearch.cpp:502 src/epgwindow.cpp:369
-#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2075
+#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2090
 msgid "EPG Search"
 msgstr "EPG Otsing"
 
@@ -1389,55 +1390,55 @@ msgstr "256-QAM"
 msgid "QPSK"
 msgstr "QPSK"
 
-#: lib/dvb/servicedvb.cpp:1087
+#: lib/dvb/servicedvb.cpp:1094
 msgid "Providers (TV)"
 msgstr "Operaatorid (TV)"
 
-#: lib/dvb/servicedvb.cpp:1091
+#: lib/dvb/servicedvb.cpp:1098
 msgid "Providers (Radio)"
 msgstr "Operaatorid (Raadio)"
 
-#: lib/dvb/servicedvb.cpp:1095
+#: lib/dvb/servicedvb.cpp:1102
 msgid "Providers (Data)"
 msgstr "Operaatorid (Data)"
 
-#: lib/dvb/servicedvb.cpp:1100
+#: lib/dvb/servicedvb.cpp:1107
 msgid "All services (TV)"
 msgstr "Kõik kanalid (TV)"
 
-#: lib/dvb/servicedvb.cpp:1104
+#: lib/dvb/servicedvb.cpp:1111
 msgid "All services (Radio)"
 msgstr "Kõik kanalid (Raadio)"
 
-#: lib/dvb/servicedvb.cpp:1108
+#: lib/dvb/servicedvb.cpp:1115
 msgid "All services (Data)"
 msgstr "Kõik kanalid (Data)"
 
-#: lib/dvb/servicedvb.cpp:1115
+#: lib/dvb/servicedvb.cpp:1122
 msgid "Satellites (TV)"
 msgstr "Satelliidid (TV)"
 
-#: lib/dvb/servicedvb.cpp:1119
+#: lib/dvb/servicedvb.cpp:1126
 msgid "Satellites (Radio)"
 msgstr "Satelliidid (Raadio)"
 
-#: lib/dvb/servicedvb.cpp:1123
+#: lib/dvb/servicedvb.cpp:1130
 msgid "Satellites (Data)"
 msgstr "Satellidid (Data)"
 
-#: lib/dvb/servicedvb.cpp:1555
+#: lib/dvb/servicedvb.cpp:1567
 msgid " - provider"
 msgstr "- operaator"
 
-#: lib/dvb/servicedvb.cpp:1563
+#: lib/dvb/servicedvb.cpp:1575
 msgid " - services"
 msgstr "- kanalid"
 
-#: lib/dvb/servicedvb.cpp:1571
+#: lib/dvb/servicedvb.cpp:1583
 msgid " - new found"
 msgstr " - leitud uusi"
 
-#: lib/dvb/servicedvb.cpp:1575
+#: lib/dvb/servicedvb.cpp:1587
 msgid "current transponder"
 msgstr "aktiivne transponder"
 
@@ -1463,7 +1464,7 @@ msgstr "puhverdan..."
 msgid "playing..."
 msgstr "mängin..."
 
-#: lib/dvb/serviceplaylist.cpp:223
+#: lib/dvb/serviceplaylist.cpp:242
 #, c-format
 msgid " (%d entries)"
 msgstr "(%d nime)"
@@ -1490,8 +1491,8 @@ msgid "TV/Radio"
 msgstr "TV/Raadio"
 
 #: lib/dvb/servicestructure.cpp:22 src/enigma_bouquet.cpp:12
-#: src/enigma_dyn.cpp:639 src/enigma_main.cpp:9727 src/sselect.cpp:521
-#: src/sselect.cpp:528
+#: src/enigma_dyn.cpp:669 src/enigma_main.cpp:9904 src/sselect.cpp:532
+#: src/sselect.cpp:539
 msgid "Bouquets"
 msgstr "Kanalinimekirjad"
 
@@ -1533,7 +1534,7 @@ msgstr "<< Keri vasakule"
 msgid "Scroll right >>"
 msgstr "Keri paremale >>"
 
-#: lib/gui/ExecuteOutput.cpp:80 src/ppanel.cpp:217
+#: lib/gui/ExecuteOutput.cpp:80 src/ppanel.cpp:218
 #: src/setup_swapandvar.cpp:310
 msgid "Please wait"
 msgstr "Palun oota!"
@@ -1542,7 +1543,7 @@ msgstr "Palun oota!"
 msgid "Could not execute script"
 msgstr "Ei saa käivitada skripti"
 
-#: lib/gui/listbox.cpp:865
+#: lib/gui/listbox.cpp:883
 msgid "no description available"
 msgstr "kirjeldus puudub"
 
@@ -1710,7 +1711,7 @@ msgstr "Lisad/manused"
 msgid "Complete config"
 msgstr "Vii lõpule konfiguratsioon"
 
-#: src/backup.cpp:140
+#: src/backup.cpp:140 src/enigma_dyn.cpp:766
 msgid "Settings"
 msgstr "Seaded"
 
@@ -1790,323 +1791,319 @@ msgstr "Taaskäivitan, palun oodake"
 msgid "Reloading Enigma settings, please wait"
 msgstr "Taaslaen Enigma seaded, palun oota."
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:341
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:341
 msgid "Movie"
 msgstr "Film"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:343
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:343
 msgid "Adventure"
 msgstr "Seiklus"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:344
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:344
 msgid "SciFi"
 msgstr "Ulme"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:345
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:345
 msgid "Comedy"
 msgstr "Komöödia"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:346
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:346
 msgid "Soap"
 msgstr "Seebikad"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:347
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:347
 msgid "Romance"
 msgstr "Romanss"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:348
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:348
 msgid "Serious"
 msgstr "Draama"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:349
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:349
 msgid "Adult"
 msgstr "Täiskasvanutele"
 
-#: src/channelinfo.cpp:83 src/epgsearch.cpp:350
+#: src/channelinfo.cpp:103 src/epgsearch.cpp:350
 msgid "News"
 msgstr "Uudised"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Weather"
 msgstr "Ilm"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Magazine"
 msgstr "Ajakiri"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Documentary"
 msgstr "Dokumentaal"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Discussion"
 msgstr "Arutlus"
 
-#: src/channelinfo.cpp:87 src/epgsearch.cpp:351
+#: src/channelinfo.cpp:107 src/epgsearch.cpp:351
 msgid "Show"
 msgstr "Show"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Game Show"
 msgstr "Telemäng"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Variety"
 msgstr "Erinevad"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Talk"
 msgstr "Jutt"
 
-#: src/channelinfo.cpp:91 src/epgsearch.cpp:352
+#: src/channelinfo.cpp:111 src/epgsearch.cpp:352
 msgid "Sports"
 msgstr "Sport"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Special Event"
 msgstr "Erikava"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Sports Mag."
 msgstr "Spordi Ajakiri"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Football"
 msgstr "Jalgpall"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Tennis"
 msgstr "Tennis"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Team Sports"
 msgstr "Võistkonnasport"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Athletics"
 msgstr "Kergejõustik"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Motor Sports"
 msgstr "Mootorisport"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Water Sports"
 msgstr "Veesport"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Winter Sports"
 msgstr "Talisport"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Equestrian"
 msgstr "Ratsutamine"
 
-#: src/channelinfo.cpp:93
+#: src/channelinfo.cpp:113
 msgid "Martial Sports"
 msgstr "Võitlussport"
 
-#: src/channelinfo.cpp:96 src/epgsearch.cpp:353
+#: src/channelinfo.cpp:116 src/epgsearch.cpp:353
 msgid "Children"
 msgstr "Lapsed"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Pre-School"
 msgstr "Koolieelikud"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Age 6-14"
 msgstr "6-14 aastastele"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Age 10-16"
 msgstr "10-16 aastastele"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "School"
 msgstr "Kool"
 
-#: src/channelinfo.cpp:97
+#: src/channelinfo.cpp:117
 msgid "Cartoons"
 msgstr "Multifilmid"
 
-#: src/channelinfo.cpp:101 src/epgsearch.cpp:354
+#: src/channelinfo.cpp:121 src/epgsearch.cpp:354
 msgid "Music"
 msgstr "Muusika"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Rock/Pop"
 msgstr "Rock/Pop"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Classical"
 msgstr "Klassikaline"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Folk"
 msgstr "Folk"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Jazz"
 msgstr "Jazz"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Musical"
 msgstr "Muusikal"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Ballet"
 msgstr "Ballett"
 
-#: src/channelinfo.cpp:105 src/epgsearch.cpp:355
+#: src/channelinfo.cpp:125 src/epgsearch.cpp:355
 msgid "Culture"
 msgstr "Kultuur"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Perf. Arts"
 msgstr "Kunst"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Fine Arts"
 msgstr "Kunst"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Religion"
 msgstr "Religioon"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Pop. Arts"
 msgstr "Popp Muusika"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Literature"
 msgstr "Kirjandus"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Film"
 msgstr "Film"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Experimental"
 msgstr "Eksperimentaal"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Press"
 msgstr "Ajakirjandus"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "New Media"
 msgstr "Uus Meedia"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Art Mag."
 msgstr "Kunst"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Fashion"
 msgstr "Mood"
 
-#: src/channelinfo.cpp:109 src/epgsearch.cpp:356
+#: src/channelinfo.cpp:129 src/epgsearch.cpp:356
 msgid "Social"
 msgstr "Sotsiaal"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Soc. Mag."
 msgstr "Soc. Mag."
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Economics"
 msgstr "Majandus"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Remark. People"
 msgstr "Huvitavad Inimesed"
 
-#: src/channelinfo.cpp:113 src/epgsearch.cpp:357
+#: src/channelinfo.cpp:133 src/epgsearch.cpp:357
 msgid "Education"
 msgstr "Haridus"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Nature"
 msgstr "Loodus"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Technology"
 msgstr "Tehnoloogia"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Medicine"
 msgstr "Meditsiin"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Expeditions"
 msgstr "Ekspeditsioonid"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Spiritual"
 msgstr "Spirituaalne"
 
-#: src/channelinfo.cpp:114
+#: src/channelinfo.cpp:134
 msgid "Further Ed."
 msgstr "Kõrgharidus"
 
-#: src/channelinfo.cpp:114
+#: src/channelinfo.cpp:134
 msgid "Languages"
 msgstr "Keeled"
 
-#: src/channelinfo.cpp:117 src/epgsearch.cpp:358
+#: src/channelinfo.cpp:137 src/epgsearch.cpp:358
 msgid "Hobbies"
 msgstr "Hobid"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Travel"
 msgstr "Reisimine"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Handicraft"
 msgstr "Käsitöö"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Motoring"
 msgstr "Auto-Moto"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Fitness"
 msgstr "Tervisesport"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Cooking"
 msgstr "Kokandus"
 
-#: src/channelinfo.cpp:118
+#: src/channelinfo.cpp:138
 msgid "Shopping"
 msgstr "TV-pood"
 
-#: src/channelinfo.cpp:118
+#: src/channelinfo.cpp:138
 msgid "Gardening"
 msgstr "Aiandus"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "Orig. Lang."
 msgstr "Orig. Keel"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "B&W"
 msgstr "Mustvalge"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "Unpublished"
 msgstr "määramata"
 
-#: src/channelinfo.cpp:121 src/epgsearch.cpp:359
+#: src/channelinfo.cpp:141 src/epgsearch.cpp:359
 msgid "Live"
 msgstr "Otseülekanne"
 
-#: src/channelinfo.cpp:263
-msgid "no data for this service available"
-msgstr "sellel kanalil ei ole andmeid"
-
-#: src/channelinfo.cpp:304
+#: src/channelinfo.cpp:359
 #, c-format
 msgid ""
 "\n"
@@ -2115,7 +2112,7 @@ msgstr ""
 "\n"
 "Faili suurus/kuupäev: %d %cB, %s"
 
-#: src/channelinfo.cpp:305
+#: src/channelinfo.cpp:360
 msgid "Filename: "
 msgstr "Faili nimi:"
 
@@ -2248,7 +2245,6 @@ msgid "Sticky Settings 1"
 msgstr "Erandite Seaded 1"
 
 #: src/engrab.cpp:37 src/enigma_event.cpp:179 src/enigma_event.cpp:188
-#: src/enigma_event.cpp:352 src/enigma_event.cpp:361
 msgid "no description is available"
 msgstr "kirjeldus puudub"
 
@@ -2256,11 +2252,13 @@ msgstr "kirjeldus puudub"
 msgid "Bouquet Type"
 msgstr "Kanalinimistu tüüp"
 
-#: src/enigma_bouquet.cpp:42
+#: src/enigma_bouquet.cpp:42 src/enigma_dyn.cpp:119 src/enigma_dyn.cpp:691
+#: src/enigma_dyn.cpp:709
 msgid "TV"
 msgstr "TV"
 
-#: src/enigma_bouquet.cpp:43
+#: src/enigma_bouquet.cpp:43 src/enigma_dyn.cpp:120 src/enigma_dyn.cpp:693
+#: src/enigma_dyn.cpp:711
 msgid "Radio"
 msgstr "Raadio"
 
@@ -2340,21 +2338,21 @@ msgstr "Common Interface Module - mmi"
 msgid "waiting for CI answer..."
 msgstr "Ootan CI vastust"
 
-#: src/enigma.cpp:433 src/setup_swapandvar.cpp:112
+#: src/enigma.cpp:437 src/setup_swapandvar.cpp:112
 msgid "Internal harddisk"
 msgstr "Seesmine kõvaketas"
 
-#: src/enigma.cpp:440 src/setup_swapandvar.cpp:111
+#: src/enigma.cpp:444 src/setup_swapandvar.cpp:111
 #: src/setup_swapandvar.cpp:393 src/setup_swapandvar.cpp:399
 #: src/setup_usb.cpp:27
 msgid "USB stick"
 msgstr "USB mälu"
 
-#: src/enigma.cpp:447 src/setup_swapandvar.cpp:113
+#: src/enigma.cpp:451 src/setup_swapandvar.cpp:113
 msgid "Compact Flash card"
 msgstr "Mälukaart"
 
-#: src/enigma.cpp:562
+#: src/enigma.cpp:571
 msgid ""
 "Welcome to enigma.\n"
 "\n"
@@ -2366,51 +2364,156 @@ msgstr ""
 "Palun teostage esmalt transponderi otsing\n"
 "(põhimenüü > häälestus > kanalid > transponderiotsing)"
 
-#: src/enigma.cpp:564
+#: src/enigma.cpp:573
 msgid "First start of enigma"
 msgstr "Enigma esmane käivitus"
 
-#: src/enigma.cpp:799
+#: src/enigma.cpp:808
 msgid "It's now safe to unplug power!"
 msgstr "See on nüüd turvaline vool välja lülitada!"
 
-#: src/enigma.cpp:800
+#: src/enigma.cpp:809
 msgid "Shutdown finished"
 msgstr "Välja lülitamine lõpetatud"
 
-#: src/enigma.cpp:827
+#: src/enigma.cpp:836
 msgid "Please wait... your Dreambox is shutting down!"
 msgstr "Palun oota... sinu Dreambox lülitub välja!"
 
-#: src/enigma.cpp:828
+#: src/enigma.cpp:837
 msgid "Shutdown..."
 msgstr "Lülita välja"
 
-#: src/enigma_dyn.cpp:631 src/sselect.cpp:517
+#: src/enigma_dyn.cpp:121 src/enigma_dyn.cpp:695 src/enigma_dyn.cpp:713
+msgid "Data"
+msgstr ""
+
+#: src/enigma_dyn.cpp:122 src/enigma_dyn.cpp:698 src/enigma_dyn.cpp:718
+#: src/sselect.cpp:537
+msgid "Movies"
+msgstr "Filmid"
+
+#: src/enigma_dyn.cpp:123 src/enigma_dyn.cpp:700 src/enigma_dyn.cpp:716
+#: src/sselect.cpp:2354
+msgid "Root"
+msgstr "Juur"
+
+#: src/enigma_dyn.cpp:124 src/enigma_dyn.cpp:704
+#, fuzzy
+msgid "Stream"
+msgstr "Signaaliinfo"
+
+#: src/enigma_dyn.cpp:604 src/enigma_main.cpp:712
+msgid "Video"
+msgstr "Video"
+
+#: src/enigma_dyn.cpp:605 src/enigma_main.cpp:856 src/enigma_main.cpp:1123
+msgid "Audio"
+msgstr "Audio"
+
+#: src/enigma_dyn.cpp:606 src/enigma_scan.cpp:184 src/setup_mounts.cpp:782
+msgid "Info"
+msgstr "Info"
+
+#: src/enigma_dyn.cpp:607
+#, fuzzy
+msgid "Stream Info"
+msgstr "Signaaliinfo"
+
+#: src/enigma_dyn.cpp:609
+#, fuzzy
+msgid "VLC"
+msgstr "VCR"
+
+#: src/enigma_dyn.cpp:624
+msgid "ZAP"
+msgstr ""
+
+#: src/enigma_dyn.cpp:625
+msgid "TIMERS"
+msgstr ""
+
+#: src/enigma_dyn.cpp:626
+msgid "CONTROL"
+msgstr ""
+
+#: src/enigma_dyn.cpp:630
+msgid "CONFIG"
+msgstr ""
+
+#: src/enigma_dyn.cpp:633
+msgid "HELP"
+msgstr ""
+
+#: src/enigma_dyn.cpp:661 src/sselect.cpp:528
 msgid "Satellites"
 msgstr "Satelliidid"
 
-#: src/enigma_dyn.cpp:635 src/sselect.cpp:520
+#: src/enigma_dyn.cpp:665 src/sselect.cpp:531
 msgid "Providers"
 msgstr "Operaatorid"
 
-#: src/enigma_dyn.cpp:806
+#: src/enigma_dyn.cpp:725
+#, fuzzy
+msgid "Message2TV"
+msgstr "Teade"
+
+#: src/enigma_dyn.cpp:732
+#, fuzzy
+msgid "Logging"
+msgstr " - sisselogimine"
+
+#: src/enigma_dyn.cpp:736
+#, fuzzy
+msgid "Satfinder"
+msgstr "Satelliidileidja"
+
+#: src/enigma_dyn.cpp:743 src/enigma_dyn.cpp:747
+#, fuzzy
+msgid "Remote Control"
+msgstr "Kaugjuhtimispult"
+
+#: src/enigma_dyn.cpp:756
+msgid "Boot Manager"
+msgstr ""
+
+#: src/enigma_dyn.cpp:757
+#, fuzzy
+msgid "Mount Manager"
+msgstr "Haakimine ebaõnnestus"
+
+#: src/enigma_dyn.cpp:763
+#, fuzzy
+msgid "Flash Manager"
+msgstr "Kirjuta Flashi uus op süsteem"
+
+#: src/enigma_dyn.cpp:772
+#, fuzzy
+msgid "Rotor"
+msgstr "Mootori Häälestus"
+
+#: src/enigma_dyn.cpp:779
+#, fuzzy
+msgid "Web Server"
+msgstr "Web-i liides"
+
+#: src/enigma_dyn.cpp:836
 msgid "OSD Shot"
 msgstr "Ekraanimenüü pilt"
 
-#: src/enigma_dyn.cpp:807
+#: src/enigma_dyn.cpp:837
 msgid "Screen Shot"
 msgstr "Ekraani Pilt"
 
-#: src/enigma_dyn.cpp:810
+#: src/enigma_dyn.cpp:840
 msgid "Screen + OSD"
 msgstr "Ekraan + Ekranimenüü"
 
-#: src/enigma_dyn.cpp:824
+#: src/enigma_dyn.cpp:854
 msgid "LCD Shot"
 msgstr "LCD Shot"
 
-#: src/enigma_dyn.cpp:2332
+#: src/enigma_dyn.cpp:2434
 msgid "External Message"
 msgstr "Väline Teade"
 
@@ -2512,7 +2615,7 @@ msgstr ""
 "Kanalite hulka, mis kuvatakse lehel ja teksti suurust saab muuta EPG "
 "Häälestuse menüüs"
 
-#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2075
+#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2090
 msgid " was not found!"
 msgstr "ei leitud!"
 
@@ -2573,12 +2676,11 @@ msgstr "enigma tegevuste vaade"
 msgid "closes the Event View"
 msgstr "sulge tegevuste vaade"
 
-#: src/enigma_event.cpp:164 src/enigma_event.cpp:342 src/streaminfo.cpp:620
-#: src/streaminfo.cpp:678
+#: src/enigma_event.cpp:164 src/streaminfo.cpp:641 src/streaminfo.cpp:699
 msgid "no information is available"
 msgstr "info puudub"
 
-#: src/enigma_event.cpp:256
+#: src/enigma_event.cpp:257
 msgid ""
 "\tEvent EPG\n"
 "\n"
@@ -2630,7 +2732,7 @@ msgstr ""
 "\n"
 "[EXIT]\tSule aken"
 
-#: src/enigma_event.cpp:305
+#: src/enigma_event.cpp:306
 #, c-format
 msgid "Original duration: %d min"
 msgstr "Kestus: %d min"
@@ -2641,7 +2743,7 @@ msgstr "Kestus: %d min"
 msgid "Information"
 msgstr "Informatsioon"
 
-#: src/enigma_info.cpp:44 src/streaminfo.cpp:585
+#: src/enigma_info.cpp:44 src/streaminfo.cpp:606
 msgid "Streaminfo"
 msgstr "Signaaliinfo"
 
@@ -2709,9 +2811,9 @@ msgstr "Vastuvõtja: digi-tv"
 msgid "Frontend: Unknown"
 msgstr "frontend: Tundmatu"
 
-#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:366
-#: src/streaminfo.cpp:377 src/streaminfo.cpp:389 src/streaminfo.cpp:401
-#: src/streaminfo.cpp:413 src/streaminfo.cpp:509 src/streaminfo.cpp:548
+#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:387
+#: src/streaminfo.cpp:398 src/streaminfo.cpp:410 src/streaminfo.cpp:422
+#: src/streaminfo.cpp:434 src/streaminfo.cpp:530 src/streaminfo.cpp:569
 msgid "none"
 msgstr "ei ükski"
 
@@ -2732,7 +2834,7 @@ msgstr "beeta"
 msgid "internal"
 msgstr "sisemine"
 
-#: src/enigma_info.cpp:251
+#: src/enigma_info.cpp:252
 msgid "About"
 msgstr "Teave"
 
@@ -2860,7 +2962,7 @@ msgstr "peata mahamängimine"
 msgid "resume playback"
 msgstr "jätka mahamängimist"
 
-#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4354
+#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4438
 msgid "record"
 msgstr "salvesta"
 
@@ -3024,14 +3126,6 @@ msgstr "ei sobi!"
 msgid "NVOD"
 msgstr "NVOD"
 
-#: src/enigma_main.cpp:712
-msgid "Video"
-msgstr "Video"
-
-#: src/enigma_main.cpp:856 src/enigma_main.cpp:1123
-msgid "Audio"
-msgstr "Audio"
-
 #: src/enigma_main.cpp:876 src/enigma_main.cpp:1143
 msgid "   Left Mono  >"
 msgstr "Vasak monokanal >"
@@ -3118,103 +3212,99 @@ msgstr "Lemmikud (Raadio)"
 msgid "Favourites (File)"
 msgstr "Lemmikud (Failid)"
 
-#: src/enigma_main.cpp:2492
+#: src/enigma_main.cpp:2520
 msgid "please wait while initializing Common Interface ..."
 msgstr "palun oodake kuni käivitan Common Interface ..."
 
-#: src/enigma_main.cpp:2577
+#: src/enigma_main.cpp:2605
 msgid "rewind 15 seconds"
 msgstr "tagasikerimine 15 sek"
 
-#: src/enigma_main.cpp:2578
+#: src/enigma_main.cpp:2606
 msgid "rewind 1 minute"
 msgstr "tagasikerimine 1 min"
 
-#: src/enigma_main.cpp:2579
+#: src/enigma_main.cpp:2607
 msgid "rewind 5 minutes"
 msgstr "tagasikerimine 5 min"
 
-#: src/enigma_main.cpp:2580
+#: src/enigma_main.cpp:2608
 msgid "enter number of minutes to rewind"
 msgstr "sisesta minutite hulk, mille peab kerima tagasi"
 
-#: src/enigma_main.cpp:2581
+#: src/enigma_main.cpp:2609
 msgid "fast forward 15 seconds"
 msgstr "keri kiirelt edasi 15 sekundit"
 
-#: src/enigma_main.cpp:2582
+#: src/enigma_main.cpp:2610
 msgid "fast forward 1 minute"
 msgstr "keri edasi 1 min"
 
-#: src/enigma_main.cpp:2583
+#: src/enigma_main.cpp:2611
 msgid "fast forward 5 minutes"
 msgstr "keri kiirelt edasi 5 min"
 
-#: src/enigma_main.cpp:2584
+#: src/enigma_main.cpp:2612
 msgid "enter number of minutes to fast forward"
 msgstr "sisesta minutid kiireks edasi kerimiseks"
 
-#: src/enigma_main.cpp:2733
-msgid "no EPG available"
-msgstr "EPG puudub"
-
-#: src/enigma_main.cpp:3562
+#: src/enigma_main.cpp:3644
 msgid "ShutdownTimer"
 msgstr "Väljalülimise taimer"
 
-#: src/enigma_main.cpp:3562
+#: src/enigma_main.cpp:3644
 msgid "SleepTimer"
 msgstr "Unetaimer"
 
-#: src/enigma_main.cpp:3982
+#: src/enigma_main.cpp:4066
 msgid "Pause"
 msgstr "Paus"
 
-#: src/enigma_main.cpp:3982
+#: src/enigma_main.cpp:4066
 msgid "audio track"
 msgstr "heliriba"
 
-#: src/enigma_main.cpp:4354
+#: src/enigma_main.cpp:4438
 msgid "Sorry, you cannot record this service."
 msgstr "Kahjuks sellelt kanalilt ei saa salvestada."
 
-#: src/enigma_main.cpp:4581
+#: src/enigma_main.cpp:4666
 msgid "Show recorded movies?"
 msgstr "Näitan salvestatud filme?"
 
-#: src/enigma_main.cpp:4581
+#: src/enigma_main.cpp:4666
 msgid "recording finished"
 msgstr "salvestamine lõpetatud"
 
-#: src/enigma_main.cpp:4909
+#: src/enigma_main.cpp:4994
 msgid "Shutdown your Receiver now?"
 msgstr "Kas lülitan vastuvõtja kohe välja?"
 
-#: src/enigma_main.cpp:4909 src/enigma_main.cpp:4929
+#: src/enigma_main.cpp:4994 src/enigma_main.cpp:5014
 msgid "Timer Message"
 msgstr "Taimeri Teade"
 
-#: src/enigma_main.cpp:4929
+#: src/enigma_main.cpp:5014
 msgid "Go to Standby now?"
 msgstr "Kas lülitan ooterežiimi?"
 
-#: src/enigma_main.cpp:4984 src/enigma_main.cpp:5048
+#: src/enigma_main.cpp:5069 src/enigma_main.cpp:5133
 msgid "Enter new name:"
 msgstr "Sisesta uus nimi:"
 
-#: src/enigma_main.cpp:4985 src/enigma_main.cpp:5049
+#: src/enigma_main.cpp:5070 src/enigma_main.cpp:5134
 msgid "Rename entry"
 msgstr "Nimeta ümber"
 
-#: src/enigma_main.cpp:5111
+#: src/enigma_main.cpp:5196
 msgid "Sorry, you cannot delete this service."
 msgstr "Kahjuks ei saa seda kanalit kustutada."
 
-#: src/enigma_main.cpp:5111
+#: src/enigma_main.cpp:5196
 msgid "delete service"
 msgstr "kustuta kanal"
 
-#: src/enigma_main.cpp:5136 src/enigma_main.cpp:5261 src/sselect.cpp:2379
+#: src/enigma_main.cpp:5221 src/enigma_main.cpp:5346 src/sselect.cpp:2395
 #, c-format
 msgid ""
 "You are trying to delete '%s'.\n"
@@ -3223,11 +3313,11 @@ msgstr ""
 "Üritad kustutada '%s'.\n"
 "Kas tõesti kustutan?"
 
-#: src/enigma_main.cpp:5137
+#: src/enigma_main.cpp:5222
 msgid "Delete recorded stream"
 msgstr "Kustuta salvestis"
 
-#: src/enigma_main.cpp:5164
+#: src/enigma_main.cpp:5249
 msgid ""
 "This is a complete Bouquet!\n"
 "Really delete?"
@@ -3235,76 +3325,76 @@ msgstr ""
 "Tegemist on terve nimekirjaga!\n"
 "Kas tõesti kustutan?"
 
-#: src/enigma_main.cpp:5165
+#: src/enigma_main.cpp:5250
 msgid "Delete bouquet"
 msgstr "Kustuta nimekiri"
 
-#: src/enigma_main.cpp:5262
+#: src/enigma_main.cpp:5347
 msgid "Delete File"
 msgstr "Kustuta fail"
 
-#: src/enigma_main.cpp:5360
+#: src/enigma_main.cpp:5445
 msgid "Enter new Filename:"
 msgstr "Sisesta uus faili nimi:"
 
-#: src/enigma_main.cpp:5361
+#: src/enigma_main.cpp:5446
 msgid "Rename File"
 msgstr "Faili ümbernimetamine"
 
-#: src/enigma_main.cpp:5393
+#: src/enigma_main.cpp:5478
 msgid "Enter new name for the bouquet:"
 msgstr "Sisesta nimekirjale uus nimi:"
 
-#: src/enigma_main.cpp:5394
+#: src/enigma_main.cpp:5479
 msgid "Rename bouquet"
 msgstr "Muuda nimekirja nime"
 
-#: src/enigma_main.cpp:5419
+#: src/enigma_main.cpp:5504
 msgid "Enter name for the new bouquet:"
 msgstr "Sisesta uuele nimekrijale nimi:"
 
-#: src/enigma_main.cpp:5420
+#: src/enigma_main.cpp:5505
 msgid "Add new bouquet"
 msgstr "Lisa uus nimekiri"
 
-#: src/enigma_main.cpp:5475
+#: src/enigma_main.cpp:5560
 msgid "unnamed"
 msgstr "nimetamata"
 
-#: src/enigma_main.cpp:5476
+#: src/enigma_main.cpp:5561
 msgid "Enter marker name:"
 msgstr "Sisesta järjehoidja nimi:"
 
-#: src/enigma_main.cpp:5477
+#: src/enigma_main.cpp:5562
 msgid "create marker"
 msgstr "loo järjehoidja"
 
-#: src/enigma_main.cpp:5525
+#: src/enigma_main.cpp:5610
 msgid "unnamed bouquet"
 msgstr "nimeta nimekiri"
 
-#: src/enigma_main.cpp:5728
+#: src/enigma_main.cpp:5813
 msgid "Do you want to rebuild your movie list?"
 msgstr "Soovid sa taastada salvestatud filmide nimekirja?"
 
-#: src/enigma_main.cpp:5729
+#: src/enigma_main.cpp:5814
 msgid "Recover movies"
 msgstr "Salvestatud filmid"
 
-#: src/enigma_main.cpp:6060 src/enigma_main.cpp:6061
+#: src/enigma_main.cpp:6145 src/enigma_main.cpp:6146
 msgid "This directory doesn't contain anything playable!"
 msgstr "See kaust ei sisalda salvestisi"
 
-#: src/enigma_main.cpp:6061
+#: src/enigma_main.cpp:6146
 msgid "Play"
 msgstr "Mängi"
 
-#: src/enigma_main.cpp:6523
+#: src/enigma_main.cpp:6655
 #, c-format
 msgid "%s was not found!"
 msgstr "%s ei leitud!"
 
-#: src/enigma_main.cpp:6674
+#: src/enigma_main.cpp:6806
 msgid ""
 "A timer based recording is currently in progress!\n"
 "This stops the timer, and recording!"
@@ -3312,7 +3402,7 @@ msgstr ""
 "Hetkel käib ajastatud salvestamine!\n"
 "See seiskab ajastuse ja salvestamise!"
 
-#: src/enigma_main.cpp:6684
+#: src/enigma_main.cpp:6816
 msgid ""
 "A recording is currently in progress!\n"
 "This stops the recording!"
@@ -3320,7 +3410,7 @@ msgstr ""
 "Hetkel käib salvestamine!\n"
 "See seiskab salvestamise!"
 
-#: src/enigma_main.cpp:6696
+#: src/enigma_main.cpp:6828
 msgid ""
 "A timer event is currently in progress!\n"
 "This stops the timer event!"
@@ -3328,30 +3418,30 @@ msgstr ""
 "Taimer poolt käivitatud protsess on parasjagu pooleli!\n"
 "See katkestab protsessi!"
 
-#: src/enigma_main.cpp:6704
+#: src/enigma_main.cpp:6836
 msgid "Really do this?"
 msgstr "Kas tõesti teeme seda?"
 
-#: src/enigma_main.cpp:6777
+#: src/enigma_main.cpp:6909
 msgid "please wait until the timer has started the recording (max 10 seconds)"
 msgstr "palun oota, kuni taimer käivitab salvestamise (max 10 sekundit)"
 
-#: src/enigma_main.cpp:6778
+#: src/enigma_main.cpp:6910
 msgid "information"
 msgstr "informatsioon"
 
-#: src/enigma_main.cpp:7653
+#: src/enigma_main.cpp:7818
 msgid "Record failed due to inaccessable storage."
 msgstr "Salvestamine ebaõnnestus, puudub ligipääs salvestusseadmele."
 
-#: src/enigma_main.cpp:7655
+#: src/enigma_main.cpp:7820
 msgid ""
 "Record stopped due to full harddisk. Delete some recordings and try again."
 msgstr ""
 "Salvestamine peatatud, sest kõvakettal ei ole enam vaba ruumi. Kustuta mõni "
 "varasem salvestus ja proovi uuesti."
 
-#: src/enigma_main.cpp:7657
+#: src/enigma_main.cpp:7822
 msgid ""
 "Record failed due to a write error during recording. Check for filesystem "
 "corruption."
@@ -3359,351 +3449,351 @@ msgstr ""
 "Salvestamine ebaõnnestus, sest salvestamise ajal esines kirjutamise viga. "
 "Kontrolli failisüsteemi korrasolekut."
 
-#: src/enigma_main.cpp:7659
+#: src/enigma_main.cpp:7824
 msgid "record failed"
 msgstr "salvestamine ebaõnnestus"
 
-#: src/enigma_main.cpp:7960 src/enigma_main.cpp:7961
+#: src/enigma_main.cpp:8125 src/enigma_main.cpp:8126
 msgid "One moment please..."
 msgstr "Üks hetk palun..."
 
-#: src/enigma_main.cpp:7961 src/enigma_main.cpp:7969 src/enigma_main.cpp:7983
-#: src/enigma_main.cpp:7996 src/enigma_main.cpp:8008 src/enigma_main.cpp:8017
-#: src/enigma_main.cpp:8022 src/timer.cpp:2371
+#: src/enigma_main.cpp:8126 src/enigma_main.cpp:8134 src/enigma_main.cpp:8148
+#: src/enigma_main.cpp:8161 src/enigma_main.cpp:8173 src/enigma_main.cpp:8182
+#: src/enigma_main.cpp:8187 src/timer.cpp:2371
 msgid "switch"
 msgstr "lülita"
 
-#: src/enigma_main.cpp:7969 src/enigma_main.cpp:7971
+#: src/enigma_main.cpp:8134 src/enigma_main.cpp:8136
 msgid "Service could not be found !"
 msgstr "Ei leia kanalit !"
 
-#: src/enigma_main.cpp:7983 src/enigma_main.cpp:7985
+#: src/enigma_main.cpp:8148 src/enigma_main.cpp:8150
 msgid "This service could not be descrambled"
 msgstr "Kanali kodeeringut ei õnnestu avada"
 
-#: src/enigma_main.cpp:7996 src/enigma_main.cpp:7998
+#: src/enigma_main.cpp:8161 src/enigma_main.cpp:8163
 msgid "This service doesn't currently send a signal"
 msgstr "See kanal ei saada hetkel signaali"
 
-#: src/enigma_main.cpp:8008 src/enigma_main.cpp:8010
+#: src/enigma_main.cpp:8173 src/enigma_main.cpp:8175
 msgid "This content could not be displayed"
 msgstr "Selle sisu ei suudeta kuvada"
 
-#: src/enigma_main.cpp:8015 src/enigma_main.cpp:8017
+#: src/enigma_main.cpp:8180 src/enigma_main.cpp:8182
 msgid "NVOD Service - please select a starttime"
 msgstr "NVOD teenus - palun vali algusaeg"
 
-#: src/enigma_main.cpp:8020 src/enigma_main.cpp:8022
+#: src/enigma_main.cpp:8185 src/enigma_main.cpp:8187
 msgid "Unknown error!!"
 msgstr "Tundmatu viga!!"
 
-#: src/enigma_main.cpp:8599 src/sselect.cpp:527
+#: src/enigma_main.cpp:8776 src/sselect.cpp:538
 msgid "Playlist"
 msgstr "Nimekiri"
 
-#: src/enigma_main.cpp:8606
+#: src/enigma_main.cpp:8783
 msgid "History"
 msgstr "Ajalugu"
 
-#: src/enigma_main.cpp:9123
+#: src/enigma_main.cpp:9300
 msgid "Networks, services and user bouquets will be reloaded"
 msgstr "Võrk, kanalid ja Lemmikute loetelu laetakse ümber"
 
-#: src/enigma_main.cpp:9124 src/enigma_main.cpp:9128
+#: src/enigma_main.cpp:9301 src/enigma_main.cpp:9305
 msgid "Reloading..."
 msgstr "Taaskäivitan..."
 
-#: src/enigma_main.cpp:9127
+#: src/enigma_main.cpp:9304
 msgid "Please wait..."
 msgstr "Palun oota..."
 
-#: src/enigma_main.cpp:9146
+#: src/enigma_main.cpp:9323
 msgid "Service Menu"
 msgstr "Kanalimenüü"
 
-#: src/enigma_main.cpp:9164 src/sselect.cpp:145
+#: src/enigma_main.cpp:9341 src/sselect.cpp:145
 msgid "add service to playlist"
 msgstr "lisa kanal nimekirja"
 
-#: src/enigma_main.cpp:9164
+#: src/enigma_main.cpp:9341
 msgid "add selected service to the playlist"
 msgstr "lisa valitud kanal nimekirja "
 
-#: src/enigma_main.cpp:9176
+#: src/enigma_main.cpp:9353
 msgid "shuffle"
 msgstr "paiguta ümber"
 
-#: src/enigma_main.cpp:9176
+#: src/enigma_main.cpp:9353
 msgid "shuffle playlist"
 msgstr "paiguta ümber esitusloend"
 
-#: src/enigma_main.cpp:9189 src/enigma_main.cpp:9196
+#: src/enigma_main.cpp:9366 src/enigma_main.cpp:9373
 msgid "remove all 'new found' flags"
 msgstr "eemalda kõik 'leitud uus' lipikud"
 
-#: src/enigma_main.cpp:9189
+#: src/enigma_main.cpp:9366
 msgid "select to remove all 'new found' flags from this satellite"
 msgstr "vali ja eemalda kõik 'leitud uus' lipikud sellelt satellidilt"
 
-#: src/enigma_main.cpp:9195
+#: src/enigma_main.cpp:9372
 msgid "remove 'new found flag'"
 msgstr "eemalda 'leitud uus' järjehoidja"
 
-#: src/enigma_main.cpp:9195
+#: src/enigma_main.cpp:9372
 msgid "select to remove the 'new found flag'"
 msgstr "vali ja eemalda 'leitud uus' lipik"
 
-#: src/enigma_main.cpp:9196
+#: src/enigma_main.cpp:9373
 msgid "select to remove all 'new found' flags"
 msgstr "vali ja eemalda kõik 'leitud uus' lipikud"
 
-#: src/enigma_main.cpp:9200
+#: src/enigma_main.cpp:9377
 msgid "create new bouquet"
 msgstr "loo uus kanalinimekiri"
 
-#: src/enigma_main.cpp:9200
+#: src/enigma_main.cpp:9377
 msgid "select to create a new bouquet"
 msgstr "valida uue kanalinimekirja loomiseks"
 
-#: src/enigma_main.cpp:9212
+#: src/enigma_main.cpp:9389
 msgid "duplicate bouquet"
 msgstr "kopeeri nimekiri"
 
-#: src/enigma_main.cpp:9212
+#: src/enigma_main.cpp:9389
 msgid "duplicate the complete bouquet with all content"
 msgstr "kopeeri terve nimekiri koos sisuga"
 
-#: src/enigma_main.cpp:9218 src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9395 src/enigma_main.cpp:9463 src/enigma_main.cpp:9468
+#: src/enigma_main.cpp:9488
 msgid "add to specific bouquet"
 msgstr "lisa teatud nimekirja"
 
-#: src/enigma_main.cpp:9218
+#: src/enigma_main.cpp:9395
 msgid "add the selected service to another bouquet"
 msgstr "lisa valitud kanal teise nimekirja"
 
-#: src/enigma_main.cpp:9220
+#: src/enigma_main.cpp:9397
 msgid "add marker"
 msgstr "lisa järjehoidja"
 
-#: src/enigma_main.cpp:9220
+#: src/enigma_main.cpp:9397
 msgid "create a new marker in the current bouquet"
 msgstr "loo käesolevasse nimekirja uus järjehoidja"
 
-#: src/enigma_main.cpp:9229 src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
-#: src/sselect.cpp:506
+#: src/enigma_main.cpp:9406 src/enigma_main.cpp:9422 src/enigma_main.cpp:9470
+#: src/sselect.cpp:517
 msgid "rename"
 msgstr "nimeta ümber"
 
-#: src/enigma_main.cpp:9229
+#: src/enigma_main.cpp:9406
 msgid "rename the current selected bouquet"
 msgstr "nimeta valitud nimekiri ümber"
 
-#: src/enigma_main.cpp:9245 src/enigma_main.cpp:9293
+#: src/enigma_main.cpp:9422 src/enigma_main.cpp:9470
 msgid "rename the current selected service/movie"
 msgstr "nimeta ümber valitud kanal/film"
 
-#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294 src/sselect.cpp:504
+#: src/enigma_main.cpp:9426 src/enigma_main.cpp:9471 src/sselect.cpp:515
 msgid "delete"
 msgstr "kustuta"
 
-#: src/enigma_main.cpp:9249 src/enigma_main.cpp:9294
+#: src/enigma_main.cpp:9426 src/enigma_main.cpp:9471
 msgid "delete the current selected service/movie"
 msgstr "kustuta valitud kanal/film"
 
-#: src/enigma_main.cpp:9254
+#: src/enigma_main.cpp:9431
 msgid "rebuild movie list"
 msgstr "rekonstrueeri filmide nimekiri"
 
-#: src/enigma_main.cpp:9254
+#: src/enigma_main.cpp:9431
 msgid "rebuild the current movie list"
 msgstr "rekonstrueeri antud filmide nimekiri"
 
-#: src/enigma_main.cpp:9261
+#: src/enigma_main.cpp:9438
 msgid "set as startup service"
 msgstr "sea kui käivitamisel käivituv kanal"
 
-#: src/enigma_main.cpp:9261
+#: src/enigma_main.cpp:9438
 msgid "currently selected service will be selected on startup"
 msgstr "vastuvõtja käivitamisel käivitub antud kanal"
 
-#: src/enigma_main.cpp:9262 src/enigma_main.cpp:9297
+#: src/enigma_main.cpp:9439 src/enigma_main.cpp:9474
 msgid "reset startup service"
 msgstr "kustuta alguseks määratud kanal "
 
-#: src/enigma_main.cpp:9262
+#: src/enigma_main.cpp:9439
 msgid "last selected service will be selected on startup"
 msgstr "viimane kanal valitakse kanaliks, mis käivitub vastuvõtja käivitamisel"
 
-#: src/enigma_main.cpp:9269
+#: src/enigma_main.cpp:9446
 msgid "disable move mode"
 msgstr "keela ümbertõstmise režiim"
 
-#: src/enigma_main.cpp:9269
+#: src/enigma_main.cpp:9446
 msgid "switch move mode off"
 msgstr "lülita ümbertõstmise režiim välja"
 
-#: src/enigma_main.cpp:9271
+#: src/enigma_main.cpp:9448
 msgid "enable move mode"
 msgstr "luba ümbertõstmise režiim"
 
-#: src/enigma_main.cpp:9271
+#: src/enigma_main.cpp:9448
 msgid "activate mode to simply change the entry order"
 msgstr "aktiveeri nimekirja järjestuse lihtne muutmine"
 
-#: src/enigma_main.cpp:9280
+#: src/enigma_main.cpp:9457
 msgid "copy to bouquet list"
 msgstr "kopeeri nimekirja"
 
-#: src/enigma_main.cpp:9280
+#: src/enigma_main.cpp:9457
 msgid "copy the selected provider to the bouquet list"
 msgstr "kopeeri valitud operaator nimekirja"
 
-#: src/enigma_main.cpp:9286 src/enigma_main.cpp:9291
+#: src/enigma_main.cpp:9463 src/enigma_main.cpp:9468
 msgid "add the selected service to a selectable bouquet"
 msgstr "lisa valitu kanal ühte valitavatest nimekirjadest"
 
-#: src/enigma_main.cpp:9296
+#: src/enigma_main.cpp:9473
 msgid "set as startup"
 msgstr "seadista kui käivitus"
 
-#: src/enigma_main.cpp:9296
+#: src/enigma_main.cpp:9473
 msgid "set the current selected service/movie as startup service"
 msgstr "seadista valitud kanal/film kui vaikimisi käivituv"
 
-#: src/enigma_main.cpp:9297
+#: src/enigma_main.cpp:9474
 msgid "reset startup"
 msgstr "kustuta käivituse seaded"
 
-#: src/enigma_main.cpp:9311
+#: src/enigma_main.cpp:9488
 msgid "add the selected file to a selectable bouquet"
 msgstr "lisa valitu fail ühte valitavatest nimekirjadest"
 
-#: src/enigma_main.cpp:9313
+#: src/enigma_main.cpp:9490
 msgid "delete file"
 msgstr "kustuta fail"
 
-#: src/enigma_main.cpp:9313
+#: src/enigma_main.cpp:9490
 msgid "delete the selected file (and all corresponding ts files"
 msgstr "kustuta valitud failsalvestus (sh kõik kaasnevad ts failid)"
 
-#: src/enigma_main.cpp:9314
+#: src/enigma_main.cpp:9491
 msgid "rename file"
 msgstr "nimeta fail ümber"
 
-#: src/enigma_main.cpp:9314
+#: src/enigma_main.cpp:9491
 msgid "rename the selected file (and all corresponding ts files"
 msgstr "nimeta valitud fail ümber (sh kõik kaasnevad ts failid)"
 
-#: src/enigma_main.cpp:9328
+#: src/enigma_main.cpp:9505
 msgid "disable edit mode"
 msgstr "redigeerimisrežiimi tühistamine"
 
-#: src/enigma_main.cpp:9328
+#: src/enigma_main.cpp:9505
 msgid "disable the edit mode"
 msgstr "tühista redigeerimisrežiim"
 
-#: src/enigma_main.cpp:9330
+#: src/enigma_main.cpp:9507
 msgid "enable edit mode"
 msgstr "luba redigeerimisrežiim"
 
-#: src/enigma_main.cpp:9330
+#: src/enigma_main.cpp:9507
 msgid "activate mode to simply add many services to a selectable bouquet"
 msgstr "aktiveer mitmete kanalite lihtne lisamine valitavatesse nimekirjadesse"
 
-#: src/enigma_main.cpp:9341
+#: src/enigma_main.cpp:9518
 msgid "unlock"
 msgstr "vabasta lukk"
 
-#: src/enigma_main.cpp:9341
+#: src/enigma_main.cpp:9518
 msgid "do parental-unlock the selected service or file"
 msgstr "vabasta valitud kanal või fail lapselukust"
 
-#: src/enigma_main.cpp:9343
+#: src/enigma_main.cpp:9520
 msgid "lock"
 msgstr "lukusta"
 
-#: src/enigma_main.cpp:9343
+#: src/enigma_main.cpp:9520
 msgid "do parentallock the selected service or file"
 msgstr "valitud kanalile või failile lapseluku aktiveerimine"
 
-#: src/enigma_main.cpp:9347
+#: src/enigma_main.cpp:9524
 msgid "disable parental lock"
 msgstr "tühista lapselukk"
 
-#: src/enigma_main.cpp:9347
+#: src/enigma_main.cpp:9524
 msgid "temporary disable the parental locking"
 msgstr "keela ajutiselt lapselukk"
 
-#: src/enigma_main.cpp:9349
+#: src/enigma_main.cpp:9526
 msgid "enable parental lock"
 msgstr "luba lapselukk"
 
-#: src/enigma_main.cpp:9349
+#: src/enigma_main.cpp:9526
 msgid "re-enable the parental locking"
 msgstr "taasluba lapselukk"
 
-#: src/enigma_main.cpp:9368
+#: src/enigma_main.cpp:9545
 msgid "Shutdown/Standby Menu"
 msgstr "Väljalülitamise/Ooterežiimi Menüü"
 
-#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9556 src/enigma_main.cpp:9560 src/enigma_main.cpp:9567
 msgid "restart enigma"
 msgstr "Enigma taaskäivitus"
 
-#: src/enigma_main.cpp:9379 src/enigma_main.cpp:9383 src/enigma_main.cpp:9390
+#: src/enigma_main.cpp:9556 src/enigma_main.cpp:9560 src/enigma_main.cpp:9567
 msgid "only restart the software, without rebooting the receiver"
 msgstr "taaskäivita vaid tarkvara, ilma vastuvõtjat taaskäivitamata"
 
-#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9384
+#: src/enigma_main.cpp:9557 src/enigma_main.cpp:9561
 msgid "reboot now"
 msgstr "kohene taaskäivitus"
 
-#: src/enigma_main.cpp:9380 src/enigma_main.cpp:9392
+#: src/enigma_main.cpp:9557 src/enigma_main.cpp:9569
 msgid "restart your dreambox"
 msgstr "taaskäivita dreambox"
 
-#: src/enigma_main.cpp:9384
+#: src/enigma_main.cpp:9561
 msgid "restart your receiver"
 msgstr "taaskäivita oma vastuvõtja"
 
-#: src/enigma_main.cpp:9391 src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9568 src/enigma_main.cpp:9572
 msgid "shutdown now"
 msgstr "kohene väljalülitus"
 
-#: src/enigma_main.cpp:9391
+#: src/enigma_main.cpp:9568
 msgid "shutdown your dreambox"
 msgstr "lülita välja oma dreambox"
 
-#: src/enigma_main.cpp:9392 src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9569 src/enigma_main.cpp:9573
 msgid "restart"
 msgstr "taaskäivita"
 
-#: src/enigma_main.cpp:9395
+#: src/enigma_main.cpp:9572
 msgid "shutdown your dbox-2"
 msgstr "lülita välja oma dbox-2"
 
-#: src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9573
 msgid "restart your dbox-2"
 msgstr "taaskäivita oma dbox-2"
 
-#: src/enigma_main.cpp:9400
+#: src/enigma_main.cpp:9577
 msgid "goto standby"
 msgstr "mine ooterežiimi"
 
-#: src/enigma_main.cpp:9400
+#: src/enigma_main.cpp:9577
 msgid "goto standby mode"
 msgstr "mine ooterežiimi"
 
-#: src/enigma_main.cpp:9401
+#: src/enigma_main.cpp:9578
 msgid "set sleeptimer"
 msgstr "seadista unetaimer"
 
-#: src/enigma_main.cpp:9401
+#: src/enigma_main.cpp:9578
 msgid "set a sleep timer"
 msgstr "seadista unetaimer"
 
-#: src/enigma_main.cpp:9405
+#: src/enigma_main.cpp:9582
 msgid ""
 "\tShutdown/Standby Menu\n"
 "\n"
@@ -3749,7 +3839,7 @@ msgstr ""
 "\n"
 "[EXIT]\tSulge aken"
 
-#: src/enigma_main.cpp:9469
+#: src/enigma_main.cpp:9646
 msgid ""
 "\tSet Sleeptimer\n"
 "\n"
@@ -3801,44 +3891,44 @@ msgstr ""
 "\n"
 "[EXIT]\tSule aken ilma muutusi salvestamata"
 
-#: src/enigma_main.cpp:9537
+#: src/enigma_main.cpp:9714
 msgid "Record Menu"
 msgstr "Salvestiste menüü"
 
-#: src/enigma_main.cpp:9547
+#: src/enigma_main.cpp:9724
 msgid "stop record now"
 msgstr "peata salvestamine"
 
-#: src/enigma_main.cpp:9547
+#: src/enigma_main.cpp:9724
 msgid "immediate stop the recording"
 msgstr "peatab koheselt salvestamise"
 
-#: src/enigma_main.cpp:9549
+#: src/enigma_main.cpp:9726
 msgid "set record duration"
 msgstr "salvestamise kestus"
 
-#: src/enigma_main.cpp:9549
+#: src/enigma_main.cpp:9726
 msgid "set the recording time (in minutes)"
 msgstr "seadista salvestamise aeg (minutites)"
 
-#: src/enigma_main.cpp:9550
+#: src/enigma_main.cpp:9727
 msgid "set record stop time"
 msgstr "salvestamise lõpu aeg"
 
-#: src/enigma_main.cpp:9550
+#: src/enigma_main.cpp:9727
 msgid "set the recording end time"
 msgstr "seadista salvestamise lõpetamise aeg"
 
-#: src/enigma_main.cpp:9556
+#: src/enigma_main.cpp:9733
 #, c-format
 msgid "add timeshift to recording (%d min) "
 msgstr "seadista ajanihe salvestamisel (%d min)"
 
-#: src/enigma_main.cpp:9557
+#: src/enigma_main.cpp:9734
 msgid "add recorded timeshift at beginning of this recording"
 msgstr "lisa salvestatud ajanihe selle salvestise algusesse"
 
-#: src/enigma_main.cpp:9691
+#: src/enigma_main.cpp:9868
 msgid "press ok to start edit mode"
 msgstr "vajuta ok käivitamaks redigeerimise režiim"
 
@@ -4033,7 +4123,7 @@ msgid "Couldn't read plugin directory %s"
 msgstr "Ei suuda lugeda manuste kataloogi %s"
 
 #: src/enigma_plugins.cpp:235 src/enigma_plugins.cpp:424 src/scan.cpp:1967
-#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2386
+#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2402
 msgid "Error"
 msgstr "Viga"
 
@@ -4060,17 +4150,17 @@ msgstr "E: puudub nimi"
 msgid "Cannot execute %s (check rights)"
 msgstr "Ei käivitu %s (kontrolli õigusi)"
 
-#: src/enigma_plugins.cpp:718
+#: src/enigma_plugins.cpp:719
 #, c-format
 msgid "Output from %s"
 msgstr "Väljundist %s"
 
-#: src/enigma_plugins.cpp:743
+#: src/enigma_plugins.cpp:745
 #, c-format
 msgid "Executing %s. Please wait..."
 msgstr "Teostan %s. Palun oodake..."
 
-#: src/enigma_plugins.cpp:746
+#: src/enigma_plugins.cpp:750
 #, c-format
 msgid "Could not execute %s"
 msgstr "Ei saa käivitada %s"
@@ -4159,6 +4249,15 @@ msgstr "Blokeeri kanalite taustaotsing"
 msgid "Don't look for new services in the background"
 msgstr "Ära teosta kanalite taustaotsingut"
 
+#: src/enigma_scan.cpp:102
+#, fuzzy
+msgid "Hold Service Name"
+msgstr "sisesta kanali nimi"
+
+#: src/enigma_scan.cpp:102
+msgid "Hold service's name when scanning"
+msgstr ""
+
 #: src/enigma_scan.cpp:184
 msgid ""
 "DiSEqC 1.2 is enabled on more than one LNB, please select the LNB the motor "
@@ -4166,10 +4265,6 @@ msgid ""
 msgstr ""
 "DiSEqC 1.2 on määratud rohkemale kui ühele LNB-le, palun vali millise LNB-ga "
 "on mootor ühendatud"
-
-#: src/enigma_scan.cpp:184 src/setup_mounts.cpp:782
-msgid "Info"
-msgstr "Info"
 
 #: src/enigma_scan.cpp:195
 msgid ""
@@ -4228,16 +4323,16 @@ msgstr "Paigalda ja eemalda tarkvara"
 msgid "Software management"
 msgstr "Tarkvara haldus"
 
-#: src/enigma_setup.cpp:154
-#, c-format
-msgid "/var used %d%%"
+#: src/enigma_setup.cpp:155
+#, fuzzy, c-format
+msgid "/var free %dK"
 msgstr "/var-i kasutuses %d%%"
 
-#: src/enigma_standby.cpp:28
+#: src/enigma_standby.cpp:29
 msgid "enigma standby"
 msgstr "enigma ooterežiimi"
 
-#: src/enigma_standby.cpp:29
+#: src/enigma_standby.cpp:30
 msgid "wake up enigma"
 msgstr "ärata enigma"
 
@@ -4992,15 +5087,15 @@ msgid ""
 "Do you want to retry?"
 msgstr "Vale PIN! Teed veel?"
 
-#: src/ppanel.cpp:126
+#: src/ppanel.cpp:127
 msgid "Script output"
 msgstr "Skripti tulem"
 
-#: src/ppanel.cpp:199
+#: src/ppanel.cpp:200
 msgid "Downloading"
 msgstr "Allalaadimine"
 
-#: src/ppanel.cpp:247
+#: src/ppanel.cpp:248
 msgid ""
 "Download failed.\n"
 "Please check available space and your communication settings."
@@ -5008,24 +5103,24 @@ msgstr ""
 "Allalaadimine ebaõnnestus.\n"
 "Palun kontrolli vaba ruumi olemasolu ja võrguseadeid."
 
-#: src/ppanel.cpp:272
+#: src/ppanel.cpp:273
 #, c-format
 msgid "Installing %s"
 msgstr "Paigaldan %s"
 
-#: src/ppanel.cpp:312
+#: src/ppanel.cpp:313
 msgid "Install failed."
 msgstr "Paigaldus ebaõnnestus."
 
-#: src/ppanel.cpp:342
+#: src/ppanel.cpp:343
 msgid "Continue"
 msgstr "Jätka"
 
-#: src/ppanel.cpp:428
+#: src/ppanel.cpp:430
 msgid "Press OK"
 msgstr "Vajuta OK"
 
-#: src/ppanel.cpp:456 src/ppanel.cpp:1144
+#: src/ppanel.cpp:458 src/ppanel.cpp:1173
 #, c-format
 msgid ""
 "Are you sure to open\n"
@@ -5034,13 +5129,13 @@ msgstr ""
 "Oled kindel, et avad\n"
 "%s?"
 
-#: src/ppanel.cpp:475 src/ppanel.cpp:544 src/ppanel.cpp:782
-#: src/ppanel.cpp:1011
+#: src/ppanel.cpp:477 src/ppanel.cpp:546 src/ppanel.cpp:811
+#: src/ppanel.cpp:1040
 #, c-format
 msgid "Downloading %s"
 msgstr "Allalaetud %s"
 
-#: src/ppanel.cpp:530
+#: src/ppanel.cpp:532
 #, c-format
 msgid ""
 "Are you sure to download\n"
@@ -5049,7 +5144,7 @@ msgstr ""
 "Oled kindel laadimaks alla\n"
 "%s?"
 
-#: src/ppanel.cpp:600 src/ppanel.cpp:651
+#: src/ppanel.cpp:602 src/ppanel.cpp:662
 #, c-format
 msgid ""
 "Are you sure to execute\n"
@@ -5058,7 +5153,7 @@ msgstr ""
 "Oled kindel, et soovid käivitada\n"
 "%s?"
 
-#: src/ppanel.cpp:722
+#: src/ppanel.cpp:751
 #, c-format
 msgid ""
 "Are you sure to install\n"
@@ -5067,7 +5162,7 @@ msgstr ""
 "Oled kindel, et paigaldan\n"
 "%s?"
 
-#: src/ppanel.cpp:811
+#: src/ppanel.cpp:840
 msgid ""
 "The package cannot be installed because it's already installed. Please "
 "remove the previous version first."
@@ -5075,27 +5170,27 @@ msgstr ""
 "Antud paketti ei saa installida kuna see on juba olemas. Kustuta alguseks "
 "vanem versioon."
 
-#: src/ppanel.cpp:812
+#: src/ppanel.cpp:841
 msgid "Installing not possible"
 msgstr "Paigaldus ei ole võimalik"
 
-#: src/ppanel.cpp:823 src/ppanel.cpp:832
+#: src/ppanel.cpp:852 src/ppanel.cpp:861
 msgid "Manual Install"
 msgstr "Käsitsi Paigaldus"
 
-#: src/ppanel.cpp:830
+#: src/ppanel.cpp:859
 msgid "Select package to install"
 msgstr "Vali pakett, mida paigaldada"
 
-#: src/ppanel.cpp:918 src/ppanel.cpp:924
+#: src/ppanel.cpp:947 src/ppanel.cpp:953
 msgid "Remove Software"
 msgstr "Tarkvara Eemaldamine"
 
-#: src/ppanel.cpp:922
+#: src/ppanel.cpp:951
 msgid "Select package to remove"
 msgstr "Vali pakett, mille eemaldad"
 
-#: src/ppanel.cpp:946
+#: src/ppanel.cpp:975
 #, c-format
 msgid ""
 "Are you sure to remove\n"
@@ -5104,12 +5199,12 @@ msgstr ""
 "Oled kindel, et eemaldad\n"
 "%s?"
 
-#: src/ppanel.cpp:954
+#: src/ppanel.cpp:983
 #, c-format
 msgid "Removing %s"
 msgstr "Eemaldan %s"
 
-#: src/ppanel.cpp:990
+#: src/ppanel.cpp:1019
 #, c-format
 msgid ""
 "Are you sure to play\n"
@@ -5118,7 +5213,7 @@ msgstr ""
 "Oled kindel, et käivitan\n"
 "%s?"
 
-#: src/ppanel.cpp:1082
+#: src/ppanel.cpp:1111
 #, c-format
 msgid ""
 "Are you sure to write\n"
@@ -5127,24 +5222,24 @@ msgstr ""
 "Oled kindel, et kirjutan\n"
 "%s?"
 
-#: src/ppanel.cpp:1170 src/upgrade.cpp:442 src/upgrade.cpp:515
+#: src/ppanel.cpp:1199 src/upgrade.cpp:442 src/upgrade.cpp:515
 #: src/upgrade.cpp:526
 msgid "Error!"
 msgstr "Viga!"
 
-#: src/ppanel.cpp:1322
+#: src/ppanel.cpp:1352
 msgid "PPanel recovery, internet connection needed"
 msgstr "PPaneeli taastamine, vajalik on interneti ühendus"
 
-#: src/ppanel.cpp:1430
+#: src/ppanel.cpp:1463
 msgid "Please select an item"
 msgstr "Palun vali element"
 
-#: src/ppanel.cpp:1452
+#: src/ppanel.cpp:1485
 msgid "latest"
 msgstr "viimased"
 
-#: src/ppanel.cpp:1499
+#: src/ppanel.cpp:1532
 msgid ""
 "A new menu is available. The new menu will be visible if you return to the "
 "setup panel.You can continue your work here after pressing OK."
@@ -5152,11 +5247,11 @@ msgstr ""
 "Uus menüü on saadaval. Uut menüüd näed kui pöördud tagasi häälestuse "
 "paneeli. Võid jätkata toimetamist siin kui oled muljunud OK."
 
-#: src/ppanel.cpp:1501
+#: src/ppanel.cpp:1534
 msgid "Automatic menu update"
 msgstr "Automaatne menüü uuendamine"
 
-#: src/ppanel.cpp:1656 src/ppanel.cpp:1754
+#: src/ppanel.cpp:1689 src/ppanel.cpp:1787
 #, c-format
 msgid ""
 "%s\n"
@@ -6189,7 +6284,7 @@ msgstr "Otsing lõpetatud"
 msgid "Manual PIDs"
 msgstr "Käsitsi PID-id"
 
-#: src/scan.cpp:1627 src/streaminfo.cpp:336
+#: src/scan.cpp:1627 src/streaminfo.cpp:357
 msgid "Name:"
 msgstr "Nimi:"
 
@@ -6201,7 +6296,7 @@ msgstr "kanali nime sisestamiseks vajuta ok"
 msgid "enter service name"
 msgstr "sisesta kanali nimi"
 
-#: src/scan.cpp:1642 src/streaminfo.cpp:348
+#: src/scan.cpp:1642 src/streaminfo.cpp:369
 msgid "Provider:"
 msgstr "Operaator:"
 
@@ -6213,7 +6308,7 @@ msgstr "Operaatori nime sisestamiseks vajuta OK"
 msgid "enter provider name"
 msgstr "sisesta operaatori nimi"
 
-#: src/scan.cpp:1658 src/streaminfo.cpp:360
+#: src/scan.cpp:1658 src/streaminfo.cpp:381
 msgid "Video PID:"
 msgstr "Video PID"
 
@@ -6225,7 +6320,7 @@ msgstr "sisestamaks video PID vajuta OK"
 msgid "enter video pid"
 msgstr "sisesta video pid"
 
-#: src/scan.cpp:1672 src/streaminfo.cpp:384
+#: src/scan.cpp:1672 src/streaminfo.cpp:405
 msgid "PCR PID:"
 msgstr "PCR PID:"
 
@@ -6237,7 +6332,7 @@ msgstr "sisestamaks pcr pid-e vajuta OK"
 msgid "enter pcr pid (in most case the same pid as the video pid)"
 msgstr "sisesta pcr pid (tavaliselt sama pid kui on video pid)"
 
-#: src/scan.cpp:1688 src/streaminfo.cpp:372
+#: src/scan.cpp:1688 src/streaminfo.cpp:393
 msgid "Audio PID:"
 msgstr "Audio PID:"
 
@@ -6269,7 +6364,7 @@ msgstr "sisestamaks (video) teksti pid vajuta OK"
 msgid "enter (video) text pid"
 msgstr "sisesta (video) teksti pid"
 
-#: src/scan.cpp:1725 src/streaminfo.cpp:456
+#: src/scan.cpp:1725 src/streaminfo.cpp:477
 msgid "Service ID:"
 msgstr "Kanali ID:"
 
@@ -6571,170 +6666,170 @@ msgstr "MAC aadressi tuvastamine ebaõnnestus"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: src/setup_epg.cpp:72
+#: src/setup_epg.cpp:92
 msgid "EPG data store"
 msgstr "EPG andmete ladu"
 
-#: src/setup_epg.cpp:77
+#: src/setup_epg.cpp:97
 msgid "Select if you want the default Enigma EPG or SQLite database EPG"
 msgstr ""
 "Vali, kas sa soovid vaikimisi EPG-ks Enigma või SQLite andmebaasi EPG-d"
 
-#: src/setup_epg.cpp:80
+#: src/setup_epg.cpp:100
 msgid "Enigma EPG"
 msgstr "Enigma EPG"
 
-#: src/setup_epg.cpp:81
+#: src/setup_epg.cpp:102
 msgid "SQLite database"
 msgstr "SQLite andmebaas"
 
-#: src/setup_epg.cpp:102
+#: src/setup_epg.cpp:123
 msgid "Select EPG store location"
 msgstr "Vali EPG andmelao asukoht"
 
-#: src/setup_epg.cpp:121
+#: src/setup_epg.cpp:142
 msgid "Number of EPG days:"
 msgstr "EPG päevade hulk:"
 
-#: src/setup_epg.cpp:127
+#: src/setup_epg.cpp:148
 msgid "Select number of EPG days"
 msgstr "Vali EPG päevade hulk"
 
-#: src/setup_epg.cpp:140
+#: src/setup_epg.cpp:161
 msgid "Enable MHW EPG"
 msgstr "Luba MHW EPG"
 
-#: src/setup_epg.cpp:143
+#: src/setup_epg.cpp:164
 msgid ""
 "Mediahighway EPG, activate swap space when using with multiple operators"
 msgstr "Meediahighway EPG, aktiveeri swap ala kui kasutad mitmeid operaatoreid"
 
-#: src/setup_epg.cpp:150
+#: src/setup_epg.cpp:171
 msgid "Enable DISH/BEV EEPG"
 msgstr "Luba DISH/BEV EPG"
 
-#: src/setup_epg.cpp:153
+#: src/setup_epg.cpp:174
 msgid "DISH/BEV network EEPG, up to 9 days EPG"
 msgstr "DISH/BEV võrgu EEPG, kuni 9 päeva EPG"
 
-#: src/setup_epg.cpp:159
+#: src/setup_epg.cpp:180
 msgid "Limit Enigma EPG size"
 msgstr "Enigma EPG mahu limiit"
 
-#: src/setup_epg.cpp:162
+#: src/setup_epg.cpp:183
 msgid "Limit the Enigma EPG file to 5MB (recommended)"
 msgstr "Piira Enigma EPG mahtu 5MB-ga (soovituslik)"
 
-#: src/setup_epg.cpp:168
+#: src/setup_epg.cpp:189
 msgid "Rescan EPG"
 msgstr "EPG skaneerimine"
 
-#: src/setup_epg.cpp:173
+#: src/setup_epg.cpp:194
 msgid "Rescan EPG data on current transponder"
 msgstr "Skaneeri veelkord antud transponderi EPG"
 
-#: src/setup_epg.cpp:190
+#: src/setup_epg.cpp:211
 msgid "Enigma EPG location"
 msgstr "Enigma EPG asukoht"
 
-#: src/setup_epg.cpp:194
+#: src/setup_epg.cpp:215
 msgid "SQLite EPG location"
 msgstr "SQLite EPG asukoht"
 
-#: src/setup_epg.cpp:237
+#: src/setup_epg.cpp:258
 msgid "This directory is suitable for storage"
 msgstr "Antud kataloog on salvestamiseks sobiv"
 
-#: src/setup_epg.cpp:241
+#: src/setup_epg.cpp:262
 msgid "This directory has not enough space"
 msgstr "Selles kataloogisei ole piisavalt ruumi"
 
-#: src/setup_epg.cpp:245
+#: src/setup_epg.cpp:266
 msgid "This directory does not exist"
 msgstr "Seda kataloogi ei eksisteeri"
 
-#: src/setup_epg.cpp:306
+#: src/setup_epg.cpp:327
 msgid "MultiEPG channels:"
 msgstr "MultiEPG kanalid:"
 
-#: src/setup_epg.cpp:313
+#: src/setup_epg.cpp:334
 msgid "Number of channels per MultiEPG page to show"
 msgstr "Kanalite kogus, mis kuvatakse MultiEPG lehel"
 
-#: src/setup_epg.cpp:318
+#: src/setup_epg.cpp:339
 msgid "MultiEPG entry fontsize:"
 msgstr "Multi EPG fondi suurus:"
 
-#: src/setup_epg.cpp:331
+#: src/setup_epg.cpp:352
 msgid "Increase/decrease entry fontsize with this number of points"
 msgstr "Suurenda/Vähenda fondi suurust antud ühikute võrra"
 
-#: src/setup_epg.cpp:336
+#: src/setup_epg.cpp:357
 msgid "Enable EPG genre colours"
 msgstr "Luba EPG välenduslaadi värvid"
 
-#: src/setup_epg.cpp:339
+#: src/setup_epg.cpp:360
 msgid "Make the MultiEPG entries coloured depending on the genre"
 msgstr ""
 "Kasuta erinevaid värve MultiEPG sissekannetel sõltuvalt klassifikatsioonist"
 
-#: src/setup_extra_osd.cpp:39
+#: src/setup_extra_osd.cpp:40
 msgid "OSD options"
 msgstr "Ekraanimenüü seaded"
 
-#: src/setup_extra_osd.cpp:60
+#: src/setup_extra_osd.cpp:61
 msgid "OSD on zap"
 msgstr "Ekraanimenüü kanali vahetusel"
 
-#: src/setup_extra_osd.cpp:60
+#: src/setup_extra_osd.cpp:61
 msgid "Show OSD after a zap"
 msgstr "Kuva ekraanimenüü kanali vahetusel"
 
-#: src/setup_extra_osd.cpp:61
+#: src/setup_extra_osd.cpp:62
 msgid "Extra OSD"
 msgstr "Ekstra ekraanimenüü"
 
-#: src/setup_extra_osd.cpp:61
+#: src/setup_extra_osd.cpp:62
 msgid "Show extra info in OSD on OK"
 msgstr "Kuva ekstra info ekraanimenüüs kui vajutad OK"
 
-#: src/setup_extra_osd.cpp:62
+#: src/setup_extra_osd.cpp:63
 msgid "Extra OSD on zap"
 msgstr "Ekstra ekraanimenüü kanali vahetusel "
 
-#: src/setup_extra_osd.cpp:62
+#: src/setup_extra_osd.cpp:63
 msgid "Show extra info in OSD when zapping"
 msgstr "Kuva ekraanimenüüs lisainfo kanali vahetuse ajal"
 
-#: src/setup_extra_osd.cpp:63
+#: src/setup_extra_osd.cpp:64
 msgid "Autohide OSD on OK"
 msgstr "Varja ekraanimenüü OK-ga"
 
-#: src/setup_extra_osd.cpp:63
+#: src/setup_extra_osd.cpp:64
 msgid "Autohide OSD when pressing OK button"
 msgstr "OK klahviga saad varjata ekraanimenüü"
 
-#: src/setup_extra_osd.cpp:64
+#: src/setup_extra_osd.cpp:65
 msgid "Autohide radio/mp3 OSD"
 msgstr "Varja raadio/mp3 ekraanimenüü"
 
-#: src/setup_extra_osd.cpp:64
+#: src/setup_extra_osd.cpp:65
 msgid "Autohide the OSD display in radio/mp3 mode"
 msgstr "Varja ekraanimenüü raadio/mp3 režiimi korral"
 
-#: src/setup_extra_osd.cpp:65
+#: src/setup_extra_osd.cpp:66
 msgid "SNR in dB"
 msgstr "SNR dB-des"
 
-#: src/setup_extra_osd.cpp:65
+#: src/setup_extra_osd.cpp:66
 msgid "Show SNR values in dB instead of %"
 msgstr "Kuva signaali ja müra suhe (SNR) % asemel dB-des"
 
-#: src/setup_extra_osd.cpp:68
+#: src/setup_extra_osd.cpp:69
 msgid "Improved BER"
 msgstr "Täiusta BER"
 
-#: src/setup_extra_osd.cpp:68
+#: src/setup_extra_osd.cpp:69
 msgid ""
 "Show improved BER (Bit Error Rate) regards to the outer FEC and in a value "
 "from 0-6 represents errorrate in ai power of 10 (6 represents 1 bit in a "
@@ -6743,152 +6838,170 @@ msgstr ""
 "Kuva parendatud BER (vigaste bittide hulk) sõltuvalt välisest FEC-st ja "
 "väärtuses mis on kijeldatud vigade arvuga 0-st kuni 6-ni astmel 10"
 
-#: src/setup_extra_osd.cpp:70
+#: src/setup_extra_osd.cpp:71
 msgid "Show plicons"
 msgstr "Kuva pliconsid"
 
-#: src/setup_extra_osd.cpp:70
+#: src/setup_extra_osd.cpp:71
 msgid "Show plicons in EPG and skin"
 msgstr "Kuva operaatorite logod (plicon) EPG-s ja ekraanimenüüs"
 
-#: src/setup_extra_osd.cpp:71
+#: src/setup_extra_osd.cpp:72
 msgid "Use Mini-Zap"
 msgstr "Säästu ekraanimenüü"
 
-#: src/setup_extra_osd.cpp:71
+#: src/setup_extra_osd.cpp:72
 msgid "Show smaller OSD when zapping (if supported by the skin)"
 msgstr ""
 "Kuva minimaalne ekraanimenüü kanalivahetuse ajal (kui menüü välimuse "
 "versioon toetab)"
 
-#: src/setup_extra_osd.cpp:72
+#: src/setup_extra_osd.cpp:73
 msgid "Expert OSD"
 msgstr "Ekspert ekraanimenüü"
 
-#: src/setup_extra_osd.cpp:72
+#: src/setup_extra_osd.cpp:73
 msgid "Show other extra info in OSD on OK"
 msgstr "Kuva muu ekstra info ekraanimenüüs vajutades OK"
 
-#: src/setup_extra_osd.cpp:73
+#: src/setup_extra_osd.cpp:74
 msgid "Expert OSD on zap"
 msgstr "Ekspert Ekraanimenüü kanalivahetusel"
 
-#: src/setup_extra_osd.cpp:73
+#: src/setup_extra_osd.cpp:74
 msgid "Show other extra info in OSD when zapping"
 msgstr "Kuva muu ekstra info ekraanimenüüs kanali vahetamisel"
 
-#: src/setup_extra_osd.cpp:74
+#: src/setup_extra_osd.cpp:75
 msgid "Seconds in OSD clock"
 msgstr "Sekundid ekraanimenüü kellal"
 
-#: src/setup_extra_osd.cpp:75
+#: src/setup_extra_osd.cpp:76
+#, fuzzy
+msgid "Progress in %"
+msgstr "Edenemine:"
+
+#: src/setup_extra_osd.cpp:76
+msgid "Display Progress in %"
+msgstr ""
+
+#: src/setup_extra_osd.cpp:77
+#, fuzzy
+msgid "Filt Userbouquet"
+msgstr "Muuda kanalinimekirjasi"
+
+#: src/setup_extra_osd.cpp:77
+msgid "Filt Userbouquet's Services where not my satellites"
+msgstr ""
+
+#: src/setup_extra_osd.cpp:78
 msgid "No picture in radio/mp3"
 msgstr "Pildi varjamine režiimis radio/mp3"
 
-#: src/setup_extra_osd.cpp:75
+#: src/setup_extra_osd.cpp:78
 msgid "No background picture in radio/mp3 mode"
 msgstr "Taustapildi varjamine raadio/mp3 töörežiimis"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:79
 msgid "Listbox OSD main menu"
 msgstr "Kuva peamenüü nimekirjana"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:79
 msgid "Show the Main menu in normal listbox style"
 msgstr "Kuva peamenüü harilikus nimekirja stiilis"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:80
 msgid "Serviceselector help buttons"
 msgstr "Abinupud"
 
-#: src/setup_extra_osd.cpp:77
+#: src/setup_extra_osd.cpp:80
 msgid "Show coloured help buttons in service selector"
 msgstr "Näita värvilisi abinuppe"
 
-#: src/setup_extra_osd.cpp:80
+#: src/setup_extra_osd.cpp:83
 msgid "Show Sat position"
 msgstr "Kuva satelliidi orbitaalpositsioon"
 
-#: src/setup_extra_osd.cpp:80
+#: src/setup_extra_osd.cpp:83
 msgid "Show satellite position in the infobar"
 msgstr "Kuva satelliidi positsioon inforibal"
 
-#: src/setup_extra_osd.cpp:82
+#: src/setup_extra_osd.cpp:85
 msgid "Auto show Infobar"
 msgstr "Inforiba automaatne näitamine"
 
-#: src/setup_extra_osd.cpp:82
+#: src/setup_extra_osd.cpp:85
 msgid "Always show infobar when new event info is available"
 msgstr "Kuva inforiba, kui uus info on saadaval"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:86
 msgid "Show remaining Time"
 msgstr "Näita järelejäänud aega"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:86
 msgid "Show event remaining time in the infobar"
 msgstr "Kuva järele jäänud saate aega inforibal"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:87
 msgid "Hide shortcut icons"
 msgstr "Varja otsetee ikoonid"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:87
 msgid "Don't show shortcut icons in menus"
 msgstr "Ära näita otsetee ikoone menüüs"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:88
 msgid "Skip confirmations"
 msgstr "Ära küsi kinnitusi"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:88
 msgid "Skip some confirmations"
 msgstr "Ära küsi kinnitusi"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:89
 msgid "Hide error windows"
 msgstr "Peida veateated"
 
-#: src/setup_extra_osd.cpp:86
+#: src/setup_extra_osd.cpp:89
 msgid "Don't show zap error messages like service not found"
 msgstr "Ära näita kanalivahetusel veateateid nagu näiteks \"ei leia kanalit\""
 
-#: src/setup_extra_osd.cpp:89
+#: src/setup_extra_osd.cpp:92
 msgid "Enable fast zapping"
 msgstr "Luba kanalite kiirlülitus"
 
-#: src/setup_extra_osd.cpp:89
+#: src/setup_extra_osd.cpp:92
 msgid "Enables faster zapping.. but with visible sync"
 msgstr "Luba kiirem kanalivahetus.. kuid koos nähtava sünkronisatsiooniga"
 
-#: src/setup_extra_osd.cpp:91
+#: src/setup_extra_osd.cpp:94
 msgid "Enable Zapping History"
 msgstr "Luba kanalite lülituse ajalugu"
 
-#: src/setup_extra_osd.cpp:91
+#: src/setup_extra_osd.cpp:94
 msgid "Don't care about actual mode when zapping in history list"
 msgstr "Ignoreerib käesolevat töörežiimi kui kasutab kanalite vahetuse ajalugu"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:95
 msgid "Auto bouquet change"
 msgstr "Automaatne nimekirja vahetus"
 
-#: src/setup_extra_osd.cpp:92
+#: src/setup_extra_osd.cpp:95
 msgid "Change into next bouquet when end of current bouquet is reached"
 msgstr ""
 "Liigu automaatselt järgmisele kanalinimekirjale kui oled olemasoleva lõppu "
 "jõudnud"
 
-#: src/setup_extra_osd.cpp:94
+#: src/setup_extra_osd.cpp:96
 msgid "infobar timeout (left, right)"
 msgstr "inforiba timeout (vasak, parem)"
 
-#: src/setup_extra_osd.cpp:95 src/setup_extra_osd.cpp:96
 #: src/setup_extra_osd.cpp:97 src/setup_extra_osd.cpp:98
 #: src/setup_extra_osd.cpp:99 src/setup_extra_osd.cpp:100
 #: src/setup_extra_osd.cpp:101 src/setup_extra_osd.cpp:102
 #: src/setup_extra_osd.cpp:103 src/setup_extra_osd.cpp:104
-#: src/setup_extra_osd.cpp:105
+#: src/setup_extra_osd.cpp:105 src/setup_extra_osd.cpp:106
+#: src/setup_extra_osd.cpp:107
 #, c-format
 msgid "Infobar timeout %d sec"
 msgstr "Inforiba timeout %d sec"
@@ -6950,8 +7063,8 @@ msgid "Are you SURE that you want to format this disk?\n"
 msgstr "Oled sa kindel, et soovid ketast formatida?\n"
 
 #: src/setup_harddisk.cpp:556 src/setup_harddisk.cpp:566
-#: src/setup_harddisk.cpp:600 src/setup_harddisk.cpp:615
-#: src/setup_harddisk.cpp:701 src/setup_harddisk.cpp:711
+#: src/setup_harddisk.cpp:600 src/setup_harddisk.cpp:616
+#: src/setup_harddisk.cpp:702 src/setup_harddisk.cpp:712
 msgid "formatting harddisk..."
 msgstr "toimub kõvaketta format ..."
 
@@ -6971,75 +7084,75 @@ msgstr ""
 "Palun oota, kuni kõvaketas formaaditakse.\n"
 "Selleks kulub mõned minutid.\n"
 
-#: src/setup_harddisk.cpp:614
+#: src/setup_harddisk.cpp:615
 msgid "sorry, couldn't find sfdisk utility to partition harddisk."
 msgstr ""
 "vabanda, kuid kõvaketta partitsioneerimiseks vajalik utiliit sfdisk puudub."
 
-#: src/setup_harddisk.cpp:665
+#: src/setup_harddisk.cpp:666
 #, c-format
 msgid "creating filesystem failed"
 msgstr "failisüsteemi loomine ebaõnnestus"
 
-#: src/setup_harddisk.cpp:683
+#: src/setup_harddisk.cpp:684
 #, c-format
 msgid "mounting harddisk failed"
 msgstr "kõvaketta paigaldamine ebaõnnestus"
 
-#: src/setup_harddisk.cpp:691
+#: src/setup_harddisk.cpp:692
 #, c-format
 msgid "creating /media/hdd/movie failed"
 msgstr "failisüsteemi /meedia/hdd/film loomine ebaõnnestus"
 
-#: src/setup_harddisk.cpp:710
+#: src/setup_harddisk.cpp:711
 msgid "successfully formatted your disk!"
 msgstr "format õnnestus!"
 
-#: src/setup_harddisk.cpp:738
+#: src/setup_harddisk.cpp:739
 msgid "(error reading information)"
 msgstr "(viga informatsiooni lugemisel)"
 
-#: src/setup_harddisk.cpp:740
+#: src/setup_harddisk.cpp:741
 msgid "uninitialized - format it to use!"
 msgstr "initsialiseerimata - tee format, et kasutada!"
 
-#: src/setup_harddisk.cpp:742
+#: src/setup_harddisk.cpp:743
 #, c-format
 msgid "in use, %d.%04d GB (about %d minutes) free"
 msgstr "kasutusel, %d.%04d GB (~%d minutit) vaba"
 
-#: src/setup_harddisk.cpp:744
+#: src/setup_harddisk.cpp:745
 msgid "initialized, but unknown filesystem"
 msgstr "initsialiseeritud, kuid failisüsteem on tundmatu"
 
-#: src/setup_harddisk.cpp:834
+#: src/setup_harddisk.cpp:835
 msgid "could not unmount the filesystem... "
 msgstr "ei suutnud laadida failisüsteemi ..."
 
-#: src/setup_harddisk.cpp:835 src/setup_harddisk.cpp:848
-#: src/setup_harddisk.cpp:868 src/setup_harddisk.cpp:888
-#: src/setup_harddisk.cpp:904
+#: src/setup_harddisk.cpp:836 src/setup_harddisk.cpp:849
+#: src/setup_harddisk.cpp:869 src/setup_harddisk.cpp:889
+#: src/setup_harddisk.cpp:905
 msgid "check filesystem..."
 msgstr "kontrolli failisüsteemi ...."
 
-#: src/setup_harddisk.cpp:847
+#: src/setup_harddisk.cpp:848
 msgid "sorry, couldn't find fsck.ext3 utility to check the ext3 filesystem."
 msgstr ""
 "vabanda, kuid failisüsteemi kontrolliimise utiliiti fsck.ext3 ei leitud."
 
-#: src/setup_harddisk.cpp:867
+#: src/setup_harddisk.cpp:868
 msgid "sorry, couldn't find fsck.ext2 utility to check the ext2 filesystem."
 msgstr ""
 "vabandust, kuid failisüsteemi kontrolliimise utiliiti fsck.ext2 ei leitud."
 
-#: src/setup_harddisk.cpp:887
+#: src/setup_harddisk.cpp:888
 msgid ""
 "sorry, couldn't find reiserfsck utility to check the reiserfs filesystem."
 msgstr ""
 "vabanda, kuid reiserfs failisüsteemi kontrolliimise utiliiti reiserfsck ei "
 "leitud."
 
-#: src/setup_harddisk.cpp:903
+#: src/setup_harddisk.cpp:904
 msgid "not supported filesystem for check."
 msgstr "failisüsteemi kontroll ei ole toetatud"
 
@@ -7283,7 +7396,7 @@ msgstr "Parool"
 msgid "Enter the password of the server"
 msgstr "Sisesta serveri parool"
 
-#: src/setup_mounts.cpp:369 src/sselect.cpp:2341 src/sselect.cpp:2380
+#: src/setup_mounts.cpp:369 src/sselect.cpp:2357 src/sselect.cpp:2396
 msgid "Delete"
 msgstr "Kustuta"
 
@@ -8896,9 +9009,9 @@ msgstr "Käsitsi uuendus"
 msgid ""
 "Are you sure you want to put\n"
 "your box in **STOP** mode?\n"
-"When box is in **STOP** mode\n"
-"you need to connect to box via\n"
-"your webbrowser and flash the new image\n"
+"When the box is in **STOP** mode\n"
+"you need to connect to it with\n"
+"a webbrowser and flash the new image\n"
 "Make sure you make a backup of\n"
 "your settings before continuing"
 msgstr ""
@@ -8983,7 +9096,7 @@ msgstr "lisa kanal valitud kanalinimekirja"
 msgid "toggle between classic and multi column style"
 msgstr "vahetab klassikalise ja mitmetulbalise stiili vahel"
 
-#: src/sselect.cpp:151 src/sselect.cpp:1858 src/sselect.cpp:1868
+#: src/sselect.cpp:151 src/sselect.cpp:1868 src/sselect.cpp:1878
 msgid "toggle focus between service and bouquet list (in combi column style)"
 msgstr "muuda fookust nimekirjade ja kanalite vahel"
 
@@ -9029,44 +9142,40 @@ msgstr "nimeta ümber valitud sisestus "
 msgid "create new marker entry"
 msgstr "lisa uus järjehoidja"
 
-#: src/sselect.cpp:377
+#: src/sselect.cpp:379
 msgid "[GO UP]"
 msgstr "[ÜLES]"
 
-#: src/sselect.cpp:379
+#: src/sselect.cpp:381
 msgid "(removed service)"
 msgstr "(eemaldatud kanal)"
 
-#: src/sselect.cpp:505
+#: src/sselect.cpp:516
 msgid "mark"
 msgstr "märk"
 
-#: src/sselect.cpp:507
+#: src/sselect.cpp:518
 msgid "marker"
 msgstr "järjehoidja"
 
-#: src/sselect.cpp:525
+#: src/sselect.cpp:536
 msgid "My Dreambox"
 msgstr "Minu Dreamboks"
 
-#: src/sselect.cpp:526
-msgid "Movies"
-msgstr "Filmid"
-
-#: src/sselect.cpp:1056
+#: src/sselect.cpp:1067
 msgid "Select No or press Abort to lock/unlock the complete directory"
 msgstr "Vali EI või vajuta KATKESTA kogu kataloogi lukustamiseks/avamiseks"
 
-#: src/sselect.cpp:1056
+#: src/sselect.cpp:1067
 msgid "Enter Directory"
 msgstr "Sisesta Kataloog"
 
-#: src/sselect.cpp:1848
+#: src/sselect.cpp:1858
 #, fuzzy
 msgid "toggle between now and next epg entries in single column list"
 msgstr "muuda fookust nimekirjade ja kanalite vahel"
 
-#: src/sselect.cpp:1993
+#: src/sselect.cpp:2008
 msgid ""
 "Service selector\n"
 "\n"
@@ -9075,31 +9184,27 @@ msgid ""
 "one or more columns."
 msgstr ""
 
-#: src/sselect.cpp:2338
-msgid "Root"
-msgstr "Juur"
-
-#: src/sselect.cpp:2339
+#: src/sselect.cpp:2355
 #, fuzzy
 msgid "Select"
 msgstr "Vali LNB"
 
-#: src/sselect.cpp:2340
+#: src/sselect.cpp:2356
 #, fuzzy
 msgid "New Directory"
 msgstr "Kataloog"
 
-#: src/sselect.cpp:2357
+#: src/sselect.cpp:2373
 #, fuzzy
 msgid "Enter name of new directory:"
 msgstr "Sisesta serveri kataloog"
 
-#: src/sselect.cpp:2358
+#: src/sselect.cpp:2374
 #, fuzzy
 msgid "Create Directory"
 msgstr "Sisesta Kataloog"
 
-#: src/sselect.cpp:2367
+#: src/sselect.cpp:2383
 #, fuzzy
 msgid "Error creating directory"
 msgstr "mine ülemisse kataloogi"
@@ -9136,43 +9241,43 @@ msgstr "rada"
 msgid "length"
 msgstr "pikkus"
 
-#: src/streaminfo.cpp:396
+#: src/streaminfo.cpp:417
 msgid "PMT PID:"
 msgstr "PMT PID:"
 
-#: src/streaminfo.cpp:408
+#: src/streaminfo.cpp:429
 msgid "Teletext PID:"
 msgstr "Teleteksti PID:"
 
-#: src/streaminfo.cpp:420
+#: src/streaminfo.cpp:441
 msgid "Video format:"
 msgstr "Video formaat:"
 
-#: src/streaminfo.cpp:432
+#: src/streaminfo.cpp:453
 msgid "Transport Stream ID:"
 msgstr "Saatja voo ID:"
 
-#: src/streaminfo.cpp:444
+#: src/streaminfo.cpp:465
 msgid "Original Network ID:"
 msgstr "Originaalne võrgu ID"
 
-#: src/streaminfo.cpp:468
+#: src/streaminfo.cpp:489
 msgid "Namespace:"
 msgstr "Nimeväli:"
 
-#: src/streaminfo.cpp:504
+#: src/streaminfo.cpp:525
 msgid "supported coding systems:"
 msgstr "Toetatud kodeerimissüsteemid:"
 
-#: src/streaminfo.cpp:544
+#: src/streaminfo.cpp:565
 msgid "Systems used in service:"
 msgstr "Kasutusel Süsteemid:"
 
-#: src/streaminfo.cpp:585
+#: src/streaminfo.cpp:606
 msgid "Record mode - read manual"
 msgstr "Salvestamise režiim - loe juhendit"
 
-#: src/streaminfo.cpp:592
+#: src/streaminfo.cpp:613
 msgid ""
 "\tStreaminfo\n"
 "\n"
@@ -9196,15 +9301,15 @@ msgid ""
 "[OK]/[EXIT]\tClose window"
 msgstr ""
 
-#: src/streaminfo.cpp:700
+#: src/streaminfo.cpp:721
 msgid "Service information (right)"
 msgstr "Kanaliinfo (parem)"
 
-#: src/streaminfo.cpp:701
+#: src/streaminfo.cpp:722
 msgid "Scrambled system information (left, right)"
 msgstr "Kodeeritud süsteemi informatsioon (vasak, parem)"
 
-#: src/streaminfo.cpp:702
+#: src/streaminfo.cpp:723
 msgid "Transponder information (left)"
 msgstr "Transponderi info (vasak)"
 
@@ -10024,7 +10129,7 @@ msgstr ""
 msgid "Upgrade in process..."
 msgstr "Toimub versiooniuuendus..."
 
-#: src/wizard_language.cpp:168
+#: src/wizard_language.cpp:169
 msgid ""
 "\tOSD Language\n"
 "\n"
@@ -10058,11 +10163,11 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window without saving changes"
 
-#: src/wizard_language.cpp:180
+#: src/wizard_language.cpp:181
 msgid "Choose your language..."
 msgstr "Vali keel..."
 
-#: src/wizard_language.cpp:181
+#: src/wizard_language.cpp:182
 msgid "press up/down/ok"
 msgstr "vajuta üles/alla/ok"
 
@@ -10097,6 +10202,12 @@ msgstr "Tavaline LNB, väljaarvatud Põhja-Ameerika ja Kanada"
 #: src/wizard_scan.cpp:170
 msgid "DISH LNB for North America and Canada"
 msgstr "DISH LNB Põhja-Ameerika ja Kanada"
+
+#~ msgid "no data for this service available"
+#~ msgstr "sellel kanalil ei ole andmeid"
+
+#~ msgid "no EPG available"
+#~ msgstr "EPG puudub"
 
 #, fuzzy
 #~ msgid "max. recording time (minutes):"
@@ -10637,9 +10748,6 @@ msgstr "DISH LNB Põhja-Ameerika ja Kanada"
 
 #~ msgid "Show logging screen"
 #~ msgstr "Kuva sisselogimise ekraan"
-
-#~ msgid " - logging"
-#~ msgstr " - sisselogimine"
 
 #~ msgid "Service Organising"
 #~ msgstr "Kanalite järjestamine"

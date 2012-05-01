@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/hotplug
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-hotplug.c
-file
-
-
-
-
-2009-12-09T08:20:12.716015Z
-941073e3abf870a81426d51ff6b169f2
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3739
 
 Makefile.am
 file
@@ -127,4 +93,38 @@ plindeman
 
 
 2128
+
+hotplug.c
+file
+
+
+
+
+2009-12-09T08:20:12.716015Z
+941073e3abf870a81426d51ff6b169f2
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3739
 

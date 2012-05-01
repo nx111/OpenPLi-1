@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma/weather
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-weather.cpp
-file
-
-
-
-
-2009-12-09T08:21:03.404024Z
-74a39de8301c701539049a70e68d522e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13995
 
 weather.h
 file
@@ -266,4 +232,38 @@ plindeman
 
 
 11148
+
+weather.cpp
+file
+
+
+
+
+2009-12-09T08:21:03.404024Z
+74a39de8301c701539049a70e68d522e
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13995
 

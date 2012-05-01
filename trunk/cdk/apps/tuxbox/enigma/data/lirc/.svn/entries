@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/lirc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-ir_vcr_stop.lirc
-file
-
-
-
-
-2009-12-09T08:20:36.892026Z
-9ed1b3a17a7da51ef6db50172416fb78
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-31
 
 Makefile.am
 file
@@ -127,4 +93,38 @@ plindeman
 
 
 68
+
+ir_vcr_stop.lirc
+file
+
+
+
+
+2009-12-09T08:20:36.892026Z
+9ed1b3a17a7da51ef6db50172416fb78
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+31
 

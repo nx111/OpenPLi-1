@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma/data/fonts
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,74 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-andale.ttf
-file
-
-
-
-
-2009-12-09T08:20:36.824019Z
-efcb580cde7b6e7281406eaf4e275905
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-30672
-
-pakenham.ttf
-file
-
-
-
-
-2009-12-09T08:20:36.828024Z
-c5f07ac98d9b5142c3b8b3201be14d9e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-66764
 
 bluehigh.ttf
 file
@@ -331,4 +263,72 @@ has-props
 
 
 311384
+
+andale.ttf
+file
+
+
+
+
+2009-12-09T08:20:36.824019Z
+efcb580cde7b6e7281406eaf4e275905
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30672
+
+pakenham.ttf
+file
+
+
+
+
+2009-12-09T08:20:36.828024Z
+c5f07ac98d9b5142c3b8b3201be14d9e
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+66764
 

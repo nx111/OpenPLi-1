@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/allboxes/var_init
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -26,9 +26,6 @@ plindeman
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
-iptables
-dir
-
 bin
 dir
 
@@ -36,5 +33,8 @@ tuxbox
 dir
 
 etc
+dir
+
+iptables
 dir
 

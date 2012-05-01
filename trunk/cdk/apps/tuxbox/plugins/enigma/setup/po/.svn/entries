@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma/setup/po
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,40 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+zh.po
+file
+
+
+
+
+2009-12-09T08:21:03.768022Z
+2b4418c5f6919bbf03d3eef416b4c9f6
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14010
 
 ar.po
 file
@@ -433,38 +467,4 @@ plindeman
 
 
 15186
-
-zh.po
-file
-
-
-
-
-2009-12-09T08:21:03.768022Z
-2b4418c5f6919bbf03d3eef416b4c9f6
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-14010
 

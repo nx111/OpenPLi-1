@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-19 18:15+0100\n"
+"POT-Creation-Date: 2009-12-14 16:25+0800\n"
 "PO-Revision-Date: 2009-11-24 14:23+0200\n"
 "Last-Translator: Dimitar Tsenev <dcenev@mail.bg>\n"
 "Language-Team: Bulgarian <dcenev@mail.bg>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,176 +19,176 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: iso-8859-5\n"
 
-#: default.esml:849
+#: default.esml:848
 msgid "&#53;"
 msgstr "&#53;"
 
-#: default.esml:405
+#: default.esml:404
 msgid "here you can change your sat/lnb mapping"
 msgstr "Тук може да смените вашата SAT/LNB конф."
 
-#: default.esml:438 src/enigma_scan.cpp:73
+#: default.esml:437 src/enigma_scan.cpp:73
 msgid "Satfind"
 msgstr "Satfind"
 
-#: default.esml:922
+#: default.esml:921
 msgid "set amount of transparency when in semi-transparent mode"
 msgstr ""
 
-#: default.esml:460
+#: default.esml:459
 msgid "motor power input difference between running and not running"
 msgstr "Потенциална разлика при работещ мотор и неработещ"
 
-#: default.esml:430
+#: default.esml:429
 msgid "send the complete DiSEqC sequence twice"
 msgstr "Изпрати цялата DiSEqC команда два пъти"
 
-#: default.esml:451 default.esml:487 default.esml:582 src/rotorconfig.cpp:597
+#: default.esml:450 default.esml:486 default.esml:581 src/rotorconfig.cpp:597
 msgid "Satellite:"
 msgstr "Сателит:"
 
-#: default.esml:925
+#: default.esml:924
 msgid "use truetype font instead of standard font"
 msgstr ""
 
-#: default.esml:431
+#: default.esml:430
 msgid "send no DiSEqC when only Hi/Lo or H/V changes"
 msgstr "Не изпращай DiSEqC когато Hi/Lo или H/V се променя"
 
-#: default.esml:640
+#: default.esml:639
 msgid "SNR"
 msgstr "SNR"
 
-#: default.esml:915
+#: default.esml:914
 #, fuzzy
 msgid "Service:"
 msgstr "Сървизи"
 
-#: default.esml:429
+#: default.esml:428
 msgid "Uncommitted Switch:"
 msgstr "Uncommitted Switch:"
 
-#: default.esml:587 default.esml:602 default.esml:617
+#: default.esml:586 default.esml:601 default.esml:616
 msgid "enable/disable inversion here (ok)"
 msgstr "Разреши/Забрани инверсията (ок)"
 
-#: default.esml:433
+#: default.esml:432
 msgid "prev. page"
 msgstr "Пред. стр."
 
-#: default.esml:407
+#: default.esml:406
 msgid "LOF/L:"
 msgstr "LOF/L:"
 
-#: default.esml:731 src/enigma_main.cpp:237 src/timer.cpp:2846
+#: default.esml:730 src/enigma_main.cpp:237 src/timer.cpp:2846
 msgid "Wednesday"
 msgstr "Сряда"
 
-#: default.esml:917
+#: default.esml:916
 msgid "switch to 16:9 mode when displaying teletext pages"
 msgstr ""
 
-#: default.esml:821
+#: default.esml:820
 msgid "Partition Check"
 msgstr "Проверка на дяла"
 
-#: default.esml:794
+#: default.esml:793
 msgid "enter recording end time (0..9, left, right, ok)"
 msgstr "Време за край на записа (0..9, left, right, ok)"
 
-#: default.esml:736 default.esml:741
+#: default.esml:735 default.esml:740
 msgid "select year (ok)"
 msgstr "Година (ок)"
 
-#: default.esml:735 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:734 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Sun"
 msgstr "Нед"
 
-#: default.esml:412
+#: default.esml:411
 msgid "increased voltage"
 msgstr "Повишено напр."
 
-#: default.esml:923
+#: default.esml:922
 #, fuzzy
 msgid "Language:"
 msgstr "Език"
 
-#: default.esml:441 default.esml:643
+#: default.esml:440 default.esml:642
 msgid "LOCK"
 msgstr "ЗАКЛ."
 
-#: default.esml:629
+#: default.esml:628
 msgid "choose the code rate HP (left, right)"
 msgstr "choose the code rate HP (left, right)"
 
-#: default.esml:918
+#: default.esml:917
 #, fuzzy
 msgid "switch to 16:9 in split screen mode"
 msgstr "вкл. на File режим"
 
-#: default.esml:413
+#: default.esml:412
 msgid "turn 12V output on (for 12V relais) (ok)"
 msgstr "Вкл. 12V на изх.(за 12V релейки) (ок)"
 
-#: default.esml:517
+#: default.esml:516
 msgid "enable/disable use BAT for scan (if exists)"
 msgstr "Разреши/Забрани BAT за скан. (ако същ.)"
 
-#: default.esml:932 src/epgsearch.cpp:322
+#: default.esml:931 src/epgsearch.cpp:322
 msgid "Title:"
 msgstr "Заглавие:"
 
-#: default.esml:573
+#: default.esml:572
 msgid "Skin Selector"
 msgstr "Избор на кожа"
 
-#: default.esml:714
+#: default.esml:713
 msgid "Timer List"
 msgstr "Таймери"
 
-#: default.esml:555
+#: default.esml:554
 msgid "transponder scanned:"
 msgstr "Сканирани трансп.:"
 
-#: default.esml:912
+#: default.esml:911
 msgid "teletext page number (100 - 899)"
 msgstr ""
 
-#: default.esml:724
+#: default.esml:723
 msgid "press ok to change event name manually"
 msgstr "ОК за ръчна промяна  на името на събитието"
 
-#: default.esml:793
+#: default.esml:792
 msgid "recording end time:"
 msgstr "край на записа   :"
 
-#: default.esml:459
+#: default.esml:458
 msgid "Use motor input power for running detection.. else use timeout"
 msgstr "Use motor input power for running detection.. else use timeout"
 
-#: default.esml:530
+#: default.esml:529
 msgid "no circ polariz."
 msgstr "без circ polariz."
 
-#: default.esml:474 default.esml:492
+#: default.esml:473 default.esml:491
 msgid "Direction:"
 msgstr "Направ.:"
 
-#: default.esml:924
+#: default.esml:923
 #, fuzzy
 msgid "set the language of the displayed pages"
 msgstr "enter the name of the share"
 
-#: default.esml:586 default.esml:601
+#: default.esml:585 default.esml:600
 msgid "MHz"
 msgstr "MHz"
 
-#: default.esml:554
+#: default.esml:553
 msgid "services scanned     :"
 msgstr "сканирани сървизи  :"
 
-#: default.esml:576 src/setupvideo.cpp:196 src/setupvideo.cpp:501
+#: default.esml:575 src/setupvideo.cpp:196 src/setupvideo.cpp:501
 #: src/tpeditwindow.cpp:120 src/tpeditwindow.cpp:166
 msgid "save changes and return"
 msgstr "Запазване и връщане"
@@ -196,16 +197,16 @@ msgstr "Запазване и връщане"
 msgid "PPanel"
 msgstr "PPanel"
 
-#: default.esml:539
+#: default.esml:538
 msgid "aborts the transponder scan"
 msgstr "спиране на сканиране на транс."
 
-#: default.esml:477 default.esml:716 default.esml:870 default.esml:902
+#: default.esml:476 default.esml:715 default.esml:869 default.esml:901
 #: src/setup_mounts.cpp:975
 msgid "remove"
 msgstr "Изтриване"
 
-#: default.esml:458 default.esml:484
+#: default.esml:457 default.esml:483
 msgid "Motor Config"
 msgstr "Конф. на мотора"
 
@@ -213,47 +214,47 @@ msgstr "Конф. на мотора"
 msgid "CI:"
 msgstr "CI:"
 
-#: default.esml:477
+#: default.esml:476
 msgid "remove selected entry"
 msgstr "Премахни избраното"
 
-#: default.esml:865
+#: default.esml:864
 msgid "abc &lt;-&gt; ABC"
 msgstr "абв &lt;-&gt; АБВ"
 
-#: default.esml:859
+#: default.esml:858
 msgid "&lt;"
 msgstr "&lt;"
 
-#: default.esml:422
+#: default.esml:421
 msgid "select DiSEqC mode (ok)"
 msgstr "Избор на DiSEqC режим (ок)"
 
-#: default.esml:432
+#: default.esml:431
 msgid "Swap Commands"
 msgstr "Размяна на команди"
 
-#: default.esml:411
+#: default.esml:410
 msgid "enter LNB threshold frequency (0..9, ok)"
 msgstr "въвеждане на LNB праг. чест. (0..9, ok)"
 
-#: default.esml:500
+#: default.esml:499
 msgid "close motor setup"
 msgstr "изход от настр. на мотора"
 
-#: default.esml:471
+#: default.esml:470
 msgid "insert rotor memory cell for this orbital position"
 msgstr "Поставете паметта на ротора за тази орб. поз."
 
-#: default.esml:529 default.esml:546
+#: default.esml:528 default.esml:545
 msgid "add only unscrambled services"
 msgstr "Само некодирани сървизи"
 
-#: default.esml:539 default.esml:835 src/enigma_picmanager.cpp:114
+#: default.esml:538 default.esml:834 src/enigma_picmanager.cpp:114
 msgid "abort"
 msgstr "Прекрати"
 
-#: default.esml:921 src/setup_osd.cpp:235
+#: default.esml:920 src/setup_osd.cpp:235
 msgid "Transparency:"
 msgstr "Прозрачност:"
 
@@ -261,69 +262,69 @@ msgstr "Прозрачност:"
 msgid "B"
 msgstr "B"
 
-#: default.esml:824
+#: default.esml:823
 msgid "close window"
 msgstr "Изход"
 
-#: default.esml:448 default.esml:642
+#: default.esml:447 default.esml:641
 msgid "BER"
 msgstr "BER"
 
-#: default.esml:903
+#: default.esml:902
 msgid "manual scan selected transponder (ok)"
 msgstr "Ръчно скан. на избрания трансп. (ok)"
 
-#: default.esml:494
+#: default.esml:493
 msgid "Recalc Params:"
 msgstr "Преизч. на парам."
 
-#: default.esml:934 src/epgsearch.cpp:372
+#: default.esml:933 src/epgsearch.cpp:372
 msgid "Search in:"
 msgstr "Търси в:"
 
-#: default.esml:476 default.esml:717 default.esml:900
+#: default.esml:475 default.esml:716 default.esml:899
 msgid "add"
 msgstr "Въведи"
 
-#: default.esml:520
+#: default.esml:519
 msgid "start the transponder scan"
 msgstr "Старт на скан. на трансп."
 
-#: default.esml:520 default.esml:531 default.esml:548 default.esml:569
+#: default.esml:519 default.esml:530 default.esml:547 default.esml:568
 msgid "start scan"
 msgstr "Старт на скан."
 
-#: default.esml:814
+#: default.esml:813
 msgid "check"
 msgstr "Проверка"
 
-#: default.esml:654 default.esml:660 default.esml:666 default.esml:673
-#: default.esml:683 default.esml:693 stone.esml:618 stone.esml:624
+#: default.esml:653 default.esml:659 default.esml:665 default.esml:672
+#: default.esml:682 default.esml:692 stone.esml:618 stone.esml:624
 #: stone.esml:630 stone.esml:637 stone.esml:647 stone.esml:657
 msgid "Services"
 msgstr "Сървизи"
 
-#: default.esml:940 src/epgsearch.cpp:336 src/epgsearch.cpp:500
+#: default.esml:939 src/epgsearch.cpp:336 src/epgsearch.cpp:500
 msgid "Genre:"
 msgstr "Жанр:"
 
-#: default.esml:937 src/epgsearch.cpp:399
+#: default.esml:936 src/epgsearch.cpp:399
 msgid "Search options:"
 msgstr "Настройки Търсене:"
 
-#: default.esml:851
+#: default.esml:850
 msgid "&#54;"
 msgstr "&#54;"
 
-#: default.esml:845
+#: default.esml:844
 msgid "&#51;"
 msgstr "&#51;"
 
-#: default.esml:626
+#: default.esml:625
 msgid "Coderate LP:"
 msgstr "Coderate LP:"
 
-#: default.esml:919 src/setup_lcd.cpp:83 src/setup_osd.cpp:250
+#: default.esml:918 src/setup_lcd.cpp:83 src/setup_osd.cpp:250
 msgid "Brightness:"
 msgstr "Яркост:"
 
@@ -331,15 +332,15 @@ msgstr "Яркост:"
 msgid "subservices"
 msgstr "Субсървизи"
 
-#: default.esml:623
+#: default.esml:622
 msgid "choose the bandwidth (left, right)"
 msgstr "Избор на обхват (left, right)"
 
-#: default.esml:942 lib/gui/ExecuteOutput.cpp:50
+#: default.esml:941 lib/gui/ExecuteOutput.cpp:50
 msgid "Close"
 msgstr "Изход"
 
-#: default.esml:863
+#: default.esml:862
 msgid "&gt;"
 msgstr "&gt;"
 
@@ -347,106 +348,106 @@ msgstr "&gt;"
 msgid "Plugins"
 msgstr "Добавки"
 
-#: default.esml:737 default.esml:742
+#: default.esml:736 default.esml:741
 msgid "select month (ok)"
 msgstr "Избор на месец (ok)"
 
-#: default.esml:943
+#: default.esml:942
 #, fuzzy
 msgid "Start"
 msgstr "Сат"
 
-#: default.esml:467
+#: default.esml:466
 msgid "enter your latitude (0..9, +, -, ok)"
 msgstr "географска ширина (0..9, +, -, ok)"
 
-#: default.esml:423
+#: default.esml:422
 msgid "DiSEqC Mode:"
 msgstr "DiSEqC режим:"
 
-#: default.esml:398
+#: default.esml:397
 msgid "LNB Configuration"
 msgstr "LNB конфигурация"
 
-#: default.esml:536 default.esml:553 src/scan.cpp:712
+#: default.esml:535 default.esml:552 src/scan.cpp:712
 msgid "scanning..."
 msgstr "сканиране..."
 
-#: default.esml:497
+#: default.esml:496
 msgid "calc param 3 (see your motor manual or let it 00)"
 msgstr "calc param 3 (see your motor manual or let it 00)"
 
-#: default.esml:641
+#: default.esml:640
 msgid "AGC"
 msgstr "AGC"
 
-#: default.esml:428
+#: default.esml:427
 msgid "select uncommitted input"
 msgstr "select uncommitted input"
 
-#: default.esml:459
+#: default.esml:458
 msgid "Use Motor Input Power"
 msgstr "Използване на изх. напр. на мотора"
 
-#: default.esml:462
+#: default.esml:461
 msgid "when the motor support this, then use"
 msgstr "използвай това ако мотора го поддържа"
 
-#: default.esml:616
+#: default.esml:615
 msgid "KHz"
 msgstr "KHz"
 
-#: default.esml:378
+#: default.esml:377
 msgid "HTTP Download"
 msgstr "HTTP доунлоад"
 
-#: default.esml:433
+#: default.esml:432
 msgid "goto prev page (LNB)"
 msgstr "към пред. стр. (LNB)"
 
-#: default.esml:917
+#: default.esml:916
 msgid "16:9 mode in normal view"
 msgstr ""
 
-#: default.esml:462
+#: default.esml:461
 msgid "Use gotoXX Function"
 msgstr "Използване на gotoXX"
 
-#: default.esml:914
+#: default.esml:913
 #, fuzzy
 msgid "add page"
 msgstr "добави маркер"
 
-#: default.esml:867
+#: default.esml:866
 msgid "vol+"
 msgstr "vol+"
 
-#: default.esml:622
+#: default.esml:621
 msgid "Bandwidth:"
 msgstr "Обхват:"
 
-#: default.esml:727
+#: default.esml:726
 msgid "for a multiple event enable this"
 msgstr "За няколко събития разреши"
 
-#: default.esml:715
+#: default.esml:714
 msgid "press ok to select another event"
 msgstr "избери ок за друго събитие"
 
-#: default.esml:774 default.esml:785 default.esml:797
+#: default.esml:773 default.esml:784 default.esml:796
 msgid "shutdown  "
 msgstr "Изключване"
 
-#: default.esml:453 default.esml:490
+#: default.esml:452 default.esml:489
 msgid "Transponder:"
 msgstr "Транспондер:"
 
-#: default.esml:916
+#: default.esml:915
 #, fuzzy
 msgid "select teletext service"
 msgstr "изтриване сървиз"
 
-#: default.esml:585 default.esml:600 default.esml:615
+#: default.esml:584 default.esml:599 default.esml:614
 msgid "enter transponder frequency (0..9, left, right)"
 msgstr "Честота на транспондера (0..9, left, right)"
 
@@ -454,112 +455,112 @@ msgstr "Честота на транспондера (0..9, left, right)"
 msgid "P"
 msgstr "P"
 
-#: default.esml:387
+#: default.esml:386
 msgid "22Khz"
 msgstr "22Khz"
 
-#: default.esml:796
+#: default.esml:795
 msgid "o'clock"
 msgstr "часа"
 
-#: default.esml:409
+#: default.esml:408
 msgid "LOF/H:"
 msgstr "LOF/H:"
 
-#: default.esml:925
+#: default.esml:924
 msgid "use truetype font"
 msgstr ""
 
-#: default.esml:939 src/epgsearch.cpp:413
+#: default.esml:938 src/epgsearch.cpp:413
 msgid "Select this option if you want to make this epg search case sensitive"
 msgstr "Изберете ако искате да има значение големината на буквите"
 
-#: default.esml:843
+#: default.esml:842
 msgid "&#50;"
 msgstr "&#50;"
 
-#: default.esml:754
+#: default.esml:753
 msgid "About..."
 msgstr "За...."
 
-#: default.esml:717
+#: default.esml:716
 msgid "add new Timer (ok)"
 msgstr "Нов таймер  (ok)"
 
-#: default.esml:939
+#: default.esml:938
 #, fuzzy
 msgid "Case Sensitive"
 msgstr "Case sensitive"
 
-#: default.esml:747
+#: default.esml:746
 msgid "to change service press ok"
 msgstr "за смяна на сървиз натиснете ок"
 
-#: default.esml:910
+#: default.esml:909
 #, fuzzy
 msgid "Favourites:"
 msgstr "Фаворити (TV)"
 
-#: default.esml:853
+#: default.esml:852
 msgid "&#55;"
 msgstr "&#55;"
 
-#: default.esml:749
+#: default.esml:748
 msgid "scan EPG"
 msgstr "EPG скан."
 
-#: default.esml:943
+#: default.esml:942
 #, fuzzy
 msgid "Begin EPG Search"
 msgstr "ЕПГ търсене"
 
-#: default.esml:392 src/setup_mounts.cpp:955
+#: default.esml:391 src/setup_mounts.cpp:955
 msgid "new"
 msgstr "Нов"
 
-#: default.esml:782
+#: default.esml:781
 msgid "duration:"
 msgstr "Прод.:"
 
-#: default.esml:913
+#: default.esml:912
 #, fuzzy
 msgid "remove selected page from favourites"
 msgstr "премахване на избрания сат."
 
-#: default.esml:431
+#: default.esml:430
 msgid "Fast DiSEqC"
 msgstr "Бърз DiSEqC"
 
-#: default.esml:731 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:730 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Wed"
 msgstr "Сря"
 
-#: default.esml:463
+#: default.esml:462
 msgid "Longitude:"
 msgstr "Геогр. шир.:"
 
-#: default.esml:465 default.esml:468 default.esml:475
+#: default.esml:464 default.esml:467 default.esml:474
 msgid "choose direction"
 msgstr "изпор на напр."
 
-#: default.esml:807
+#: default.esml:806
 msgid "capacity:"
 msgstr "капацитет:"
 
-#: default.esml:627
+#: default.esml:626
 msgid "choose the code rate LP (left, right)"
 msgstr "choose the code rate LP (left, right)"
 
-#: default.esml:903
+#: default.esml:902
 msgid "scan"
 msgstr "Сканиране"
 
-#: default.esml:495
+#: default.esml:494
 msgid "calc param 1 (see your motor manual or let it 00)"
 msgstr "calc param 1 (see your motor manual or let it 00)"
 
-#: default.esml:500
+#: default.esml:499
 msgid "prev page"
 msgstr "пред. стр."
 
@@ -567,40 +568,40 @@ msgstr "пред. стр."
 msgid "I"
 msgstr "I"
 
-#: default.esml:732 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:731 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Thu"
 msgstr "Четв."
 
-#: default.esml:624
+#: default.esml:623
 msgid "Transm. Mode:"
 msgstr "Режим на пред.:"
 
-#: default.esml:413
+#: default.esml:412
 msgid "12V output on"
 msgstr "12V на изхода"
 
-#: default.esml:785
+#: default.esml:784
 msgid "shutdown the box to deepstandby (ok)"
 msgstr "Изключи за пълен стендбай  (ok)"
 
-#: default.esml:772
+#: default.esml:771
 msgid "enter recording duration (0..9, left, right, ok)"
 msgstr "Въведи прод. на записа  (0..9, left, right, ok)"
 
-#: default.esml:745
+#: default.esml:744
 msgid "edit the end time (0..9, left, right)"
 msgstr "промени време за край (0..9, left, right)"
 
-#: default.esml:730 src/enigma_main.cpp:237 src/timer.cpp:2846
+#: default.esml:729 src/enigma_main.cpp:237 src/timer.cpp:2846
 msgid "Tuesday"
 msgstr "Вторник"
 
-#: default.esml:771
+#: default.esml:770
 msgid "recording duration:"
 msgstr "Прод. на запис:"
 
-#: default.esml:718
+#: default.esml:717
 msgid "delete expired timer (ok)"
 msgstr "Изтриване на невал. таймери (ok)"
 
@@ -608,75 +609,75 @@ msgstr "Изтриване на невал. таймери (ok)"
 msgid "ND"
 msgstr "ND"
 
-#: default.esml:454 default.esml:491
+#: default.esml:453 default.esml:490
 msgid "choose the Transponder you wish to find"
 msgstr "Избор на транспондер за търсене"
 
-#: default.esml:900
+#: default.esml:899
 msgid "add new Transponder to selected sat (ok)"
 msgstr "Нов транспондер към избрания сат. (ok)"
 
-#: default.esml:941 src/epgsearch.cpp:364
+#: default.esml:940 src/epgsearch.cpp:364
 msgid "Select a genre if you want to search for a genre"
 msgstr "Изберете жанр ако искате търсене по жанр"
 
-#: default.esml:918
+#: default.esml:917
 msgid "16:9 mode on splitscreen"
 msgstr ""
 
-#: default.esml:732 src/enigma_main.cpp:237 src/timer.cpp:2847
+#: default.esml:731 src/enigma_main.cpp:237 src/timer.cpp:2847
 msgid "Thursday"
 msgstr "Четвъртък"
 
-#: default.esml:787
+#: default.esml:786
 msgid "set sleeptimer and close window (ok)"
 msgstr "Таймер за заспиване и изход (ok)"
 
-#: default.esml:392
+#: default.esml:391
 msgid "add a new Satellite"
 msgstr "добавяне на сателит"
 
-#: default.esml:502
+#: default.esml:501
 msgid "open transponder scan"
 msgstr "Сканиране на трансп."
 
-#: default.esml:773 default.esml:784
+#: default.esml:772 default.esml:783
 msgid "min"
 msgstr "мин"
 
-#: default.esml:461
+#: default.esml:460
 msgid "mA"
 msgstr "mA"
 
-#: default.esml:479
+#: default.esml:478
 msgid "goto advanced motor setup"
 msgstr "Мотор разширени настр."
 
-#: default.esml:728 src/enigma_main.cpp:237 src/timer.cpp:2846
+#: default.esml:727 src/enigma_main.cpp:237 src/timer.cpp:2846
 msgid "Monday"
 msgstr "Понеделник"
 
-#: default.esml:813
+#: default.esml:812
 msgid "format"
 msgstr "формат"
 
-#: default.esml:531 default.esml:548
+#: default.esml:530 default.esml:547
 msgid "starts the transponder scan"
 msgstr "Старт на скан. на трансп."
 
-#: default.esml:899
+#: default.esml:898
 msgid "sat"
 msgstr "Сателит"
 
-#: default.esml:388
+#: default.esml:387
 msgid "Voltage"
 msgstr "Напрежение"
 
-#: default.esml:625
+#: default.esml:624
 msgid "choose the transmission mode (left, right)"
 msgstr "Режим на предаване (left, right)"
 
-#: default.esml:648
+#: default.esml:647
 msgid "Help"
 msgstr "Помощ"
 
@@ -684,64 +685,64 @@ msgstr "Помощ"
 msgid "S"
 msgstr "S"
 
-#: default.esml:868
+#: default.esml:867
 msgid "insert"
 msgstr "Добавяне"
 
-#: default.esml:749
+#: default.esml:748
 msgid "search event name for this beg-/end time in epg"
 msgstr "Търсене на събитие за този времеви инт. в ЕПГ"
 
-#: default.esml:391 default.esml:414 default.esml:434 default.esml:478
-#: default.esml:576 src/enigma_picmanager.cpp:103 src/scan.cpp:1820
+#: default.esml:390 default.esml:413 default.esml:433 default.esml:477
+#: default.esml:575 src/enigma_picmanager.cpp:103 src/scan.cpp:1820
 #: src/setup_mounts.cpp:965 src/setup_rfmod.cpp:164 src/setupvideo.cpp:496
 #: src/tpeditwindow.cpp:114 src/tpeditwindow.cpp:163
 msgid "save"
 msgstr "Запис"
 
-#: default.esml:730 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:729 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Tue"
 msgstr "Вт"
 
-#: default.esml:452 default.esml:488
+#: default.esml:451 default.esml:487
 msgid "choose the Satellite you wish to find"
 msgstr "Избор на сателит за търсене"
 
-#: default.esml:795 src/time_correction.cpp:69
+#: default.esml:794 src/time_correction.cpp:69
 msgid "AM/pm"
 msgstr "AM/PM"
 
-#: default.esml:469
+#: default.esml:468
 msgid "choose entry to edit or remove"
 msgstr "избор на ел. за промяна/изтриване"
 
-#: default.esml:757
+#: default.esml:756
 msgid "processor: "
 msgstr "Процесор:"
 
-#: default.esml:847
+#: default.esml:846
 msgid "&#52;"
 msgstr "&#52;"
 
-#: default.esml:476
+#: default.esml:475
 msgid "add to table/existing will be overwritten"
 msgstr "Добавяне в табл./замяна на съществ."
 
-#: default.esml:733 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:732 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Fri"
 msgstr "Пет"
 
-#: default.esml:758
+#: default.esml:757
 msgid "frontend: "
 msgstr "frontend: "
 
-#: default.esml:857
+#: default.esml:856
 msgid "&#57;"
 msgstr "&#57;"
 
-#: default.esml:372 default.esml:444
+#: default.esml:371 default.esml:443
 msgid "AGC:"
 msgstr "AGC:"
 
@@ -749,15 +750,15 @@ msgstr "AGC:"
 msgid "D"
 msgstr "D"
 
-#: default.esml:521
+#: default.esml:520
 msgid "enter manual pids"
 msgstr "Ръчно въвеж. на PID"
 
-#: default.esml:421
+#: default.esml:420
 msgid "Toneburst:"
 msgstr "Toneburst:"
 
-#: default.esml:775 default.esml:786 default.esml:798
+#: default.esml:774 default.esml:785 default.esml:797
 msgid "standby  "
 msgstr "standby  "
 
@@ -765,64 +766,64 @@ msgstr "standby  "
 msgid "CW"
 msgstr "CW"
 
-#: default.esml:590 default.esml:605
+#: default.esml:589 default.esml:604
 msgid "FEC:"
 msgstr "FEC:"
 
-#: default.esml:446 default.esml:644
+#: default.esml:445 default.esml:643
 msgid "SYNC"
 msgstr "SYNC"
 
-#: default.esml:466
+#: default.esml:465
 msgid "Latitude:"
 msgstr "Геогр. шир.:"
 
-#: default.esml:574
+#: default.esml:573
 msgid "Skins:"
 msgstr "Кожи:"
 
-#: default.esml:764
+#: default.esml:763
 msgid "ok"
 msgstr "ОК"
 
-#: default.esml:589
+#: default.esml:588
 msgid "choose polarity (left, right)"
 msgstr "Поляризация (left, right)"
 
-#: default.esml:587 default.esml:602 default.esml:617
+#: default.esml:586 default.esml:601 default.esml:616
 msgid "Inv:"
 msgstr "Inv:"
 
-#: default.esml:739
+#: default.esml:738
 msgid "edit the start time (0..9, left, right)"
 msgstr "Промяна на начало (0..9, left, right)"
 
-#: default.esml:406
+#: default.esml:405
 msgid "enter LNB lowband offset frequency (0..9, ok)"
 msgstr "LNB lowband  отместена чест. (0..9, ok)"
 
-#: default.esml:909
+#: default.esml:908
 #, fuzzy
 msgid "Teletext Settings"
 msgstr "Set teletext options"
 
-#: default.esml:604 default.esml:619
+#: default.esml:603 default.esml:618
 msgid "choose modulation (left, right)"
 msgstr "избор модулация (left, right)"
 
-#: default.esml:733 src/enigma_main.cpp:237 src/timer.cpp:2847
+#: default.esml:732 src/enigma_main.cpp:237 src/timer.cpp:2847
 msgid "Friday"
 msgstr "Петък"
 
-#: default.esml:841
+#: default.esml:840
 msgid "&#49;"
 msgstr "&#49;"
 
-#: default.esml:729
+#: default.esml:728
 msgid "select what todo after event"
 msgstr "Действие след събитието"
 
-#: default.esml:472 src/tpeditwindow.cpp:77
+#: default.esml:471 src/tpeditwindow.cpp:77
 msgid "Orbital Position:"
 msgstr "Орбитална поз.:"
 
@@ -830,68 +831,68 @@ msgstr "Орбитална поз.:"
 msgid "N"
 msgstr "N"
 
-#: default.esml:933 src/epgsearch.cpp:330
+#: default.esml:932 src/epgsearch.cpp:330
 msgid "Enter title for epg searching"
 msgstr "Въведи заглавие на търсене в ЕПГ"
 
-#: default.esml:427
+#: default.esml:426
 msgid "DiSEqC Repeats:"
 msgstr "DiSEqC Repeats:"
 
-#: default.esml:408
+#: default.esml:407
 msgid "enter LNB highband offset frequency (0..9, ok)"
 msgstr "LNB highband отместена честота (0..9, ok)"
 
-#: default.esml:774 default.esml:797
+#: default.esml:773 default.esml:796
 msgid "shutdown the box after recording (ok)"
 msgstr "Изключване след края на запис (ok)"
 
-#: default.esml:935 src/epgsearch.cpp:383
+#: default.esml:934 src/epgsearch.cpp:383
 msgid ""
 "Select this option if you want to search the title only in selected channel"
 msgstr "Изберете ако искате да търсите само по заглавие в избрания канал"
 
-#: default.esml:890
+#: default.esml:889
 msgid "Please choose your DiSEqC-Configuration:"
 msgstr "Избор на DiSEqC - конфигурация:"
 
-#: default.esml:770 default.esml:792
+#: default.esml:769 default.esml:791
 msgid "Stop Record"
 msgstr "Стоп на записа"
 
-#: default.esml:718
+#: default.esml:717
 msgid "cleanup"
 msgstr "почистване"
 
-#: default.esml:485
+#: default.esml:484
 msgid "Mode:"
 msgstr "Режим:"
 
-#: default.esml:594 default.esml:609
+#: default.esml:593 default.esml:608
 msgid "KSymb/s"
 msgstr "KSymb/s"
 
-#: default.esml:936 src/enigma_dyn.cpp:627 src/sselect.cpp:515
+#: default.esml:935 src/enigma_dyn.cpp:657 src/sselect.cpp:526
 msgid "All Services"
 msgstr "Всички сървизи"
 
-#: default.esml:558
+#: default.esml:557
 msgid "Progress:"
 msgstr "Прогрес:"
 
-#: default.esml:369 default.esml:439
+#: default.esml:368 default.esml:438
 msgid "SNR:"
 msgstr "SNR:"
 
-#: default.esml:383 src/enigma_scan.cpp:72
+#: default.esml:382 src/enigma_scan.cpp:72
 msgid "Satellite Configuration"
 msgstr "Конфигурация на сателити"
 
-#: default.esml:748
+#: default.esml:747
 msgid "save data and close window"
 msgstr "Запис на инф. и изход"
 
-#: default.esml:410
+#: default.esml:409
 msgid "Threshold:"
 msgstr "Праг:"
 
@@ -899,43 +900,43 @@ msgstr "Праг:"
 msgid "CI"
 msgstr "CI"
 
-#: default.esml:816
+#: default.esml:815
 msgid "select filesystem to format"
 msgstr "Избор на файлова система"
 
-#: default.esml:434
+#: default.esml:433
 msgid "save changes"
 msgstr "Запис"
 
-#: default.esml:901
+#: default.esml:900
 msgid "edit selected transponder (ok)"
 msgstr "Промяна на избрания трансп.  (ok)"
 
-#: default.esml:501
+#: default.esml:500
 msgid "save in motor"
 msgstr "Запис в мотор"
 
-#: default.esml:902
+#: default.esml:901
 msgid "remove selected transponder"
 msgstr "премахване на избрания трансп."
 
-#: default.esml:588
+#: default.esml:587
 msgid "Polarity:"
 msgstr "Полярност:"
 
-#: default.esml:814
+#: default.esml:813
 msgid "do a filesystem check"
 msgstr "Проверка на файловата сист."
 
-#: default.esml:726
+#: default.esml:725
 msgid "End time"
 msgstr "Край"
 
-#: default.esml:813
+#: default.esml:812
 msgid "initialize the disk for use with the dreambox"
 msgstr "инициализ. на диск за използване в dreambox"
 
-#: default.esml:386
+#: default.esml:385
 msgid "LNB"
 msgstr "LNB"
 
@@ -943,208 +944,208 @@ msgstr "LNB"
 msgid "V"
 msgstr "V"
 
-#: default.esml:424
+#: default.esml:423
 msgid "select DiSEqC parameter (ok)"
 msgstr "избор на DiSEqC парам. (ok)"
 
-#: default.esml:824
+#: default.esml:823
 msgid "close"
 msgstr "Изход"
 
-#: default.esml:584 default.esml:599 default.esml:614
+#: default.esml:583 default.esml:598 default.esml:613
 msgid "Frequency:"
 msgstr "Честота:"
 
-#: default.esml:593 default.esml:608
+#: default.esml:592 default.esml:607
 msgid "enter symbol rate (0..9, left, right)"
 msgstr "въведи symbol rate (0..9, left, right)"
 
-#: default.esml:920
+#: default.esml:919
 msgid "set brightness of the displayed teletext page"
 msgstr ""
 
-#: default.esml:876
+#: default.esml:875
 msgid "press ok to enter the name"
 msgstr "изберете ок за въвеждане на име"
 
-#: default.esml:628
+#: default.esml:627
 msgid "Coderate HP:"
 msgstr "Coderate HP:"
 
-#: default.esml:716
+#: default.esml:715
 msgid "delete the current selected timer (ok)"
 msgstr "премахване на избрания таймер (ok)"
 
-#: default.esml:420
+#: default.esml:419
 msgid "select MiniDiSEqC parameter (ok)"
 msgstr "избор на MiniDiSEqC парам. (ok)"
 
-#: default.esml:725
+#: default.esml:724
 msgid "Start time"
 msgstr "Начало"
 
-#: default.esml:761
+#: default.esml:760
 msgid "Software Version:"
 msgstr "Версия на софт.:"
 
-#: default.esml:464
+#: default.esml:463
 msgid "enter your longitude (0..9, +, -, ok)"
 msgstr "въвеждане на геогр. шир.(0..9, +, -, ok)"
 
-#: default.esml:866
+#: default.esml:865
 msgid "abc2 &lt;-&gt; 2abc"
 msgstr "абв2 &lt;-&gt; 2абв"
 
-#: default.esml:393
+#: default.esml:392
 msgid "remove the selected Satellite"
 msgstr "премахване на избрания сат."
 
-#: default.esml:786
+#: default.esml:785
 msgid "goto standby (ok)"
 msgstr "стендбай (ok)"
 
-#: default.esml:583
+#: default.esml:582
 msgid "choose wished satellite (ok)"
 msgstr "избор на желан сат. (ok)"
 
-#: default.esml:913
+#: default.esml:912
 #, fuzzy
 msgid "remove page"
 msgstr "пред. стр."
 
-#: default.esml:815
+#: default.esml:814
 msgid "show extended configuration"
 msgstr "разширена конфигурация"
 
-#: default.esml:486
+#: default.esml:485
 msgid "choose what you want to do"
 msgstr "избери какво искате да извършите"
 
-#: default.esml:735 src/enigma_main.cpp:237 src/timer.cpp:2846
+#: default.esml:734 src/enigma_main.cpp:237 src/timer.cpp:2846
 msgid "Sunday"
 msgstr "Неделя"
 
-#: default.esml:470
+#: default.esml:469
 msgid "Number in motor:"
 msgstr "Номер в мотора:"
 
-#: default.esml:805
+#: default.esml:804
 msgid "model:"
 msgstr "модел:"
 
-#: default.esml:393
+#: default.esml:392
 msgid "erase"
 msgstr "изтриване"
 
-#: default.esml:385
+#: default.esml:384
 msgid "Sat/Position"
 msgstr "Сат/Позиция"
 
-#: default.esml:404
+#: default.esml:403
 msgid "Sat/LNB mapping:"
 msgstr "Сат/LNB конф.:"
 
-#: default.esml:414
+#: default.esml:413
 msgid "save changes and use current selected LNB for the chosen satellite"
 msgstr "запази и използвай маркираният LNB за избраният сателит"
 
-#: default.esml:478
+#: default.esml:477
 msgid ""
 "save changes and use the selected LNB (in first page) for the choosen "
 "satellite"
 msgstr ""
 "запази и използвай маркираният LNB (на първа стр.) за избраният сателит"
 
-#: default.esml:425
+#: default.esml:424
 msgid "DiSEqC Parameter:"
 msgstr "DiSEqC параметри:"
 
-#: default.esml:412
+#: default.esml:411
 msgid "0,5V higher LNB Voltage (for long cables) (ok)"
 msgstr "0,5V по-високо LNB напрежение (за дълги кабели) (ok)"
 
-#: default.esml:603
+#: default.esml:602
 msgid "Modulation:"
 msgstr "Модулация:"
 
-#: default.esml:516
+#: default.esml:515
 msgid "enable/disable check ONIT on any transponder"
 msgstr "разреши/забрани ONIT за всеки транспондер"
 
-#: default.esml:795
+#: default.esml:794
 msgid "checked is AM, unchecked is PM"
 msgstr "маркирано е AM, не маркирано PM"
 
-#: default.esml:759
+#: default.esml:758
 msgid "harddisk: "
 msgstr "HDD: "
 
-#: default.esml:763
+#: default.esml:762
 msgid "FP Version:"
 msgstr "FP Version:"
 
-#: default.esml:811
+#: default.esml:810
 msgid "status:"
 msgstr "статус:"
 
-#: default.esml:517
+#: default.esml:516
 msgid "use BAT"
 msgstr "вкл. ВАТ"
 
-#: default.esml:781
+#: default.esml:780
 msgid "Set Sleeptimer"
 msgstr "Задай време за заспиване"
 
-#: default.esml:568
+#: default.esml:567
 msgid "press ok to change"
 msgstr "избери ок за промяна"
 
-#: default.esml:936 src/epgsearch.cpp:391
+#: default.esml:935 src/epgsearch.cpp:391
 msgid "Select this option if you want to search the title in all services"
 msgstr "Изберете ако искате да търсите по заглавие във всички сървизи"
 
-#: default.esml:896
+#: default.esml:895
 msgid "Transponders"
 msgstr "Транспондери"
 
-#: default.esml:776 default.esml:799
+#: default.esml:775 default.esml:798
 msgid "set recording end time and close window (ok)"
 msgstr "Задай време за край на записа и излез (ok)"
 
-#: default.esml:391
+#: default.esml:390
 msgid "close Satellite Configuration"
 msgstr "изход от конф. на сателита"
 
-#: default.esml:709 stone.esml:584 src/setup_epg.cpp:6
+#: default.esml:708 stone.esml:584 src/enigma_dyn.cpp:603 src/setup_epg.cpp:6
 msgid "EPG"
 msgstr "EPG"
 
-#: default.esml:901
+#: default.esml:900
 msgid "edit"
 msgstr "Промяна"
 
-#: default.esml:809
+#: default.esml:808
 msgid "connected:"
 msgstr "свързан:"
 
-#: default.esml:415 default.esml:479
+#: default.esml:414 default.esml:478
 msgid "next page"
 msgstr "следваща стр."
 
-#: default.esml:592 default.esml:607
+#: default.esml:591 default.esml:606
 msgid "Symbol Rate:"
 msgstr "Symbol Rate:"
 
-#: default.esml:914
+#: default.esml:913
 msgid "add page to favourites"
 msgstr ""
 
-#: default.esml:776 default.esml:787 default.esml:799
+#: default.esml:775 default.esml:786 default.esml:798
 #: src/time_correction.cpp:112
 msgid "set"
 msgstr "ОК"
 
-#: default.esml:493
+#: default.esml:492
 msgid "press left or right to move motor"
 msgstr "избери  left или right за завъртане на мотора"
 
@@ -1152,192 +1153,192 @@ msgstr "избери  left или right за завъртане на мотор�
 msgid "CO"
 msgstr "CO"
 
-#: default.esml:496
+#: default.esml:495
 msgid "calc param 2 (see your motor manual or let it 00)"
 msgstr "изч. парам.2(виж описанието на мотора или запишете 00)"
 
-#: default.esml:746
+#: default.esml:745
 msgid "select the timer type (ok)"
 msgstr "избор на таймер тип (ok)"
 
-#: default.esml:938 src/epgsearch.cpp:406
+#: default.esml:937 src/epgsearch.cpp:406
 msgid "Select this option if you want to search the exact title"
 msgstr "Изберете ако искате да търсите по точно наименование"
 
-#: default.esml:526 default.esml:544
+#: default.esml:525 default.esml:543
 msgid "choose satellite/cable provider (ok)"
 msgstr "избор на сат./кабелен оператор (ok)"
 
-#: default.esml:740 default.esml:744
+#: default.esml:739 default.esml:743
 msgid "select AM/PM (ok)"
 msgstr "избор AM/PM (ok)"
 
-#: default.esml:516
+#: default.esml:515
 msgid "use ONIT"
 msgstr "вкл. ONIT"
 
-#: default.esml:502 src/enigma_tuxtxt.cpp:113
+#: default.esml:501 src/enigma_tuxtxt.cpp:113
 msgid "search"
 msgstr "търсене"
 
-#: default.esml:498
+#: default.esml:497
 msgid "Counter(Movement)"
 msgstr "Брояч(Движение)"
 
-#: default.esml:519
+#: default.esml:518
 msgid "enable/disable initiate network search"
 msgstr "вкл./изкл. мрежово търсене"
 
-#: default.esml:734 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:733 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Sat"
 msgstr "Сат"
 
-#: default.esml:620
+#: default.esml:619
 msgid "Guard:"
 msgstr "Guard:"
 
-#: default.esml:931 src/enigma_epg.cpp:547 src/enigma_main.cpp:6524
+#: default.esml:930 src/enigma_epg.cpp:547 src/enigma_main.cpp:6656
 #: src/epgsearch.cpp:299 src/epgsearch.cpp:502 src/epgwindow.cpp:369
-#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2075
+#: src/epgwindow.cpp:449 src/sselect.cpp:88 src/sselect.cpp:2090
 msgid "EPG Search"
 msgstr "ЕПГ търсене"
 
-#: default.esml:384
+#: default.esml:383
 msgid "select your configuration here"
 msgstr "избери желата конф. тук"
 
-#: default.esml:938 src/epgsearch.cpp:403
+#: default.esml:937 src/epgsearch.cpp:403
 msgid "Exact match"
 msgstr "Точно съвпадение"
 
-#: default.esml:728 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
+#: default.esml:727 src/enigma_epg.cpp:884 src/epgwindow.cpp:135
 #: src/timer.cpp:225
 msgid "Mon"
 msgstr "Пон"
 
-#: default.esml:855
+#: default.esml:854
 msgid "&#56;"
 msgstr "&#56;"
 
-#: default.esml:426
+#: default.esml:425
 msgid "select DiSEqC repeats (ok)"
 msgstr "избери DiSEqC  повторители (ok)"
 
-#: default.esml:591 default.esml:606 default.esml:621
+#: default.esml:590 default.esml:605 default.esml:620
 msgid "choose the FEC (left, right)"
 msgstr "избор на FEC (left, right)"
 
-#: default.esml:882
+#: default.esml:881
 msgid "OSD Language"
 msgstr "OSD Език"
 
-#: default.esml:829
+#: default.esml:828
 msgid "Software upgrade..."
 msgstr "Обновяване на софт..."
 
-#: default.esml:889
+#: default.esml:888
 msgid "DiSEqC..."
 msgstr "DiSEqC..."
 
-#: default.esml:575
+#: default.esml:574
 msgid "select skin and press ok or choose save"
 msgstr "избери кожа и натисни \"ок\" или \"запази\""
 
-#: default.esml:738 default.esml:743
+#: default.esml:737 default.esml:742
 msgid "select day (ok)"
 msgstr "избор на ден (ok)"
 
-#: default.esml:942
+#: default.esml:941
 #, fuzzy
 msgid "Closes EPG search window"
 msgstr "изход от помощ"
 
-#: default.esml:530
+#: default.esml:529
 msgid "change circular to linear polarization"
 msgstr "промени circular в linear  поляриз."
 
-#: default.esml:415
+#: default.esml:414
 msgid "goto next page (DiSEqC)"
 msgstr "към следваща стр.(DiSEqC)"
 
-#: default.esml:899
+#: default.esml:898
 msgid "select sat(up/down), ok(edit), green(add new), red(delete)"
 msgstr "избор на сателит(up/down), промяна(ok), нов(green), изтриване(red)"
 
-#: default.esml:723
+#: default.esml:722
 msgid "Timer Edit"
 msgstr "Промяна на таймер"
 
-#: default.esml:748
+#: default.esml:747
 msgid "apply"
 msgstr "приложи"
 
-#: default.esml:861
+#: default.esml:860
 msgid "&#48;"
 msgstr "&#48;"
 
-#: default.esml:521
+#: default.esml:520
 msgid "enter pids"
 msgstr "въвеждане pids"
 
-#: default.esml:727
+#: default.esml:726
 msgid "Repeated timer"
 msgstr "Повтарящ  се таймер"
 
-#: default.esml:489
+#: default.esml:488
 msgid "enter stored satellite pos"
 msgstr "въведи съхранена поз. на сат."
 
-#: default.esml:430
+#: default.esml:429
 msgid "Sequence repeat"
 msgstr "Повторение на команса"
 
-#: default.esml:822
+#: default.esml:821
 msgid "status output:"
 msgstr "изх. статус:"
 
-#: default.esml:804 src/setup_harddisk.cpp:40
+#: default.esml:803 src/setup_harddisk.cpp:40
 msgid "Harddisk"
 msgstr "Твърддиск"
 
-#: default.esml:499
+#: default.esml:498
 msgid "bla"
 msgstr "bla"
 
-#: default.esml:775 default.esml:798
+#: default.esml:774 default.esml:797
 msgid "goto standby after recording (ok)"
 msgstr "към стендбай след запис (ok)"
 
-#: default.esml:518 default.esml:529 default.esml:546
+#: default.esml:517 default.esml:528 default.esml:545
 msgid "only Free"
 msgstr "само свободни"
 
-#: default.esml:618
+#: default.esml:617
 msgid "Constellation:"
 msgstr "Съзвездие:"
 
-#: default.esml:734 src/enigma_main.cpp:237 src/timer.cpp:2847
+#: default.esml:733 src/enigma_main.cpp:237 src/timer.cpp:2847
 msgid "Saturday"
 msgstr "Събота"
 
-#: default.esml:783
+#: default.esml:782
 msgid "(0..9, left, right, ok)"
 msgstr "(0..9, left, right, ok)"
 
-#: default.esml:432
+#: default.esml:431
 msgid "swaps committed and uncommitted DiSEqC Commands"
 msgstr "размени пътвърдени и непотвърдени DiSEqC команди"
 
-#: default.esml:869
+#: default.esml:868
 msgid "vol-"
 msgstr "vol-"
 
-#: default.esml:519
+#: default.esml:518
 msgid "network search"
 msgstr "търсене на мрежа"
 
-#: default.esml:518
+#: default.esml:517
 msgid "add only not scrambled services"
 msgstr "въведи само сободни сървизи"
 
@@ -1346,11 +1347,11 @@ msgstr "въведи само сободни сървизи"
 msgid "no module"
 msgstr "няма модул"
 
-#: lib/dvb/dvbwidgets.cpp:66 src/scan.cpp:843
+#: lib/dvb/dvbwidgets.cpp:66
 msgid "horizontal"
 msgstr "horizontal"
 
-#: lib/dvb/dvbwidgets.cpp:67 src/scan.cpp:843
+#: lib/dvb/dvbwidgets.cpp:67
 msgid "vertical"
 msgstr "vertical"
 
@@ -1382,55 +1383,55 @@ msgstr "256-QAM"
 msgid "QPSK"
 msgstr "QPSK"
 
-#: lib/dvb/servicedvb.cpp:1087
+#: lib/dvb/servicedvb.cpp:1094
 msgid "Providers (TV)"
 msgstr "Провайдъри (TV)"
 
-#: lib/dvb/servicedvb.cpp:1091
+#: lib/dvb/servicedvb.cpp:1098
 msgid "Providers (Radio)"
 msgstr "Провйдъри (Radio)"
 
-#: lib/dvb/servicedvb.cpp:1095
+#: lib/dvb/servicedvb.cpp:1102
 msgid "Providers (Data)"
 msgstr "Провйдъри (Data)"
 
-#: lib/dvb/servicedvb.cpp:1100
+#: lib/dvb/servicedvb.cpp:1107
 msgid "All services (TV)"
 msgstr "Сървизи (TV)"
 
-#: lib/dvb/servicedvb.cpp:1104
+#: lib/dvb/servicedvb.cpp:1111
 msgid "All services (Radio)"
 msgstr "Сървизи (Radio)"
 
-#: lib/dvb/servicedvb.cpp:1108
+#: lib/dvb/servicedvb.cpp:1115
 msgid "All services (Data)"
 msgstr "Сървизи (Data)"
 
-#: lib/dvb/servicedvb.cpp:1115
+#: lib/dvb/servicedvb.cpp:1122
 msgid "Satellites (TV)"
 msgstr "Сателити (TV)"
 
-#: lib/dvb/servicedvb.cpp:1119
+#: lib/dvb/servicedvb.cpp:1126
 msgid "Satellites (Radio)"
 msgstr "Сателити (Radio)"
 
-#: lib/dvb/servicedvb.cpp:1123
+#: lib/dvb/servicedvb.cpp:1130
 msgid "Satellites (Data)"
 msgstr "Сателити (Data)"
 
-#: lib/dvb/servicedvb.cpp:1555
+#: lib/dvb/servicedvb.cpp:1567
 msgid " - provider"
 msgstr " - провйдър"
 
-#: lib/dvb/servicedvb.cpp:1563
+#: lib/dvb/servicedvb.cpp:1575
 msgid " - services"
 msgstr " - сървиз"
 
-#: lib/dvb/servicedvb.cpp:1571
+#: lib/dvb/servicedvb.cpp:1583
 msgid " - new found"
 msgstr " - нов"
 
-#: lib/dvb/servicedvb.cpp:1575
+#: lib/dvb/servicedvb.cpp:1587
 msgid "current transponder"
 msgstr "текущ транспондер"
 
@@ -1456,7 +1457,7 @@ msgstr "буфериране..."
 msgid "playing..."
 msgstr "възпроизв..."
 
-#: lib/dvb/serviceplaylist.cpp:223
+#: lib/dvb/serviceplaylist.cpp:242
 #, c-format
 msgid " (%d entries)"
 msgstr " (%d entries)"
@@ -1483,8 +1484,8 @@ msgid "TV/Radio"
 msgstr "TV/Radio"
 
 #: lib/dvb/servicestructure.cpp:22 src/enigma_bouquet.cpp:12
-#: src/enigma_dyn.cpp:639 src/enigma_main.cpp:9723 src/sselect.cpp:521
-#: src/sselect.cpp:528
+#: src/enigma_dyn.cpp:669 src/enigma_main.cpp:9904 src/sselect.cpp:532
+#: src/sselect.cpp:539
 msgid "Bouquets"
 msgstr "Букети"
 
@@ -1526,7 +1527,7 @@ msgstr "<< Премести наляво"
 msgid "Scroll right >>"
 msgstr "Премести надясно >>"
 
-#: lib/gui/ExecuteOutput.cpp:80 src/ppanel.cpp:217
+#: lib/gui/ExecuteOutput.cpp:80 src/ppanel.cpp:218
 #: src/setup_swapandvar.cpp:310
 msgid "Please wait"
 msgstr "Моля изчакайте"
@@ -1535,7 +1536,7 @@ msgstr "Моля изчакайте"
 msgid "Could not execute script"
 msgstr "Скрипта не може да се изпълни"
 
-#: lib/gui/listbox.cpp:865
+#: lib/gui/listbox.cpp:883
 msgid "no description available"
 msgstr "без информация"
 
@@ -1703,7 +1704,7 @@ msgstr "Добавки"
 msgid "Complete config"
 msgstr "Пълни настройки"
 
-#: src/backup.cpp:140
+#: src/backup.cpp:140 src/enigma_dyn.cpp:766
 msgid "Settings"
 msgstr "Настройки"
 
@@ -1783,323 +1784,319 @@ msgstr "Възстановяване моля изчакайте"
 msgid "Reloading Enigma settings, please wait"
 msgstr "Презареждане на настройките моля изчакайте"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:341
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:341
 msgid "Movie"
 msgstr "Филм"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:343
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:343
 msgid "Adventure"
 msgstr "Приключения"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:344
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:344
 msgid "SciFi"
 msgstr "SciFi"
 
-#: src/channelinfo.cpp:79 src/epgsearch.cpp:345
+#: src/channelinfo.cpp:99 src/epgsearch.cpp:345
 msgid "Comedy"
 msgstr "Комедия"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:346
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:346
 msgid "Soap"
 msgstr "Сериал/драма"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:347
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:347
 msgid "Romance"
 msgstr "Романтика"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:348
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:348
 msgid "Serious"
 msgstr "Сериозен"
 
-#: src/channelinfo.cpp:80 src/epgsearch.cpp:349
+#: src/channelinfo.cpp:100 src/epgsearch.cpp:349
 msgid "Adult"
 msgstr "За възрастни"
 
-#: src/channelinfo.cpp:83 src/epgsearch.cpp:350
+#: src/channelinfo.cpp:103 src/epgsearch.cpp:350
 msgid "News"
 msgstr "Новини"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Weather"
 msgstr "Времето"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Magazine"
 msgstr "Magazine"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Documentary"
 msgstr "Документален"
 
-#: src/channelinfo.cpp:83
+#: src/channelinfo.cpp:103
 msgid "Discussion"
 msgstr "Дискусия"
 
-#: src/channelinfo.cpp:87 src/epgsearch.cpp:351
+#: src/channelinfo.cpp:107 src/epgsearch.cpp:351
 msgid "Show"
 msgstr "Шоу"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Game Show"
 msgstr "Игра"
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Variety"
 msgstr "Разл."
 
-#: src/channelinfo.cpp:87
+#: src/channelinfo.cpp:107
 msgid "Talk"
 msgstr "Токшоу"
 
-#: src/channelinfo.cpp:91 src/epgsearch.cpp:352
+#: src/channelinfo.cpp:111 src/epgsearch.cpp:352
 msgid "Sports"
 msgstr "Спорт"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Special Event"
 msgstr "Спец. събитие"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Sports Mag."
 msgstr "Sports Mag."
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Football"
 msgstr "Футбол"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Tennis"
 msgstr "Тенис"
 
-#: src/channelinfo.cpp:91
+#: src/channelinfo.cpp:111
 msgid "Team Sports"
 msgstr "Team Sports"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Athletics"
 msgstr "Атлетика"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Motor Sports"
 msgstr "Моторни спортове"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Water Sports"
 msgstr "Водни спортове"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Winter Sports"
 msgstr "Зимни спортове"
 
-#: src/channelinfo.cpp:92
+#: src/channelinfo.cpp:112
 msgid "Equestrian"
 msgstr "Equestrian"
 
-#: src/channelinfo.cpp:93
+#: src/channelinfo.cpp:113
 msgid "Martial Sports"
 msgstr "Бойни изкуства"
 
-#: src/channelinfo.cpp:96 src/epgsearch.cpp:353
+#: src/channelinfo.cpp:116 src/epgsearch.cpp:353
 msgid "Children"
 msgstr "Деца"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Pre-School"
 msgstr "Деца"
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Age 6-14"
 msgstr "6-14 год."
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "Age 10-16"
 msgstr "10-16 год."
 
-#: src/channelinfo.cpp:96
+#: src/channelinfo.cpp:116
 msgid "School"
 msgstr "Училище"
 
-#: src/channelinfo.cpp:97
+#: src/channelinfo.cpp:117
 msgid "Cartoons"
 msgstr "Анимации"
 
-#: src/channelinfo.cpp:101 src/epgsearch.cpp:354
+#: src/channelinfo.cpp:121 src/epgsearch.cpp:354
 msgid "Music"
 msgstr "Музика"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Rock/Pop"
 msgstr "Rock/Pop"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Classical"
 msgstr "Класическа"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Folk"
 msgstr "Фолк"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Jazz"
 msgstr "Джаз"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Musical"
 msgstr "Мюзикъл"
 
-#: src/channelinfo.cpp:101
+#: src/channelinfo.cpp:121
 msgid "Ballet"
 msgstr "Балет"
 
-#: src/channelinfo.cpp:105 src/epgsearch.cpp:355
+#: src/channelinfo.cpp:125 src/epgsearch.cpp:355
 msgid "Culture"
 msgstr "Култура"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Perf. Arts"
 msgstr "Perf. Arts"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Fine Arts"
 msgstr "Fine Arts"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Religion"
 msgstr "Религия"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Pop. Arts"
 msgstr "Pop. Arts"
 
-#: src/channelinfo.cpp:105
+#: src/channelinfo.cpp:125
 msgid "Literature"
 msgstr "Литература"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Film"
 msgstr "Филм"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Experimental"
 msgstr "Екпериментално"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Press"
 msgstr "Press"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "New Media"
 msgstr "Нова медия"
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Art Mag."
 msgstr "Art Mag."
 
-#: src/channelinfo.cpp:106
+#: src/channelinfo.cpp:126
 msgid "Fashion"
 msgstr "Мода"
 
-#: src/channelinfo.cpp:109 src/epgsearch.cpp:356
+#: src/channelinfo.cpp:129 src/epgsearch.cpp:356
 msgid "Social"
 msgstr "Социални"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Soc. Mag."
 msgstr "Soc. Mag."
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Economics"
 msgstr "Икономика"
 
-#: src/channelinfo.cpp:109
+#: src/channelinfo.cpp:129
 msgid "Remark. People"
 msgstr "Remark. People"
 
-#: src/channelinfo.cpp:113 src/epgsearch.cpp:357
+#: src/channelinfo.cpp:133 src/epgsearch.cpp:357
 msgid "Education"
 msgstr "Образование"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Nature"
 msgstr "Природа"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Technology"
 msgstr "Технологии"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Medicine"
 msgstr "Медицина"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Expeditions"
 msgstr "Експедиция"
 
-#: src/channelinfo.cpp:113
+#: src/channelinfo.cpp:133
 msgid "Spiritual"
 msgstr "Spiritual"
 
-#: src/channelinfo.cpp:114
+#: src/channelinfo.cpp:134
 msgid "Further Ed."
 msgstr "Further Ed."
 
-#: src/channelinfo.cpp:114
+#: src/channelinfo.cpp:134
 msgid "Languages"
 msgstr "Езици"
 
-#: src/channelinfo.cpp:117 src/epgsearch.cpp:358
+#: src/channelinfo.cpp:137 src/epgsearch.cpp:358
 msgid "Hobbies"
 msgstr "Хобита"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Travel"
 msgstr "Пътуване"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Handicraft"
 msgstr "Handicraft"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Motoring"
 msgstr "Motoring"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Fitness"
 msgstr "Фитнес"
 
-#: src/channelinfo.cpp:117
+#: src/channelinfo.cpp:137
 msgid "Cooking"
 msgstr "Готварство"
 
-#: src/channelinfo.cpp:118
+#: src/channelinfo.cpp:138
 msgid "Shopping"
 msgstr "Пазаруване"
 
-#: src/channelinfo.cpp:118
+#: src/channelinfo.cpp:138
 msgid "Gardening"
 msgstr "Градинарства"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "Orig. Lang."
 msgstr "Ориг. език"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "B&W"
 msgstr "B&W"
 
-#: src/channelinfo.cpp:121
+#: src/channelinfo.cpp:141
 msgid "Unpublished"
 msgstr "Unpublished"
 
-#: src/channelinfo.cpp:121 src/epgsearch.cpp:359
+#: src/channelinfo.cpp:141 src/epgsearch.cpp:359
 msgid "Live"
 msgstr "На живо"
 
-#: src/channelinfo.cpp:263
-msgid "no data for this service available"
-msgstr "без данни за този сървиз"
-
-#: src/channelinfo.cpp:304
+#: src/channelinfo.cpp:359
 #, c-format
 msgid ""
 "\n"
@@ -2108,7 +2105,7 @@ msgstr ""
 "\n"
 "Filesize/date: %d %cB, %s"
 
-#: src/channelinfo.cpp:305
+#: src/channelinfo.cpp:360
 msgid "Filename: "
 msgstr "Filename: "
 
@@ -2241,7 +2238,6 @@ msgid "Sticky Settings 1"
 msgstr "Важни настр. 1"
 
 #: src/engrab.cpp:37 src/enigma_event.cpp:179 src/enigma_event.cpp:188
-#: src/enigma_event.cpp:352 src/enigma_event.cpp:361
 msgid "no description is available"
 msgstr "без описание"
 
@@ -2249,11 +2245,13 @@ msgstr "без описание"
 msgid "Bouquet Type"
 msgstr "Букет тип"
 
-#: src/enigma_bouquet.cpp:42
+#: src/enigma_bouquet.cpp:42 src/enigma_dyn.cpp:119 src/enigma_dyn.cpp:691
+#: src/enigma_dyn.cpp:709
 msgid "TV"
 msgstr "TV"
 
-#: src/enigma_bouquet.cpp:43
+#: src/enigma_bouquet.cpp:43 src/enigma_dyn.cpp:120 src/enigma_dyn.cpp:693
+#: src/enigma_dyn.cpp:711
 msgid "Radio"
 msgstr "Радио"
 
@@ -2333,21 +2331,21 @@ msgstr "Common Interface модул - mmi"
 msgid "waiting for CI answer..."
 msgstr "чакане за отг. от CI..."
 
-#: src/enigma.cpp:433 src/setup_swapandvar.cpp:112
+#: src/enigma.cpp:437 src/setup_swapandvar.cpp:112
 msgid "Internal harddisk"
 msgstr "Вътрешен harddisk"
 
-#: src/enigma.cpp:440 src/setup_swapandvar.cpp:111
+#: src/enigma.cpp:444 src/setup_swapandvar.cpp:111
 #: src/setup_swapandvar.cpp:393 src/setup_swapandvar.cpp:399
 #: src/setup_usb.cpp:27
 msgid "USB stick"
 msgstr "USB stick"
 
-#: src/enigma.cpp:447 src/setup_swapandvar.cpp:113
+#: src/enigma.cpp:451 src/setup_swapandvar.cpp:113
 msgid "Compact Flash card"
 msgstr "Compact Flash card"
 
-#: src/enigma.cpp:562
+#: src/enigma.cpp:571
 msgid ""
 "Welcome to enigma.\n"
 "\n"
@@ -2359,51 +2357,156 @@ msgstr ""
 "Моля сканирайте транспондер.\n"
 "(главно меню > настройки > канали > скан. на трансп.)"
 
-#: src/enigma.cpp:564
+#: src/enigma.cpp:573
 msgid "First start of enigma"
 msgstr "Първоначално зареждане"
 
-#: src/enigma.cpp:799
+#: src/enigma.cpp:808
 msgid "It's now safe to unplug power!"
 msgstr "Сега можете да изкл. захр.!"
 
-#: src/enigma.cpp:800
+#: src/enigma.cpp:809
 msgid "Shutdown finished"
 msgstr "Изключване завършено"
 
-#: src/enigma.cpp:827
+#: src/enigma.cpp:836
 msgid "Please wait... your Dreambox is shutting down!"
 msgstr "Моля изчакайте...Dreambox  се изключва!"
 
-#: src/enigma.cpp:828
+#: src/enigma.cpp:837
 msgid "Shutdown..."
 msgstr "Изключване..."
 
-#: src/enigma_dyn.cpp:631 src/sselect.cpp:517
+#: src/enigma_dyn.cpp:121 src/enigma_dyn.cpp:695 src/enigma_dyn.cpp:713
+msgid "Data"
+msgstr ""
+
+#: src/enigma_dyn.cpp:122 src/enigma_dyn.cpp:698 src/enigma_dyn.cpp:718
+#: src/sselect.cpp:537
+msgid "Movies"
+msgstr "Филми"
+
+#: src/enigma_dyn.cpp:123 src/enigma_dyn.cpp:700 src/enigma_dyn.cpp:716
+#: src/sselect.cpp:2354
+msgid "Root"
+msgstr ""
+
+#: src/enigma_dyn.cpp:124 src/enigma_dyn.cpp:704
+#, fuzzy
+msgid "Stream"
+msgstr "Streaminfo"
+
+#: src/enigma_dyn.cpp:604 src/enigma_main.cpp:712
+msgid "Video"
+msgstr "Видео"
+
+#: src/enigma_dyn.cpp:605 src/enigma_main.cpp:856 src/enigma_main.cpp:1123
+msgid "Audio"
+msgstr "Аудио"
+
+#: src/enigma_dyn.cpp:606 src/enigma_scan.cpp:184 src/setup_mounts.cpp:782
+msgid "Info"
+msgstr "Инфо"
+
+#: src/enigma_dyn.cpp:607
+#, fuzzy
+msgid "Stream Info"
+msgstr "Streaminfo"
+
+#: src/enigma_dyn.cpp:609
+#, fuzzy
+msgid "VLC"
+msgstr "VCR"
+
+#: src/enigma_dyn.cpp:624
+msgid "ZAP"
+msgstr ""
+
+#: src/enigma_dyn.cpp:625
+msgid "TIMERS"
+msgstr ""
+
+#: src/enigma_dyn.cpp:626
+msgid "CONTROL"
+msgstr ""
+
+#: src/enigma_dyn.cpp:630
+msgid "CONFIG"
+msgstr ""
+
+#: src/enigma_dyn.cpp:633
+msgid "HELP"
+msgstr ""
+
+#: src/enigma_dyn.cpp:661 src/sselect.cpp:528
 msgid "Satellites"
 msgstr "Сателити"
 
-#: src/enigma_dyn.cpp:635 src/sselect.cpp:520
+#: src/enigma_dyn.cpp:665 src/sselect.cpp:531
 msgid "Providers"
 msgstr "Оператори"
 
-#: src/enigma_dyn.cpp:806
+#: src/enigma_dyn.cpp:725
+#, fuzzy
+msgid "Message2TV"
+msgstr "Съобщение"
+
+#: src/enigma_dyn.cpp:732
+#, fuzzy
+msgid "Logging"
+msgstr "Debugging"
+
+#: src/enigma_dyn.cpp:736
+#, fuzzy
+msgid "Satfinder"
+msgstr "Satfind"
+
+#: src/enigma_dyn.cpp:743 src/enigma_dyn.cpp:747
+#, fuzzy
+msgid "Remote Control"
+msgstr "Дистанционно"
+
+#: src/enigma_dyn.cpp:756
+msgid "Boot Manager"
+msgstr ""
+
+#: src/enigma_dyn.cpp:757
+#, fuzzy
+msgid "Mount Manager"
+msgstr "Монтиране неуспешно"
+
+#: src/enigma_dyn.cpp:763
+#, fuzzy
+msgid "Flash Manager"
+msgstr "Flash new image"
+
+#: src/enigma_dyn.cpp:772
+#, fuzzy
+msgid "Rotor"
+msgstr "Настройка Ротор"
+
+#: src/enigma_dyn.cpp:779
+#, fuzzy
+msgid "Web Server"
+msgstr "Web интерфейс"
+
+#: src/enigma_dyn.cpp:836
 msgid "OSD Shot"
 msgstr "OSD Shot"
 
-#: src/enigma_dyn.cpp:807
+#: src/enigma_dyn.cpp:837
 msgid "Screen Shot"
 msgstr "Снимка на екрана"
 
-#: src/enigma_dyn.cpp:810
+#: src/enigma_dyn.cpp:840
 msgid "Screen + OSD"
 msgstr "Screen + OSD"
 
-#: src/enigma_dyn.cpp:824
+#: src/enigma_dyn.cpp:854
 msgid "LCD Shot"
 msgstr "LCD Shot"
 
-#: src/enigma_dyn.cpp:2332
+#: src/enigma_dyn.cpp:2434
 msgid "External Message"
 msgstr "Външно съобщение"
 
@@ -2505,7 +2608,7 @@ msgstr ""
 "The number of services shown per page and the fontsize of the short epg "
 "descriptions can be changed in the EPG Setup menu"
 
-#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2075
+#: src/enigma_epg.cpp:547 src/epgwindow.cpp:449 src/sselect.cpp:2090
 msgid " was not found!"
 msgstr "не е намерен!"
 
@@ -2566,12 +2669,11 @@ msgstr "enigma изглед събития"
 msgid "closes the Event View"
 msgstr "затваря екран събития"
 
-#: src/enigma_event.cpp:164 src/enigma_event.cpp:342 src/streaminfo.cpp:620
-#: src/streaminfo.cpp:678
+#: src/enigma_event.cpp:164 src/streaminfo.cpp:641 src/streaminfo.cpp:699
 msgid "no information is available"
 msgstr "няма информация"
 
-#: src/enigma_event.cpp:256
+#: src/enigma_event.cpp:257
 msgid ""
 "\tEvent EPG\n"
 "\n"
@@ -2623,7 +2725,7 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window"
 
-#: src/enigma_event.cpp:305
+#: src/enigma_event.cpp:306
 #, c-format
 msgid "Original duration: %d min"
 msgstr "Ориг. продълж.: %d мин."
@@ -2634,7 +2736,7 @@ msgstr "Ориг. продълж.: %d мин."
 msgid "Information"
 msgstr "Информация"
 
-#: src/enigma_info.cpp:44 src/streaminfo.cpp:585
+#: src/enigma_info.cpp:44 src/streaminfo.cpp:606
 msgid "Streaminfo"
 msgstr "Streaminfo"
 
@@ -2702,9 +2804,9 @@ msgstr "Frontend: Terrestrial"
 msgid "Frontend: Unknown"
 msgstr "Frontend: Unknown"
 
-#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:366
-#: src/streaminfo.cpp:377 src/streaminfo.cpp:389 src/streaminfo.cpp:401
-#: src/streaminfo.cpp:413 src/streaminfo.cpp:509 src/streaminfo.cpp:548
+#: src/enigma_info.cpp:172 src/setup_swapandvar.cpp:109 src/streaminfo.cpp:387
+#: src/streaminfo.cpp:398 src/streaminfo.cpp:410 src/streaminfo.cpp:422
+#: src/streaminfo.cpp:434 src/streaminfo.cpp:530 src/streaminfo.cpp:569
 msgid "none"
 msgstr "няма"
 
@@ -2725,7 +2827,7 @@ msgstr "beta"
 msgid "internal"
 msgstr "internal"
 
-#: src/enigma_info.cpp:251
+#: src/enigma_info.cpp:252
 msgid "About"
 msgstr "За"
 
@@ -2853,7 +2955,7 @@ msgstr "пауза"
 msgid "resume playback"
 msgstr "продължи възпр."
 
-#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4354
+#: src/enigma_main.cpp:132 src/enigma_main.cpp:145 src/enigma_main.cpp:4438
 msgid "record"
 msgstr "запис"
 
@@ -3017,14 +3119,6 @@ msgstr "не е валиден!"
 msgid "NVOD"
 msgstr "NVOD"
 
-#: src/enigma_main.cpp:712
-msgid "Video"
-msgstr "Видео"
-
-#: src/enigma_main.cpp:856 src/enigma_main.cpp:1123
-msgid "Audio"
-msgstr "Аудио"
-
 #: src/enigma_main.cpp:876 src/enigma_main.cpp:1143
 msgid "   Left Mono  >"
 msgstr "   Ляв Моно  >"
@@ -3111,103 +3205,99 @@ msgstr "Фаворити (Radio)"
 msgid "Favourites (File)"
 msgstr "Фаворити (File)"
 
-#: src/enigma_main.cpp:2492
+#: src/enigma_main.cpp:2520
 msgid "please wait while initializing Common Interface ..."
 msgstr "моля изчакайте инициализирането на на СІ..."
 
-#: src/enigma_main.cpp:2577
+#: src/enigma_main.cpp:2605
 msgid "rewind 15 seconds"
 msgstr "назад 15 сек."
 
-#: src/enigma_main.cpp:2578
+#: src/enigma_main.cpp:2606
 msgid "rewind 1 minute"
 msgstr "назад 1 минута"
 
-#: src/enigma_main.cpp:2579
+#: src/enigma_main.cpp:2607
 msgid "rewind 5 minutes"
 msgstr "назад 5 минути"
 
-#: src/enigma_main.cpp:2580
+#: src/enigma_main.cpp:2608
 msgid "enter number of minutes to rewind"
 msgstr "въведи колко минути назад"
 
-#: src/enigma_main.cpp:2581
+#: src/enigma_main.cpp:2609
 msgid "fast forward 15 seconds"
 msgstr "напред 15 сек."
 
-#: src/enigma_main.cpp:2582
+#: src/enigma_main.cpp:2610
 msgid "fast forward 1 minute"
 msgstr "напред 1 минута"
 
-#: src/enigma_main.cpp:2583
+#: src/enigma_main.cpp:2611
 msgid "fast forward 5 minutes"
 msgstr "напред 5 минути"
 
-#: src/enigma_main.cpp:2584
+#: src/enigma_main.cpp:2612
 msgid "enter number of minutes to fast forward"
 msgstr "колко минути напред да се превърти"
 
-#: src/enigma_main.cpp:2733
-msgid "no EPG available"
-msgstr "няма ЕПГ"
-
-#: src/enigma_main.cpp:3562
+#: src/enigma_main.cpp:3644
 msgid "ShutdownTimer"
 msgstr "Таймер за изкл."
 
-#: src/enigma_main.cpp:3562
+#: src/enigma_main.cpp:3644
 msgid "SleepTimer"
 msgstr "Таймер за заспиване"
 
-#: src/enigma_main.cpp:3982
+#: src/enigma_main.cpp:4066
 msgid "Pause"
 msgstr "Пауза"
 
-#: src/enigma_main.cpp:3982
+#: src/enigma_main.cpp:4066
 msgid "audio track"
 msgstr "аудио канал"
 
-#: src/enigma_main.cpp:4354
+#: src/enigma_main.cpp:4438
 msgid "Sorry, you cannot record this service."
 msgstr "Вие не можете да запишете това предаване!"
 
-#: src/enigma_main.cpp:4581
+#: src/enigma_main.cpp:4666
 msgid "Show recorded movies?"
 msgstr "Покажи записаните предавания?"
 
-#: src/enigma_main.cpp:4581
+#: src/enigma_main.cpp:4666
 msgid "recording finished"
 msgstr "записът завършен"
 
-#: src/enigma_main.cpp:4909
+#: src/enigma_main.cpp:4994
 msgid "Shutdown your Receiver now?"
 msgstr "Изкл. на приемника сега?"
 
-#: src/enigma_main.cpp:4909 src/enigma_main.cpp:4929
+#: src/enigma_main.cpp:4994 src/enigma_main.cpp:5014
 msgid "Timer Message"
 msgstr "Съобщ. таймер"
 
-#: src/enigma_main.cpp:4929
+#: src/enigma_main.cpp:5014
 msgid "Go to Standby now?"
 msgstr "Чакащ режим сега?"
 
-#: src/enigma_main.cpp:4984 src/enigma_main.cpp:5048
+#: src/enigma_main.cpp:5069 src/enigma_main.cpp:5133
 msgid "Enter new name:"
 msgstr "Въведи ново име:"
 
-#: src/enigma_main.cpp:4985 src/enigma_main.cpp:5049
+#: src/enigma_main.cpp:5070 src/enigma_main.cpp:5134
 msgid "Rename entry"
 msgstr "Преименувай"
 
-#: src/enigma_main.cpp:5111
+#: src/enigma_main.cpp:5196
 msgid "Sorry, you cannot delete this service."
 msgstr "Не може да изтриете този сървиз."
 
-#: src/enigma_main.cpp:5111
+#: src/enigma_main.cpp:5196
 msgid "delete service"
 msgstr "изтриване сървиз"
 
-#: src/enigma_main.cpp:5136 src/enigma_main.cpp:5261 src/sselect.cpp:2379
+#: src/enigma_main.cpp:5221 src/enigma_main.cpp:5346 src/sselect.cpp:2395
 #, c-format
 msgid ""
 "You are trying to delete '%s'.\n"
@@ -3216,11 +3306,11 @@ msgstr ""
 "Опитвате се да изтриете '%s'.\n"
 "Сигурни ли сте?"
 
-#: src/enigma_main.cpp:5137
+#: src/enigma_main.cpp:5222
 msgid "Delete recorded stream"
 msgstr "Изтриване на записания поток"
 
-#: src/enigma_main.cpp:5164
+#: src/enigma_main.cpp:5249
 msgid ""
 "This is a complete Bouquet!\n"
 "Really delete?"
@@ -3228,76 +3318,76 @@ msgstr ""
 "Това е целия букет!\n"
 "Изтршване?!"
 
-#: src/enigma_main.cpp:5165
+#: src/enigma_main.cpp:5250
 msgid "Delete bouquet"
 msgstr "Изтриване на букет"
 
-#: src/enigma_main.cpp:5262
+#: src/enigma_main.cpp:5347
 msgid "Delete File"
 msgstr "Изтриване на файл"
 
-#: src/enigma_main.cpp:5360
+#: src/enigma_main.cpp:5445
 msgid "Enter new Filename:"
 msgstr "Ново име на файл:"
 
-#: src/enigma_main.cpp:5361
+#: src/enigma_main.cpp:5446
 msgid "Rename File"
 msgstr "Преименуване на файл"
 
-#: src/enigma_main.cpp:5393
+#: src/enigma_main.cpp:5478
 msgid "Enter new name for the bouquet:"
 msgstr "Въвеждане ново име на букет:"
 
-#: src/enigma_main.cpp:5394
+#: src/enigma_main.cpp:5479
 msgid "Rename bouquet"
 msgstr "Преименуване букет"
 
-#: src/enigma_main.cpp:5419
+#: src/enigma_main.cpp:5504
 msgid "Enter name for the new bouquet:"
 msgstr "Въвеждане ново име на букет:"
 
-#: src/enigma_main.cpp:5420
+#: src/enigma_main.cpp:5505
 msgid "Add new bouquet"
 msgstr "Добавяне нов букет"
 
-#: src/enigma_main.cpp:5475
+#: src/enigma_main.cpp:5560
 msgid "unnamed"
 msgstr "безиме"
 
-#: src/enigma_main.cpp:5476
+#: src/enigma_main.cpp:5561
 msgid "Enter marker name:"
 msgstr "Име на маркера:"
 
-#: src/enigma_main.cpp:5477
+#: src/enigma_main.cpp:5562
 msgid "create marker"
 msgstr "създаване маркер"
 
-#: src/enigma_main.cpp:5525
+#: src/enigma_main.cpp:5610
 msgid "unnamed bouquet"
 msgstr "букет безиме"
 
-#: src/enigma_main.cpp:5728
+#: src/enigma_main.cpp:5813
 msgid "Do you want to rebuild your movie list?"
 msgstr "Презареждане на списъка с филми?"
 
-#: src/enigma_main.cpp:5729
+#: src/enigma_main.cpp:5814
 msgid "Recover movies"
 msgstr "Възстанови филми"
 
-#: src/enigma_main.cpp:6060 src/enigma_main.cpp:6061
+#: src/enigma_main.cpp:6145 src/enigma_main.cpp:6146
 msgid "This directory doesn't contain anything playable!"
 msgstr "В тази папка няма валидни файлове!"
 
-#: src/enigma_main.cpp:6061
+#: src/enigma_main.cpp:6146
 msgid "Play"
 msgstr "Play"
 
-#: src/enigma_main.cpp:6523
+#: src/enigma_main.cpp:6655
 #, c-format
 msgid "%s was not found!"
 msgstr "%s не беше намерен!"
 
-#: src/enigma_main.cpp:6674
+#: src/enigma_main.cpp:6806
 msgid ""
 "A timer based recording is currently in progress!\n"
 "This stops the timer, and recording!"
@@ -3305,7 +3395,7 @@ msgstr ""
 "Запис по таймер е в прогрес!\n"
 "Тази операция спира таймера и записа!"
 
-#: src/enigma_main.cpp:6684
+#: src/enigma_main.cpp:6816
 msgid ""
 "A recording is currently in progress!\n"
 "This stops the recording!"
@@ -3313,7 +3403,7 @@ msgstr ""
 "Запис е в прогрес!\n"
 "Тази операция спира записа!"
 
-#: src/enigma_main.cpp:6696
+#: src/enigma_main.cpp:6828
 msgid ""
 "A timer event is currently in progress!\n"
 "This stops the timer event!"
@@ -3321,378 +3411,378 @@ msgstr ""
 "Събитие и в прогрес!\n"
 "Тове ще спре събитието!"
 
-#: src/enigma_main.cpp:6704
+#: src/enigma_main.cpp:6836
 msgid "Really do this?"
 msgstr "Сигурни ли сте?"
 
-#: src/enigma_main.cpp:6777
+#: src/enigma_main.cpp:6909
 msgid "please wait until the timer has started the recording (max 10 seconds)"
 msgstr "моля изчакайте докато таймера стартира записа (max 10 секунди)"
 
-#: src/enigma_main.cpp:6778
+#: src/enigma_main.cpp:6910
 msgid "information"
 msgstr "информация"
 
-#: src/enigma_main.cpp:7653
+#: src/enigma_main.cpp:7818
 msgid "Record failed due to inaccessable storage."
 msgstr "Неуспешен запис полади недостъпен диск."
 
-#: src/enigma_main.cpp:7655
+#: src/enigma_main.cpp:7820
 msgid ""
 "Record stopped due to full harddisk. Delete some recordings and try again."
 msgstr "Записът спря поради пълен HDD. Изтрийте нещо и опитайте пак!"
 
-#: src/enigma_main.cpp:7657
+#: src/enigma_main.cpp:7822
 msgid ""
 "Record failed due to a write error during recording. Check for filesystem "
 "corruption."
 msgstr "Неуспешен запис. Проверете файловата система за грешки."
 
-#: src/enigma_main.cpp:7659
+#: src/enigma_main.cpp:7824
 msgid "record failed"
 msgstr "неуспешен запис"
 
-#: src/enigma_main.cpp:7960 src/enigma_main.cpp:7961
+#: src/enigma_main.cpp:8125 src/enigma_main.cpp:8126
 msgid "One moment please..."
 msgstr "един момент моля..."
 
-#: src/enigma_main.cpp:7961 src/enigma_main.cpp:7969 src/enigma_main.cpp:7983
-#: src/enigma_main.cpp:7996 src/enigma_main.cpp:8008 src/enigma_main.cpp:8017
-#: src/enigma_main.cpp:8022 src/timer.cpp:2371
+#: src/enigma_main.cpp:8126 src/enigma_main.cpp:8134 src/enigma_main.cpp:8148
+#: src/enigma_main.cpp:8161 src/enigma_main.cpp:8173 src/enigma_main.cpp:8182
+#: src/enigma_main.cpp:8187 src/timer.cpp:2371
 msgid "switch"
 msgstr "switch"
 
-#: src/enigma_main.cpp:7969 src/enigma_main.cpp:7971
+#: src/enigma_main.cpp:8134 src/enigma_main.cpp:8136
 msgid "Service could not be found !"
 msgstr "Сървизът не е намерен!"
 
-#: src/enigma_main.cpp:7983 src/enigma_main.cpp:7985
+#: src/enigma_main.cpp:8148 src/enigma_main.cpp:8150
 msgid "This service could not be descrambled"
 msgstr "Сървизът не може да се разкодира"
 
-#: src/enigma_main.cpp:7996 src/enigma_main.cpp:7998
+#: src/enigma_main.cpp:8161 src/enigma_main.cpp:8163
 msgid "This service doesn't currently send a signal"
 msgstr "В момента няма сигнал на този сървиз"
 
-#: src/enigma_main.cpp:8008 src/enigma_main.cpp:8010
+#: src/enigma_main.cpp:8173 src/enigma_main.cpp:8175
 msgid "This content could not be displayed"
 msgstr "Инф. не може да се визуализира"
 
-#: src/enigma_main.cpp:8015 src/enigma_main.cpp:8017
+#: src/enigma_main.cpp:8180 src/enigma_main.cpp:8182
 msgid "NVOD Service - please select a starttime"
 msgstr "NVOD сървиз - изберете сатртово време"
 
-#: src/enigma_main.cpp:8020 src/enigma_main.cpp:8022
+#: src/enigma_main.cpp:8185 src/enigma_main.cpp:8187
 msgid "Unknown error!!"
 msgstr "Неизвестна грешка!!!"
 
-#: src/enigma_main.cpp:8595 src/sselect.cpp:527
+#: src/enigma_main.cpp:8776 src/sselect.cpp:538
 msgid "Playlist"
 msgstr "Playlist"
 
-#: src/enigma_main.cpp:8602
+#: src/enigma_main.cpp:8783
 msgid "History"
 msgstr "История"
 
-#: src/enigma_main.cpp:9119
+#: src/enigma_main.cpp:9300
 msgid "Networks, services and user bouquets will be reloaded"
 msgstr "Мрижа,сървизи и букети ще бъдат презаредени"
 
-#: src/enigma_main.cpp:9120 src/enigma_main.cpp:9124
+#: src/enigma_main.cpp:9301 src/enigma_main.cpp:9305
 msgid "Reloading..."
 msgstr "Презареждане..."
 
-#: src/enigma_main.cpp:9123
+#: src/enigma_main.cpp:9304
 msgid "Please wait..."
 msgstr "Моля изчакайте..."
 
-#: src/enigma_main.cpp:9142
+#: src/enigma_main.cpp:9323
 msgid "Service Menu"
 msgstr "Меню сървизи"
 
-#: src/enigma_main.cpp:9160 src/sselect.cpp:145
+#: src/enigma_main.cpp:9341 src/sselect.cpp:145
 msgid "add service to playlist"
 msgstr "добави сървиз към playlist"
 
-#: src/enigma_main.cpp:9160
+#: src/enigma_main.cpp:9341
 msgid "add selected service to the playlist"
 msgstr "добави избрания сървиз към playlist"
 
-#: src/enigma_main.cpp:9172
+#: src/enigma_main.cpp:9353
 msgid "shuffle"
 msgstr "разбъркване"
 
-#: src/enigma_main.cpp:9172
+#: src/enigma_main.cpp:9353
 msgid "shuffle playlist"
 msgstr "разбъркване на playlist"
 
-#: src/enigma_main.cpp:9185 src/enigma_main.cpp:9192
+#: src/enigma_main.cpp:9366 src/enigma_main.cpp:9373
 msgid "remove all 'new found' flags"
 msgstr "премахни всички 'нови' флагове"
 
-#: src/enigma_main.cpp:9185
+#: src/enigma_main.cpp:9366
 msgid "select to remove all 'new found' flags from this satellite"
 msgstr "избери за премахване всички 'нови' флагове от този сат."
 
-#: src/enigma_main.cpp:9191
+#: src/enigma_main.cpp:9372
 msgid "remove 'new found flag'"
 msgstr "премахни 'нови' флаг"
 
-#: src/enigma_main.cpp:9191
+#: src/enigma_main.cpp:9372
 msgid "select to remove the 'new found flag'"
 msgstr "избери за премахване 'нови' флаг"
 
-#: src/enigma_main.cpp:9192
+#: src/enigma_main.cpp:9373
 msgid "select to remove all 'new found' flags"
 msgstr "избери за премахване всички 'нови' флагове"
 
-#: src/enigma_main.cpp:9196
+#: src/enigma_main.cpp:9377
 msgid "create new bouquet"
 msgstr "създаване нов букет"
 
-#: src/enigma_main.cpp:9196
+#: src/enigma_main.cpp:9377
 msgid "select to create a new bouquet"
 msgstr "избери за създаване нов букет"
 
-#: src/enigma_main.cpp:9208
+#: src/enigma_main.cpp:9389
 msgid "duplicate bouquet"
 msgstr "дублеране на букет"
 
-#: src/enigma_main.cpp:9208
+#: src/enigma_main.cpp:9389
 msgid "duplicate the complete bouquet with all content"
 msgstr "дублеране на букет и цялото му съдържание"
 
-#: src/enigma_main.cpp:9214 src/enigma_main.cpp:9282 src/enigma_main.cpp:9287
-#: src/enigma_main.cpp:9307
+#: src/enigma_main.cpp:9395 src/enigma_main.cpp:9463 src/enigma_main.cpp:9468
+#: src/enigma_main.cpp:9488
 msgid "add to specific bouquet"
 msgstr "добави към избран букет"
 
-#: src/enigma_main.cpp:9214
+#: src/enigma_main.cpp:9395
 msgid "add the selected service to another bouquet"
 msgstr "добавиизбрания сървиз към друг букет"
 
-#: src/enigma_main.cpp:9216
+#: src/enigma_main.cpp:9397
 msgid "add marker"
 msgstr "добави маркер"
 
-#: src/enigma_main.cpp:9216
+#: src/enigma_main.cpp:9397
 msgid "create a new marker in the current bouquet"
 msgstr "добави нов маркер в текущия букет"
 
-#: src/enigma_main.cpp:9225 src/enigma_main.cpp:9241 src/enigma_main.cpp:9289
-#: src/sselect.cpp:506
+#: src/enigma_main.cpp:9406 src/enigma_main.cpp:9422 src/enigma_main.cpp:9470
+#: src/sselect.cpp:517
 msgid "rename"
 msgstr "преименуване"
 
-#: src/enigma_main.cpp:9225
+#: src/enigma_main.cpp:9406
 msgid "rename the current selected bouquet"
 msgstr "преименувай избрания букет"
 
-#: src/enigma_main.cpp:9241 src/enigma_main.cpp:9289
+#: src/enigma_main.cpp:9422 src/enigma_main.cpp:9470
 msgid "rename the current selected service/movie"
 msgstr "преименувай избрания сървиз/филм"
 
-#: src/enigma_main.cpp:9245 src/enigma_main.cpp:9290 src/sselect.cpp:504
+#: src/enigma_main.cpp:9426 src/enigma_main.cpp:9471 src/sselect.cpp:515
 msgid "delete"
 msgstr "изтриване"
 
-#: src/enigma_main.cpp:9245 src/enigma_main.cpp:9290
+#: src/enigma_main.cpp:9426 src/enigma_main.cpp:9471
 msgid "delete the current selected service/movie"
 msgstr "изтриване на избран сървиз/видео"
 
-#: src/enigma_main.cpp:9250
+#: src/enigma_main.cpp:9431
 msgid "rebuild movie list"
 msgstr "презареди списъка с филми"
 
-#: src/enigma_main.cpp:9250
+#: src/enigma_main.cpp:9431
 msgid "rebuild the current movie list"
 msgstr "презареди текущия списък с филми"
 
-#: src/enigma_main.cpp:9257
+#: src/enigma_main.cpp:9438
 msgid "set as startup service"
 msgstr "задай по подразбиране"
 
-#: src/enigma_main.cpp:9257
+#: src/enigma_main.cpp:9438
 msgid "currently selected service will be selected on startup"
 msgstr "избраният сървиз ще бъде избран при стартиране"
 
-#: src/enigma_main.cpp:9258 src/enigma_main.cpp:9293
+#: src/enigma_main.cpp:9439 src/enigma_main.cpp:9474
 msgid "reset startup service"
 msgstr "нулиране на стартов сървиз"
 
-#: src/enigma_main.cpp:9258
+#: src/enigma_main.cpp:9439
 msgid "last selected service will be selected on startup"
 msgstr "последно избрания сървиз ще бъде избран при стартиране"
 
-#: src/enigma_main.cpp:9265
+#: src/enigma_main.cpp:9446
 msgid "disable move mode"
 msgstr "забрани режим преместване"
 
-#: src/enigma_main.cpp:9265
+#: src/enigma_main.cpp:9446
 msgid "switch move mode off"
 msgstr "изкл. режим преместване"
 
-#: src/enigma_main.cpp:9267
+#: src/enigma_main.cpp:9448
 msgid "enable move mode"
 msgstr "разреши режим преместване"
 
-#: src/enigma_main.cpp:9267
+#: src/enigma_main.cpp:9448
 msgid "activate mode to simply change the entry order"
 msgstr "activate mode to simply change the entry order"
 
-#: src/enigma_main.cpp:9276
+#: src/enigma_main.cpp:9457
 msgid "copy to bouquet list"
 msgstr "копирай в списъка с букети"
 
-#: src/enigma_main.cpp:9276
+#: src/enigma_main.cpp:9457
 msgid "copy the selected provider to the bouquet list"
 msgstr "копирай избрания провайдър в списъка с букети"
 
-#: src/enigma_main.cpp:9282 src/enigma_main.cpp:9287
+#: src/enigma_main.cpp:9463 src/enigma_main.cpp:9468
 msgid "add the selected service to a selectable bouquet"
 msgstr "add the selected service to a selectable bouquet"
 
-#: src/enigma_main.cpp:9292
+#: src/enigma_main.cpp:9473
 msgid "set as startup"
 msgstr "задай по подразбиране"
 
-#: src/enigma_main.cpp:9292
+#: src/enigma_main.cpp:9473
 msgid "set the current selected service/movie as startup service"
 msgstr "задай избрания сървиз/филм по подразбиране"
 
-#: src/enigma_main.cpp:9293
+#: src/enigma_main.cpp:9474
 msgid "reset startup"
 msgstr "reset startup"
 
-#: src/enigma_main.cpp:9307
+#: src/enigma_main.cpp:9488
 msgid "add the selected file to a selectable bouquet"
 msgstr "add the selected file to a selectable bouquet"
 
-#: src/enigma_main.cpp:9309
+#: src/enigma_main.cpp:9490
 msgid "delete file"
 msgstr "изтриване на файл"
 
-#: src/enigma_main.cpp:9309
+#: src/enigma_main.cpp:9490
 msgid "delete the selected file (and all corresponding ts files"
 msgstr "delete the selected file (and all corresponding ts files"
 
-#: src/enigma_main.cpp:9310
+#: src/enigma_main.cpp:9491
 msgid "rename file"
 msgstr "преименуване на файл"
 
-#: src/enigma_main.cpp:9310
+#: src/enigma_main.cpp:9491
 msgid "rename the selected file (and all corresponding ts files"
 msgstr "rename the selected file (and all corresponding ts files"
 
-#: src/enigma_main.cpp:9324
+#: src/enigma_main.cpp:9505
 msgid "disable edit mode"
 msgstr "изкл. режим редактиране"
 
-#: src/enigma_main.cpp:9324
+#: src/enigma_main.cpp:9505
 msgid "disable the edit mode"
 msgstr "изкл. режим редактиране"
 
-#: src/enigma_main.cpp:9326
+#: src/enigma_main.cpp:9507
 msgid "enable edit mode"
 msgstr "вкл. режим редактиране"
 
-#: src/enigma_main.cpp:9326
+#: src/enigma_main.cpp:9507
 msgid "activate mode to simply add many services to a selectable bouquet"
 msgstr "activate mode to simply add many services to a selectable bouquet"
 
-#: src/enigma_main.cpp:9337
+#: src/enigma_main.cpp:9518
 msgid "unlock"
 msgstr "откл."
 
-#: src/enigma_main.cpp:9337
+#: src/enigma_main.cpp:9518
 msgid "do parental-unlock the selected service or file"
 msgstr "do parental-unlock the selected service or file"
 
-#: src/enigma_main.cpp:9339
+#: src/enigma_main.cpp:9520
 msgid "lock"
 msgstr "закл."
 
-#: src/enigma_main.cpp:9339
+#: src/enigma_main.cpp:9520
 msgid "do parentallock the selected service or file"
 msgstr "do parentallock the selected service or file"
 
-#: src/enigma_main.cpp:9343
+#: src/enigma_main.cpp:9524
 msgid "disable parental lock"
 msgstr "disable parental lock"
 
-#: src/enigma_main.cpp:9343
+#: src/enigma_main.cpp:9524
 msgid "temporary disable the parental locking"
 msgstr "temporary disable the parental locking"
 
-#: src/enigma_main.cpp:9345
+#: src/enigma_main.cpp:9526
 msgid "enable parental lock"
 msgstr "enable parental lock"
 
-#: src/enigma_main.cpp:9345
+#: src/enigma_main.cpp:9526
 msgid "re-enable the parental locking"
 msgstr "re-enable the parental locking"
 
-#: src/enigma_main.cpp:9364
+#: src/enigma_main.cpp:9545
 msgid "Shutdown/Standby Menu"
 msgstr "Меню изкл./чакащ режим"
 
-#: src/enigma_main.cpp:9375 src/enigma_main.cpp:9379 src/enigma_main.cpp:9386
+#: src/enigma_main.cpp:9556 src/enigma_main.cpp:9560 src/enigma_main.cpp:9567
 msgid "restart enigma"
 msgstr "рестартиране enigma"
 
-#: src/enigma_main.cpp:9375 src/enigma_main.cpp:9379 src/enigma_main.cpp:9386
+#: src/enigma_main.cpp:9556 src/enigma_main.cpp:9560 src/enigma_main.cpp:9567
 msgid "only restart the software, without rebooting the receiver"
 msgstr "само рестартира софтуера, без да рестартира приемника"
 
-#: src/enigma_main.cpp:9376 src/enigma_main.cpp:9380
+#: src/enigma_main.cpp:9557 src/enigma_main.cpp:9561
 msgid "reboot now"
 msgstr "рестартирай"
 
-#: src/enigma_main.cpp:9376 src/enigma_main.cpp:9388
+#: src/enigma_main.cpp:9557 src/enigma_main.cpp:9569
 msgid "restart your dreambox"
 msgstr "рестартирай dreambox"
 
-#: src/enigma_main.cpp:9380
+#: src/enigma_main.cpp:9561
 msgid "restart your receiver"
 msgstr "рестартиране на приемника"
 
-#: src/enigma_main.cpp:9387 src/enigma_main.cpp:9391
+#: src/enigma_main.cpp:9568 src/enigma_main.cpp:9572
 msgid "shutdown now"
 msgstr "изкл. сега"
 
-#: src/enigma_main.cpp:9387
+#: src/enigma_main.cpp:9568
 msgid "shutdown your dreambox"
 msgstr "изкл. на вашия dreambox"
 
-#: src/enigma_main.cpp:9388 src/enigma_main.cpp:9392
+#: src/enigma_main.cpp:9569 src/enigma_main.cpp:9573
 msgid "restart"
 msgstr "рестарт"
 
-#: src/enigma_main.cpp:9391
+#: src/enigma_main.cpp:9572
 msgid "shutdown your dbox-2"
 msgstr "shutdown your dbox-2"
 
-#: src/enigma_main.cpp:9392
+#: src/enigma_main.cpp:9573
 msgid "restart your dbox-2"
 msgstr "restart your dbox-2"
 
-#: src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9577
 msgid "goto standby"
 msgstr "чакащ режим"
 
-#: src/enigma_main.cpp:9396
+#: src/enigma_main.cpp:9577
 msgid "goto standby mode"
 msgstr "чакащ режим"
 
-#: src/enigma_main.cpp:9397
+#: src/enigma_main.cpp:9578
 msgid "set sleeptimer"
 msgstr "задава таймер заспиване"
 
-#: src/enigma_main.cpp:9397
+#: src/enigma_main.cpp:9578
 msgid "set a sleep timer"
 msgstr "задава таймер заспиване"
 
-#: src/enigma_main.cpp:9401
+#: src/enigma_main.cpp:9582
 msgid ""
 "\tShutdown/Standby Menu\n"
 "\n"
@@ -3738,7 +3828,7 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window"
 
-#: src/enigma_main.cpp:9465
+#: src/enigma_main.cpp:9646
 msgid ""
 "\tSet Sleeptimer\n"
 "\n"
@@ -3790,44 +3880,44 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window without saving changes"
 
-#: src/enigma_main.cpp:9533
+#: src/enigma_main.cpp:9714
 msgid "Record Menu"
 msgstr "Меню Запис"
 
-#: src/enigma_main.cpp:9543
+#: src/enigma_main.cpp:9724
 msgid "stop record now"
 msgstr "спри записа"
 
-#: src/enigma_main.cpp:9543
+#: src/enigma_main.cpp:9724
 msgid "immediate stop the recording"
 msgstr "незабавно спри запися"
 
-#: src/enigma_main.cpp:9545
+#: src/enigma_main.cpp:9726
 msgid "set record duration"
 msgstr "прод.на записа"
 
-#: src/enigma_main.cpp:9545
+#: src/enigma_main.cpp:9726
 msgid "set the recording time (in minutes)"
 msgstr "прод.на записа (в минути)"
 
-#: src/enigma_main.cpp:9546
+#: src/enigma_main.cpp:9727
 msgid "set record stop time"
 msgstr "време за стоп на записа"
 
-#: src/enigma_main.cpp:9546
+#: src/enigma_main.cpp:9727
 msgid "set the recording end time"
 msgstr "време за край на записа"
 
-#: src/enigma_main.cpp:9552
+#: src/enigma_main.cpp:9733
 #, c-format
 msgid "add timeshift to recording (%d min) "
 msgstr "добави  timeshift към записа (%d мин) "
 
-#: src/enigma_main.cpp:9553
+#: src/enigma_main.cpp:9734
 msgid "add recorded timeshift at beginning of this recording"
 msgstr "добави записания timeshift към началото на записа"
 
-#: src/enigma_main.cpp:9687
+#: src/enigma_main.cpp:9868
 msgid "press ok to start edit mode"
 msgstr "избери ок за начало на редактиране"
 
@@ -4022,7 +4112,7 @@ msgid "Couldn't read plugin directory %s"
 msgstr "Не може да прочете папката с плъгините %s"
 
 #: src/enigma_plugins.cpp:235 src/enigma_plugins.cpp:424 src/scan.cpp:1967
-#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2386
+#: src/scan.cpp:2019 src/scan.cpp:2131 src/sselect.cpp:2402
 msgid "Error"
 msgstr "Грешка"
 
@@ -4049,17 +4139,17 @@ msgstr "E: не е зададено име"
 msgid "Cannot execute %s (check rights)"
 msgstr "Не може да се изпълни %s (проверете правата)"
 
-#: src/enigma_plugins.cpp:718
+#: src/enigma_plugins.cpp:719
 #, c-format
 msgid "Output from %s"
 msgstr "Резултат от %s"
 
-#: src/enigma_plugins.cpp:743
+#: src/enigma_plugins.cpp:745
 #, c-format
 msgid "Executing %s. Please wait..."
 msgstr "Изпълнение %s. Моля изчакайте..."
 
-#: src/enigma_plugins.cpp:746
+#: src/enigma_plugins.cpp:750
 #, c-format
 msgid "Could not execute %s"
 msgstr "Не може да се изпълни %s"
@@ -4148,6 +4238,15 @@ msgstr "Изключване на фоново сканиране"
 msgid "Don't look for new services in the background"
 msgstr "Не търси нови сървизи на заден план"
 
+#: src/enigma_scan.cpp:102
+#, fuzzy
+msgid "Hold Service Name"
+msgstr "въведете име на канала"
+
+#: src/enigma_scan.cpp:102
+msgid "Hold service's name when scanning"
+msgstr ""
+
 #: src/enigma_scan.cpp:184
 msgid ""
 "DiSEqC 1.2 is enabled on more than one LNB, please select the LNB the motor "
@@ -4155,10 +4254,6 @@ msgid ""
 msgstr ""
 "DiSEqC 1.2 е вкл. на повече от един сат. LNB, изберете LNBкъм който мотора е "
 "свързан"
-
-#: src/enigma_scan.cpp:184 src/setup_mounts.cpp:782
-msgid "Info"
-msgstr "Инфо"
 
 #: src/enigma_scan.cpp:195
 msgid ""
@@ -4217,9 +4312,9 @@ msgstr "Инст. и премахване на софт."
 msgid "Software management"
 msgstr "Управление на софтуер"
 
-#: src/enigma_setup.cpp:154
-#, c-format
-msgid "/var used %d%%"
+#: src/enigma_setup.cpp:155
+#, fuzzy, c-format
+msgid "/var free %dK"
 msgstr "заета /var %d%%"
 
 #: src/enigma_standby.cpp:29
@@ -4976,15 +5071,15 @@ msgstr ""
 "The entered PIN is incorrect.\n"
 "Do you want to retry?"
 
-#: src/ppanel.cpp:126
+#: src/ppanel.cpp:127
 msgid "Script output"
 msgstr "Script output"
 
-#: src/ppanel.cpp:199
+#: src/ppanel.cpp:200
 msgid "Downloading"
 msgstr "Downloading"
 
-#: src/ppanel.cpp:247
+#: src/ppanel.cpp:248
 msgid ""
 "Download failed.\n"
 "Please check available space and your communication settings."
@@ -4992,24 +5087,24 @@ msgstr ""
 "Download failed.\n"
 "Please check available space and your communication settings."
 
-#: src/ppanel.cpp:272
+#: src/ppanel.cpp:273
 #, c-format
 msgid "Installing %s"
 msgstr "Installing %s"
 
-#: src/ppanel.cpp:312
+#: src/ppanel.cpp:313
 msgid "Install failed."
 msgstr "Install failed."
 
-#: src/ppanel.cpp:342
+#: src/ppanel.cpp:343
 msgid "Continue"
 msgstr "Continue"
 
-#: src/ppanel.cpp:428
+#: src/ppanel.cpp:430
 msgid "Press OK"
 msgstr "Натиснете ОК"
 
-#: src/ppanel.cpp:456 src/ppanel.cpp:1144
+#: src/ppanel.cpp:458 src/ppanel.cpp:1173
 #, c-format
 msgid ""
 "Are you sure to open\n"
@@ -5018,13 +5113,13 @@ msgstr ""
 "Сигерни ли сте че искате да отворите\n"
 "%s?"
 
-#: src/ppanel.cpp:475 src/ppanel.cpp:544 src/ppanel.cpp:782
-#: src/ppanel.cpp:1011
+#: src/ppanel.cpp:477 src/ppanel.cpp:546 src/ppanel.cpp:811
+#: src/ppanel.cpp:1040
 #, c-format
 msgid "Downloading %s"
 msgstr "Сваляне %s"
 
-#: src/ppanel.cpp:530
+#: src/ppanel.cpp:532
 #, c-format
 msgid ""
 "Are you sure to download\n"
@@ -5033,7 +5128,7 @@ msgstr ""
 "Are you sure to download\n"
 "%s?"
 
-#: src/ppanel.cpp:600 src/ppanel.cpp:651
+#: src/ppanel.cpp:602 src/ppanel.cpp:662
 #, c-format
 msgid ""
 "Are you sure to execute\n"
@@ -5042,7 +5137,7 @@ msgstr ""
 "Are you sure to execute\n"
 "%s?"
 
-#: src/ppanel.cpp:722
+#: src/ppanel.cpp:751
 #, c-format
 msgid ""
 "Are you sure to install\n"
@@ -5051,7 +5146,7 @@ msgstr ""
 "Are you sure to install\n"
 "%s?"
 
-#: src/ppanel.cpp:811
+#: src/ppanel.cpp:840
 msgid ""
 "The package cannot be installed because it's already installed. Please "
 "remove the previous version first."
@@ -5059,27 +5154,27 @@ msgstr ""
 "The package cannot be installed because it's already installed. Please "
 "remove the previous version first."
 
-#: src/ppanel.cpp:812
+#: src/ppanel.cpp:841
 msgid "Installing not possible"
 msgstr "Installing not possible"
 
-#: src/ppanel.cpp:823 src/ppanel.cpp:832
+#: src/ppanel.cpp:852 src/ppanel.cpp:861
 msgid "Manual Install"
 msgstr "Ръчна инсталация"
 
-#: src/ppanel.cpp:830
+#: src/ppanel.cpp:859
 msgid "Select package to install"
 msgstr "Select package to install"
 
-#: src/ppanel.cpp:918 src/ppanel.cpp:924
+#: src/ppanel.cpp:947 src/ppanel.cpp:953
 msgid "Remove Software"
 msgstr "Премахване на софт."
 
-#: src/ppanel.cpp:922
+#: src/ppanel.cpp:951
 msgid "Select package to remove"
 msgstr "Select package to remove"
 
-#: src/ppanel.cpp:946
+#: src/ppanel.cpp:975
 #, c-format
 msgid ""
 "Are you sure to remove\n"
@@ -5088,12 +5183,12 @@ msgstr ""
 "Are you sure to remove\n"
 "%s?"
 
-#: src/ppanel.cpp:954
+#: src/ppanel.cpp:983
 #, c-format
 msgid "Removing %s"
 msgstr "Removing %s"
 
-#: src/ppanel.cpp:990
+#: src/ppanel.cpp:1019
 #, c-format
 msgid ""
 "Are you sure to play\n"
@@ -5102,7 +5197,7 @@ msgstr ""
 "Are you sure to play\n"
 "%s?"
 
-#: src/ppanel.cpp:1082
+#: src/ppanel.cpp:1111
 #, c-format
 msgid ""
 "Are you sure to write\n"
@@ -5111,24 +5206,24 @@ msgstr ""
 "Are you sure to write\n"
 "%s?"
 
-#: src/ppanel.cpp:1170 src/upgrade.cpp:442 src/upgrade.cpp:515
+#: src/ppanel.cpp:1199 src/upgrade.cpp:442 src/upgrade.cpp:515
 #: src/upgrade.cpp:526
 msgid "Error!"
 msgstr "Грешка!"
 
-#: src/ppanel.cpp:1322
+#: src/ppanel.cpp:1352
 msgid "PPanel recovery, internet connection needed"
 msgstr "PPanel recovery, internet connection needed"
 
-#: src/ppanel.cpp:1430
+#: src/ppanel.cpp:1463
 msgid "Please select an item"
 msgstr "Please select an item"
 
-#: src/ppanel.cpp:1452
+#: src/ppanel.cpp:1485
 msgid "latest"
 msgstr "latest"
 
-#: src/ppanel.cpp:1499
+#: src/ppanel.cpp:1532
 msgid ""
 "A new menu is available. The new menu will be visible if you return to the "
 "setup panel.You can continue your work here after pressing OK."
@@ -5136,11 +5231,11 @@ msgstr ""
 "A new menu is available. The new menu will be visible if you return to the "
 "setup panel.You can continue your work here after pressing OK."
 
-#: src/ppanel.cpp:1501
+#: src/ppanel.cpp:1534
 msgid "Automatic menu update"
 msgstr "Automatic menu update"
 
-#: src/ppanel.cpp:1656 src/ppanel.cpp:1754
+#: src/ppanel.cpp:1689 src/ppanel.cpp:1787
 #, c-format
 msgid ""
 "%s\n"
@@ -6112,6 +6207,10 @@ msgstr "остават %02i мин. и %02i сек."
 msgid "%02i seconds left"
 msgstr "%02i seconds left"
 
+#: src/scan.cpp:843
+msgid "Vertical"
+msgstr "Vertical"
+
 #: src/scan.cpp:909
 msgid "[only free]"
 msgstr "[само свободни]"
@@ -6190,7 +6289,7 @@ msgstr "Сканирането завърши"
 msgid "Manual PIDs"
 msgstr "Ръчен PID"
 
-#: src/scan.cpp:1627 src/streaminfo.cpp:336
+#: src/scan.cpp:1627 src/streaminfo.cpp:357
 msgid "Name:"
 msgstr "Име:"
 
@@ -6202,7 +6301,7 @@ msgstr "за да въведете име на канала изберете О�
 msgid "enter service name"
 msgstr "въведете име на канала"
 
-#: src/scan.cpp:1642 src/streaminfo.cpp:348
+#: src/scan.cpp:1642 src/streaminfo.cpp:369
 msgid "Provider:"
 msgstr "Провайдър:"
 
@@ -6214,7 +6313,7 @@ msgstr "to enter provider name press OK"
 msgid "enter provider name"
 msgstr "enter provider name"
 
-#: src/scan.cpp:1658 src/streaminfo.cpp:360
+#: src/scan.cpp:1658 src/streaminfo.cpp:381
 msgid "Video PID:"
 msgstr "Видио PID:"
 
@@ -6226,7 +6325,7 @@ msgstr "to enter video pid press OK"
 msgid "enter video pid"
 msgstr "enter video pid"
 
-#: src/scan.cpp:1672 src/streaminfo.cpp:384
+#: src/scan.cpp:1672 src/streaminfo.cpp:405
 msgid "PCR PID:"
 msgstr "PCR PID:"
 
@@ -6238,7 +6337,7 @@ msgstr "to enter pcr pid press OK"
 msgid "enter pcr pid (in most case the same pid as the video pid)"
 msgstr "enter pcr pid (in most case the same pid as the video pid)"
 
-#: src/scan.cpp:1688 src/streaminfo.cpp:372
+#: src/scan.cpp:1688 src/streaminfo.cpp:393
 msgid "Audio PID:"
 msgstr "Аудио PID:"
 
@@ -6270,7 +6369,7 @@ msgstr "to enter (video) text pid press OK"
 msgid "enter (video) text pid"
 msgstr "enter (video) text pid"
 
-#: src/scan.cpp:1725 src/streaminfo.cpp:456
+#: src/scan.cpp:1725 src/streaminfo.cpp:477
 msgid "Service ID:"
 msgstr "Сървиз ID:"
 
@@ -6575,309 +6674,335 @@ msgstr "HW Address(MAC) detection failed"
 msgid "MultiEPG"
 msgstr "MultiEPG"
 
-#: src/setup_epg.cpp:72
+#: src/setup_epg.cpp:92
 msgid "EPG data store"
 msgstr "EPG контейнер"
 
-#: src/setup_epg.cpp:77
+#: src/setup_epg.cpp:97
 msgid "Select if you want the default Enigma EPG or SQLite database EPG"
 msgstr "Изберете типа на базата данни - Enigma EPG или SQLite EPG"
 
-#: src/setup_epg.cpp:80
+#: src/setup_epg.cpp:100
 msgid "Enigma EPG"
 msgstr "Enigma EPG"
 
-#: src/setup_epg.cpp:81
+#: src/setup_epg.cpp:102
 msgid "SQLite database"
 msgstr "SQLite база данни"
 
-#: src/setup_epg.cpp:102
+#: src/setup_epg.cpp:123
 msgid "Select EPG store location"
 msgstr "Избор на EPG местороложение"
 
-#: src/setup_epg.cpp:121
+#: src/setup_epg.cpp:142
 msgid "Number of EPG days:"
 msgstr "EPG дни:"
 
-#: src/setup_epg.cpp:127
+#: src/setup_epg.cpp:148
 msgid "Select number of EPG days"
 msgstr "Избор колко дни да има в  EPG"
 
-#: src/setup_epg.cpp:140
+#: src/setup_epg.cpp:161
 msgid "Enable MHW EPG"
 msgstr "Разреши MHW EPG"
 
-#: src/setup_epg.cpp:143
+#: src/setup_epg.cpp:164
 msgid ""
 "Mediahighway EPG, activate swap space when using with multiple operators"
 msgstr ""
 "Mediahighway EPG, активирайте swap когато се ползва с няколко оператора"
 
-#: src/setup_epg.cpp:150
+#: src/setup_epg.cpp:171
 msgid "Enable DISH/BEV EEPG"
 msgstr "Разреши DISH/BEV EEPG"
 
-#: src/setup_epg.cpp:153
+#: src/setup_epg.cpp:174
 msgid "DISH/BEV network EEPG, up to 9 days EPG"
 msgstr "DISH/BEV network EEPG, до 9 дни EPG"
 
-#: src/setup_epg.cpp:159
+#: src/setup_epg.cpp:180
 msgid "Limit Enigma EPG size"
 msgstr "Ограничение наразмера на Enigma EPG"
 
-#: src/setup_epg.cpp:162
+#: src/setup_epg.cpp:183
 msgid "Limit the Enigma EPG file to 5MB (recommended)"
 msgstr "Ограничи Enigma EPG файла до 5MB (препоръчително)"
 
-#: src/setup_epg.cpp:168
+#: src/setup_epg.cpp:189
 msgid "Rescan EPG"
 msgstr "Прескан. EPG"
 
-#: src/setup_epg.cpp:173
+#: src/setup_epg.cpp:194
 msgid "Rescan EPG data on current transponder"
 msgstr "Прескан. EPG санните на текущия транспондер"
 
-#: src/setup_epg.cpp:190
+#: src/setup_epg.cpp:211
 msgid "Enigma EPG location"
 msgstr "Enigma EPG позиция"
 
-#: src/setup_epg.cpp:194
+#: src/setup_epg.cpp:215
 msgid "SQLite EPG location"
 msgstr "SQLite EPG location"
 
-#: src/setup_epg.cpp:237
+#: src/setup_epg.cpp:258
 msgid "This directory is suitable for storage"
 msgstr "Тази папка е подходяща за съхпанение"
 
-#: src/setup_epg.cpp:241
+#: src/setup_epg.cpp:262
 msgid "This directory has not enough space"
 msgstr "Тази папка е много малка"
 
-#: src/setup_epg.cpp:245
+#: src/setup_epg.cpp:266
 msgid "This directory does not exist"
 msgstr "This directory does not exist"
 
-#: src/setup_epg.cpp:306
+#: src/setup_epg.cpp:327
 msgid "MultiEPG channels:"
 msgstr "MultiEPG канали:"
 
-#: src/setup_epg.cpp:313
+#: src/setup_epg.cpp:334
 msgid "Number of channels per MultiEPG page to show"
 msgstr "Колко канала MultiEPG страницата да показва наведнъж"
 
-#: src/setup_epg.cpp:318
+#: src/setup_epg.cpp:339
 msgid "MultiEPG entry fontsize:"
 msgstr "MultiEPG размер на шрифта:"
 
-#: src/setup_epg.cpp:331
+#: src/setup_epg.cpp:352
 msgid "Increase/decrease entry fontsize with this number of points"
 msgstr "Увел./Намал. размера на шрифта в точки"
 
-#: src/setup_epg.cpp:336
+#: src/setup_epg.cpp:357
 msgid "Enable EPG genre colours"
 msgstr "Вкл. EPG жанр цветове"
 
-#: src/setup_epg.cpp:339
+#: src/setup_epg.cpp:360
 msgid "Make the MultiEPG entries coloured depending on the genre"
 msgstr "Разрешете MultiEPG събитията да се оцветяват в зависимост от жанра им"
 
-#: src/setup_extra_osd.cpp:39
+#: src/setup_extra_osd.cpp:40
 msgid "OSD options"
 msgstr "OSD настройки"
 
-#: src/setup_extra_osd.cpp:60
+#: src/setup_extra_osd.cpp:61
 msgid "OSD on zap"
 msgstr "OSD при превкл."
 
-#: src/setup_extra_osd.cpp:60
+#: src/setup_extra_osd.cpp:61
 msgid "Show OSD after a zap"
 msgstr "Посажи OSD след превкл."
 
-#: src/setup_extra_osd.cpp:61
+#: src/setup_extra_osd.cpp:62
 msgid "Extra OSD"
 msgstr "Extra OSD"
 
-#: src/setup_extra_osd.cpp:61
+#: src/setup_extra_osd.cpp:62
 msgid "Show extra info in OSD on OK"
 msgstr "Покажи допълнително инфо OSD при OK"
 
-#: src/setup_extra_osd.cpp:62
+#: src/setup_extra_osd.cpp:63
+msgid "Extra OSD on zap"
+msgstr "Extra OSD при превкл."
+
+#: src/setup_extra_osd.cpp:63
+msgid "Show extra info in OSD when zapping"
+msgstr "Покажи допълнително инфо OSD при превкл."
+
+#: src/setup_extra_osd.cpp:64
 msgid "Autohide OSD on OK"
 msgstr "Авт. скиване на OSD при  OK"
 
-#: src/setup_extra_osd.cpp:62
+#: src/setup_extra_osd.cpp:64
 msgid "Autohide OSD when pressing OK button"
 msgstr "Авт. скиване на OSD при избор на бутон OK"
 
-#: src/setup_extra_osd.cpp:63
+#: src/setup_extra_osd.cpp:65
 msgid "Autohide radio/mp3 OSD"
 msgstr "Авт. скиване на radio/mp3 OSD"
 
-#: src/setup_extra_osd.cpp:63
+#: src/setup_extra_osd.cpp:65
 msgid "Autohide the OSD display in radio/mp3 mode"
 msgstr "Авт. скиване на OSD в radio/mp3 режим"
 
-#: src/setup_extra_osd.cpp:64
+#: src/setup_extra_osd.cpp:66
 msgid "SNR in dB"
 msgstr "SNR в dB"
 
-#: src/setup_extra_osd.cpp:64
+#: src/setup_extra_osd.cpp:66
 msgid "Show SNR values in dB instead of %"
 msgstr "Показва SNR в dB вместо в %"
 
-#: src/setup_extra_osd.cpp:67
+#: src/setup_extra_osd.cpp:69
 msgid "Improved BER"
 msgstr "Подобрен BER"
 
-#: src/setup_extra_osd.cpp:67
+#: src/setup_extra_osd.cpp:69
 msgid ""
 "Show improved BER (Bit Error Rate) regards to the outer FEC and in a value "
 "from 0-6 represents errorrate in ai power of 10 (6 represents 1 bit in a "
 "million, 3 represents 1 biterror in a thousand)"
 msgstr "Показва подобрен BER (Bit Error Rate)"
 
-#: src/setup_extra_osd.cpp:69
+#: src/setup_extra_osd.cpp:71
 msgid "Show plicons"
 msgstr "Покажи plicons"
 
-#: src/setup_extra_osd.cpp:69
+#: src/setup_extra_osd.cpp:71
 msgid "Show plicons in EPG and skin"
 msgstr "Показва pliconsв EPG и кожата"
 
-#: src/setup_extra_osd.cpp:70
+#: src/setup_extra_osd.cpp:72
 msgid "Use Mini-Zap"
 msgstr "Ползвай Mini-Zap"
 
-#: src/setup_extra_osd.cpp:70
+#: src/setup_extra_osd.cpp:72
 msgid "Show smaller OSD when zapping (if supported by the skin)"
 msgstr "покажи по-малко OSD при превкл. (ако се поддържа)"
 
-#: src/setup_extra_osd.cpp:71
+#: src/setup_extra_osd.cpp:73
 msgid "Expert OSD"
 msgstr "Expert OSD"
 
-#: src/setup_extra_osd.cpp:71
+#: src/setup_extra_osd.cpp:73
 msgid "Show other extra info in OSD on OK"
 msgstr "Покажи екстра инфо OSD при OK"
 
-#: src/setup_extra_osd.cpp:72
+#: src/setup_extra_osd.cpp:74
 msgid "Expert OSD on zap"
 msgstr "Expert OSD при превкл."
 
-#: src/setup_extra_osd.cpp:72
+#: src/setup_extra_osd.cpp:74
 msgid "Show other extra info in OSD when zapping"
 msgstr "Показва екстра инфо в OSD при превкл."
 
-#: src/setup_extra_osd.cpp:73
+#: src/setup_extra_osd.cpp:75
 msgid "Seconds in OSD clock"
 msgstr "Секунди в OSD часовника"
 
-#: src/setup_extra_osd.cpp:74
+#: src/setup_extra_osd.cpp:76
+#, fuzzy
+msgid "Progress in %"
+msgstr "Прогрес:"
+
+#: src/setup_extra_osd.cpp:76
+msgid "Display Progress in %"
+msgstr ""
+
+#: src/setup_extra_osd.cpp:77
+#, fuzzy
+msgid "Filt Userbouquet"
+msgstr "Промяна букет"
+
+#: src/setup_extra_osd.cpp:77
+msgid "Filt Userbouquet's Services where not my satellites"
+msgstr ""
+
+#: src/setup_extra_osd.cpp:78
 msgid "No picture in radio/mp3"
 msgstr "Без картина в radio/mp3"
 
-#: src/setup_extra_osd.cpp:74
+#: src/setup_extra_osd.cpp:78
 msgid "No background picture in radio/mp3 mode"
 msgstr "Без фонова картина в radio/mp3 режим"
 
-#: src/setup_extra_osd.cpp:75
+#: src/setup_extra_osd.cpp:79
 msgid "Listbox OSD main menu"
 msgstr "Лист режим на главно меню"
 
-#: src/setup_extra_osd.cpp:75
+#: src/setup_extra_osd.cpp:79
 msgid "Show the Main menu in normal listbox style"
 msgstr "Покажи главното меню в лист режим"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:80
 msgid "Serviceselector help buttons"
 msgstr "Екран сървиси бутони помощ"
 
-#: src/setup_extra_osd.cpp:76
+#: src/setup_extra_osd.cpp:80
 msgid "Show coloured help buttons in service selector"
 msgstr "Показва цветни бутони за помощ в списъка със сървизи"
 
-#: src/setup_extra_osd.cpp:79
+#: src/setup_extra_osd.cpp:83
 msgid "Show Sat position"
 msgstr "Покажи позиция на сат."
 
-#: src/setup_extra_osd.cpp:79
+#: src/setup_extra_osd.cpp:83
 msgid "Show satellite position in the infobar"
 msgstr "Показва позицията на сат. в инфобара"
 
-#: src/setup_extra_osd.cpp:81
+#: src/setup_extra_osd.cpp:85
 msgid "Auto show Infobar"
 msgstr "Авт. показване на Infobar"
 
-#: src/setup_extra_osd.cpp:81
+#: src/setup_extra_osd.cpp:85
 msgid "Always show infobar when new event info is available"
 msgstr "Always show infobar when new event info is available"
 
-#: src/setup_extra_osd.cpp:82
+#: src/setup_extra_osd.cpp:86
 msgid "Show remaining Time"
 msgstr "Покажи оставащо време"
 
-#: src/setup_extra_osd.cpp:82
+#: src/setup_extra_osd.cpp:86
 msgid "Show event remaining time in the infobar"
 msgstr "Show event remaining time in the infobar"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:87
 msgid "Hide shortcut icons"
 msgstr "Скри препратките"
 
-#: src/setup_extra_osd.cpp:83
+#: src/setup_extra_osd.cpp:87
 msgid "Don't show shortcut icons in menus"
 msgstr "Don't show shortcut icons in menus"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:88
 msgid "Skip confirmations"
 msgstr "Пропусни потвърждения"
 
-#: src/setup_extra_osd.cpp:84
+#: src/setup_extra_osd.cpp:88
 msgid "Skip some confirmations"
 msgstr "Skip some confirmations"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:89
 msgid "Hide error windows"
 msgstr "Скрий прозорци за грешка"
 
-#: src/setup_extra_osd.cpp:85
+#: src/setup_extra_osd.cpp:89
 msgid "Don't show zap error messages like service not found"
 msgstr "Don't show zap error messages like service not found"
 
-#: src/setup_extra_osd.cpp:88
+#: src/setup_extra_osd.cpp:92
 msgid "Enable fast zapping"
 msgstr "Вкл. бързо превкл."
 
-#: src/setup_extra_osd.cpp:88
+#: src/setup_extra_osd.cpp:92
 msgid "Enables faster zapping.. but with visible sync"
 msgstr "Enables faster zapping.. but with visible sync"
 
-#: src/setup_extra_osd.cpp:90
+#: src/setup_extra_osd.cpp:94
 msgid "Enable Zapping History"
 msgstr "Вкл. история на превкл."
 
-#: src/setup_extra_osd.cpp:90
+#: src/setup_extra_osd.cpp:94
 msgid "Don't care about actual mode when zapping in history list"
 msgstr "Don't care about actual mode when zapping in history list"
 
-#: src/setup_extra_osd.cpp:91
+#: src/setup_extra_osd.cpp:95
 msgid "Auto bouquet change"
 msgstr "Авт. смяна на букет"
 
-#: src/setup_extra_osd.cpp:91
+#: src/setup_extra_osd.cpp:95
 msgid "Change into next bouquet when end of current bouquet is reached"
 msgstr "Change into next bouquet when end of current bouquet is reached"
 
-#: src/setup_extra_osd.cpp:93
+#: src/setup_extra_osd.cpp:96
 msgid "infobar timeout (left, right)"
 msgstr "infobar timeout (left, right)"
 
-#: src/setup_extra_osd.cpp:94 src/setup_extra_osd.cpp:95
-#: src/setup_extra_osd.cpp:96 src/setup_extra_osd.cpp:97
-#: src/setup_extra_osd.cpp:98 src/setup_extra_osd.cpp:99
-#: src/setup_extra_osd.cpp:100 src/setup_extra_osd.cpp:101
-#: src/setup_extra_osd.cpp:102 src/setup_extra_osd.cpp:103
-#: src/setup_extra_osd.cpp:104
+#: src/setup_extra_osd.cpp:97 src/setup_extra_osd.cpp:98
+#: src/setup_extra_osd.cpp:99 src/setup_extra_osd.cpp:100
+#: src/setup_extra_osd.cpp:101 src/setup_extra_osd.cpp:102
+#: src/setup_extra_osd.cpp:103 src/setup_extra_osd.cpp:104
+#: src/setup_extra_osd.cpp:105 src/setup_extra_osd.cpp:106
+#: src/setup_extra_osd.cpp:107
 #, c-format
 msgid "Infobar timeout %d sec"
 msgstr "Infobar време %d сек"
@@ -7268,7 +7393,7 @@ msgstr "Password"
 msgid "Enter the password of the server"
 msgstr "Enter the password of the server"
 
-#: src/setup_mounts.cpp:369 src/sselect.cpp:2341 src/sselect.cpp:2380
+#: src/setup_mounts.cpp:369 src/sselect.cpp:2357 src/sselect.cpp:2396
 msgid "Delete"
 msgstr "Delete"
 
@@ -9105,7 +9230,7 @@ msgstr "add service to a specific bouquet"
 msgid "toggle between classic and multi column style"
 msgstr "toggle between classic and multi column style"
 
-#: src/sselect.cpp:151 src/sselect.cpp:1858 src/sselect.cpp:1868
+#: src/sselect.cpp:151 src/sselect.cpp:1868 src/sselect.cpp:1878
 msgid "toggle focus between service and bouquet list (in combi column style)"
 msgstr "toggle focus between service and bouquet list (in combi column style)"
 
@@ -9149,44 +9274,40 @@ msgstr "rename selected entry"
 msgid "create new marker entry"
 msgstr "create new marker entry"
 
-#: src/sselect.cpp:377
+#: src/sselect.cpp:379
 msgid "[GO UP]"
 msgstr "[НАГОРЕ]"
 
-#: src/sselect.cpp:379
+#: src/sselect.cpp:381
 msgid "(removed service)"
 msgstr "(канала е изтрит)"
 
-#: src/sselect.cpp:505
+#: src/sselect.cpp:516
 msgid "mark"
 msgstr "mark"
 
-#: src/sselect.cpp:507
+#: src/sselect.cpp:518
 msgid "marker"
 msgstr "marker"
 
-#: src/sselect.cpp:525
+#: src/sselect.cpp:536
 msgid "My Dreambox"
 msgstr "Моят Dreambox"
 
-#: src/sselect.cpp:526
-msgid "Movies"
-msgstr "Филми"
-
-#: src/sselect.cpp:1056
+#: src/sselect.cpp:1067
 msgid "Select No or press Abort to lock/unlock the complete directory"
 msgstr "Select No or press Abort to lock/unlock the complete directory"
 
-#: src/sselect.cpp:1056
+#: src/sselect.cpp:1067
 msgid "Enter Directory"
 msgstr "Enter Directory"
 
-#: src/sselect.cpp:1848
+#: src/sselect.cpp:1858
 #, fuzzy
 msgid "toggle between now and next epg entries in single column list"
 msgstr "toggle focus between service and bouquet list (in combi column style)"
 
-#: src/sselect.cpp:1993
+#: src/sselect.cpp:2008
 msgid ""
 "Service selector\n"
 "\n"
@@ -9200,31 +9321,27 @@ msgstr ""
 "(Satellite, Bouquet, All, Provider, Radio/TV, File), and can show these in "
 "one or more columns."
 
-#: src/sselect.cpp:2338
-msgid "Root"
-msgstr ""
-
-#: src/sselect.cpp:2339
+#: src/sselect.cpp:2355
 #, fuzzy
 msgid "Select"
 msgstr "Избор на LNB"
 
-#: src/sselect.cpp:2340
+#: src/sselect.cpp:2356
 #, fuzzy
 msgid "New Directory"
 msgstr "Directory"
 
-#: src/sselect.cpp:2357
+#: src/sselect.cpp:2373
 #, fuzzy
 msgid "Enter name of new directory:"
 msgstr "Enter the server directory"
 
-#: src/sselect.cpp:2358
+#: src/sselect.cpp:2374
 #, fuzzy
 msgid "Create Directory"
 msgstr "Enter Directory"
 
-#: src/sselect.cpp:2367
+#: src/sselect.cpp:2383
 #, fuzzy
 msgid "Error creating directory"
 msgstr "go up a directory"
@@ -9261,43 +9378,43 @@ msgstr "track"
 msgid "length"
 msgstr "length"
 
-#: src/streaminfo.cpp:396
+#: src/streaminfo.cpp:417
 msgid "PMT PID:"
 msgstr "PMT PID:"
 
-#: src/streaminfo.cpp:408
+#: src/streaminfo.cpp:429
 msgid "Teletext PID:"
 msgstr "Teletext PID:"
 
-#: src/streaminfo.cpp:420
+#: src/streaminfo.cpp:441
 msgid "Video format:"
 msgstr "Видео формат:"
 
-#: src/streaminfo.cpp:432
+#: src/streaminfo.cpp:453
 msgid "Transport Stream ID:"
 msgstr "Transport Stream ID:"
 
-#: src/streaminfo.cpp:444
+#: src/streaminfo.cpp:465
 msgid "Original Network ID:"
 msgstr "Original Network ID:"
 
-#: src/streaminfo.cpp:468
+#: src/streaminfo.cpp:489
 msgid "Namespace:"
 msgstr "Namespace:"
 
-#: src/streaminfo.cpp:504
+#: src/streaminfo.cpp:525
 msgid "supported coding systems:"
 msgstr "supported coding systems:"
 
-#: src/streaminfo.cpp:544
+#: src/streaminfo.cpp:565
 msgid "Systems used in service:"
 msgstr "Systems used in service:"
 
-#: src/streaminfo.cpp:585
+#: src/streaminfo.cpp:606
 msgid "Record mode - read manual"
 msgstr "Record mode - read manual"
 
-#: src/streaminfo.cpp:592
+#: src/streaminfo.cpp:613
 msgid ""
 "\tStreaminfo\n"
 "\n"
@@ -9341,15 +9458,15 @@ msgstr ""
 "\n"
 "[OK]/[EXIT]\tClose window"
 
-#: src/streaminfo.cpp:700
+#: src/streaminfo.cpp:721
 msgid "Service information (right)"
 msgstr "Service information (right)"
 
-#: src/streaminfo.cpp:701
+#: src/streaminfo.cpp:722
 msgid "Scrambled system information (left, right)"
 msgstr "Scrambled system information (left, right)"
 
-#: src/streaminfo.cpp:702
+#: src/streaminfo.cpp:723
 msgid "Transponder information (left)"
 msgstr "Transponder information (left)"
 
@@ -10167,7 +10284,7 @@ msgstr ""
 msgid "Upgrade in process..."
 msgstr "Upgrade in process..."
 
-#: src/wizard_language.cpp:168
+#: src/wizard_language.cpp:169
 msgid ""
 "\tOSD Language\n"
 "\n"
@@ -10201,11 +10318,11 @@ msgstr ""
 "\n"
 "[EXIT]\tClose window without saving changes"
 
-#: src/wizard_language.cpp:180
+#: src/wizard_language.cpp:181
 msgid "Choose your language..."
 msgstr "Изберете вашият език..."
 
-#: src/wizard_language.cpp:181
+#: src/wizard_language.cpp:182
 msgid "press up/down/ok"
 msgstr "press up/down/ok"
 
@@ -10241,14 +10358,17 @@ msgstr "Regular LNB except for North America and Canada"
 msgid "DISH LNB for North America and Canada"
 msgstr "DISH LNB for North America and Canada"
 
+#~ msgid "no data for this service available"
+#~ msgstr "без данни за този сървиз"
+
+#~ msgid "no EPG available"
+#~ msgstr "няма ЕПГ"
+
 #~ msgid "No backup device found"
 #~ msgstr "Няма устройство за архив"
 
 #~ msgid "Custom location"
 #~ msgstr "--Ръчно--"
-
-#~ msgid "Vertical"
-#~ msgstr "Vertical"
 
 #~ msgid "No storage device found"
 #~ msgstr "No storage device found"
@@ -10261,12 +10381,6 @@ msgstr "DISH LNB for North America and Canada"
 
 #~ msgid "SQLite EPG directory"
 #~ msgstr "SQLite EPG directory"
-
-#~ msgid "Extra OSD on zap"
-#~ msgstr "Extra OSD при превкл."
-
-#~ msgid "Show extra info in OSD when zapping"
-#~ msgstr "Покажи допълнително инфо OSD при превкл."
 
 #~ msgid "No recording device found"
 #~ msgstr "No recording device found"

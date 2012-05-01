@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/allboxes/var_init/etc/plimgr/scripts
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,74 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+radegast
+file
+
+
+
+
+2009-12-09T08:20:10.624021Z
+e8cd0815150e95b521c2c6ad83cc4f73
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+296
+
+newcamd
+file
+
+
+
+
+2009-12-09T08:20:10.624021Z
+bf211cbdf62988b19b9958aba5961044
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+439
 
 ecminfo
 file
@@ -127,72 +195,4 @@ has-props
 
 
 391
-
-radegast
-file
-
-
-
-
-2009-12-09T08:20:10.624021Z
-e8cd0815150e95b521c2c6ad83cc4f73
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-296
-
-newcamd
-file
-
-
-
-
-2009-12-09T08:20:10.624021Z
-bf211cbdf62988b19b9958aba5961044
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-439
 

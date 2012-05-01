@@ -1,6 +1,8 @@
 scriptdir=${0%/*}
 flashdir=$scriptdir/../root/cdkflash/
 publishdir=$scriptdir/../../../../pli-nx111
+
+[ -d $publishdir ] || exit 0
 cp $flashdir/root/bin/enigma $publishdir/bin/
 cp $flashdir/root/bin/busybox $publishdir/bin/
 cp $flashdir/root/lib/tuxbox/plugins/movieplayer.so $publishdir/lib/tuxbox/plugins/

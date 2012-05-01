@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/hostapps/win32/tuxvision
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -26,6 +26,9 @@ plindeman
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
+WinAmpOutputPlugin
+dir
+
 render
 dir
 
@@ -36,8 +39,5 @@ doc
 dir
 
 tuxvision
-dir
-
-WinAmpOutputPlugin
 dir
 

@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/enigma
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,43 @@ daf2000
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+NEWS
+file
+
+
+
+
+2009-12-09T08:20:53.668022Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+po
+dir
 
 hotplug
 dir
@@ -100,39 +137,8 @@ plindeman
 
 2972
 
-changelog
-file
-
-
-
-
-2009-12-09T08:20:53.660020Z
-0fd3e5f344f9c72cd3a372d801f98a14
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11731
+src
+dir
 
 ChangeLog
 file
@@ -168,8 +174,39 @@ plindeman
 
 0
 
-src
-dir
+changelog
+file
+
+
+
+
+2009-12-09T08:20:53.660020Z
+0fd3e5f344f9c72cd3a372d801f98a14
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11731
 
 ed
 file
@@ -242,8 +279,39 @@ plindeman
 
 0
 
-boot
-dir
+enigma.kdevses
+file
+
+
+
+
+2009-12-09T08:20:53.664020Z
+5ef6447f02d7e81ddd1faba41d1ecaaa
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6733
 
 configure.ac
 file
@@ -279,39 +347,8 @@ plindeman
 
 6771
 
-enigma.kdevses
-file
-
-
-
-
-2009-12-09T08:20:53.664020Z
-5ef6447f02d7e81ddd1faba41d1ecaaa
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6733
+boot
+dir
 
 enigma.kdevprj
 file
@@ -491,41 +528,4 @@ has-props
 
 
 1676
-
-NEWS
-file
-
-
-
-
-2009-12-09T08:20:53.668022Z
-d41d8cd98f00b204e9800998ecf8427e
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
-
-po
-dir
 

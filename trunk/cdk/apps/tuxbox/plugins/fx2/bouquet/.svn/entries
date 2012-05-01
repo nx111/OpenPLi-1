@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/fx2/bouquet
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,40 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-bouquet.cfg
-file
-
-
-
-
-2009-12-09T08:20:57.308022Z
-1e4c489f6bb0915d8762e8c9eb1a5334
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-106
 
 Imakefile
 file
@@ -195,4 +161,38 @@ plindeman
 
 
 416
+
+bouquet.cfg
+file
+
+
+
+
+2009-12-09T08:20:57.308022Z
+1e4c489f6bb0915d8762e8c9eb1a5334
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+106
 

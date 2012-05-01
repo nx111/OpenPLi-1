@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/fx2
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -26,77 +26,16 @@ plindeman
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
-bouquet
-dir
-
-solitair
-dir
-
-Imakefile
-file
-
-
-
-
-2009-12-09T08:20:59.780019Z
-785f543f306fe1c9070e9b587be2e51a
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-140
-
-satfind
-dir
-
-lemm
-dir
-
-outdoor
-dir
-
-master
-dir
-
-sokoban
-dir
-
-sol
-dir
-
-tank
-dir
-
 snake
 dir
 
-pac
+c64emu
 dir
 
 lcdcirc
 dir
 
-c64emu
+pac
 dir
 
 lib
@@ -146,5 +85,66 @@ mines
 dir
 
 vierg
+dir
+
+bouquet
+dir
+
+Imakefile
+file
+
+
+
+
+2009-12-09T08:20:59.780019Z
+785f543f306fe1c9070e9b587be2e51a
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+140
+
+solitair
+dir
+
+satfind
+dir
+
+lemm
+dir
+
+master
+dir
+
+outdoor
+dir
+
+sokoban
+dir
+
+tank
+dir
+
+sol
 dir
 

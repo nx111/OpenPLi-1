@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma/bitrate
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,74 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-brdlg.h
-file
-
-
-
-
-2009-12-09T08:21:02.568019Z
-53e0e59cb59c74568c988f1d7b13e326
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-659
-
-utils.cpp
-file
-
-
-
-
-2009-12-09T08:21:02.568019Z
-89a7b7caae34d8a63f22ad20bd8bce22
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2323
 
 main.cpp
 file
@@ -263,4 +195,72 @@ plindeman
 
 
 12824
+
+brdlg.h
+file
+
+
+
+
+2009-12-09T08:21:02.568019Z
+53e0e59cb59c74568c988f1d7b13e326
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+659
+
+utils.cpp
+file
+
+
+
+
+2009-12-09T08:21:02.568019Z
+89a7b7caae34d8a63f22ad20bd8bce22
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2323
 

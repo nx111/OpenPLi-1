@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/doc
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,74 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+INSTALL.de
+file
+
+
+
+
+2009-12-09T08:20:10.412022Z
+8b01a05005b2892167458b40a227e3ef
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2161
+
+README.SDL
+file
+
+
+
+
+2009-12-09T08:20:10.412022Z
+64c9ae5475a5cc432e145040cdffb239
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+773
 
 INSTALL.en
 file
@@ -195,72 +263,4 @@ plindeman
 
 
 6414
-
-INSTALL.de
-file
-
-
-
-
-2009-12-09T08:20:10.412022Z
-8b01a05005b2892167458b40a227e3ef
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2161
-
-README.SDL
-file
-
-
-
-
-2009-12-09T08:20:10.412022Z
-64c9ae5475a5cc432e145040cdffb239
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-773
 

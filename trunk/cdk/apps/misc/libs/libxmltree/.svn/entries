@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/misc/libs/libxmltree
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,108 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+xmlparse.cpp
+file
+
+
+
+
+2009-12-09T08:21:18.676019Z
+c7c3fce88670b21ed909f910a656057c
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+63350
+
+tuxbox-xmltree.pc.in
+file
+
+
+
+
+2009-12-09T08:21:18.676019Z
+af1e6dbae80d6d055b1627a03daa6c83
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+211
+
+lat1tab.h
+file
+
+
+
+
+2009-12-09T08:21:18.676019Z
+dfcf8273d3cb4e0837321fd592e7e796
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2355
 
 xmlparse.h
 file
@@ -128,40 +230,6 @@ plindeman
 
 2937
 
-xmltimpl.h
-file
-
-
-
-
-2009-12-09T08:21:18.668014Z
-6516d137ad3b24e389b5ae2704eb32a6
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1194
-
 iasctab.h
 file
 
@@ -195,6 +263,40 @@ plindeman
 
 
 2373
+
+xmltimpl.h
+file
+
+
+
+
+2009-12-09T08:21:18.668014Z
+6516d137ad3b24e389b5ae2704eb32a6
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1194
 
 nametab.h
 file
@@ -332,40 +434,6 @@ plindeman
 
 7195
 
-xmlrole.c
-file
-
-
-
-
-2009-12-09T08:21:18.672019Z
-c762b6b6b014914347b1d97f038bd8f3
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-23284
-
 utf8tab.h
 file
 
@@ -399,6 +467,40 @@ plindeman
 
 
 2305
+
+xmlrole.c
+file
+
+
+
+
+2009-12-09T08:21:18.672019Z
+c762b6b6b014914347b1d97f038bd8f3
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23284
 
 xmltok.h
 file
@@ -434,40 +536,6 @@ plindeman
 
 9326
 
-xmldef.h
-file
-
-
-
-
-2009-12-09T08:21:18.672019Z
-2f4606d5cd8878bb77d4a7f0e8d438ec
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-743
-
 asciitab.h
 file
 
@@ -501,6 +569,40 @@ plindeman
 
 
 2303
+
+xmldef.h
+file
+
+
+
+
+2009-12-09T08:21:18.672019Z
+2f4606d5cd8878bb77d4a7f0e8d438ec
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+743
 
 xmltree.h
 file
@@ -603,106 +705,4 @@ plindeman
 
 
 231
-
-xmlparse.cpp
-file
-
-
-
-
-2009-12-09T08:21:18.676019Z
-c7c3fce88670b21ed909f910a656057c
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-63350
-
-tuxbox-xmltree.pc.in
-file
-
-
-
-
-2009-12-09T08:21:18.676019Z
-af1e6dbae80d6d055b1627a03daa6c83
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-211
-
-lat1tab.h
-file
-
-
-
-
-2009-12-09T08:21:18.676019Z
-dfcf8273d3cb4e0837321fd592e7e796
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2355
 

@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/boot/ppcboot
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -26,13 +26,10 @@ plindeman
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
-cogent
-dir
-
 ppc
 dir
 
-ppc4xx
+mpc8xx
 dir
 
 CHANGELOG
@@ -69,10 +66,78 @@ plindeman
 
 18082
 
-disk
+common
 dir
 
-dbox
+LIESMICH.WICHTIG
+file
+
+
+
+
+2009-12-09T08:21:24.572024Z
+5b49414ae0f405d5051ee47fec16c29d
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1739
+
+README
+file
+
+
+
+
+2009-12-09T08:21:24.572024Z
+c8336b24679c0a2d7ae4ed9f2e7efa0f
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38433
+
+etx094
 dir
 
 CREDITS
@@ -112,19 +177,10 @@ plindeman
 mpc8240
 dir
 
-spd8xx
-dir
-
-mbx8xx
-dir
-
 sandpoint
 dir
 
 mpc8260
-dir
-
-adciop
 dir
 
 tools
@@ -207,9 +263,6 @@ plindeman
 
 15127
 
-tqm8xx
-dir
-
 config.mk
 file
 
@@ -244,39 +297,11 @@ plindeman
 
 3177
 
-Makefile
-file
-
-
-
-
-2009-12-09T08:21:24.572024Z
-c49b51ab60f324ac5ab57064e80d5494
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8250
+examples
+dir
+
+cogent
+dir
 
 hymod
 dir
@@ -287,82 +312,23 @@ dir
 net
 dir
 
-mpc8xx
+ppc4xx
 dir
 
-common
+disk
 dir
 
-LIESMICH.WICHTIG
-file
-
-
-
-
-2009-12-09T08:21:24.572024Z
-5b49414ae0f405d5051ee47fec16c29d
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1739
-
-etx094
+dbox
 dir
 
-README
-file
-
-
-
-
-2009-12-09T08:21:24.572024Z
-c8336b24679c0a2d7ae4ed9f2e7efa0f
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-38433
+spd8xx
+dir
+
+mbx8xx
+dir
+
+adciop
+dir
 
 genietv
 dir
@@ -401,6 +367,40 @@ has-props
 
 406
 
-examples
+tqm8xx
 dir
+
+Makefile
+file
+
+
+
+
+2009-12-09T08:21:24.572024Z
+c49b51ab60f324ac5ab57064e80d5494
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8250
 

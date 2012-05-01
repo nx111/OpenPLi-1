@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/vncviewer/img
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,40 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+kbd-trans-UC.gif
+file
+
+
+
+
+2009-12-09T08:21:05.616018Z
+e4aeadbb47738e71f4e0bdb4e29d4477
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1840
 
 deb-demo.gif
 file
@@ -467,38 +501,4 @@ has-props
 
 
 78
-
-kbd-trans-UC.gif
-file
-
-
-
-
-2009-12-09T08:21:05.616018Z
-e4aeadbb47738e71f4e0bdb4e29d4477
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1840
 

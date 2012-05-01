@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 39
-/svnroot/openpli/!svn/ver/245/trunk/cdk
-END
-make_cdk_image
-K 25
-svn:wc:ra_dav:version-url
-V 52
-/svnroot/openpli/!svn/ver/4/trunk/cdk/make_cdk_image
+/svnroot/openpli/!svn/ver/254/trunk/cdk
 END
 README
 K 25
 svn:wc:ra_dav:version-url
 V 44
 /svnroot/openpli/!svn/ver/2/trunk/cdk/README
+END
+make_cdk_image
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/openpli/!svn/ver/4/trunk/cdk/make_cdk_image
 END

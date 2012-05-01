@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/cdk/standard/dm500plus
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -26,12 +26,12 @@ daf2000
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
 
+etc
+dir
+
 bin
 dir
 
 usr
-dir
-
-etc
 dir
 

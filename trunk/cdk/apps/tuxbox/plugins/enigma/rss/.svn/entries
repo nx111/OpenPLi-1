@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/plugins/enigma/rss
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,6 +25,40 @@ pieterg
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
+
+rss.h
+file
+
+
+
+
+2009-12-09T08:21:04.120023Z
+0c435bc001a8190813ee4dc5acdff412
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3238
 
 feeds.xml
 file
@@ -161,38 +195,4 @@ plindeman
 
 
 814
-
-rss.h
-file
-
-
-
-
-2009-12-09T08:21:04.120023Z
-0c435bc001a8190813ee4dc5acdff412
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3238
 

@@ -1,7 +1,7 @@
 10
 
 dir
-245
+254
 https://openpli.svn.sourceforge.net/svnroot/openpli/trunk/cdk/apps/tuxbox/neutrino/data/fonts
 https://openpli.svn.sourceforge.net/svnroot/openpli
 
@@ -25,74 +25,6 @@ plindeman
 
 
 056643be-5495-4fc0-9e08-4bf5907aba9a
-
-micron.ttf
-file
-
-
-
-
-2009-12-09T08:21:10.872026Z
-ff0fc4d4bd6cb20f4ebb20deed033474
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-28768
-
-micron_bold.ttf
-file
-
-
-
-
-2009-12-09T08:21:10.872026Z
-cded440ba7483affb348d1aaa4df5739
-2009-08-14T21:33:06.552841Z
-2
-plindeman
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-28588
 
 micron_italic.ttf
 file
@@ -161,4 +93,72 @@ plindeman
 
 
 147
+
+micron.ttf
+file
+
+
+
+
+2009-12-09T08:21:10.872026Z
+ff0fc4d4bd6cb20f4ebb20deed033474
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28768
+
+micron_bold.ttf
+file
+
+
+
+
+2009-12-09T08:21:10.872026Z
+cded440ba7483affb348d1aaa4df5739
+2009-08-14T21:33:06.552841Z
+2
+plindeman
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+28588
 
